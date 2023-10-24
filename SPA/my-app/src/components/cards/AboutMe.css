@@ -1,0 +1,230 @@
+.card {
+  animation: move-up6 5s ease-in infinite alternate-reverse;
+  /* float: right;
+    width: 30%;
+    margin-left: 3vw; */
+  /* height: 22.5em; */
+  /* background: #171717;
+    transition: 1s ease-in-out; */
+  /* clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px); */
+  /* border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column; */
+  /* padding: 1vw;
+    border-radius: 1vw;
+    background: #212121;
+    box-shadow: 10px 10px 20px rgb(25, 25, 25),
+                -10px -10px 20px rgb(60, 60, 60); */
+  display: grid;
+  justify-content: center;
+  top: 3vw;
+  right: 3vw;
+  position: fixed;
+  z-index: 10000;
+  width: 20vw;
+  margin-left: 3vw;
+  /* height: 22.5em; */
+  background: #171717;
+  transition: 1s ease-in-out;
+  /* clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px); */
+  padding: 1vw;
+  border-radius: 0 3vw;
+  background: #212121;
+  box-shadow: 10px 10px 20px rgb(25, 25, 25), -10px -10px 20px rgb(60, 60, 60);
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+  overflow-y: auto;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card .share {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+  margin: auto;
+}
+
+.card a:hover {
+  color: rgb(63, 49, 183);
+}
+
+.card p {
+  font-size: 1vw;
+  color: white;
+  border-radius: 0 -1vw 0 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  /* border-left: solid thick #fff; */
+}
+.card span {
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+
+.card:hover {
+  border-radius: 3vw 0;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.card button:hover {
+  background: rgb(63, 49, 183);
+  color: white;
+  cursor: pointer;
+}
+
+/* flipper */
+
+.myCard {
+  background-color: transparent;
+
+  height: 100%;
+  perspective: 1000px;
+}
+
+.frontSide .header {
+  font-size: 1.5em;
+}
+
+.frontSide .content {
+  font-size: 1.5em;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+.backSide {
+  text-align: left;
+  padding: 1vw;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1vw;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.b-content {
+  overflow-y: auto;
+}

@@ -1,0 +1,6 @@
+Add the line of code manually after every build..
+
+
+Note the snippet should be added before bundle.js 
+
+https://github.com/rafgraph/spa-github-pages/blob/gh-pages/index.html#L21-L42
