@@ -1,0 +1,17 @@
+.Footer{
+    position: absolute;
+    padding: 1vw;
+    // background-color: #9b59b6;
+    color: #fff;
+    /* text-shadow: 1px 1px 1px #7f8c8d; */
+    bottom: 0;
+    text-align: center;
+    left: -.3vw;}
+
+.Footer > :nth-child(1){
+    font-size: .8vw;
+}
+.Footer > :nth-child(2){
+    font-size: .7vw;
+    padding: 1vw 0 0 0;
+}
