@@ -6,11 +6,11 @@ import { SkillBars } from 'react-skills';
 import AudioMp3 from '../assets/audio/a.mp3';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaPhone, FaMailchimp } from 'react-icons/fa';
 import { MdWorkHistory } from 'react-icons/md'
 import { BiSolidSchool } from 'react-icons/bi'
 import { IoMdSchool } from 'react-icons/io'
 import { PiShieldStarThin } from 'react-icons/pi'
+import { FaInfinity, FaPhone, FaHandsHelping, FaGithub, FaStackOverflow, FaQuora, FaHome, FaCopy, FaUserCircle, FaMailchimp, FaLinkedin, FaInstagram, FaYoutube, FaDev } from 'react-icons/fa';
 
 
 import Loader2 from '../assets/image/loader2.gif';
@@ -126,6 +126,9 @@ function About(props) {
                     </>
                 }
 
+
+
+
                 {/* <br /> */}
                 <div className={props.vp === "m" ? 'mobile-wrapper' : ''}>
                     {/* <h5>Primary Skills</h5> */}
@@ -195,6 +198,30 @@ function About(props) {
 
 </div> */}
 
+
+                    {
+                        props.vp === "m" && <>
+                            <div className='mob-share-wrapper'>
+                                <div class="share-m">
+                                    <a target="_blank" href="https://www.linkedin.com/in/rajkishor-maharana-b6916a254">
+                                        <FaLinkedin />
+                                    </a>
+                                    <a target="_blank" href="https://www.youtube.com/@mrajkishor331">
+                                        <FaYoutube />
+                                    </a>
+                                    <a target="_blank" href="https://www.quora.com/profile/Rajkishor-Maharana-4">
+                                        <FaQuora />
+                                    </a>
+                                    <a target="_blank" href="https://github.com/mrajkishor">
+                                        <FaGithub />
+                                    </a>
+                                </div>
+                                <br />
+                                <a href='/resume/Rajkishor_Maharana_Resume.docx' download><button> Resume</button></a>
+                            </div>
+
+                        </>
+                    }
 
 
                     {/* <hr /> */}
