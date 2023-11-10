@@ -11,7 +11,7 @@ import { BiSolidSchool } from 'react-icons/bi'
 import { IoMdSchool } from 'react-icons/io'
 import { PiShieldStarThin } from 'react-icons/pi'
 import { FaInfinity, FaPhone, FaHandsHelping, FaGithub, FaStackOverflow, FaQuora, FaHome, FaCopy, FaUserCircle, FaMailchimp, FaLinkedin, FaInstagram, FaYoutube, FaDev } from 'react-icons/fa';
-
+import myProfilePic from '../assets/image/raj';
 
 import Loader2 from '../assets/image/loader2.gif';
 import AboutMe from './cards/AboutMe';
@@ -84,7 +84,7 @@ function About(props) {
                         <div class="card__content_m">
 
                             <div>
-                                <img src={Raj} className='profile-pc-m' />
+                                <img src={myProfilePic} className='profile-pc-m' />
                                 <div className='phone-header'>
                                     <p>Rajkishor Maharana</p>
 

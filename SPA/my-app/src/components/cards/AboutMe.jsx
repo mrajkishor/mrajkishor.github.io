@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import "./AboutMe.css";
 import { FaInfinity, FaPhone, FaHandsHelping, FaGithub, FaStackOverflow, FaQuora, FaHome, FaCopy, FaUserCircle, FaMailchimp, FaLinkedin, FaInstagram, FaYoutube, FaDev } from 'react-icons/fa';
 import Raj from '../../assets/image/raj.jpeg';
+import myProfilePic from '../../assets/image/raj';
+
 
 AboutMe.propTypes = {
 
@@ -15,7 +17,7 @@ function AboutMe(props) {
                 {/* {
                     props.vp === "t" &&
                     <> */}
-                <img src={Raj} className='profile-pc-t' />
+                <img src={myProfilePic} className='profile-pc-t' />
 
                 {/* </>
                 } */}
