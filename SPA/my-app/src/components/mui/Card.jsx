@@ -11,6 +11,11 @@ export default function MultiActionAreaCard(props) {
     desc,
     image
   } = props;
+
+  const handleClick = () => {
+    window.open('https://github.com/mrajkishor/Gyvor');
+  }
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -25,13 +30,13 @@ export default function MultiActionAreaCard(props) {
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-           {desc}
+            {desc}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Portal
+        <Button size="small" color="primary" onClick={handleClick}>
+          Link
         </Button>
       </CardActions>
     </Card>

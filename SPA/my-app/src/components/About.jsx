@@ -203,7 +203,7 @@ function About(props) {
                         props.vp === "m" && <>
                             <div className='mob-share-wrapper'>
                                 <div class="share-m">
-                                    <a target="_blank" href="https://www.linkedin.com/in/rajkishor-maharana-b6916a254">
+                                    <a target="_blank" href="https://www.linkedin.com/in/rajkishor-maharana-773b0a290/">
                                         <FaLinkedin />
                                     </a>
                                     <a target="_blank" href="https://www.youtube.com/@mrajkishor331">
@@ -225,6 +225,69 @@ function About(props) {
 
 
                     {/* <hr /> */}
+                    <div className={props.vp === "m" ? `about-m` : `about`}>
+
+                        <h6>Occupation</h6>
+                        <p>
+                            Software developer / IT consultant
+                        </p>
+                        <hr />
+                        <h5>Skills</h5>
+                        <div>
+                            <h6>Techincal</h6>
+                            <div>
+                                <h6>Primary</h6>
+                                <ul>
+                                    <li>
+                                        UI
+                                        <p>
+                                            React (web & native), JavaScript, Jest
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <h6>Secondary</h6>
+                                <ul>
+                                    <li>
+                                        BACKEND
+                                        <p>
+                                            AWS, NodeJs, Java
+                                        </p>
+                                    </li>
+                                    <li>
+                                        CI/CD
+                                        <p>
+                                            Azure DevOps, Jenkins
+                                        </p>
+                                    </li>
+                                    <li>
+                                        DATABASES
+                                        <p>
+                                            RDBMS and NoSQL
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h6>Functional</h6>
+                            <ul>
+
+                                <li>
+                                    ORGANIZATION MANAGEMENT
+                                    <p>
+                                        Solve Problems, Meet Deadlines, Initiate Projects,Organize,  Coordinate, Put Theory into Practice, Assume Responsibility, Apply Policy, Set Priorities, Strategize
+                                    </p>
+                                </li>
+                                <li>
+                                    COMMUNICATION
+                                    <p>
+                                        Consult, Sell, Negotiate, Promote, Work in a Team
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
 
                     <div className='timeline'>
 

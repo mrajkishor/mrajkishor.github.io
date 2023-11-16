@@ -3,6 +3,31 @@
   border-radius: 1vw;
 }
 
+.about {
+  background: white;
+  padding: 3vw;
+  border-radius: 1vw 0 1vw 0;
+  margin-top: -6.5vw;
+  filter: blur(.4px);
+
+}
+
+
+
+.about div {
+  margin: 1vw;
+}
+
+.about-m {
+      padding: 3vw;
+      border-radius: 1vw;
+      color: black;
+      text-align: left;
+      margin-top: 7vw;
+}
+
+
+
 // button :start
 .btn-demand {
   position: relative;
@@ -103,7 +128,7 @@
 }
 
 .blog-wrapper > div:nth-child(2){
-  width: 70%;
+  width: 73%;
 }
 
 .blog-wrapper-m {
