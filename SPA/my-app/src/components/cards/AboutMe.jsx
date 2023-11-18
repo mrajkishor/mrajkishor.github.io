@@ -70,7 +70,7 @@ function AboutMe(props) {
 
                 </div>
                 <br />
-                <a href='/resume/Rajkishor_Maharana_Resume.docx' download><button> Resume</button></a>
+                <a href='/resume/Rajkishor_Maharana_Resume.pdf' download><button> Resume</button></a>
             </div>
         </div >
     );

@@ -217,7 +217,7 @@ function About(props) {
                                     </a>
                                 </div>
                                 <br />
-                                <a href='/resume/Rajkishor_Maharana_Resume.docx' download><button> Resume</button></a>
+                                <a href='/resume/Rajkishor_Maharana_Resume.pdf' download><button> Resume</button></a>
                             </div>
 
                         </>
