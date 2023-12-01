@@ -47,7 +47,7 @@ const thumbnails = [
     {
         "id": 6,
         "url": "js-closures-explained-simply",
-        "title": "Javascript closure in short",
+        "title": "Javascript closure",
         "description": "This article covers the JS closure usecase and...",
         "date": "10-03-2022",
         "time": "02:35",
