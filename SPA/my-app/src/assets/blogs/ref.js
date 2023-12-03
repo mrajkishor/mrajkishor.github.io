@@ -98,6 +98,15 @@ const thumbnails = [
         "date": "26-08-2023",
         "time": "02:00",
         "publish": false
+    },
+    {
+        "id": 12,
+        "url": "optimal-algorithms-and-techniques",
+        "title": "Optimal techniques for O(n) | O(logn) time complexity",
+        "description": "This article provides the common techniques or patterns used to solve data structures and algorithm problems for optimal O(n) or O(logn) solutions...",
+        "date": "03-12-2023",
+        "time": "15:17",
+        "publish": true
     }
 ];
 
