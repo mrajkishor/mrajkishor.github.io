@@ -29,7 +29,7 @@
 .Header> :nth-child(1) {
     font-size: 1vw;
     text-align: left;
-    border-bottom: solid thin;
+    // border-bottom: solid thin;
 }
 
 .Header> :nth-child(2) {
@@ -105,9 +105,11 @@
 
 .nav-panel > li {
     margin: .5vw 0;
-    width: fit-content;
+    // width: fit-content;
+    width: auto;
     border-radius: 5vw;
     padding: 0 1vw 0 1vw;
+    background-color: #ffffff29;
 }
 
 
@@ -294,7 +296,7 @@ margin-right: 10vw;
     // width: fit-content;
     border-radius: 5vw;
     padding: 0 1vw 0 1vw;
-    border-left: solid thick #fff;
+    border: solid thin #ffffff69;
     transition: all 400ms ease-in-out;
 
 }

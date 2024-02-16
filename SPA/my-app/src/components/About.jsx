@@ -227,9 +227,9 @@ function About(props) {
                     {/* <hr /> */}
                     <div className={props.vp === "m" ? `about-m` : `about`}>
 
-                        <h6>Occupation</h6>
+                        <h6>Profession</h6>
                         <p>
-                            Software developer / IT consultant
+                            IT consultant | Software Developer
                         </p>
                         <hr />
                         <h5>Skills</h5>
