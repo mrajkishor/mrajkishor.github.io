@@ -10,6 +10,7 @@ import MultiActionAreaCard from './mui/Card';
 import aiCom from '../assets/image/ai_ecom.png';
 import appGen from '../assets/image/appgen.jpg';
 import gyvor from '../assets/image/gyvor.jpg';
+import Xhara from '../assets/image/ishara.webp';
 
 
 
@@ -88,9 +89,17 @@ function CommonGrid() {
                 image={appGen}
             /></div> */}
             <div key="key3"><MultiActionAreaCard
-                title="GYVOR"
-                desc="Giving vehicle owners a platform to put up their vehicles for rent."
+                title="Vyro"
+                desc="Helping vehicle owners in setting up their online rental business"
                 image={gyvor}
+                link={'https://github.com/mrajkishor/Vyro'}
+            /></div>
+
+            <div key="key4"><MultiActionAreaCard
+                title="Xhara"
+                desc="{'domain' : 'social media', 'mode': 'private'}"
+                image={Xhara}
+                link={'https://github.com/mrajkishor/Ishara'}
             /></div>
         </StackGrid>
     </div>)

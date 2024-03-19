@@ -9,11 +9,12 @@ export default function MultiActionAreaCard(props) {
   const {
     title,
     desc,
-    image
+    image,
+    link
   } = props;
 
   const handleClick = () => {
-    window.open('https://github.com/mrajkishor/Gyvor');
+    window.open(link);
   }
 
   return (

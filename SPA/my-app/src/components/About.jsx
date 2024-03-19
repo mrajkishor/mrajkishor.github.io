@@ -227,10 +227,18 @@ function About(props) {
                     {/* <hr /> */}
                     <div className={props.vp === "m" ? `about-m` : `about`}>
 
+                        <h6>Short Bio</h6>
+                        <p>
+                            {/* Unwilling to sit idle, I love being occupied with challenges. Always craving crazy ideas and eager to execute them, regardless of the cost. Consistently side with logic, ensuring that reason guides my actions and decisions. However, also balance this with intuition, allowing it to play a crucial role in the overall decision-making process without solely depending on logic */}
+
+                            Driven by an aversion to idleness, I thrive on engaging with challenges and am perpetually drawn to innovative, even unconventional ideas, ready to bring them to fruition at any expense. My approach to problem-solving is firmly rooted in logic, ensuring that reason is the primary guide for my actions and decisions. Yet, I consciously integrate intuition into my decision-making process, allowing it to significantly influence outcomes without being entirely reliant on logic.
+                        </p>
+
                         <h6>Profession</h6>
                         <p>
-                            IT consultant | Software Developer
+                            IT Consultant | Software Developer | Aspiring Entrepreneur
                         </p>
+
                         <hr />
                         <h5>Skills</h5>
                         <div>
