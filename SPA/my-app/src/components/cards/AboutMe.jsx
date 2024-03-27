@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import "./AboutMe.css";
 import { FaInfinity, FaPhone, FaHandsHelping, FaGithub, FaStackOverflow, FaQuora, FaHome, FaCopy, FaUserCircle, FaMailchimp, FaLinkedin, FaInstagram, FaYoutube, FaDev } from 'react-icons/fa';
 import Raj from '../../assets/image/raj.jpeg';
-import myProfilePic from '../../assets/image/raj';
+import myProfilePic from '../../assets/image/raj_profile.png';
 
 
 AboutMe.propTypes = {

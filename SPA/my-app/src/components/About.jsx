@@ -11,7 +11,7 @@ import { BiSolidSchool } from 'react-icons/bi'
 import { IoMdSchool } from 'react-icons/io'
 import { PiShieldStarThin } from 'react-icons/pi'
 import { FaInfinity, FaPhone, FaHandsHelping, FaGithub, FaStackOverflow, FaQuora, FaHome, FaCopy, FaUserCircle, FaMailchimp, FaLinkedin, FaInstagram, FaYoutube, FaDev } from 'react-icons/fa';
-import myProfilePic from '../assets/image/raj';
+import myProfilePic from '../assets/image/raj_profile.png';
 
 import Loader2 from '../assets/image/loader2.gif';
 import AboutMe from './cards/AboutMe';

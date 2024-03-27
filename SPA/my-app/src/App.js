@@ -70,6 +70,8 @@ function App() {
   const [playing, toggle] = useAudio(AudioMp3);
   useEffect(() => {
     $("#loader-wrapper").fadeOut();
+
+
   }, []);
 
 
