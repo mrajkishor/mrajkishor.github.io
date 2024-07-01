@@ -1,0 +1,22 @@
+.Error-Wrapper {
+ position: relative;
+}
+
+.Error-Wrapper > div {
+    position: absolute;
+    background: yellow;
+    top: 1vw;
+    right: 1vw;
+    /* bottom: 1vw; */
+    padding: 1vw;
+    left: 1vw;
+    margin: auto;
+}
+
+.Error-Wrapper > div > div {
+    background: rgba(255, 0, 0, 0.205);
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 2vw;
+    font-weight: 300;
+}

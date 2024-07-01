@@ -1,0 +1,386 @@
+2024-06-15T20:08:52.427Z - Running npm build...
+2024-06-15T20:08:53.207Z - stdout: 
+> my-app@0.1.0 build
+> react-scripts build
+
+
+2024-06-15T20:08:54.798Z - stdout: Creating an optimized production build...
+
+2024-06-15T20:08:54.932Z - stderr: Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+2024-06-15T20:09:18.680Z - stderr: Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+2024-06-15T20:09:21.477Z - stdout: Compiled with warnings.
+
+
+2024-06-15T20:09:21.482Z - stdout: [eslint] 
+src\App.js
+  Line 1:8:    'logo' is defined but never used              no-unused-vars
+  Line 4:8:    'Footer' is defined but never used            no-unused-vars
+  Line 13:3:   'Link' is defined but never used              no-unused-vars
+  Line 70:10:  'playing' is assigned a value but never used  no-unused-vars
+  Line 70:19:  'toggle' is assigned a value but never used   no-unused-vars
+
+src\components\About.jsx
+  Line 1:17:    'useState' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 1:27:    'useEffect' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 4:8:     'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 5:10:    'SkillBars' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 6:8:     'AudioMp3' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 13:10:   'FaInfinity' is defined but never used                                                                                                                                                 no-unused-vars
+  Line 13:31:   'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 13:57:   'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 13:83:   'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 13:91:   'FaCopy' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 13:99:   'FaUserCircle' is defined but never used                                                                                                                                               no-unused-vars
+  Line 13:138:  'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 13:162:  'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 16:8:    'Loader2' is defined but never used                                                                                                                                                    no-unused-vars
+  Line 20:10:   'useAudio' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 22:7:    'skillsData' is assigned a value but never used                                                                                                                                        no-unused-vars
+  Line 87:33:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                              jsx-a11y/alt-text
+  Line 206:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 209:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 212:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 215:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\Blog.jsx
+  Line 2:8:   'PropTypes' is defined but never used                                                                     no-unused-vars
+  Line 7:10:  'FaArrowLeft' is defined but never used                                                                   no-unused-vars
+  Line 10:8:  'Highlight' is defined but never used                                                                     no-unused-vars
+  Line 36:6:  React Hook useEffect has a missing dependency: 'props'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\Contact.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Content.jsx
+  Line 1:1:     'use strict' is unnecessary inside of modules                                                                                                                                                                                                                               strict
+  Line 3:8:     'PropTypes' is defined but never used                                                                                                                                                                                                                                       no-unused-vars
+  Line 10:10:   'useNavigate' is defined but never used                                                                                                                                                                                                                                     no-unused-vars
+  Line 11:8:    'CodeBox' is defined but never used                                                                                                                                                                                                                                         no-unused-vars
+  Line 14:8:    'ReactMarkdown' is defined but never used                                                                                                                                                                                                                                   no-unused-vars
+  Line 15:8:    'rehypeHighlight' is defined but never used                                                                                                                                                                                                                                 no-unused-vars
+  Line 37:8:    React Hook useEffect has missing dependencies: 'props.blog' and 'props.vp'. Either include them or remove the dependency array. If 'setVp' needs the current value of 'props.vp', you can also switch to useReducer instead of useState and read 'props.vp' in the reducer  react-hooks/exhaustive-deps
+  Line 168:11:  'thumbnail' is assigned a value but never used                                                                                                                                                                                                                              no-unused-vars
+
+src\components\ErrorBoundary.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+  Line 1:28:  'Fragment' is defined but never used   no-unused-vars
+  Line 2:8:   'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Header.jsx
+  Line 3:41:    'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 3:66:    'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 3:83:    'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 3:132:   'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 3:156:   'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 5:22:    'Router' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 7:5:     'Route' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 11:8:    'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 150:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 157:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 163:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 168:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\Item.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Projects.jsx
+  Line 2:8:     'PropTypes' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 10:8:    'aiCom' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 11:8:    'appGen' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 20:8:    'Tab' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 21:8:    'Tabs' is defined but never used                                                                                                                                                       no-unused-vars
+  Line 36:37:   Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 144:10:  'ProjectsMobile' is defined but never used                                                                                                                                             no-unused-vars
+
+src\components\buttons\BackBtn.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\cards\AboutMe.jsx
+  Line 2:8:    'PropTypes' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 4:10:   'FaInfinity' is defined but never used                                                                                                                                                 no-unused-vars
+  Line 4:22:   'FaPhone' is defined but never used                                                                                                                                                    no-unused-vars
+  Line 4:31:   'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 4:57:   'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 4:83:   'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 4:91:   'FaCopy' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 4:99:   'FaUserCircle' is defined but never used                                                                                                                                               no-unused-vars
+  Line 4:113:  'FaMailchimp' is defined but never used                                                                                                                                                no-unused-vars
+  Line 4:138:  'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 4:162:  'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 5:8:    'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 37:21:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                              jsx-a11y/alt-text
+  Line 46:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 62:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 79:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 84:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\cards\CodeBox.jsx
+  Line 3:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\mui\Card.jsx
+  Line 12:8:  'TableHead' is defined but never used  no-unused-vars
+  Line 14:8:  'Paper' is defined but never used      no-unused-vars
+
+src\hooks\useAudio.js
+  Line 2:8:   'React' is defined but never used                                                                         no-unused-vars
+  Line 29:9:  React Hook useEffect has a missing dependency: 'audio'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Line 37:8:  React Hook useEffect has a missing dependency: 'audio'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\index.js
+  Line 8:10:  'StrictMode' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+
+2024-06-15T20:09:21.648Z - stdout:   570.25 kB (+99 B)  build\static\js\main.392ce398.js
+
+2024-06-15T20:09:21.650Z - stdout:   35.26 kB           build\static\css\main.5011478a.css
+  1.78 kB            build\static\js\787.28cb0dcd.chunk.js
+
+The bundle size is significantly larger than recommended.
+Consider reducing it with code splitting: https://goo.gl/9VhYWB
+You can also analyze the project dependencies: https://goo.gl/LeUzfb
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+
+2024-06-15T20:09:21.651Z - stdout: The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+
+2024-06-15T20:09:22.065Z - stderr: Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+2024-06-15T20:09:22.069Z - stdout: 
+> my-app@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 1:8:    'logo' is defined but never used              no-unused-vars
+  Line 4:8:    'Footer' is defined but never used            no-unused-vars
+  Line 13:3:   'Link' is defined but never used              no-unused-vars
+  Line 70:10:  'playing' is assigned a value but never used  no-unused-vars
+  Line 70:19:  'toggle' is assigned a value but never used   no-unused-vars
+
+src\components\About.jsx
+  Line 1:17:    'useState' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 1:27:    'useEffect' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 4:8:     'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 5:10:    'SkillBars' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 6:8:     'AudioMp3' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 13:10:   'FaInfinity' is defined but never used                                                                                                                                                 no-unused-vars
+  Line 13:31:   'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 13:57:   'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 13:83:   'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 13:91:   'FaCopy' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 13:99:   'FaUserCircle' is defined but never used                                                                                                                                               no-unused-vars
+  Line 13:138:  'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 13:162:  'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 16:8:    'Loader2' is defined but never used                                                                                                                                                    no-unused-vars
+  Line 20:10:   'useAudio' is defined but never used                                                                                                                                                   no-unused-vars
+  Line 22:7:    'skillsData' is assigned a value but never used                                                                                                                                        no-unused-vars
+  Line 87:33:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                              jsx-a11y/alt-text
+  Line 206:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 209:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 212:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 215:37:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\Blog.jsx
+  Line 2:8:   'PropTypes' is defined but never used                                                                     no-unused-vars
+  Line 7:10:  'FaArrowLeft' is defined but never used                                                                   no-unused-vars
+  Line 10:8:  'Highlight' is defined but never used                                                                     no-unused-vars
+  Line 36:6:  React Hook useEffect has a missing dependency: 'props'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\components\Contact.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Content.jsx
+  Line 1:1:     'use strict' is unnecessary inside of modules                                                                                                                                                                                                                               strict
+  Line 3:8:     'PropTypes' is defined but never used                                                                                                                                                                                                                                       no-unused-vars
+  Line 10:10:   'useNavigate' is defined but never used                                                                                                                                                                                                                                     no-unused-vars
+  Line 11:8:    'CodeBox' is defined but never used                                                                                                                                                                                                                                         no-unused-vars
+  Line 14:8:    'ReactMarkdown' is defined but never used                                                                                                                                                                                                                                   no-unused-vars
+  Line 15:8:    'rehypeHighlight' is defined but never used                                                                                                                                                                                                                                 no-unused-vars
+  Line 37:8:    React Hook useEffect has missing dependencies: 'props.blog' and 'props.vp'. Either include them or remove the dependency array. If 'setVp' needs the current value of 'props.vp', you can also switch to useReducer instead of useState and read 'props.vp' in the reducer  react-hooks/exhaustive-deps
+  Line 168:11:  'thumbnail' is assigned a value but never used                                                                                                                                                                                                                              no-unused-vars
+
+src\components\ErrorBoundary.jsx
+  Line 1:17:  'Component' is defined but never used  no-unused-vars
+  Line 1:28:  'Fragment' is defined but never used   no-unused-vars
+  Line 2:8:   'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Header.jsx
+  Line 3:41:    'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 3:66:    'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 3:83:    'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 3:132:   'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 3:156:   'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 5:22:    'Router' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 7:5:     'Route' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 11:8:    'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 150:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 157:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 163:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 168:33:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\Item.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\Projects.jsx
+  Line 2:8:     'PropTypes' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 10:8:    'aiCom' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 11:8:    'appGen' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 20:8:    'Tab' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 21:8:    'Tabs' is defined but never used                                                                                                                                                       no-unused-vars
+  Line 36:37:   Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 144:10:  'ProjectsMobile' is defined but never used                                                                                                                                             no-unused-vars
+
+src\components\buttons\BackBtn.jsx
+  Line 2:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\cards\AboutMe.jsx
+  Line 2:8:    'PropTypes' is defined but never used                                                                                                                                                  no-unused-vars
+  Line 4:10:   'FaInfinity' is defined but never used                                                                                                                                                 no-unused-vars
+  Line 4:22:   'FaPhone' is defined but never used                                                                                                                                                    no-unused-vars
+  Line 4:31:   'FaHandsHelping' is defined but never used                                                                                                                                             no-unused-vars
+  Line 4:57:   'FaStackOverflow' is defined but never used                                                                                                                                            no-unused-vars
+  Line 4:83:   'FaHome' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 4:91:   'FaCopy' is defined but never used                                                                                                                                                     no-unused-vars
+  Line 4:99:   'FaUserCircle' is defined but never used                                                                                                                                               no-unused-vars
+  Line 4:113:  'FaMailchimp' is defined but never used                                                                                                                                                no-unused-vars
+  Line 4:138:  'FaInstagram' is defined but never used                                                                                                                                                no-unused-vars
+  Line 4:162:  'FaDev' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 5:8:    'Raj' is defined but never used                                                                                                                                                        no-unused-vars
+  Line 37:21:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                              jsx-a11y/alt-text
+  Line 46:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 62:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 79:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+  Line 84:25:  Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+src\components\cards\CodeBox.jsx
+  Line 3:8:  'PropTypes' is defined but never used  no-unused-vars
+
+src\components\mui\Card.jsx
+  Line 12:8:  'TableHead' is defined but never used  no-unused-vars
+  Line 14:8:  'Paper' is defined but never used      no-unused-vars
+
+src\hooks\useAudio.js
+  Line 2:8:   'React' is defined but never used                                                                         no-unused-vars
+  Line 29:9:  React Hook useEffect has a missing dependency: 'audio'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Line 37:8:  React Hook useEffect has a missing dependency: 'audio'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\index.js
+  Line 8:10:  'StrictMode' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  570.25 kB (+99 B)  build\static\js\main.392ce398.js
+  35.26 kB           build\static\css\main.5011478a.css
+  1.78 kB            build\static\js\787.28cb0dcd.chunk.js
+
+The bundle size is significantly larger than recommended.
+Consider reducing it with code splitting: https://goo.gl/9VhYWB
+You can also analyze the project dependencies: https://goo.gl/LeUzfb
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+
+2024-06-15T20:09:22.070Z - npm build completed successfully.
+2024-06-15T20:09:22.070Z - Copying build files...
+2024-06-15T20:09:22.152Z - Build files copied successfully.
+2024-06-15T20:09:22.153Z - Modifying index.html...
+2024-06-15T20:09:22.200Z - index.html modified successfully.
+2024-06-15T20:09:46.034Z - Running git add...
+2024-06-15T20:09:46.071Z - stderr: warning: in the working copy of 'asset-manifest.json', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.079Z - stderr: warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.088Z - stderr: warning: in the working copy of 'static/css/main.5011478a.css', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.094Z - stderr: warning: in the working copy of 'static/js/787.28cb0dcd.chunk.js', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.176Z - stderr: warning: in the working copy of 'commitLogs/automation_1718482132422.log', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.182Z - stderr: warning: in the working copy of 'static/js/main.392ce398.js', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.221Z - stderr: warning: in the working copy of 'static/js/main.392ce398.js.LICENSE.txt', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.482Z - stderr: warning: in the working copy of 'asset-manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'static/css/main.5011478a.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'static/js/787.28cb0dcd.chunk.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'commitLogs/automation_1718482132422.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'static/js/main.392ce398.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'static/js/main.392ce398.js.LICENSE.txt', LF will be replaced by CRLF the next time Git touches it
+
+2024-06-15T20:09:46.483Z - stdout: 
+2024-06-15T20:09:46.483Z - Running git commit...
+2024-06-15T20:09:46.653Z - stdout: [main 55969ae] Added blog on concurrentHashMap
+ 10 files changed, 511 insertions(+), 360 deletions(-)
+ create mode 100644 SPA/my-app/public/markdown/18.md
+ delete mode 100644 commitLogs/automation_1718469590870.log
+ rename commitLogs/{automation_1718470810774.log => automation_1718482132422.log} (96%)
+ create mode 100644 markdown/18.md
+ create mode 100644 static/js/main.392ce398.js
+ create mode 100644 static/js/main.392ce398.js.LICENSE.txt
+ create mode 100644 static/js/main.392ce398.js.map
+
+2024-06-15T20:09:46.661Z - stdout: [main 55969ae] Added blog on concurrentHashMap
+ 10 files changed, 511 insertions(+), 360 deletions(-)
+ create mode 100644 SPA/my-app/public/markdown/18.md
+ delete mode 100644 commitLogs/automation_1718469590870.log
+ rename commitLogs/{automation_1718470810774.log => automation_1718482132422.log} (96%)
+ create mode 100644 markdown/18.md
+ create mode 100644 static/js/main.392ce398.js
+ create mode 100644 static/js/main.392ce398.js.LICENSE.txt
+ create mode 100644 static/js/main.392ce398.js.map
+
+2024-06-15T20:09:46.661Z - Running git push...
+2024-06-15T20:09:58.924Z - stderr: To https://github.com/mrajkishor/mrajkishor.github.io.git
+   051fea6..55969ae  main -> main
+
+2024-06-15T20:09:58.928Z - stderr: To https://github.com/mrajkishor/mrajkishor.github.io.git
+   051fea6..55969ae  main -> main
+
+2024-06-15T20:09:58.929Z - stdout: 
+2024-06-15T20:09:58.929Z - Redirecting to GitHub Actions page...
+2024-06-15T20:09:59.006Z - stdout: 

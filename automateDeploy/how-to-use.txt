@@ -1,0 +1,6 @@
+Change the js file as per the root file dir. 
+
+Command : just run the automateDeploy.js
+
+Thats it 
+
