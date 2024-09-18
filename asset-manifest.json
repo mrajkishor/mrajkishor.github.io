@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mrajkishor.github.io/static/css/main.812ab200.css",
-    "main.js": "/mrajkishor.github.io/static/js/main.6278f2a3.js",
-    "static/js/453.422fe807.chunk.js": "/mrajkishor.github.io/static/js/453.422fe807.chunk.js",
-    "static/media/profile_pic.png": "/mrajkishor.github.io/static/media/profile_pic.00a4f2a11938a8aefc88.png",
-    "index.html": "/mrajkishor.github.io/index.html",
-    "main.812ab200.css.map": "/mrajkishor.github.io/static/css/main.812ab200.css.map",
-    "main.6278f2a3.js.map": "/mrajkishor.github.io/static/js/main.6278f2a3.js.map",
-    "453.422fe807.chunk.js.map": "/mrajkishor.github.io/static/js/453.422fe807.chunk.js.map"
+    "main.css": "/static/css/main.812ab200.css",
+    "main.js": "/static/js/main.bdb058bb.js",
+    "static/js/453.422fe807.chunk.js": "/static/js/453.422fe807.chunk.js",
+    "static/media/profile_pic.png": "/static/media/profile_pic.00a4f2a11938a8aefc88.png",
+    "index.html": "/index.html",
+    "main.812ab200.css.map": "/static/css/main.812ab200.css.map",
+    "main.bdb058bb.js.map": "/static/js/main.bdb058bb.js.map",
+    "453.422fe807.chunk.js.map": "/static/js/453.422fe807.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.812ab200.css",
-    "static/js/main.6278f2a3.js"
+    "static/js/main.bdb058bb.js"
   ]
 }
