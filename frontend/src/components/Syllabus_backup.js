@@ -7,7 +7,6 @@ const Syllabus = () => {
 
     const categories = parseMapper(mapper.Contents);
 
-
     return (
         <div style={{ fontFamily: "'Poppins', sans-serif" }}>
             <StackGrid

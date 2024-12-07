@@ -65,15 +65,158 @@ export default function Profile() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 marginTop: 6,
+
             }}
         >
-            <Grid container direction={isSmallScreen ? 'column' : 'row'} spacing={2} columns={12}>
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    top: '-400px',
+                    right: '0',
+                    width: '100vw',
+                    height: '500px',
+                    background: '#3498db', // Solid blue
+                    clipPath: 'polygon(0 30%, 100% 0, 100% 70%, 0 100%)',
+                    opacity: 0.7,
+                    animation: 'waveMovement 6s infinite ease-in-out', // Wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 2,
+                    top: '-350px',
+                    right: '0',
+                    width: '100vw',
+                    height: '450px',
+                    background: '#6c5ce7', // Solid purple
+                    clipPath: 'polygon(0 40%, 100% 10%, 100% 60%, 0 90%)',
+                    opacity: 0.5,
+                    animation: 'waveMovement 6s infinite ease-in-out 0.5s', // Delayed wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 3,
+                    top: '-300px',
+                    right: '0',
+                    width: '100vw',
+                    height: '400px',
+                    background: '#00cec9', // Solid teal
+                    clipPath: 'polygon(0 50%, 100% 20%, 100% 50%, 0 80%)',
+                    opacity: 0.3,
+                    animation: 'waveMovement 6s infinite ease-in-out 1s', // Further delayed wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    bottom: '0',
+                    right: '0',
+                    width: '100vw',
+                    height: '500px',
+                    background: '#3498db', // Solid blue
+                    clipPath: 'polygon(0 70%, 100% 100%, 100% 30%, 0 0)',
+                    opacity: 0.7,
+                    animation: 'waveMovement 8s infinite ease-in-out', // Wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 2,
+                    bottom: '50px',
+                    right: '0',
+                    width: '100vw',
+                    height: '450px',
+                    background: '#6c5ce7', // Solid purple
+                    clipPath: 'polygon(0 80%, 100% 90%, 100% 40%, 0 10%)',
+                    opacity: 0.5,
+                    animation: 'waveMovement 8s infinite ease-in-out 0.5s', // Delayed wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 3,
+                    bottom: '100px',
+                    right: '0',
+                    width: '100vw',
+                    height: '400px',
+                    background: '#00cec9', // Solid teal
+                    clipPath: 'polygon(0 90%, 100% 80%, 100% 50%, 0 20%)',
+                    opacity: 0.3,
+                    animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    top: '-500px',
+                    right: '-300px',
+                    width: '800px',
+                    height: '800px',
+                    borderRadius: '50%',
+                    background: 'transparent', // Transparent center
+                    border: '10px solid rgba(52, 152, 219, 0.5)', // Solid blue border
+                    boxShadow: '0 0 50px 25px rgba(52, 152, 219, 0.8)', // Glow effect
+                    animation: 'spin 10s linear infinite', // Spin animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 2,
+                    top: '-300px',
+                    right: '50px',
+                    width: '400px',
+                    height: '400px',
+                    borderRadius: '50%',
+                    background: 'transparent',
+                    border: '8px dashed rgba(108, 92, 231, 0.5)', // Solid purple border
+                    animation: 'spinReverse 8s linear infinite', // Reverse spin animation
+                }}
+            />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    zIndex: 3,
+                    top: '-200px',
+                    right: '-150px',
+                    width: '200px',
+                    height: '200px',
+                    borderRadius: '50%',
+                    background: 'transparent',
+                    border: '5px solid rgba(0, 206, 201, 0.5)', // Solid teal border
+                    boxShadow: '0 0 20px 10px rgba(0, 206, 201, 0.8)', // Glow effect
+                    animation: 'pulse 4s infinite', // Pulse animation
+                }}
+            />
+
+
+
+            <Grid style={{ zIndex: 100 }} container direction={isSmallScreen ? 'column' : 'row'} spacing={2} columns={12}>
                 {/* Left Grid for Profile */}
                 <Grid item xs={4} sx={{
                     position: isSmallScreen ? 'relative' : 'sticky',
-                    top: isSmallScreen ? 'auto' : '70px',
+                    top: isSmallScreen ? 'auto' : '65px',
                     height: isSmallScreen ? 'auto' : 'fit-content',
-                }}>
+
+                }}
+
+                >
                     <Item>
                         <Box sx={{
                             display: 'flex',
