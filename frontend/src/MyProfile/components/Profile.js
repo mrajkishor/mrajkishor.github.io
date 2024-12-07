@@ -1,0 +1,272 @@
+import React, { useEffect, useState, useRef } from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid2';
+import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+import LinearProgress from '@mui/material/LinearProgress';
+import CodeIcon from '@mui/icons-material/Code';
+import CloudIcon from '@mui/icons-material/Cloud';
+import StorageIcon from '@mui/icons-material/Storage';
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import ProfilePic from '../assets/profile_pic.jpg';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+
+
+// Styled component for the Paper element
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Glass effect background with white
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(10px)', // Blurred background effect
+    border: '1px solid #fbc02d', // Yellow border to complement the theme
+    borderRadius: '16px',
+    padding: theme.spacing(2),
+    color: theme.palette.text.primary,
+}));
+
+export default function Profile() {
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1400);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 1400);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
+
+    return (
+        <Box
+            className="profile"
+
+            sx={{
+                flexGrow: 1,
+                minHeight: '100vh', // Full height background
+                background: '#ffffff', // White background for the entire page
+                padding: 2, // Padding around the content
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: 6,
+            }}
+        >
+            <Grid container direction={isSmallScreen ? 'column' : 'row'} spacing={2} columns={12}>
+                {/* Left Grid for Profile */}
+                <Grid item xs={4} sx={{
+                    position: isSmallScreen ? 'relative' : 'sticky',
+                    top: isSmallScreen ? 'auto' : '70px',
+                    height: isSmallScreen ? 'auto' : 'fit-content',
+                }}>
+                    <Item>
+                        <Box sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            minHeight: '100', // Center the card in the viewport
+                            // background: 'linear-gradient(135deg, #ffeb3b, #ffffff)', // Yellow to white gradient
+                            padding: '1px',
+                        }}>
+                            <Card sx={{
+                                borderRadius: 0,
+                                // border: "none",
+                                // width: 1,
+                                // textAlign: 'center',
+                                // padding: 2,
+                                // background: '#fff ', // White background for card
+                                // // boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                                // backdropFilter: 'blur(10px)', // Blurred background effect
+                                // // border: '2px solid #fbc02d', // Yellow border
+
+                                border: "none",
+                                width: 1,
+                                textAlign: 'center',
+                                boxShadow: 'none',
+                                padding: 2,
+                                background: '#fff', // White background for the card
+                                backdropFilter: 'blur(10px)', // Blurred background effect
+                                // Neon glow effect on border and shadow
+                                // boxShadow: '0 0 10px 2px rgba(255, 255, 255, 0.8), 0 0 20px 4px #ff00ff, 0 0 30px 6px #ff00ff', // Neon glow effect (pink glow)
+                            }}>
+                                <CardMedia
+                                    component="img"
+                                    image={ProfilePic}
+                                    title="Profile Pic of Raj"
+                                    sx={{
+                                        height: 140,
+                                        width: 140,
+                                        borderRadius: '50%',
+                                        display: 'block',
+                                        margin: '20px auto',
+                                        border: '4px solid white', // Border for the image
+                                    }}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Rajkishor Maharana
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 2 }}>
+                                        Hyderabad, India
+                                    </Typography>
+
+                                    <Divider sx={{ marginY: 2 }} />
+
+                                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 1 }}>
+                                        <EmailIcon sx={{ marginRight: 1, color: 'text.secondary' }} />
+                                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                            mrajkishor331@gmail.com
+                                        </Typography>
+                                    </Box>
+
+                                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 1 }}>
+                                        <PhoneIcon sx={{ marginRight: 1, color: 'text.secondary' }} />
+                                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                            +91-7683922389
+                                        </Typography>
+                                    </Box>
+                                </CardContent>
+
+                                <CardActions sx={{ justifyContent: 'center' }}>
+                                    <Button size="small" startIcon={<LinkedInIcon />} href="https://www.linkedin.com/in/mrajkishor331/" sx={{ color: '#0e76a8' }}>
+                                        LinkedIn
+                                    </Button>
+                                    <Button size="small" startIcon={<GitHubIcon />} href="https://github.com/mrajkishor" sx={{ color: '#333' }}>
+                                        GitHub
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                        </Box>
+                    </Item>
+                </Grid>
+
+                {/* Right Grid for Developer Info */}
+                <Grid item xs={8}>
+                    <Item sx={{ textAlign: 'left', padding: '20px' }}>
+                        <Typography variant="h6" gutterBottom>
+                            Full-Stack Developer
+                        </Typography>
+
+                        <Divider sx={{ marginBottom: 2 }} />
+
+                        <Typography variant="h6" gutterBottom>
+                            Skills
+                        </Typography>
+                        <List>
+                            {/* Frontend Skills */}
+                            <ListItem>
+                                <ListItemIcon>
+                                    <CodeIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Frontend: React, Redux, HTML5, CSS3" />
+                                <Box sx={{ width: '50%', marginLeft: 2 }}>
+                                    <LinearProgress variant="determinate" value={85} />
+                                </Box>
+                            </ListItem>
+
+                            {/* Backend Skills */}
+                            <ListItem>
+                                <ListItemIcon>
+                                    <CodeIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Backend: Spring, Node.js, Express.js, RESTful APIs" />
+                                <Box sx={{ width: '50%', marginLeft: 2 }}>
+                                    <LinearProgress variant="determinate" value={80} />
+                                </Box>
+                            </ListItem>
+
+                            {/* Cloud Skills */}
+                            <ListItem>
+                                <ListItemIcon>
+                                    <CloudIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Cloud: AWS (Lambda, EC2, S3, DynamoDB), Docker" />
+                                <Box sx={{ width: '50%', marginLeft: 2 }}>
+                                    <LinearProgress variant="determinate" value={75} />
+                                </Box>
+                            </ListItem>
+
+                            {/* Database Skills */}
+                            <ListItem>
+                                <ListItemIcon>
+                                    <StorageIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Database: MongoDB, PostgreSQL, MySQL" />
+                                <Box sx={{ width: '50%', marginLeft: 2 }}>
+                                    <LinearProgress variant="determinate" value={70} />
+                                </Box>
+                            </ListItem>
+
+                            {/* DevOps Skills */}
+                            <ListItem>
+                                <ListItemIcon>
+                                    <BuildCircleIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="DevOps: Jenkins, CI/CD, Kubernetes" />
+                                <Box sx={{ width: '50%', marginLeft: 2 }}>
+                                    <LinearProgress variant="determinate" value={65} />
+                                </Box>
+                            </ListItem>
+                        </List>
+
+                        <Divider sx={{ marginBottom: 2, marginTop: 2 }} />
+
+                        <Typography variant="h6" gutterBottom>
+                            Experience
+                        </Typography>
+                        <Typography variant="body1">
+                            6+ years of experience in building scalable web and mobile applications, contributing to full-stack projects, and working with cloud-native solutions.
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText
+                                    primary="Associate Software Engineer - Cognizant, IN"
+                                    secondary="July 2022 - Present"
+                                />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText
+                                    primary="Senior Full-Stack Developer - Capgemini, IN"
+                                    secondary="June 2018 - July 2022"
+                                />
+                            </ListItem>
+                        </List>
+                        <Typography variant="h6" gutterBottom>
+                            Education
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText
+                                    primary="Master of Computer Applications (MCA), Kalinga Institute of Industrial Technology, BBSR, IN"
+                                    secondary="2023 - 2025"
+                                />
+                            </ListItem>
+                            <ListItem>
+                                <ListItemText
+                                    primary="Bachelor of Technology (BTech), Government College of Engineering, Kalahandi, IN"
+                                    secondary="2012 - 2016"
+                                />
+                            </ListItem>
+                        </List>
+
+                    </Item>
+                </Grid>
+            </Grid>
+        </Box>
+    );
+}
