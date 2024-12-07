@@ -8,16 +8,90 @@ const mapper = {
                 "Basics of Web Development": {
                     "___urlPath___": "basics-of-web-development",
                     "Introduction to Web Technology": {
-                        "History of the Web": true,
-                        "How the Web Works (HTTP, DNS, URL)": true,
-                        "Web Browsers and Servers": true
+                        "___urlPath___": "introduction-to-web-technology",
+                        "History of the Web": {
+                            "___urlPath___": "history-of-the-web",
+                            "___md___": 62
+                        },
+                        "How the Web Works (HTTP, DNS, URL)": {
+                            "___urlPath___": "how-the-web-works",
+                            "___md___": 63
+                        },
+                        "Web Browsers and Servers": {
+                            "___urlPath___": "web-browsers-and-servers",
+                            "___md___": 64
+                        }
                     },
                     "HTML (HyperText Markup Language)": {
-                        "HTML Syntax and Structure": true,
-                        "HTML5 Tags and Elements": true,
-                        "Forms and Input Types": true,
-                        "Media Elements (Audio, Video, Images)": true,
-                        "Semantic HTML": true
+                        "___urlPath___": "html",
+                        "HTML Syntax and Structure": {
+                            "___urlPath___": "html-syntax-and-structure",
+                            "Basic HTML Document Structure": {
+                                "___urlPath___": "basic-html-document-structure",
+                                "Doctype Declaration": {
+                                    "___urlPath___": "doctype-declaration",
+                                    "___md___": 65
+                                },
+                                "HTML, Head, and Body": {
+                                    "___urlPath___": "html-head-and-body",
+                                    "___md___": 66
+                                }
+                            },
+                            "Elements and Attributes": {
+                                "Element Syntax": {
+                                    "___urlPath___": "element-syntax",
+                                    "___md___": 67
+                                },
+                                "Global Attributes": {
+                                    "___urlPath___": "global-attributes",
+                                    "___md___": 68
+                                }
+                            },
+                            "Nesting Rules": {
+                                "Proper Nesting": {
+                                    "___urlPath___": "proper-nesting",
+                                    "___md___": 69
+                                },
+                                "Common Mistakes": {
+                                    "___urlPath___": "common-mistakes",
+                                    "___md___": 70
+                                }
+                            }
+                        },
+                        "HTML5 Tags and Elements": {
+                            "___urlPath___": "html5-tags-and-elements",
+                            "Headings and Text Content": {
+                                "___urlPath___": "headings-and-text-content",
+                                "Headings": {
+                                    "___urlPath___": "headings",
+                                    "___md___": 71
+                                },
+                                "Paragraphs": true,
+                                "Line Breaks and Thematic Breaks": true
+                            },
+                            "Lists": {
+                                "Ordered Lists": true,
+                                "Unordered Lists": true,
+                                "Description Lists": true
+                            }
+                        },
+                        "Forms and Input Types": {
+                            "Basic Form Structure": true,
+                            "Input Types": true,
+                            "Form Controls": true
+                        },
+                        "Media Elements": {
+                            "Images": true,
+                            "Audio": true,
+                            "Video": true
+                        },
+                        "Semantic HTML": {
+                            "Sections and Articles": true,
+                            "Navigation": true,
+                            "Main Content": true,
+                            "Accessibility": true
+                        }
+
                     },
                     "CSS (Cascading Style Sheets)": {
                         "CSS Basics and Selectors": true,
