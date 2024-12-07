@@ -72,7 +72,8 @@ const formatBreadcrumbName = (segment) => {
         .replace(/%20/g, " ") // Replace URL-encoded spaces
         .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize the first letter of each word
 };
-const MarkdownPage = () => {
+const MarkdownPage = ({ wrapperRef }) => {
+    const [showGoToTop, setShowGoToTop] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
     const [markdown, setMarkdown] = useState("");
@@ -85,6 +86,38 @@ const MarkdownPage = () => {
     const paths = useMemo(() => location.pathname.split("/").filter((segment, index) => index > 1), [
         location.pathname,
     ]); // using useMemo to avoid re-rendering on location change. Since this will return true and infinite re-rendering will happen
+
+
+    // Handle scroll to toggle button visibility
+    useEffect(() => {
+        if (!wrapperRef?.current) return; // Return if the ref is not set
+
+        const handleScroll = () => {
+            const scrollTop = wrapperRef.current.scrollTop; // Use the parent's scrollTop
+            if (scrollTop > 300) { // Show the button when the user scrolls down 300px
+                setShowGoToTop(true);
+            } else { // Hide the button when the user scrolls to the top
+                setShowGoToTop(false);
+            }
+        };
+
+        const parent = wrapperRef.current; // Get the parent element
+        parent.addEventListener("scroll", handleScroll); // Add the scroll event listener
+
+        return () => {
+            parent.removeEventListener("scroll", handleScroll); // Remove the scroll event listener
+        };
+    }, [wrapperRef]); // Re-run the effect when the wrapperRef changes
+
+    // Scroll to top functionality
+    const scrollToTop = () => {
+        if (wrapperRef?.current) {
+            wrapperRef.current.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+    };
 
 
     useEffect(() => {
@@ -190,7 +223,29 @@ const MarkdownPage = () => {
                 </ul>
             </div>)}
 
-
+            {/* Go to Top Button */}
+            {showGoToTop && (
+                <button
+                    onClick={scrollToTop}
+                    style={{
+                        position: "fixed",
+                        bottom: "20px",
+                        right: "20px",
+                        padding: "10px 15px",
+                        fontSize: "16px",
+                        backgroundColor: "#007bff",
+                        color: "#fff",
+                        border: "none",
+                        borderRadius: "50%",
+                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                        cursor: "pointer",
+                        zIndex: 1000,
+                    }}
+                    aria-label="Go to top"
+                >
+                    ↑
+                </button>
+            )}
         </div>
 
     );

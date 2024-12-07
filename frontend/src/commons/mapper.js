@@ -66,11 +66,21 @@ const mapper = {
                                     "___urlPath___": "headings",
                                     "___md___": 71
                                 },
-                                "Paragraphs": true,
-                                "Line Breaks and Thematic Breaks": true
+                                "Paragraphs": {
+                                    "___urlPath___": "paragraphs",
+                                    "___md___": 72
+                                },
+                                "Line Breaks and Thematic Breaks": {
+                                    "___urlPath___": "line-breaks-and-thematic-breaks",
+                                    "___md___": 73
+                                }
                             },
                             "Lists": {
-                                "Ordered Lists": true,
+                                "___urlPath___": "lists",
+                                "Ordered Lists": {
+                                    "___urlPath___": "ordered-lists",
+                                    "___md___": 74
+                                },
                                 "Unordered Lists": true,
                                 "Description Lists": true
                             }
