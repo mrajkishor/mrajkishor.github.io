@@ -31,7 +31,7 @@ const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: 'rgba(255, 255, 255, 0.8)', // Glass effect background with white
     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
     backdropFilter: 'blur(10px)', // Blurred background effect
-    border: '1px solid #fbc02d', // Yellow border to complement the theme
+    // border: '1px solid #fbc02d', // Yellow border to complement the theme
     borderRadius: '16px',
     padding: theme.spacing(2),
     color: theme.palette.text.primary,
@@ -157,7 +157,7 @@ export default function Profile() {
                     animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
                 }}
             />
-
+            {/* 
             <div
                 style={{
                     position: 'absolute',
@@ -203,7 +203,7 @@ export default function Profile() {
                     boxShadow: '0 0 20px 10px rgba(0, 206, 201, 0.8)', // Glow effect
                     animation: 'pulse 4s infinite', // Pulse animation
                 }}
-            />
+            /> */}
 
 
 
