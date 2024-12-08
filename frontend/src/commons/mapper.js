@@ -2425,27 +2425,126 @@ const mapper = {
                     }
                 },
                 "Time Management and Productivity": {
+                    "___urlPath___": "time-management",
                     "Time Management Techniques": {
-                        "Eisenhower Matrix for Prioritization": true,
-                        "Pomodoro Technique for Focused Work": true,
-                        "Time Blocking for Scheduling Tasks": true
+                        "___urlPath___": "time-management-techniques",
+                        "Eisenhower Matrix for Prioritization": {
+                            "___urlPath___": "eisenhower-matrix",
+                            "___md___": 93
+                        },
+                        "Pomodoro Technique for Focused Work": {
+                            "___urlPath___": "pomodoro-technique",
+                            "___md___": 94
+                        },
+                        "Time Blocking for Scheduling Tasks": {
+                            "___urlPath___": "time-blocking",
+                            "___md___": 95
+                        }
                     },
                     "Productivity Best Practices": {
-                        "Avoiding Multitasking": true,
-                        "Minimizing Distractions (Digital and Physical)": true,
-                        "Creating a Productive Workspace": true
+                        "___urlPath___": "productivity-best-practices",
+                        "Avoiding Multitasking": {
+                            "___urlPath___": "avoiding-multitasking",
+                            "___md___": 96
+                        },
+                        "Minimizing Distractions (Digital and Physical)": {
+                            "___urlPath___": "minimizing-distractions",
+                            "___md___": 97
+                        },
+                        "Creating a Productive Workspace": {
+                            "___urlPath___": "productive-workspace",
+                            "___md___": 98
+                        }
                     },
                     "Goal Setting and Tracking": {
-                        "SMART Goals (Specific, Measurable, Achievable, Relevant, Time-Bound)": true,
-                        "Using Tools for Goal Tracking (Trello, Asana)": true,
-                        "Reviewing Progress Regularly": true
+                        "___urlPath___": "goal-setting-tracking",
+                        "SMART Goals (Specific, Measurable, Achievable, Relevant, Time-Bound)": {
+                            "___urlPath___": "smart-goals",
+                            "___md___": 99
+                        },
+                        "Using Tools for Goal Tracking (Trello, Asana)": {
+                            "___urlPath___": "goal-tracking-tools",
+                            "___md___": 100
+                        },
+                        "Reviewing Progress Regularly": {
+                            "___urlPath___": "reviewing-progress",
+                            "___md___": 101
+                        }
                     },
                     "Stress Management": {
-                        "Recognizing Signs of Burnout": true,
-                        "Practicing Mindfulness and Meditation": true,
-                        "Balancing Work and Personal Life": true
+                        "___urlPath___": "stress-management",
+                        "Recognizing Signs of Burnout": {
+                            "___urlPath___": "burnout-signs",
+                            "___md___": 102
+                        },
+                        "Practicing Mindfulness and Meditation": {
+                            "___urlPath___": "mindfulness-meditation",
+                            "___md___": 103
+                        },
+                        "Balancing Work and Personal Life": {
+                            "___urlPath___": "work-life-balance",
+                            "___md___": 104
+                        }
+                    }
+                },
+                "Job Search and Application Strategies": {
+                    "___urlPath___": "job-search-strategies",
+                    "Creating a Job Search Plan": {
+                        "Setting Career Goals": true,
+                        "Identifying Target Companies and Roles": true,
+                        "Job Search Timelines and Tracking Progress": true
+                    },
+                    "Job Portals and Platforms": {
+                        "Using LinkedIn Effectively": true,
+                        "Exploring Job Portals (Indeed, Glassdoor, Naukri)": true,
+                        "Understanding Application Tracking Systems (ATS)": true
+                    },
+                    "Networking for Job Opportunities": {
+                        "Building a Professional Network": true,
+                        "Informational Interviews": true,
+                        "Leveraging Alumni and Community Groups": true
+                    },
+                    "Crafting Effective Job Applications": {
+                        "Writing Tailored Cover Letters": true,
+                        "Optimizing Resumes for ATS": true,
+                        "Tips for Submitting Online Applications": true
+                    },
+                    "Preparing for Career Fairs and Walk-Ins": {
+                        "What to Carry to Career Fairs": true,
+                        "Making a Strong First Impression": true,
+                        "Following Up After Career Events": true
                     }
                 }
+                ,
+                "Soft Skills for Cracking Software Job Interviews": {
+                    "___urlPath___": "interview-soft-skills",
+                    "Resume and Portfolio Building": {
+                        "Crafting a Tailored Resume": true,
+                        "Creating an Impressive Portfolio": true,
+                        "Common Mistakes to Avoid": true
+                    },
+                    "Communication and Storytelling": {
+                        "Answering Behavioral Questions (STAR Method)": true,
+                        "Handling Tough Questions with Confidence": true,
+                        "Elevator Pitch for Introductions": true
+                    },
+                    "Interview Etiquette": {
+                        "Dressing Professionally": true,
+                        "Building Rapport with Interviewers": true,
+                        "Effective Virtual Interview Strategies": true
+                    },
+                    "Negotiation and Follow-Up": {
+                        "Salary Negotiation Techniques": true,
+                        "Sending a Thank-You Email": true,
+                        "Post-Interview Follow-Up": true
+                    },
+                    "Mock Interview Practice": {
+                        "Technical Mock Interviews": true,
+                        "Behavioral Mock Interviews": true,
+                        "Tips for Peer Interview Practice": true
+                    }
+                }
+
             }
         }, "Data Science and Artificial Intelligence": {
             "___urlPath___": "data-science-and-artificial-intelligence",

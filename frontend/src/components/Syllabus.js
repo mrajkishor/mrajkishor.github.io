@@ -1889,7 +1889,7 @@ const Tile = ({ title, link, image, progress }) => (
             style={{
                 backgroundColor: "#f0f0f0",
                 borderRadius: "5px",
-                margin: "10px 15px",
+                margin: "0 10px 15px",
                 overflow: "hidden",
                 height: "10px",
 
