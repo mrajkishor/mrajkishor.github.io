@@ -81,34 +81,303 @@ const mapper = {
                                     "___urlPath___": "ordered-lists",
                                     "___md___": 74
                                 },
-                                "Unordered Lists": true,
-                                "Description Lists": true
+                                "Unordered Lists": {
+                                    "___urlPath___": "unordered-lists",
+                                    "___md___": 75
+                                },
+                                "Description Lists": {
+                                    "___urlPath___": "description-lists",
+                                    "___md___": 76
+                                }
+                            },
+                            "Page Formatting": {
+                                "___urlPath___": "page-formatting",
+                                "___md___": 91
+                            },
+                            "Text formatting": {
+                                "___urlPath___": "text-formatting",
+                                "___md___": 90
                             }
                         },
                         "Forms and Input Types": {
-                            "Basic Form Structure": true,
-                            "Input Types": true,
-                            "Form Controls": true
+                            "___urlPath___": "forms-and-input-types",
+                            "Basic Form Structure": {
+                                "___urlPath___": "basic-form-structure",
+                                "___md___": 77
+                            },
+                            "Input Types": {
+                                "___urlPath___": "input-types",
+                                "___md___": 78
+                            },
+                            "Form Controls": {
+                                "___urlPath___": "form-controls",
+                                "___md___": 79
+                            }
                         },
                         "Media Elements": {
-                            "Images": true,
-                            "Audio": true,
-                            "Video": true
+                            "___urlPath___": "media-elements",
+                            "Images": {
+                                "___urlPath___": "images",
+                                "___md___": 80
+                            },
+                            "Audio": {
+                                "___urlPath___": "audio",
+                                "___md___": 81
+                            },
+                            "Video": {
+                                "___urlPath___": "video",
+                                "___md___": 82
+                            }
                         },
                         "Semantic HTML": {
-                            "Sections and Articles": true,
-                            "Navigation": true,
-                            "Main Content": true,
-                            "Accessibility": true
+                            "___urlPath___": "semantic-html",
+                            "Introduction": {
+                                "___urlPath___": "introduction",
+                                "___md___": 87
+                            },
+                            "Sections and Articles": {
+                                "___urlPath___": "sections-and-articles",
+                                "___md___": 83
+                            },
+                            "Navigation": {
+                                "___urlPath___": "navigation",
+                                "___md___": 84
+                            },
+                            "Main Content": {
+                                "___urlPath___": "main-content",
+                                "___md___": 85
+                            },
+                            "Accessibility": {
+                                "___urlPath___": "accessibility",
+                                "___md___": 86
+                            }
+                        },
+                        "HTML Hyperlinks, Navigation, and Tables": {
+                            "___urlPath___": "html-hyperlinks-navigation-and-tables",
+                            "___md___": 92
+                        },
+                        "XHTML": {
+                            "___urlPath___": "xhtml",
+                            "___md___": 88
+                        },
+                        "Frames and iFrames": {
+                            "___urlPath___": "iframes",
+                            "___md___": 89
                         }
 
                     },
                     "CSS (Cascading Style Sheets)": {
-                        "CSS Basics and Selectors": true,
-                        "Box Model": true,
-                        "Flexbox and Grid": true,
-                        "Responsive Design and Media Queries": true,
-                        "CSS Frameworks (Bootstrap, Tailwind)": true
+                        "___urlPath___": "css",
+                        "CSS Basics and Selectors": {
+                            "___urlPath___": "css-basics-and-selectors",
+                            "Introduction to CSS": {
+                                "___urlPath___": "introduction-to-css",
+                                "What is CSS?": {
+                                    "___urlPath___": "what-is-css",
+                                    "___md___": 1
+                                },
+                                "Advantages of CSS": {
+                                    "___urlPath___": "advantages-of-css",
+                                    "___md___": 2
+                                },
+                                "Types of CSS": {
+                                    "___urlPath___": "types-of-css",
+                                    "Inline CSS": {
+                                        "___urlPath___": "inline-css",
+                                        "___md___": 3
+                                    },
+                                    "Internal CSS": {
+                                        "___urlPath___": "internal-css",
+                                        "___md___": 4
+                                    },
+                                    "External CSS": {
+                                        "___urlPath___": "external-css",
+                                        "___md___": 5
+                                    }
+                                },
+                                "CSS Syntax": {
+                                    "___urlPath___": "css-syntax",
+                                    "Selectors": {
+                                        "___urlPath___": "selectors",
+                                        "___md___": 6
+                                    },
+                                    "Properties": {
+                                        "___urlPath___": "properties",
+                                        "___md___": 7
+                                    },
+                                    "Values": {
+                                        "___urlPath___": "values",
+                                        "___md___": 8
+                                    }
+                                }
+                            },
+                            "CSS Selectors": {
+                                "___urlPath___": "css-selectors",
+                                "Basic Selectors": {
+                                    "___urlPath___": "basic-selectors",
+                                    "Universal Selector": {
+                                        "___urlPath___": "universal-selector",
+                                        "___md___": 9
+                                    },
+                                    "Type Selector": {
+                                        "___urlPath___": "type-selector",
+                                        "___md___": 10
+                                    },
+                                    "Class Selector": {
+                                        "___urlPath___": "class-selector",
+                                        "___md___": 11
+                                    },
+                                    "ID Selector": {
+                                        "___urlPath___": "id-selector",
+                                        "___md___": 12
+                                    }
+                                },
+                                "Combinators": {
+                                    "___urlPath___": "combinators",
+                                    "Descendant Selector": {
+                                        "___urlPath___": "descendant-selector",
+                                        "___md___": 13
+                                    },
+                                    "Child Selector": {
+                                        "___urlPath___": "child-selector",
+                                        "___md___": 14
+                                    },
+                                    "Adjacent Sibling Selector": {
+                                        "___urlPath___": "adjacent-sibling-selector",
+                                        "___md___": 15
+                                    },
+                                    "General Sibling Selector": {
+                                        "___urlPath___": "general-sibling-selector",
+                                        "___md___": 16
+                                    }
+                                },
+                                "Attribute Selectors": {
+                                    "___urlPath___": "attribute-selectors",
+                                    "Basic Attribute Selector": {
+                                        "___urlPath___": "basic-attribute-selector",
+                                        "___md___": 17
+                                    },
+                                    "Substring Matching Selectors": {
+                                        "___urlPath___": "substring-matching-selectors",
+                                        "___md___": 18
+                                    }
+                                },
+                                "Pseudo-classes and Pseudo-elements": {
+                                    "___urlPath___": "pseudo-classes-and-pseudo-elements",
+                                    "Pseudo-classes": {
+                                        "___urlPath___": "pseudo-classes",
+                                        "___md___": 19
+                                    },
+                                    "Pseudo-elements": {
+                                        "___urlPath___": "pseudo-elements",
+                                        "___md___": 20
+                                    }
+                                }
+                            }
+                        },
+                        "Box Model": {
+                            "___urlPath___": "box-model",
+                            "Content": {
+                                "___urlPath___": "content",
+                                "___md___": 21
+                            },
+                            "Padding": {
+                                "___urlPath___": "padding",
+                                "___md___": 22
+                            },
+                            "Border": {
+                                "___urlPath___": "border",
+                                "___md___": 23
+                            },
+                            "Margin": {
+                                "___urlPath___": "margin",
+                                "___md___": 24
+                            }
+                        },
+                        "Flexbox and Grid": {
+                            "___urlPath___": "flexbox-and-grid",
+                            "Flexbox": {
+                                "___urlPath___": "flexbox",
+                                "Introduction to Flexbox": {
+                                    "___urlPath___": "introduction-to-flexbox",
+                                    "___md___": 30
+                                },
+                                "Flex Container Properties": {
+                                    "___urlPath___": "flex-container-properties",
+                                    "___md___": 31
+                                },
+                                "Flex Item Properties": {
+                                    "___urlPath___": "flex-item-properties",
+                                    "___md___": 32
+                                }
+                            },
+                            "Grid": {
+                                "___urlPath___": "grid",
+                                "Introduction to Grid": {
+                                    "___urlPath___": "introduction-to-grid",
+                                    "___md___": 33
+                                },
+                                "Grid Container Properties": {
+                                    "___urlPath___": "grid-container-properties",
+                                    "___md___": 34
+                                },
+                                "Grid Item Properties": {
+                                    "___urlPath___": "grid-item-properties",
+                                    "___md___": 35
+                                }
+                            }
+                        },
+                        "Responsive Design and Media Queries": {
+                            "___urlPath___": "responsive-design-and-media-queries",
+                            "Introduction to Responsive Design": {
+                                "___urlPath___": "introduction-to-responsive-design",
+                                "___md___": 36
+                            },
+                            "Media Queries": {
+                                "___urlPath___": "media-queries",
+                                "Syntax and Breakpoints": {
+                                    "___urlPath___": "syntax-and-breakpoints",
+                                    "___md___": 37
+                                },
+                                "Responsive Layout Techniques": {
+                                    "___urlPath___": "responsive-layout-techniques",
+                                    "___md___": 38
+                                }
+                            }
+                        },
+                        "CSS Frameworks (Bootstrap, Tailwind)": {
+                            "___urlPath___": "css-frameworks",
+                            "Bootstrap": {
+                                "___urlPath___": "bootstrap",
+                                "Introduction to Bootstrap": {
+                                    "___urlPath___": "introduction-to-bootstrap",
+                                    "___md___": 39
+                                },
+                                "Grid System": {
+                                    "___urlPath___": "grid-system",
+                                    "___md___": 40
+                                },
+                                "Components and Utilities": {
+                                    "___urlPath___": "components-and-utilities",
+                                    "___md___": 41
+                                }
+                            },
+                            "Tailwind": {
+                                "___urlPath___": "tailwind",
+                                "Introduction to Tailwind CSS": {
+                                    "___urlPath___": "introduction-to-tailwind-css",
+                                    "___md___": 42
+                                },
+                                "Utility Classes": {
+                                    "___urlPath___": "utility-classes",
+                                    "___md___": 43
+                                },
+                                "Customizing Tailwind": {
+                                    "___urlPath___": "customizing-tailwind",
+                                    "___md___": 44
+                                }
+                            }
+                        }
                     }
                 },
                 "Client-Side Scripting": {
