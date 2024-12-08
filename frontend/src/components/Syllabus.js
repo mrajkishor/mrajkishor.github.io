@@ -1819,8 +1819,34 @@ const syllabus = mapper.Contents;
 //         }
 //     }
 // };
+const calculateLeafNodesProgress = (node) => {
+    let total = 0;
+    let completed = 0;
 
-const Tile = ({ title, link, image }) => (
+    const traverse = (currentNode) => {
+        if (typeof currentNode !== "object" || !currentNode) return;
+
+        if (currentNode.___md___) {
+            total += 1;
+            completed += 1;
+        } else if (!currentNode.___urlPath___) {
+            // It's a leaf node without ___md___
+            total += 1;
+        }
+
+        Object.entries(currentNode).forEach(([key, value]) => {
+            if (key !== "___urlPath___" && key !== "___md___") {
+                traverse(value);
+            }
+        });
+    };
+
+    traverse(node);
+    const progress = total > 0 ? Math.round((completed / total) * 100) : 0;
+    return progress;
+};
+
+const Tile = ({ title, link, image, progress }) => (
     <a
         href={link}
         style={{
@@ -1857,6 +1883,35 @@ const Tile = ({ title, link, image }) => (
             }}
         >
             {title}
+        </div>
+        {/* Progress Bar */}
+        <div
+            style={{
+                backgroundColor: "#f0f0f0",
+                borderRadius: "5px",
+                margin: "10px 15px",
+                overflow: "hidden",
+                height: "10px",
+
+            }}
+        >
+            <div
+                style={{
+                    width: `${progress}%`,
+                    height: "100%",
+                    backgroundColor: "#4caf50",
+                }}
+            ></div>
+        </div>
+        <div
+            style={{
+                textAlign: "center",
+                fontSize: "0.9em",
+                color: "#555",
+                backgroundColor: "#eaeaea",
+            }}
+        >
+            {progress}% Completed
         </div>
     </a>
 );
@@ -1899,6 +1954,8 @@ const renderTiles = (topics, basePath) => {
 
             // Assign image or fallback to a default placeholder
             const image = placeholderImages[topic] || "default_image_path_here";
+            // Calculate progress for the current tile
+            const progress = calculateLeafNodesProgress(value);
 
             return (
                 <Tile
@@ -1906,6 +1963,8 @@ const renderTiles = (topics, basePath) => {
                     title={topic}
                     link={fullPath}
                     image={image}
+                    progress={progress} // Pass progress to Tile
+
                 />
             );
         });
