@@ -1,0 +1,47 @@
+/* Wrapper for the tiles */
+.tiles-wrapper-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust width for tiles container */
+    height: 300px; /* Adjust height for tiles container */
+    overflow: hidden;
+    z-index: -1; /* Ensure it stays in the background */
+}
+
+/* Each individual tile */
+.tile-bg {
+    position: absolute;
+    border-radius: 5px; /* Smooth corners */
+    animation: flash 3s infinite ease-in-out; /* Flashing animation */
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+    opacity: 0; /* Initial state */
+    animation: fadeIn 1s forwards; /* Smooth fade-in animation */
+}
+
+/* Flashing animation for tiles */
+@keyframes flash {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2); /* Slight scaling effect */
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

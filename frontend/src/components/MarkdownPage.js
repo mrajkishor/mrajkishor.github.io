@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
@@ -227,27 +228,46 @@ const MarkdownPage = ({ wrapperRef }) => {
             </div>)}
 
             {/* Go to Top Button */}
-            {showGoToTop && (
+            {/* {showGoToTop && (
                 <button
                     onClick={scrollToTop}
-                    style={{
-                        position: "fixed",
-                        bottom: "20px",
-                        right: "20px",
-                        padding: "10px 15px",
-                        fontSize: "16px",
-                        backgroundColor: "#007bff",
-                        color: "#fff",
-                        border: "none",
-                        borderRadius: "50%",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        cursor: "pointer",
-                        zIndex: 1000,
-                    }}
+                    className="goToTopArrow"
                     aria-label="Go to top"
                 >
                     ↑
                 </button>
+            )} */}
+
+            {/* Portal for "Go to Top" Button */}
+            {/* The parent element has transform, filter, or perspective styles applied. These properties create a new containing block, causing fixed elements to behave as if they are positioned relative to the parent instead of the viewport. 
+            Used react portal to avoid this issue.
+            Now the button will be fixed to the viewport instead of the parent element.
+            */}
+            {ReactDOM.createPortal(
+                showGoToTop && (
+                    <button
+                        onClick={scrollToTop}
+                        style={{
+                            position: "fixed",
+                            bottom: "20px",
+                            right: "20px",
+                            width: "50px",
+                            height: "50px",
+                            padding: "10px",
+                            borderRadius: "50%",
+                            backgroundColor: "#007bff",
+                            color: "#fff",
+                            border: "none",
+                            cursor: "pointer",
+                            boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                            zIndex: 1000,
+
+                        }}
+                    >
+                        ↑
+                    </button>
+                ),
+                document.body
             )}
         </div>
 

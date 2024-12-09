@@ -94,13 +94,34 @@
 }
 
 
+.goToTopArrow{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
 /* Desktop Styles */
 .markdownWrapper {
   max-width: 1200px;
-  margin: 0 auto; /* Centers the container */
-  padding: 40px 60px; /* Top/Bottom: 40px, Left/Right: 60px */
-  font-family: Arial, sans-serif; /* Example font */
-  line-height: 1.6; /* Improve readability */
+  margin: 40px auto; /* Adds 40px margin at the top, centers horizontally */
+  padding: 20px 60px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: thin solid #007bff;
+  
+
 }
 
 /* Tablet Styles (768px and up) */

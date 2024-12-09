@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StackGrid from "react-stack-grid";
 import mapper from "../commons/mapper";
+import AnimatedTileBackground from "./AnimatedTileBackground";
 
 import algo from "../assets/algo.jpg";
 import aws_serverless from "../assets/aws_serverless.jpg";
@@ -1978,7 +1979,8 @@ const Syllabus = () => {
             style={{
                 margin: "auto",
                 maxWidth: "1200px",
-                backgroundColor: "#fdfdfd",
+                background: "none",
+
             }}
         >
             <h1
@@ -1988,7 +1990,8 @@ const Syllabus = () => {
             </h1>
 
             {/* Full-Stack Developer Section */}
-            <div className="tiles-wrapper">
+            <div className="tiles-wrapper rotate-right">
+
                 <h2
                     className="tiles-header"
                 >
@@ -2002,7 +2005,8 @@ const Syllabus = () => {
             </div>
 
             {/* Data Science Section */}
-            <div className="tiles-wrapper">
+            <div className="tiles-wrapper rotate-left">
+
                 <h2
                     className="tiles-header"
                 >

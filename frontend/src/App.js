@@ -7,6 +7,7 @@ import "./App.css"; // Adding an external stylesheet for the glass effect
 import Syllabus from "./components/Syllabus";
 import NotFound from "./components/NotFound";
 import { initGA, logPageView } from './commons/analytics';
+import AnimatedTileBackground from "./components/AnimatedTileBackground";
 
 const App = () => {
   const [showSideBar, setShowSideBar] = React.useState(false);
@@ -38,6 +39,9 @@ const App = () => {
   }, [location.pathname]);
   return (
     <div key={count} style={{ display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333" }}>
+
+      <AnimatedTileBackground />
+
       <div className="logo-wrapper" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
         <h1 className="sidebar-logo">Coding++</h1>
         <h1 className="sidebar-slogan">Revise, Refine, Practice, Repeat.</h1>
@@ -101,7 +105,6 @@ const App = () => {
           width: "100%",
           padding: "50px 20px 20px 20px",
           overflowY: "auto",
-          backgroundColor: "#fff",
         }}
       >
         <Routes>
