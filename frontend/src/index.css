@@ -466,12 +466,12 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     top: -30px; 
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, .5);
+    background-color: #007bffde;
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 5px;
     border: 1px solid #007bff;
-    color: #007bff;
+    color: #fff;
     font-size: 1.8em;
     cursor: pointer;
     margin: 0;

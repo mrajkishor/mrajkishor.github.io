@@ -19,10 +19,13 @@ const preprocessMarkdown = (content) => {
         .replace(
             /^>(.*)$/gm, // Match blockquotes
             (match, p1) =>
-                `<blockquote>${p1.replace(
-                    /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, // Match links inside blockquotes
-                    '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
-                )}</blockquote>`
+                `<blockquote>${p1
+                    .replace(
+                        /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, // Match links inside blockquotes
+                        '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+                    )
+                    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // Match bold text inside blockquotes
+                }</blockquote>`
         )
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
             // Center the image and update the path

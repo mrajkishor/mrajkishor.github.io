@@ -2588,7 +2588,21 @@ const mapper = {
                     },
                     "Regression": {
                         "___urlPath___": "regression",
-                        "Simple and Multiple Linear Regression": true,
+                        "Simple Linear Regression": {
+                            "___urlPath___": "simple-linear-regression",
+                            "___md___": 113
+                        },
+                        "Multiple Linear Regression": {
+                            "___urlPath___": "multiple-linear-regression",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 114
+                            },
+                            "Model Evaluation": {
+                                "___urlPath___": "model-evaluation",
+                                "___md___": 115
+                            }
+                        },
                         "Cost Function": {
                             "___urlPath___": "cost-function",
                             "Overview": {
@@ -2611,7 +2625,17 @@ const mapper = {
                     },
                     "Classification": {
                         "___urlPath___": "classification",
-                        "Logistic Regression": true,
+                        "Logistic Regression": {
+                            "___urlPath___": "logistic-regression",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 35
+                            },
+                            "Mathematical Derivation": {
+                                "___urlPath___": "mathematical-derivation",
+                                "___md___": 116
+                            }
+                        },
                         "K-Nearest Neighbor (KNN)": {
                             "___urlPath___": "k-nearest-neighbor",
                             "___md___": 55
