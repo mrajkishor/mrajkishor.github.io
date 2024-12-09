@@ -172,127 +172,45 @@ const mapper = {
                             "___urlPath___": "css-basics-and-selectors",
                             "Introduction to CSS": {
                                 "___urlPath___": "introduction-to-css",
-                                "What is CSS?": {
-                                    "___urlPath___": "what-is-css",
-                                    "___md___": 1
-                                },
-                                "Advantages of CSS": {
-                                    "___urlPath___": "advantages-of-css",
-                                    "___md___": 2
-                                },
-                                "Types of CSS": {
-                                    "___urlPath___": "types-of-css",
-                                    "Inline CSS": {
-                                        "___urlPath___": "inline-css",
-                                        "___md___": 3
-                                    },
-                                    "Internal CSS": {
-                                        "___urlPath___": "internal-css",
-                                        "___md___": 4
-                                    },
-                                    "External CSS": {
-                                        "___urlPath___": "external-css",
-                                        "___md___": 5
-                                    }
-                                },
-                                "CSS Syntax": {
-                                    "___urlPath___": "css-syntax",
-                                    "Selectors": {
-                                        "___urlPath___": "selectors",
-                                        "___md___": 6
-                                    },
-                                    "Properties": {
-                                        "___urlPath___": "properties",
-                                        "___md___": 7
-                                    },
-                                    "Values": {
-                                        "___urlPath___": "values",
-                                        "___md___": 8
-                                    }
-                                }
+                                "___md___": 105
                             },
                             "CSS Selectors": {
                                 "___urlPath___": "css-selectors",
                                 "Basic Selectors": {
                                     "___urlPath___": "basic-selectors",
-                                    "Universal Selector": {
-                                        "___urlPath___": "universal-selector",
-                                        "___md___": 9
-                                    },
-                                    "Type Selector": {
-                                        "___urlPath___": "type-selector",
-                                        "___md___": 10
-                                    },
-                                    "Class Selector": {
-                                        "___urlPath___": "class-selector",
-                                        "___md___": 11
-                                    },
-                                    "ID Selector": {
-                                        "___urlPath___": "id-selector",
-                                        "___md___": 12
-                                    }
+                                    "___md___": 106
                                 },
                                 "Combinators": {
                                     "___urlPath___": "combinators",
-                                    "Descendant Selector": {
-                                        "___urlPath___": "descendant-selector",
-                                        "___md___": 13
-                                    },
-                                    "Child Selector": {
-                                        "___urlPath___": "child-selector",
-                                        "___md___": 14
-                                    },
-                                    "Adjacent Sibling Selector": {
-                                        "___urlPath___": "adjacent-sibling-selector",
-                                        "___md___": 15
-                                    },
-                                    "General Sibling Selector": {
-                                        "___urlPath___": "general-sibling-selector",
-                                        "___md___": 16
-                                    }
+                                    "___md___": 107
                                 },
                                 "Attribute Selectors": {
                                     "___urlPath___": "attribute-selectors",
-                                    "Basic Attribute Selector": {
-                                        "___urlPath___": "basic-attribute-selector",
-                                        "___md___": 17
+                                    "Overview": {
+                                        "___urlPath___": "attribute-selectors-overview",
+                                        "___md___": 108
                                     },
                                     "Substring Matching Selectors": {
                                         "___urlPath___": "substring-matching-selectors",
-                                        "___md___": 18
+                                        "___md___": 109
                                     }
                                 },
                                 "Pseudo-classes and Pseudo-elements": {
                                     "___urlPath___": "pseudo-classes-and-pseudo-elements",
                                     "Pseudo-classes": {
                                         "___urlPath___": "pseudo-classes",
-                                        "___md___": 19
+                                        "___md___": 110
                                     },
                                     "Pseudo-elements": {
                                         "___urlPath___": "pseudo-elements",
-                                        "___md___": 20
+                                        "___md___": 111
                                     }
                                 }
                             }
                         },
                         "Box Model": {
                             "___urlPath___": "box-model",
-                            "Content": {
-                                "___urlPath___": "content",
-                                "___md___": 21
-                            },
-                            "Padding": {
-                                "___urlPath___": "padding",
-                                "___md___": 22
-                            },
-                            "Border": {
-                                "___urlPath___": "border",
-                                "___md___": 23
-                            },
-                            "Margin": {
-                                "___urlPath___": "margin",
-                                "___md___": 24
-                            }
+                            "___md___": 112
                         },
                         "Flexbox and Grid": {
                             "___urlPath___": "flexbox-and-grid",
@@ -2487,41 +2405,40 @@ const mapper = {
                         }
                     }
                 },
-                "Job Search and Application Strategies": {
-                    "___urlPath___": "job-search-strategies",
-                    "Creating a Job Search Plan": {
-                        "Setting Career Goals": true,
-                        "Identifying Target Companies and Roles": true,
-                        "Job Search Timelines and Tracking Progress": true
-                    },
-                    "Job Portals and Platforms": {
-                        "Using LinkedIn Effectively": true,
-                        "Exploring Job Portals (Indeed, Glassdoor, Naukri)": true,
-                        "Understanding Application Tracking Systems (ATS)": true
-                    },
-                    "Networking for Job Opportunities": {
-                        "Building a Professional Network": true,
-                        "Informational Interviews": true,
-                        "Leveraging Alumni and Community Groups": true
-                    },
-                    "Crafting Effective Job Applications": {
-                        "Writing Tailored Cover Letters": true,
-                        "Optimizing Resumes for ATS": true,
-                        "Tips for Submitting Online Applications": true
-                    },
-                    "Preparing for Career Fairs and Walk-Ins": {
-                        "What to Carry to Career Fairs": true,
-                        "Making a Strong First Impression": true,
-                        "Following Up After Career Events": true
-                    }
-                }
-                ,
-                "Soft Skills for Cracking Software Job Interviews": {
+                "Professional Growth and Interview Preparedness": {
                     "___urlPath___": "interview-soft-skills",
                     "Resume and Portfolio Building": {
                         "Crafting a Tailored Resume": true,
                         "Creating an Impressive Portfolio": true,
                         "Common Mistakes to Avoid": true
+                    },
+                    "Strategic Approaches to Career Development": {
+                        "___urlPath___": "career-development",
+                        "Creating a Job Search Plan": {
+                            "Setting Career Goals": true,
+                            "Identifying Target Companies and Roles": true,
+                            "Job Search Timelines and Tracking Progress": true
+                        },
+                        "Job Portals and Platforms": {
+                            "Using LinkedIn Effectively": true,
+                            "Exploring Job Portals (Indeed, Glassdoor, Naukri)": true,
+                            "Understanding Application Tracking Systems (ATS)": true
+                        },
+                        "Networking for Job Opportunities": {
+                            "Building a Professional Network": true,
+                            "Informational Interviews": true,
+                            "Leveraging Alumni and Community Groups": true
+                        },
+                        "Crafting Effective Job Applications": {
+                            "Writing Tailored Cover Letters": true,
+                            "Optimizing Resumes for ATS": true,
+                            "Tips for Submitting Online Applications": true
+                        },
+                        "Preparing for Career Fairs and Walk-Ins": {
+                            "What to Carry to Career Fairs": true,
+                            "Making a Strong First Impression": true,
+                            "Following Up After Career Events": true
+                        }
                     },
                     "Communication and Storytelling": {
                         "Answering Behavioral Questions (STAR Method)": true,
