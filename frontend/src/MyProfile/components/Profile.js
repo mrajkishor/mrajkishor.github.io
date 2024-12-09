@@ -68,16 +68,19 @@ export default function Profile() {
 
             }}
         >
+
+            {/* Waves start */}
+
             <div
                 style={{
                     position: 'absolute',
                     zIndex: 1,
                     top: '-400px',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '500px',
                     background: '#3498db', // Solid blue
-                    clipPath: 'polygon(0 30%, 100% 0, 100% 70%, 0 100%)',
+                    clipPath: 'polygon(100% 30%, 0 0, 0 70%, 100% 100%)', // Mirror clipPath
                     opacity: 0.7,
                     animation: 'waveMovement 6s infinite ease-in-out', // Wave animation
                 }}
@@ -88,11 +91,11 @@ export default function Profile() {
                     position: 'absolute',
                     zIndex: 2,
                     top: '-350px',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '450px',
                     background: '#6c5ce7', // Solid purple
-                    clipPath: 'polygon(0 40%, 100% 10%, 100% 60%, 0 90%)',
+                    clipPath: 'polygon(100% 40%, 0 10%, 0 60%, 100% 90%)', // Mirror clipPath
                     opacity: 0.5,
                     animation: 'waveMovement 6s infinite ease-in-out 0.5s', // Delayed wave animation
                 }}
@@ -103,11 +106,11 @@ export default function Profile() {
                     position: 'absolute',
                     zIndex: 3,
                     top: '-300px',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '400px',
                     background: '#00cec9', // Solid teal
-                    clipPath: 'polygon(0 50%, 100% 20%, 100% 50%, 0 80%)',
+                    clipPath: 'polygon(100% 50%, 0 20%, 0 50%, 100% 80%)', // Mirror clipPath
                     opacity: 0.3,
                     animation: 'waveMovement 6s infinite ease-in-out 1s', // Further delayed wave animation
                 }}
@@ -118,11 +121,11 @@ export default function Profile() {
                     position: 'absolute',
                     zIndex: 1,
                     bottom: '0',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '500px',
                     background: '#3498db', // Solid blue
-                    clipPath: 'polygon(0 70%, 100% 100%, 100% 30%, 0 0)',
+                    clipPath: 'polygon(100% 70%, 0 100%, 0 30%, 100% 0)', // Mirror clipPath
                     opacity: 0.7,
                     animation: 'waveMovement 8s infinite ease-in-out', // Wave animation
                 }}
@@ -133,11 +136,11 @@ export default function Profile() {
                     position: 'absolute',
                     zIndex: 2,
                     bottom: '50px',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '450px',
                     background: '#6c5ce7', // Solid purple
-                    clipPath: 'polygon(0 80%, 100% 90%, 100% 40%, 0 10%)',
+                    clipPath: 'polygon(100% 80%, 0 90%, 0 40%, 100% 10%)', // Mirror clipPath
                     opacity: 0.5,
                     animation: 'waveMovement 8s infinite ease-in-out 0.5s', // Delayed wave animation
                 }}
@@ -148,15 +151,18 @@ export default function Profile() {
                     position: 'absolute',
                     zIndex: 3,
                     bottom: '100px',
-                    right: '0',
+                    left: '0', // Mirror: Change from right to left
                     width: '100vw',
                     height: '400px',
                     background: '#00cec9', // Solid teal
-                    clipPath: 'polygon(0 90%, 100% 80%, 100% 50%, 0 20%)',
+                    clipPath: 'polygon(100% 90%, 0 80%, 0 50%, 100% 20%)', // Mirror clipPath
                     opacity: 0.3,
                     animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
                 }}
             />
+
+            {/* Waves end */}
+
             {/* 
             <div
                 style={{
