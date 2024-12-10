@@ -42,10 +42,19 @@ const App = () => {
 
       <AnimatedTileBackground />
 
-      <div className="logo-wrapper" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
-        <h1 className="sidebar-logo">Coding++</h1>
-        <h1 className="sidebar-slogan">Revise, Refine, Practice, Repeat.</h1>
+      <div
+        className="logo-wrapper"
+        onClick={handleLogoClick}
+        style={{ cursor: "pointer" }}
+      >
+        <div className="sidebar-logo">
+          Coding<span className="logo-highlight">++</span>
+        </div>
+        <div className="sidebar-slogan">
+          Revise, Refine, Practice, Repeat.
+        </div>
       </div>
+
       {/* Add logo and menu here */}
       {/* Toggle Button */}
       <div
@@ -78,7 +87,8 @@ const App = () => {
       >
         <div style={{
           padding: "10px",
-          fontSize: "x-large"
+          fontSize: "x-large",
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7)"
         }}>
           {showSideBar ? "✖" : "☰"}
         </div>
@@ -101,11 +111,7 @@ const App = () => {
       {/* Main Content */}
       <div
         ref={mainRef}
-        style={{
-          width: "100%",
-          padding: "50px 20px 20px 20px",
-          overflowY: "auto",
-        }}
+        className="main-content-wrapper"
       >
         <Routes>
           <Route path="/profile" element={<MyProfile />} />
@@ -120,6 +126,8 @@ const App = () => {
                 </p> */}
 
                 {/* <h2 style={{ color: "#555", borderBottom: "2px solid #007bff", paddingBottom: "5px", "marginTop": "50px" }}>Full Stack Developer Course Syllabus 2024</h2> */}
+
+
                 <Syllabus />
                 {/* Core Concepts Section */}
                 {/* <div style={{ marginBottom: "20px" }}>

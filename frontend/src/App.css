@@ -63,11 +63,34 @@
 }
 
 
-.logo-wrapper{
+/* .logo-wrapper{
   position: fixed;
   top: 0;
   left: 60px;
   z-index: 10000;
+} */
+
+.logo-wrapper {
+  position: fixed;
+  top: 10px; /* Adjusted for better placement */
+  left: 60px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures alignment */
+  gap: 4px; /* Adds spacing between logo and slogan */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  opacity: 0.9;
+}
+
+.courseTitle {
+  height: 150px;
+  width: 100%;
+  position: "relative";
 }
 
 
@@ -113,15 +136,22 @@
 /* Desktop Styles */
 .markdownWrapper {
   max-width: 1200px;
-  margin: 40px auto; /* Adds 40px margin at the top, centers horizontally */
+  margin: 60px auto; /* Adds 40px margin at the top, centers horizontally */
   padding: 20px 60px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: thin solid #007bff;
+  backdrop-filter: blur(30px);
+  /* border: thin solid #007bff; */
   
+  box-shadow: rgba(0, 123, 255, 0.5) 0px 0px 30px;
+}
 
+
+.main-content-wrapper {
+  width: 100%;  
+  padding: 50px 20px 20px 20px;
+  overflow-y: auto;
 }
 
 /* Tablet Styles (768px and up) */
@@ -136,8 +166,20 @@
 @media (max-width: 768px) {
   .markdownWrapper {
       max-width: 98%; /* Occupy most of the screen width */
-      padding: 20px 0; /* Further reduced padding for small screens */
+      padding: 20px; /* Further reduced padding for small screens */
       font-size: 14px; /* Slightly smaller font for compact displays */
       line-height: 1.5; /* Slightly reduced for better fit */
+      backdrop-filter: blur(100px); /* Remove blur effect */
   }
+
+  
+.main-content-wrapper {
+  width: 100%;
+  padding: 50px 5px;
+}
+  
+.courseTitle {
+  height: 50px;
+}
+
 }

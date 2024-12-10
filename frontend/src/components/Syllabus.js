@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import StackGrid from "react-stack-grid";
 import mapper from "../commons/mapper";
 import AnimatedTileBackground from "./AnimatedTileBackground";
@@ -1890,7 +1890,7 @@ const Tile = ({ title, link, image, progress }) => (
             style={{
                 backgroundColor: "#f0f0f0",
                 borderRadius: "5px",
-                margin: "0 10px 15px",
+                margin: "10px 15px",
                 overflow: "hidden",
                 height: "10px",
 
@@ -1974,6 +1974,18 @@ const renderTiles = (topics, basePath) => {
 
 const Syllabus = () => {
 
+    const [showTitle, setShowTitle] = useState(false);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setShowTitle(true);
+        }, 1000);
+
+        return () => {
+            clearInterval(timeout);
+        };
+    }, []);
+
     return (
         <div
             style={{
@@ -1983,11 +1995,21 @@ const Syllabus = () => {
 
             }}
         >
-            <h1
-                className="syllabus-header"
-            >
-                Course Syllabus 2024-25
-            </h1>
+
+            <div className="courseTitle">
+                {showTitle && (
+                    <h1
+                        className="syllabus-header"
+                    >
+                        Course Syllabus 2024-25
+                    </h1>
+                )}
+
+
+            </div>
+
+
+
 
             {/* Full-Stack Developer Section */}
             <div className="tiles-wrapper rotate-right">
