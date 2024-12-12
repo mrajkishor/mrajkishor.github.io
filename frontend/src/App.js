@@ -88,7 +88,7 @@ const App = () => {
         <div style={{
           padding: "10px",
           fontSize: "x-large",
-          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7)"
+          // textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7)"
         }}>
           {showSideBar ? "✖" : "☰"}
         </div>
@@ -158,7 +158,7 @@ const App = () => {
                   </div> */}
 
 
-                <div className="footer">
+                {/* <div className="footer">
                   <p style={{ fontSize: "1.1em", color: "#666" }}>
                     <p style={{
                       fontSize: "1.1em", color: "#555", marginTop: "20px", padding: "10px",
@@ -193,7 +193,7 @@ const App = () => {
                   Copyright © 2024 | All Rights Reserved
 
 
-                </div>
+                </div> */}
               </div>
             }
           />

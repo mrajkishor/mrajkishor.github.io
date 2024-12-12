@@ -72,94 +72,94 @@ export default function Profile() {
             {/* Waves start */}
 
             {/* <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 1,
-                    top: '-400px',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '500px',
-                    background: '#3498db', // Solid blue
-                    clipPath: 'polygon(100% 30%, 0 0, 0 70%, 100% 100%)', // Mirror clipPath
-                    opacity: 0.7,
-                    animation: 'waveMovement 6s infinite ease-in-out', // Wave animation
-                }}
-            />
+                    style={{
+                        position: 'absolute',
+                        zIndex: 1,
+                        top: '-400px',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '500px',
+                        background: '#3498db', // Solid blue
+                        clipPath: 'polygon(100% 30%, 0 0, 0 70%, 100% 100%)', // Mirror clipPath
+                        opacity: 0.7,
+                        animation: 'waveMovement 6s infinite ease-in-out', // Wave animation
+                    }}
+                />
 
-            <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 2,
-                    top: '-350px',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '450px',
-                    background: '#6c5ce7', // Solid purple
-                    clipPath: 'polygon(100% 40%, 0 10%, 0 60%, 100% 90%)', // Mirror clipPath
-                    opacity: 0.5,
-                    animation: 'waveMovement 6s infinite ease-in-out 0.5s', // Delayed wave animation
-                }}
-            />
+                <div
+                    style={{
+                        position: 'absolute',
+                        zIndex: 2,
+                        top: '-350px',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '450px',
+                        background: '#6c5ce7', // Solid purple
+                        clipPath: 'polygon(100% 40%, 0 10%, 0 60%, 100% 90%)', // Mirror clipPath
+                        opacity: 0.5,
+                        animation: 'waveMovement 6s infinite ease-in-out 0.5s', // Delayed wave animation
+                    }}
+                />
 
-            <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 3,
-                    top: '-300px',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '400px',
-                    background: '#00cec9', // Solid teal
-                    clipPath: 'polygon(100% 50%, 0 20%, 0 50%, 100% 80%)', // Mirror clipPath
-                    opacity: 0.3,
-                    animation: 'waveMovement 6s infinite ease-in-out 1s', // Further delayed wave animation
-                }}
-            />
+                <div
+                    style={{
+                        position: 'absolute',
+                        zIndex: 3,
+                        top: '-300px',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '400px',
+                        background: '#00cec9', // Solid teal
+                        clipPath: 'polygon(100% 50%, 0 20%, 0 50%, 100% 80%)', // Mirror clipPath
+                        opacity: 0.3,
+                        animation: 'waveMovement 6s infinite ease-in-out 1s', // Further delayed wave animation
+                    }}
+                />
 
-            <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 1,
-                    bottom: '0',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '500px',
-                    background: '#3498db', // Solid blue
-                    clipPath: 'polygon(100% 70%, 0 100%, 0 30%, 100% 0)', // Mirror clipPath
-                    opacity: 0.7,
-                    animation: 'waveMovement 8s infinite ease-in-out', // Wave animation
-                }}
-            />
+                <div
+                    style={{
+                        position: 'absolute',
+                        zIndex: 1,
+                        bottom: '0',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '500px',
+                        background: '#3498db', // Solid blue
+                        clipPath: 'polygon(100% 70%, 0 100%, 0 30%, 100% 0)', // Mirror clipPath
+                        opacity: 0.7,
+                        animation: 'waveMovement 8s infinite ease-in-out', // Wave animation
+                    }}
+                />
 
-            <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 2,
-                    bottom: '50px',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '450px',
-                    background: '#6c5ce7', // Solid purple
-                    clipPath: 'polygon(100% 80%, 0 90%, 0 40%, 100% 10%)', // Mirror clipPath
-                    opacity: 0.5,
-                    animation: 'waveMovement 8s infinite ease-in-out 0.5s', // Delayed wave animation
-                }}
-            />
+                <div
+                    style={{
+                        position: 'absolute',
+                        zIndex: 2,
+                        bottom: '50px',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '450px',
+                        background: '#6c5ce7', // Solid purple
+                        clipPath: 'polygon(100% 80%, 0 90%, 0 40%, 100% 10%)', // Mirror clipPath
+                        opacity: 0.5,
+                        animation: 'waveMovement 8s infinite ease-in-out 0.5s', // Delayed wave animation
+                    }}
+                />
 
-            <div
-                style={{
-                    position: 'absolute',
-                    zIndex: 3,
-                    bottom: '100px',
-                    left: '0', // Mirror: Change from right to left
-                    width: '100vw',
-                    height: '400px',
-                    background: '#00cec9', // Solid teal
-                    clipPath: 'polygon(100% 90%, 0 80%, 0 50%, 100% 20%)', // Mirror clipPath
-                    opacity: 0.3,
-                    animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
-                }}
-            /> */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        zIndex: 3,
+                        bottom: '100px',
+                        left: '0', // Mirror: Change from right to left
+                        width: '100vw',
+                        height: '400px',
+                        background: '#00cec9', // Solid teal
+                        clipPath: 'polygon(100% 90%, 0 80%, 0 50%, 100% 20%)', // Mirror clipPath
+                        opacity: 0.3,
+                        animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
+                    }}
+                /> */}
 
             {/* Waves end */}
 
@@ -379,8 +379,7 @@ export default function Profile() {
                             Experience
                         </Typography>
                         <Typography variant="body1">
-                            6+ years of experience in building scalable web and mobile applications, contributing to full-stack projects, and working with cloud-native solutions.
-                        </Typography>
+                            6+ years of experience in designing, developing, and deploying web / mobile applications and microservices.                         </Typography>
                         <List>
                             <ListItem>
                                 <ListItemText

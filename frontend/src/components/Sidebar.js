@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import mapper from "../commons/mapper";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
     const [collapsed, setCollapsed] = useState({});
     const location = useLocation();
     const activeRef = useRef(null); // Ref to track the active item
+    const navigate = useNavigate(); // Hook to programmatically navigate
 
     // Initialize collapsed state based on the current path
     useEffect(() => {
@@ -117,10 +118,41 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div key={isOpen} className={`sidebar-container ${isOpen ? "open" : ""}`}>
             <div className="sidebar-header">
                 {/* <h2>Contents</h2> */}
+
             </div>
+
+            <div
+                style={{
+                    margin: "20px 30px 10px 30px",
+                    cursor: "pointer",
+                    padding: "10px",
+                    backgroundColor: "#f5f5f5",
+                    borderRadius: "5px",
+                    textAlign: "center",
+                    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
+                }}
+                onClick={() => {
+                    navigate("/profile");
+                    setIsOpen(false)
+                }} // Close the sidebar when the link is clicked
+            >
+                <span
+                    style={{
+                        textDecoration: "none",
+                        color: "#007bff",
+                        fontWeight: "bold",
+                        fontSize: "16px",
+                    }}
+                >
+                    My Profile
+                </span>
+            </div>
+
+
             <div className="sidebar-content">
                 {renderNestedList(mapper.Contents, `/${mapper.Contents.___urlPath___}`)}
             </div>
+
         </div>
     );
 };
