@@ -2001,7 +2001,7 @@ const Syllabus = () => {
                     <h1
                         className="syllabus-header"
                     >
-                        Syllabus 2024-25
+                        {/* TechNotes Pro */}
                     </h1>
                 )}
 

@@ -485,6 +485,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .syllabus-header {
+
   left: 0;
   right: 0;
   position: absolute;
@@ -492,7 +493,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #007bff;
   font-size: 3em;
   margin: 30px 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7); /* Adds glow effect */
+  text-shadow: 2px 2px 4px rgba(233, 206, 206, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7); /* Adds glow effect */
   -webkit-text-stroke: 1px #fff; /* White stroke for better contrast */
   font-family: 'Poppins', sans-serif; /* Clean and modern font */
   letter-spacing: 2px; /* Adds slight spacing between letters for elegance */

@@ -71,7 +71,7 @@ export default function Profile() {
 
             {/* Waves start */}
 
-            <div
+            {/* <div
                 style={{
                     position: 'absolute',
                     zIndex: 1,
@@ -159,7 +159,7 @@ export default function Profile() {
                     opacity: 0.3,
                     animation: 'waveMovement 8s infinite ease-in-out 1s', // Further delayed wave animation
                 }}
-            />
+            /> */}
 
             {/* Waves end */}
 

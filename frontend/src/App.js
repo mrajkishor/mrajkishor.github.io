@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div key={count} style={{ display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333" }}>
 
-      <AnimatedTileBackground />
+      {/* <AnimatedTileBackground /> */}
 
       <div
         className="logo-wrapper"
@@ -48,10 +48,10 @@ const App = () => {
         style={{ cursor: "pointer" }}
       >
         <div className="sidebar-logo">
-          Coding<span className="logo-highlight">++</span>
+          My<span className="logo-highlight">Notes</span>
         </div>
         <div className="sidebar-slogan">
-          Revise, Refine, Practice, Repeat.
+          Clarity Through Simplicity.
         </div>
       </div>
 
