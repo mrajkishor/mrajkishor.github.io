@@ -160,7 +160,13 @@ const App = () => {
 
                 <div className="footer">
                   <p style={{ fontSize: "1.1em", color: "#666" }}>
-                    <p style={{ fontSize: "1.1em", color: "#555", marginTop: "20px", padding: "10px", borderLeft: "4px solid #007bff", backgroundColor: "#f9f9f9" }}>
+                    <p style={{
+                      fontSize: "1.1em", color: "#555", marginTop: "20px", padding: "10px",
+
+                      // borderLeft: "4px solid #007bff", 
+
+                      backgroundColor: "#f9f9f9"
+                    }}>
                       <strong style={{ color: "#007bff" }}>A Quick Note:</strong> This syllabus represents a glimpse of the complete content. We are committed to updating and expanding it every week to ensure you have the latest and most comprehensive material.
                     </p>
 

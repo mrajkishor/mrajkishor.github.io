@@ -116,7 +116,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     return (
         <div key={isOpen} className={`sidebar-container ${isOpen ? "open" : ""}`}>
             <div className="sidebar-header">
-                <h2>Contents</h2>
+                {/* <h2>Contents</h2> */}
             </div>
             <div className="sidebar-content">
                 {renderNestedList(mapper.Contents, `/${mapper.Contents.___urlPath___}`)}

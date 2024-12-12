@@ -1,7 +1,7 @@
 const mapper = {
     "Contents": {
         "___urlPath___": "contents",
-        "Full-Stack Developer Course": {
+        "Full-Stack Developer Notes": {
             "___urlPath___": "full-stack-developer-course",
             "Web Technology (Foundation)": {
                 "___urlPath___": "web-technology",
@@ -2652,7 +2652,7 @@ const mapper = {
                 }
 
             }
-        }, "Data Science and Artificial Intelligence": {
+        }, "Data Science and Artificial Intelligence Notes": {
             "___urlPath___": "data-science-and-artificial-intelligence",
             "Probability and Statistics": {
                 "___urlPath___": "probability-statistics",

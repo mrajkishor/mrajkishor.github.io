@@ -2017,11 +2017,11 @@ const Syllabus = () => {
                 <h2
                     className="tiles-header"
                 >
-                    Full-Stack Developer
+                    Full-Stack Developer Notes
                 </h2>
 
                 <StackGrid className="stack-grid-wrapper" columnWidth={200} gutterWidth={20} gutterHeight={20}>
-                    {renderTiles(syllabus["Full-Stack Developer Course"], "#/contents/full-stack-developer-course")}
+                    {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
                 </StackGrid>
 
             </div>
@@ -2032,11 +2032,11 @@ const Syllabus = () => {
                 <h2
                     className="tiles-header"
                 >
-                    Data Science and Artificial Intelligence
+                    Data Science and Artificial Intelligence Notes
                 </h2>
 
                 <StackGrid className="stack-grid-wrapper" columnWidth={200} gutterWidth={20} gutterHeight={20}>
-                    {renderTiles(syllabus["Data Science and Artificial Intelligence"],
+                    {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
                         "#/contents/data-science-and-artificial-intelligence"
                     )}
                 </StackGrid>
