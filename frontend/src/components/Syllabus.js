@@ -2026,6 +2026,7 @@ const Syllabus = () => {
 
             </div>
 
+
             {/* Data Science Section */}
             <div className="tiles-wrapper rotate-left">
 
