@@ -51,7 +51,7 @@ const App = () => {
           My<span className="logo-highlight">Notes</span>
         </div>
         <div className="sidebar-slogan">
-          Clarity Through Simplicity.
+          Clear & succinct..
         </div>
       </div>
 
