@@ -1973,8 +1973,26 @@ const renderTiles = (topics, basePath) => {
 
 
 const Syllabus = () => {
+    const [columnWidth, setColumnWidth] = useState(200); // Default to 200px for desktop
 
     const [showTitle, setShowTitle] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setColumnWidth(window.innerWidth <= 768 ? 300 : 200); // Use 300px for mobile, 200px for desktop
+        };
+
+        // Set initial column width based on current window size
+        handleResize();
+
+        // Add event listener for resize
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            // Clean up the event listener
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -2020,7 +2038,7 @@ const Syllabus = () => {
                     Full-Stack Developer Notes
                 </h2>
 
-                <StackGrid className="stack-grid-wrapper" columnWidth={300} gutterWidth={20} gutterHeight={20}>
+                <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
                     {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
                 </StackGrid>
 
@@ -2036,7 +2054,7 @@ const Syllabus = () => {
                     Data Science and Artificial Intelligence Notes
                 </h2>
 
-                <StackGrid className="stack-grid-wrapper" columnWidth={300} gutterWidth={20} gutterHeight={20}>
+                <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
                     {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
                         "#/contents/data-science-and-artificial-intelligence"
                     )}
