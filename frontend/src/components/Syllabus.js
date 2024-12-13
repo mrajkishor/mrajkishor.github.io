@@ -2020,7 +2020,7 @@ const Syllabus = () => {
                     Full-Stack Developer Notes
                 </h2>
 
-                <StackGrid className="stack-grid-wrapper" columnWidth={200} gutterWidth={20} gutterHeight={20}>
+                <StackGrid className="stack-grid-wrapper" columnWidth={300} gutterWidth={20} gutterHeight={20}>
                     {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
                 </StackGrid>
 
@@ -2036,7 +2036,7 @@ const Syllabus = () => {
                     Data Science and Artificial Intelligence Notes
                 </h2>
 
-                <StackGrid className="stack-grid-wrapper" columnWidth={200} gutterWidth={20} gutterHeight={20}>
+                <StackGrid className="stack-grid-wrapper" columnWidth={300} gutterWidth={20} gutterHeight={20}>
                     {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
                         "#/contents/data-science-and-artificial-intelligence"
                     )}
