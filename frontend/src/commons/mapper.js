@@ -602,9 +602,19 @@ const mapper = {
                         }
                     },
                     "Database Connectivity": {
-                        "SQL Basics": true,
-                        "NoSQL (MongoDB, Redis)": true,
-                        "ORMs (Mongoose, Sequelize)": true
+                        "___urlPath___": "database-connectivity",
+                        "SQL Basics": {
+                            "___urlPath___": "sql-basics",
+                            "___md___": 142
+                        },
+                        "NoSQL Basics (MongoDB, Redis)": {
+                            "___urlPath___": "nosql",
+                            "___md___": 143
+                        },
+                        "ORMs Basics (Mongoose, Sequelize)": {
+                            "___urlPath___": "orm",
+                            "___md___": 144
+                        }
                     }
                 },
                 "Full-Stack Development": {
@@ -621,47 +631,128 @@ const mapper = {
                     }
                 },
                 "Web Security": {
+                    "___urlPath___": "web-security",
                     "Common Security Threats": {
-                        "Cross-Site Scripting (XSS)": true,
-                        "SQL Injection": true,
-                        "Cross-Site Request Forgery (CSRF)": true
+                        "___urlPath___": "common-security-threats",
+                        "Cross-Site Scripting (XSS)": {
+                            "___urlPath___": "cross-site-scripting",
+                            "___md___": 129
+                        },
+                        "SQL Injection": {
+                            "___urlPath___": "sql-injection",
+                            "___md___": 130
+                        },
+                        "Cross-Site Request Forgery (CSRF)": {
+                            "___urlPath___": "cross-site-request-forgery",
+                            "___md___": 131
+                        }
                     },
                     "Security Best Practices": {
-                        "Data Encryption": true,
-                        "Authentication and Authorization": true,
-                        "HTTPS and Certificates": true,
-                        "Content Security Policy (CSP)": true
+                        "___urlPath___": "security-best-practices",
+                        "Data Encryption": {
+                            "___urlPath___": "data-encryption",
+                            "___md___": 132
+                        },
+                        "Authentication and Authorization": {
+                            "___urlPath___": "authentication-and-authorization",
+                            "___md___": 133
+                        },
+                        "HTTPS and Certificates": {
+                            "___urlPath___": "https-and-certificates",
+                            "___md___": 134
+                        },
+                        "Content Security Policy (CSP)": {
+                            "___urlPath___": "content-security-policy",
+                            "___md___": 135
+                        }
                     }
                 },
                 "Performance Optimization": {
+                    "___urlPath___": "performance-optimization",
                     "Frontend Optimization": {
-                        "Minification and Compression": true,
-                        "Lazy Loading": true,
-                        "Critical Rendering Path": true
+                        "___urlPath___": "frontend-optimization",
+                        "Minification and Compression": {
+                            "___urlPath___": "minification-and-compression",
+                            "___md___": 136
+                        },
+                        "Lazy Loading": {
+                            "___urlPath___": "lazy-loading",
+                            "___md___": 137
+                        },
+                        "Critical Rendering Path": {
+                            "___urlPath___": "critical-rendering-path",
+                            "___md___": 138
+                        }
                     },
                     "Backend Optimization": {
-                        "Load Balancing": true,
-                        "Caching (CDN, Server-Side)": true,
-                        "Database Optimization": true
+                        "___urlPath___": "backend-optimization",
+                        "Load Balancing": {
+                            "___urlPath___": "load-balancing",
+                            "___md___": 139
+                        },
+                        "Caching (CDN, Server-Side)": {
+                            "___urlPath___": "caching",
+                            "___md___": 140
+                        },
+                        "Database Optimization": {
+                            "___urlPath___": "database-optimization",
+                            "___md___": 141
+                        }
                     }
                 },
                 "Emerging Trends": {
+                    "___urlPath___": "emerging-trends",
                     "Progressive Web Apps (PWA)": {
-                        "Service Workers": true,
-                        "Web App Manifest": true,
-                        "Offline Capabilities": true
+                        "___urlPath___": "progressive-web-apps",
+                        "Service Workers": {
+                            "___urlPath___": "service-workers",
+                            "___md___": 126
+                        },
+                        "Web App Manifest": {
+                            "___urlPath___": "web-app-manifest",
+                            "___md___": 127
+                        },
+                        "Offline Capabilities": {
+                            "___urlPath___": "offline-capabilities",
+                            "___md___": 128
+                        }
                     },
                     "WebAssembly (WASM)": {
-                        "Overview": true,
-                        "Use Cases": true
+                        "___urlPath___": "webassembly",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 124
+                        },
+                        "Use Cases": {
+                            "___urlPath___": "use-cases",
+                            "___md___": 125
+                        }
                     },
                     "Single Page Applications (SPA)": {
-                        "Concepts and Frameworks": true,
-                        "Routing in SPAs": true
+                        "___urlPath___": "single-page-applications",
+                        "Concepts and Frameworks": {
+                            "___urlPath___": "concepts-and-frameworks",
+                            "___md___": 122
+                        },
+                        "Routing in SPAs": {
+                            "___urlPath___": "routing-in-spas",
+                            "___md___": 123
+                        }
                     },
                     "AI and ML Integration in Web": {
-                        "TensorFlow.js": true,
-                        "Integration of APIs": true
+                        "___urlPath___": "ai-and-ml-integration-in-web",
+                        "Introduction": {
+                            "___urlPath___": "introduction",
+                            "___md___": 119
+                        },
+                        "TensorFlow.js": {
+                            "___urlPath___": "tensorflow-js",
+                            "___md___": 120
+                        },
+                        "Integration of APIs": {
+                            "___urlPath___": "integration-of-apis",
+                            "___md___": 121
+                        }
                     }
                 },
                 "Tools and Best Practices": {
