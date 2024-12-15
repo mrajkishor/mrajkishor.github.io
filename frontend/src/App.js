@@ -24,7 +24,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    // initGA('G-02C5NDDDR0'); // Replace with your GA4 measurement ID
+    initGA('G-02C5NDDDR0'); // Replace with your GA4 measurement ID
   }, []);
 
   useEffect(() => {
