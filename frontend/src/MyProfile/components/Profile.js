@@ -25,6 +25,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
+import invoiceScreen from '../assets/invoice_screen.jpeg';
+
 
 // Styled component for the Paper element
 const Item = styled(Paper)(({ theme }) => ({
@@ -307,11 +309,89 @@ export default function Profile() {
                 {/* Right Grid for Developer Info */}
                 <Grid item xs={8}>
                     <Item sx={{ textAlign: 'left', padding: '20px', backdropFilter: 'blur(50px)' }}>
+
+                        <div style={{ maxWidth: '800px' }}>
+                            <Typography variant="h6" gutterBottom>
+                                About Me
+                            </Typography>
+
+
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                I am a motivated and skilled Full-Stack Developer with 6+ years of experience in building robust and scalable software applications. My expertise includes technologies like React, Redux, Node.js, Spring Boot, and AWS. I am passionate about crafting intuitive user interfaces and efficient backend systems to solve real-world problems.
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                Currently based in Hyderabad, India, I enjoy working on innovative projects that have practical applications. One of my key side projects, <strong>Chalaan.com</strong>, is a business management solution designed to help enterprises streamline their daily operations, manage invoicing, and improve productivity.
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                I thrive on learning new technologies and exploring how software can simplify processes for individuals and businesses. My goal is to leverage my technical skills to create impactful solutions and continue growing as a developer.
+                            </Typography>
+
+                            <Typography variant="body1">
+                                Outside of work, I enjoy experimenting with digital art, music production, reading about emerging technologies, exploring new places, hiking, and spending time with family and friends.
+                            </Typography>
+
+                        </div>
+                        <br />
+                        <Divider sx={{ marginBottom: 2 }} />
+
                         <Typography variant="h6" gutterBottom>
-                            Full-Stack Developer
+                            Portfolio
                         </Typography>
 
-                        <Divider sx={{ marginBottom: 2 }} />
+                        <List>
+                            <ListItem sx={{ padding: 0 }}>
+                                <Card sx={{ maxWidth: '800px', marginBottom: 4 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={invoiceScreen}
+                                        alt="Chalaan.com Business Management App Preview"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            Chalaan.com - Business Management Solution
+                                        </Typography>
+                                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                            Chalaan.com is a comprehensive **business management platform** designed to cater to small, medium,
+                                            and large enterprises. It streamlines daily operations, automates invoicing, and provides detailed
+                                            insights to help businesses grow and operate efficiently.
+                                        </Typography>
+                                        <Typography variant="body2" sx={{ color: 'text.secondary', marginTop: 2 }}>
+                                            <strong>Key Features:</strong>
+                                            <ul>
+                                                <li>Customizable invoicing templates</li>
+                                                <li>Inventory and expense management</li>
+                                                <li>Role-based access for team collaboration</li>
+                                                <li>Cloud storage integration for seamless data access</li>
+                                            </ul>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            color="primary"
+                                            href="https://chalaan.com"
+                                            target="_blank"
+                                        >
+                                            Visit Project
+                                        </Button>
+                                        {/* <Button
+                                            size="small"
+                                            variant="outlined"
+                                            href="https://github.com/mrajkishor/chalaan" // Replace with your GitHub repo URL
+                                            target="_blank"
+                                        >
+                                            View Code
+                                        </Button> */}
+                                    </CardActions>
+                                </Card>
+                            </ListItem>
+                        </List>
+
 
                         <Typography variant="h6" gutterBottom>
                             Skills
@@ -378,36 +458,103 @@ export default function Profile() {
                         <Typography variant="h6" gutterBottom>
                             Experience
                         </Typography>
-                        <Typography variant="body1">
-                            6+ years of experience in designing, developing, and deploying web / mobile applications and microservices.                         </Typography>
+
                         <List>
-                            <ListItem>
+                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText
-                                    primary="Associate Software Engineer - Cognizant, IN"
-                                    secondary="July 2022 - Present"
+                                    primary={
+                                        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                                            Associate - Cognizant, Hyderabad, IN
+                                        </Typography>
+                                    }
+                                    secondary={
+                                        <>
+                                            <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
+                                                July 2022 - Present
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Working as a Full-Stack Developer, specializing in building scalable enterprise applications.
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Key contributions include designing and developing RESTful APIs, optimizing application performance, and collaborating with cross-functional teams to deliver high-quality solutions.
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Tech stack: React, Redux, Spring Boot, AWS (Lambda, DynamoDB, S3).
+                                            </Typography>
+                                        </>
+                                    }
                                 />
                             </ListItem>
-                            <ListItem>
+                            <Divider sx={{ marginBottom: 2 }} />
+                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText
-                                    primary="Senior Full-Stack Developer - Capgemini, IN"
-                                    secondary="June 2018 - July 2022"
+                                    primary={
+                                        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                                            Associate Consultant - Capgemini, Navi Mumbai, IN
+                                        </Typography>
+                                    }
+                                    secondary={
+                                        <>
+                                            <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
+                                                June 2018 - July 2022
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Led the development of key modules for enterprise applications, delivering solutions within tight deadlines.
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Streamlined business processes by integrating cloud services and modernizing legacy systems.
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Gained expertise in DevOps tools such as Jenkins and Kubernetes for CI/CD pipelines.
+                                            </Typography>
+                                        </>
+                                    }
                                 />
                             </ListItem>
                         </List>
+
                         <Typography variant="h6" gutterBottom>
                             Education
                         </Typography>
+
                         <List>
-                            <ListItem>
+                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText
-                                    primary="Master of Computer Applications (MCA), Kalinga Institute of Industrial Technology, BBSR, IN"
-                                    secondary="2023 - 2025"
+                                    primary={
+                                        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                                            Master of Computer Applications (MCA)
+                                        </Typography>
+                                    }
+                                    secondary={
+                                        <>
+                                            <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
+                                                Kalinga Institute of Industrial Technology, BBSR, IN | 2023 - 2025
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Currently pursuing MCA with a focus on software engineering, Big data analytics, AI/ML and cloud computing.
+                                            </Typography>
+                                        </>
+                                    }
                                 />
                             </ListItem>
-                            <ListItem>
+                            <Divider sx={{ marginBottom: 2 }} />
+                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText
-                                    primary="Bachelor of Technology (BTech), Government College of Engineering, Kalahandi, IN"
-                                    secondary="2012 - 2016"
+                                    primary={
+                                        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                                            Bachelor of Technology (BTech)
+                                        </Typography>
+                                    }
+                                    secondary={
+                                        <>
+                                            <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 1 }}>
+                                                Government College of Engineering, Kalahandi, IN | 2012 - 2016
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                - Specialized in Mechanical Engineering with projects focused on automation and computational mechanics.
+                                            </Typography>
+                                        </>
+                                    }
                                 />
                             </ListItem>
                         </List>
