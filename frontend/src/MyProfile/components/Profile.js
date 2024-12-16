@@ -322,7 +322,9 @@ export default function Profile() {
                             </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                                Currently based in Hyderabad, India, I enjoy working on innovative projects that have practical applications. One of my key side projects, <strong>Chalaan.com</strong>, is a business management solution designed to help enterprises streamline their daily operations, manage invoicing, and improve productivity.
+                                Currently based in Hyderabad, India, I enjoy working on innovative projects that have practical applications.
+
+                                {/* One of my key side projects, <strong>Chalaan.com</strong>, is a business management solution designed to help enterprises streamline their daily operations, manage invoicing, and improve productivity. */}
                             </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
@@ -330,7 +332,7 @@ export default function Profile() {
                             </Typography>
 
                             <Typography variant="body1">
-                                Outside of work, I enjoy experimenting with digital art, music production, reading about emerging technologies, exploring new places, hiking, and spending time with family and friends.
+                                Outside of work, I enjoy experimenting with digital art, music production, reading about emerging technologies, exploring new places, and spending time with family and friends.
                             </Typography>
 
                         </div>

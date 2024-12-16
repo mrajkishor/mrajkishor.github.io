@@ -498,11 +498,163 @@ const mapper = {
                     }
                     ,
                     "Frontend Libraries and Frameworks": {
+                        "___urlPath___": "frontend-libraries-and-frameworks",
                         "React": {
-                            "JSX and Components": true,
-                            "State and Props": true,
-                            "Lifecycle Methods": true,
-                            "Hooks and Context API": true
+                            "___urlPath___": "react",
+                            "Basics": {
+                                "___urlPath___": "basics",
+                                "Introduction to React": true,
+                                "Setting Up the Development Environment": true,
+                                "Understanding Virtual DOM": true,
+                                "JSX": {
+                                    "What is JSX?": true,
+                                    "JSX Syntax": true,
+                                    "Embedding Expressions in JSX": true,
+                                    "JSX vs HTML": true
+                                }
+                            },
+                            "Components": {
+                                "Class Components": true,
+                                "Functional Components": true,
+                                "Component Hierarchies and Nesting": true,
+                                "Props": {
+                                    "Passing Data with Props": true,
+                                    "Prop Types Validation": true,
+                                    "Default Props": true
+                                },
+                                "State": {
+                                    "State in Class Components": true,
+                                    "State in Functional Components with Hooks": true,
+                                    "State Management Best Practices": true
+                                }
+                            },
+                            "Event Handling": {
+                                "Understanding Synthetic Events": true,
+                                "Binding Event Handlers": true,
+                                "Passing Arguments to Event Handlers": true
+                            },
+                            "Lifecycle Methods": {
+                                "Component Lifecycle Overview": true,
+                                "Mounting Methods": {
+                                    "constructor()": true,
+                                    "componentDidMount()": true
+                                },
+                                "Updating Methods": {
+                                    "shouldComponentUpdate()": true,
+                                    "componentDidUpdate()": true
+                                },
+                                "Unmounting Methods": {
+                                    "componentWillUnmount()": true
+                                },
+                                "Error Boundaries": true
+                            },
+                            "Hooks": {
+                                "useState": true,
+                                "useEffect": true,
+                                "useContext": true,
+                                "useReducer": true,
+                                "useRef": true,
+                                "useMemo": true,
+                                "Custom Hooks": true
+                            },
+                            "Context API": {
+                                "Creating Context": true,
+                                "Consuming Context": true,
+                                "Context with useContext Hook": true,
+                                "Performance Optimization in Context API": true
+                            },
+                            "Routing": {
+                                "React Router Basics": true,
+                                "Route Matching and Nesting": true,
+                                "Dynamic Routing": true,
+                                "Programmatic Navigation": true,
+                                "Protected Routes": true
+                            },
+                            "State Management": {
+                                "Redux": {
+                                    "Introduction to Redux": true,
+                                    "Redux Store, Actions, and Reducers": true,
+                                    "Connecting React with Redux": true,
+                                    "Middleware and Redux Thunk": true,
+                                    "Redux Toolkit": true
+                                },
+                                "MobX": true,
+                                "Zustand": true
+                            },
+                            "Styling": {
+                                "CSS-in-JS": {
+                                    "Styled-Components": true,
+                                    "Emotion": true
+                                },
+                                "Traditional CSS": true,
+                                "CSS Modules": true,
+                                "Sass/SCSS": true
+                            },
+                            "Forms": {
+                                "Controlled Components": true,
+                                "Uncontrolled Components": true,
+                                "Form Validation Libraries": {
+                                    "Formik": true,
+                                    "React Hook Form": true,
+                                    "Yup Validation": true
+                                }
+                            },
+                            "Performance Optimization": {
+                                "React.memo": true,
+                                "useCallback and useMemo": true,
+                                "Code Splitting with React.lazy and Suspense": true,
+                                "Windowing with react-window": true
+                            },
+                            "Advanced Topics": {
+                                "___urlPath___": "advanced-topics",
+                                "Portals": {
+                                    "___urlPath___": "portals",
+                                    "___md___": 151
+                                },
+                                "Error Boundaries and Error Handling": true,
+                                "Render Props": true,
+                                "Higher-Order Components (HOC)": true,
+                                "React Fiber Architecture": {
+                                    "___urlPath___": "react-fiber-architecture",
+                                    "___md___": 152
+                                }
+                            },
+                            "Testing": {
+                                "Unit Testing with Jest": true,
+                                "Component Testing with React Testing Library": true,
+                                "End-to-End Testing with Cypress": true,
+                                "Mocking API Requests": true
+                            },
+                            "Build Tools and Deployment": {
+                                "___urlPath___": "build-tools-and-deployment",
+                                "Webpack and Babel": {
+                                    "___urlPath___": "webpack-and-babel",
+                                    "___md___": 145
+                                },
+                                "Code Bundling and Minification": {
+                                    "___urlPath___": "code-bundling-and-minification",
+                                    "___md___": 146
+                                },
+                                "Creating a Production Build": {
+                                    "___urlPath___": "creating-a-production-build",
+                                    "___md___": 147
+                                },
+                                "Deploying React Apps": {
+                                    "___urlPath___": "deploying-react-apps",
+                                    "Netlify": {
+                                        "___urlPath___": "netlify",
+                                        "___md___": 148
+                                    },
+                                    "Vercel": {
+                                        "___urlPath___": "vercel",
+                                        "___md___": 149
+                                    },
+                                    "AWS Amplify": {
+                                        "___urlPath___": "aws-amplify",
+                                        "___md___": 150
+                                    }
+                                }
+                            }
                         },
                         "Vue": {
                             "Directives": true,
