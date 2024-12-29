@@ -316,6 +316,7 @@ const mapper = {
                             }
                         },
                         "Basic Concepts": {
+                            "___urlPath___": "basic-concepts",
                             "Variables and Constants": {
                                 "var, let, const": true,
                                 "Hoisting": true
@@ -358,10 +359,21 @@ const mapper = {
                             }
                         },
                         "Functions": {
+                            "___urlPath___": "functions",
                             "Function Basics": {
-                                "Function Declaration": true,
-                                "Function Expression": true,
-                                "Arrow Functions": true
+                                "___urlPath___": "function-basics",
+                                "Function Declaration": {
+                                    "___urlPath___": "function-declaration",
+                                    "___md___": 196
+                                },
+                                "Function Expression": {
+                                    "___urlPath___": "function-expression",
+                                    "___md___": 197
+                                },
+                                "Arrow Functions": {
+                                    "___urlPath___": "arrow-functions",
+                                    "___md___": 198
+                                }
                             },
                             "Parameters and Return": {
                                 "Default Parameters": true,
@@ -2814,6 +2826,7 @@ const mapper = {
                     }
                 },
                 "Application Layer": {
+                    "___urlPath___": "application_layer",
                     "DNS (Domain Name System)": {
                         "DNS Resolution Process": true,
                         "Types of DNS Records (A, AAAA, CNAME, MX)": true
@@ -2821,7 +2834,10 @@ const mapper = {
                     "HTTP and HTTPS": {
                         "How HTTP Works": true,
                         "Differences Between HTTP and HTTPS": true,
-                        "HTTPS and SSL/TLS": true
+                        "HTTPS and SSL/TLS": {
+                            "___urlPath___": "https_ssl_tls",
+                            "___md___": 199
+                        }
                     },
                     "Email Protocols": {
                         "SMTP (Simple Mail Transfer Protocol)": true,
@@ -2848,7 +2864,10 @@ const mapper = {
                     "Firewalls and VPNs": {
                         "Types of Firewalls": true,
                         "VPNs (Virtual Private Networks)": true,
-                        "IPSec (Internet Protocol Security)": true
+                        "IPSec (Internet Protocol Security)": {
+                            "___urlPath___": "ipsec",
+                            "___md___": 200
+                        }
                     }
                 },
                 "Wireless Networks": {
