@@ -1187,12 +1187,62 @@ const mapper = {
                             "Building a Simple Chat Application": true
                         },
                         "Java 8 Features": {
-                            "Lambda Expressions": true,
-                            "Streams API": true,
-                            "Functional Interfaces": true,
-                            "Optional Class": true,
-                            "Date and Time API": true
+                            "___urlPath___": "java-8-features",
+                            "Lambda Expressions": {
+                                "___urlPath___": "lambda-expressions",
+                                "Functional Interfaces Overview": {
+                                    "___urlPath___": "functional-interfaces-overview",
+                                    "___md___": 232
+                                },
+                                "Method References": {
+                                    "___urlPath___": "method-references",
+                                    "___md___": 233
+                                },
+                                "Lambda Syntax and Scope": {
+                                    "___urlPath___": "lambda-syntax-and-scope",
+                                    "___md___": 234
+                                },
+                                "Comparator Enhancements": {
+                                    "___urlPath___": "comparator-enhancements",
+                                    "___md___": 235
+                                }
+                            },
+                            "Streams API": {
+                                "Stream Creation": true,
+                                "Filter, Map, Reduce Operations": true,
+                                "Parallel Streams": true,
+                                "ForEach Operation": true,
+                                "Collectors": {
+                                    "Grouping": true,
+                                    "Partitioning": true
+                                }
+                            },
+                            "Functional Interfaces": {
+                                "Predicate, Consumer, Function, Supplier": true,
+                                "BiPredicate, BiConsumer, BiFunction": true
+                            },
+                            "Optional Class": {
+                                "Creating and Using Optionals": true,
+                                "Mapping and Filtering Optionals": true,
+                                "Handling Null Values": true,
+                                "FlatMap with Optionals": true
+                            },
+                            "Default Methods in Interfaces": {
+                                "Adding Default Methods": true,
+                                "Resolving Multiple Inheritance": true
+                            },
+                            "Date and Time API": {
+                                "Creating and Manipulating Dates": true,
+                                "Formatting and Parsing Dates": true,
+                                "Period and Duration": true
+                            },
+                            "Other Enhancements": {
+                                "New Features in Collections": true,
+                                "Nashorn JavaScript Engine": true,
+                                "Base64 Encoding and Decoding": true
+                            }
                         }
+
                     },
                     "4. Web Development with Java": {
                         "Java Servlets": {
@@ -1835,17 +1885,6 @@ const mapper = {
                     },
                     "Concurrency Control": {
                         "___urlPath___": "concurrency-control",
-                        "Scheduling": {
-                            "___urlPath___": "scheduling",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 191
-                            },
-                            "Serializability and Precedence Graphs": {
-                                "___urlPath___": "serializability-and-precedence-graphs",
-                                "___md___": 0
-                            }
-                        },
                         "Concurrency problems": {
                             "___urlPath___": "concurrency-problems",
                             "Introduction": {
@@ -1860,21 +1899,28 @@ const mapper = {
                                 "___urlPath___": "read-write-conflict",
                                 "___md___": 194
                             },
-
                             "Other Conflicts (Phantom Reads, etc.)": {
                                 "___urlPath___": "other-conflicts",
-                                "___md___": 0
+                                "___md___": 231
                             }
                         },
-                        "Recoverable and Non-recoverable schedules": {
+                        "Recoverability: Recoverable and Non-recoverable schedules": {
                             "___urlPath___": "recoverable-and-non-recoverable-schedules",
+                            "___md___": 195
+                        },
+                        "Scheduling and Serializability": {
+                            "___urlPath___": "scheduling-and-serializability",
                             "Overview": {
                                 "___urlPath___": "overview",
-                                "___md___": 195
+                                "___md___": 191
                             },
-                            "Examples": {
-                                "___urlPath___": "examples",
-                                "___md___": 0
+                            "Serializability and Precedence Graphs": {
+                                "___urlPath___": "serializability-and-precedence-graphs",
+                                "___md___": 229
+                            },
+                            "View Serializability": {
+                                "___urlPath___": "view-serializability",
+                                "___md___": 230
                             }
                         },
                         "Lock-Based Protocols": {
