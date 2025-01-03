@@ -759,9 +759,191 @@ const mapper = {
                             "Spring Framework": {
                                 "Dependency Injection and IoC": true,
                                 "Spring MVC for Web Applications": true,
-                                "Spring Boot for Rapid Development": true,
+                                "Spring Boot for Rapid Development": {
+                                    "___urlPath___": "spring-boot",
+                                    "Creating REST APIs": {
+                                        "Introduction to REST": true,
+                                        "Building RESTful Endpoints": true,
+                                        "Request and Response Mapping": true,
+                                        "Handling Exceptions in REST APIs": true,
+                                        "Testing REST APIs": true
+                                    },
+                                    "Auto-configuration": {
+                                        "Spring Boot Auto-Configuration Concepts": true,
+                                        "Customizing Auto-Configuration": true,
+                                        "Using Starter Dependencies": true,
+                                        "Disabling Specific Auto-Configurations": true
+                                    },
+                                    "Profiles": {
+                                        "___urlPath___": "profiles",
+                                        "Introduction to Spring Profiles": {
+                                            "___urlPath___": "introduction-to-spring-profiles",
+                                            "___md___": 219
+                                        },
+                                        "Defining Environment-Specific Configurations": true,
+                                        "Activating Profiles": true,
+                                        "Using Profiles with YAML and Properties Files": true,
+                                        "Testing with Different Profiles": true
+                                    },
+                                    "Actuator": {
+                                        "Introduction to Spring Boot Actuator": true,
+                                        "Built-In Actuator Endpoints": true,
+                                        "Customizing Actuator Endpoints": true,
+                                        "Monitoring Applications with Actuator": true,
+                                        "Securing Actuator Endpoints": true
+                                    }
+                                },
                                 "Building RESTful APIs with Spring Boot": true,
-                                "Spring Security for Authentication and Authorization": true
+                                "Spring Security for Authentication and Authorization": {
+                                    "___urlPath___": "spring-security-for-authentication-and-authorization",
+                                    "Introduction": {
+                                        "___urlPath___": "introduction",
+                                        "___md___": 201
+                                    },
+                                    "Basic Authentication and Authorization": {
+                                        "___urlPath___": "basic-auth-and-authz",
+                                        "___md___": 202
+                                    },
+                                    "RBAC": {
+                                        "___urlPath___": "role-based-access-control",
+                                        "___md___": 203
+                                    },
+                                    "Integrating RBAC with database": {
+                                        "___urlPath___": "integrating-rbac-with-database",
+                                        "___md___": 204
+                                    },
+                                    "Password Management": {
+                                        "___urlPath___": "password-management",
+                                        "___md___": 53
+                                    },
+                                    "JWT": {
+                                        "___urlPath___": "jwt",
+                                        "___md___": 57
+                                    },
+                                    "OAuth2": {
+                                        "___urlPath___": "oauth2",
+                                        "___md___": 55
+                                    },
+                                    "SSO": {
+                                        "___urlPath___": "sso",
+                                        "___md___": 56
+                                    },
+                                    "LDAP Integration": {
+                                        "___urlPath___": "ldap-integration",
+                                        "___md___": 58
+                                    },
+                                    "Session Management": {
+                                        "___urlPath___": "session-management",
+                                        "___md___": 59
+                                    },
+                                    "CSRF Protection": {
+                                        "___urlPath___": "csrf-protection",
+                                        "___md___": 60
+                                    },
+                                    "REST API Security": {
+                                        "___urlPath___": "rest-api-security",
+                                        "___md___": 61
+                                    },
+                                    "Custom Security Configurations": {
+                                        "___urlPath___": "custom-security-configurations",
+                                        "___md___": 62
+                                    },
+                                    "Testing": {
+                                        "___urlPath___": "testing",
+                                        "___md___": 63
+                                    },
+                                    "Best Practices": {
+                                        "___urlPath___": "best-practices",
+                                        "___md___": 64
+                                    }
+                                },
+
+                                "Spring Data JPA": {
+                                    "___urlPath___": "spring-data-jpa",
+                                    "Introduction": {
+                                        "___urlPath___": "introduction",
+                                        "___md___": 205
+                                    },
+                                    "Repository Design": {
+                                        "___urlPath___": "repository-design",
+                                        "CrudRepository": {
+                                            "___urlPath___": "crud-repository",
+                                            "___md___": 206
+                                        },
+                                        "JpaRepository": {
+                                            "___urlPath___": "jpa-repository",
+                                            "___md___": 207
+                                        },
+                                        "PagingAndSortingRepository": {
+                                            "___urlPath___": "paging-sorting-repository",
+                                            "___md___": 208
+                                        },
+                                        "CustomRepositories": {
+                                            "___urlPath___": "custom-repositories",
+                                            "___md___": 209
+                                        }
+                                    },
+                                    "Query Methods": {
+                                        "___urlPath___": "query-methods",
+                                        "Derived Queries": {
+                                            "___urlPath___": "derived-queries",
+                                            "___md___": 210
+                                        },
+                                        "Named Queries": {
+                                            "___urlPath___": "named-queries",
+                                            "___md___": 211
+                                        },
+                                        "JPQL": {
+                                            "___urlPath___": "jpql",
+                                            "___md___": 212
+                                        },
+                                        "Native Queries": {
+                                            "___urlPath___": "native-queries",
+                                            "___md___": 213
+                                        }
+                                    },
+                                    "Criteria API": {
+                                        "___urlPath___": "criteria-api",
+                                        "Introduction": {
+                                            "___urlPath___": "introduction",
+                                            "___md___": 214
+                                        },
+                                        "CriteriaBuilder": {
+                                            "___urlPath___": "criteria-builder",
+                                            "___md___": 215
+                                        },
+                                        "CriteriaQuery": {
+                                            "___urlPath___": "criteria-query",
+                                            "___md___": 216
+                                        },
+                                        "Predicate and Expressions": {
+                                            "___urlPath___": "predicate-expressions",
+                                            "___md___": 217
+                                        },
+                                        "Joins and Aggregations": {
+                                            "___urlPath___": "joins-aggregations",
+                                            "___md___": 218
+                                        }
+                                    },
+                                    "AdvancedFeatures": {
+                                        "___urlPath___": "advanced-features",
+                                        "Auditing": {
+                                            "___urlPath___": "auditing",
+                                        },
+                                        "EntityGraph": {
+                                            "___urlPath___": "entity-graph",
+                                        },
+                                        "Specifications": {
+                                            "___urlPath___": "specifications",
+                                        },
+                                        "Projections": {
+                                            "___urlPath___": "projections",
+                                        },
+                                        "CustomQueryResultMappers": {
+                                            "___urlPath___": "custom-query-result-mappers",
+                                        }
+                                    }
+                                }
                             }
                         }
                     },
@@ -1340,129 +1522,133 @@ const mapper = {
                     }
                 }
             },
-            "AWS Certified Developer - Associate": {
-                "___urlPath___": "aws-certified-developer-associate",
-                "Getting Started with AWS": 1,
-                "AWS Identity & Access Management (AWS IAM)": 2,
-                "Amazon EC2 – Basics": 3,
-                "Amazon EC2 – Instance Storage": 4,
-                "High Availability & Scalability": 5,
-                "RDS, Aurora, & ElastiCache": 6,
-                "Amazon Route 53": 7,
-                "Amazon VPC – Basics": 8,
-                "Amazon S3": 9,
-                "AWS CLI, SDK, IAM Roles & Policies": 10,
-                "Amazon S3 – Advanced": 11,
-                "Amazon S3 – Security": 12,
-                "Amazon CloudFront": 13,
-                "Containers on AWS": 14,
-                "AWS Elastic Beanstalk": 15,
-                "AWS CloudFormation": 16,
-                "AWS Integration & Messaging": 17,
-                "AWS Monitoring, Troubleshooting & Audit": 18,
-                "AWS Lambda": 19,
-                "Amazon DynamoDB": {
-                    "___urlPath___": "amazon-dynamodb",
-                    "Introduction": 22,
-                    "DynamoDB as a Session State Cache": 34,
-                    "DynamoDB Write Sharding": 33,
-                    "DynamoDB – Write Types": 32,
-                    "DynamoDB – Large Objects Pattern": 30,
-                    "DynamoDB – Indexing S3 Objects Metadata": 31,
-                    "DynamoDB Operations": 29,
-                    "Security & Other features": 23,
-                    "Users Interact with DynamoDB Directly": 25,
-                    "Fine-Grained Access Control": 24,
-                },
-                "Amazon API Gateway": {
-                    "___urlPath___": "amazon-api-gateway",
-                    "Introduction": 39,
-                    "Example: Building a Serverless API": 38,
-                    "API Gateway – High-Level Integrations": 40,
-                    "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
-                    "API Gateway - Endpoint Types": 42,
-                    "API Gateway – Security": 43,
-                    "API Gateway – Deployment Stages": 44,
-                    "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
+            "Cloud Computing": {
+                "AWS": {
+                    "AWS Certified Developer - Associate": {
+                        "___urlPath___": "aws-certified-developer-associate",
+                        "Getting Started with AWS": 1,
+                        "AWS Identity & Access Management (AWS IAM)": 2,
+                        "Amazon EC2 – Basics": 3,
+                        "Amazon EC2 – Instance Storage": 4,
+                        "High Availability & Scalability": 5,
+                        "RDS, Aurora, & ElastiCache": 6,
+                        "Amazon Route 53": 7,
+                        "Amazon VPC – Basics": 8,
+                        "Amazon S3": 9,
+                        "AWS CLI, SDK, IAM Roles & Policies": 10,
+                        "Amazon S3 – Advanced": 11,
+                        "Amazon S3 – Security": 12,
+                        "Amazon CloudFront": 13,
+                        "Containers on AWS": 14,
+                        "AWS Elastic Beanstalk": 15,
+                        "AWS CloudFormation": 16,
+                        "AWS Integration & Messaging": 17,
+                        "AWS Monitoring, Troubleshooting & Audit": 18,
+                        "AWS Lambda": 19,
+                        "Amazon DynamoDB": {
+                            "___urlPath___": "amazon-dynamodb",
+                            "Introduction": 22,
+                            "DynamoDB as a Session State Cache": 34,
+                            "DynamoDB Write Sharding": 33,
+                            "DynamoDB – Write Types": 32,
+                            "DynamoDB – Large Objects Pattern": 30,
+                            "DynamoDB – Indexing S3 Objects Metadata": 31,
+                            "DynamoDB Operations": 29,
+                            "Security & Other features": 23,
+                            "Users Interact with DynamoDB Directly": 25,
+                            "Fine-Grained Access Control": 24,
+                        },
+                        "Amazon API Gateway": {
+                            "___urlPath___": "amazon-api-gateway",
+                            "Introduction": 39,
+                            "Example: Building a Serverless API": 38,
+                            "API Gateway – High-Level Integrations": 40,
+                            "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
+                            "API Gateway - Endpoint Types": 42,
+                            "API Gateway – Security": 43,
+                            "API Gateway – Deployment Stages": 44,
+                            "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
 
-                },
-                "AWS CICD": 22,
-                "AWS Serverless Application Model (SAM)": 23,
-                "AWS Cloud Development Kit (CDK)": 24,
-                "Amazon Cognito": 25,
-                "Other Serverless": 26,
-                "Advanced Identity in AWS": 27,
-                "AWS Security & Encryption": 28,
-                "Other Services": 29,
-                "Exam Preparation": 30,
-                "Congratulations": 31
-            },
-            "AWS Serverless": {
-                "___urlPath___": "aws-serverless",
-                "Introduction to Serverless Computing": {
-                    "___urlPath___": "introduction-to-serverless-computing",
-                    "What is Serverless?": {
-                        "___urlPath___": "what-is-serverless",
-                        "___md___": 46
+                        },
+                        "AWS CICD": 22,
+                        "AWS Serverless Application Model (SAM)": 23,
+                        "AWS Cloud Development Kit (CDK)": 24,
+                        "Amazon Cognito": 25,
+                        "Other Serverless": 26,
+                        "Advanced Identity in AWS": 27,
+                        "AWS Security & Encryption": 28,
+                        "Other Services": 29,
+                        "Exam Preparation": 30,
+                        "Congratulations": 31
                     },
-                    "Benefits of Serverless Architecture": true,
-                    "Overview of AWS Serverless Services": true
-                },
-                "AWS Lambda": {
-                    "Introduction to AWS Lambda": true,
-                    "Creating and Deploying Lambda Functions": true,
-                    "Event-Driven Architecture with Lambda": true,
-                    "Monitoring and Debugging Lambda Functions": true,
-                    "Best Practices for AWS Lambda": true
-                },
-                "API Gateway": {
-                    "Introduction to Amazon API Gateway": true,
-                    "Creating and Managing REST APIs": true,
-                    "Integrating API Gateway with AWS Lambda": true,
-                    "Authentication and Authorization with API Gateway": true,
-                    "CORS and Rate Limiting": true
-                },
-                "AWS DynamoDB": {
-                    "Introduction to DynamoDB": true,
-                    "Creating and Managing Tables": true,
-                    "Data Modeling with DynamoDB": true,
-                    "DynamoDB Streams": true,
-                    "Best Practices for DynamoDB Performance": true
-                },
-                "Serverless Frameworks": {
-                    "Introduction to Serverless Framework": true,
-                    "Deploying Applications with Serverless Framework": true,
-                    "Comparison with SAM (Serverless Application Model)": true
-                },
-                "Event Sources": {
-                    "AWS S3 as Event Source": true,
-                    "DynamoDB Streams as Event Source": true,
-                    "Amazon SNS and SQS Integration": true,
-                    "AWS EventBridge": true
-                },
-                "Serverless Monitoring and Security": {
-                    "Monitoring with AWS CloudWatch": true,
-                    "Setting Up Alarms and Logs": true,
-                    "Security Best Practices for Serverless Applications": true,
-                    "IAM Role Management for Serverless": true
-                },
-                "CI/CD for Serverless Applications": {
-                    "Introduction to AWS CodePipeline": true,
-                    "Building CI/CD Pipelines for Serverless": true,
-                    "Testing Serverless Applications": true,
-                    "Deploying Serverless Applications with Automation": true
-                },
-                "Additional Serverless Services": {
-                    "AWS AppSync for GraphQL APIs": true,
-                    "AWS Step Functions for Orchestration": true,
-                    "AWS Cognito for User Management": true,
-                    "AWS SAM CLI for Deployment": true
-                },
-                "Case Studies and Hands-On": {
-                    "Building a Serverless Web Application": true,
-                    "Serverless Data Processing Pipeline": true,
-                    "Serverless Real-Time Applications with WebSockets": true,
-                    "Serverless Chat Application": true
+                    "AWS Serverless": {
+                        "___urlPath___": "aws-serverless",
+                        "Introduction to Serverless Computing": {
+                            "___urlPath___": "introduction-to-serverless-computing",
+                            "What is Serverless?": {
+                                "___urlPath___": "what-is-serverless",
+                                "___md___": 46
+                            },
+                            "Benefits of Serverless Architecture": true,
+                            "Overview of AWS Serverless Services": true
+                        },
+                        "AWS Lambda": {
+                            "Introduction to AWS Lambda": true,
+                            "Creating and Deploying Lambda Functions": true,
+                            "Event-Driven Architecture with Lambda": true,
+                            "Monitoring and Debugging Lambda Functions": true,
+                            "Best Practices for AWS Lambda": true
+                        },
+                        "API Gateway": {
+                            "Introduction to Amazon API Gateway": true,
+                            "Creating and Managing REST APIs": true,
+                            "Integrating API Gateway with AWS Lambda": true,
+                            "Authentication and Authorization with API Gateway": true,
+                            "CORS and Rate Limiting": true
+                        },
+                        "AWS DynamoDB": {
+                            "Introduction to DynamoDB": true,
+                            "Creating and Managing Tables": true,
+                            "Data Modeling with DynamoDB": true,
+                            "DynamoDB Streams": true,
+                            "Best Practices for DynamoDB Performance": true
+                        },
+                        "Serverless Frameworks": {
+                            "Introduction to Serverless Framework": true,
+                            "Deploying Applications with Serverless Framework": true,
+                            "Comparison with SAM (Serverless Application Model)": true
+                        },
+                        "Event Sources": {
+                            "AWS S3 as Event Source": true,
+                            "DynamoDB Streams as Event Source": true,
+                            "Amazon SNS and SQS Integration": true,
+                            "AWS EventBridge": true
+                        },
+                        "Serverless Monitoring and Security": {
+                            "Monitoring with AWS CloudWatch": true,
+                            "Setting Up Alarms and Logs": true,
+                            "Security Best Practices for Serverless Applications": true,
+                            "IAM Role Management for Serverless": true
+                        },
+                        "CI/CD for Serverless Applications": {
+                            "Introduction to AWS CodePipeline": true,
+                            "Building CI/CD Pipelines for Serverless": true,
+                            "Testing Serverless Applications": true,
+                            "Deploying Serverless Applications with Automation": true
+                        },
+                        "Additional Serverless Services": {
+                            "AWS AppSync for GraphQL APIs": true,
+                            "AWS Step Functions for Orchestration": true,
+                            "AWS Cognito for User Management": true,
+                            "AWS SAM CLI for Deployment": true
+                        },
+                        "Case Studies and Hands-On": {
+                            "Building a Serverless Web Application": true,
+                            "Serverless Data Processing Pipeline": true,
+                            "Serverless Real-Time Applications with WebSockets": true,
+                            "Serverless Chat Application": true
+                        }
+                    },
                 }
             },
             "Database Management": {
@@ -1632,6 +1818,10 @@ const mapper = {
                 },
                 "Transactions and Concurrency Control": {
                     "___urlPath___": "transactions-and-concurrency-control",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 228
+                    },
                     "Transactions": {
                         "___urlPath___": "transactions",
                         "Properties of Transactions (ACID)": {
@@ -1647,7 +1837,14 @@ const mapper = {
                         "___urlPath___": "concurrency-control",
                         "Scheduling": {
                             "___urlPath___": "scheduling",
-                            "___md___": 191
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 191
+                            },
+                            "Serializability and Precedence Graphs": {
+                                "___urlPath___": "serializability-and-precedence-graphs",
+                                "___md___": 0
+                            }
                         },
                         "Concurrency problems": {
                             "___urlPath___": "concurrency-problems",
@@ -1663,22 +1860,55 @@ const mapper = {
                                 "___urlPath___": "read-write-conflict",
                                 "___md___": 194
                             },
+
+                            "Other Conflicts (Phantom Reads, etc.)": {
+                                "___urlPath___": "other-conflicts",
+                                "___md___": 0
+                            }
                         },
                         "Recoverable and Non-recoverable schedules": {
                             "___urlPath___": "recoverable-and-non-recoverable-schedules",
-                            "___md___": 195
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 195
+                            },
+                            "Examples": {
+                                "___urlPath___": "examples",
+                                "___md___": 0
+                            }
                         },
                         "Lock-Based Protocols": {
                             "___urlPath___": "lock-based-protocols",
-                            "___md___": 164
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 164
+                            },
+                            "Two-Phase Locking (2PL)": {
+                                "___urlPath___": "two-phase-locking",
+                                "___md___": 0
+                            }
                         },
                         "Deadlock Handling": {
                             "___urlPath___": "deadlock-handling",
-                            "___md___": 165
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 165
+                            },
+                            "Prevention and Avoidance": {
+                                "___urlPath___": "prevention-and-avoidance",
+                                "___md___": 165
+                            },
+                            "Detection and Recovery": {
+                                "___urlPath___": "detection-and-recovery",
+                                "___md___": 212
+                            }
                         },
                         "Timestamp-Based Protocols": {
                             "___urlPath___": "timestamp-based-protocols",
-                            "___md___": 166
+                            "Optimistic Concurrency Control": {
+                                "___urlPath___": "optimistic-concurrency-control",
+                                "___md___": 166
+                            }
                         },
                         "Multiversion Concurrency Control (MVCC)": {
                             "___urlPath___": "multiversion-concurrency-control",
@@ -2317,15 +2547,46 @@ const mapper = {
                         "Adjacency List": true
                     },
                     "Graph Traversal": {
-                        "Depth-First Search (DFS)": true,
-                        "Breadth-First Search (BFS)": true
+                        "___urlPath___": "graph-traversal",
+                        "Depth-First Search (DFS)": {
+                            "___urlPath___": "depth-first-search",
+                            "___md___": 220
+                        },
+                        "Breadth-First Search (BFS)": {
+                            "___urlPath___": "breadth-first-search",
+                            "___md___": 227
+                        }
                     },
                     "Shortest Path Algorithms": {
-                        "Dijkstra's Algorithm": true,
-                        "Bellman-Ford Algorithm": true,
-                        "Floyd-Warshall Algorithm": true
+                        "___urlPath___": "shortest-path-algorithms",
+                        "Dijkstra's Algorithm": {
+                            "___urlPath___": "dijkstras-algorithm",
+                            "___md___": 221
+                        },
+                        "Bellman-Ford Algorithm": {
+                            "___urlPath___": "bellman-ford-algorithm",
+                            "___md___": 222
+                        },
+                        "Floyd-Warshall Algorithm": {
+                            "___urlPath___": "floyd-warshall-algorithm",
+                            "___md___": 223
+                        }
                     },
-                    "Minimum Spanning Tree (MST)": true,
+                    "Minimum Spanning Tree (MST)": {
+                        "___urlPath___": "minimum-spanning-tree",
+                        "Introduction to MST": {
+                            "___urlPath___": "introduction-to-mst",
+                            "___md___": 224
+                        },
+                        "Prim's Algorithm": {
+                            "___urlPath___": "prims-algorithm",
+                            "___md___": 225
+                        },
+                        "Kruskal's Algorithm": {
+                            "___urlPath___": "kruskals-algorithm",
+                            "___md___": 226
+                        }
+                    },
                     "Topological Sorting": true,
                     "Strongly Connected Components (SCC)": true,
                     "Applications in Real-World Problems": {

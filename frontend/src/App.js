@@ -34,35 +34,35 @@ const App = () => {
   }
 
 
-  useEffect(() => {
-    document.addEventListener("contextmenu", (e) => {
-      e.preventDefault();
-    });
-    return () => {
-      document.removeEventListener("contextmenu", (e) => {
-        e.preventDefault();
-      });
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("contextmenu", (e) => {
+  //     e.preventDefault();
+  //   });
+  //   return () => {
+  //     document.removeEventListener("contextmenu", (e) => {
+  //       e.preventDefault();
+  //     });
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    const disableShortcuts = (e) => {
-      if (
-        e.ctrlKey &&
-        (e.key === "i" || e.key === "u" || e.key === "c" || e.key === "j")
-      ) {
-        e.preventDefault();
-      }
-      if (e.key === "F12") {
-        e.preventDefault();
-      }
-    };
+  // useEffect(() => {
+  //   const disableShortcuts = (e) => {
+  //     if (
+  //       e.ctrlKey &&
+  //       (e.key === "i" || e.key === "u" || e.key === "c" || e.key === "j")
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //     if (e.key === "F12") {
+  //       e.preventDefault();
+  //     }
+  //   };
 
-    document.addEventListener("keydown", disableShortcuts);
-    return () => {
-      document.removeEventListener("keydown", disableShortcuts);
-    };
-  }, []);
+  //   document.addEventListener("keydown", disableShortcuts);
+  //   return () => {
+  //     document.removeEventListener("keydown", disableShortcuts);
+  //   };
+  // }, []);
 
   // const detectDevTools = () => {
   //   const devTools = /./;
@@ -72,16 +72,16 @@ const App = () => {
   //   console.log(devTools);
   // };
 
-  useEffect(() => {
-    const warnUser = () => {
-      console.clear();
-      console.log("%cStop!", "color: red; font-size: 40px;");
-      console.log(
-        "This browser feature is intended for developers. If someone told you to paste something here, it could compromise your security."
-      );
-    };
-    warnUser();
-  }, []);
+  // useEffect(() => {
+  //   const warnUser = () => {
+  //     console.clear();
+  //     console.log("%cStop!", "color: red; font-size: 40px;");
+  //     console.log(
+  //       "This browser feature is intended for developers. If someone told you to paste something here, it could compromise your security."
+  //     );
+  //   };
+  //   warnUser();
+  // }, []);
 
 
   // useEffect(() => {
@@ -118,7 +118,43 @@ const App = () => {
           My<span className="logo-highlight">Notes</span>
         </div>
         <div className="sidebar-slogan">
-          Clear & succinct..
+          OpenDev Handbook.
+          {/* Other suggestions : 
+          
+          Here are some other relevant name ideas for your open-source developer notes project that balance inclusivity, clarity, and appeal:
+
+### 1. **DevNotes Collective**
+   - **Why**: Emphasizes the collaborative and community-driven aspect of your notes while keeping it simple.
+
+### 2. **The Code Chronicles**
+   - **Why**: Adds a bit of personality while still keeping the focus on coding and sharing knowledge.
+
+### 3. **OpenDev Handbook**
+   - **Why**: Combines the idea of being open-source with a "handbook" concept, suggesting a comprehensive resource for developers.
+
+### 4. **DevWiki**
+   - **Why**: Simple and easy to remember. The "Wiki" implies a collaborative platform for information, much like Wikipedia.
+
+### 5. **CodeCompendium**
+   - **Why**: "Compendium" suggests a collection of diverse notes, making it feel both scholarly and expansive.
+
+### 6. **DevNotes Vault**
+   - **Why**: Conveys that your notes are a valuable resource, akin to a treasure chest of knowledge.
+
+### 7. **The OpenCode Library**
+   - **Why**: The word "library" implies a wide range of resources and information, perfect for a collaborative note-sharing project.
+
+### 8. **CodeCraft Notes**
+   - **Why**: Emphasizes the craft of development while suggesting your notes are crafted for learning and improvement.
+
+### 9. **The Dev Codex**
+   - **Why**: "Codex" suggests a collection of sacred or authoritative knowledge, which could appeal to developers looking for solid references.
+
+### 10. **TechTome**
+   - **Why**: A blend of "tech" and "tome," implying an authoritative collection of information for developers.
+
+Let me know if you want more names, or if any of these resonate with you!
+           */}
         </div>
       </div>
 
@@ -252,7 +288,7 @@ const App = () => {
                   <p style={{ fontSize: "1.1em", color: "#333" }}>
                     <strong>Content Owner:</strong>{" "}
                     <a href="/#profile" style={{ textDecoration: "none", color: "#007bff", fontWeight: "bold" }}>
-                      Rajkishor Maharana
+                      Raj Kishor Maharana
                     </a>
                     , Full Stack Developer
                   </p>

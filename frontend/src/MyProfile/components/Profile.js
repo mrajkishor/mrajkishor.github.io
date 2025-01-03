@@ -270,8 +270,7 @@ export default function Profile() {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Rajkishor Maharana
-                                    </Typography>
+                                        𝑅𝒶𝒿 𝒦𝒾𝓈𝒽𝑜𝓇 𝑀𝒶𝒽𝒶𝓇𝒶𝓃𝒶                                    </Typography>
                                     <Typography variant="body2" sx={{ color: 'text.secondary', marginBottom: 2 }}>
                                         Hyderabad, India
                                     </Typography>
