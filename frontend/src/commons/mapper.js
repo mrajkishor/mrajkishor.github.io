@@ -3578,6 +3578,21 @@ const mapper = {
                     "Applications of Arrays": {
                         "Matrix Operations": true,
                         "Dynamic Arrays": true
+                    },
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Product of Array Except Self": {
+                            "___urlPath___": "product-array-except-self",
+                            "___md___": 329
+                        },
+                        "Gas Station": {
+                            "___urlPath___": "gas-station",
+                            "___md___": 330
+                        },
+                        "Candy": {
+                            "___urlPath___": "candy",
+                            "___md___": 331
+                        }
                     }
                 },
                 "Linked List": {
@@ -3697,7 +3712,11 @@ const mapper = {
                     }
                 },
                 "Heap": {
-                    "Introduction to Heaps": true,
+                    "___urlPath___": "heaps",
+                    "Introduction to Heaps": {
+                        "___urlPath___": "introduction-heaps",
+                        "___md___": 333
+                    },
                     "Heap Operations": {
                         "Insertion": true,
                         "Deletion (Heapify)": true
@@ -3708,6 +3727,13 @@ const mapper = {
                     "Heap Applications": {
                         "Priority Queue Implementation": true,
                         "Heap Sort": true
+                    },
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Kth Largest Element in an Array": {
+                            "___urlPath___": "kth-largest-element-array",
+                            "___md___": 332
+                        }
                     }
                 },
                 "Trie": {
@@ -3809,6 +3835,13 @@ const mapper = {
                         "Quick Sort": true,
                         "Binary Search": true,
                         "Closest Pair of Points": true
+                    },
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Convert Sorted Array to Binary Search Tree": {
+                            "___urlPath___": "convert-sorted-array-binary-search-tree",
+                            "___md___": 334
+                        }
                     }
                 },
                 "Dynamic Programming (DP)": {
@@ -3842,6 +3875,21 @@ const mapper = {
                             "Prim's Algorithm": true
                         },
                         "Fractional Knapsack": true
+                    },
+                    "Interval Problems": {
+                        "___urlPath___": "interval-problems",
+                        "Overview of Interval Problems": {
+                            "___urlPath___": "interval-overview",
+                            "___md___": 335
+                        },
+                        "Problems 💻": {
+                            "___urlPath___": "problems",
+                            "Summary Ranges": {
+                                "___urlPath___": "summary-ranges",
+                                "___md___": 336
+                            }
+                        },
+
                     },
                     "Applications in Coding Interviews": {
                         "Interval Scheduling": true,

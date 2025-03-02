@@ -29,7 +29,7 @@ const preprocessMarkdown = (content) => {
         )
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
             const updatedPath = `markdowns/${imagePath}`;
-            return `<div style="text-align: center;"><img src="${updatedPath}" alt="${altText}" style="max-width: 100%;" /></div>`;
+            return `<div style="text-align: center;"><img src="${updatedPath}" alt="${altText}" style="max-width: 100%; border: solid thin #eaeaea; borderRadius: 10px; padding: 5px; " /></div>`;
         })
         .replace(/\\\[(.*?)\\\]/gs, (_, mathContent) => `$$${mathContent}$$`)
         .replace(/\\\((.*?)\\\)/g, (_, mathContent) => `$${mathContent}$`);
