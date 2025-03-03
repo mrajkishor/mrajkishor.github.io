@@ -2707,7 +2707,185 @@ const mapper = {
             },
             "Cloud Computing": {
                 "AWS": {
-                    "AWS Certified Developer - Associate": {
+                    "AWS Certified Solutions Architect Associate (SAA-C03)": {
+                        "___urlPath___": "aws-certified-solutions-architect-associate",
+                        "Getting Started with AWS": {
+                            "___urlPath___": "getting-started-with-aws",
+                            "___md___": 62
+                        },
+                        "AWS Identity & Access Management (AWS IAM)": {
+                            "___urlPath___": "aws-iam",
+                            "___md___": 62
+                        },
+                        "Amazon EC2 - Basics": {
+                            "___urlPath___": "amazon-ec2-basics",
+                            "___md___": 62
+                        },
+                        "Amazon EC2 - Associate": {
+                            "___urlPath___": "amazon-ec2-associate",
+                            "___md___": 62
+                        },
+                        "Amazon EC2 - Instance Storage": {
+                            "___urlPath___": "amazon-ec2-instance-storage",
+                            "___md___": 62
+                        },
+                        "High Availability & Scalability": {
+                            "___urlPath___": "high-availability-scalability",
+                            "___md___": 62
+                        },
+                        "RDS, Aurora & ElastiCache": {
+                            "___urlPath___": "rds-aurora-elasticache",
+                            "___md___": 62
+                        },
+                        "Amazon Route 53": {
+                            "___urlPath___": "amazon-route-53",
+                            "___md___": 62
+                        },
+                        "Classic Solutions Architecture": {
+                            "___urlPath___": "classic-solutions-architecture",
+                            "___md___": 62
+                        },
+                        "Amazon S3": {
+                            "___urlPath___": "amazon-s3",
+                            "___md___": 62
+                        },
+                        "Amazon S3 - Advanced": {
+                            "___urlPath___": "amazon-s3-advanced",
+                            "___md___": 62
+                        },
+                        "Amazon S3 - Security": {
+                            "___urlPath___": "amazon-s3-security",
+                            "___md___": 62
+                        },
+                        "CloudFront & Global Accelerator": {
+                            "___urlPath___": "cloudfront-global-accelerator",
+                            "___md___": 62
+                        },
+                        "AWS Storage Extras": {
+                            "___urlPath___": "aws-storage-extras",
+                            "___md___": 62
+                        },
+                        "AWS Integration & Messaging": {
+                            "___urlPath___": "aws-integration-messaging",
+                            "___md___": 62
+                        },
+                        "Containers on AWS": {
+                            "___urlPath___": "containers-on-aws",
+                            "Introduction to Docker": {
+                                "___urlPath___": "introduction-docker",
+                                "___md___": 277
+                            },
+                            "AWS ECS": {
+                                "___urlPath___": "aws-ecs",
+                                "Introduction to AWS ECS": {
+                                    "___urlPath___": "introduction-aws-ecs",
+                                    "___md___": 337
+                                },
+                                "ECS Cluster & Task Definitions": {
+                                    "___urlPath___": "ecs-cluster-task-definitions",
+                                    "___md___": 102
+                                },
+                                "ECS Services & Load Balancing": {
+                                    "___urlPath___": "ecs-services-load-balancing",
+                                    "___md___": 103
+                                },
+                                "ECS Launch Types": {
+                                    "___urlPath___": "ecs-launch-types",
+                                    "EC2 Launch Type": {
+                                        "___urlPath___": "ecs-ec2-launch-type",
+                                        "___md___": 104
+                                    },
+                                    "Fargate Launch Type": {
+                                        "___urlPath___": "ecs-fargate-launch-type",
+                                        "___md___": 105
+                                    }
+                                },
+                                "Networking & Security in ECS": {
+                                    "___urlPath___": "networking-security-ecs",
+                                    "___md___": 106
+                                },
+                                "ECS Auto Scaling & Monitoring": {
+                                    "___urlPath___": "ecs-auto-scaling-monitoring",
+                                    "___md___": 107
+                                },
+                                "ECS with CI/CD": {
+                                    "___urlPath___": "ecs-ci-cd",
+                                    "___md___": 108
+                                },
+                                "ECS vs. EKS vs. Fargate": {
+                                    "___urlPath___": "ecs-vs-eks-vs-fargate",
+                                    "___md___": 109
+                                },
+                                "ECS Use Cases": {
+                                    "___urlPath___": "ecs-use-cases",
+                                    "___md___": 110
+                                }
+                            }
+
+
+                        },
+                        "Serverless Overview": {
+                            "___urlPath___": "serverless-overview",
+                            "___md___": 62
+                        },
+                        "Serverless Architectures": {
+                            "___urlPath___": "serverless-architectures",
+                            "___md___": 62
+                        },
+                        "Databases in AWS": {
+                            "___urlPath___": "databases-in-aws",
+                            "___md___": 62
+                        },
+                        "Data & Analytics": {
+                            "___urlPath___": "data-analytics",
+                            "___md___": 62
+                        },
+                        "Machine Learning": {
+                            "___urlPath___": "machine-learning",
+                            "___md___": 62
+                        },
+                        "AWS Monitoring, Audit & Performance": {
+                            "___urlPath___": "aws-monitoring-audit-performance",
+                            "___md___": 62
+                        },
+                        "Advanced Identity in AWS": {
+                            "___urlPath___": "advanced-identity-in-aws",
+                            "___md___": 62
+                        },
+                        "AWS Security & Encryption": {
+                            "___urlPath___": "aws-security-encryption",
+                            "___md___": 62
+                        },
+                        "Amazon VPC": {
+                            "___urlPath___": "amazon-vpc",
+                            "___md___": 62
+                        },
+                        "Disaster Recovery & Migrations": {
+                            "___urlPath___": "disaster-recovery-migrations",
+                            "___md___": 62
+                        },
+                        "More Solutions Architecture": {
+                            "___urlPath___": "more-solutions-architecture",
+                            "___md___": 62
+                        },
+                        "Other Services": {
+                            "___urlPath___": "other-services",
+                            "___md___": 62
+                        },
+                        "White Papers & Architectures": {
+                            "___urlPath___": "white-papers-architectures",
+                            "___md___": 62
+                        },
+                        "Exam Preparation": {
+                            "___urlPath___": "exam-preparation",
+                            "___md___": 62
+                        },
+                        "Congratulations": {
+                            "___urlPath___": "congratulations",
+                            "___md___": 62
+                        }
+                    },
+                    "AWS Certified Developer - Associate | Discontinued": {
                         "___urlPath___": "aws-certified-developer-associate",
                         "Getting Started with AWS": 1,
                         "AWS Identity & Access Management (AWS IAM)": 2,
@@ -2764,7 +2942,7 @@ const mapper = {
                         "Exam Preparation": 30,
                         "Congratulations": 31
                     },
-                    "AWS Serverless": {
+                    "AWS Serverless | Discontinued": {
                         "___urlPath___": "aws-serverless",
                         "Introduction to Serverless Computing": {
                             "___urlPath___": "introduction-to-serverless-computing",
@@ -3845,25 +4023,40 @@ const mapper = {
                     }
                 },
                 "Dynamic Programming (DP)": {
+                    "___urlPath___": "dynamic-programming",
                     "Introduction to DP": {
-                        "Memoization and Tabulation Techniques": true,
-                        "Overlapping Subproblems and Optimal Substructure": true
+                        "___urlPath___": "introduction-dp",
+                        "Memoization and Tabulation Techniques": {
+                            "___urlPath___": "memoization-tabulation-technique",
+                            "___md___": 338
+                        },
+                        "Overlapping Subproblems and Optimal Substructure": {
+                            "___urlPath___": "overlapping-subproblems-optimal-substructrue",
+                            "___md___": 339
+                        }
                     },
-                    "Classic DP Problems": {
-                        "Fibonacci Sequence": true,
-                        "Longest Common Subsequence (LCS)": true,
-                        "Longest Increasing Subsequence (LIS)": true,
-                        "Knapsack Problem (0/1 Knapsack, Unbounded Knapsack)": true,
-                        "Coin Change Problem": true,
-                        "Matrix Chain Multiplication": true,
-                        "Palindromic Substrings": true
-                    },
-                    "Advanced DP Problems": {
-                        "Egg Dropping Problem": true,
-                        "Wildcard Pattern Matching": true,
-                        "Word Break Problem": true,
-                        "Shortest Path in Weighted Grid (Dijkstra with DP)": true
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Classic DP Problems": {
+                            "Fibonacci Sequence": true,
+                            "Longest Common Subsequence (LCS)": true,
+                            "Longest Increasing Subsequence (LIS)": true,
+                            "Knapsack Problem (0/1 Knapsack, Unbounded Knapsack)": true,
+                            "Coin Change Problem": true,
+                            "Matrix Chain Multiplication": true,
+                            "Longest Palindromic Substring": {
+                                "___urlPath___": "longest-palindromic-substring",
+                                "___md___": 340
+                            }
+                        },
+                        "Advanced DP Problems": {
+                            "Egg Dropping Problem": true,
+                            "Wildcard Pattern Matching": true,
+                            "Word Break Problem": true,
+                            "Shortest Path in Weighted Grid (Dijkstra with DP)": true
+                        }
                     }
+
                 },
                 "Greedy Algorithms": {
                     "Introduction to Greedy Approach": true,

@@ -197,7 +197,7 @@ const MarkdownPage = ({ wrapperRef }) => {
                             )}
                         </span>
                     ))
-                    : <Skeleton count={1} />}
+                    : <Skeleton count={2} />}
             </motion.nav>
 
             <motion.div
@@ -217,7 +217,7 @@ const MarkdownPage = ({ wrapperRef }) => {
                         {breadcrumb && breadcrumb.length > 0 ?
                             <h2>Topics under {breadcrumb[breadcrumb.length - 1]?.name}</h2>
 
-                            : "Refreshing Contents..."
+                            : <Skeleton count={1} />
                         }
 
                         <ul>
