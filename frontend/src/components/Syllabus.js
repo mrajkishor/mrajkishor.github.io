@@ -2036,7 +2036,7 @@ const Syllabus = () => {
                 <h2
                     className="tiles-header"
                 >
-                    Full-Stack Developer Notes
+                    Full-Stack Dev 🖥️🌐⚙️
                 </h2>
 
                 <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
@@ -2052,7 +2052,7 @@ const Syllabus = () => {
                 <h2
                     className="tiles-header"
                 >
-                    Data Science and Artificial Intelligence Notes
+                    Data Science and AI 🤖📊📈
                 </h2>
 
                 <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>

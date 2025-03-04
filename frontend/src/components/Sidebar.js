@@ -126,10 +126,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                     margin: "20px 30px 10px 30px",
                     cursor: "pointer",
                     padding: "10px",
-                    backgroundColor: "#f5f5f5",
+                    // backgroundColor: "#f5f5f5",
                     borderRadius: "5px",
                     textAlign: "center",
-                    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
+                    // boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
                 }}
                 onClick={() => {
                     navigate("/profile");
@@ -144,7 +144,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         fontSize: "16px",
                     }}
                 >
-                    My Profile
+                    "Inspect Element on My Life" 🔍
                 </span>
             </div>
 

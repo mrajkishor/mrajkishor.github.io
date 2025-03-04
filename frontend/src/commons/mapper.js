@@ -3770,6 +3770,14 @@ const mapper = {
                         "Candy": {
                             "___urlPath___": "candy",
                             "___md___": 331
+                        },
+                        "Minimum Size Subarray Sum": {
+                            "___urlPath___": "min-size-subarray-sum",
+                            "___md___": 341
+                        },
+                        "Reverse Words in a String": {
+                            "___urlPath___": "reverse-words-string",
+                            "___md___": 342
                         }
                     }
                 },

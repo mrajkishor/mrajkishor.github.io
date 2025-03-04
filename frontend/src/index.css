@@ -269,13 +269,16 @@ blockquote a:hover {
 
 .sidebar-slogan {
   font-size: 0.9em;
-  font-weight: 400; /* Normal weight for slogan */
-  color: #d3d9ff;
-  margin-top: -5px;
-  margin-left: 25px;
-  padding-left: 10px;
-  border-left: solid 3px #007bff; /* Adds a sleek line to align with the logo */
-  letter-spacing: 0.05em; /* Slightly spaced letters for readability */
+  font-weight: 400;
+  color: #000;
+  margin-top: -12px;
+  /* margin-left: 25px; */
+  padding-left: 5px;
+  padding-right: 4px;
+  border-radius: 0 10px;
+  border-left: solid 6px #007bff;
+  letter-spacing: 0.05em;
+  background: #fff;
 }
 
 
@@ -587,6 +590,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 @media screen and (max-width: 600px) {
+
+  .sidebar-slogan {
+    max-width: 83%;
+  }
 
   .rotate-right {
     transform: rotate(0deg)
