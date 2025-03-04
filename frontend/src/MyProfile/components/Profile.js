@@ -307,7 +307,7 @@ export default function Profile() {
 
                 {/* Right Grid for Developer Info */}
                 <Grid item xs={8}>
-                    <Item sx={{ background: 'white', textAlign: 'left', padding: '20px', backdropFilter: 'blur(50px)' }}>
+                    <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
 
                         <div style={{ maxWidth: '800px' }}>
                             <Typography variant="h6" gutterBottom>
@@ -317,22 +317,47 @@ export default function Profile() {
 
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                                I am a motivated and skilled Full-Stack Developer with 6+ years of experience in building robust and scalable software applications. My expertise includes technologies like React, Redux, Node.js, Spring Boot, and AWS. I am passionate about crafting intuitive user interfaces and efficient backend systems to solve real-world problems.
-                            </Typography>
+                                I am a Full-Stack Developer with 6+ years of experience in building robust, scalable applications. Basically, I break things, then Google how to fix them. 🛠️💻                            </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                                Currently based in Hyderabad, India, I enjoy working on innovative projects that have practical applications.
-
+                                My tech stack includes React, Redux, Node.js, Spring Boot, and AWS—or as I like to call it, “things I’ve yelled at in the middle of debugging.” I love crafting intuitive UIs and efficient backends that solve real-world problems—preferably the ones that don’t crash on Fridays. 🚀🔥
                                 {/* One of my key side projects, <strong>Chalaan.com</strong>, is a business management solution designed to help enterprises streamline their daily operations, manage invoicing, and improve productivity. */}
                             </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                                I thrive on learning new technologies and exploring how software can simplify processes for individuals and businesses. My goal is to leverage my technical skills to create impactful solutions and continue growing as a developer.
+                                Currently based in Hyderabad, India, I enjoy working on innovative projects, especially those that don’t require me to explain to non-tech people why "turning it off and on again" actually works. 😆                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                I thrive on learning new technologies, automating things I’m too lazy to do manually, and exploring how software can simplify life—or at least make error messages slightly less terrifying. My ultimate goal? To write code that Future Me doesn’t hate.                            </Typography>
+
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                After Mechanical Engineering, I thought I'd be designing engines. Instead, I ended up debugging JavaScript. After 6 years as a Full-Stack Dev, I realized—if I’m going to be in IT forever, I might as well get an MCA and make it official! 💻🔧😆
                             </Typography>
 
-                            <Typography variant="body1">
-                                Outside of work, I enjoy experimenting with digital art, music production, reading about emerging technologies, exploring new places, and spending time with family and friends.
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                When I'm not fighting merge conflicts, you can find me:
                             </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                🎨 Experimenting with digital art (a.k.a. doodling until it looks decent)
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                🎵 Playing around with music production (because AI hasn’t stolen that from us yet)
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                📖 Reading about emerging tech (or conspiracy theories about AI taking over)
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                🌍 Exploring new places (preferably ones with strong Wi-Fi)
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                👨‍👩‍👦 Spending time with family & friends (a.k.a. my real-world debugging team)
+
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                📌 TL;DR: Full-Stack Developer, Tech Enthusiast, Debugging Survivor, and Proud Mechanical Engineer-Turned-Coder. 🚀💻😆                            </Typography>
+
+
 
                         </div>
                         <br />
@@ -353,21 +378,36 @@ export default function Profile() {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div">
-                                            Chalaan.com - Business Management Solution
+                                            🚀 Chalaan.com - The Business Management Solution You Didn’t Know You Needed (But Totally Do!)                                        </Typography>
+                                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                            {/* Chalaan.com is a comprehensive **business management platform** designed to cater to small, medium,
+                                            and large enterprises. It streamlines daily operations, automates invoicing, and provides detailed
+                                            insights to help businesses grow and operate efficiently. */}
+                                            Chalaan.com is a business management platform built for small, medium, and "I-have-no-idea-how-big-this-business-is" enterprises. Whether you're running a startup, a family shop, or a corporate empire, Chalaan.com helps you spend less time stressing over paperwork and more time pretending to be productive. 😆📊
+                                        </Typography>
+
+                                        <Typography variant="body2" sx={{ color: 'text.primary', paddingTop: '10px' }}>
+                                            Why Chalaan.com?
                                         </Typography>
                                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                            Chalaan.com is a comprehensive **business management platform** designed to cater to small, medium,
-                                            and large enterprises. It streamlines daily operations, automates invoicing, and provides detailed
-                                            insights to help businesses grow and operate efficiently.
-                                        </Typography>
+
+                                            Because manually handling invoices, expenses, and inventory is like debugging JavaScript on a Friday—painful and unnecessary. 🫠                                        </Typography>
                                         <Typography variant="body2" sx={{ color: 'text.secondary', marginTop: 2 }}>
                                             <strong>Key Features:</strong>
                                             <ul>
-                                                <li>Customizable invoicing templates</li>
-                                                <li>Inventory and expense management</li>
-                                                <li>Role-based access for team collaboration</li>
-                                                <li>Cloud storage integration for seamless data access</li>
+                                                <li>✅ Customizable invoicing templates – Because no two businesses (or clients' ridiculous invoice demands) are the same. 💰📝</li>
+                                                <li>✅ Inventory & Expense Management – Track your stock and spending so you don’t wake up wondering where all the money went. 😵💸</li>
+                                                <li>✅ Role-Based Access for Team Collaboration – Let your team access only what they need (because CTC Pandey from HR doesn’t need access to financial reports). 👀🚫</li>
+                                                <li>✅ Cloud Storage Integration – Your data is safe in the cloud, unless you forget your password. ☁️🔒
+
+                                                </li>
                                             </ul>
+                                            <p>
+                                                TL;DR:
+                                                Chalaan.com helps you manage, automate, and organize your business so you can focus on actually running it—or just taking a coffee break while it does the work. ☕🚀
+
+                                            </p>
+
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
@@ -533,7 +573,9 @@ export default function Profile() {
                                             </Typography>
                                             <Typography variant="body2">
                                                 - Currently pursuing MCA with a focus on software engineering, Big data analytics, AI/ML and cloud computing.
+
                                             </Typography>
+
                                         </>
                                     }
                                 />

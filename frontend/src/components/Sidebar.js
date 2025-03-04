@@ -123,7 +123,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
             <div
                 style={{
-                    margin: "20px 30px 10px 30px",
+                    margin: "40px 30px 10px 30px",
                     cursor: "pointer",
                     padding: "10px",
                     // backgroundColor: "#f5f5f5",
@@ -144,7 +144,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         fontSize: "16px",
                     }}
                 >
-                    "Inspect Element on My Life" 🔍
+                    Inspect Element 🔍
                 </span>
             </div>
 
