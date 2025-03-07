@@ -19,7 +19,13 @@ import { GoToTopButton } from "./GoToTopButton";
 // Preprocess Markdown to wrap ==highlight== in <mark>
 const preprocessMarkdown = (content) => {
     return content
+        // Step 1: Preserve code blocks by encoding them
+        .replace(/(```[\s\S]*?```)/g, (match) => {
+            return `CODEBLOCK_${btoa(match)}`;  // Encode code blocks to prevent unintended modifications. For Example, if a markdown has code block with if (x == 5 && y == 7), in that case the <mark></mark> syntax highlighter will confuse it with a text highlight. 
+        })
+        // Step 2: Replace ==highlight== with <mark> for text highlighting
         .replace(/==(.*?)==/g, "<mark>$1</mark>")
+        // Step 3: Format blockquotes ("> text") and apply styling
         .replace(
             /^>(.*)$/gm,
             (match, p1) =>
@@ -27,12 +33,19 @@ const preprocessMarkdown = (content) => {
                     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
                     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
         )
+        // Step 4: Format image Markdown syntax (![alt text](image-path))
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
             const updatedPath = `markdowns/${imagePath}`;
             return `<div style="text-align: center;"><img src="${updatedPath}" alt="${altText}" style="max-width: 100%; border: solid thin #eaeaea; borderRadius: 10px; padding: 5px; " /></div>`;
         })
+        // Step 5: Convert escaped LaTeX brackets \[math\] into $$math$$ (block equations)
         .replace(/\\\[(.*?)\\\]/gs, (_, mathContent) => `$$${mathContent}$$`)
-        .replace(/\\\((.*?)\\\)/g, (_, mathContent) => `$${mathContent}$`);
+        // Step 6: Convert escaped LaTeX parentheses \(math\) into $math$ (inline equations)
+        .replace(/\\\((.*?)\\\)/g, (_, mathContent) => `$${mathContent}$`)
+        // Step 7: Restore encoded code blocks to their original state
+        .replace(/CODEBLOCK_([A-Za-z0-9+/=]+)/g, (_, encoded) => {
+            return atob(encoded); // Restore original code blocks
+        });
 };
 
 const getFileNumberAndKey = (mapperObj, paths) => {
@@ -209,6 +222,7 @@ const MarkdownPage = ({ wrapperRef }) => {
                     <ReactMarkdown
                         remarkPlugins={[remarkGfm, remarkMath]}
                         rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex]}
+
                     >
                         {markdown}
                     </ReactMarkdown>

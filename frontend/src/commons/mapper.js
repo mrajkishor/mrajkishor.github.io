@@ -3798,6 +3798,7 @@ const mapper = {
                     }
                 },
                 "Stack": {
+                    "___urlPath___": "stack",
                     "Introduction to Stack": true,
                     "Operations on Stack": {
                         "Push and Pop": true,
@@ -3807,6 +3808,13 @@ const mapper = {
                         "Expression Evaluation (Postfix, Prefix)": true,
                         "Backtracking (Maze Problems, Recursion)": true,
                         "Parenthesis Matching": true
+                    },
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Valid Parentheses": {
+                            "___urlPath___": "valid-parentheses",
+                            "___md___": 343
+                        }
                     }
                 },
                 "Queue": {
