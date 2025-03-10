@@ -21,7 +21,13 @@ const preprocessMarkdown = (content) => {
     return content
         // Step 1: Preserve code blocks by encoding them
         .replace(/(```[\s\S]*?```)/g, (match) => {
-            return `CODEBLOCK_${btoa(match)}`;  // Encode code blocks to prevent unintended modifications. For Example, if a markdown has code block with if (x == 5 && y == 7), in that case the <mark></mark> syntax highlighter will confuse it with a text highlight. 
+
+            // ✅ Fix: Use encodeURIComponent() before btoa() to handle Unicode characters properly
+            // ❌ Issue before fix: btoa("if (x == 5 && y == 7)") → Works ✅
+            // ❌ Issue before fix: btoa("System.out.println('こんにちは')") → Error ❌ (Contains Japanese)
+            // ✅ Fix: btoa(encodeURIComponent("System.out.println('こんにちは')")) → Encodes properly ✅
+
+            return `CODEBLOCK_${btoa(encodeURIComponent(match))}`;  // Encode code blocks to prevent unintended modifications. For Example, if a markdown has code block with if (x == 5 && y == 7), in that case the <mark></mark> syntax highlighter will confuse it with a text highlight. 
         })
         // Step 2: Replace ==highlight== with <mark> for text highlighting
         .replace(/==(.*?)==/g, "<mark>$1</mark>")
@@ -44,7 +50,10 @@ const preprocessMarkdown = (content) => {
         .replace(/\\\((.*?)\\\)/g, (_, mathContent) => `$${mathContent}$`)
         // Step 7: Restore encoded code blocks to their original state
         .replace(/CODEBLOCK_([A-Za-z0-9+/=]+)/g, (_, encoded) => {
-            return atob(encoded); // Restore original code blocks
+            // ✅ Fix: Use decodeURIComponent() after atob() to properly decode Unicode characters
+            // ❌ Issue before fix: atob("U3lzdGVtLm91dC5wcmludGxsbihcdTAwYTUp") → Decodes incorrectly ❌
+            // ✅ Fix: decodeURIComponent(atob("U3lzdGVtLm91dC5wcmludGxsbihcdTAwYTUp")) → Decodes properly ✅
+            return decodeURIComponent(atob(encoded)); // Restore original code blocks
         });
 };
 

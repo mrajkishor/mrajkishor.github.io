@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import mapper from "../commons/mapper";
+import GlobalSearch from "./GlobalSearch";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
     const [collapsed, setCollapsed] = useState({});
@@ -118,12 +119,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div key={isOpen} className={`sidebar-container ${isOpen ? "open" : ""}`}>
             <div className="sidebar-header">
                 {/* <h2>Contents</h2> */}
-
+                <GlobalSearch setIsOpen={setIsOpen} />
             </div>
 
             <div
                 style={{
-                    margin: "40px 30px 10px 30px",
+                    margin: "0px 30px 10px 30px",
                     cursor: "pointer",
                     padding: "10px",
                     // backgroundColor: "#f5f5f5",

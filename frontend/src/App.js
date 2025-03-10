@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import { initGA, logPageView } from './commons/analytics';
 import AnimatedTileBackground from "./components/AnimatedTileBackground";
 import slogans from './commons/slogans';
+import GlobalSearch from "./components/GlobalSearch";
 
 const App = () => {
 
@@ -105,8 +106,8 @@ const App = () => {
         // Move to the next slogan in a cycle
         setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
         setFade(true); // Start fade-in
-      }, 500); // Wait for fade-out to complete before changing text
-    }, 5000); // 1000 ms (1 second)
+      }, 1000); // Wait for fade-out to complete before changing text
+    }, 10000); // 1000 ms (1 second)
 
     return () => clearInterval(setIntv); // Cleanup on unmount
   }, [sloganIndex]);
@@ -242,6 +243,7 @@ Let me know if you want more names, or if any of these resonate with you!
       >
         <Sidebar isOpen={showSideBar} setIsOpen={setShowSideBar} />
       </div>
+
 
 
 

@@ -1629,6 +1629,14 @@ const mapper = {
                             "Reference Data Types": true,
                             "Type Casting and Type Conversion": true
                         },
+                        "Operators and Expressions": {
+                            "___urlPath___": "operators_expressions",
+                            "Arithmetic, Logical, Bitwise, and Relational Operators": true,
+                            "Operator Precedence and Associativity": {
+                                "___urlPath___": "operator_precedence_associativity",
+                                "___md___": 345
+                            }
+                        },
                         "Control Flow Statements": {
                             "If-Else, Switch Case": true,
                             "Loops (For, While, Do-While)": true,
@@ -3805,9 +3813,19 @@ const mapper = {
                         "Peek/Top Operation": true
                     },
                     "Applications of Stack": {
-                        "Expression Evaluation (Postfix, Prefix)": true,
-                        "Backtracking (Maze Problems, Recursion)": true,
-                        "Parenthesis Matching": true
+                        "___urlPath___": "applications-stack",
+                        "Expression Evaluation (Infix, Postfix, Prefix)": {
+                            "___urlPath___": "expression-evaluation-postfix-prefix",
+                            "___md___": 344
+                        },
+                        "Backtracking (Maze Problems, Recursion)": {
+                            "___urlPath___": "backtracking",
+                            "___md___": 346
+                        },
+                        "Parenthesis Matching": {
+                            "___urlPath___": "parenthesis-matching",
+                            "___md___": 347
+                        }
                     },
                     "Problems 💻": {
                         "___urlPath___": "problems",
@@ -4035,6 +4053,10 @@ const mapper = {
                         "Convert Sorted Array to Binary Search Tree": {
                             "___urlPath___": "convert-sorted-array-binary-search-tree",
                             "___md___": 334
+                        },
+                        "Sort List": {
+                            "___urlPath___": "sort-list",
+                            "___md___": 348
                         }
                     }
                 },
