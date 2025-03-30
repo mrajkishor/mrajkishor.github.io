@@ -205,7 +205,7 @@ Let me know if you want more names, or if any of these resonate with you!
           fontWeight: 'bold',
           // backgroundColor: showSideBar ? "#dc3545" : "#007bff", // Red for close, blue for open
           // color: "#fff",
-          color: showSideBar ? "#dc3545" : "#007bff",
+          color: showSideBar ? "#dc3545" : "#fff",
           textAlign: "center",
           borderRadius: '5px',
           // boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',

@@ -2874,345 +2874,399 @@ const mapper = {
                 }
             },
             "Cloud Computing": {
-                "AWS": {
-                    "AWS Certified Solutions Architect Associate (SAA-C03)": {
-                        "___urlPath___": "aws-certified-solutions-architect-associate",
-                        "Getting Started with AWS": {
-                            "___urlPath___": "getting-started-with-aws",
-                            "___md___": 62
-                        },
-                        "AWS Identity & Access Management (AWS IAM)": {
-                            "___urlPath___": "aws-iam",
-                            "___md___": 62
-                        },
-                        "Amazon EC2 - Basics": {
-                            "___urlPath___": "amazon-ec2-basics",
-                            "___md___": 62
-                        },
-                        "Amazon EC2 - Associate": {
-                            "___urlPath___": "amazon-ec2-associate",
-                            "___md___": 62
-                        },
-                        "Amazon EC2 - Instance Storage": {
-                            "___urlPath___": "amazon-ec2-instance-storage",
-                            "___md___": 62
-                        },
-                        "High Availability & Scalability": {
-                            "___urlPath___": "high-availability-scalability",
-                            "___md___": 62
-                        },
-                        "RDS, Aurora & ElastiCache": {
-                            "___urlPath___": "rds-aurora-elasticache",
-                            "___md___": 62
-                        },
-                        "Amazon Route 53": {
-                            "___urlPath___": "amazon-route-53",
-                            "___md___": 62
-                        },
-                        "Classic Solutions Architecture": {
-                            "___urlPath___": "classic-solutions-architecture",
-                            "___md___": 62
-                        },
-                        "Amazon S3": {
-                            "___urlPath___": "amazon-s3",
-                            "___md___": 62
-                        },
-                        "Amazon S3 - Advanced": {
-                            "___urlPath___": "amazon-s3-advanced",
-                            "___md___": 62
-                        },
-                        "Amazon S3 - Security": {
-                            "___urlPath___": "amazon-s3-security",
-                            "___md___": 62
-                        },
-                        "CloudFront & Global Accelerator": {
-                            "___urlPath___": "cloudfront-global-accelerator",
-                            "___md___": 62
-                        },
-                        "AWS Storage Extras": {
-                            "___urlPath___": "aws-storage-extras",
-                            "___md___": 62
-                        },
-                        "AWS Integration & Messaging": {
-                            "___urlPath___": "aws-integration-messaging",
-                            "___md___": 62
-                        },
-                        "Containers on AWS": {
-                            "___urlPath___": "containers-on-aws",
-                            "Introduction to Docker": {
-                                "___urlPath___": "introduction-docker",
-                                "___md___": 277
+                "Fundamentals": {
+                    "___urlPath___": "cloud-computing-fundamentals",
+                    "Introduction to Cloud Computing": {
+                        "___urlPath___": "introduction-cloud-computing",
+                        "___md___": 101
+                    },
+                    "Characteristics of Cloud": {
+                        "___urlPath___": "characteristics-cloud",
+                        "___md___": 102
+                    },
+                    "Service Models (IaaS, PaaS, SaaS)": {
+                        "___urlPath___": "service-models",
+                        "___md___": 103
+                    },
+                    "Deployment Models": {
+                        "___urlPath___": "deployment-models",
+                        "___md___": 104
+                    },
+                    "Benefits and Challenges": {
+                        "___urlPath___": "benefits-challenges-cloud",
+                        "___md___": 105
+                    }
+                },
+                "Cloud Service Providers": {
+                    "___urlPath___": "cloud-service-providers",
+                    "AWS": {
+                        "AWS Certified Solutions Architect Associate (SAA-C03)": {
+                            "___urlPath___": "aws-certified-solutions-architect-associate",
+                            "About this certification": {
+                                "___urlPath___": "about-this-certification",
+                                "___md___": 378
                             },
-                            "AWS ECS": {
-                                "___urlPath___": "aws-ecs",
-                                "Introduction to AWS ECS": {
-                                    "___urlPath___": "introduction-aws-ecs",
-                                    "___md___": 337
+                            "Getting Started with AWS 🟢": {
+                                "___urlPath___": "getting-started-with-aws",
+                                "___md___": 62
+                            },
+                            "AWS Identity & Access Management (AWS IAM) 🟢": {
+                                "___urlPath___": "aws-iam",
+                                "___md___": 62
+                            },
+                            "Amazon EC2 - Basics 🟡": {
+                                "___urlPath___": "amazon-ec2-basics",
+                                "___md___": 62
+                            },
+                            "Amazon EC2 - Associate 🟡": {
+                                "___urlPath___": "amazon-ec2-associate",
+                                "___md___": 62
+                            },
+                            "Amazon EC2 - Instance Storage 🔴": {
+                                "___urlPath___": "amazon-ec2-instance-storage",
+                                "___md___": 62
+                            },
+                            "High Availability & Scalability 🔴": {
+                                "___urlPath___": "high-availability-scalability",
+                                "___md___": 62
+                            },
+                            "RDS, Aurora & ElastiCache 🔴": {
+                                "___urlPath___": "rds-aurora-elasticache",
+                                "___md___": 62
+                            },
+                            "Amazon Route 53 🔴": {
+                                "___urlPath___": "amazon-route-53",
+                                "___md___": 62
+                            },
+                            "Classic Solutions Architecture 🟡": {
+                                "___urlPath___": "classic-solutions-architecture",
+                                "___md___": 62
+                            },
+                            "Amazon S3 🟡": {
+                                "___urlPath___": "amazon-s3",
+                                "___md___": 62
+                            },
+                            "Amazon S3 - Advanced 🔴": {
+                                "___urlPath___": "amazon-s3-advanced",
+                                "___md___": 62
+                            },
+                            "Amazon S3 - Security 🔴": {
+                                "___urlPath___": "amazon-s3-security",
+                                "___md___": 62
+                            },
+                            "CloudFront & Global Accelerator 🔴": {
+                                "___urlPath___": "cloudfront-global-accelerator",
+                                "___md___": 62
+                            },
+                            "AWS Storage Extras 🔴": {
+                                "___urlPath___": "aws-storage-extras",
+                                "___md___": 62
+                            },
+                            "AWS Integration & Messaging 🔴": {
+                                "___urlPath___": "aws-integration-messaging",
+                                "___md___": 62
+                            },
+                            "Containers on AWS 🔴": {
+                                "___urlPath___": "containers-on-aws",
+                                "Introduction to Docker": {
+                                    "___urlPath___": "introduction-docker",
+                                    "___md___": 277
                                 },
-                                "ECS Cluster & Task Definitions": {
-                                    "___urlPath___": "ecs-cluster-task-definitions",
-                                    "___md___": 102
-                                },
-                                "ECS Services & Load Balancing": {
-                                    "___urlPath___": "ecs-services-load-balancing",
-                                    "___md___": 103
-                                },
-                                "ECS Launch Types": {
-                                    "___urlPath___": "ecs-launch-types",
-                                    "EC2 Launch Type": {
-                                        "___urlPath___": "ecs-ec2-launch-type",
-                                        "___md___": 104
+                                "AWS ECS": {
+                                    "___urlPath___": "aws-ecs",
+                                    "Introduction to AWS ECS": {
+                                        "___urlPath___": "introduction-aws-ecs",
+                                        "___md___": 337
                                     },
-                                    "Fargate Launch Type": {
-                                        "___urlPath___": "ecs-fargate-launch-type",
-                                        "___md___": 105
+                                    "ECS Cluster & Task Definitions": {
+                                        "___urlPath___": "ecs-cluster-task-definitions",
+                                        "___md___": 102
+                                    },
+                                    "ECS Services & Load Balancing": {
+                                        "___urlPath___": "ecs-services-load-balancing",
+                                        "___md___": 103
+                                    },
+                                    "ECS Launch Types": {
+                                        "___urlPath___": "ecs-launch-types",
+                                        "EC2 Launch Type": {
+                                            "___urlPath___": "ecs-ec2-launch-type",
+                                            "___md___": 104
+                                        },
+                                        "Fargate Launch Type": {
+                                            "___urlPath___": "ecs-fargate-launch-type",
+                                            "___md___": 105
+                                        }
+                                    },
+                                    "Networking & Security in ECS": {
+                                        "___urlPath___": "networking-security-ecs",
+                                        "___md___": 106
+                                    },
+                                    "ECS Auto Scaling & Monitoring": {
+                                        "___urlPath___": "ecs-auto-scaling-monitoring",
+                                        "___md___": 107
+                                    },
+                                    "ECS with CI/CD": {
+                                        "___urlPath___": "ecs-ci-cd",
+                                        "___md___": 108
+                                    },
+                                    "ECS vs. EKS vs. Fargate": {
+                                        "___urlPath___": "ecs-vs-eks-vs-fargate",
+                                        "___md___": 109
+                                    },
+                                    "ECS Use Cases": {
+                                        "___urlPath___": "ecs-use-cases",
+                                        "___md___": 110
                                     }
-                                },
-                                "Networking & Security in ECS": {
-                                    "___urlPath___": "networking-security-ecs",
-                                    "___md___": 106
-                                },
-                                "ECS Auto Scaling & Monitoring": {
-                                    "___urlPath___": "ecs-auto-scaling-monitoring",
-                                    "___md___": 107
-                                },
-                                "ECS with CI/CD": {
-                                    "___urlPath___": "ecs-ci-cd",
-                                    "___md___": 108
-                                },
-                                "ECS vs. EKS vs. Fargate": {
-                                    "___urlPath___": "ecs-vs-eks-vs-fargate",
-                                    "___md___": 109
-                                },
-                                "ECS Use Cases": {
-                                    "___urlPath___": "ecs-use-cases",
-                                    "___md___": 110
                                 }
+
+
+                            },
+                            "Serverless Overview 🟢": {
+                                "___urlPath___": "serverless-overview",
+                                "___md___": 62
+                            },
+                            "Serverless Architectures 🔴": {
+                                "___urlPath___": "serverless-architectures",
+                                "___md___": 62
+                            },
+                            "Databases in AWS 🔴": {
+                                "___urlPath___": "databases-in-aws",
+                                "Choosing the Right Database": {
+                                    "___urlPath___": "choosing-right-database",
+                                    "___md___": 350
+                                },
+                                "Amazon RDS": {
+                                    "___urlPath___": "amazon-rds",
+                                    "___md___": 351
+                                },
+                                "Amazon Aurora": {
+                                    "___urlPath___": "amazon-aurora",
+                                    "___md___": 352
+                                },
+                                "Amazon ElastiCache": {
+                                    "___urlPath___": "amazon-elasticache",
+                                    "___md___": 353
+                                },
+                                "Amazon DynamoDB": {
+                                    "___urlPath___": "amazon-dynamodb",
+                                    "___md___": 354
+                                },
+                                "Amazon S3": {
+                                    "___urlPath___": "amazon-s3",
+                                    "___md___": 355
+                                },
+                                "DocumentDB": {
+                                    "___urlPath___": "documentdb",
+                                    "___md___": 356
+                                },
+                                "Amazon Neptune and Amazon Neptune Streams": {
+                                    "___urlPath___": "amazon-neptune-streams",
+                                    "___md___": 357
+                                },
+                                "Amazon Keyspaces": {
+                                    "___urlPath___": "amazon-keyspaces",
+                                    "___md___": 358
+                                }
+                            },
+                            "Data & Analytics 🟡": {
+                                "___urlPath___": "data-analytics",
+                                "___md___": 62
+                            },
+                            "Machine Learning 🟡": {
+                                "___urlPath___": "machine-learning",
+                                "___md___": 62
+                            },
+                            "AWS Monitoring, Audit & Performance 🔴": {
+                                "___urlPath___": "aws-monitoring-audit-performance",
+                                "___md___": 62
+                            },
+                            "Advanced Identity in AWS 🔴": {
+                                "___urlPath___": "advanced-identity-in-aws",
+                                "___md___": 62
+                            },
+                            "AWS Security & Encryption 🔴": {
+                                "___urlPath___": "aws-security-encryption",
+                                "Why Encryption Matters?": {
+                                    "___urlPath___": "why-encryption-matters",
+                                    "___md___": 380
+                                },
+                                "A Complete Guide to AWS KMS": {
+                                    "___urlPath___": "complete-guide-aws-kms",
+                                    "___md___": 381
+                                }
+                            },
+                            "Amazon VPC 🔴": {
+                                "___urlPath___": "amazon-vpc",
+                                "VPC Components": {
+                                    "___urlPath___": "vpc-components",
+                                    "___md___": 373
+                                },
+                                "CIDR": {
+                                    "___urlPath___": "cidr",
+                                    "___md___": 374
+                                },
+                                "Public vs Private ip": {
+                                    "___urlPath___": "public-vs-private-ip",
+                                    "___md___": 375
+                                },
+                                "Network Protection on AWS": {
+                                    "___urlPath___": "networking-protection-aws",
+                                    "___md___": 379
+                                }
+                            },
+                            "Disaster Recovery & Migrations 🟡": {
+                                "___urlPath___": "disaster-recovery-migrations",
+                                "___md___": 62
+                            },
+                            "More Solutions Architecture 🟡": {
+                                "___urlPath___": "more-solutions-architecture",
+                                "___md___": 62
+                            },
+                            "Other Services 🟢": {
+                                "___urlPath___": "other-services",
+                                "___md___": 62
+                            },
+                            "White Papers & Architectures 🟡": {
+                                "___urlPath___": "white-papers-architectures",
+                                "___md___": 62
+                            },
+                            "Exam Preparation 🟢": {
+                                "___urlPath___": "exam-preparation",
+                                "___md___": 62
+                            },
+                            "Congratulations 🟢": {
+                                "___urlPath___": "congratulations",
+                                "___md___": 62
                             }
-
-
                         },
-                        "Serverless Overview": {
-                            "___urlPath___": "serverless-overview",
-                            "___md___": 62
-                        },
-                        "Serverless Architectures": {
-                            "___urlPath___": "serverless-architectures",
-                            "___md___": 62
-                        },
-                        "Databases in AWS": {
-                            "___urlPath___": "databases-in-aws",
-                            "Choosing the Right Database": {
-                                "___urlPath___": "choosing-right-database",
-                                "___md___": 350
-                            },
-                            "Amazon RDS": {
-                                "___urlPath___": "amazon-rds",
-                                "___md___": 351
-                            },
-                            "Amazon Aurora": {
-                                "___urlPath___": "amazon-aurora",
-                                "___md___": 352
-                            },
-                            "Amazon ElastiCache": {
-                                "___urlPath___": "amazon-elasticache",
-                                "___md___": 353
-                            },
+                        "AWS Certified Developer - Associate | Discontinued": {
+                            "___urlPath___": "aws-certified-developer-associate",
+                            "Getting Started with AWS": 1,
+                            "AWS Identity & Access Management (AWS IAM)": 2,
+                            "Amazon EC2 – Basics": 3,
+                            "Amazon EC2 – Instance Storage": 4,
+                            "High Availability & Scalability": 5,
+                            "RDS, Aurora, & ElastiCache": 6,
+                            "Amazon Route 53": 7,
+                            "Amazon VPC – Basics": 8,
+                            "Amazon S3": 9,
+                            "AWS CLI, SDK, IAM Roles & Policies": 10,
+                            "Amazon S3 – Advanced": 11,
+                            "Amazon S3 – Security": 12,
+                            "Amazon CloudFront": 13,
+                            "Containers on AWS": 14,
+                            "AWS Elastic Beanstalk": 15,
+                            "AWS CloudFormation": 16,
+                            "AWS Integration & Messaging": 17,
+                            "AWS Monitoring, Troubleshooting & Audit": 18,
+                            "AWS Lambda": 19,
                             "Amazon DynamoDB": {
                                 "___urlPath___": "amazon-dynamodb",
-                                "___md___": 354
+                                "Introduction": 22,
+                                "DynamoDB as a Session State Cache": 34,
+                                "DynamoDB Write Sharding": 33,
+                                "DynamoDB – Write Types": 32,
+                                "DynamoDB – Large Objects Pattern": 30,
+                                "DynamoDB – Indexing S3 Objects Metadata": 31,
+                                "DynamoDB Operations": 29,
+                                "Security & Other features": 23,
+                                "Users Interact with DynamoDB Directly": 25,
+                                "Fine-Grained Access Control": 24,
                             },
-                            "Amazon S3": {
-                                "___urlPath___": "amazon-s3",
-                                "___md___": 355
+                            "Amazon API Gateway": {
+                                "___urlPath___": "amazon-api-gateway",
+                                "Introduction": 39,
+                                "Example: Building a Serverless API": 38,
+                                "API Gateway – High-Level Integrations": 40,
+                                "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
+                                "API Gateway - Endpoint Types": 42,
+                                "API Gateway – Security": 43,
+                                "API Gateway – Deployment Stages": 44,
+                                "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
+
                             },
-                            "DocumentDB": {
-                                "___urlPath___": "documentdb",
-                                "___md___": 356
+                            "AWS CICD": 22,
+                            "AWS Serverless Application Model (SAM)": 23,
+                            "AWS Cloud Development Kit (CDK)": 24,
+                            "Amazon Cognito": 25,
+                            "Other Serverless": 26,
+                            "Advanced Identity in AWS": 27,
+                            "AWS Security & Encryption": {
+
                             },
-                            "Amazon Neptune and Amazon Neptune Streams": {
-                                "___urlPath___": "amazon-neptune-streams",
-                                "___md___": 357
+                            "Other Services": 29,
+                            "Exam Preparation": 30,
+                            "Congratulations": 31
+                        },
+                        "AWS Serverless | Discontinued": {
+                            "___urlPath___": "aws-serverless",
+                            "Introduction to Serverless Computing": {
+                                "___urlPath___": "introduction-to-serverless-computing",
+                                "What is Serverless?": {
+                                    "___urlPath___": "what-is-serverless",
+                                    "___md___": 46
+                                },
+                                "Benefits of Serverless Architecture": true,
+                                "Overview of AWS Serverless Services": true
                             },
-                            "Amazon Keyspaces": {
-                                "___urlPath___": "amazon-keyspaces",
-                                "___md___": 358
+                            "AWS Lambda": {
+                                "Introduction to AWS Lambda": true,
+                                "Creating and Deploying Lambda Functions": true,
+                                "Event-Driven Architecture with Lambda": true,
+                                "Monitoring and Debugging Lambda Functions": true,
+                                "Best Practices for AWS Lambda": true
+                            },
+                            "API Gateway": {
+                                "Introduction to Amazon API Gateway": true,
+                                "Creating and Managing REST APIs": true,
+                                "Integrating API Gateway with AWS Lambda": true,
+                                "Authentication and Authorization with API Gateway": true,
+                                "CORS and Rate Limiting": true
+                            },
+                            "AWS DynamoDB": {
+                                "Introduction to DynamoDB": true,
+                                "Creating and Managing Tables": true,
+                                "Data Modeling with DynamoDB": true,
+                                "DynamoDB Streams": true,
+                                "Best Practices for DynamoDB Performance": true
+                            },
+                            "Serverless Frameworks": {
+                                "Introduction to Serverless Framework": true,
+                                "Deploying Applications with Serverless Framework": true,
+                                "Comparison with SAM (Serverless Application Model)": true
+                            },
+                            "Event Sources": {
+                                "AWS S3 as Event Source": true,
+                                "DynamoDB Streams as Event Source": true,
+                                "Amazon SNS and SQS Integration": true,
+                                "AWS EventBridge": true
+                            },
+                            "Serverless Monitoring and Security": {
+                                "Monitoring with AWS CloudWatch": true,
+                                "Setting Up Alarms and Logs": true,
+                                "Security Best Practices for Serverless Applications": true,
+                                "IAM Role Management for Serverless": true
+                            },
+                            "CI/CD for Serverless Applications": {
+                                "Introduction to AWS CodePipeline": true,
+                                "Building CI/CD Pipelines for Serverless": true,
+                                "Testing Serverless Applications": true,
+                                "Deploying Serverless Applications with Automation": true
+                            },
+                            "Additional Serverless Services": {
+                                "AWS AppSync for GraphQL APIs": true,
+                                "AWS Step Functions for Orchestration": true,
+                                "AWS Cognito for User Management": true,
+                                "AWS SAM CLI for Deployment": true
+                            },
+                            "Case Studies and Hands-On": {
+                                "Building a Serverless Web Application": true,
+                                "Serverless Data Processing Pipeline": true,
+                                "Serverless Real-Time Applications with WebSockets": true,
+                                "Serverless Chat Application": true
                             }
                         },
-                        "Data & Analytics": {
-                            "___urlPath___": "data-analytics",
-                            "___md___": 62
-                        },
-                        "Machine Learning": {
-                            "___urlPath___": "machine-learning",
-                            "___md___": 62
-                        },
-                        "AWS Monitoring, Audit & Performance": {
-                            "___urlPath___": "aws-monitoring-audit-performance",
-                            "___md___": 62
-                        },
-                        "Advanced Identity in AWS": {
-                            "___urlPath___": "advanced-identity-in-aws",
-                            "___md___": 62
-                        },
-                        "AWS Security & Encryption": {
-                            "___urlPath___": "aws-security-encryption",
-                            "___md___": 62
-                        },
-                        "Amazon VPC": {
-                            "___urlPath___": "amazon-vpc",
-                            "___md___": 62
-                        },
-                        "Disaster Recovery & Migrations": {
-                            "___urlPath___": "disaster-recovery-migrations",
-                            "___md___": 62
-                        },
-                        "More Solutions Architecture": {
-                            "___urlPath___": "more-solutions-architecture",
-                            "___md___": 62
-                        },
-                        "Other Services": {
-                            "___urlPath___": "other-services",
-                            "___md___": 62
-                        },
-                        "White Papers & Architectures": {
-                            "___urlPath___": "white-papers-architectures",
-                            "___md___": 62
-                        },
-                        "Exam Preparation": {
-                            "___urlPath___": "exam-preparation",
-                            "___md___": 62
-                        },
-                        "Congratulations": {
-                            "___urlPath___": "congratulations",
-                            "___md___": 62
-                        }
-                    },
-                    "AWS Certified Developer - Associate | Discontinued": {
-                        "___urlPath___": "aws-certified-developer-associate",
-                        "Getting Started with AWS": 1,
-                        "AWS Identity & Access Management (AWS IAM)": 2,
-                        "Amazon EC2 – Basics": 3,
-                        "Amazon EC2 – Instance Storage": 4,
-                        "High Availability & Scalability": 5,
-                        "RDS, Aurora, & ElastiCache": 6,
-                        "Amazon Route 53": 7,
-                        "Amazon VPC – Basics": 8,
-                        "Amazon S3": 9,
-                        "AWS CLI, SDK, IAM Roles & Policies": 10,
-                        "Amazon S3 – Advanced": 11,
-                        "Amazon S3 – Security": 12,
-                        "Amazon CloudFront": 13,
-                        "Containers on AWS": 14,
-                        "AWS Elastic Beanstalk": 15,
-                        "AWS CloudFormation": 16,
-                        "AWS Integration & Messaging": 17,
-                        "AWS Monitoring, Troubleshooting & Audit": 18,
-                        "AWS Lambda": 19,
-                        "Amazon DynamoDB": {
-                            "___urlPath___": "amazon-dynamodb",
-                            "Introduction": 22,
-                            "DynamoDB as a Session State Cache": 34,
-                            "DynamoDB Write Sharding": 33,
-                            "DynamoDB – Write Types": 32,
-                            "DynamoDB – Large Objects Pattern": 30,
-                            "DynamoDB – Indexing S3 Objects Metadata": 31,
-                            "DynamoDB Operations": 29,
-                            "Security & Other features": 23,
-                            "Users Interact with DynamoDB Directly": 25,
-                            "Fine-Grained Access Control": 24,
-                        },
-                        "Amazon API Gateway": {
-                            "___urlPath___": "amazon-api-gateway",
-                            "Introduction": 39,
-                            "Example: Building a Serverless API": 38,
-                            "API Gateway – High-Level Integrations": 40,
-                            "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
-                            "API Gateway - Endpoint Types": 42,
-                            "API Gateway – Security": 43,
-                            "API Gateway – Deployment Stages": 44,
-                            "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
-
-                        },
-                        "AWS CICD": 22,
-                        "AWS Serverless Application Model (SAM)": 23,
-                        "AWS Cloud Development Kit (CDK)": 24,
-                        "Amazon Cognito": 25,
-                        "Other Serverless": 26,
-                        "Advanced Identity in AWS": 27,
-                        "AWS Security & Encryption": 28,
-                        "Other Services": 29,
-                        "Exam Preparation": 30,
-                        "Congratulations": 31
-                    },
-                    "AWS Serverless | Discontinued": {
-                        "___urlPath___": "aws-serverless",
-                        "Introduction to Serverless Computing": {
-                            "___urlPath___": "introduction-to-serverless-computing",
-                            "What is Serverless?": {
-                                "___urlPath___": "what-is-serverless",
-                                "___md___": 46
-                            },
-                            "Benefits of Serverless Architecture": true,
-                            "Overview of AWS Serverless Services": true
-                        },
-                        "AWS Lambda": {
-                            "Introduction to AWS Lambda": true,
-                            "Creating and Deploying Lambda Functions": true,
-                            "Event-Driven Architecture with Lambda": true,
-                            "Monitoring and Debugging Lambda Functions": true,
-                            "Best Practices for AWS Lambda": true
-                        },
-                        "API Gateway": {
-                            "Introduction to Amazon API Gateway": true,
-                            "Creating and Managing REST APIs": true,
-                            "Integrating API Gateway with AWS Lambda": true,
-                            "Authentication and Authorization with API Gateway": true,
-                            "CORS and Rate Limiting": true
-                        },
-                        "AWS DynamoDB": {
-                            "Introduction to DynamoDB": true,
-                            "Creating and Managing Tables": true,
-                            "Data Modeling with DynamoDB": true,
-                            "DynamoDB Streams": true,
-                            "Best Practices for DynamoDB Performance": true
-                        },
-                        "Serverless Frameworks": {
-                            "Introduction to Serverless Framework": true,
-                            "Deploying Applications with Serverless Framework": true,
-                            "Comparison with SAM (Serverless Application Model)": true
-                        },
-                        "Event Sources": {
-                            "AWS S3 as Event Source": true,
-                            "DynamoDB Streams as Event Source": true,
-                            "Amazon SNS and SQS Integration": true,
-                            "AWS EventBridge": true
-                        },
-                        "Serverless Monitoring and Security": {
-                            "Monitoring with AWS CloudWatch": true,
-                            "Setting Up Alarms and Logs": true,
-                            "Security Best Practices for Serverless Applications": true,
-                            "IAM Role Management for Serverless": true
-                        },
-                        "CI/CD for Serverless Applications": {
-                            "Introduction to AWS CodePipeline": true,
-                            "Building CI/CD Pipelines for Serverless": true,
-                            "Testing Serverless Applications": true,
-                            "Deploying Serverless Applications with Automation": true
-                        },
-                        "Additional Serverless Services": {
-                            "AWS AppSync for GraphQL APIs": true,
-                            "AWS Step Functions for Orchestration": true,
-                            "AWS Cognito for User Management": true,
-                            "AWS SAM CLI for Deployment": true
-                        },
-                        "Case Studies and Hands-On": {
-                            "Building a Serverless Web Application": true,
-                            "Serverless Data Processing Pipeline": true,
-                            "Serverless Real-Time Applications with WebSockets": true,
-                            "Serverless Chat Application": true
-                        }
-                    },
+                    }
                 }
             },
             "Database Management": {
@@ -4468,6 +4522,10 @@ const mapper = {
                         "Overlapping Subproblems and Optimal Substructure": {
                             "___urlPath___": "overlapping-subproblems-optimal-substructrue",
                             "___md___": 339
+                        },
+                        "1D vs Multi Dimensional DP": {
+                            "___urlPath___": "one-dimensional-vs-multi-dimensional-dp",
+                            "___md___": 376
                         }
                     },
                     "Problems 💻": {
@@ -4493,7 +4551,14 @@ const mapper = {
                         "Egg Dropping Problem": true,
                         "Wildcard Pattern Matching": true,
                         "Word Break Problem": true,
-                        "Shortest Path in Weighted Grid (Dijkstra with DP)": true
+                        "Shortest Path in Weighted Grid (Dijkstra with DP)": true,
+                        "Multi Dimensional DP": {
+                            "___urlPath___": "multi-dimensional-dp",
+                            "Triangle": {
+                                "___urlPath___": "triangle",
+                                "___md___": 377
+                            }
+                        }
                     }
                 },
                 "Greedy Algorithms": {
