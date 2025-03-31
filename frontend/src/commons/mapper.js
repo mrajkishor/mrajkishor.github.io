@@ -3090,9 +3090,25 @@ const mapper = {
                                     "___urlPath___": "why-encryption-matters",
                                     "___md___": 380
                                 },
-                                "A Complete Guide to AWS KMS": {
+                                "KMS Overview": {
                                     "___urlPath___": "complete-guide-aws-kms",
                                     "___md___": 381
+                                },
+                                "KMS Multi-Region Keys": {
+                                    "___urlPath___": "kms-multi-region-keys",
+                                    "___md___": 382
+                                },
+                                "S3 Replication and Encryption": {
+                                    "___urlPath___": "s3-replication-and-encryption",
+                                    "___md___": 383
+                                },
+                                "Sharing Encrypted AMIs": {
+                                    "___urlPath___": "sharing-encrypted-amis",
+                                    "___md___": 384
+                                },
+                                "SSM parameter store": {
+                                    "___urlPath___": "ssm-parameter-store",
+                                    "___md___": 385
                                 }
                             },
                             "Amazon VPC 🔴": {

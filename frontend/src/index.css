@@ -7,14 +7,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden; /* markdown wrapper has already scrollbar */
-background-color: #2E3B4E!important;
+/* background-color: #2E3B4E!important; */
 
+background-color: #000!important;
 
   /* ✅ Add Background Image */
-  /* background-image: url('./assets/viewport_bg/wood_bg.jpg');
+  background-image: url('./assets/viewport_bg/plywood.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 #canvas {
@@ -55,7 +56,17 @@ ul > li {
   /* border-left: 3px solid #007BFF; */
 }
 
+/* start emo changes */
 
+ /* ul li::before  {
+  content: "👉 "; 
+ }
+
+ ul ul li::before  {
+  content: "🔹 ";
+ } */
+
+/* end emo changes*/
 
 a {
   text-decoration: none;
@@ -592,18 +603,18 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 50px;
   /* background-color: #ffff; */
   position: relative;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
 }
 
 .tiles-header {
   position: absolute;
   top: -30px;
   backdrop-filter: blur(5px);
-  /* background-color: #007bffde; */
+  background-color: #007bffde;
   padding: 10px 20px;
   border-radius: 10px;
-  /* box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 5px; */
-  /* border: 1px solid #007bff; */
+  box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 5px;
+  border: 1px solid #007bff;
   color: #fff;
   /* color: #007bffde; */
   font-size: 1.8em;
