@@ -3094,6 +3094,10 @@ const mapper = {
                                     "___urlPath___": "complete-guide-aws-kms",
                                     "___md___": 381
                                 },
+                                "KMS hands on with CLI": {
+                                    "___urlPath___": "kms-hands-on-with-cli",
+                                    "___md___": 388
+                                },
                                 "KMS Multi-Region Keys": {
                                     "___urlPath___": "kms-multi-region-keys",
                                     "___md___": 382
@@ -3109,6 +3113,26 @@ const mapper = {
                                 "SSM parameter store": {
                                     "___urlPath___": "ssm-parameter-store",
                                     "___md___": 385
+                                },
+                                "SSM Parameter Store Hands-On with CLI": {
+                                    "___urlPath___": "ssm-parameter-store-hands-on-with-cli",
+                                    "___md___": 387
+                                },
+                                "SSM Parameter Store Hands-On with AWS Lambda": {
+                                    "___urlPath___": "ssm-parameter-store-hands-on-with-aws-lambda",
+                                    "___md___": 386
+                                },
+                                "AWS Secrets Manager Overview": {
+                                    "___urlPath___": "aws-secrets-manager-overview",
+                                    "___md___": 389
+                                },
+                                "AWS Secrets Manager - Hands On": {
+                                    "___urlPath___": "aws-secrets-manager-hands-on",
+                                    "___md___": 390
+                                },
+                                "SSM Parameter Store Vs. Secrets Manager": {
+                                    "___urlPath___": "aws-ssm-parameter-vs-aws-secrets-manager",
+                                    "___md___": 391
                                 }
                             },
                             "Amazon VPC 🔴": {
