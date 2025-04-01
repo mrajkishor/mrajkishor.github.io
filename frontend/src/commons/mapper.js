@@ -2964,7 +2964,22 @@ const mapper = {
                             },
                             "AWS Integration & Messaging 🔴": {
                                 "___urlPath___": "aws-integration-messaging",
-                                "___md___": 62
+                                "Introduction": {
+                                    "___urlPath___": "introduction",
+                                    "___md___": 392
+                                },
+                                "SQS Overview": {
+                                    "___urlPath___": "sqs-overview",
+                                    "___md___": 393
+                                },
+                                "SQS - Standard Queue Hands On": {
+                                    "___urlPath___": "sqs-standard-queue-hands-on",
+                                    "___md___": 394
+                                },
+                                "Amazon SQS – Message Visibility Timeout": {
+                                    "___urlPath___": "sqs-message-visibility-timeout",
+                                    "___md___": 395
+                                }
                             },
                             "Containers on AWS 🔴": {
                                 "___urlPath___": "containers-on-aws",

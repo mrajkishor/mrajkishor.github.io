@@ -179,6 +179,8 @@
 
 /* Desktop Styles */
 .markdownWrapper {
+
+
   max-width: 750px;
   margin: 100px auto; /* Adds 40px margin at the top, centers horizontally */
   padding: 20px clamp(20px, 5vw, 40px); /* Dynamic padding */
@@ -202,7 +204,7 @@
   width: 100%;  
   padding: 50px 20px 20px 20px;
   overflow-y: auto;
-  
+
 }
 
 /* Tablet Styles (768px and up) */

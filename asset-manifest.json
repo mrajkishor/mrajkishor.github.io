@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.dbd9a92b.css",
-    "main.js": "/static/js/main.2b7acfc7.js",
+    "main.css": "/static/css/main.005d7926.css",
+    "main.js": "/static/js/main.ac91ebd4.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
     "static/media/air_pointer.webp": "/static/media/air_pointer.55e112600e54f4f5b195.webp",
     "static/media/invoice_screen.jpeg": "/static/media/invoice_screen.122bbbf6cbd90a9a5ca0.jpeg",
-    "static/media/profile_pic.jpg": "/static/media/profile_pic.a120aef997e3c56e872f.jpg",
     "static/media/networks.webp": "/static/media/networks.170d8c13fe3f66d89952.webp",
     "static/media/python.jpg": "/static/media/python.552d0185e803517557a1.jpg",
     "static/media/sys_design.png": "/static/media/sys_design.cbeee32e86950c2f4148.png",
@@ -41,6 +40,7 @@
     "static/media/KaTeX_SansSerif-Bold.ttf": "/static/media/KaTeX_SansSerif-Bold.5b49f4993ae22d7975b4.ttf",
     "static/media/soft_skills.jpg": "/static/media/soft_skills.ce0297d5739da6e3b28e.jpg",
     "static/media/KaTeX_SansSerif-Italic.ttf": "/static/media/KaTeX_SansSerif-Italic.b257a18c016f37ee4543.ttf",
+    "static/media/profile_pic.jpg": "/static/media/profile_pic.d8f1303b54955ec78a16.jpg",
     "static/media/KaTeX_Main-Italic.woff": "/static/media/KaTeX_Main-Italic.fd947498bc16392e76c2.woff",
     "static/media/KaTeX_Fraktur-Bold.ttf": "/static/media/KaTeX_Fraktur-Bold.4c761b3711973ab04edf.ttf",
     "static/media/KaTeX_Fraktur-Regular.ttf": "/static/media/KaTeX_Fraktur-Regular.ed305b5434865e06ffde.ttf",
@@ -59,7 +59,6 @@
     "static/media/KaTeX_Typewriter-Regular.woff2": "/static/media/KaTeX_Typewriter-Regular.c295e7f71970f03c0549.woff2",
     "static/media/KaTeX_Fraktur-Bold.woff": "/static/media/KaTeX_Fraktur-Bold.354501bac435c3264834.woff",
     "static/media/KaTeX_Fraktur-Regular.woff": "/static/media/KaTeX_Fraktur-Regular.6fdf0ac577be0ba82a4c.woff",
-    "static/media/plywood.jpg": "/static/media/plywood.670f5e4029356489a8df.jpg",
     "static/media/KaTeX_Caligraphic-Bold.ttf": "/static/media/KaTeX_Caligraphic-Bold.7489a2fbfb9bfe704420.ttf",
     "static/media/KaTeX_Caligraphic-Regular.ttf": "/static/media/KaTeX_Caligraphic-Regular.7e873d3833eb108a0758.ttf",
     "static/media/KaTeX_SansSerif-Regular.woff": "/static/media/KaTeX_SansSerif-Regular.02271ec5cb9f5b4588ac.woff",
@@ -89,12 +88,12 @@
     "static/media/KaTeX_Size3-Regular.woff": "/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
-    "main.dbd9a92b.css.map": "/static/css/main.dbd9a92b.css.map",
-    "main.2b7acfc7.js.map": "/static/js/main.2b7acfc7.js.map",
+    "main.005d7926.css.map": "/static/css/main.005d7926.css.map",
+    "main.ac91ebd4.js.map": "/static/js/main.ac91ebd4.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbd9a92b.css",
-    "static/js/main.2b7acfc7.js"
+    "static/css/main.005d7926.css",
+    "static/js/main.ac91ebd4.js"
   ]
 }
