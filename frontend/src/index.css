@@ -10,7 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden; /* markdown wrapper has already scrollbar */
  background-color: #2E3B4E!important;
-
+ /* background: linear-gradient(135deg, #1e2a4a, #223159, #273968);
+ height: 100vh;
+  margin: 0;
+  color: white;  */
   /* ✅ Add Background Image */
   /* background-image: url('./assets/viewport_bg/plywood.jpg');
   background-size: cover;

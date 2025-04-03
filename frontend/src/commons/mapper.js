@@ -5,6 +5,10 @@ const mapper = {
             "___urlPath___": "full-stack-developer-course",
             "Web Technology (Foundation)": {
                 "___urlPath___": "web-technology",
+                "Web Full Stack Architect (FSE)": {
+                    "___urlPath___": "web-full-stack-architect-fse-syllabus",
+                    "___md___": 400
+                },
                 "Basics of Web Development": {
                     "___urlPath___": "basics-of-web-development",
                     "Introduction to Web Technology": {
@@ -1617,6 +1621,10 @@ const mapper = {
                 },
                 "Java Development": {
                     "___urlPath___": "java-development",
+                    "0. Java Solution Architect": {
+                        "___urlPath___": "java-solution-architect-syllabus",
+                        "___md___": 399
+                    },
                     "1. Introduction to Java": {
                         "History and Evolution of Java": true,
                         "Features of Java": true,
@@ -2979,7 +2987,40 @@ const mapper = {
                                 "Amazon SQS – Message Visibility Timeout": {
                                     "___urlPath___": "sqs-message-visibility-timeout",
                                     "___md___": 395
-                                }
+                                },
+                                "Amazon SQS – Long Polling": {
+                                    "___urlPath___": "sqs-long-polling",
+                                    "___md___": 396
+                                },
+                                "Amazon SQS – FIFO Queue": {
+                                    "___urlPath___": "sqs-fifo-queue",
+                                    "___md___": 397
+                                },
+                                "Scaling Applications with SQS and Auto Scaling Groups": {
+                                    "___urlPath___": "scaling-applications-with-sqs-and-auto-scaling-group",
+                                    "___md___": 398
+                                },
+                                "Amazon SNS (Simple Notification Service) Overview": {
+                                    "___urlPath___": "amazon-sns-overview",
+                                    "___md___": 401
+                                },
+                                "Advanced SNS Features": {
+                                    "___urlPath___": "advanced-sns-features",
+                                    "___md___": 402
+                                },
+                                "SNS Hands On": {
+                                    "___urlPath___": "sns-hands-on",
+                                    "___md___": 403
+                                },
+                                "Amazon Kinesis Data Streams Overview": {
+                                    "___urlPath___": "amazon-kinesis-data-streams-overview",
+                                    "___md___": 404
+                                },
+                                "Amazon Kinesis Data Streams Hands On": {
+                                    "___urlPath___": "amazon-kinesis-data-streams-hands-on",
+                                    "___md___": 405
+                                },
+
                             },
                             "Containers on AWS 🔴": {
                                 "___urlPath___": "containers-on-aws",
@@ -4251,6 +4292,10 @@ const mapper = {
                     },
                     "Problems 💻": {
                         "___urlPath___": "problems",
+                        "Remove Element": {
+                            "___urlPath___": "remove-element",
+                            "___md___": 406
+                        },
                         "Product of Array Except Self": {
                             "___urlPath___": "product-array-except-self",
                             "___md___": 329
@@ -4612,6 +4657,14 @@ const mapper = {
                             "Triangle": {
                                 "___urlPath___": "triangle",
                                 "___md___": 377
+                            },
+                            "Unique Paths II": {
+                                "___urlPath___": "unique-paths-2",
+                                "___md___": 407
+                            },
+                            "Minimum Path Sum": {
+                                "___urlPath___": "minimum-path-sum",
+                                "___md___": 408
                             }
                         }
                     }
