@@ -633,7 +633,10 @@ const mapper = {
                                 "Portals": true,
                                 "Error Boundaries and Error Handling": true,
                                 "Render Props": true,
-                                "Higher-Order Components (HOC)": true,
+                                "Higher-Order Components (HOC)": {
+                                    "___urlPath___": "hoc",
+                                    "___md___": 409
+                                },
                                 "React Fiber Architecture": true,
                                 "Reactive Programming": true,
                                 "React Server Components (RSC)": true,
@@ -1067,11 +1070,26 @@ const mapper = {
                             },
                             "Next.js Basics": {
                                 "___urlPath___": "nextjs-basics",
-                                "Pages and File-based Routing": true,
-                                "Dynamic Routing and Catch-All Routes": true,
-                                "API Routes in Next.js": true,
-                                "Middleware in Next.js": true,
-                                "Handling Static and Public Files": true
+                                "Pages and File-based Routing": {
+                                    "___urlPath___": "pages-and-file-based-routing",
+                                    "___md___": 418
+                                },
+                                "Dynamic Routing and Catch-All Routes": {
+                                    "___urlPath___": "dynamic-routing-and-catch-all-routes",
+                                    "___md___": 419
+                                },
+                                "API Routes in Next.js": {
+                                    "___urlPath___": "api-routes-in-next-js",
+                                    "___md___": 420
+                                },
+                                "Middleware in Next.js": {
+                                    "___urlPath___": "middleware-in-next-js",
+                                    "___md___": 421
+                                },
+                                "Handling Static and Public Files": {
+                                    "___urlPath___": "handling-static-and-public-files",
+                                    "___md___": 422
+                                }
                             },
                             "Data Fetching": {
                                 "___urlPath___": "data-fetching",
@@ -1079,16 +1097,37 @@ const mapper = {
                                     "___urlPath___": 'getstaticprops',
                                     "___md___": 288
                                 },
-                                "getServerSideProps (Server-Side Rendering - SSR)": true,
-                                "getStaticPaths for Dynamic SSG": true,
-                                "Client-Side Data Fetching (useSWR, fetch, axios)": true,
-                                "Incremental Static Regeneration (ISR)": true
+                                "getServerSideProps (Server-Side Rendering - SSR)": {
+                                    "___urlPath___": "getserversideprops",
+                                    "___md___": 423
+                                },
+                                "getStaticPaths for Dynamic SSG": {
+                                    "___urlPath___": "getstaticpaths-for-dynamic-ssg",
+                                    "___md___": 424
+                                },
+                                "Client-Side Data Fetching (useSWR, fetch, axios)": {
+                                    "___urlPath___": "client-side-data-fetching-useswr-fetch-axios",
+                                    "___md___": 425
+                                },
+                                "Incremental Static Regeneration (ISR)": {
+                                    "___urlPath___": "incremental-static-regeneration",
+                                    "___md___": 426
+                                }
                             },
                             "Styling in Next.js": {
                                 "___urlPath___": "styling-in-nextjs",
-                                "CSS Modules in Next.js": true,
-                                "Styled Components and Emotion": true,
-                                "Tailwind CSS with Next.js": true,
+                                "CSS Modules in Next.js": {
+                                    "___urlPath___": "css-modules-in-next-js",
+                                    "___md___": 427
+                                },
+                                "Styled Components and Emotion": {
+                                    "___urlPath___": "styled-components-and-emotion",
+                                    "___md___": 428
+                                },
+                                "Tailwind CSS with Next.js": {
+                                    "___urlPath___": "tailwind-css-with-next-js",
+                                    "___md___": 429
+                                },
                                 "Global Styles and Layouts": true
                             },
                             "State Management": {
@@ -1455,10 +1494,449 @@ const mapper = {
                 },
                 "Full-Stack Development": {
                     "MEAN/MERN Stack": {
-                        "MongoDB": true,
+                        "___urlPath___": "mean-mern-stack",
+
+                        "MongoDB": {
+                            "___urlPath___": "mongodb",
+                            "Introduction to MongoDB": {
+                                "___urlPath___": "introduction",
+                                "What is MongoDB?": {
+                                    "___urlPath___": "what-is-mongodb",
+                                    "___md___": 501
+                                },
+                                "Features of MongoDB": {
+                                    "___urlPath___": "features",
+                                    "___md___": 502
+                                },
+                                "MongoDB vs SQL Databases": {
+                                    "___urlPath___": "mongodb-vs-sql",
+                                    "___md___": 503
+                                },
+                                "Use Cases of MongoDB": {
+                                    "___urlPath___": "use-cases",
+                                    "___md___": 504
+                                }
+                            },
+                            "MongoDB Installation & Setup": {
+                                "___urlPath___": "installation",
+                                "Installing MongoDB on Local Machine": {
+                                    "___urlPath___": "installing-locally",
+                                    "___md___": 505
+                                },
+                                "Setting Up MongoDB Atlas (Cloud)": {
+                                    "___urlPath___": "mongodb-atlas",
+                                    "___md___": 506
+                                },
+                                "Connecting MongoDB with Compass": {
+                                    "___urlPath___": "mongodb-compass",
+                                    "___md___": 507
+                                },
+                                "Connecting MongoDB with Node.js": {
+                                    "___urlPath___": "mongodb-nodejs",
+                                    "___md___": 508
+                                }
+                            },
+                            "Data Modeling in MongoDB": {
+                                "___urlPath___": "data-modeling",
+                                "Collections and Documents": {
+                                    "___urlPath___": "collections-documents",
+                                    "___md___": 509
+                                },
+                                "Schema Design Best Practices": {
+                                    "___urlPath___": "schema-best-practices",
+                                    "___md___": 510
+                                },
+                                "Referencing vs Embedding": {
+                                    "___urlPath___": "referencing-vs-embedding",
+                                    "___md___": 511
+                                },
+                                "Data Types in MongoDB": {
+                                    "___urlPath___": "data-types",
+                                    "___md___": 512
+                                }
+                            },
+                            "CRUD Operations": {
+                                "___urlPath___": "crud",
+                                "Create Operations (Insert)": {
+                                    "___urlPath___": "insert",
+                                    "___md___": 513
+                                },
+                                "Read Operations (Find)": {
+                                    "___urlPath___": "find",
+                                    "___md___": 514
+                                },
+                                "Update Operations": {
+                                    "___urlPath___": "update",
+                                    "___md___": 515
+                                },
+                                "Delete Operations": {
+                                    "___urlPath___": "delete",
+                                    "___md___": 516
+                                },
+                                "Bulk Operations": {
+                                    "___urlPath___": "bulk-operations",
+                                    "___md___": 517
+                                }
+                            },
+                            "Querying in MongoDB": {
+                                "___urlPath___": "querying",
+                                "Operators in Queries": {
+                                    "___urlPath___": "operators",
+                                    "___md___": 518
+                                },
+                                "Projections": {
+                                    "___urlPath___": "projections",
+                                    "___md___": 519
+                                },
+                                "Sorting, Skipping, and Limiting": {
+                                    "___urlPath___": "sort-skip-limit",
+                                    "___md___": 520
+                                },
+                                "Aggregation Framework": {
+                                    "___urlPath___": "aggregation-framework",
+                                    "___md___": 521
+                                },
+                                "Aggregation Stages & Operators": {
+                                    "___urlPath___": "aggregation-stages",
+                                    "___md___": 522
+                                }
+                            },
+                            "Indexes and Performance Optimization": {
+                                "___urlPath___": "indexes",
+                                "Creating Indexes": {
+                                    "___urlPath___": "creating-indexes",
+                                    "___md___": 523
+                                },
+                                "Types of Indexes": {
+                                    "___urlPath___": "index-types",
+                                    "___md___": 524
+                                },
+                                "Query Optimization with Indexes": {
+                                    "___urlPath___": "query-optimization",
+                                    "___md___": 525
+                                },
+                                "Explain Plan & Analyzing Queries": {
+                                    "___urlPath___": "explain-plan",
+                                    "___md___": 526
+                                }
+                            },
+                            "Advanced MongoDB Concepts": {
+                                "___urlPath___": "advanced",
+                                "Transactions": {
+                                    "___urlPath___": "transactions",
+                                    "___md___": 527
+                                },
+                                "Change Streams": {
+                                    "___urlPath___": "change-streams",
+                                    "___md___": 528
+                                },
+                                "TTL Collections": {
+                                    "___urlPath___": "ttl-collections",
+                                    "___md___": 529
+                                },
+                                "Capped Collections": {
+                                    "___urlPath___": "capped-collections",
+                                    "___md___": 530
+                                },
+                                "Replication & High Availability": {
+                                    "___urlPath___": "replication",
+                                    "Replica Sets": {
+                                        "___urlPath___": "replica-sets",
+                                        "___md___": 541
+                                    },
+                                    "Elections and Failover": {
+                                        "___urlPath___": "elections-failover",
+                                        "___md___": 542
+                                    },
+                                    "Read Preferences": {
+                                        "___urlPath___": "read-preferences",
+                                        "___md___": 543
+                                    }
+                                },
+                                "Sharding & Horizontal Scaling": {
+                                    "___urlPath___": "sharding",
+                                    "Sharded Clusters": {
+                                        "___urlPath___": "sharded-clusters",
+                                        "___md___": 544
+                                    },
+                                    "Shard Keys": {
+                                        "___urlPath___": "shard-keys",
+                                        "___md___": 545
+                                    },
+                                    "Balancing and Chunk Migration": {
+                                        "___urlPath___": "chunk-migration",
+                                        "___md___": 546
+                                    }
+                                },
+                                "Backup and Monitoring": {
+                                    "___urlPath___": "backup-monitoring",
+                                    "Backup Methods": {
+                                        "___urlPath___": "backup-methods",
+                                        "___md___": 547
+                                    },
+                                    "Monitoring Tools": {
+                                        "___urlPath___": "monitoring-tools",
+                                        "___md___": 548
+                                    }
+                                }
+                            },
+                            "Security and Access Control": {
+                                "___urlPath___": "security",
+                                "Authentication & Authorization": {
+                                    "___urlPath___": "auth",
+                                    "___md___": 531
+                                },
+                                "Role-Based Access Control": {
+                                    "___urlPath___": "rbac",
+                                    "___md___": 532
+                                },
+                                "Data Encryption": {
+                                    "___urlPath___": "encryption",
+                                    "___md___": 533
+                                },
+                                "Auditing & Monitoring": {
+                                    "___urlPath___": "auditing-monitoring",
+                                    "___md___": 534
+                                }
+                            },
+                            "MongoDB with Node.js": {
+                                "___urlPath___": "nodejs",
+                                "Using Mongoose ODM": {
+                                    "___urlPath___": "mongoose",
+                                    "___md___": 535
+                                },
+                                "Schema and Model Definitions": {
+                                    "___urlPath___": "schema-model",
+                                    "___md___": 536
+                                },
+                                "CRUD with Mongoose": {
+                                    "___urlPath___": "crud-mongoose",
+                                    "___md___": 537
+                                },
+                                "Validation and Middleware": {
+                                    "___urlPath___": "validation-middleware",
+                                    "___md___": 538
+                                }
+                            }
+                        },
+
                         "Express.js": true,
                         "Angular/React": true,
-                        "Node.js": true
+                        "Node.js (JavaScript Runtime)": {
+                            "___urlPath___": "nodejs",
+                            "Introduction to Node.js": {
+                                "___urlPath___": "introduction-to-nodejs",
+                                "What is Node.js?": {
+                                    "___urlPath___": "what-is-nodejs",
+                                    "___md___": 1
+                                },
+                                "Why Use Node.js?": {
+                                    "___urlPath___": "why-use-nodejs",
+                                    "___md___": 2
+                                },
+                                "Node.js Architecture": {
+                                    "___urlPath___": "nodejs-architecture",
+                                    "___md___": 3
+                                }
+                            },
+                            "Core Modules": {
+                                "___urlPath___": "core-modules",
+                                "File System (fs)": {
+                                    "___urlPath___": "file-system",
+                                    "___md___": 4
+                                },
+                                "Events": {
+                                    "___urlPath___": "events",
+                                    "___md___": 5
+                                },
+                                "Streams": {
+                                    "___urlPath___": "streams",
+                                    "___md___": 6
+                                },
+                                "Buffers": {
+                                    "___urlPath___": "buffers",
+                                    "___md___": 7
+                                },
+                                "Path Module": {
+                                    "___urlPath___": "path-module",
+                                    "___md___": 8
+                                },
+                                "OS Module": {
+                                    "___urlPath___": "os-module",
+                                    "___md___": 9
+                                }
+                            },
+                            "Asynchronous Programming": {
+                                "___urlPath___": "asynchronous-programming",
+                                "Callbacks": {
+                                    "___urlPath___": "callbacks",
+                                    "___md___": 415
+                                },
+                                "Promises": {
+                                    "___urlPath___": "promises",
+                                    "___md___": 416
+                                },
+                                "Async/Await": {
+                                    "___urlPath___": "async-await",
+                                    "___md___": 417
+                                }
+                            },
+                            "NPM (Node Package Manager)": {
+                                "___urlPath___": "npm",
+                                "What is NPM?": {
+                                    "___urlPath___": "what-is-npm",
+                                    "___md___": 13
+                                },
+                                "Installing Packages": {
+                                    "___urlPath___": "installing-packages",
+                                    "___md___": 14
+                                },
+                                "Global vs Local Packages": {
+                                    "___urlPath___": "global-vs-local-packages",
+                                    "___md___": 15
+                                },
+                                "Semantic Versioning": {
+                                    "___urlPath___": "semantic-versioning",
+                                    "___md___": 16
+                                }
+                            },
+                            "Working with Express.js": {
+                                "___urlPath___": "expressjs",
+                                "What is Express.js?": {
+                                    "___urlPath___": "what-is-express",
+                                    "___md___": 17
+                                },
+                                "Routing in Express": {
+                                    "___urlPath___": "routing-in-express",
+                                    "___md___": 18
+                                },
+                                "Middleware": {
+                                    "___urlPath___": "middleware",
+                                    "___md___": 19
+                                },
+                                "Error Handling": {
+                                    "___urlPath___": "error-handling",
+                                    "___md___": 20
+                                },
+                                "Request and Response Objects": {
+                                    "___urlPath___": "request-response",
+                                    "___md___": 21
+                                }
+                            },
+                            "RESTful APIs with Node.js": {
+                                "___urlPath___": "restful-apis",
+                                "Creating a REST API": {
+                                    "___urlPath___": "creating-rest-api",
+                                    "___md___": 22
+                                },
+                                "CRUD Operations": {
+                                    "___urlPath___": "crud-operations",
+                                    "___md___": 23
+                                },
+                                "Postman and API Testing": {
+                                    "___urlPath___": "postman-api-testing",
+                                    "___md___": 24
+                                }
+                            },
+                            "Database Integration": {
+                                "___urlPath___": "database-integration",
+                                "Using MongoDB with Mongoose": {
+                                    "___urlPath___": "mongodb-mongoose",
+                                    "___md___": 25
+                                },
+                                "MySQL Integration": {
+                                    "___urlPath___": "mysql-integration",
+                                    "___md___": 26
+                                },
+                                "Sequelize ORM": {
+                                    "___urlPath___": "sequelize-orm",
+                                    "___md___": 27
+                                }
+                            },
+                            "Authentication & Authorization": {
+                                "___urlPath___": "authentication",
+                                "JWT Authentication": {
+                                    "___urlPath___": "jwt-auth",
+                                    "___md___": 28
+                                },
+                                "OAuth and Passport.js": {
+                                    "___urlPath___": "oauth-passport",
+                                    "___md___": 29
+                                },
+                                "Role-Based Access Control (RBAC)": {
+                                    "___urlPath___": "rbac",
+                                    "___md___": 30
+                                }
+                            },
+                            "Testing in Node.js": {
+                                "___urlPath___": "testing",
+                                "Unit Testing with Jest": {
+                                    "___urlPath___": "unit-testing-jest",
+                                    "___md___": 31
+                                },
+                                "Supertest for API Testing": {
+                                    "___urlPath___": "supertest-api",
+                                    "___md___": 32
+                                },
+                                "Mocha & Chai": {
+                                    "___urlPath___": "mocha-chai",
+                                    "___md___": 33
+                                }
+                            },
+                            "Deployment & DevOps": {
+                                "___urlPath___": "deployment",
+                                "PM2 Process Manager": {
+                                    "___urlPath___": "pm2",
+                                    "___md___": 34
+                                },
+                                "Node.js with Docker": {
+                                    "___urlPath___": "docker-nodejs",
+                                    "___md___": 35
+                                },
+                                "CI/CD with GitHub Actions": {
+                                    "___urlPath___": "ci-cd-github-actions",
+                                    "___md___": 36
+                                },
+                                "Deploying to AWS (EC2/S3/Lambda)": {
+                                    "___urlPath___": "deploying-to-aws",
+                                    "___md___": 37
+                                }
+                            },
+                            "Advanced Node.js": {
+                                "___urlPath___": "advanced-nodejs",
+                                "Cluster Module": {
+                                    "___urlPath___": "cluster-module",
+                                    "___md___": 411
+                                },
+                                "Worker Threads": {
+                                    "___urlPath___": "worker-threads",
+                                    "___md___": 412
+                                },
+                                "Child Processes": {
+                                    "___urlPath___": "child-processes",
+                                    "___md___": 413
+                                },
+                                "Performance Tuning": {
+                                    "___urlPath___": "performance-tuning",
+                                    "___md___": 414
+                                }
+                            },
+                            "Security Best Practices": {
+                                "___urlPath___": "security-best-practices",
+                                "Helmet.js": {
+                                    "___urlPath___": "helmet-js",
+                                    "___md___": 42
+                                },
+                                "Rate Limiting": {
+                                    "___urlPath___": "rate-limiting",
+                                    "___md___": 410
+                                },
+                                "Input Validation with Joi": {
+                                    "___urlPath___": "joi-validation",
+                                    "___md___": 44
+                                }
+                            }
+                        }
                     },
                     "JAMstack": {
                         "JavaScript Frameworks": true,
@@ -3020,7 +3498,22 @@ const mapper = {
                                     "___urlPath___": "amazon-kinesis-data-streams-hands-on",
                                     "___md___": 405
                                 },
-
+                                "Amazon Data Firehose": {
+                                    "___urlPath___": "amazon-data-firehose",
+                                    "___md___": 430
+                                },
+                                "Amazon Data Firehose - Hands On": {
+                                    "___urlPath___": "amazon-data-firehose-hands-on",
+                                    "___md___": 431
+                                },
+                                "SQS Vs SNS Vs Kinesis": {
+                                    "___urlPath___": "sqs-vs-sns-vs-kinesis",
+                                    "___md___": 432
+                                },
+                                "Amazon MQ": {
+                                    "___urlPath___": "amazon-mq",
+                                    "___md___": 433
+                                }
                             },
                             "Containers on AWS 🔴": {
                                 "___urlPath___": "containers-on-aws",
