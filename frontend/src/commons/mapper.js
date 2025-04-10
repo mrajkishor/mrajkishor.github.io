@@ -1935,6 +1935,121 @@ const mapper = {
                                     "___urlPath___": "joi-validation",
                                     "___md___": 44
                                 }
+                            },
+                            "System Design with Node.js": {
+                                "___urlPath___": "system-design-nodejs",
+                                "Monolithic vs Microservices Architecture": {
+                                    "___urlPath___": "monolith-vs-microservices",
+                                    "___md___": 501
+                                },
+                                "API Gateway and Load Balancing": {
+                                    "___urlPath___": "api-gateway-load-balancing",
+                                    "___md___": 502
+                                },
+                                "Service Discovery and Communication": {
+                                    "___urlPath___": "service-discovery",
+                                    "___md___": 503
+                                },
+                                "Rate Limiting and Throttling": {
+                                    "___urlPath___": "rate-limiting-throttling",
+                                    "___md___": 504
+                                },
+                                "Caching with Redis": {
+                                    "___urlPath___": "caching-redis",
+                                    "___md___": 505
+                                },
+                                "Message Queues with RabbitMQ/Kafka": {
+                                    "___urlPath___": "message-queues",
+                                    "___md___": 506
+                                },
+                                "Real-time Systems with WebSockets/Socket.IO": {
+                                    "___urlPath___": "realtime-websockets",
+                                    "___md___": 507
+                                }
+                            },
+
+                            "Node.js Internals and Performance Tuning": {
+                                "___urlPath___": "nodejs-performance",
+                                "V8 Engine Internals": {
+                                    "___urlPath___": "v8-engine",
+                                    "___md___": 508
+                                },
+                                "Node.js Event Loop and libuv": {
+                                    "___urlPath___": "event-loop-libuv",
+                                    "___md___": 509
+                                },
+                                "Garbage Collection Strategies": {
+                                    "___urlPath___": "garbage-collection",
+                                    "___md___": 510
+                                },
+                                "Memory Leak Detection": {
+                                    "___urlPath___": "memory-leak-detection",
+                                    "___md___": 511
+                                },
+                                "Heap Snapshots and Profiling": {
+                                    "___urlPath___": "heap-profiling",
+                                    "___md___": 512
+                                }
+                            },
+
+                            "Architecture Patterns in Node.js": {
+                                "___urlPath___": "architecture-patterns",
+                                "MVC and Clean Architecture": {
+                                    "___urlPath___": "mvc-clean-architecture",
+                                    "___md___": 513
+                                },
+                                "Hexagonal Architecture": {
+                                    "___urlPath___": "hexagonal-architecture",
+                                    "___md___": 514
+                                },
+                                "Domain Driven Design (DDD)": {
+                                    "___urlPath___": "domain-driven-design",
+                                    "___md___": 515
+                                },
+                                "Repository and Service Patterns": {
+                                    "___urlPath___": "repository-service-patterns",
+                                    "___md___": 516
+                                }
+                            },
+
+                            "Concurrency and Scalability in Node.js": {
+                                "___urlPath___": "concurrency-scalability",
+                                "Scaling Node with Clustering": {
+                                    "___urlPath___": "clustering-node",
+                                    "___md___": 517
+                                },
+                                "Load Balancing across Instances": {
+                                    "___urlPath___": "load-balancing-instances",
+                                    "___md___": 518
+                                },
+                                "Backpressure Handling in Streams": {
+                                    "___urlPath___": "backpressure-streams",
+                                    "___md___": 519
+                                },
+                                "Async Task Queues (BullMQ)": {
+                                    "___urlPath___": "bullmq-task-queues",
+                                    "___md___": 520
+                                }
+                            },
+
+                            "Monitoring, Logging and Observability": {
+                                "___urlPath___": "monitoring-observability",
+                                "Logging with Winston and Bunyan": {
+                                    "___urlPath___": "logging-winston-bunyan",
+                                    "___md___": 521
+                                },
+                                "Metrics with Prometheus and Grafana": {
+                                    "___urlPath___": "prometheus-grafana",
+                                    "___md___": 522
+                                },
+                                "Distributed Tracing with OpenTelemetry": {
+                                    "___urlPath___": "opentelemetry-tracing",
+                                    "___md___": 523
+                                },
+                                "Error Tracking with Sentry": {
+                                    "___urlPath___": "sentry-error-tracking",
+                                    "___md___": 524
+                                }
                             }
                         }
                     },
@@ -3446,7 +3561,10 @@ const mapper = {
                             },
                             "AWS Storage Extras 🔴": {
                                 "___urlPath___": "aws-storage-extras",
-                                "___md___": 62
+                                "AWS Snowball": {
+                                    "___urlPath___": "aws-snowball",
+                                    "___md___": 434
+                                }
                             },
                             "AWS Integration & Messaging 🔴": {
                                 "___urlPath___": "aws-integration-messaging",
@@ -5289,6 +5407,12 @@ const mapper = {
                         "Matrix Multiplication": true,
                         "Matrix Rotation": true,
                         "Spiral Traversal": true
+                    },
+                    "Problems 💻": {
+                        "Plus One": {
+                            "___urlPath___": "plus-one",
+                            "___md___": 435
+                        }
                     }
                 },
                 "Advanced Topics": {
@@ -5481,6 +5605,371 @@ const mapper = {
                     "Practical Project: Designing a Scalable Online Learning Platform": true
                 }
             },
+            "Discrete Mathematics": {
+                "___urlPath___": "discrete-mathematics",
+                "Logic": {
+                    "___urlPath___": "logic",
+                    "Propositional Logic": {
+                        "___urlPath___": "propositional-logic",
+                        "Propositions and Logical Connectives": {
+                            "___urlPath___": "propositional-and-logical-connectives",
+                            "___md___": 437
+                        },
+                        "Truth Tables": {
+                            "___urlPath____": "truth-tables",
+                            "___md___": 438
+                        },
+                        "Tautologies and Contradictions": {
+                            "___urlPath___": "tautologies-and-contradictions",
+                            "___md___": 439
+                        },
+                        "Logical Equivalence and Implication": {
+                            "___urlPath___": "logical-equivalence-and-implication",
+                            "___md___": 440
+                        },
+                        "Normal Forms (CNF, DNF)": {
+                            "___urlPath___": "normal-forms-cnf-dnf",
+                            "___md___": 441
+                        },
+                        "Inference Rules and Proof Techniques": {
+                            "___urlPath___": "inference-rules-and-proof-techniques",
+                            "___md___": 442
+                        }
+                    },
+                    "First Order Logic (Predicate Logic)": {
+                        "Predicates and Quantifiers": true,
+                        "Free and Bound Variables": true,
+                        "Nested Quantifiers": true,
+                        "Logical Inference in FOL": true
+                    }
+                },
+                "Set Theory": {
+                    "Basic Concepts": {
+                        "Set Notation and Operations": true,
+                        "Venn Diagrams": true,
+                        "Subsets and Power Sets": true
+                    },
+                    "Set Identities and Laws": {
+                        "Union, Intersection, Difference": true,
+                        "Complement, De Morgan’s Laws": true,
+                        "Cartesian Product": true
+                    }
+                },
+                "Relations and Functions": {
+                    "Relations": {
+                        "Definition and Representation": true,
+                        "Properties of Relations (Reflexive, Symmetric, etc.)": true,
+                        "Equivalence Relations": true,
+                        "Partial Orders and Posets": true,
+                        "Hasse Diagrams": true
+                    },
+                    "Functions": {
+                        "Types of Functions": {
+                            "Injective, Surjective, Bijective": true
+                        },
+                        "Composition and Inverse of Functions": true,
+                        "Image and Preimage": true
+                    }
+                },
+                "Algebraic Structures": {
+                    "Binary Operations": true,
+                    "Monoids": {
+                        "Definition and Properties": true,
+                        "Examples of Monoids": true
+                    },
+                    "Groups": {
+                        "Definition and Axioms": true,
+                        "Abelian Groups": true,
+                        "Cyclic Groups and Subgroups": true,
+                        "Group Homomorphisms and Isomorphisms": true
+                    }
+                },
+                "Graph Theory": {
+                    "Basic Concepts": {
+                        "Graphs, Vertices, and Edges": true,
+                        "Types of Graphs (Simple, Multigraph, Pseudograph, etc.)": true,
+                        "Degree of Vertices": true
+                    },
+                    "Graph Properties": {
+                        "Path, Walk, Cycle, Circuit": true,
+                        "Connected and Disconnected Graphs": true,
+                        "Components and Connectivity": true
+                    },
+                    "Special Graphs": {
+                        "Complete Graph, Bipartite Graph": true,
+                        "Trees and Forests": true
+                    },
+                    "Graph Algorithms": {
+                        "DFS and BFS": true,
+                        "Minimum Spanning Tree (Kruskal, Prim)": true,
+                        "Shortest Path (Dijkstra, Floyd-Warshall)": true
+                    },
+                    "Advanced Concepts": {
+                        "Graph Coloring": true,
+                        "Chromatic Number": true,
+                        "Matching and Covering": true,
+                        "Euler and Hamiltonian Graphs": true
+                    }
+                },
+                "Combinatorics": {
+                    "Counting Principles": {
+                        "Addition and Multiplication Rules": true,
+                        "Inclusion-Exclusion Principle": true
+                    },
+                    "Permutations and Combinations": {
+                        "Without and With Repetition": true,
+                        "Circular Permutations": true
+                    },
+                    "Pigeonhole Principle": true,
+                    "Recurrence Relations": {
+                        "Formulating Recurrence Relations": true,
+                        "Solving Linear Recurrences": true,
+                        "Homogeneous and Non-Homogeneous Cases": true
+                    },
+                    "Generating Functions": {
+                        "Ordinary Generating Functions (OGFs)": true,
+                        "Solving Recurrence Relations with OGFs": true,
+                        "Applications in Counting": true
+                    }
+                },
+                "Case Studies and Practice": {
+                    "Logic Puzzle Solving": true,
+                    "Modeling Relations with Graphs": true,
+                    "Group Structure Applications": true,
+                    "Graph Coloring in Real Life": true,
+                    "Combinatorics in Algorithm Analysis": true
+                },
+                "Problems (GATE PYQ)": {
+
+                },
+                "Revision Short Notes (Topic Wise)": {
+
+                }
+            }
+            ,
+            "Digital Logic": {
+                "___urlPath___": "digital-logic",
+                "Boolean Algebra and Logic Gates": {
+                    "Boolean Algebra Basics": {
+                        "Boolean Variables and Operations": true,
+                        "Truth Tables": true,
+                        "Logic Gate Symbols": {
+                            "AND, OR, NOT": true,
+                            "NAND, NOR, XOR, XNOR": true
+                        },
+                        "DeMorgan’s Theorems": true,
+                        "Duality Principle": true,
+                        "Boolean Expression Simplification": true
+                    },
+                    "Canonical Forms": {
+                        "Sum of Products (SOP)": true,
+                        "Product of Sums (POS)": true,
+                        "Minterms and Maxterms": true
+                    }
+                },
+                "Minimization Techniques": {
+                    "Algebraic Simplification": true,
+                    "Karnaugh Maps (K-Map)": {
+                        "2-variable to 5-variable K-Map": true,
+                        "Grouping and Simplification": true,
+                        "Don’t Care Conditions": true
+                    },
+                    "Quine-McCluskey Method (Tabulation Method)": true
+                },
+                "Combinational Circuits": {
+                    "Basic Circuits": {
+                        "Half Adder and Full Adder": true,
+                        "Half Subtractor and Full Subtractor": true
+                    },
+                    "Multiplexers and Demultiplexers": true,
+                    "Encoders and Decoders": true,
+                    "Priority Encoder and Binary Decoder": true,
+                    "Comparators": true,
+                    "Parity Generator and Checker": true,
+                    "Binary to Gray and Gray to Binary Converter": true,
+                    "7-Segment Display Decoder": true
+                },
+                "Sequential Circuits": {
+                    "Flip-Flops": {
+                        "SR, JK, D, and T Flip-Flops": true,
+                        "Truth Table and Excitation Table": true,
+                        "Flip-Flop Conversions": true
+                    },
+                    "Registers": {
+                        "SISO, SIPO, PISO, PIPO": true,
+                        "Universal Shift Register": true
+                    },
+                    "Counters": {
+                        "Asynchronous (Ripple) Counters": true,
+                        "Synchronous Counters": true,
+                        "Up/Down Counters": true,
+                        "Modulo-N Counters": true
+                    },
+                    "Finite State Machines": {
+                        "Moore Machine": true,
+                        "Mealy Machine": true,
+                        "State Diagrams and State Tables": true,
+                        "State Minimization": true
+                    }
+                },
+                "Number Systems and Codes": {
+                    "Number Systems": {
+                        "Binary, Decimal, Octal, Hexadecimal": true,
+                        "Conversions Between Number Systems": true
+                    },
+                    "Binary Arithmetic": {
+                        "Addition, Subtraction": true,
+                        "Multiplication and Division": true,
+                        "1's and 2's Complement": true,
+                        "Signed and Unsigned Numbers": true
+                    },
+                    "BCD and Excess-3 Code": true,
+                    "Error Detection Codes": {
+                        "Parity Bit": true,
+                        "Hamming Code": true
+                    }
+                },
+                "Computer Arithmetic": {
+                    "Fixed Point Arithmetic": {
+                        "Addition, Subtraction, Overflow": true
+                    },
+                    "Floating Point Arithmetic": {
+                        "IEEE 754 Standard": true,
+                        "Normalization": true,
+                        "Rounding Methods": true,
+                        "Addition/Subtraction of FP Numbers": true
+                    },
+                    "Booth’s Multiplication Algorithm": true,
+                    "Restoring and Non-Restoring Division Algorithms": true
+                },
+                "Hands-On Projects and Simulations": {
+                    "Designing a 4-bit Adder/Subtractor": true,
+                    "Simulating a Synchronous Counter": true,
+                    "Building a Finite State Machine": true,
+                    "K-Map Minimization Tool": true
+                }
+            }
+            ,
+            "Computer Organization and Architecture": {
+                "___urlPath___": "computer-organization-and-architecture",
+                "Machine Instructions and Addressing Modes": {
+                    "___urlPath___": "machine-instructions-and-addressing-modes",
+                    "Instruction Formats": {
+                        "___urlPath___": "instruction-formats",
+                        "___md___": 436
+                    },
+                    "Types of Instructions": {
+                        "Data Movement Instructions": true,
+                        "Arithmetic and Logic Instructions": true,
+                        "Control Flow Instructions": true
+                    },
+                    "Addressing Modes": {
+                        "Immediate Addressing": true,
+                        "Register Addressing": true,
+                        "Direct Addressing": true,
+                        "Indirect Addressing": true,
+                        "Indexed Addressing": true,
+                        "Base Register Addressing": true,
+                        "Relative Addressing": true
+                    }
+                },
+                "ALU, Datapath, and Control Unit": {
+                    "Arithmetic Logic Unit (ALU)": {
+                        "Basic Arithmetic Operations": true,
+                        "Bitwise Operations": true,
+                        "Shifter Circuits": true
+                    },
+                    "Datapath Design": {
+                        "Single-Cycle Datapath": true,
+                        "Multi-Cycle Datapath": true,
+                        "Control Signals and Their Roles": true
+                    },
+                    "Control Unit": {
+                        "Hardwired Control Unit": true,
+                        "Microprogrammed Control Unit": true,
+                        "Design and Comparison": true
+                    }
+                },
+                "Instruction Pipelining and Hazards": {
+                    "Basics of Pipelining": {
+                        "Stages of Instruction Pipeline": true,
+                        "Throughput and Speedup": true
+                    },
+                    "Pipeline Hazards": {
+                        "Structural Hazards": true,
+                        "Data Hazards": {
+                            "RAW, WAR, WAW": true,
+                            "Data Forwarding": true
+                        },
+                        "Control Hazards": {
+                            "Branch Prediction": true,
+                            "Branch Delay Slots": true
+                        }
+                    },
+                    "Handling Hazards": {
+                        "Stalling": true,
+                        "Forwarding": true,
+                        "Speculative Execution": true
+                    }
+                },
+                "Memory Hierarchy": {
+                    "Cache Memory": {
+                        "Need for Cache": true,
+                        "Cache Mapping Techniques": {
+                            "Direct Mapping": true,
+                            "Associative Mapping": true,
+                            "Set-Associative Mapping": true
+                        },
+                        "Cache Replacement Policies": {
+                            "LRU": true,
+                            "FIFO": true,
+                            "Random": true
+                        },
+                        "Write Policies": {
+                            "Write Through": true,
+                            "Write Back": true
+                        }
+                    },
+                    "Main Memory": {
+                        "RAM and ROM": true,
+                        "DRAM and SRAM": true,
+                        "Memory Interleaving": true,
+                        "Memory Latency and Bandwidth": true
+                    },
+                    "Secondary Storage": {
+                        "Hard Disk Drives (HDDs)": true,
+                        "Solid State Drives (SSDs)": true,
+                        "Magnetic Tapes and Optical Disks": true
+                    }
+                },
+                "Input/Output Interface": {
+                    "I/O Devices": {
+                        "Input Devices": true,
+                        "Output Devices": true,
+                        "I/O Addressing and Port Mapping": true
+                    },
+                    "I/O Techniques": {
+                        "Programmed I/O": true,
+                        "Interrupt-Driven I/O": true,
+                        "Direct Memory Access (DMA)": {
+                            "DMA Controller": true,
+                            "DMA Transfer Modes": true
+                        }
+                    },
+                    "Interrupt Handling": {
+                        "Vectored and Non-Vectored Interrupts": true,
+                        "Interrupt Priority and Nesting": true,
+                        "Maskable and Non-Maskable Interrupts": true
+                    }
+                },
+                "Case Studies and Practical Projects": {
+                    "Simulating Instruction Pipeline": true,
+                    "Designing a Simple ALU in Verilog": true,
+                    "Implementing Cache Mapping Strategies": true,
+                    "DMA Operation Simulation in Code": true
+                }
+            },
+
             "Operating System": {
                 "___urlPath___": "operating-system",
                 "Introduction to Operating Systems": {

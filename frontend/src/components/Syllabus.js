@@ -23,6 +23,10 @@ import programming from "../assets/python.jpg";
 import warehouse from "../assets/warehouse.webp";
 import machine_learning from "../assets/ml.jpg";
 import artificial_intelligence from "../assets/ai.jpg";
+import coa from '../assets/coa.jpeg';
+import dl from '../assets/dl.png';
+import dm from '../assets/dm.jpg';
+
 import web_tech from "../assets/web_tech.avif";
 import Footer from "./Footer";
 
@@ -1932,6 +1936,9 @@ const renderTiles = (topics, basePath) => {
         "Data Structures": data_structures,
         "Algorithms": algo,
         "System Design": sys_design,
+        "Discrete Mathematics": dm,
+        "Digital Logic": dl,
+        "Computer Organization and Architecture": coa,
         "Operating System": os,
         "Computer Networks": networking,
         "Cloud Computing": cloud_computing,

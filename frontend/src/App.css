@@ -269,3 +269,19 @@
 
 
 /* Footer end  */
+
+
+/* Changes for hand writing style starts  */
+
+.hand-written-notes-style-wrapper { 
+  font-family: 'Patrick Hand', cursive!important;
+  font-weight: 400!important;
+  font-style: normal!important;
+  font-size: 1.2em!important;
+
+  /* code, pre {
+    font-family: 'Courier New', monospace;
+  } */
+}
+
+/* Changes for hand writing style ends */
