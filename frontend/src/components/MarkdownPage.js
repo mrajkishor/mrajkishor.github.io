@@ -16,6 +16,8 @@ import mapper from "../commons/mapper";
 import NotFound from "./NotFound";
 import { GoToTopButton } from "./GoToTopButton";
 import Footer from "./Footer";
+import rehypeSlug from "rehype-slug";
+
 
 // Preprocess Markdown to wrap ==highlight== in <mark>
 const preprocessMarkdown = (content) => {
@@ -110,7 +112,46 @@ const MarkdownPage = ({ wrapperRef }) => {
     ]);
 
     useEffect(() => {
-        if (!wrapperRef?.current) return;
+        const wrapper = wrapperRef?.current;
+        // either wrap with if block below (intuitive way) or return here (bit odd). Note : Returning allowed in closure like useEffect
+        if (!wrapper) return; // 👉 This gets the scrollable container where your markdown content is rendered.
+
+        const handleAnchorClick = (e) => {
+            const anchor = e.target.closest('a[href^="#"]'); // 👉 This listens for any click on an anchor (<a>) that links to an ID inside the page (starts with #).
+
+            // 🖼 Example
+
+            // <a href="#section">
+            //   <span><strong>Click Me</strong></span>
+            // </a>
+
+            // If the user clicks on the <strong>, then:
+            // e.target → <strong>
+            // e.target.closest('a') → ✅ finds the <a> element
+
+
+            if (anchor) {
+                const id = decodeURIComponent(anchor.getAttribute('href').slice(1)); // remove "#" i.e. 👉 This extracts the id (like introduction) from the link href="#introduction".
+                const targetEl = wrapper.querySelector(`#${CSS.escape(id)}`); // 👉 This finds the element inside your scroll container that has the matching id.
+                if (targetEl) {
+                    e.preventDefault();
+                    wrapper.scrollTo({
+                        top: targetEl.offsetTop - 20, // adjust offset if needed
+                        behavior: "smooth",
+                    });
+                }
+            }
+        };
+
+        wrapper.addEventListener("click", handleAnchorClick);
+        return () => {
+            wrapper.removeEventListener("click", handleAnchorClick);
+        };
+    }, [wrapperRef]);
+
+
+    useEffect(() => {
+        if (!wrapperRef?.current) return; // 👉 This gets the scrollable container where your markdown content is rendered.
 
         const handleScroll = debounce(() => {
             setShowGoToTop(wrapperRef.current.scrollTop > 300);
@@ -234,7 +275,7 @@ const MarkdownPage = ({ wrapperRef }) => {
                     {markdown ? (
                         <ReactMarkdown
                             remarkPlugins={[remarkGfm, remarkMath]}
-                            rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex]}
+                            rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
 
                         >
                             {markdown}

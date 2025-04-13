@@ -5,7 +5,7 @@ const mapper = {
             "___urlPath___": "full-stack-developer-course",
             "Web Technology (Foundation)": {
                 "___urlPath___": "web-technology",
-                "Web Full Stack Architect (FSE)": {
+                "Web Full Stack Architect (FSE) Syllabus": {
                     "___urlPath___": "web-full-stack-architect-fse-syllabus",
                     "___md___": 400
                 },
@@ -307,8 +307,16 @@ const mapper = {
                     "JavaScript": {
                         "___urlPath___": "javascript",
                         "Introduction to JavaScript": {
-                            "What is JavaScript?": true,
+                            "___urlPath___": "introduction-to-javascript",
+                            "What is JavaScript?": {
+                                "___urlPath___": "what-is-javascript",
+                                "___md___": 443
+                            },
                             "History and Evolution": true,
+                            "Language Translators: Compiler, Interpreter, Assembler": {
+                                "___urlPath___": "language-translators-compiler-interpreter-assembler",
+                                "___md___": 444
+                            },
                             "JavaScript Engines": {
                                 "V8 Engine": true,
                                 "SpiderMonkey": true
@@ -385,10 +393,14 @@ const mapper = {
                                 "Spread Operator": true
                             },
                             "Function Scope and Closures": {
+                                "___urlPath___": "function-scope-and-closures",
                                 "Global Scope": true,
                                 "Local Scope": true,
                                 "Block Scope": true,
-                                "Closures": true
+                                "Closures": {
+                                    "___urlPath___": "closures",
+                                    "___md___": 451
+                                }
                             },
                             "Higher-Order Functions": {
                                 "map, filter, reduce": true,
@@ -3525,7 +3537,14 @@ const mapper = {
                             },
                             "Amazon EC2 - Instance Storage 🔴": {
                                 "___urlPath___": "amazon-ec2-instance-storage",
-                                "___md___": 62
+                                "EBS Overview": {
+                                    "___urlPath___": "ebs-overview",
+                                    "___md___": 445
+                                },
+                                "EBS Hands-on": {
+                                    "___urlPath___": "ebs-hands-on",
+                                    "___md___": 446
+                                }
                             },
                             "High Availability & Scalability 🔴": {
                                 "___urlPath___": "high-availability-scalability",
@@ -3690,7 +3709,14 @@ const mapper = {
                             },
                             "Serverless Overview 🟢": {
                                 "___urlPath___": "serverless-overview",
-                                "___md___": 62
+                                "Introduction": {
+                                    "___urlPath___": "introduction",
+                                    "___md___": 447
+                                },
+                                "AWS Lambda Overview": {
+                                    "___urlPath___": "aws-lambda-overview",
+                                    "___md___": 448
+                                }
                             },
                             "Serverless Architectures 🔴": {
                                 "___urlPath___": "serverless-architectures",
@@ -5616,7 +5642,7 @@ const mapper = {
                             "___md___": 437
                         },
                         "Truth Tables": {
-                            "___urlPath____": "truth-tables",
+                            "___urlPath___": "truth-tables",
                             "___md___": 438
                         },
                         "Tautologies and Contradictions": {
@@ -5637,10 +5663,23 @@ const mapper = {
                         }
                     },
                     "First Order Logic (Predicate Logic)": {
-                        "Predicates and Quantifiers": true,
-                        "Free and Bound Variables": true,
-                        "Nested Quantifiers": true,
-                        "Logical Inference in FOL": true
+                        "___urlPath___": "first-order-logic",
+                        "Predicates and Quantifiers": {
+                            "___urlPath___": "predicate-and-quantifiers",
+                            "___md___": 449
+                        },
+                        "Free and Bound Variables": {
+                            "___urlPath___": "free-and-bound-variables",
+                            "___md___": 450
+                        },
+                        "Nested Quantifiers": {
+                            "___urlPath___": "nested-quantifiers",
+                            "___md___": 452
+                        },
+                        "Logical Inference in FOL": {
+                            "___urlPath___": "logical-inference-in-fol",
+                            "___md___": 453
+                        }
                     }
                 },
                 "Set Theory": {

@@ -188,7 +188,7 @@
   line-height: 1.75; /* Improves readability */
   border-radius: 0 0 20px 20px;
   color: #333; /* Softer contrast for better readability */
-  overflow-x: auto;
+  /* overflow-x: auto; */
   font-size: 18px;
   /* backdrop-filter: blur(30px); */
   /* background: rgba(255, 255, 255, 0.95);  */
