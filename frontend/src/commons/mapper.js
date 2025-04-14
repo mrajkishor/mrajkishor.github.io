@@ -522,6 +522,59 @@ const mapper = {
                             },
                             "File System Module": true,
                             "Streams": true
+                        },
+                        "LeetCode problems (30 Days of JavaScript)": {
+                            "___urlPath___": "leetcode-problems",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 472
+                            },
+                            "Promises and Time": {
+                                "___urlPath___": "promises-and-time",
+                                "Add Two Promises": {
+                                    "___urlPath___": "add-two-promises",
+                                    "___md___": 464
+                                },
+                                "Sleep": {
+                                    "___urlPath___": "sleep",
+                                    "___md___": 465
+                                },
+                                "Timeout Cancellation": {
+                                    "___urlPath___": "timeout-cancellation",
+                                    "___md___": 466
+                                },
+                                "Interval Cancellation": {
+                                    "___urlPath___": "interval-cancellation",
+                                    "___md___": 467
+                                },
+                                "Promise Time Limit": {
+                                    "___urlPath___": "promise-time-limit",
+                                    "___md___": 468
+                                },
+                                "Cache With Time Limit": {
+                                    "___urlPath___": "cache-with-time-limit",
+                                    "___md___": 469
+                                },
+                                "Debounce": {
+                                    "___urlPath___": "debounce",
+                                    "___md___": 470
+                                }
+                            },
+                            "Classes": {
+                                "___urlPath___": "classes",
+                                "Event Emitter": {
+                                    "___urlPath___": "event-emitter",
+                                    "___md___": 463
+                                },
+                                "Array Wrapper": {
+                                    "___urlPath___": "array-wrapper",
+                                    "___md___": 462
+                                },
+                                "Calculator with Method Chaining": {
+                                    "___urlPath___": "calculator-with-method-chaining",
+                                    "___md___": 461
+                                }
+                            }
                         }
                     },
                     "Frontend Libraries and Frameworks": {
@@ -670,6 +723,10 @@ const mapper = {
                                     "Vercel": true,
                                     "AWS Amplify": true
                                 }
+                            },
+                            "Coding Challenges": {
+                                "___urlPath___": "coding-challenges",
+                                "___md___": 471
                             }
                         },
                         "Vue.js": {
@@ -3716,6 +3773,10 @@ const mapper = {
                                 "AWS Lambda Overview": {
                                     "___urlPath___": "aws-lambda-overview",
                                     "___md___": 448
+                                },
+                                "AWS Lambda Hands-On": {
+                                    "___urlPath___": "aws-lambda-hands-on",
+                                    "___md___": 454
                                 }
                             },
                             "Serverless Architectures 🔴": {
@@ -5028,6 +5089,21 @@ const mapper = {
                     "Applications of Hashing": {
                         "Hash Tables": true,
                         "Dictionary Implementation": true
+                    },
+                    "Problems 💻": {
+                        "___urlPath___": "problems",
+                        "Valid Anagram": {
+                            "___urlPath___": "valid-anagram",
+                            "___md___": 456
+                        },
+                        "Group Anagrams": {
+                            "___urlPath___": "group-anagrams",
+                            "___md___": 455
+                        },
+                        "Contains Duplicate II": {
+                            "___urlPath___": "contains-duplicate",
+                            "___md___": 460
+                        }
                     }
                 },
                 "Trees": {
@@ -5149,6 +5225,21 @@ const mapper = {
                     "Case Study: Social Network Analysis using Graphs": true,
                     "Practical Project: Implementing a Custom Hash Table": true,
                     "Practical Project: Scheduling System with Priority Queues": true
+                },
+                "Competitive Programming Cheat Sheet": {
+                    "___urlPath___": "competitive-programming-cheat-sheet",
+                    "Java": {
+                        "___urlPath___": "java",
+                        "___md___": 457
+                    },
+                    "JavaScript": {
+                        "___urlPath___": "javascript",
+                        "___md___": 458
+                    },
+                    "TypeScript": {
+                        "___urlPath___": "typescript",
+                        "___md___": 459
+                    }
                 }
             }
 
