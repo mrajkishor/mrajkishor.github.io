@@ -685,6 +685,7 @@ body::-webkit-scrollbar-thumb:hover {
     top: -25px;
     left: 0;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* ✅ for Safari/iPhone support */
     /* background-color: #007bff; */
     padding: 10px 20px;
     border-radius: 10px;

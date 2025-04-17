@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import mapper from "../commons/mapper";
 import GlobalSearch from "./GlobalSearch";
+import { isMobile } from "react-device-detect";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
     const [collapsed, setCollapsed] = useState({});
@@ -127,8 +128,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <div className="sidebar-content">
                 {renderNestedList(mapper.Contents, `/${mapper.Contents.___urlPath___}`)}
             </div>
-
-            <div
+            {!isMobile && (<div
                 style={{
 
                     bottom: 0,
@@ -155,7 +155,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 >
                     About Maintainer 👨‍💻
                 </span>
-            </div>
+            </div>)}
+
         </div>
     );
 };

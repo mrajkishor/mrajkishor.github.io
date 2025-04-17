@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css'; // CSS file for styling
 
-const BottomNav = () => {
+const BottomNav = ({ showSideBar, setShowSideBar }) => {
+
+    const toggleSidebar = () => {
+        setShowSideBar(prev => !prev);
+    };
+
     return (
         <nav className="bottom-nav">
-            <a href="/#" className="nav-item">
-                <i className="material-icons">menu</i>
-                <span>Menu</span>
+
+            <a className="nav-item" onClick={toggleSidebar}>
+                <i className="material-icons"> {showSideBar ? 'close' : 'menu'}</i>
+                <span>{showSideBar ? 'Close' : 'Menu'}</span>
             </a>
-            {/* <a href="#" className="nav-item">
-                <i className="material-icons">search</i>
-                <span>Search</span>
-            </a> */}
+            <a href="/#" className="nav-item">
+                <i className="material-icons">home</i>
+                <span>Home</span>
+            </a>
             {/* <a href="#" className="nav-item">
                 <i className="material-icons">add_circle</i>
                 <span>Create</span>

@@ -361,7 +361,7 @@ Let me know if you want more names, or if any of these resonate with you!
 
 
       </div>
-      {isMobile && (<BottomNav />)}
+      {isMobile && (<BottomNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />)}
 
 
     </div>
