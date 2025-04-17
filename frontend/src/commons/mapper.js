@@ -1797,15 +1797,26 @@ const mapper = {
                                 "___urlPath___": "introduction-to-nodejs",
                                 "What is Node.js?": {
                                     "___urlPath___": "what-is-nodejs",
-                                    "___md___": 1
+                                    "___md___": 474
                                 },
                                 "Why Use Node.js?": {
                                     "___urlPath___": "why-use-nodejs",
-                                    "___md___": 2
+                                    "___md___": 475
                                 },
-                                "Node.js Architecture": {
-                                    "___urlPath___": "nodejs-architecture",
-                                    "___md___": 3
+                                "Node.js Architecture Overview": {
+                                    "___urlPath___": "nodejs-architecture-overview",
+                                    "___md___": 473
+                                },
+                                "Pre-requisites": {
+                                    "___urlPath___": "pre-requisites",
+                                    "ASCII vs Unicode": {
+                                        "___urlPath___": "ascii-vs-unicode",
+                                        "___md___": 477
+                                    },
+                                    "Lexical grammar": {
+                                        "___urlPath___": "lexical-grammar",
+                                        "___md___": 476
+                                    }
                                 }
                             },
                             "Core Modules": {
@@ -5013,6 +5024,22 @@ const mapper = {
                         "Reverse Words in a String": {
                             "___urlPath___": "reverse-words-string",
                             "___md___": 342
+                        },
+                        "Longest Substring Without Repeating Characters": {
+                            "___urlPath___": "longest-substring-without-repeating-characters",
+                            "___md___": 478
+                        },
+                        "Two Sum II - Input Array Is Sorted": {
+                            "___urlPath___": "two-sum-2-input-array-is-sorted",
+                            "___md___": 479
+                        },
+                        "Valid Palindrome": {
+                            "___urlPath___": "valid-palindrome",
+                            "___md___": 480
+                        },
+                        "Longest Repeating Character Replacement": {
+                            "___urlPath___": "longest-repeating-character-replacement",
+                            "___md___": 481
                         }
                     }
                 },
@@ -5239,10 +5266,17 @@ const mapper = {
                     "TypeScript": {
                         "___urlPath___": "typescript",
                         "___md___": 459
+                    },
+                    "DSA Pattern Recognition": {
+                        "___urlPath___": "dsa-pattern-recognition",
+                        "Cheatsheet Overview": {
+                            "___urlPath___": "cheatsheet-overview",
+                            "___md___": 482
+                        }
                     }
                 }
-            }
 
+            }
             ,
             "Algorithms": {
                 "___urlPath___": "algorithms",

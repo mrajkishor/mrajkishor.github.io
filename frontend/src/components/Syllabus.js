@@ -27,7 +27,8 @@ import coa from '../assets/coa.jpeg';
 import dl from '../assets/dl.png';
 import dm from '../assets/dm.jpg';
 
-import web_tech from "../assets/web_tech.avif";
+//import web_tech from "../assets/web_tech.avif";
+import web_tech from "../assets/web_tech.jpg";
 import Footer from "./Footer";
 
 const syllabus = mapper.Contents;
