@@ -10,6 +10,8 @@ import { initGA, logPageView } from './commons/analytics';
 import AnimatedTileBackground from "./components/AnimatedTileBackground";
 import slogans from './commons/slogans';
 import GlobalSearch from "./components/GlobalSearch";
+import BottomNav from "./components/mobile-vp/BottomNav";
+import { isMobile } from 'react-device-detect';
 
 const App = () => {
 
@@ -144,7 +146,7 @@ const App = () => {
 
       {/* <AnimatedTileBackground /> */}
 
-      <div
+      {!isMobile && (<div
         className="logo-wrapper"
         onClick={handleLogoClick}
         style={{ cursor: "pointer" }}
@@ -202,11 +204,12 @@ const App = () => {
 Let me know if you want more names, or if any of these resonate with you!
            */}
         </div>
-      </div>
+      </div>)}
+
 
       {/* Add logo and menu here */}
       {/* Toggle Button */}
-      <div
+      {!isMobile && (<div
         style={{
           cursor: "pointer",
           position: 'fixed',
@@ -245,7 +248,7 @@ Let me know if you want more names, or if any of these resonate with you!
         }}>
           {showSideBar ? "✖" : "☰"}
         </div>
-      </div>
+      </div>)}
 
       {/* Sidebar */}
       <div className={`overlayWrapper ${showSideBar ? "show" : "hide"}`}
@@ -356,7 +359,10 @@ Let me know if you want more names, or if any of these resonate with you!
 
         </Routes>
 
+
       </div>
+      {isMobile && (<BottomNav />)}
+
 
     </div>
   );

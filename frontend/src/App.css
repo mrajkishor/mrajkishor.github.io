@@ -219,6 +219,28 @@
   overflow-y: auto;
 }
 
+.wooden-background-mb{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 1;
+  padding-bottom: 120px;
+
+   /* background: linear-gradient(135deg, #1e2a4a, #223159, #273968);
+height: 100vh;
+margin: 0;
+color: white;  */
+/* ✅ Add Background Image */
+ background-image: url('./assets/viewport_bg/plywood.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; 
+overflow-y: auto;
+
+}
+
 .main-content-wrapper {
   width: 100%;  
   padding: 50px 20px 20px 20px;
@@ -244,11 +266,13 @@
       line-height: 1.5; /* Slightly reduced for better fit */
       background-color: white;
       backdrop-filter: blur(500px);
+      margin: 10px !important; 
   }
-
+ 
   
 .main-content-wrapper {
-  padding: 50px 5px;
+  padding: 0px 25px;
+  margin-bottom: 64px;
 }
   
 .courseTitle {

@@ -17,6 +17,7 @@ import NotFound from "./NotFound";
 import { GoToTopButton } from "./GoToTopButton";
 import Footer from "./Footer";
 import rehypeSlug from "rehype-slug";
+import { isMobile } from 'react-device-detect';
 
 
 // Preprocess Markdown to wrap ==highlight== in <mark>
@@ -220,7 +221,7 @@ const MarkdownPage = ({ wrapperRef }) => {
 
     return (
         <>
-            <div className="wooden-background">
+            <div className={isMobile ? "wooden-background-mb" : "wooden-background"}>
                 <motion.div
                     className="markdownWrapper paper paper--alt"
                     initial={{ opacity: 0, y: 20 }}
