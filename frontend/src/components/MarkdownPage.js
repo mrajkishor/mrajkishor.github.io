@@ -220,93 +220,95 @@ const MarkdownPage = ({ wrapperRef }) => {
 
     return (
         <>
-            <motion.div
-                className="markdownWrapper paper paper--alt"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-            >
-                {/* Breadcrumb Navigation */}
-
-                <motion.nav
-                    className="breadcrumb"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                    style={{
-                        margin: "20px 0",
-                        backgroundColor: "#f9f9f9",
-                        padding: "10px",
-                        borderRadius: "5px",
-                        boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
-                        width: "100%",
-                    }}
-                >
-                    {breadcrumb.length > 0
-                        ? breadcrumb.map((crumb, index) => (
-                            <span key={crumb.url}>
-                                {index > 0 && " / "}
-                                {breadcrumb.length - 1 === index ? (
-                                    <span style={{ color: "#333", fontWeight: "bold" }}>{crumb.name}</span>
-                                ) : (
-                                    <Link
-                                        to={`/contents${crumb.url}`}
-                                        style={{
-                                            textDecoration: "none",
-                                            color: "#007bff",
-                                            transition: "color 0.3s",
-                                        }}
-                                    >
-                                        {crumb.name}
-                                    </Link>
-                                )}
-                            </span>
-                        ))
-                        : <Skeleton count={2} />}
-                </motion.nav>
-
+            <div className="wooden-background">
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    className="markdownWrapper paper paper--alt"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className="hand-written-notes-style-wrapper"
                 >
-                    {markdown ? (
-                        <ReactMarkdown
-                            remarkPlugins={[remarkGfm, remarkMath]}
-                            rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
+                    {/* Breadcrumb Navigation */}
 
-                        >
-                            {markdown}
-                        </ReactMarkdown>
-                    ) : (
-                        <div>
-                            {breadcrumb && breadcrumb.length > 0 ?
-                                <h2>Topics under {breadcrumb[breadcrumb.length - 1]?.name}</h2>
+                    <motion.nav
+                        className="breadcrumb"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.3 }}
+                        style={{
+                            margin: "20px 0",
+                            backgroundColor: "#f9f9f9",
+                            padding: "10px",
+                            borderRadius: "5px",
+                            boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
+                            width: "100%",
+                        }}
+                    >
+                        {breadcrumb.length > 0
+                            ? breadcrumb.map((crumb, index) => (
+                                <span key={crumb.url}>
+                                    {index > 0 && " / "}
+                                    {breadcrumb.length - 1 === index ? (
+                                        <span style={{ color: "#333", fontWeight: "bold" }}>{crumb.name}</span>
+                                    ) : (
+                                        <Link
+                                            to={`/contents${crumb.url}`}
+                                            style={{
+                                                textDecoration: "none",
+                                                color: "#007bff",
+                                                transition: "color 0.3s",
+                                            }}
+                                        >
+                                            {crumb.name}
+                                        </Link>
+                                    )}
+                                </span>
+                            ))
+                            : <Skeleton count={2} />}
+                    </motion.nav>
 
-                                : <Skeleton height={30} count={1} />
-                            }
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="hand-written-notes-style-wrapper"
+                    >
+                        {markdown ? (
+                            <ReactMarkdown
+                                remarkPlugins={[remarkGfm, remarkMath]}
+                                rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
 
-                            <ul>
-                                {childTopics.length > 0
-                                    ? childTopics.map((topic) => (
-                                        <li key={topic.url}>
-                                            <Link to={topic.url} style={{ textDecoration: "none", color: "#007bff" }}>
-                                                {topic.name}
-                                            </Link>
-                                        </li>
-                                    ))
-                                    : <Skeleton count={100} />}
-                            </ul>
-                        </div>
-                    )}
+                            >
+                                {markdown}
+                            </ReactMarkdown>
+                        ) : (
+                            <div>
+                                {breadcrumb && breadcrumb.length > 0 ?
+                                    <h2>Topics under {breadcrumb[breadcrumb.length - 1]?.name}</h2>
+
+                                    : <Skeleton height={30} count={1} />
+                                }
+
+                                <ul>
+                                    {childTopics.length > 0
+                                        ? childTopics.map((topic) => (
+                                            <li key={topic.url}>
+                                                <Link to={topic.url} style={{ textDecoration: "none", color: "#007bff" }}>
+                                                    {topic.name}
+                                                </Link>
+                                            </li>
+                                        ))
+                                        : <Skeleton count={100} />}
+                                </ul>
+                            </div>
+                        )}
+
+                    </motion.div>
+                    <GoToTopButton visible={showGoToTop} onClick={scrollToTop} />
 
                 </motion.div>
-                <GoToTopButton visible={showGoToTop} onClick={scrollToTop} />
-
-            </motion.div>
-            <Footer />
+                <Footer />
+            </div>
         </>
     );
 };

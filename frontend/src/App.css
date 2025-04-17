@@ -199,6 +199,25 @@
   /* box-shadow: rgba(0, 123, 255, 0.5) 0px 0px 30px; */
 }
 
+.wooden-background {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+     /* background: linear-gradient(135deg, #1e2a4a, #223159, #273968);
+ height: 100vh;
+  margin: 0;
+  color: white;  */
+  /* ✅ Add Background Image */
+   background-image: url('./assets/viewport_bg/plywood.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  overflow-y: auto;
+}
 
 .main-content-wrapper {
   width: 100%;  
