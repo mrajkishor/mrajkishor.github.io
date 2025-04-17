@@ -128,7 +128,17 @@ const App = () => {
     }
   }, [location.pathname]);
   return (
-    <div key={count} style={{ display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333" }}>
+    <div key={count} style={{
+
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+
+
+      display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333"
+    }}>
 
 
 
