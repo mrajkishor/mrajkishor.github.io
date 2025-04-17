@@ -10,11 +10,15 @@ const BottomNav = ({ showSideBar, setShowSideBar }) => {
     return (
         <nav className="bottom-nav">
 
+            {/* neon effect 
+
+        https://css-tricks.com/how-to-create-neon-text-with-css/ */}
+
             <a className="nav-item" onClick={toggleSidebar}>
                 <i className="material-icons"> {showSideBar ? 'close' : 'menu'}</i>
                 <span>{showSideBar ? 'Close' : 'Menu'}</span>
             </a>
-            <a href="/#" className="nav-item">
+            <a href="/#" className="nav-item" onClick={() => setShowSideBar(false)}>
                 <i className="material-icons">home</i>
                 <span>Home</span>
             </a>
@@ -26,7 +30,7 @@ const BottomNav = ({ showSideBar, setShowSideBar }) => {
                 <i className="material-icons">notifications</i>
                 <span>Alerts</span>
             </a> */}
-            <a href="#/profile" className="nav-item">
+            <a href="#/profile" className="nav-item" onClick={() => setShowSideBar(false)}>
                 <i className="material-icons">person</i>
                 <span>Profile</span>
             </a>

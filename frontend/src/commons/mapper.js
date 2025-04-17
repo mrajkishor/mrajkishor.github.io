@@ -5267,11 +5267,166 @@ const mapper = {
                         "___urlPath___": "typescript",
                         "___md___": 459
                     },
-                    "DSA Pattern Recognition": {
-                        "___urlPath___": "dsa-pattern-recognition",
+                    "DSA Patterns (Cheatsheet)": {
+                        "___urlPath___": "dsa-patterns-cheatsheet",
                         "Cheatsheet Overview": {
                             "___urlPath___": "cheatsheet-overview",
                             "___md___": 482
+                        },
+                        "Array / String Inputs": {
+                            "___urlPath___": "array-string-input",
+                            "Is the array sorted?": {
+
+                            },
+                            "Optimization problems (Max/Min/Subarray)?": {
+
+                            },
+                            "Looking for duplicates / counts / frequencies?": {
+
+                            },
+                            "Need substrings or fixed-size subarrays?": {
+
+                            },
+                            "Frequent min/max in window?": {
+
+                            },
+                            "Generating subsets, permutations, combinations?": {
+
+                            },
+                            "Matching / parsing characters?": {
+
+                            }
+                        },
+                        "Graph Inputs": {
+                            "Shortest path in unweighted graph?": {
+
+                            },
+                            "Weighted shortest path?": {
+
+                            },
+                            "Connected components / cycle detection?": {
+
+                            },
+                            "Topological ordering?": {
+
+                            },
+                            "Optimization like MST?": {
+
+                            }
+                        },
+                        "Tree Inputs (Often Binary Trees)": {
+                            "Traversals?": {
+
+                            },
+                            "Balanced checks or diameter calculations?": {
+
+                            },
+                            "Lowest Common Ancestor?": {
+
+                            }
+                        },
+                        "Linked List Inputs": {
+                            "Detecting cycles?": {
+
+                            },
+                            "Reversals / partial changes?": {
+
+                            },
+                            "Intersection or middle node?": {
+
+                            }
+                        },
+                        "Dynamic Programming Use-Cases": {
+                            "Optimal choices / Overlapping subproblems?": {
+
+                            },
+                            "Subset or knapsack problems?": {
+
+                            },
+                            "String matching or edits?": {
+
+                            }
+                        },
+                        "Range Queries / Updates": {
+                            "Many sum queries, no updates?": {
+
+                            },
+                            "Many sum queries + updates?": {
+
+                            }
+                        },
+                        "Bit Manipulation": {
+                            "Set-based subsets or XOR logic?": {
+
+                            },
+                            "Need to check even/odd, set/unset bits?": {
+
+                            }
+                        },
+                        "When Recursion is Banned or Stack Overflow Risk": {
+
+                        },
+                        "Top K / Least K Elements": {
+
+                        },
+                        "Special Techniques": {
+                            "Sliding Window": {
+
+                            },
+                            "Monotonic Stack ": {
+
+                            },
+                            "Greedy ": {
+
+                            },
+                            "Trie": {
+
+                            }
+                        },
+                        "Overlapping intervals, time slots": {
+
+                        },
+                        "Arrays with elements 1 to N": {
+
+                        },
+                        "Reverse a list without extra space": {
+
+                        },
+                        "Continuous median, window medians": {
+
+                        },
+                        "Merge multiple sorted arrays/lists": {
+
+                        },
+                        "Problems like rotated arrays, next greatest, ceiling/floor": {
+
+                        },
+                        "Concurrent execution, semaphores": {
+
+                        },
+                        "Fast group merging & lookup in disjoint sets.": {
+
+                        },
+                        "Range updates + range queries in large arrays.": {
+
+                        },
+                        "Answer offline range queries efficiently.": {
+
+                        },
+                        "Advanced string problems (like substring counts, lex order, compression).": {
+
+                        },
+                        "Efficient substring matching.": {
+
+                        },
+                        "Tree queries like path sum, LCA with fast updates.": {
+
+                        },
+                        "Quickly jump ancestors or find LCA in O(logN).": {
+
+                        },
+                        "Max XOR pair, number range queries.": {
+
                         }
                     }
                 }

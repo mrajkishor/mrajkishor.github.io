@@ -22,6 +22,7 @@ const App = () => {
   const [slogan, setSlogan] = useState("The 🔑 to excellence");
   const [fade, setFade] = useState(true); // Control fade effect
   const [sloganIndex, setSloganIndex] = useState(Math.floor(Math.random() * slogans.length));
+  const url = window.location.href;
 
 
   // State for user details
@@ -146,71 +147,74 @@ const App = () => {
 
       {/* <AnimatedTileBackground /> */}
 
-      {!isMobile && (<div
-        className="logo-wrapper"
-        onClick={handleLogoClick}
-        style={{ cursor: "pointer" }}
-      >
-        <div className="sidebar-logo">
-          My<span className="logo-highlight">N😁tes</span>
-        </div>
-        <div className="sidebar-slogan">
-          {/* 📚 OpenDev Handbook */}
-          {/* 🔑 to excellence */}
-          {/* Docs? Nah, These Are My Survival Notes 🛠️📝 */}
-          {/* Because Memory Leaks Aren't Just for Code! 🧠💀 */}
+      {!isMobile && (
+        <>
 
-          <div style={{
-            opacity: fade ? 1 : 0,
-            transition: "opacity 0.5s ease-in-out"
-          }}>
-            {slogan}
-          </div>
+          {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
 
-          {/* Other suggestions : 
-          
-          Here are some other relevant name ideas for your open-source developer notes project that balance inclusivity, clarity, and appeal:
+          {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
+            <h1 class="neon-title flicker">MyNotes</h1>
+            <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p>
+          </div> : <div
+            className="logo-wrapper"
+            onClick={handleLogoClick}
+            style={{ cursor: "pointer" }}
+          >
+            <div className="sidebar-logo">
+              My<span className="logo-highlight">N😁tes</span>
+            </div>
+            <div className="sidebar-slogan">
 
-### 1. **DevNotes Collective**
-   - **Why**: Emphasizes the collaborative and community-driven aspect of your notes while keeping it simple.
+              <div style={{
+                opacity: fade ? 1 : 0,
+                transition: "opacity 0.5s ease-in-out"
+              }}>
+                {slogan}
+              </div>
 
-### 2. **The Code Chronicles**
-   - **Why**: Adds a bit of personality while still keeping the focus on coding and sharing knowledge.
+            </div>
+          </div>}
 
-### 3. **OpenDev Handbook**
-   - **Why**: Combines the idea of being open-source with a "handbook" concept, suggesting a comprehensive resource for developers.
 
-### 4. **DevWiki**
-   - **Why**: Simple and easy to remember. The "Wiki" implies a collaborative platform for information, much like Wikipedia.
+          {/* <div
+            className="logo-wrapper"
+            onClick={handleLogoClick}
+            style={{ cursor: "pointer" }}
+          >
+            <div className="sidebar-logo">
+              My<span className="logo-highlight">N😁tes</span>
+            </div>
+            <div className="sidebar-slogan">
 
-### 5. **CodeCompendium**
-   - **Why**: "Compendium" suggests a collection of diverse notes, making it feel both scholarly and expansive.
+              <div style={{
+                opacity: fade ? 1 : 0,
+                transition: "opacity 0.5s ease-in-out"
+              }}>
+                {slogan}
+              </div>
 
-### 6. **DevNotes Vault**
-   - **Why**: Conveys that your notes are a valuable resource, akin to a treasure chest of knowledge.
-
-### 7. **The OpenCode Library**
-   - **Why**: The word "library" implies a wide range of resources and information, perfect for a collaborative note-sharing project.
-
-### 8. **CodeCraft Notes**
-   - **Why**: Emphasizes the craft of development while suggesting your notes are crafted for learning and improvement.
-
-### 9. **The Dev Codex**
-   - **Why**: "Codex" suggests a collection of sacred or authoritative knowledge, which could appeal to developers looking for solid references.
-
-### 10. **TechTome**
-   - **Why**: A blend of "tech" and "tome," implying an authoritative collection of information for developers.
-
-Let me know if you want more names, or if any of these resonate with you!
-           */}
-        </div>
-      </div>)}
+            </div>
+          </div> */}
+        </>
+      )}
 
 
       {/* Add logo and menu here */}
       {/* Toggle Button */}
       {!isMobile && (<div
         style={{
+
+          color: '#fff',
+          textShadow: `
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa`,
+
           cursor: "pointer",
           position: 'fixed',
           top: '10px',
@@ -218,7 +222,7 @@ Let me know if you want more names, or if any of these resonate with you!
           fontWeight: 'bold',
           // backgroundColor: showSideBar ? "#dc3545" : "#007bff", // Red for close, blue for open
           // color: "#fff",
-          color: showSideBar ? "#dc3545" : "#fff",
+          color: showSideBar ? "#fff" : "#fff",
           textAlign: "center",
           borderRadius: '5px',
           // boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
@@ -248,7 +252,8 @@ Let me know if you want more names, or if any of these resonate with you!
         }}>
           {showSideBar ? "✖" : "☰"}
         </div>
-      </div>)}
+      </div>)
+      }
 
       {/* Sidebar */}
       <div className={`overlayWrapper ${showSideBar ? "show" : "hide"}`}
@@ -364,7 +369,7 @@ Let me know if you want more names, or if any of these resonate with you!
       {isMobile && (<BottomNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />)}
 
 
-    </div>
+    </div >
   );
 };
 
