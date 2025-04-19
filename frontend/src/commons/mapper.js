@@ -3273,6 +3273,10 @@ const mapper = {
                     "Async Iterators and Generators": true
                 },
                 "Frameworks: React": {
+                    "Contents": {
+                        "___urlPath___": "contents",
+                        "___md___": 484
+                    },
                     "Introduction to React": {
                         "What is React?": true,
                         "JSX and Virtual DOM": true,
@@ -4961,6 +4965,10 @@ const mapper = {
                     "Case Study 2: Developing a Scalable SaaS Product": true,
                     "Case Study 3: Migrating a Legacy System to Microservices": true,
                     "Case Study 4: Implementing Agile in a Large Organization": true
+                },
+                "Software Engineering cheatsheet": {
+                    "___urlPath___": "software-engineering-cheatsheet",
+                    "___md___": 485
                 }
             },
 
@@ -5348,11 +5356,14 @@ const mapper = {
                             }
                         },
                         "Range Queries / Updates": {
+                            "___urlPath___": "range-queries-updates",
                             "Many sum queries, no updates?": {
-
+                                "___urlPath___": "many-sum-queries-no-updates",
+                                "___md___": 483
                             },
                             "Many sum queries + updates?": {
-
+                                "___urlPath___": "many-sum-queries-updates",
+                                "___md___": 486
                             }
                         },
                         "Bit Manipulation": {
