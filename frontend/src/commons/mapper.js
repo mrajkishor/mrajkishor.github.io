@@ -2749,7 +2749,168 @@ const mapper = {
                     "8. Build Tools and Deployment": {
                         "Build Automation": {
                             "Maven (Dependencies, Lifecycle, Plugins)": true,
-                            "Gradle (Tasks, Dependencies)": true
+                            "Gradle (Tasks, Dependencies)": {
+                                "___urlPath___": "gradle",
+                                "Introduction to Gradle": {
+                                    "___urlPath___": "introduction-to-gradle",
+                                    "___md___": 489
+                                },
+                                "Gradle vs Maven vs Ant": {
+                                    "___urlPath___": "gradle-vs-maven-vs-ant",
+                                    "___md___": 302
+                                },
+                                "Gradle Installation & Setup": {
+                                    "___urlPath___": "gradle-installation-setup",
+                                    "Installing Gradle": {
+                                        "___urlPath___": "installing-gradle",
+                                        "___md___": 303
+                                    },
+                                    "Setting up Environment Variables": {
+                                        "___urlPath___": "setting-up-environment",
+                                        "___md___": 304
+                                    },
+                                    "Verifying Installation": {
+                                        "___urlPath___": "verifying-installation",
+                                        "___md___": 305
+                                    }
+                                },
+                                "Gradle Build Lifecycle": {
+                                    "___urlPath___": "gradle-build-lifecycle",
+                                    "Phases of Gradle Build": {
+                                        "___urlPath___": "phases-of-build",
+                                        "___md___": 306
+                                    },
+                                    "Tasks and Dependencies": {
+                                        "___urlPath___": "tasks-and-dependencies",
+                                        "___md___": 307
+                                    }
+                                },
+                                "Gradle Project Structure": {
+                                    "___urlPath___": "gradle-project-structure",
+                                    "Single vs Multi-Project Builds": {
+                                        "___urlPath___": "single-vs-multi-project",
+                                        "___md___": 308
+                                    },
+                                    "Settings.gradle vs build.gradle": {
+                                        "___urlPath___": "settings-vs-build-gradle",
+                                        "___md___": 309
+                                    }
+                                },
+                                "Gradle Build Scripts": {
+                                    "___urlPath___": "gradle-build-scripts",
+                                    "Using Groovy DSL": {
+                                        "___urlPath___": "groovy-dsl",
+                                        "___md___": 310
+                                    },
+                                    "Using Kotlin DSL": {
+                                        "___urlPath___": "kotlin-dsl",
+                                        "___md___": 311
+                                    },
+                                    "Defining Custom Tasks": {
+                                        "___urlPath___": "custom-tasks",
+                                        "___md___": 312
+                                    }
+                                },
+                                "Dependency Management": {
+                                    "___urlPath___": "dependency-management",
+                                    "Repositories": {
+                                        "___urlPath___": "repositories",
+                                        "___md___": 313
+                                    },
+                                    "Declaring Dependencies": {
+                                        "___urlPath___": "declaring-dependencies",
+                                        "___md___": 314
+                                    },
+                                    "Dependency Configurations": {
+                                        "___urlPath___": "dependency-configurations",
+                                        "___md___": 315
+                                    },
+                                    "Transitive Dependency Handling": {
+                                        "___urlPath___": "transitive-dependencies",
+                                        "___md___": 316
+                                    }
+                                },
+                                "Gradle Plugins": {
+                                    "___urlPath___": "gradle-plugins",
+                                    "Core Plugins": {
+                                        "___urlPath___": "core-plugins",
+                                        "___md___": 317
+                                    },
+                                    "Third-party Plugins": {
+                                        "___urlPath___": "third-party-plugins",
+                                        "___md___": 318
+                                    },
+                                    "Custom Plugin Development": {
+                                        "___urlPath___": "custom-plugins",
+                                        "___md___": 319
+                                    }
+                                },
+                                "Testing with Gradle": {
+                                    "___urlPath___": "testing-with-gradle",
+                                    "JUnit & TestNG Integration": {
+                                        "___urlPath___": "junit-testng-integration",
+                                        "___md___": 320
+                                    },
+                                    "Test Reports": {
+                                        "___urlPath___": "test-reports",
+                                        "___md___": 321
+                                    }
+                                },
+                                "Gradle & CI/CD": {
+                                    "___urlPath___": "gradle-ci-cd",
+                                    "Integrating with Jenkins": {
+                                        "___urlPath___": "jenkins-integration",
+                                        "___md___": 322
+                                    },
+                                    "Integrating with GitHub Actions": {
+                                        "___urlPath___": "github-actions",
+                                        "___md___": 323
+                                    }
+                                },
+                                "Gradle for Java Projects": {
+                                    "___urlPath___": "gradle-java",
+                                    "Java Application Plugin": {
+                                        "___urlPath___": "java-plugin",
+                                        "___md___": 324
+                                    },
+                                    "Build and Run Java Apps": {
+                                        "___urlPath___": "build-run-java",
+                                        "___md___": 325
+                                    },
+                                    "Jar and Fat Jar Creation": {
+                                        "___urlPath___": "jar-fatjar",
+                                        "___md___": 326
+                                    }
+                                },
+                                "Advanced Gradle Topics": {
+                                    "___urlPath___": "advanced-gradle",
+                                    "Incremental Builds": {
+                                        "___urlPath___": "incremental-builds",
+                                        "___md___": 327
+                                    },
+                                    "Task Caching and Up-to-date Checks": {
+                                        "___urlPath___": "task-caching",
+                                        "___md___": 328
+                                    },
+                                    "Gradle Daemon and Performance Tuning": {
+                                        "___urlPath___": "gradle-performance",
+                                        "___md___": 329
+                                    }
+                                },
+                                "Troubleshooting & Debugging": {
+                                    "___urlPath___": "troubleshooting-gradle",
+                                    "Common Errors": {
+                                        "___urlPath___": "common-errors",
+                                        "___md___": 330
+                                    },
+                                    "Logging and Debug Mode": {
+                                        "___urlPath___": "logging-debug",
+                                        "___md___": 331
+                                    }
+                                }
+
+                            }
+
                         },
                         "Deployment": {
                             "Packaging Applications as WAR/JAR": true,
@@ -5345,11 +5506,14 @@ const mapper = {
                             }
                         },
                         "Dynamic Programming Use-Cases": {
+                            "___urlPath___": "dynamic-programming-use-cases",
                             "Optimal choices / Overlapping subproblems?": {
-
+                                "___urlPath___": "optimal-choices-overlapping-subproblems",
+                                "___md___": 487
                             },
                             "Subset or knapsack problems?": {
-
+                                "___urlPath___": "subset-or-knapsack-problems",
+                                "___md___": 488
                             },
                             "String matching or edits?": {
 
@@ -5768,6 +5932,7 @@ const mapper = {
                     "System Design Process Overview": true
                 },
                 "Key Concepts in System Design": {
+                    "___urlPath___": "system-design-concepts",
                     "Scalability": {
                         "Vertical Scaling vs Horizontal Scaling": true,
                         "Stateless and Stateful Services": true
@@ -5782,8 +5947,13 @@ const mapper = {
                         "Eventual Consistency vs Strong Consistency": true
                     },
                     "Latency and Throughput": true,
-                    "Reliability and Durability": true
+                    "Reliability and Durability": true,
+                    "All In One": {
+                        "___urlPath___": "all-in-one",
+                        "___md___": 490
+                    }
                 },
+
                 "Components of System Design": {
                     "Load Balancers": {
                         "Layer 4 vs Layer 7 Load Balancing": true,
