@@ -1122,20 +1122,41 @@ const mapper = {
                             "___urlPath___": "nextjs",
                             "Introduction": {
                                 "___urlPath___": "introduction",
-                                "Overview of Next.js": true,
-                                "History and Evolution of Next.js": true,
-                                "Key Features of Next.js": true,
-                                "Next.js vs React and Other Frameworks": true
+                                "Overview of Next.js": {
+                                    "___urlPath___": "overview-of-next-js",
+                                    "___md___": 493
+                                },
+                                "History and Evolution of Next.js": {
+                                    "___urlPath___": "history-and-evolution-of-next-js",
+                                    "___md___": 494
+                                },
+                                "Key Features of Next.js": {
+                                    "___urlPath___": "key-features-of-nextjs",
+                                    "___md___": 495
+                                },
+                                "Next.js vs React and Other Frameworks": {
+                                    "___urlPath___": "nextjs-vs-react-and-other-frameworks",
+                                    "___md___": 496
+                                }
                             },
                             "Setup and Installation": {
                                 "___urlPath___": "setup-and-installation",
-                                "Installing Next.js": true,
-                                "Creating a New Next.js Project": true,
+                                "Installing Next.js": {
+                                    "___urlPath___": "installing-next-js",
+                                    "___md___": 497
+                                },
+                                "Creating a New Next.js Project": {
+                                    "___urlPath___": "creating-a-new-next-js-project",
+                                    "___md___": 498
+                                },
                                 "Project Structure and Configuration": {
                                     "___urlPath___": "project-structure-config",
                                     "___md___": 284
                                 },
-                                "Running the Next.js Application": true
+                                "Running the Next.js Application": {
+                                    "___urlPath___": "running-the-next-js-application",
+                                    "___md___": 499
+                                }
                             },
                             "Next.js Basics": {
                                 "___urlPath___": "nextjs-basics",
@@ -1197,49 +1218,120 @@ const mapper = {
                                     "___urlPath___": "tailwind-css-with-next-js",
                                     "___md___": 429
                                 },
-                                "Global Styles and Layouts": true
+                                "Global Styles and Layouts": {
+                                    "___urlPath___": "global-styles-and-layouts",
+                                    "___md___": 500
+                                }
                             },
                             "State Management": {
                                 "___urlPath___": "state-management",
-                                "Using React Context API in Next.js": true,
-                                "State Management with Redux Toolkit": true,
-                                "Recoil and Zustand with Next.js": true
+                                "Using React Context API in Next.js": {
+                                    "___urlPath___": "using-react-context-api-in-nextjs",
+                                    "___md___": 501
+                                },
+                                "State Management with Redux Toolkit": {
+                                    "___urlPath___": "state-management-with-redux-toolkit",
+                                    "___md___": 502
+                                },
+                                "Recoil and Zustand with Next.js": {
+                                    "___urlPath___": "recoil-and-zustand-with-next-js",
+                                    "___md___": 503
+                                }
                             },
                             "API Routes and Backend Integration": {
-                                "___urlPath___": "api-routes",
-                                "Creating API Routes in Next.js": true,
-                                "Handling HTTP Requests in API Routes": true,
-                                "Connecting to a Database (MongoDB, PostgreSQL, MySQL)": true,
-                                "Working with GraphQL and Next.js": true
+                                "___urlPath___": "api-routes-and-backend-integration",
+                                "Creating API Routes in Next.js": {
+                                    "___urlPath___": "creating-api-routes-in-next-js",
+                                    "___md___": 504
+                                },
+                                "Handling HTTP Requests in API Routes": {
+                                    "___urlPath___": "handling-http-request-in-api-routes",
+                                    "___md___": 505
+                                },
+                                "Connecting to a Database (MongoDB, PostgreSQL, MySQL)": {
+                                    "___urlPath___": "connecting-to-a-database-mongodb-postgresql-mysql",
+                                    "___md___": 506
+                                },
+                                "Working with GraphQL and Next.js": {
+                                    "___urlPath___": "working-with-graphql-and-nextjs",
+                                    "___md___": 507
+                                }
                             },
                             "Authentication and Authorization": {
                                 "___urlPath___": "authentication-and-authorization",
-                                "Using NextAuth.js for Authentication": true,
-                                "JWT and Session-based Authentication": true,
-                                "OAuth (Google, GitHub, Facebook, etc.) Authentication": true,
-                                "Role-based Access Control (RBAC) in Next.js": true
+                                "Using NextAuth.js for Authentication": {
+                                    "___urlPath___": "using-next-auth-js-for-authentication",
+                                    "___md___": 508
+                                },
+                                "JWT and Session-based Authentication": {
+                                    "___urlPath___": "jwt-and-session-based-authentication",
+                                    "___md___": 509
+                                },
+                                "OAuth (Google, GitHub, Facebook, etc.) Authentication": {
+                                    "___urlPath___": "oauth-google-github-facebook-etc-authentication",
+                                    "___md___": 510
+                                },
+                                "Role-based Access Control (RBAC) in Next.js": {
+                                    "___urlPath___": "role-based-access-control-rbac-in-next-js",
+                                    "___md___": 511
+                                }
                             },
                             "Performance Optimization": {
                                 "___urlPath___": "performance-optimization",
-                                "Image Optimization with next/image": true,
-                                "Lazy Loading and Code Splitting": true,
-                                "Static Site Generation (SSG) for Performance": true,
-                                "Caching and Performance Enhancements": true
+                                "Image Optimization with next/image": {
+                                    "___urlPath___": "image-optimization-with-next-image",
+                                    "___md___": 512
+                                },
+                                "Lazy Loading and Code Splitting": {
+                                    "___urlPath___": "lazy-loading-and-code-splitting",
+                                    "___md___": 513
+                                },
+                                "Static Site Generation (SSG) for Performance": {
+                                    "___urlPath___": "static-site-generation-ssg-for-performance",
+                                    "___md___": 514
+                                },
+                                "Caching and Performance Enhancements": {
+                                    "___urlPath___": "caching-and-performance-enhancements",
+                                    "___md___": 515
+                                },
+                                "SEO Optimization": {
+                                    "___urlPath___": "seo-optimization",
+                                    "___md___": 521
+                                }
                             },
                             "Testing and Debugging": {
                                 "___urlPath___": "testing-and-debugging",
-                                "Unit Testing with Jest and React Testing Library": true,
-                                "Integration Testing with Cypress": true,
-                                "Debugging Next.js Applications": true,
-                                "Performance Profiling in Next.js": true
+                                "Unit Testing with Jest and React Testing Library": {
+                                    "___urlPath___": "unit-testing-with-jest-and-react-testing-library",
+                                    "___md___": 516
+                                },
+                                "Integration Testing with Cypress": {
+                                    "___urlPath___": "integrating-testing-with-cypress",
+                                    "___md___": 517
+                                },
+                                "Debugging Next.js Applications": {
+                                    "___urlPath___": "debugging-next-js-application",
+                                    "___md___": 518
+                                },
+                                "Performance Profiling in Next.js": {
+                                    "___urlPath___": "performance-profiling-in-next-js",
+                                    "___md___": 519
+                                }
                             },
                             "Advanced Features": {
                                 "___urlPath___": "advanced-features",
-                                "Server Components and React Server Components (RSC)": true,
-                                "Middleware in Next.js 13+": true,
+                                "Server Components and React Server Components (RSC)": {
+                                    "___urlPath___": "server-components-and-react-server-components-rsc",
+                                    "___md___": 520
+                                },
+                                "Middleware in Next.js 13+": {
+                                    "___urlPath___": "middleware-in-next-js-thirteen-plus",
+                                    "___md___": 522
+                                },
                                 "App Router and Parallel Routes": true,
                                 "Internationalization (i18n) in Next.js": true,
-                                "WebSockets and Real-Time Communication": true
+                                "WebSockets and Real-Time Communication": true,
+
                             },
                             "Micro Frontends with Next.js": {
                                 "___urlPath___": "micro-frontends",
@@ -5438,171 +5530,198 @@ const mapper = {
                     },
                     "DSA Patterns (Cheatsheet)": {
                         "___urlPath___": "dsa-patterns-cheatsheet",
-                        "Cheatsheet Overview": {
+                        "Cheatsheet Overview (Indices)": {
                             "___urlPath___": "cheatsheet-overview",
                             "___md___": 482
                         },
-                        "Array / String Inputs": {
-                            "___urlPath___": "array-string-input",
-                            "Is the array sorted?": {
+
+                        "PART-1: Classic Cheat Sheet": {
+                            "___urlPath___": "part-1-classic-cheat-sheet",
+
+                            "Array / String Inputs": {
+                                "___urlPath___": "array-string-input",
+                                "Is the array sorted?": {
+                                    "___urlPath___": "is-the-array-sorted",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 491
+                                    },
+                                    "Using Binary Search": {
+                                        "___urlPath___": "using-binary-search",
+                                        "___md___": 492
+                                    }
+                                },
+                                "Optimization problems (Max/Min/Subarray)?": {
+
+                                },
+                                "Looking for duplicates / counts / frequencies?": {
+
+                                },
+                                "Need substrings or fixed-size subarrays?": {
+
+                                },
+                                "Frequent min/max in window?": {
+
+                                },
+                                "Generating subsets, permutations, combinations?": {
+
+                                },
+                                "Matching / parsing characters?": {
+
+                                }
+                            },
+                            "Graph Inputs": {
+                                "Shortest path in unweighted graph?": {
+
+                                },
+                                "Weighted shortest path?": {
+
+                                },
+                                "Connected components / cycle detection?": {
+
+                                },
+                                "Topological ordering?": {
+
+                                },
+                                "Optimization like MST?": {
+
+                                }
+                            },
+                            "Tree Inputs (Often Binary Trees)": {
+                                "Traversals?": {
+
+                                },
+                                "Balanced checks or diameter calculations?": {
+
+                                },
+                                "Lowest Common Ancestor?": {
+
+                                }
+                            },
+                            "Linked List Inputs": {
+                                "Detecting cycles?": {
+
+                                },
+                                "Reversals / partial changes?": {
+
+                                },
+                                "Intersection or middle node?": {
+
+                                }
+                            },
+                            "Dynamic Programming Use-Cases": {
+                                "___urlPath___": "dynamic-programming-use-cases",
+                                "Optimal choices / Overlapping subproblems?": {
+                                    "___urlPath___": "optimal-choices-overlapping-subproblems",
+                                    "___md___": 487
+                                },
+                                "Subset or knapsack problems?": {
+                                    "___urlPath___": "subset-or-knapsack-problems",
+                                    "___md___": 488
+                                },
+                                "String matching or edits?": {
+
+                                }
+                            },
+                            "Range Queries / Updates": {
+                                "___urlPath___": "range-queries-updates",
+                                "Many sum queries, no updates?": {
+                                    "___urlPath___": "many-sum-queries-no-updates",
+                                    "___md___": 483
+                                },
+                                "Many sum queries + updates?": {
+                                    "___urlPath___": "many-sum-queries-updates",
+                                    "___md___": 486
+                                }
+                            },
+                            "Bit Manipulation": {
+                                "Set-based subsets or XOR logic?": {
+
+                                },
+                                "Need to check even/odd, set/unset bits?": {
+
+                                }
+                            },
+                            "When Recursion is Banned or Stack Overflow Risk": {
 
                             },
-                            "Optimization problems (Max/Min/Subarray)?": {
+                            "Top K / Least K Elements": {
 
                             },
-                            "Looking for duplicates / counts / frequencies?": {
+                            "Special Techniques": {
+                                "Sliding Window": {
+
+                                },
+                                "Monotonic Stack ": {
+
+                                },
+                                "Greedy ": {
+
+                                },
+                                "Trie": {
+
+                                }
+                            },
+                        },
+                        "PART-2: Additional Classic Patterns": {
+                            "___urlPath___": "part-2-additional-classical-patterns",
+
+                            "Overlapping intervals, time slots": {
 
                             },
-                            "Need substrings or fixed-size subarrays?": {
+                            "Arrays with elements 1 to N": {
 
                             },
-                            "Frequent min/max in window?": {
+                            "Reverse a list without extra space": {
 
                             },
-                            "Generating subsets, permutations, combinations?": {
+                            "Continuous median, window medians": {
 
                             },
-                            "Matching / parsing characters?": {
+                            "Merge multiple sorted arrays/lists": {
+
+                            },
+                            "Problems like rotated arrays, next greatest, ceiling/floor": {
+
+                            },
+                            "Concurrent execution, semaphores": {
+
+                            },
+                        },
+                        "PART-3: Advanced & Niche Patterns": {
+                            "___urlPath___": "part-3-advanced-and-niche-patterns",
+
+
+                            "Fast group merging & lookup in disjoint sets.": {
+
+                            },
+                            "Range updates + range queries in large arrays.": {
+
+                            },
+                            "Answer offline range queries efficiently.": {
+
+                            },
+                            "Advanced string problems (like substring counts, lex order, compression).": {
+
+                            },
+                            "Efficient substring matching.": {
+
+                            },
+                            "Tree queries like path sum, LCA with fast updates.": {
+
+                            },
+                            "Quickly jump ancestors or find LCA in O(logN).": {
+
+                            },
+                            "Max XOR pair, number range queries.": {
 
                             }
                         },
-                        "Graph Inputs": {
-                            "Shortest path in unweighted graph?": {
-
-                            },
-                            "Weighted shortest path?": {
-
-                            },
-                            "Connected components / cycle detection?": {
-
-                            },
-                            "Topological ordering?": {
-
-                            },
-                            "Optimization like MST?": {
-
-                            }
-                        },
-                        "Tree Inputs (Often Binary Trees)": {
-                            "Traversals?": {
-
-                            },
-                            "Balanced checks or diameter calculations?": {
-
-                            },
-                            "Lowest Common Ancestor?": {
-
-                            }
-                        },
-                        "Linked List Inputs": {
-                            "Detecting cycles?": {
-
-                            },
-                            "Reversals / partial changes?": {
-
-                            },
-                            "Intersection or middle node?": {
-
-                            }
-                        },
-                        "Dynamic Programming Use-Cases": {
-                            "___urlPath___": "dynamic-programming-use-cases",
-                            "Optimal choices / Overlapping subproblems?": {
-                                "___urlPath___": "optimal-choices-overlapping-subproblems",
-                                "___md___": 487
-                            },
-                            "Subset or knapsack problems?": {
-                                "___urlPath___": "subset-or-knapsack-problems",
-                                "___md___": 488
-                            },
-                            "String matching or edits?": {
-
-                            }
-                        },
-                        "Range Queries / Updates": {
-                            "___urlPath___": "range-queries-updates",
-                            "Many sum queries, no updates?": {
-                                "___urlPath___": "many-sum-queries-no-updates",
-                                "___md___": 483
-                            },
-                            "Many sum queries + updates?": {
-                                "___urlPath___": "many-sum-queries-updates",
-                                "___md___": 486
-                            }
-                        },
-                        "Bit Manipulation": {
-                            "Set-based subsets or XOR logic?": {
-
-                            },
-                            "Need to check even/odd, set/unset bits?": {
-
-                            }
-                        },
-                        "When Recursion is Banned or Stack Overflow Risk": {
-
-                        },
-                        "Top K / Least K Elements": {
-
-                        },
-                        "Special Techniques": {
-                            "Sliding Window": {
-
-                            },
-                            "Monotonic Stack ": {
-
-                            },
-                            "Greedy ": {
-
-                            },
-                            "Trie": {
-
-                            }
-                        },
-                        "Overlapping intervals, time slots": {
-
-                        },
-                        "Arrays with elements 1 to N": {
-
-                        },
-                        "Reverse a list without extra space": {
-
-                        },
-                        "Continuous median, window medians": {
-
-                        },
-                        "Merge multiple sorted arrays/lists": {
-
-                        },
-                        "Problems like rotated arrays, next greatest, ceiling/floor": {
-
-                        },
-                        "Concurrent execution, semaphores": {
-
-                        },
-                        "Fast group merging & lookup in disjoint sets.": {
-
-                        },
-                        "Range updates + range queries in large arrays.": {
-
-                        },
-                        "Answer offline range queries efficiently.": {
-
-                        },
-                        "Advanced string problems (like substring counts, lex order, compression).": {
-
-                        },
-                        "Efficient substring matching.": {
-
-                        },
-                        "Tree queries like path sum, LCA with fast updates.": {
-
-                        },
-                        "Quickly jump ancestors or find LCA in O(logN).": {
-
-                        },
-                        "Max XOR pair, number range queries.": {
-
+                        "PART-4: LeetCode 20 (Boost problem-solving skills)": {
+                            "___urlPath___": "leetcode-20"
                         }
+
+
                     }
                 }
 

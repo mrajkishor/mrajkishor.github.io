@@ -133,22 +133,33 @@ const MarkdownPage = ({ wrapperRef }) => {
 
             if (anchor) {
                 const id = decodeURIComponent(anchor.getAttribute('href').slice(1)); // remove "#" i.e. 👉 This extracts the id (like introduction) from the link href="#introduction".
-                const targetEl = wrapper.querySelector(`#${CSS.escape(id)}`); // 👉 This finds the element inside your scroll container that has the matching id.
+                //const targetEl = wrapper.querySelector(`#${CSS.escape(id)}`); // 👉 This finds the element inside your scroll container that has the matching id.
+                const targetEl = document.getElementById(id); // Use global document instead of wrapper
+
                 if (targetEl) {
                     e.preventDefault();
-                    wrapper.scrollTo({
-                        top: targetEl.offsetTop - 20, // adjust offset if needed
-                        behavior: "smooth",
-                    });
+                    // wrapper.scrollTo({
+                    //     top: targetEl.offsetTop - 20, // adjust offset if needed
+                    //     behavior: "smooth",
+                    // });
+
+                    // ✅ Scroll to the element smoothly
+                    targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+
+
                 }
             }
         };
 
-        wrapper.addEventListener("click", handleAnchorClick);
+        // wrapper.addEventListener("click", handleAnchorClick)
+        document.addEventListener("click", handleAnchorClick);;
         return () => {
-            wrapper.removeEventListener("click", handleAnchorClick);
+            // wrapper.removeEventListener("click", handleAnchorClick);
+            document.removeEventListener("click", handleAnchorClick);
+
         };
-    }, [wrapperRef]);
+        // }, [wrapperRef]);
+    }, []);
 
 
     useEffect(() => {
