@@ -1328,10 +1328,26 @@ const mapper = {
                                     "___urlPath___": "middleware-in-next-js-thirteen-plus",
                                     "___md___": 522
                                 },
-                                "App Router and Parallel Routes": true,
-                                "Internationalization (i18n) in Next.js": true,
-                                "WebSockets and Real-Time Communication": true,
-
+                                "App Router and Parallel Routes": {
+                                    "___urlPath___": "app-router-and-parallel-routes",
+                                    "___md___": 523
+                                },
+                                "Internationalization (i18n) in Next.js": {
+                                    "___urlPath___": "internationalization-i18n-in-next-js",
+                                    "___md___": 524
+                                },
+                                "WebSockets and Real-Time Communication": {
+                                    "___urlPath___": "websockets-and-real-time-communication",
+                                    "___md___": 525
+                                },
+                                "WebAssembly in Next.js": {
+                                    "___urlPath___": "webassembly-in-next-js",
+                                    "___md___": 526
+                                },
+                                "WebRTC Integration in Next.js": {
+                                    "___urlPath___": "webrtc-integration-in-next-js",
+                                    "___md___": 527
+                                }
                             },
                             "Micro Frontends with Next.js": {
                                 "___urlPath___": "micro-frontends",
@@ -1339,25 +1355,52 @@ const mapper = {
                                     "___urlPath___": "introduction-microfrontend",
                                     "___md___": 287
                                 },
-                                "Using Module Federation with Next.js": true,
-                                "Managing Multiple Next.js Applications": true,
-                                "Best Practices for Micro Frontend Architecture": true
+                                "Using Module Federation with Next.js": {
+                                    "___urlPath___": "using-module-federation-with-nextjs",
+                                    "___md___": 528
+                                },
+                                "Managing Multiple Next.js Applications": {
+                                    "___urlPath___": "managing-multiple-next-js-applications",
+                                    "___md___": 529
+                                },
+                                "Best Practices for Micro Frontend Architecture": {
+                                    "___urlPath___": "best-practices-for-micro-frontend-architecture",
+                                    "___md___": 530
+                                }
                             },
                             "PWA (Progressive Web Apps) in Next.js": {
                                 "___urlPath___": "pwa-in-nextjs",
-                                "Making a Next.js App a PWA": true,
+                                "Making a Next.js App a PWA": {
+                                    "___urlPath___": "making-a-next-js-app-a-pwa",
+                                    "___md___": 531
+                                },
                                 "Service Workers and Offline Support": {
                                     "___urlPath___": "service-workers-offline-support",
                                     "___md___": 286
                                 },
-                                "Push Notifications in Next.js": true,
-                                "Deploying a PWA with Next.js": true
+                                "Push Notifications in Next.js": {
+                                    "___urlPath___": "push-notification-in-next-js",
+                                    "___md___": 532
+                                },
+                                "Deploying a PWA with Next.js": {
+                                    "___urlPath___": "deploying-a-pwa-with-next-js",
+                                    "___md___": 533
+                                }
                             },
                             "Deployment and CI/CD": {
                                 "___urlPath___": "deployment-and-ci-cd",
-                                "Deploying on Vercel, Netlify, Firebase, or AWS": true,
-                                "Building Static and Server-Side Apps for Production": true,
-                                "CI/CD Pipelines for Next.js with GitHub Actions": true,
+                                "Deploying on Vercel, Netlify, Firebase, or AWS": {
+                                    "___urlPath___": "deploying-on-vercel-netlify-firebase-or-aws",
+                                    "___md___": 537
+                                },
+                                "Building Static and Server-Side Apps for Production": {
+                                    "___urlPath___": "building-static-and-server-side-apps-for-production",
+                                    "___md___": 538
+                                },
+                                "CI/CD Pipelines for Next.js with GitHub Actions": {
+                                    "___urlPath___": "ci-cd-pipelines-for-next-js-with-github-actions",
+                                    "___md___": 539
+                                },
                                 "Environment Variables and Configuration": {
                                     "___urlPath___": "environment_variables_and_config",
                                     "___md___": 285
@@ -1365,9 +1408,18 @@ const mapper = {
                             },
                             "Security in Next.js": {
                                 "___urlPath___": "security",
-                                "Preventing XSS and CSRF Attacks": true,
-                                "Securing API Routes and Endpoints": true,
-                                "Best Practices for Next.js Security": true
+                                "Preventing XSS and CSRF Attacks": {
+                                    "___urlPath___": "preventing-xss-and-csrf-attacks",
+                                    "___md___": 534
+                                },
+                                "Securing API Routes and Endpoints": {
+                                    "___urlPath___": "securing-api-routes-and-endpoint",
+                                    "___md___": 535
+                                },
+                                "Best Practices for Next.js Security": {
+                                    "___urlPath___": "best-practices-for-next-js-security",
+                                    "___md___": 536
+                                }
                             }
                         }
                     },
