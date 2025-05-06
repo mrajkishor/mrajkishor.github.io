@@ -7290,7 +7290,8 @@ const mapper = {
                 }
 
             }
-        }, "Data Science and Artificial Intelligence Notes": {
+        },
+        "Data Science and Artificial Intelligence Notes": {
             "___urlPath___": "data-science-and-artificial-intelligence",
             "Probability and Statistics": {
                 "___urlPath___": "probability-statistics",
@@ -7518,17 +7519,57 @@ const mapper = {
             "Artificial Intelligence": {
                 "___urlPath___": "artificial-intelligence",
                 "Search": {
-                    "Informed and Uninformed Search": true,
-                    "Adversarial Search": true
+                    "___urlPath___": "search",
+                    "Overview": {
+                        "___urlPath___": "overview",
+                        "___md___": 542
+                    },
+                    "Informed Search": {
+                        "___urlPath___": "informed-search",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 541
+                        },
+                        "Greedy Best-First Search": {
+                            "___urlPath___": "greedy-best-first-search",
+                            "___md___": 543
+                        },
+                        "A* Search": {
+                            "___urlPath___": "a-start-search",
+                            "___md___": 544
+                        }
+                    },
+                    "Uninformed Search": true,
+                    "Adversarial Search": true,
+                    "Constraint Satisfaction Problems": {
+                        "___urlPath___": "constraint-satisfaction-problems",
+                        "___md___": 545
+                    }
                 },
                 "Logic": {
                     "Propositional Logic": true,
-                    "Predicate Logic": true
+                    "Predicate Logic": true,
+                    "Resolution and Unification": {
+                        "___urlPath___": "resolution-unification",
+                        "___md___": 548
+                    },
+                    "Forward and Backward Chaining": {
+                        "___urlPath___": "forward-backward-chaining",
+                        "___md___": 549
+                    }
                 },
                 "Reasoning Under Uncertainty": {
                     "Conditional Independence Representation": true,
                     "Exact Inference through Variable Elimination": true,
-                    "Approximate Inference through Sampling": true
+                    "Approximate Inference through Sampling": true,
+                    "Bayesian Networks": {
+                        "___urlPath___": "bayesian-networks",
+                        "___md___": 553
+                    },
+                    "Markov Decision Processes (MDPs)": {
+                        "___urlPath___": "markov-decision-processes",
+                        "___md___": 554
+                    }
                 }
             }
         }
