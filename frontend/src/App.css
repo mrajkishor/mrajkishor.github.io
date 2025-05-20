@@ -350,3 +350,44 @@ overflow-y: auto;
     0 0 102px #0fa,
     0 0 151px #0fa;
 }
+
+
+
+
+/* ocean logo :start */
+
+.ocean-logo {
+  display: inline-block;
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: white;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-radius: 10px 0 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.ocean-logo .prefix {
+  color: #FFFF00;
+  font-size: 2rem;
+}
+
+.ocean-logo .wave {
+  margin: 0 4px;
+}
+
+.ocean-logo .rest {
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-top: 4px;
+  padding-left: 8px;
+  color: #444;
+}
+
+
+/* ocean logo end  */

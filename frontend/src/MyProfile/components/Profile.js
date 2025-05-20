@@ -221,6 +221,7 @@ export default function Profile() {
 
 
 
+
             <Grid style={{ zIndex: 100 }} container direction={isSmallScreen ? 'column' : 'row'} spacing={2} columns={12}>
                 {/* Left Grid for Profile */}
                 <Grid item xs={4} sx={{
@@ -322,6 +323,42 @@ export default function Profile() {
                 {/* Right Grid for Developer Info */}
                 <Grid item xs={8}>
 
+
+                    <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
+                        <div style={{ maxWidth: '800px' }}>
+                            <Typography variant="h6" gutterBottom>
+                                Why the Name <strong>OCEAN</strong>?
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                The name <strong>OCEAN</strong> is inspired by the idea that the world of software is ever-evolving, deep, and boundless — just like the ocean.
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                                OCEAN – Organized Compendium for Efficient & Advanced Notetaking
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                <strong>O</strong> – <strong>Organized</strong>: Well-structured, logically grouped content.
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                <strong>C</strong> – <strong>Compendium</strong>: A concise but comprehensive collection of essential concepts.
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                <strong>E</strong> – <strong>Efficient</strong>: Designed for quick revision, clarity, and maximum retention.
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                <strong>A</strong> – <strong>Advanced</strong>: Covers in-depth, real-world, and expert-level topics.
+                            </Typography>
+                            <Typography variant="body1" sx={{ marginBottom: 1 }}>
+                                <strong>N</strong> – <strong>Notetaking</strong>: Focused on writing, summarizing, and learning notes in a digestible format.
+                            </Typography>
+
+                        </div>
+                    </Item>
+
+
+                    <br />
 
                     <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
 

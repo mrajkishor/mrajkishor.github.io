@@ -1818,30 +1818,30 @@ const mapper = {
                                 "___urlPath___": "indexes",
                                 "Creating Indexes": {
                                     "___urlPath___": "creating-indexes",
-                                    "___md___": 523
+                                    "___md___": 584
                                 },
                                 "Types of Indexes": {
                                     "___urlPath___": "index-types",
-                                    "___md___": 524
+                                    "___md___": 585
                                 },
                                 "Query Optimization with Indexes": {
                                     "___urlPath___": "query-optimization",
-                                    "___md___": 525
+                                    "___md___": 586
                                 },
                                 "Explain Plan & Analyzing Queries": {
                                     "___urlPath___": "explain-plan",
-                                    "___md___": 526
+                                    "___md___": 587
                                 }
                             },
                             "Advanced MongoDB Concepts": {
                                 "___urlPath___": "advanced",
                                 "Transactions": {
                                     "___urlPath___": "transactions",
-                                    "___md___": 527
+                                    "___md___": 589
                                 },
                                 "Change Streams": {
                                     "___urlPath___": "change-streams",
-                                    "___md___": 528
+                                    "___md___": 590
                                 },
                                 "TTL Collections": {
                                     "___urlPath___": "ttl-collections",
@@ -1855,11 +1855,11 @@ const mapper = {
                                     "___urlPath___": "replication",
                                     "Replica Sets": {
                                         "___urlPath___": "replica-sets",
-                                        "___md___": 541
+                                        "___md___": 591
                                     },
                                     "Elections and Failover": {
                                         "___urlPath___": "elections-failover",
-                                        "___md___": 542
+                                        "___md___": 592
                                     },
                                     "Read Preferences": {
                                         "___urlPath___": "read-preferences",
@@ -1889,7 +1889,7 @@ const mapper = {
                                     },
                                     "Monitoring Tools": {
                                         "___urlPath___": "monitoring-tools",
-                                        "___md___": 548
+                                        "___md___": 588
                                     }
                                 }
                             },
@@ -2140,6 +2140,10 @@ const mapper = {
                                     "___urlPath___": "child-processes",
                                     "___md___": 413
                                 },
+                                "Examples of Cluster Module, Worker Threads and Child Processes ": {
+                                    "___urlPath___": "examples-of-cluster-module-worker-threads-and-child-processes",
+                                    "___md___": 546
+                                },
                                 "Performance Tuning": {
                                     "___urlPath___": "performance-tuning",
                                     "___md___": 414
@@ -2200,7 +2204,7 @@ const mapper = {
                                 },
                                 "Node.js Event Loop and libuv": {
                                     "___urlPath___": "event-loop-libuv",
-                                    "___md___": 509
+                                    "___md___": 545
                                 },
                                 "Garbage Collection Strategies": {
                                     "___urlPath___": "garbage-collection",
@@ -2212,7 +2216,7 @@ const mapper = {
                                 },
                                 "Heap Snapshots and Profiling": {
                                     "___urlPath___": "heap-profiling",
-                                    "___md___": 512
+                                    "___md___": 554
                                 }
                             },
 
@@ -2220,15 +2224,15 @@ const mapper = {
                                 "___urlPath___": "architecture-patterns",
                                 "MVC and Clean Architecture": {
                                     "___urlPath___": "mvc-clean-architecture",
-                                    "___md___": 513
+                                    "___md___": 551
                                 },
                                 "Hexagonal Architecture": {
                                     "___urlPath___": "hexagonal-architecture",
-                                    "___md___": 514
+                                    "___md___": 552
                                 },
                                 "Domain Driven Design (DDD)": {
                                     "___urlPath___": "domain-driven-design",
-                                    "___md___": 515
+                                    "___md___": 553
                                 },
                                 "Repository and Service Patterns": {
                                     "___urlPath___": "repository-service-patterns",
@@ -2240,19 +2244,19 @@ const mapper = {
                                 "___urlPath___": "concurrency-scalability",
                                 "Scaling Node with Clustering": {
                                     "___urlPath___": "clustering-node",
-                                    "___md___": 517
+                                    "___md___": 547
                                 },
                                 "Load Balancing across Instances": {
                                     "___urlPath___": "load-balancing-instances",
-                                    "___md___": 518
+                                    "___md___": 548
                                 },
                                 "Backpressure Handling in Streams": {
                                     "___urlPath___": "backpressure-streams",
-                                    "___md___": 519
+                                    "___md___": 549
                                 },
                                 "Async Task Queues (BullMQ)": {
                                     "___urlPath___": "bullmq-task-queues",
-                                    "___md___": 520
+                                    "___md___": 550
                                 }
                             },
 
@@ -3093,13 +3097,213 @@ const mapper = {
                         "Event Loop and Non-blocking I/O": true,
                         "File System and Streams in Node.js": true
                     },
+
                     "Express.js": {
-                        "Introduction to Express.js": true,
-                        "Routing with Express": true,
-                        "Middleware Functions": true,
-                        "Building RESTful APIs with Express": true,
-                        "Error Handling in Express": true
-                    },
+                        "___urlPath___": "express-js",
+                        "Introduction": {
+                            "___urlPath___": "introduction",
+                            "___md___": 555
+                        },
+                        "Core Concepts": {
+                            "___urlPath___": "core-concepts",
+                            "Routing": {
+                                "___urlPath___": "routing",
+                                "Basic Routing": {
+                                    "___urlPath___": "basic-routing",
+                                    "___md___": 556
+                                },
+                                "Route Parameters": {
+                                    "___urlPath___": "route-parameters",
+                                    "___md___": 557
+                                },
+                                "Route Grouping": {
+                                    "___urlPath___": "route-grouping",
+                                    "___md___": 558
+                                },
+                                "Chained Route Handlers": {
+                                    "___urlPath___": "chained-route-handlers",
+                                    "___md___": 559
+                                }
+                            },
+                            "Middleware": {
+                                "___urlPath___": "middleware",
+                                "Built-in Middleware": {
+                                    "___urlPath___": "built-in-middleware",
+                                    "___md___": 560
+                                },
+                                "Custom Middleware": {
+                                    "___urlPath___": "custom-middleware",
+                                    "___md___": 563
+                                },
+                                "Error Handling Middleware": {
+                                    "___urlPath___": "error-handling-middleware",
+                                    "___md___": 561
+                                },
+                                "Third-party Middleware": {
+                                    "___urlPath___": "third-party-middleware",
+                                    "___md___": 562
+                                }
+                            },
+                            "Request & Response": {
+                                "___urlPath___": "request-response",
+                                "Request Object": {
+                                    "___urlPath___": "request-object",
+                                    "___md___": 310
+                                },
+                                "Response Object": {
+                                    "___urlPath___": "response-object",
+                                    "___md___": 311
+                                },
+                                "Handling JSON and Forms": {
+                                    "___urlPath___": "json-form-handling",
+                                    "___md___": 312
+                                }
+                            }
+                        },
+                        "Advanced Topics": {
+                            "___urlPath___": "advanced-topics",
+                            "Asynchronous Handling": {
+                                "___urlPath___": "async-handling",
+                                "Async/Await": {
+                                    "___urlPath___": "async-await",
+                                    "___md___": 568
+                                },
+                                "Promises": {
+                                    "___urlPath___": "promises",
+                                    "___md___": 569
+                                },
+                                "Error Propagation": {
+                                    "___urlPath___": "error-propagation",
+                                    "___md___": 570
+                                }
+                            },
+                            "Templating Engines": {
+                                "___urlPath___": "templating-engines",
+                                "EJS": {
+                                    "___urlPath___": "ejs",
+                                    "___md___": 316
+                                },
+                                "Pug": {
+                                    "___urlPath___": "pug",
+                                    "___md___": 317
+                                },
+                                "Handlebars": {
+                                    "___urlPath___": "handlebars",
+                                    "___md___": 318
+                                }
+                            },
+                            "File Uploads": {
+                                "___urlPath___": "file-uploads",
+                                "Multer Middleware": {
+                                    "___urlPath___": "multer",
+                                    "___md___": 319
+                                }
+                            },
+                            "Authentication": {
+                                "___urlPath___": "authentication",
+                                "JWT": {
+                                    "___urlPath___": "jwt-authentication",
+                                    "___md___": 320
+                                },
+                                "Session-Based Auth": {
+                                    "___urlPath___": "session-authentication",
+                                    "___md___": 321
+                                },
+                                "Passport.js": {
+                                    "___urlPath___": "passport-js",
+                                    "___md___": 322
+                                }
+                            },
+                            "Security": {
+                                "___urlPath___": "security",
+                                "Helmet": {
+                                    "___urlPath___": "helmet",
+                                    "___md___": 323
+                                },
+                                "CORS": {
+                                    "___urlPath___": "cors",
+                                    "___md___": 324
+                                },
+                                "Rate Limiting": {
+                                    "___urlPath___": "rate-limiting",
+                                    "___md___": 571
+                                }
+                            }
+                        },
+                        "Integration & Deployment": {
+                            "___urlPath___": "integration-deployment",
+                            "Database Integration": {
+                                "___urlPath___": "database-integration",
+                                "MongoDB with Mongoose": {
+                                    "___urlPath___": "mongoose",
+                                    "___md___": 567
+                                },
+                                "MySQL with Sequelize": {
+                                    "___urlPath___": "sequelize",
+                                    "___md___": 327
+                                }
+                            },
+                            "Testing": {
+                                "___urlPath___": "testing",
+                                "Supertest": {
+                                    "___urlPath___": "supertest",
+                                    "___md___": 328
+                                },
+                                "Jest": {
+                                    "___urlPath___": "jest",
+                                    "___md___": 329
+                                },
+                                "Mocking Requests": {
+                                    "___urlPath___": "mocking",
+                                    "___md___": 330
+                                }
+                            },
+                            "Deployment": {
+                                "___urlPath___": "deployment",
+                                "Dockerizing Express App": {
+                                    "___urlPath___": "docker",
+                                    "___md___": 331
+                                },
+                                "Deploy on Heroku": {
+                                    "___urlPath___": "heroku",
+                                    "___md___": 332
+                                },
+                                "Deploy on AWS": {
+                                    "___urlPath___": "aws",
+                                    "___md___": 333
+                                }
+                            }
+                        },
+                        "Best Practices": {
+                            "___urlPath___": "best-practices",
+                            "Project Structure": {
+                                "___urlPath___": "project-structure",
+                                "___md___": 564
+                            },
+                            "Environment Management": {
+                                "___urlPath___": "env-management",
+                                "___md___": 565
+                            },
+                            "Error Handling Strategy": {
+                                "___urlPath___": "error-handling-strategy",
+                                "___md___": 566
+                            },
+                            "Logging": {
+                                "___urlPath___": "logging",
+                                "Winston Logger": {
+                                    "___urlPath___": "winston",
+                                    "___md___": 337
+                                },
+                                "Morgan Middleware": {
+                                    "___urlPath___": "morgan",
+                                    "___md___": 338
+                                }
+                            }
+                        }
+                    }
+
+                    ,
+
                     "NestJS (Node.js Framework)": {
                         "___urlPath___": "nestjs",
                         "Introduction to NestJS": {
@@ -5623,13 +5827,36 @@ const mapper = {
                                 }
                             },
                             "Graph Inputs": {
-                                "Shortest path in unweighted graph?": {
-
+                                "___urlPath___": "graph-inputs",
+                                "Shortest path in unweighted graph? (=> Use BFS)": {
+                                    "___urlPath___": "shortest-path-in-unweighted-graph",
+                                    "___md___": 574
                                 },
                                 "Weighted shortest path?": {
-
+                                    "___urlPath___": "weighted-shortest-path",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 575
+                                    },
+                                    "Dijkstra’s Algorithm (=> Use Priority Queue)": {
+                                        "___urlPath___": "dijkstras-algorithm",
+                                        "___md___": 576
+                                    },
+                                    "Bellman-Ford Algorithm (=> checks negative weight cycles after v-1 runs)": {
+                                        "___urlPath___": "bellman-ford-algorithm",
+                                        "___md___": 577
+                                    },
+                                    "A* (A Star) Algorithm": {
+                                        "___urlPath___": "a-star-algorithm",
+                                        "___md___": 578
+                                    }
                                 },
-                                "Connected components / cycle detection?": {
+                                "Connected components ( cycle detection )?": {
+                                    "___urlPath___": "connected-components-cycle-detection",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 581
+                                    }
 
                                 },
                                 "Topological ordering?": {
@@ -5640,8 +5867,10 @@ const mapper = {
                                 }
                             },
                             "Tree Inputs (Often Binary Trees)": {
+                                "___urlPath___": "tree-inputs",
                                 "Traversals?": {
-
+                                    "___urlPath___": "traversals",
+                                    "___md___": 573
                                 },
                                 "Balanced checks or diameter calculations?": {
 
@@ -5651,10 +5880,13 @@ const mapper = {
                                 }
                             },
                             "Linked List Inputs": {
+                                "___urlPath___": "linked-list-input",
                                 "Detecting cycles?": {
-
+                                    "___urlPath___": "detecting-cycles",
+                                    "___md___": 572
                                 },
                                 "Reversals / partial changes?": {
+                                    "___urlPath___": "reversals-partial-changes",
 
                                 },
                                 "Intersection or middle node?": {
@@ -6010,8 +6242,14 @@ const mapper = {
                             "___md___": 226
                         }
                     },
-                    "Topological Sorting": true,
-                    "Strongly Connected Components (SCC)": true,
+                    "Topological Sorting": {
+                        "___urlPath___": "topological-sorting",
+                        "___md___": 583
+                    },
+                    "Strongly Connected Components (SCC)": {
+                        "___urlPath___": "strongly-connected-components-scc",
+                        "___md___": 582
+                    },
                     "Applications in Real-World Problems": {
                         "Network Routing": true,
                         "Social Network Analysis": true
@@ -7539,7 +7777,31 @@ const mapper = {
                             "___md___": 544
                         }
                     },
-                    "Uninformed Search": true,
+                    "Uninformed Search": {
+                        "___urlPath___": "uninformed-search",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 579
+                        },
+                        "Breadth-First Search (BFS)": {
+                            "___urlPath___": "bfs",
+                            "___md___": 33333
+
+                        },
+                        "Depth-First Search (DFS)": {
+
+                        },
+                        "Uniform Cost Search (UCS)": {
+
+                        },
+                        "Depth-Limited Search (DLS)": {
+
+                        },
+                        "Iterative Deepening Search (IDS)": {
+                            "___urlPath___": "iterative-deepening-search-ids",
+                            "___md___": 580
+                        }
+                    },
                     "Adversarial Search": true,
                     "Constraint Satisfaction Problems": {
                         "___urlPath___": "constraint-satisfaction-problems",

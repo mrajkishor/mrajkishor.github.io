@@ -13,7 +13,25 @@ import GlobalSearch from "./components/GlobalSearch";
 import BottomNav from "./components/mobile-vp/BottomNav";
 import { isMobile } from 'react-device-detect';
 
+
+const main_slogans = [
+  "The Deeper You Dive, the More There Is.",
+  "Boundless Knowledge. Relentless Curiosity.",
+  "Depth Has No End in Tech.",
+  "There Is No Shore. Just More to Learn.",
+  "Infinite Learning. One Wave at a Time.",
+  "You Don’t Reach the Bottom — You Become the Current.",
+  "In Software, There’s Always Deeper Water.",
+  "No Boundaries. Just Layers.",
+  "The Ocean of Knowledge Never Settles.",
+  "Satisfaction is a Myth. Keep Learning."
+];
+
+
 const App = () => {
+
+  const [index, setIndex] = useState(0);
+
 
   const [showSideBar, setShowSideBar] = React.useState(false);
   const navigate = useNavigate(); // Hook to programmatically navigate
@@ -23,6 +41,14 @@ const App = () => {
   const [fade, setFade] = useState(true); // Control fade effect
   const [sloganIndex, setSloganIndex] = useState(Math.floor(Math.random() * slogans.length));
   const url = window.location.href;
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % main_slogans.length);
+    }, 10000);
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, []);
 
 
   // State for user details
@@ -153,27 +179,46 @@ const App = () => {
           {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
 
           {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
-            <h1 class="neon-title flicker">MyNotes</h1>
-            <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p>
-          </div> : <div
-            className="logo-wrapper"
-            onClick={handleLogoClick}
-            style={{ cursor: "pointer" }}
-          >
-            <div className="sidebar-logo">
-              My<span className="logo-highlight">N😁tes</span>
-            </div>
-            <div className="sidebar-slogan">
+            <h1 class="neon-title flicker">O.C.E.A.N.</h1>
+            {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
+            <p class="neon-slogan flicker-slow" >
 
-              <div style={{
-                opacity: fade ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out"
-              }}>
-                {slogan}
+              {main_slogans[index]}
+            </p>
+
+
+          </div> :
+
+
+            <div
+              className="logo-wrapper"
+              onClick={handleLogoClick}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="sidebar-logo">
+                {/* My<span className="logo-highlight">N😁tes</span> */}
+                My<span className="logo-highlight">N😁tes</span>
               </div>
 
+              <div className="sidebar-slogan">
+
+                <div style={{
+                  opacity: fade ? 1 : 0,
+                  transition: "opacity 0.5s ease-in-out"
+                }}>
+                  {slogan}
+                </div>
+
+              </div>
+
+
+
+              {/* <div class="tagline">Organized Compendium for Efficient & Advanced Notetaking</div> */}
+
             </div>
-          </div>}
+
+
+          }
 
 
           {/* <div
