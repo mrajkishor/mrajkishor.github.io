@@ -5793,37 +5793,42 @@ const mapper = {
 
                         "PART-1: Classic Cheat Sheet": {
                             "___urlPath___": "part-1-classic-cheat-sheet",
-
                             "Array / String Inputs": {
                                 "___urlPath___": "array-string-input",
-                                "Is the array sorted?": {
+                                "1. Is the array sorted?": {
                                     "___urlPath___": "is-the-array-sorted",
                                     "Overview": {
                                         "___urlPath___": "overview",
                                         "___md___": 491
                                     },
-                                    "Using Binary Search": {
-                                        "___urlPath___": "using-binary-search",
+                                    "Prefix Sums": {
+                                        "___urlPath___": "prefix-sums",
                                         "___md___": 492
                                     }
                                 },
-                                "Optimization problems (Max/Min/Subarray)?": {
-
+                                "2. Optimization problems (Max/Min/Subarray)?": {
+                                    "___urlPath___": "optimization-problems-max-min-subarray",
+                                    "___md___": 598
                                 },
-                                "Looking for duplicates / counts / frequencies?": {
-
+                                "3. Looking for duplicates / counts / frequencies?": {
+                                    "___urlPath___": "looking-for-duplicates-counts-frequencies",
+                                    "___md___": 597
                                 },
-                                "Need substrings or fixed-size subarrays?": {
-
+                                "4. Need substrings or fixed-size subarrays?": {
+                                    "___urlPath___": "need-substrings-of-fixed-size-subarrays",
+                                    "___md___": 596
                                 },
-                                "Frequent min/max in window?": {
-
+                                "5. Frequent min/max in window?": {
+                                    "___urlPath___": "frequent-min-max-in-windows",
+                                    "___md___": 595
                                 },
-                                "Generating subsets, permutations, combinations?": {
-
+                                "6. Generating subsets, permutations, combinations?": {
+                                    "___urlPath___": "generating-subsets-permutations-combinations",
+                                    "___md___": 594
                                 },
-                                "Matching / parsing characters?": {
-
+                                "7. Matching / parsing characters?": {
+                                    "___urlPath___": "matching-parsing-characters",
+                                    "___md___": 593
                                 }
                             },
                             "Graph Inputs": {
