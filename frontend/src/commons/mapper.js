@@ -5812,7 +5812,14 @@ const mapper = {
                                 },
                                 "2. Optimization problems (Max/Min/Subarray)?": {
                                     "___urlPath___": "optimization-problems-max-min-subarray",
-                                    "___md___": 598
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 598
+                                    },
+                                    "Sliding Widnow": {
+                                        "___urlPath___": "sliding-window",
+                                        "___md___": 600
+                                    }
                                 },
                                 "3. Looking for duplicates / counts / frequencies?": {
                                     "___urlPath___": "looking-for-duplicates-counts-frequencies",
@@ -5824,7 +5831,14 @@ const mapper = {
                                 },
                                 "5. Frequent min/max in window?": {
                                     "___urlPath___": "frequent-min-max-in-windows",
-                                    "___md___": 595
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 595
+                                    },
+                                    "Monotonic Queue, Deque, Heap": {
+                                        "___urlPath___": "monotonic-queue-deque-heap",
+                                        "___md___": 601
+                                    }
                                 },
                                 "6. Generating subsets, permutations, combinations?": {
                                     "___urlPath___": "generating-subsets-permutations-combinations",

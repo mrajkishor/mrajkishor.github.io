@@ -36,13 +36,26 @@ const preprocessMarkdown = (content) => {
         // Step 2: Replace ==highlight== with <mark> for text highlighting
         .replace(/==(.*?)==/g, "<mark>$1</mark>")
         // Step 3: Format blockquotes ("> text") and apply styling
-        .replace(
-            /^>(.*)$/gm,
-            (match, p1) =>
-                `<blockquote>${p1
-                    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
-        )
+
+        // Old change : separated each line with >
+        // .replace(
+        //     /^>(.*)$/gm,
+        //     (match, p1) =>
+        //         `<blockquote>${p1
+        //             .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+        //             .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
+        // )
+
+
+        // New change : Consolidated use of lines with >
+        .replace(/^((?:>.*(?:\r?\n)?)+)/gm, (match) => {
+            const content = match
+                .split(/\r?\n/)
+                .map(line => line.replace(/^>\s?/, '')) // remove `>` from each line
+                .join("<br/>");
+
+            return `<blockquote class="plain-blockquote">${content}</blockquote>`;
+        })
         // Step 4: Format image Markdown syntax (![alt text](image-path))
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
             const updatedPath = `markdowns/${imagePath}`;

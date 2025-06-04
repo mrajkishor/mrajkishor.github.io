@@ -194,17 +194,18 @@ mark {
 
 /* Blockquote Styling */
 blockquote {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   position: relative; /* Enable pseudo-elements positioning */
-  /* border-left: 5px solid #007bff; */
-  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #007bff; 
+  background-color: #e6f2ff; /* Light gray background */
   padding: 20px; /* Space for the quote marks */
-  margin: 10px 15px;
+  margin: 20px;
   font-style: italic;
   color: #555; /* Slightly muted text color */
   line-height: 1.6;
   font-family: 'Georgia', serif; /* Add a classic font for quotes */
-  border-radius: 10px;
-
+  /* border-radius: 10px; */
+    transition: 0.3s;
 }
 
 /* Add opening quote using ::before */
@@ -216,6 +217,15 @@ blockquote::before {
   top: -30px;
   left: 10px;
   font-weight: bold;
+    transition: 0.3s;
+}
+
+blockquote:hover::before {
+  color: #007bff71; /* Match the border color */
+  position: absolute;
+  top: -35px;
+  left: 5px;
+  transition: 0.3s;
 }
 
 /* Add closing quote using ::after */
@@ -224,14 +234,28 @@ blockquote::after {
   font-size: 2.5em; /* Bigger quote size */
   color: #007bff; /* Match the border color */
   position: absolute;
-  bottom: -50px;
-  right: 15px;
+  bottom: -55px;
+  right: 20px;
   font-weight: bold;
+    transition: 0.3s;
+}
+
+blockquote:hover::after {
+  color: #007bff71; /* Match the border color */
+  position: absolute;
+  bottom: -60px;
+  right: 15px;
+    transition: 0.3s;
 }
 
 /* Optional: Add hover effect for blockquote */
 blockquote:hover {
-  background-color: #e6f2ff; /* Slightly blue tint on hover */
+   background-color: #fff;
+  /* Slightly blue tint on hover */
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+
+     border-radius: 10px;
 }
 
 /* Optional: Typography improvements */
