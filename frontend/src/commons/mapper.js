@@ -5688,9 +5688,14 @@ const mapper = {
                     }
                 },
                 "Graphs": {
+                    "___urlPath___": "graphs",
                     "Introduction to Graphs": {
+                        "___urlPath___": "introductio-to-graphs",
                         "Terminology (Vertex, Edge, Degree)": true,
-                        "Representation of Graphs (Adjacency Matrix, Adjacency List)": true
+                        "Representation of Graphs (Adjacency Matrix, Adjacency List)": {
+                            "___urlPath___": "representation-of-graphs",
+                            "___md___": 624
+                        }
                     },
                     "Graph Traversal Algorithms": {
                         "Breadth-First Search (BFS)": true,
@@ -5724,15 +5729,33 @@ const mapper = {
                         "___urlPath___": "introduction-heaps",
                         "___md___": 333
                     },
+                    "Heap Representation": {
+                        "___urlPath___": "heap-representation",
+                        "___md___": 609
+                    },
                     "Heap Operations": {
-                        "Insertion": true,
-                        "Deletion (Heapify)": true
+                        "___urlPath___": "heap-operations",
+                        "Insertion (Heapify Up)": {
+                            "___urlPath___": "insertion",
+                            "___md___": 608
+                        },
+                        "Deletion (Heapify Down)": {
+                            "___urlPath___": "deletion",
+                            "___md___": 610
+                        }
                     },
                     "Advanced Heaps": {
-                        "Fibonacci Heap": true
+                        "___urlPath___": "advanced-heaps",
+                        "Fibonacci Heap": {
+                            "___md___": 611
+                        }
                     },
                     "Heap Applications": {
-                        "Priority Queue Implementation": true,
+                        "___urlPath___": "heap-application",
+                        "Priority Queue Implementation": {
+                            "___urlPath___": "priority-queue-implementation",
+                            "___md___": 612
+                        },
                         "Heap Sort": true
                     },
                     "Problems 💻": {
@@ -5786,11 +5809,14 @@ const mapper = {
                     },
                     "DSA Patterns (Cheatsheet)": {
                         "___urlPath___": "dsa-patterns-cheatsheet",
-                        "Cheatsheet Overview (Indices)": {
-                            "___urlPath___": "cheatsheet-overview",
+                        "Indicies-1: Classic Cheatsheet Overview (PART-1)": {
+                            "___urlPath___": "classic-cheatsheet-overview",
                             "___md___": 482
                         },
-
+                        "Indicies-2: Extended Cheatsheet Overview (PART-1,2,3,4)": {
+                            "___urlPath___": "extended-cheatsheet-overview",
+                            "___md___": 602
+                        },
                         "PART-1: Classic Cheat Sheet": {
                             "___urlPath___": "part-1-classic-cheat-sheet",
                             "Array / String Inputs": {
@@ -5842,7 +5868,14 @@ const mapper = {
                                 },
                                 "6. Generating subsets, permutations, combinations?": {
                                     "___urlPath___": "generating-subsets-permutations-combinations",
-                                    "___md___": 594
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 594
+                                    },
+                                    "Extra: String permutation (swapping or backtracking)": {
+                                        "___urlPath___": "string-permutation",
+                                        "___md___": 626
+                                    }
                                 },
                                 "7. Matching / parsing characters?": {
                                     "___urlPath___": "matching-parsing-characters",
@@ -5883,9 +5916,26 @@ const mapper = {
 
                                 },
                                 "Topological ordering?": {
-
+                                    "___urlPath___": "topological-sorting",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 620
+                                    },
+                                    "Kanh's Algo": {
+                                        "___urlPath___": "kanh-s-algo",
+                                        "___md___": 621
+                                    },
+                                    "Cycle detection": {
+                                        "___urlPath___": "cycle-detection",
+                                        "___md___": 623
+                                    }
                                 },
                                 "Optimization like MST?": {
+                                    "___urlPath___": "optimization-like-mst",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 625
+                                    }
 
                                 }
                             },
@@ -5896,10 +5946,12 @@ const mapper = {
                                     "___md___": 573
                                 },
                                 "Balanced checks or diameter calculations?": {
-
+                                    "___urlPath___": "balanced-checks-or-diameter-calculations",
+                                    "___md___": 618
                                 },
                                 "Lowest Common Ancestor?": {
-
+                                    "___urlPath___": "lowset-common-ancestor",
+                                    "___md___": 619
                                 }
                             },
                             "Linked List Inputs": {
@@ -5910,10 +5962,11 @@ const mapper = {
                                 },
                                 "Reversals / partial changes?": {
                                     "___urlPath___": "reversals-partial-changes",
-
+                                    "___md___": 616
                                 },
                                 "Intersection or middle node?": {
-
+                                    "___urlPath___": "intersection-or-middle-node",
+                                    "___md___": 617
                                 }
                             },
                             "Dynamic Programming Use-Cases": {
@@ -5942,31 +5995,48 @@ const mapper = {
                                 }
                             },
                             "Bit Manipulation": {
+                                "___urlPath___": "bit-manipulation",
                                 "Set-based subsets or XOR logic?": {
-
+                                    "___urlPath___": "set-based-subsets-or-xor-logic",
+                                    "___md___": 614
                                 },
                                 "Need to check even/odd, set/unset bits?": {
-
+                                    "___urlPath___": "need-to-check-even-odd-set-unset-bits",
+                                    "___md___": 615
                                 }
                             },
                             "When Recursion is Banned or Stack Overflow Risk": {
-
+                                "___urlPath___": "when-recursion-is-banned-or-stack-overflow-risk",
+                                "___md___": 613
                             },
                             "Top K / Least K Elements": {
-
+                                "___urlPath___": "top-k-least-k-elements",
+                                "Use Heap": {
+                                    "___urlPath___": "use-heap",
+                                    "___md___": 607
+                                },
+                                "For exact K-th value, use Quick Select": {
+                                    "___urlPath___": "for-exact-k-th-value",
+                                    "___md___": 608
+                                }
                             },
                             "Special Techniques": {
+                                "___urlPath___": "special-techniques",
                                 "Sliding Window": {
-
+                                    "___urlPath___": "sliding-window",
+                                    "___md___": 603
                                 },
                                 "Monotonic Stack ": {
-
+                                    "___urlPath___": "monotonic-stack",
+                                    "___md___": 604
                                 },
                                 "Greedy ": {
-
+                                    "___urlPath___": "greedy",
+                                    "___md___": 605
                                 },
                                 "Trie": {
-
+                                    "___urlPath___": "trie",
+                                    "___md___": 606
                                 }
                             },
                         },

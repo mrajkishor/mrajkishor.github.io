@@ -38,24 +38,28 @@ const preprocessMarkdown = (content) => {
         // Step 3: Format blockquotes ("> text") and apply styling
 
         // Old change : separated each line with >
-        // .replace(
-        //     /^>(.*)$/gm,
-        //     (match, p1) =>
-        //         `<blockquote>${p1
-        //             .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-        //             .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
-        // )
+        .replace(
+            /^>(.*)$/gm,
+            (match, p1) =>
+                `<blockquote>${p1
+                    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
+        )
 
 
         // New change : Consolidated use of lines with >
-        .replace(/^((?:>.*(?:\r?\n)?)+)/gm, (match) => {
-            const content = match
-                .split(/\r?\n/)
-                .map(line => line.replace(/^>\s?/, '')) // remove `>` from each line
-                .join("<br/>");
+        // .replace(/^((?:>.*(?:\r?\n)?)+)/gm, (match) => {
+        //     const content = match
+        //         .split(/\r?\n/)
+        //         .map(line => line.replace(/^>\s?/, '')) // remove `>` from each line
+        //         .join("<br/>");
 
-            return `<blockquote class="plain-blockquote">${content}</blockquote>`;
-        })
+        //     return `<blockquote class="plain-blockquote">${content}</blockquote>`;
+        // })
+
+
+
+
         // Step 4: Format image Markdown syntax (![alt text](image-path))
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
             const updatedPath = `markdowns/${imagePath}`;
@@ -65,6 +69,7 @@ const preprocessMarkdown = (content) => {
         .replace(/\\\[(.*?)\\\]/gs, (_, mathContent) => `$$${mathContent}$$`)
         // Step 6: Convert escaped LaTeX parentheses \(math\) into $math$ (inline equations)
         .replace(/\\\((.*?)\\\)/g, (_, mathContent) => `$${mathContent}$`)
+
         // Step 7: Restore encoded code blocks to their original state
         .replace(/CODEBLOCK_([A-Za-z0-9+/=]+)/g, (_, encoded) => {
             // ✅ Fix: Use decodeURIComponent() after atob() to properly decode Unicode characters
