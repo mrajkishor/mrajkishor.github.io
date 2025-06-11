@@ -19,7 +19,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import ProfilePic from '../assets/profile_pic.jpg';
+import ProfilePic from '../assets/profile_pic3.png';
 import AirPointer from '../assets/air_pointer.webp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -324,10 +324,10 @@ export default function Profile() {
                 <Grid item xs={8}>
 
 
-                    <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
+                    {/* <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
                         <div style={{ maxWidth: '800px' }}>
                             <Typography variant="h6" gutterBottom>
-                                Why the Name <strong>OCEAN</strong>?
+                                OCEAN – Organized Compendium for Efficient & Advanced Notetaking
                             </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
@@ -358,7 +358,7 @@ export default function Profile() {
                     </Item>
 
 
-                    <br />
+                    <br /> */}
 
                     <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
 
@@ -368,7 +368,7 @@ export default function Profile() {
                             </Typography>
 
                             <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                                I am a <strong>Full-Stack Developer</strong> with <strong>6+ years of experience</strong> in designing and developing <strong>scalable, high-performance applications</strong>.
+                                I am a <strong>Full-Stack Developer  </strong> with <strong>6+ years of experience</strong> in designing and developing <strong>scalable, high-performance applications</strong>.
                                 My expertise spans <strong>React, Redux, Node.js, Spring Boot, and AWS</strong>, enabling me to create efficient, maintainable, and user-friendly software solutions.
                             </Typography>
 
@@ -567,7 +567,7 @@ export default function Profile() {
                                 <ListItemText
                                     primary={
                                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                                            Associate - Cognizant, Hyderabad, IN
+                                            Software Developer  - Cognizant, Hyderabad, IN
                                         </Typography>
                                     }
                                     secondary={
@@ -593,7 +593,7 @@ export default function Profile() {
                                 <ListItemText
                                     primary={
                                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                                            Associate Consultant - Capgemini, Navi Mumbai, IN
+                                            Software Consultant - Capgemini, Navi Mumbai, IN
                                         </Typography>
                                     }
                                     secondary={
@@ -621,7 +621,7 @@ export default function Profile() {
                         </Typography>
 
                         <List>
-                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px', opacity: '.5' }}>
+                            {/* <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px', opacity: '.5' }}>
                                 <ListItemText
                                     primary={
                                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
@@ -641,7 +641,7 @@ export default function Profile() {
                                         </>
                                     }
                                 />
-                            </ListItem>
+                            </ListItem> */}
                             <Divider sx={{ marginBottom: 2 }} />
                             <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText

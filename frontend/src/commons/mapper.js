@@ -5845,6 +5845,10 @@ const mapper = {
                                     "Sliding Widnow": {
                                         "___urlPath___": "sliding-window",
                                         "___md___": 600
+                                    },
+                                    "Problems": {
+                                        "___urlPath___": "problems",
+                                        "___md___": 628
                                     }
                                 },
                                 "3. Looking for duplicates / counts / frequencies?": {
@@ -5864,6 +5868,10 @@ const mapper = {
                                     "Monotonic Queue, Deque, Heap": {
                                         "___urlPath___": "monotonic-queue-deque-heap",
                                         "___md___": 601
+                                    },
+                                    "CRUD with PriorityQueue and Deque (in Java) - Useful": {
+                                        "___urlPath___": "crud-with-priorityqueue-and-deque",
+                                        "___md___": 627
                                     }
                                 },
                                 "6. Generating subsets, permutations, combinations?": {
@@ -5879,7 +5887,18 @@ const mapper = {
                                 },
                                 "7. Matching / parsing characters?": {
                                     "___urlPath___": "matching-parsing-characters",
-                                    "___md___": 593
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 593
+                                    },
+                                    "Notations (infix, prefix, postfix)": {
+                                        "___urlPath___": "notations",
+                                        "___md___": 630
+                                    }
+                                },
+                                "Problems": {
+                                    "___urlPath___": "problems",
+                                    "___md___": 629
                                 }
                             },
                             "Graph Inputs": {
