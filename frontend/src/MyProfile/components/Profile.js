@@ -30,6 +30,9 @@ import { motion } from 'framer-motion';
 
 
 import invoiceScreen from '../assets/invoice_screen.jpeg';
+import notesImg from '../assets/notes.jpg';
+import dagImg from '../assets/dag.png';
+import sSyncImg from '../assets/ssync.png'
 import Footer from '../../components/Footer';
 
 
@@ -242,6 +245,7 @@ export default function Profile() {
                             padding: '1px',
                         }}>
                             <Card sx={{
+                                width: "100%",
                                 borderRadius: 0,
                                 // border: "none",
                                 // width: 1,
@@ -367,7 +371,13 @@ export default function Profile() {
                                 About Me
                             </Typography>
 
-                            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+                            I have 6+ years of experience with SDLC, Agile delivery, designing and developing client facing softwares from scratch, converting POCs to MVP, migrating legacy systems, profiling, monitoring, performance optimization, feature enhancement, defect fixes, scaling the existing softwares for high traffic scenarios etc.
+
+
+
+
+
+                            {/* <Typography variant="body1" sx={{ marginBottom: 2 }}>
                                 I am a <strong>Full-Stack Developer  </strong> with <strong>6+ years of experience</strong> in designing and developing <strong>scalable, high-performance applications</strong>.
                                 My expertise spans <strong>React, Redux, Node.js, Spring Boot, and AWS</strong>, enabling me to create efficient, maintainable, and user-friendly software solutions.
                             </Typography>
@@ -418,19 +428,19 @@ export default function Profile() {
 
                             <Typography variant="body1" sx={{ marginBottom: 1 }}>
                                 📌 <strong>TL;DR:</strong> Full-Stack Developer | Tech Enthusiast | Problem Solver | Debugging Survivor | Mechanical Engineer-Turned-Coder 🚀💻
-                            </Typography>
+                            </Typography> */}
                         </div>
 
                         <br />
                         <Divider sx={{ marginBottom: 2 }} />
 
                         <Typography variant="h6" gutterBottom>
-                            Portfolio
+                            My Digital Storefront
                         </Typography>
 
-                        <List>
-                            <ListItem sx={{ padding: 0 }}>
-                                <Card sx={{ maxWidth: '800px', marginBottom: 4 }}>
+                        <List sx={{ width: "800px" }}>
+                            {/* <ListItem sx={{ padding: 0 }}>
+                             <Card sx={{ maxWidth: '800px', marginBottom: 4 }}>
                                     <CardMedia
                                         component="img"
                                         height="200"
@@ -439,10 +449,10 @@ export default function Profile() {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div">
-                                            🚀 Chalaan.com - The Smart Invoice Management Solution
+                                            🚀 Chalaan.com - for Invoicing & Inventory Management
                                         </Typography>
                                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                            Chalaan.com is a <strong>modern invoice management solution</strong> designed to streamline <strong>billing, invoicing, and financial tracking</strong> for
+                                            Chalaan.com is a <strong>modern Invoice & Inventory management solution</strong> designed to streamline <strong>billing, invoicing, and financial tracking</strong> for
                                             businesses of all sizes. Whether you're managing a <strong>small business, a retail store, or an enterprise</strong>,
                                             Chalaan.com simplifies invoicing operations with automation and real-time tracking.
                                         </Typography>
@@ -489,6 +499,155 @@ export default function Profile() {
                                         >
                                             View Code
                                         </Button>
+                                    </CardActions>
+                                </Card> 
+
+                            </ListItem> */}
+
+                            <ListItem sx={{ padding: 0 }}>
+
+
+                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={invoiceScreen}
+                                        alt="Chalaan.com Invoice Management Solution"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            Chalaan.com - Invoicing & Inventory Management for MSME
+                                        </Typography>
+
+                                    </CardContent>
+
+                                    <CardActions>
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            color="primary"
+                                            href="https://chalaan.com"
+                                            target="_blank"
+                                        >
+                                            Visit Project
+                                        </Button>
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            href="https://github.com/mrajkishor/IMS-Invoice-services"
+                                            target="_blank"
+                                        >
+                                            View Code
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={dagImg}
+                                        alt="Chalaan.com Invoice Management Solution"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            Distributed Task Scheduler (DAG based)
+                                        </Typography>
+
+                                    </CardContent>
+
+                                    <CardActions>
+                                        {/* <Button
+                                            size="small"
+                                            variant="outlined"
+                                            color="primary"
+                                            href="https://chalaan.com"
+                                            target="_blank"
+                                        >
+                                            Visit Project
+                                        </Button> */}
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            href="https://github.com/mrajkishor/Distributed-Task-Scheduler"
+                                            target="_blank"
+                                        >
+                                            View Code
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </ListItem>
+
+
+                            <ListItem sx={{ padding: 0 }}>
+
+
+                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={sSyncImg}
+                                        alt="Chalaan.com Invoice Management Solution"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            ShopSync | Edge-Powered Inventory and Logistics Suit
+                                        </Typography>
+
+                                    </CardContent>
+
+                                    <CardActions>
+                                        {/* <Button
+                                            size="small"
+                                            variant="outlined"
+                                            color="primary"
+                                            href="https://chalaan.com"
+                                            target="_blank"
+                                        >
+                                            Visit Project
+                                        </Button> */}
+                                        <Button
+                                            size="small"
+                                            variant="outlined"
+                                            href="https://github.com/mrajkishor/ShopSync"
+                                            target="_blank"
+                                        >
+                                            View Code
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+
+                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={notesImg}
+                                        alt="Chalaan.com Invoice Management Solution"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            O.C.E.A.N - Concept Notes (for Developers and College Graduates)
+                                        </Typography>
+
+                                    </CardContent>
+
+                                    <CardActions>
+                                        {/* <Button
+                                            size="small"
+                                            variant="outlined"
+                                            color="primary"
+                                            href="https://chalaan.com"
+                                            target="_blank"
+                                        >
+                                            Visit Project
+                                        </Button> */}
+                                        {/* <Button
+                                            size="small"
+                                            variant="outlined"
+                                            href="https://github.com/mrajkishor/Distributed-Task-Scheduler"
+                                            target="_blank"
+                                        >
+                                            View Code
+                                        </Button> */}
                                     </CardActions>
                                 </Card>
                             </ListItem>

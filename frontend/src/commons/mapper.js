@@ -5883,6 +5883,10 @@ const mapper = {
                                     "Extra: String permutation (swapping or backtracking)": {
                                         "___urlPath___": "string-permutation",
                                         "___md___": 626
+                                    },
+                                    "Must Know - Shallow and Deep Copy for backtracking problems": {
+                                        "___urlPath___": "shallow-copy-deep-copy",
+                                        "___md___": 631
                                     }
                                 },
                                 "7. Matching / parsing characters?": {
