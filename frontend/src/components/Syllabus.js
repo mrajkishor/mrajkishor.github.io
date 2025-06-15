@@ -26,6 +26,7 @@ import artificial_intelligence from "../assets/ai.jpg";
 import coa from '../assets/coa.jpeg';
 import dl from '../assets/dl.png';
 import dm from '../assets/dm.jpg';
+import info_cyber_sec from '../assets/it_and_cyber_sec.jpeg';
 
 //import web_tech from "../assets/web_tech.avif";
 import web_tech from "../assets/web_tech.jpg";
@@ -1943,6 +1944,7 @@ const renderTiles = (topics, basePath) => {
         "Operating System": os,
         "Computer Networks": networking,
         "Cloud Computing": cloud_computing,
+        "Information & Cyber Security": info_cyber_sec,
         "Soft Skills and Best Practices": soft_skills,
         "Probability and Statistics": probability,
         "Linear Algebra": linear_algebra,

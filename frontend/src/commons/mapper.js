@@ -3614,7 +3614,134 @@ const mapper = {
                                 "GraphQL vs REST for Microservices": true
                             },
                             "Asynchronous Communication": {
-                                "Message Brokers (Kafka, RabbitMQ, ActiveMQ)": true,
+                                "Message Brokers (Kafka, RabbitMQ, ActiveMQ)": {
+                                    "___urlPath___": "message-brokers",
+                                    "Kafka": {
+                                        "___urlPath___": "kafka",
+                                        "Introduction to Kafka": {
+                                            "___urlPath___": "introduction-to-kafka",
+                                            "What is Apache Kafka?": {
+                                                "___urlPath___": "what-is-apache-kafka",
+                                                "___md___": 645
+                                            },
+                                            "History and Evolution": true,
+                                            "Kafka vs Traditional Messaging Systems": true,
+                                            "Core Use Cases": true
+                                        },
+                                        "Kafka Architecture": {
+                                            "___urlPath___": "kafka-architecture",
+                                            "How Kafka uses the hardware?": {
+                                                "___urlPath___": "kafka-hardware-use",
+                                                "___md___": 646
+                                            },
+                                            "Kafka Broker": true,
+                                            "Topic, Partitions, and Offsets": true,
+                                            "Producers and Consumers": true,
+                                            "Consumer Groups": true,
+                                            "ZooKeeper (Legacy) vs KRaft (New Mode)": true,
+                                            "Replication and Fault Tolerance": true
+                                        },
+                                        "Kafka Setup and Installation": {
+                                            "___urlPath___": "setup-installation",
+                                            "Local Installation using Binaries": true,
+                                            "Docker-based Kafka Setup": true,
+                                            "Kafka on Cloud Platforms (Confluent, MSK, Aiven)": true,
+                                            "Kafka UI Tools (AKHQ, Conduktor, Kowl)": true
+                                        },
+                                        "Kafka Topics and Partitioning": {
+                                            "___urlPath___": "topics-partitioning",
+                                            "Creating and Configuring Topics": true,
+                                            "Understanding Partitioning Logic": true,
+                                            "Topic Retention and Cleanup Policies": true,
+                                            "Compaction vs Deletion": true
+                                        },
+                                        "Kafka Producers": {
+                                            "___urlPath___": "kafka-producers",
+                                            "Producer APIs and Configuration": true,
+                                            "Key-Based Partitioning": true,
+                                            "Batching and Compression": true,
+                                            "Delivery Semantics (at most once / at least once / exactly once)": true,
+                                            "Idempotent Producers": true,
+                                            "Custom Serializers": true
+                                        },
+                                        "Kafka Consumers": {
+                                            "___urlPath___": "kafka-consumers",
+                                            "Consumer APIs and Poll Loop": true,
+                                            "Consumer Groups and Load Balancing": true,
+                                            "Manual vs Auto Offset Commit": true,
+                                            "Rebalancing Strategies": true,
+                                            "Custom Deserializers": true
+                                        },
+                                        "Kafka Streams and Processing": {
+                                            "___urlPath___": "kafka-streams",
+                                            "What is Kafka Streams API?": true,
+                                            "Stateless vs Stateful Processing": true,
+                                            "Windowed Operations": true,
+                                            "KTable vs KStream": true,
+                                            "Stream Joins and Aggregations": true
+                                        },
+                                        "Kafka Connect": {
+                                            "___urlPath___": "kafka-connect",
+                                            "Overview of Kafka Connect Framework": true,
+                                            "Source and Sink Connectors": true,
+                                            "Debezium and CDC (Change Data Capture)": true,
+                                            "Configuring Connectors with JSON/YAML": true,
+                                            "Distributed vs Standalone Modes": true
+                                        },
+                                        "Kafka Schema Management": {
+                                            "___urlPath___": "kafka-schema",
+                                            "Avro, Protobuf, and JSON Schema": true,
+                                            "Schema Registry Overview": true,
+                                            "Schema Evolution and Compatibility": true,
+                                            "Versioning Strategies": true
+                                        },
+                                        "Kafka Security": {
+                                            "___urlPath___": "kafka-security",
+                                            "Authentication (SSL/SASL)": true,
+                                            "Authorization (ACLs)": true,
+                                            "Encryption In Transit and At Rest": true,
+                                            "Secure ZooKeeper (or KRaft) Communication": true
+                                        },
+                                        "Kafka Monitoring and Troubleshooting": {
+                                            "___urlPath___": "kafka-monitoring",
+                                            "Kafka Metrics (Broker/Producer/Consumer)": true,
+                                            "Monitoring Tools (Prometheus, Grafana, Confluent Control Center)": true,
+                                            "Log Compaction/Segment Issues": true,
+                                            "Consumer Lag and Offset Tracking": true,
+                                            "Topic Inspection with CLI and UIs": true
+                                        },
+                                        "Advanced Kafka Concepts": {
+                                            "___urlPath___": "advanced-kafka",
+                                            "Kafka Transactions": true,
+                                            "Exactly-Once Semantics (EOS)": true,
+                                            "Cross-Cluster Mirroring (MirrorMaker 2)": true,
+                                            "Tiered Storage (Kafka + S3)": true,
+                                            "Kafka with Kubernetes": true
+                                        },
+                                        "Kafka Case Studies and Real-World Applications": {
+                                            "___urlPath___": "kafka-use-cases",
+                                            "Log Aggregation System": true,
+                                            "Event-Driven Microservices": true,
+                                            "Streaming Analytics Pipeline": true,
+                                            "Real-time ETL with Kafka Connect": true
+                                        },
+                                        "Kafka CLI and Admin Tools": {
+                                            "___urlPath___": "kafka-cli-tools",
+                                            "Topic Management (create/delete/describe)": true,
+                                            "Consumer Group Management": true,
+                                            "Kafka Config Commands": true,
+                                            "Dumping and Reading Topic Data": true
+                                        },
+                                        "Kafka in Production": {
+                                            "___urlPath___": "kafka-production",
+                                            "Capacity Planning and Partition Sizing": true,
+                                            "Cluster Scaling Strategies": true,
+                                            "Upgrade and Migration Plans": true,
+                                            "Best Practices Checklist": true
+                                        }
+                                    }
+
+                                },
                                 "Event-Driven Architecture": true,
                                 "WebSockets & Server-Sent Events (SSE)": true
                             },
@@ -4770,8 +4897,137 @@ const mapper = {
                     }
                 },
                 "NoSQL Databases (MongoDB, DynamoDB, Cassandra, Neo4j, Redis, Elasticsearch, HBase)": {
+                    "___urlPath___": "nosql-databases",
                     "Introduction to NoSQL Databases": true,
                     "Key-Value Stores (Redis, DynamoDB)": {
+                        "___urlPath___": "key-value-stores",
+                        "Redis": {
+                            "___urlPath___": "redis",
+                            "Introduction to Redis": {
+                                "___urlPath___": "introduction-to-redis",
+                                "What is Redis?": {
+                                    "___urlPath___": "what-is-redis",
+                                    "___md___": 632
+                                },
+                                "Why use Redis (Use Cases)": {
+                                    "___urlPath___": "why-use-redis",
+                                    "___md___": 633
+                                },
+                                "Installation & Setup": {
+                                    "___urlPath___": "installation-and-setup",
+                                    "___md___": 634
+                                },
+                                "Data Types Overview": {
+                                    "___urlPath___": "data-types-overview",
+                                    "___md___": 635
+                                }
+                            },
+                            "Core Redis Data Structures": {
+                                "Strings": {
+                                    "___urlPath___": "strings",
+                                    "Basic Commands": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 636
+                                    },
+                                    "Use Cases": {
+                                        "___urlPath___": "use-cases",
+                                        "___md___": 637
+                                    }
+                                },
+                                "Lists": {
+                                    "___urlPath___": "lists",
+                                    "Basic Commands (LPUSH, RPUSH, LPOP, etc.)": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 638
+                                    },
+                                    "Use Cases": {
+                                        "___urlPath___": "use-cases",
+                                        "___md___": 639
+                                    }
+                                },
+                                "Sets": {
+                                    "___urlPath___": "sets",
+                                    "Basic Commands (SADD, SREM, SMEMBERS, etc.)": {
+                                        "___urlPath___": "basic_commands",
+                                        "___md___": 640
+                                    },
+                                    "Set Operations (Union, Intersect)": {
+                                        "___urlPath___": "set-operations",
+                                        "___md___": 641
+                                    }
+                                },
+                                "Sorted Sets (ZSET)": {
+                                    "___urlPath___": "sorted-sets",
+                                    "Basic Commands (ZADD, ZRANGE, etc.)": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 642
+                                    },
+                                    "Leaderboard Use Case": {
+                                        "___urlPath___": "leaderboard-use-case",
+                                        "___md___": 643
+                                    }
+                                },
+                                "Hashes": {
+                                    "___urlPath___": "hashes",
+                                    "Basic Commands (HSET, HGET, etc.)": true,
+                                    "Use Cases (Object Mapping)": true
+                                },
+                                "Bitmaps and HyperLogLogs": {
+                                    "___urlPath___": "bitmaps-hyperloglog",
+                                    "Bitmaps Overview and Use Cases": true,
+                                    "HyperLogLog for Approx. Counting": true
+                                }
+                            },
+                            "Persistence & Durability": {
+                                "___urlPath___": "persistence-durability",
+                                "RDB Snapshots": true,
+                                "AOF (Append-Only File)": true,
+                                "Best Practices for Durability": true
+                            },
+                            "Transactions and Scripting": {
+                                "___urlPath___": "transactions-scripting",
+                                "MULTI/EXEC/DISCARD": true,
+                                "Watch and Optimistic Locking": true,
+                                "Lua Scripting": true
+                            },
+                            "Redis as a Cache": {
+                                "___urlPath___": "redis-cache",
+                                "Eviction Policies (LRU, LFU, etc.)": true,
+                                "Expiration and TTL": true,
+                                "Cache-Aside vs Write-Through": true
+                            },
+                            "Redis Pub/Sub & Streams": {
+                                "___urlPath___": "pubsub-streams",
+                                "Pub/Sub Messaging Model": true,
+                                "Redis Streams (XADD, XREAD, Consumer Groups)": true,
+                                "Use Cases: Real-Time Feed, Event Queues": true
+                            },
+                            "Advanced Topics": {
+                                "___urlPath___": "advanced",
+                                "Redis Cluster (Sharding and Partitioning)": true,
+                                "Replication & High Availability (Redis Sentinel)": true,
+                                "Backup & Restore": true,
+                                "Security (AUTH, ACLs, Encryption)": true,
+                                "Rate Limiting using Redis": true,
+                                "Distributed Locks (SETNX, Redlock Algorithm)": {
+                                    "___urlPath___": "distributed-locks",
+                                    "___md___": 644
+                                }
+                            },
+                            "Redis in Practice": {
+                                "___urlPath___": "redis-practice",
+                                "Integrating Redis with Node.js/Java/Python": true,
+                                "Monitoring and Debugging": true,
+                                "Performance Tuning": true
+                            },
+                            "Projects 💻": {
+                                "___urlPath___": "projects",
+                                "Leaderboard using Sorted Set": true,
+                                "Rate Limiter using Redis + Node.js": true,
+                                "Job Queue with Redis Lists": true,
+                                "Real-time Chat with Pub/Sub": true
+                            }
+                        },
                         "DynamoDB Features": {
                             "Creating Tables and Partition Keys": true,
                             "DynamoDB Streams": true,
@@ -7330,6 +7586,100 @@ const mapper = {
                     "Case Study: Analyzing Internet Routing": true,
                     "Practical Project: Building a Simple Chat Application with Sockets": true,
                     "Practical Project: Setting Up a Private Cloud Network": true
+                }
+            },
+            "Information & Cyber Security": {
+                "___urlPath___": "information-cyber-security",
+                "Introduction to Information Security": {
+                    "___urlPath___": "intro-security",
+                    "Goals of Information Security (CIA)": true,
+                    "Security Services": true,
+                    "Basic Network Security Terminology": true,
+                    "Security Threats and Attacks": true
+                },
+                "Basic Encryption Techniques": {
+                    "___urlPath___": "basic-encryption",
+                    "Cryptography Overview": true,
+                    "Classical Methods": true,
+                    "Substitution Ciphers": true,
+                    "Transposition Ciphers": true,
+                    "Cryptanalysis": true,
+                    "Steganography": true
+                },
+                "Modern Cryptography": {
+                    "___urlPath___": "modern-crypto",
+                    "Feistel Ciphers": true,
+                    "Data Encryption Standard (DES)": true,
+                    "DES Analysis": true,
+                    "Block Cipher Modes of Operation": true,
+                    "Triple DES": true
+                },
+                "Stream Ciphers": {
+                    "___urlPath___": "stream-ciphers",
+                    "A5/1 Cipher": true,
+                    "RC4 Cipher": true
+                },
+                "Public Key Cryptography": {
+                    "___urlPath___": "public-key-crypto",
+                    "RSA Algorithm": true,
+                    "Elliptic Curve Cryptography (ECC)": true
+                },
+                "Key Management": {
+                    "___urlPath___": "key-management",
+                    "Key Distribution": true,
+                    "Diffie-Hellman Key Exchange": true,
+                    "Digital Signatures": true,
+                    "X.509 Certificate Standard": true
+                },
+                "Authentication and Access Control": {
+                    "___urlPath___": "authentication-access-control",
+                    "Message Digest": {
+                        "___urlPath___": "message-digest",
+                        "___md___": 647
+                    },
+                    "Secure Hash Algorithm (SHA)": {
+                        "___urlPath___": "secure-hash-algorithm-sha",
+                        "___md___": 648
+                    },
+                    "HMAC": {
+                        "___urlPath___": "hmac",
+                        "___md___": 649
+                    },
+                    "Access Control - Passwords": {
+                        "___urlPath___": "access-controls-password",
+                        "___md___": 650
+                    },
+                    "Biometric Authentication": {
+                        "___urlPath___": "biometric-authentication",
+                        "___md___": 651
+                    },
+                    "Authorization - Firewalls": {
+                        "___urlPath___": "authorization-firewalls",
+                        "___md___": 652
+                    },
+                    "Intrusion Detection Systems (IDS)": true
+                },
+                "Network Layer Security": {
+                    "___urlPath___": "network-layer-security",
+                    "SSL and TLS Protocols": true,
+                    "SSL vs IPSec": true,
+                    "Kerberos": true,
+                    "WEP (Wired Equivalent Privacy)": true
+                },
+                "Malware and Software Vulnerabilities": {
+                    "___urlPath___": "malware-software-flaws",
+                    "Types of Malware": true,
+                    "Software-Based Attacks": true
+                },
+                "Cyber Security and Legal Framework": {
+                    "___urlPath___": "cyber-security-law",
+                    "Cyber Warfare": true,
+                    "Cyber Crime": true,
+                    "Cyber Terrorism": true,
+                    "Cyber Espionage": true,
+                    "Cyberspace and the Law": true,
+                    "IT Act 2000 - Penalties and Offences": true,
+                    "Cyber Forensics": true
                 }
             },
             "Soft Skills and Best Practices": {

@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.bf0c1364.css",
-    "main.js": "/static/js/main.60d60af6.js",
+    "main.js": "/static/js/main.8c846a8f.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
+    "static/media/ssync.png": "/static/media/ssync.3c337693eeb2725c4291.png",
+    "static/media/notes.jpg": "/static/media/notes.4a2e987ff23f4c1bb0ee.jpg",
     "static/media/air_pointer.webp": "/static/media/air_pointer.55e112600e54f4f5b195.webp",
     "static/media/invoice_screen.jpeg": "/static/media/invoice_screen.122bbbf6cbd90a9a5ca0.jpeg",
+    "static/media/dag.png": "/static/media/dag.20b7c09390d40b7ddbfe.png",
     "static/media/dl.png": "/static/media/dl.af0157fa3cbfc0d6ee83.png",
     "static/media/networks.webp": "/static/media/networks.170d8c13fe3f66d89952.webp",
     "static/media/python.jpg": "/static/media/python.552d0185e803517557a1.jpg",
     "static/media/sys_design.png": "/static/media/sys_design.cbeee32e86950c2f4148.png",
     "static/media/data_structures.jpg": "/static/media/data_structures.ccaf182b3cf3f208ae97.jpg",
     "static/media/software_eng.jpg": "/static/media/software_eng.88cdeae2a7aeb0b18fdc.jpg",
+    "static/media/it_and_cyber_sec.jpeg": "/static/media/it_and_cyber_sec.d16d97c702465987960b.jpeg",
     "static/media/warehouse.webp": "/static/media/warehouse.7b368381923b4708985a.webp",
     "static/media/ml.jpg": "/static/media/ml.721b32c16848b8ac2395.jpg",
     "static/media/calculus.jpg": "/static/media/calculus.548386df4f3f24a36124.jpg",
@@ -21,6 +25,7 @@
     "static/media/dbms.jpg": "/static/media/dbms.948f051a3fa4cb8890bb.jpg",
     "static/media/KaTeX_Main-Regular.ttf": "/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
     "static/media/KaTeX_Main-Bold.ttf": "/static/media/KaTeX_Main-Bold.8169508bf58f8bd92ad8.ttf",
+    "static/media/profile_pic3.png": "/static/media/profile_pic3.1c02a6cf6306d7063442.png",
     "static/media/ai.jpg": "/static/media/ai.8f294b4a66bb5ab571e0.jpg",
     "static/media/backend-development.jpg": "/static/media/backend-development.1a6476b3f5426943a3d4.jpg",
     "static/media/algebra.jpg": "/static/media/algebra.17ccc478988c3d23d82c.jpg",
@@ -42,7 +47,6 @@
     "static/media/KaTeX_SansSerif-Bold.ttf": "/static/media/KaTeX_SansSerif-Bold.5b49f4993ae22d7975b4.ttf",
     "static/media/soft_skills.jpg": "/static/media/soft_skills.ce0297d5739da6e3b28e.jpg",
     "static/media/KaTeX_SansSerif-Italic.ttf": "/static/media/KaTeX_SansSerif-Italic.b257a18c016f37ee4543.ttf",
-    "static/media/profile_pic.jpg": "/static/media/profile_pic.d8f1303b54955ec78a16.jpg",
     "static/media/KaTeX_Main-Italic.woff": "/static/media/KaTeX_Main-Italic.fd947498bc16392e76c2.woff",
     "static/media/KaTeX_Fraktur-Bold.ttf": "/static/media/KaTeX_Fraktur-Bold.4c761b3711973ab04edf.ttf",
     "static/media/KaTeX_Fraktur-Regular.ttf": "/static/media/KaTeX_Fraktur-Regular.ed305b5434865e06ffde.ttf",
@@ -93,11 +97,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
     "main.bf0c1364.css.map": "/static/css/main.bf0c1364.css.map",
-    "main.60d60af6.js.map": "/static/js/main.60d60af6.js.map",
+    "main.8c846a8f.js.map": "/static/js/main.8c846a8f.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf0c1364.css",
-    "static/js/main.60d60af6.js"
+    "static/js/main.8c846a8f.js"
   ]
 }
