@@ -1,0 +1,800 @@
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* markdown wrapper has already scrollbar */
+ /* background-color: #2E3B4E!important; */
+ background-color: #0d1017!important;
+ /* background: linear-gradient(135deg, #1e2a4a, #223159, #273968);
+ height: 100vh;
+  margin: 0;
+  color: white;  */
+  /* ✅ Add Background Image */
+  /* background-image: url('./assets/viewport_bg/plywood.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+#canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(#ff3cac 0%, #784ba0 40%, #2b86c5 100%);
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* styles.css */
+ul {
+  list-style-type: none;
+  padding-left: 20px; /* Indentation for hierarchy */
+  padding-right: 20px;
+}
+
+ul > li {
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px;
+  /* border-left: 3px solid #007BFF; */
+}
+
+.markdownWrapper > ul > li {
+  margin: 5px 0;
+  width: fit-content;
+  padding: 0px;
+  /* border-left: 3px solid #007BFF; */
+}
+
+/* start emo changes */
+
+ /* ul li::before  {
+  content: "👉 "; 
+ }
+
+ ul ul li::before  {
+  content: "🔹 ";
+ } */
+
+/* end emo changes*/
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline!important;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+
+/* styles.css */
+
+/* Default layout for larger screens */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.content {
+  width: 75%;
+  padding: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .sidebar-header {
+    margin: 120px 10px 0 0;
+  }
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .content {
+      width: 100%;
+  }
+}
+
+.footer {
+  margin: 50px 140px 0 140px;
+  padding: 10px 0;
+  font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+ 
+
+  
+  .footer {
+      margin: 50px 5px 0 5px;
+  }
+  
+}
+
+
+/* styles.css */
+
+code {
+  background-color: #f5f5f5;
+  color: #d6336c;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 90%;
+}
+
+pre code {  /* handles graphs inside code */
+  background: none;
+  color: white;
+}
+
+pre {
+  padding: 10px;
+  background-color: #2e3440;
+  color: #d8dee9;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+h1, h2, h3 {
+  color: #007BFF;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+mark {
+  background-color: #ffeb3b82; /* Light yellow */
+  color: #000;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+
+
+/* Blockquote Styling */
+blockquote {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  position: relative; /* Enable pseudo-elements positioning */
+  border: 1px solid #007bff; 
+  background-color: #e6f2ff; /* Light gray background */
+  padding: 20px; /* Space for the quote marks */
+  margin: 20px;
+  font-style: italic;
+  color: #555; /* Slightly muted text color */
+  line-height: 1.6;
+  font-family: 'Georgia', serif; /* Add a classic font for quotes */
+  /* border-radius: 10px; */
+    transition: 0.3s;
+}
+
+/* Add opening quote using ::before */
+blockquote::before {
+  content: "“"; /* Unicode for left double quote */
+  font-size: 2.5em; /* Bigger quote size */
+  color: #007bff; /* Match the border color */
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  font-weight: bold;
+    transition: 0.3s;
+}
+
+blockquote:hover::before {
+  color: #007bff71; /* Match the border color */
+  position: absolute;
+  top: -35px;
+  left: 5px;
+  transition: 0.3s;
+}
+
+/* Add closing quote using ::after */
+blockquote::after {
+  content: "”"; /* Unicode for right double quote */
+  font-size: 2.5em; /* Bigger quote size */
+  color: #007bff; /* Match the border color */
+  position: absolute;
+  bottom: -55px;
+  right: 20px;
+  font-weight: bold;
+    transition: 0.3s;
+}
+
+blockquote:hover::after {
+  color: #007bff71; /* Match the border color */
+  position: absolute;
+  bottom: -60px;
+  right: 15px;
+    transition: 0.3s;
+}
+
+/* Optional: Add hover effect for blockquote */
+blockquote:hover {
+   background-color: #fff;
+  /* Slightly blue tint on hover */
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+
+     border-radius: 10px;
+}
+
+/* Optional: Typography improvements */
+blockquote p {
+  margin: 0; /* Remove default margins inside blockquote */
+  font-size: 1em;
+}
+
+/* Style links inside blockquote */
+blockquote a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links in blockquote */
+blockquote a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+/* side bar :start */
+
+/* .sidebar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  border: solid thin #ccc;
+  width: fit-content;
+  padding: 0 10px;
+  border-radius: 20px 0 ;
+  background-color: rgb(0, 123, 255,0.8);
+  border-left: solid thick;
+  border-right: none;
+} */
+
+.sidebar-logo {
+  font-size: 1.8em; /* Increased font size */
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 25px 0 25px 0; /* Modern rounded style */
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%); /* Gradient effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Slight shadow for text */
+  border-left: solid 5px #ffffff;
+  display: inline-block;
+}
+
+.logo-highlight {
+  color: #ffd700; /* Golden color for '++' */
+  font-weight: 900; /* Extra emphasis */
+}
+
+
+
+/* .sidebar-slogan {
+  font-size: .8em;
+  color: #333;
+  margin-top: -18px;
+  margin-left: 30px;
+  border-top: solid thick #ccc;
+  width:fit-content;
+} */
+
+.sidebar-slogan {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #000;
+  margin-top: -12px;
+  /* margin-left: 25px; */
+  padding-left: 5px;
+  padding-right: 4px;
+  border-radius: 0 10px;
+  border-left: solid 6px #007bff;
+  letter-spacing: 0.05em;
+  background: #fff;
+}
+
+
+.sidebar {
+  width: 25%; /* Fixed width for the sidebar */
+  position: sticky; /* Makes the sidebar sticky */
+  top: 0; /* Sticks the sidebar to the top of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow-y: auto; /* Scrollable if content exceeds the height */
+  overflow-x: auto  /* Scrollable if content exceeds the width */;
+  border-right: 1px solid #ccc; /* Right border for separation */
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px; /* Padding for content inside the sidebar */
+}
+
+.main-content {
+  width: 75%; /* Remaining width for the main content */
+  padding: 10px; /* Padding for the content */
+  overflow-y: auto; /* Scrollable if content exceeds the height */
+}
+
+
+/* side bar end */
+
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+table thead tr {
+  background-color: #2e3440; /* Header background color */
+  color: white; /* Header text color */
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color */
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+
+
+/* General Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Track color */
+  border-radius: 6px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff; /* Scrollbar thumb color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Adds a white border for a clean look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker shade on hover */
+}
+
+/* Styling for the Sidebar Scroll */
+* {
+  scrollbar-width: thin; /* Firefox support for thin scrollbars */
+  scrollbar-color: #007bff rgba(0, 0, 0, 0.1); /* Colors for thumb and track in Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #007bff, #0056b3); /* Gradient effect for sidebar thumb */
+}
+
+/* Styling for Main Content Scroll */
+body {
+  scrollbar-width: thin; /* Thin scrollbar for the main content */
+  scrollbar-color: #ccc rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
+/* Sidebar container styles */
+.sidebar-container {
+  max-width: 100%;
+  background-color: #000000db;
+  /* border-right: 1px solid #ddd; */
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  
+}
+
+.sidebar-header {
+
+
+  border-bottom: solid thick #007BFF;
+  /* text-decoration: underline; */
+  margin: 100px 10px 0 0;
+  margin-left: 12px;
+  padding-bottom: -12px;
+  /* margin-bottom: -32px; */
+  line-height: 0;
+  text-align: left;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  /* vertical-align: middle; */
+  color: #007BFF;
+  /* border-bottom: 2px solid #ddd; */
+  /* padding-bottom: 10px; */
+}
+
+.sidebar-content {
+  /* padding-left: 10px; */
+  background: #007bff0f;
+  font-weight: bold;
+  border-radius: 10px;
+  /* border-bottom: solid thin; */
+  margin: 10px;
+}
+
+/* Sidebar list styles */
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
+  margin-bottom: 5px;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.sidebar-title:hover {
+  background-color: #007BFF;
+}
+
+.sidebar-icon {
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: xx-small;
+}
+
+.sidebar-nested {
+  margin-left: 15px;
+  border-left: 2px solid #ddd;
+  padding-left: 10px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Active link styling */
+.sidebar-item.active > .sidebar-title {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.sidebar-item.active > .sidebar-link {
+  font-weight: bold;
+  color: #004085;
+}
+.linkHighlight {
+  /* Neon glow properties */
+  background-color: #ffeb3b; /* Bright yellow background */
+  color: #000; /* Black text for contrast */
+  border-radius: 0 10px 10px 0; /* Rounded edges */
+
+  /* Neon glow effect */
+  box-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+  text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b;
+
+  /* Transition for smooth effect on hover */
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+.linkHighlight:hover {
+  /* Intensify the glow on hover */
+  box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700, 0 0 45px #ffd700;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
+
+
+
+/* syllabus style start */
+
+/* .syllabus-header {
+  text-align: center;
+  color: #007bff;
+  font-size : 3em;
+  margin: 30px 0;
+  text-shadow: 2px 2px #333;
+  -webkit-text-stroke: 1px #fff;
+} */
+
+
+.syllabus-header {
+
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  color: #007bff;
+  font-size: 3em;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(233, 206, 206, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7); /* Adds glow effect */
+  -webkit-text-stroke: 1px #fff; /* White stroke for better contrast */
+  font-family: 'Poppins', sans-serif; /* Clean and modern font */
+  letter-spacing: 2px; /* Adds slight spacing between letters for elegance */
+  animation: fadeIn 1s ease-in-out, glow 1.5s infinite alternate; /* Smooth fade-in and glowing animation */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for glowing effect */
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(0, 123, 255, 0.4);
+  }
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(0, 123, 255, 1);
+  }
+}
+
+
+.rotate-right {
+  /* transform: rotate(.8deg); */
+}
+
+.rotate-left {
+  /* transform: rotate(-.8deg); */
+}
+
+.tiles-wrapper {
+
+  /* box-shadow: rgba(0, 123, 255, 0.5) 0px 20px 20px; */
+  /* padding: 60px 20px 30px 20px; */
+  /* border: 1px solid #007bff; */
+  /* margin-bottom: 50px; */
+  /* background-color: #ffff; */
+  /* position: relative; */
+  /* backdrop-filter: blur(15px); */
+
+
+  border-radius: 20px;
+  /* box-shadow: rgba(0, 123, 255, 0.5) 0px 0px 20px; */
+  padding: 60px 20px 30px 20px;
+  border: 1px solid #ffffff36;
+  margin-bottom: 50px;
+  background-color: #ffffff1f;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+
+
+
+.tiles-header {
+  position: absolute;
+  top: -30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* ✅ for Safari/iPhone support */
+  /* background-color: #007bffde; */
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 5px; */
+  /* border: 1px solid #007bff; */
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  /* color: #007bffde; */
+  font-size: 1.8em;
+  /* cursor: pointer; */
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+@media screen and (max-width: 600px) {
+
+  .sidebar-header {
+    margin: 120px 10px 0 0;
+  }
+
+  .sidebar-slogan {
+    max-width: 83%;
+  }
+
+  .rotate-right {
+    transform: rotate(0deg)
+  }
+  
+  .rotate-left {
+    transform: rotate(0deg);
+  }
+
+  .syllabus-header {
+    font-size: 1.2em;
+    margin: 40px 0 50px 0; 
+    -webkit-text-stroke: 0px #fff;
+  }
+  .tiles-wrapper {
+    padding: 30px 10px 10px 10px;
+    margin-bottom: 50px;
+    /* margin-top: 50px; */
+    
+  }
+  .stack-grid-wrapper {
+    margin: 25px 0;
+  }
+  .tiles-header {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* ✅ for Safari/iPhone support */
+    /* background-color: #007bff; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 5px; */
+    /* border: 1px solid #007bff; */
+    color: #fff;
+    /* color : #007bff; */
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+/* syllabus style end */
+
+
+
+@keyframes waveMovement {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
