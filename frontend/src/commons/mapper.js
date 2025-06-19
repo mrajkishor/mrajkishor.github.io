@@ -4175,25 +4175,146 @@ const mapper = {
                         }
                     },
                     "Microfrontend Design Approaches": {
-                        "Horizontal Split": true,
-                        "Vertical Split": true,
-                        "Component-level Integration": true
+                        "___urlPath___": "microfrontend-design-approaches",
+                        "Horizontal Split": {
+                            "___urlPath___": "horizontal-split",
+                            "___md___": 683
+                        },
+                        "Vertical Split": {
+                            "___urlPath___": "vertical-split",
+                            "___md___": 684
+                        },
+                        "Component-level Integration": {
+                            "___urlPath___": "component-level-integration",
+                            "___md___": 685
+                        },
+                        "Domain-Driven Design (DDD)": {
+                            "___urlPath___": "domain-driven-design-ddd",
+                            "___md___": 686
+                        },
+                        "Fragment-based Rendering (ESI, SSR Chunks)": {
+                            "___urlPath___": "fragment-based-rendering",
+                            "___md___": 687
+                        },
+                        "Backend-for-Frontend (BFF) Pattern": {
+                            "___urlPath___": "backend-for-frontend-bff-pattern",
+                            "___md___": 688
+                        },
+                        "When to Use What?": {
+                            "___urlPath___": "when-to-use-what",
+                            "___md___": 689
+                        }
                     },
                     "Microfrontend Frameworks and Tools": {
-                        "Webpack Module Federation": true,
-                        "Single-SPA": true,
-                        "Bit.dev": true
+                        "___urlPath___": "frameworks-tools",
+                        "Webpack Module Federation": {
+                            "___urlPath___": "webpack-module-federation",
+                            "___md___": 690
+                        },
+                        "Single-SPA": {
+                            "___urlPath___": "single-spa",
+                            "___md___": 691
+                        },
+                        "Bit.dev": {
+                            "___urlPath___": "bit-dev",
+                            "___md___": 692
+                        },
+                        "Nx Monorepo": {
+                            "___urlPath___": "nx-monorepo",
+                            "___md___": 693
+                        },
+                        "Turborepo": {
+                            "___urlPath___": "turborepo",
+                            "___md___": 694
+                        },
+                        "Other tools": {
+                            "___urlPath___": "other-tools",
+                            "Lerna": {
+                                "___urlPath___": "lerna",
+                                "___md___": 695
+                            },
+                            "Husky": {
+                                "___urlPath___": "husky",
+                                "___md___": 696
+                            },
+                            "CRACO": {
+                                "___urlPath___": "craco",
+                                "___md___": 697
+                            }
+                        }
                     },
                     "Building Microfrontend Applications": {
-                        "Setting Up Module Federation with Webpack": true,
-                        "Sharing Dependencies Between Microfrontends": true,
-                        "Handling Routing in Microfrontend Applications": true,
-                        "Inter-Microfrontend Communication": true
+                        "___urlPath___": "building-microfrontend-apps",
+                        "Setting Up Module Federation with Webpack": {
+                            "___urlPath___": "setting-up-module-federation-with-webpack",
+                            "___md___": 698
+                        },
+                        "Sharing Dependencies Between Microfrontends": {
+                            "___urlPath___": "sharing-dependencies-between-microfrontends",
+                            "___md___": 699
+                        },
+                        "Handling Routing in Microfrontend Applications": {
+                            "___urlPath___": "handling-routing-in-microfrontend-application",
+                            "___md___": 700
+                        },
+                        "Inter-Microfrontend Communication": {
+                            "___urlPath___": "inter-microfrontend-communication",
+                            "___md___": 701
+                        },
+                        "Dynamic Remote Integration": {
+                            "___urlPath___": "dynamic-remote-integration",
+                            "___md___": 702
+                        },
+                        "Next.js with Module Federation": {
+                            "___urlPath___": "next-js-with-module-federation",
+                            "___md___": 703
+                        },
+                        "Shared State Management (Redux/Context)": {
+                            "___urlPath___": "shared-state-management-redux-context",
+                            "___md___": 704
+                        },
+                        "Lazy Loading and Bundle Splitting": {
+                            "___urlPath___": "lazy-loading-and-bundle-splitting",
+                            "___md___": 705
+                        }
                     },
                     "Deploying Microfrontends": {
+                        "___urlPath___": "deploying-microfrontends",
                         "Independent Deployment Strategies": true,
                         "Versioning and Backward Compatibility": true,
-                        "Using CI/CD Pipelines for Microfrontend Deployment": true
+                        "Using CI/CD Pipelines for Microfrontend Deployment": true,
+                        "Rollback and Feature Flag Strategies": true
+                    },
+                    "Security and Isolation": {
+                        "___urlPath___": "security-and-isolation",
+                        "Sandboxing and Iframe Isolation": true,
+                        "Cross-Origin CSP Headers": true,
+                        "Secure Token Sharing": true
+                    },
+                    "Testing in Microfrontends": {
+                        "___urlPath___": "testing-microfrontends",
+                        "Contract Testing (PACT)": true,
+                        "End-to-End Testing Across MFEs": true,
+                        "Mocking Remote MFEs": true
+                    },
+                    "Performance Optimization": {
+                        "___urlPath___": "performance-optimization",
+                        "Tree Shaking and Code Splitting": true,
+                        "Remote Module Caching": true,
+                        "CDN Usage for RemoteEntry": true
+                    },
+                    "Team Collaboration and Governance": {
+                        "___urlPath___": "team-collab-governance",
+                        "Design System Integration": true,
+                        "Ownership Boundaries": true,
+                        "Linting and Code Standards per Remote": true
+                    },
+                    "Real-World Case Studies": {
+                        "___urlPath___": "real-world-case-studies",
+                        "Amazon MFE Architecture": true,
+                        "Netflix MFE Strategy": true,
+                        "Uber Microfrontend Learnings": true,
+                        "Failure Handling and Fallback UI": true
                     }
                 }
             },
@@ -6381,6 +6502,22 @@ const mapper = {
                         }
 
 
+                    },
+                    "AtoZ DSA Problems and Solutions": {
+                        "___urlPath___": "a-to-z-dsa-problems-and-solutions",
+                        "Basic Recusion": {
+                            "___urlPath___": "basic-recusion",
+                            "Sum numbers from 1 to N": {
+                                "___urlPath___": "sum-numbers-from-one-to-n",
+                                "___md___": 681
+                            },
+                            "Reverse an array": {
+                                "___urlPath___": "reverse-an-array",
+                                "___md___": 682
+                            }
+                        },
+
+
                     }
                 }
 
@@ -7752,6 +7889,36 @@ const mapper = {
                         "___urlPath___": "future-trends-in-cybersecurity",
                         "___md___": 676
                     },
+                }
+            },
+            "Big Data Analytics": {
+                "Introduction to Data Objects and Attribute Types": {
+                    "___urlPath___": "introduction-to-data-objects-and-attirbute-types",
+                    "___md___": 706
+                },
+                "Types of Data": {
+                    "___urlPath___": "types-of-data",
+                    "___md___": 707
+                },
+                "Staistical Descriptions of Data": {
+                    "___urlPath___": "statistical-descriptions-of-data",
+                    "___md___": 708
+                },
+                "Fundamentals of Probability and Statistics": {
+                    "___urlPath___": "fundamentals-of-probability-and-statistics",
+                    "___md___": 709
+                },
+                "Data Pre‐processing Techniques": {
+                    "___urlPath___": "data-pre-processing-techniques",
+                    "___md___": 710
+                },
+                "Dimensionality Reduction and Distance Calculation": {
+                    "___urlPath___": "dimensionality-reduction-and-distance-calculation",
+                    "___md___": 711
+                },
+                "Classification Technique I": {
+                    "___urlPath___": "classification-technique-1",
+                    "___md___": 712
                 }
             },
             "Soft Skills and Best Practices": {

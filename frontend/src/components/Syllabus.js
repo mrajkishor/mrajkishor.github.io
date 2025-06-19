@@ -27,10 +27,11 @@ import coa from '../assets/coa.jpeg';
 import dl from '../assets/dl.png';
 import dm from '../assets/dm.jpg';
 import info_cyber_sec from '../assets/it_and_cyber_sec.jpeg';
+import big_data_analytics from '../assets/big_d.png';
 
 //import web_tech from "../assets/web_tech.avif";
 import web_tech from "../assets/web_tech.jpg";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const syllabus = mapper.Contents;
 // const syllabus = {
@@ -1945,6 +1946,7 @@ const renderTiles = (topics, basePath) => {
         "Computer Networks": networking,
         "Cloud Computing": cloud_computing,
         "Information & Cyber Security": info_cyber_sec,
+        "Big Data Analytics": big_data_analytics,
         "Soft Skills and Best Practices": soft_skills,
         "Probability and Statistics": probability,
         "Linear Algebra": linear_algebra,
