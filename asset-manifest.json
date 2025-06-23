@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb9eb81a.css",
-    "main.js": "/static/js/main.2ebbe961.js",
+    "main.css": "/static/css/main.55ee3d8f.css",
+    "main.js": "/static/js/main.f49eb589.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
     "static/media/ssync.png": "/static/media/ssync.3c337693eeb2725c4291.png",
     "static/media/notes.jpg": "/static/media/notes.4a2e987ff23f4c1bb0ee.jpg",
@@ -9,6 +9,7 @@
     "static/media/invoice_screen.jpeg": "/static/media/invoice_screen.122bbbf6cbd90a9a5ca0.jpeg",
     "static/media/dag.png": "/static/media/dag.20b7c09390d40b7ddbfe.png",
     "static/media/dl.png": "/static/media/dl.af0157fa3cbfc0d6ee83.png",
+    "static/media/big_d.png": "/static/media/big_d.21c7e126a16c93fb1c23.png",
     "static/media/networks.webp": "/static/media/networks.170d8c13fe3f66d89952.webp",
     "static/media/python.jpg": "/static/media/python.552d0185e803517557a1.jpg",
     "static/media/sys_design.png": "/static/media/sys_design.cbeee32e86950c2f4148.png",
@@ -96,12 +97,12 @@
     "static/media/KaTeX_Size3-Regular.woff": "/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
-    "main.fb9eb81a.css.map": "/static/css/main.fb9eb81a.css.map",
-    "main.2ebbe961.js.map": "/static/js/main.2ebbe961.js.map",
+    "main.55ee3d8f.css.map": "/static/css/main.55ee3d8f.css.map",
+    "main.f49eb589.js.map": "/static/js/main.f49eb589.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb9eb81a.css",
-    "static/js/main.2ebbe961.js"
+    "static/css/main.55ee3d8f.css",
+    "static/js/main.f49eb589.js"
   ]
 }

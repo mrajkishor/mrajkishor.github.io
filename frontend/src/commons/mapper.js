@@ -597,43 +597,119 @@ const mapper = {
                                 }
                             },
                             "Components": {
-                                "Class Components": true,
-                                "Functional Components": true,
-                                "Component Hierarchies and Nesting": true,
+                                "___urlPath___": "components",
+                                "Class Components": {
+                                    "___urlPath___": "class-components",
+                                    "___md___": 713
+                                },
+                                "Functional Components": {
+                                    "___urlPath___": "functional-components",
+                                    "___md___": 714
+                                },
+                                "Component Hierarchies and Nesting": {
+                                    "___urlPath___": "component-hierarchies-and-nesting",
+                                    "___md___": 715
+                                },
                                 "Props": {
-                                    "Passing Data with Props": true,
-                                    "Prop Types Validation": true,
-                                    "Default Props": true
+                                    "___urlPath___": "props",
+                                    "Passing Data with Props": {
+                                        "___urlPath___": "passing-data-with-props",
+                                        "___md___": 716
+                                    },
+                                    "Prop Types Validation": {
+                                        "___urlPath___": "prop-types-validation",
+                                        "___md___": 717
+                                    },
+                                    "Default Props": {
+                                        "___urlPath___": "default-props",
+                                        "___md___": 718
+                                    },
+                                    "Class components: super(props)": {
+                                        "___urlPath___": "class-component-super-props",
+                                        "___md___": 721
+                                    },
                                 },
                                 "State": {
-                                    "State in Class Components": true,
-                                    "State in Functional Components with Hooks": true,
-                                    "State Management Best Practices": true
+                                    "___urlPath___": "state",
+                                    "State in Class Components": {
+                                        "___urlPath___": "state-in-class-components",
+                                        "___md___": 719
+                                    },
+                                    "State in Functional Components with Hooks": {
+                                        "___urlPath___": "state-in-functional-components",
+                                        "___md___": 720
+                                    },
+                                    "State Management Best Practices": {
+                                        "___urlPath___": "state-management-best-practises",
+                                        "___md___": 722
+                                    }
                                 }
                             },
                             "Event Handling": {
-                                "Understanding Synthetic Events": true,
-                                "Binding Event Handlers": true,
-                                "Passing Arguments to Event Handlers": true
+                                "___urlPath___": "event-handling",
+                                "Understanding Synthetic Events": {
+                                    "___urlPath___": "understanding-synthetic-events",
+                                    "___md___": 723
+                                },
+                                "Binding Event Handlers": {
+                                    "___urlPath___": "binding-event-handlers",
+                                    "___md___": 724
+                                },
+                                "Passing Arguments to Event Handlers": {
+                                    "___urlPath___": "passing-arguments-to-event-handlers",
+                                    "___md___": 725
+                                }
                             },
                             "Lifecycle Methods": {
-                                "Component Lifecycle Overview": true,
+                                "___urlPath___": "lifecycle-methods",
+                                "Component Lifecycle Overview": {
+                                    "___urlPath___": "component-lifecycle-overview",
+                                    "___md___": 726
+                                },
                                 "Mounting Methods": {
-                                    "constructor()": true,
-                                    "componentDidMount()": true
+                                    "___urlPath___": "mounting-methods",
+                                    "constructor()": {
+                                        "___urlPath___": "constructor",
+                                        "___md___": 727
+                                    },
+                                    "componentDidMount()": {
+                                        "___urlPath___": "componentdidmount",
+                                        "___md___": 745
+                                    }
                                 },
                                 "Updating Methods": {
-                                    "shouldComponentUpdate()": true,
-                                    "componentDidUpdate()": true
+                                    "___urlPath___": "updating-methods",
+                                    "shouldComponentUpdate()": {
+                                        "___urlPath___": "shouldcomponentudpate",
+                                        "___md___": 746
+                                    },
+                                    "componentDidUpdate()": {
+                                        "___urlPath___": "componentdidupdate",
+                                        "___md___": 747
+                                    }
                                 },
                                 "Unmounting Methods": {
-                                    "componentWillUnmount()": true
+                                    "___urlPath___": "unmounting-methods",
+                                    "componentWillUnmount()": {
+                                        "___urlPath___": "componentwillunmount",
+                                        "___md___": 748
+                                    }
                                 },
-                                "Error Boundaries": true
+                                "Error Boundaries": {
+                                    "___urlPath___": "error-boundaries",
+                                    "___md___": 749
+                                }
                             },
                             "Hooks": {
-                                "useState": true,
-                                "useEffect": true,
+                                "___urlPath___": "hooks",
+                                "useState": {
+                                    "___urlPath___": "useState",
+                                    "___md___": 752
+                                },
+                                "useEffect": {
+                                    "___urlPath___": "useEffect",
+                                    "___md___": 753
+                                },
                                 "useContext": true,
                                 "useReducer": true,
                                 "useRef": true,
@@ -646,8 +722,15 @@ const mapper = {
                                 "Custom Hooks": true
                             },
                             "Context API": {
-                                "Creating Context": true,
-                                "Consuming Context": true,
+                                "___urlPath___": "context-api",
+                                "Creating Context": {
+                                    "___urlPath___": "creating-context",
+                                    "___md___": 750
+                                },
+                                "Consuming Context": {
+                                    "___urlPath___": "consuming-context",
+                                    "___md___": 751
+                                },
                                 "Context with useContext Hook": true,
                                 "Performance Optimization in Context API": true
                             },
@@ -659,12 +742,37 @@ const mapper = {
                                 "Protected Routes": true
                             },
                             "State Management": {
+                                "___urlPath___": "state-management",
                                 "Redux": {
-                                    "Introduction to Redux": true,
-                                    "Redux Store, Actions, and Reducers": true,
-                                    "Connecting React with Redux": true,
-                                    "Middleware and Redux Thunk": true,
-                                    "Redux Toolkit": true
+                                    "___urlPath___": "redux",
+                                    "Introduction to Redux": {
+                                        "___urlPath___": "introduction-to-redux",
+                                        "___md___": 738
+                                    },
+                                    "Redux Store, Actions, and Reducers": {
+                                        "___urlPath___": "redux-store-actions-reducers",
+                                        "___md___": 739
+                                    },
+                                    "Connecting React with Redux": {
+                                        "___urlPath___": "connecting-react-with-redux",
+                                        "___md___": 740
+                                    },
+                                    "Middleware and Redux Thunk": {
+                                        "___urlPath___": "middleware-and-redux-thunk",
+                                        "___md___": 741
+                                    },
+                                    "Middleware and Redux Saga": {
+                                        "___urlPath___": "middleware-and-redux-saga",
+                                        "___md___": 742
+                                    },
+                                    "Redux Toolkit": {
+                                        "___urlPath___": "redux-toolkit",
+                                        "___md___": 743
+                                    },
+                                    "RTK Query": {
+                                        "___urlPath___": "rtk-query",
+                                        "___md___": 744
+                                    }
                                 },
                                 "MobX": true,
                                 "Zustand": true,
@@ -708,7 +816,43 @@ const mapper = {
                                 "React Fiber Architecture": true,
                                 "Reactive Programming": true,
                                 "React Server Components (RSC)": true,
-                                "Streaming SSR with Suspense": true
+                                "Streaming SSR with Suspense": true,
+                                "Design Patterns in React": {
+                                    "Compound Components": true,
+                                    "Controlled-Uncontrolled Pattern": true,
+                                    "State Machines with XState": true
+                                },
+                                "Micro Frontends": {
+                                    "Module Federation": true,
+                                    "Shared State Between MFEs": true,
+                                    "Cross-Team Deployment Patterns": true
+                                }
+                            },
+                            "TypeScript with React": {
+                                "___urlPath___": "typescript-react",
+                                "Typing Props and State": true,
+                                "Typing Custom Hooks": true,
+                                "Generic Components": true,
+                                "Type Inference and Best Practices": true
+                            },
+                            "Accessibility (a11y)": {
+                                "___urlPath___": "a11y",
+                                "ARIA Roles and Landmarks": true,
+                                "Keyboard Navigation": true,
+                                "Screen Reader Support": true,
+                                "Accessible Forms and Labels": true
+                            },
+                            "Security Best Practices": {
+                                "___urlPath___": "security",
+                                "Avoiding XSS in React": true,
+                                "Safe Use of dangerouslySetInnerHTML": true,
+                                "Input Sanitization and Escaping": true
+                            },
+                            "React Native (Optional)": {
+                                "Basics": true,
+                                "Navigation": true,
+                                "Styling and Layout": true,
+                                "State and Context in Native": true
                             },
                             "Testing": {
                                 "Unit Testing with Jest": true,
@@ -718,18 +862,87 @@ const mapper = {
                             },
                             "Build Tools and Deployment": {
                                 "___urlPath___": "build-tools-and-deployment",
-                                "Webpack and Babel": true,
-                                "Code Bundling and Minification": true,
-                                "Creating a Production Build": true,
+                                "Webpack and Babel": {
+                                    "___urlPath___": "webpack-and-babel",
+                                    "___md___": 728
+                                },
+                                "Code Bundling and Minification": {
+                                    "___urlPath___": "code-bundling-and-minification",
+                                    "___md___": 729
+                                },
+                                "Creating a Production Build": {
+                                    "___urlPath___": "creating-a-production-build",
+                                    "___md___": 737
+                                },
                                 "Deploying React Apps": {
                                     "Netlify": true,
                                     "Vercel": true,
                                     "AWS Amplify": true
+                                },
+                                "CI/CD for React": {
+                                    "GitHub Actions": true,
+                                    "Linting + Testing Pipeline": true,
+                                    "Source-map Analyzer": true
+                                }
+                            },
+                            "Debugging & DevTools": {
+                                "___urlPath___": "debugging",
+                                "React DevTools Profiler": true,
+                                "Chrome Performance Tools": true,
+                                "Bundle Size Analysis": true
+                            },
+                            "System Design in React": {
+                                "Component Architecture": {
+                                    "Atomic Design Principles": true,
+                                    "Container vs Presentational": true,
+                                    "Smart vs Dumb Components": true
+                                },
+                                "App-Level Architecture": {
+                                    "Monolithic SPA vs Micro Frontends": true,
+                                    "Lazy Loading and Route-Based Splitting": true,
+                                    "Global State Architecture": {
+                                        "Redux vs Context vs Zustand": true,
+                                        "Event Bus and Pub/Sub Models": true
+                                    }
+                                },
+                                "Enterprise Folder Structure": {
+                                    "Domain-driven Folder Layouts": true,
+                                    "Feature-based Organization": true,
+                                    "Separation of Concerns": true
+                                },
+                                "API Integration Architecture": {
+                                    "REST vs GraphQL in React": true,
+                                    "Error Handling Patterns": true,
+                                    "Retry Logic and Debounce/Throttle": true
+                                },
+                                "Cross-Cutting Concerns": {
+                                    "Authentication and Authorization Flow": true,
+                                    "Role-Based Route Guards": true,
+                                    "Error Boundaries and Logging": true
+                                },
+                                "Reusability and Scalability": {
+                                    "Reusable Component Libraries": true,
+                                    "Storybook for UI Isolation": true,
+                                    "Design System Integration": true
+                                },
+                                "Scenario-Based Design Questions": {
+                                    "Design a Dashboard with Role-Based Widgets": true,
+                                    "Design a Notification System (Toast, Modal, etc.)": true,
+                                    "Design an E-commerce Checkout Flow": true,
+                                    "Design a Multi-Step Form with Validation": true,
+                                    "Design a Real-Time Chat UI with Socket.io": true
                                 }
                             },
                             "Coding Challenges": {
                                 "___urlPath___": "coding-challenges",
                                 "___md___": 471
+                            },
+                            "QnA": {
+                                "___urlPath___": "qna",
+                                "Parent-child component render and useEffect": {
+                                    "___urlPath___": "parent-child-component-render-and-use-effect",
+                                    "___md___": 754
+                                }
                             }
                         },
                         "Vue.js": {
@@ -6278,6 +6491,29 @@ const mapper = {
                                     "Notations (infix, prefix, postfix)": {
                                         "___urlPath___": "notations",
                                         "___md___": 630
+                                    },
+                                    "Precedence Table": {
+                                        "___urlPath___": "precedence-table",
+                                        "___md___": 764
+                                    },
+                                    "infix to postfix": {
+                                        "___urlPath___": "infix-to-postfix",
+                                        "___md___": 765
+                                    },
+                                    "infix to prefix": {
+
+                                    },
+                                    "prefix to infix": {
+
+                                    },
+                                    "prefix to postfix": {
+
+                                    },
+                                    "postfix to infix": {
+
+                                    },
+                                    "postfix to prefix": {
+
                                     }
                                 },
                                 "Problems": {
@@ -7273,121 +7509,244 @@ const mapper = {
             ,
             "Computer Organization and Architecture": {
                 "___urlPath___": "computer-organization-and-architecture",
-                "Machine Instructions and Addressing Modes": {
-                    "___urlPath___": "machine-instructions-and-addressing-modes",
-                    "Instruction Formats": {
-                        "___urlPath___": "instruction-formats",
-                        "___md___": 436
+                "Fundamentals of Digital Electronics": {
+                    "___urlPath___": "fundamentals-of-digital-electronics",
+                    "Number systems": {
+                        "___urlPath___": "number-systems",
+                        "___md___": 755
                     },
-                    "Types of Instructions": {
-                        "Data Movement Instructions": true,
-                        "Arithmetic and Logic Instructions": true,
-                        "Control Flow Instructions": true
+                    "Floating Point Arithmetic": {
+                        "___urlPath___": "floating-point-arithmetic",
+                        "___md___": 756
+                    },
+                    "Error Detection and Correction": {
+                        "___urlPath___": "error-detection-and-correction",
+                        "___md___": 757
+                    },
+                    "Boolean algebra": {
+                        "___urlPath___": "boolean-algebra",
+                        "___md___": 758
+                    },
+                    "Minimisation Technique": {
+                        "___urlPath___": "minimisation-technique",
+                        "___md___": 759
+                    },
+                    "Sum of min terms": {
+                        "___urlPath___": "sum-of-min-terms",
+                        "___md___": 760
+                    },
+                    "Product of max terms": {
+                        "___urlPath___": "product-of-max-terms",
+                        "___md___": 761
+                    },
+                    "Simplification using Karnaugh's Map (up to 4 variables)": {
+                        "___urlPath___": "simplification-using-k-map",
+                        "___md___": 762
+                    },
+                    "Combinational Circuits": {
+                        "___urlPath___": "combinational-circuits",
+                        "___md___": 763
+                    },
+                    "Sequential Circtuits": {
+                        "___urlPath___": "sequential-circuits",
+                        "___md___": 764
+                    },
+                    "Shift Register": {
+                        "___urlPath___": "shift-reigster",
+                        "___md___": 765
+                    },
+                    "Counters": {
+                        "___urlPath___": "counters",
+                        "___md___": 766
+                    },
+                    "Design of Combinational and Sequential Circuits": {
+                        "___urlPath___": "design-of-combinatonal-and-sequential-circuits",
+                        "___md___": 767
+                    }
+                },
+                "Basic Computer Organization and Design": {
+                    "___urlPath___": "basic-computer-organisatio-and-design",
+                    "Von Neumann Architecture": {
+                        "___urlPath___": "von-numann-architecture",
+                        "___md___": true
+                    },
+                    "Insutruction Codes": {
+                        "___urlPath___": "instruction-codes",
+                        "___md___": true,
+                    },
+                    "Computer registers": true,
+                    "Computer instructions": true,
+                    "Timing and control": true,
+                    "Instruction cycle": true,
+                    "Memeory-Reference instructions": true,
+                    "Input-output and interrupt": true,
+                    "Design of basic computer": true,
+                    "Design of Accumulator Unit": true
+                },
+                "Central Processing Unit": {
+                    "___urlPath___": "central-processing-unit",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 756
+                    },
+                    "General Register Organisation": {
+                        "___urlPath___": "general-register-organisation",
+                        "___md___": 757
+                    },
+                    "Stack Organisation": {
+                        "___urlPath___": "stack-organisation",
+                        "___md___": 758
+                    },
+                    "Instruction Format": {
+                        "___urlPath___": "instruction-format",
+                        "___md___": 759
                     },
                     "Addressing Modes": {
-                        "Immediate Addressing": true,
-                        "Register Addressing": true,
-                        "Direct Addressing": true,
-                        "Indirect Addressing": true,
-                        "Indexed Addressing": true,
-                        "Base Register Addressing": true,
-                        "Relative Addressing": true
+                        "___urlPath___": "addressing-modes",
+                        "___md___": 760
+                    },
+                    "Data transfer and manipulation": {
+                        "___urlPath___": "data-transfer-and-manipulation",
+                        "___md___": 761
+                    },
+                    "Program control": {
+                        "___urlPath___": "program-control",
+                        "___md___": 762
+                    },
+                    "Reduced Instruction Set Computer (RISC)": {
+                        "___urlPath___": "reduced-instruction-set-computer",
+                        "___md___": 763
+                    },
+                    "Pipeline processing": {
+                        "___urlPath___": "pipeline-processing",
+                        "___md___": 766
+                    },
+                    "Parallel processing": {
+                        "___urlPath___": "parallel-processing",
+                        "___md___": 767
                     }
                 },
-                "ALU, Datapath, and Control Unit": {
-                    "Arithmetic Logic Unit (ALU)": {
-                        "Basic Arithmetic Operations": true,
-                        "Bitwise Operations": true,
-                        "Shifter Circuits": true
+                "Input Output Organisaton": {
+                    "___urlPath___": "input-output-organisation",
+                    "Peripheral Devices": {
+                        "___urlPath___": "peripheral-devices",
+                        "___md___": 768
                     },
-                    "Datapath Design": {
-                        "Single-Cycle Datapath": true,
-                        "Multi-Cycle Datapath": true,
-                        "Control Signals and Their Roles": true
+                    "IO Interface": {
+                        "___urlPath___": "io-interface",
+                        "___md___": 769
                     },
-                    "Control Unit": {
-                        "Hardwired Control Unit": true,
-                        "Microprogrammed Control Unit": true,
-                        "Design and Comparison": true
-                    }
+                    "Asynchronous data transfer": {
+                        "___urlPath___": "asynchronous-data-transfer",
+                        "___md___": 770
+                    },
+                    "Modes of transfer": {
+                        "___urlPath___": "modes-of-transfer",
+                        "___md___": 771
+                    },
+                    "Priority Interrupt": {
+                        "___urlPath___": "priority-interrupt",
+                        "___md___": 772
+                    },
+                    "DMA": {
+                        "___urlPath___": "dma",
+                        "___md___": 773
+                    },
+                    "Input output processor": {
+                        "___urlPath___": "input-output-processor",
+                        "___md___": 774
+                    },
+                    "Serial Communication": {
+                        "___urlPath___": "serial-communication",
+                        "___md___": 775
+                    },
                 },
-                "Instruction Pipelining and Hazards": {
-                    "Basics of Pipelining": {
-                        "Stages of Instruction Pipeline": true,
-                        "Throughput and Speedup": true
-                    },
-                    "Pipeline Hazards": {
-                        "Structural Hazards": true,
-                        "Data Hazards": {
-                            "RAW, WAR, WAW": true,
-                            "Data Forwarding": true
-                        },
-                        "Control Hazards": {
-                            "Branch Prediction": true,
-                            "Branch Delay Slots": true
-                        }
-                    },
-                    "Handling Hazards": {
-                        "Stalling": true,
-                        "Forwarding": true,
-                        "Speculative Execution": true
-                    }
-                },
-                "Memory Hierarchy": {
-                    "Cache Memory": {
-                        "Need for Cache": true,
-                        "Cache Mapping Techniques": {
-                            "Direct Mapping": true,
-                            "Associative Mapping": true,
-                            "Set-Associative Mapping": true
-                        },
-                        "Cache Replacement Policies": {
-                            "LRU": true,
-                            "FIFO": true,
-                            "Random": true
-                        },
-                        "Write Policies": {
-                            "Write Through": true,
-                            "Write Back": true
-                        }
+                "Memory Organisation": {
+                    "___urlPath___": "memory-organisation",
+                    "Memory Hierarchy": {
+                        "___urlPath___": "memory-hierarchy",
+                        "___md___": 776
                     },
                     "Main Memory": {
-                        "RAM and ROM": true,
-                        "DRAM and SRAM": true,
-                        "Memory Interleaving": true,
-                        "Memory Latency and Bandwidth": true
+                        "___urlPath___": "main-memory",
+                        "___md___": 777
                     },
-                    "Secondary Storage": {
-                        "Hard Disk Drives (HDDs)": true,
-                        "Solid State Drives (SSDs)": true,
-                        "Magnetic Tapes and Optical Disks": true
+                    "Cache Memory": {
+                        "___urlPath___": "cache-memory",
+                        "___md___": 778
+                    },
+                    "Register Memeory": {
+                        "___urlPath___": "register-memeory",
+                        "___md___": 779
+                    },
+                    "Secondary Memory": {
+                        "___urlPath___": "secondary-memory",
+                        "___md___": 780
+                    },
+                    "Virtual Memory": {
+                        "___urlPath___": "virtual-memory",
+                        "___md___": 781
+                    },
+                    "Importance of Memory Organisation": {
+                        "___urlPath___": "importance-of-memory-organisation",
+                        "___md___": 782
+                    },
+                    "Advanced optimisation of cache performance": {
+                        "___urlPath___": "advanced-optimisation-of-cache-performance",
+                        "___md___": 783
                     }
                 },
-                "Input/Output Interface": {
-                    "I/O Devices": {
-                        "Input Devices": true,
-                        "Output Devices": true,
-                        "I/O Addressing and Port Mapping": true
-                    },
-                    "I/O Techniques": {
-                        "Programmed I/O": true,
-                        "Interrupt-Driven I/O": true,
-                        "Direct Memory Access (DMA)": {
-                            "DMA Controller": true,
-                            "DMA Transfer Modes": true
-                        }
-                    },
-                    "Interrupt Handling": {
-                        "Vectored and Non-Vectored Interrupts": true,
-                        "Interrupt Priority and Nesting": true,
-                        "Maskable and Non-Maskable Interrupts": true
-                    }
+                "Programming the basic computer": {
+                    "Introduction": true,
+                    "Machine Language": true,
+                    "Assembly Language": true,
+                    "The 11 Assembler": true,
+                    "Program loops": true,
+                    "Programming Artithmetic and Logic Operation": true,
+                    "Subroutines": true,
+                    "I-O Programming": true,
+                    "Ten Advanced Optimisation of Cache Performance": true,
+                    "Memeory Technology and Optimation": true,
+                    "Protection": true,
+                    "Cross-cutting issues": true,
+                    "Memeory Hierarchies in the ARM Cortex-A8 and Intel Core i7": true
                 },
-                "Case Studies and Practical Projects": {
-                    "Simulating Instruction Pipeline": true,
-                    "Designing a Simple ALU in Verilog": true,
-                    "Implementing Cache Mapping Strategies": true,
-                    "DMA Operation Simulation in Code": true
+                "Instruction Set Architecture": {
+                    "Operating System": true,
+                    "Compiler": true,
+                    "Central Processing Unit": true,
+                    "Dynamic Binary": true,
+                    "Translation": true,
+                    "Single Instruction Multiple Data": true,
+                    "Virtual Machine": true,
+                    "Intermediate Representation": true
+                },
+                "Pipelining Technique in Computer Architecture": {
+                    "Basic Introduction": true,
+                    "Variaous stages of the pipeline": true,
+                    "Types of pipeline techniques": true,
+                    "Characteristics": true,
+                    "Advantages and disadvantages of pipelining": true,
+                    "Throughput and Speedup of pipelining": true
+                },
+                "Data Representation": {
+                    "Binary, decimal, and hexadecimal numbers": true,
+                    "Computer instructions": true,
+                    "Character set and number set": true,
+                    "Charcater set": true,
+                    "Number set": true,
+                    "Addiction": true,
+                    "Ripple Carry Adder": true,
+                    "Carry Look-ahead": true,
+                    "Multiplication": true,
+                    "Shift and Add": true,
+                    "Division": true
+                },
+                "Data Flow Architures": {
+                    "Data flow architecutre": true,
+                    "Data flow computing in parallel processign": true,
+                    "Vector architecture": true,
+                    "Advanced architecture using data flow computing": true
                 }
             },
 
@@ -7919,6 +8278,34 @@ const mapper = {
                 "Classification Technique I": {
                     "___urlPath___": "classification-technique-1",
                     "___md___": 712
+                },
+                "Classification Technique II": {
+                    "___urlPath___": "classification-technique-2",
+                    "___md___": 730
+                },
+                "Clustering Techniques": {
+                    "___urlPath___": "clustering-techniques",
+                    "___md___": 731
+                },
+                "Foundation of Data Visualization": {
+                    "___urlPath___": "foundation-of-data-visualization",
+                    "___md___": 732
+                },
+                "Design Principles in Visualization": {
+                    "___urlPath___": "design-principles-in-visualization",
+                    "___md___": 733
+                },
+                "Specialized Data Visualization": {
+                    "___urlPath___": "specialised-data-visualization",
+                    "___md___": 734
+                },
+                "Big Data Tools and Technology": {
+                    "___urlPath___": "big-data-tools-and-technology",
+                    "___md___": 735
+                },
+                "Future Trends and Challenges in Big Data": {
+                    "___urlPath___": "future-trends-and-chanllenges-in-big-data",
+                    "___md___": 736
                 }
             },
             "Soft Skills and Best Practices": {
