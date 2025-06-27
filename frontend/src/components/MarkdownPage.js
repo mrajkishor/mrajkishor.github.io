@@ -38,13 +38,13 @@ const preprocessMarkdown = (content) => {
         // Step 3: Format blockquotes ("> text") and apply styling
 
         // Old change : separated each line with >
-        .replace(
-            /^>(.*)$/gm,
-            (match, p1) =>
-                `<blockquote>${p1
-                    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
-        )
+        // .replace(
+        //     /^>(.*)$/gm,
+        //     (match, p1) =>
+        //         `<blockquote>${p1
+        //             .replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+        //             .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}</blockquote>`
+        // )
 
 
         // New change : Consolidated use of lines with >

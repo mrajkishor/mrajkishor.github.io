@@ -2634,7 +2634,256 @@ const mapper = {
                         "Branching and Merging": true
                     },
                     "Build Tools": {
-                        "Webpack": true,
+                        "___urlPath___": "Build Tools",
+                        "Webpack": {
+                            "Introduction to Webpack": {
+                                "___urlPath___": "introduction-to-webpack",
+                                "___md___": 803
+                            },
+                            "Core Concepts": {
+                                "___urlPath___": "core-concepts",
+                                "Entry and Output": {
+                                    "___urlPath___": "entry-and-output",
+                                    "___md___": 804
+                                },
+                                "Loaders": {
+                                    "___urlPath___": "loaders",
+                                    "___md___": 805
+                                },
+                                "Plugins": {
+                                    "___urlPath___": "plugins",
+                                    "___md___": 806
+                                },
+                                "Mode (development, production)": true,
+                                "Devtool (Source Maps)": {
+                                    "___urlPath___": "devtool-source-maps",
+                                    "___md___": 819
+                                }
+                            },
+                            "Module Bundling": {
+                                "Understanding Dependency Graph": true,
+                                "Static vs Dynamic Imports": {
+                                    "___urlPath___": "static-vs-dynamic-imports",
+                                    "___md___": 807
+                                },
+                                "Code Splitting": {
+                                    "___urlPath___": "code-splitting",
+                                    "Entry Points Splitting": {
+                                        "___urlPath___": "entry-points-splitting",
+                                        "___md___": 808
+                                    },
+                                    "Dynamic Imports with `import()`": {
+                                        "___urlPath___": "dynamic-import",
+                                        "___md___": 809
+                                    },
+                                    "Vendor Splitting": {
+                                        "___urlPath___": "vendor-splitting",
+                                        "___md___": 818
+                                    }
+                                }
+                            },
+                            "Loaders and Transpilation": {
+                                "JavaScript Loaders (e.g. Babel)": true,
+                                "CSS Loaders (style-loader, css-loader)": true,
+                                "File Loaders (images, fonts)": true,
+                                "Custom Loaders": true
+                            },
+                            "Plugins": {
+                                "HTMLWebpackPlugin": true,
+                                "DefinePlugin": true,
+                                "MiniCssExtractPlugin": true,
+                                "CleanWebpackPlugin": true,
+                                "HotModuleReplacementPlugin": true
+                            },
+                            "Dev Server & Live Reload": {
+                                "webpack-dev-server": true,
+                                "Hot Module Replacement (HMR)": true,
+                                "Live Reloading": true
+                            },
+                            "Optimization": {
+                                "Tree Shaking": {
+                                    "___urlPath___": "tree-shaking",
+                                    "___md___": 810
+                                },
+                                "Minification": {
+                                    "TerserPlugin for JS": {
+                                        "___urlPath___": "terserplugin-for-js",
+                                        "___md___": 811
+                                    },
+                                    "CSS Minimizer Plugin": true
+                                },
+                                "Caching and Content Hashing": {
+                                    "___urlPath___": "caching-and-content-hashing",
+                                    "___md___": 812
+                                }
+                            },
+                            "Advanced Topics": {
+                                "Environment Variables with DefinePlugin": true,
+                                "Multiple Configurations": true,
+                                "Merging Configs with `webpack-merge`": true,
+                                "Monorepos & Webpack": {
+                                    "___urlPath___": "monorepos-and-webpack",
+                                    "___md___": 813
+                                }
+                            },
+                            "Integration with Other Tools": {
+                                "___urlPath___": "integration-with-other-tools",
+                                "Babel": true,
+                                "ESLint": true,
+                                "TypeScript": true,
+                                "React & Webpack Setup": {
+                                    "___urlPath___": "react-and-webpack-setup",
+                                    "___md___": 814
+                                },
+                                "Vue & Webpack Setup": true
+                            },
+                            "Webpack 5 Features": {
+                                "Module Federation": {
+                                    "Introduction to Module Federation": true,
+                                    "Why Module Federation?": {
+                                        "Limitations of Traditional Micro Frontends": true,
+                                        "Benefits over npm Package Sharing": true
+                                    },
+                                    "Core Concepts": {
+                                        "Host and Remote": true,
+                                        "Shared Modules": true,
+                                        "Exposes and Remotes": true,
+                                        "Federated Modules vs Bundled Modules": true
+                                    },
+                                    "Configuration & Syntax": {
+                                        "Basic Setup in webpack.config.js": true,
+                                        "ModuleFederationPlugin": true,
+                                        "Exposing Components/Modules": true,
+                                        "Consuming Remote Components": true,
+                                        "Shared Dependencies": true
+                                    },
+                                    "Runtime Behavior": {
+                                        "Dynamic Loading of Remotes": true,
+                                        "Version Conflicts and Resolutions": true,
+                                        "Caching and Invalidations": true
+                                    },
+                                    "Deployment Strategies": {
+                                        "Static vs Dynamic Remote URLs": true,
+                                        "PublicPath Configuration": true,
+                                        "CDN-Based Remote Deployment": true
+                                    },
+                                    "Advanced Usage": {
+                                        "Federated Routing with React Router": true,
+                                        "TypeScript Integration": true,
+                                        "Environment Variable Handling": true,
+                                        "Multiple Remotes and Nested Remotes": true,
+                                        "Building Federated Design Systems": true
+                                    },
+                                    "Use Cases and Architecture Patterns": {
+                                        "Micro Frontends": true,
+                                        "Multi-Team Development": true,
+                                        "Independent Deployability": true,
+                                        "Shared Auth / Header / Footer": true
+                                    },
+                                    "Common Tools & Ecosystem": {
+                                        "webpack ModuleFederationPlugin": true,
+                                        "module-federation/webpack plugin utilities": true,
+                                        "vite-module-federation": true,
+                                        "Nx + Module Federation": true
+                                    },
+                                    "Module Federation in React": {
+                                        "React Setup Example": true,
+                                        "Shared Context and State": true,
+                                        "React Refresh / HMR Support": true
+                                    },
+                                    "Testing Federated Modules": {
+                                        "Unit Testing with Jest": true,
+                                        "End-to-End Testing (Cypress / Playwright)": true,
+                                        "Mocking Remotes for Testing": true
+                                    },
+                                    "Production Considerations": {
+                                        "Bundle Splitting and Size Optimization": true,
+                                        "Security (Exposing Only What’s Needed)": true,
+                                        "Monitoring Remote Availability": true
+                                    },
+                                    "Troubleshooting and Debugging": {
+                                        "Common Errors (404 Remotes, Version Mismatch)": true,
+                                        "Module Sharing Issues": true,
+                                        "Runtime Loading Failures": true
+                                    },
+                                    "Alternatives and Comparisons": {
+                                        "SystemJS": true,
+                                        "Single-SPA": true,
+                                        "Import Maps (ES Modules in Browsers)": true
+                                    },
+                                    "Real-World Examples": {
+                                        "E-commerce with Federated Product Pages": true,
+                                        "Admin Dashboards with Shared Widgets": true,
+                                        "Micro Frontends in Enterprise Projects": true
+                                    },
+                                    "Module Federation 2": {
+                                        "___urlPath___": "module-federation-2",
+                                        "___md___": 821
+                                    },
+                                    "Migration from Module Federation 1 to Module Federation 2": {
+                                        "___urlPath___": "migration-to-module-federation2",
+                                        "___md___": 822
+                                    },
+                                    "Benefits of Migration and How to Track": {
+                                        "___urlPath___": "benefits-of-module-federation2-migration",
+                                        "___md___": 823
+                                    }
+                                }
+                                ,
+                                "Persistent Caching": true,
+                                "Asset Modules (replacing file-loader/url-loader)": true
+                            },
+                            "Troubleshooting and Best Practices": {
+                                "___urlPath___": "troubleshooting-and-best-practices",
+                                "Common Errors and Debugging": {
+                                    "___urlPath___": "common-errors-and-debugging",
+                                    "___md___": 815
+                                },
+                                "Performance Tuning": {
+                                    "___urlPath___": "performance-tuning",
+                                    "___md___": 816
+                                },
+                                "Analyzing Bundle Size with `webpack-bundle-analyzer`": {
+                                    "___urlPath___": "analyzing-bundle-size-with-webpack-bundle-analyzer",
+                                    "___md___": 817
+                                }
+                            },
+                            "Performance Monitoring": {
+                                "Bundle Size Budgets": true,
+                                "webpack --profile and --json": true,
+                                "webpack-bundle-analyzer Deep Dive": true,
+                                "Web Vitals Impact (TTFB, FCP)": true
+                            },
+                            "Migration Strategies": {
+                                "___urlPath___": "migration-strategies",
+                                "Migrating from Webpack 4 to 5": {
+                                    "___urlPath___": "migrating-from-webpack-4-to-5",
+                                    "___md___": 820
+                                },
+                                "Replacing file-loader/url-loader with Asset Modules": true,
+                                "Handling Deprecated Plugins or APIs": true
+                            },
+                            "Security Considerations": {
+                                "Exposed Remotes Hardening": true,
+                                "Webpack with CSP (Content Security Policy)": true,
+                                "Avoiding Untrusted Dynamic Imports": true
+                            },
+                            "SSR with Webpack": {
+                                "React SSR Setup with Webpack": true,
+                                "Lazy Loading in SSR Context": true,
+                                "Streaming + Webpack for Partial Hydration": true
+                            },
+                            "Legacy Support": {
+                                "Polyfill Management": true,
+                                "Targeting Browserslist and Compatibility": true
+                            },
+                            "CI/CD Integration": {
+                                "Running Webpack in CI Pipelines": true,
+                                "Caching Webpack Builds in CI": true,
+                                "Deploying Remotes from CI to CDN": true
+                            }
+                        }
+                        ,
                         "Parcel": true,
                         "Vite": true
                     },
@@ -6501,24 +6750,44 @@ const mapper = {
                                         "___md___": 765
                                     },
                                     "infix to prefix": {
-
+                                        "___urlPath___": "infix-to-prefix",
+                                        "___md___": 784
                                     },
                                     "prefix to infix": {
-
+                                        "___urlPath___": "prefix-to-infix",
+                                        "___md___": 785
                                     },
                                     "prefix to postfix": {
-
+                                        "___urlPath___": "prefix-to-postfix",
+                                        "___md___": 786
                                     },
                                     "postfix to infix": {
-
+                                        "___urlPath___": "postfix-to-infix",
+                                        "___md___": 787
                                     },
                                     "postfix to prefix": {
-
+                                        "___urlPath___": "postfix-to-prefix",
+                                        "___md___": 788
+                                    },
+                                    "Evaluation": {
+                                        "___urlPath___": "evaluation",
+                                        "Concept": {
+                                            "___urlPath___": "concept",
+                                            "___md___": 789
+                                        },
+                                        "Code (Java, JavaScript, TypeScript)": {
+                                            "___urlPath___": "code",
+                                            "___md___": 790
+                                        }
                                     }
+
                                 },
                                 "Problems": {
                                     "___urlPath___": "problems",
-                                    "___md___": 629
+                                    "Medium Hard problems": {
+                                        "___urlPath___": "medium-hard-problems",
+                                        "___md___": 629
+                                    }
                                 }
                             },
                             "Graph Inputs": {
@@ -7513,75 +7782,99 @@ const mapper = {
                     "___urlPath___": "fundamentals-of-digital-electronics",
                     "Number systems": {
                         "___urlPath___": "number-systems",
-                        "___md___": 755
+                        "___md___": 874
                     },
                     "Floating Point Arithmetic": {
                         "___urlPath___": "floating-point-arithmetic",
-                        "___md___": 756
+                        "___md___": 875
                     },
                     "Error Detection and Correction": {
                         "___urlPath___": "error-detection-and-correction",
-                        "___md___": 757
+                        "___md___": 876
                     },
                     "Boolean algebra": {
                         "___urlPath___": "boolean-algebra",
-                        "___md___": 758
+                        "___md___": 877
                     },
                     "Minimisation Technique": {
                         "___urlPath___": "minimisation-technique",
-                        "___md___": 759
+                        "___md___": 878
                     },
                     "Sum of min terms": {
                         "___urlPath___": "sum-of-min-terms",
-                        "___md___": 760
+                        "___md___": 879
                     },
                     "Product of max terms": {
                         "___urlPath___": "product-of-max-terms",
-                        "___md___": 761
+                        "___md___": 880
                     },
                     "Simplification using Karnaugh's Map (up to 4 variables)": {
                         "___urlPath___": "simplification-using-k-map",
-                        "___md___": 762
+                        "___md___": 881
                     },
                     "Combinational Circuits": {
                         "___urlPath___": "combinational-circuits",
-                        "___md___": 763
+                        "___md___": 882
                     },
                     "Sequential Circtuits": {
                         "___urlPath___": "sequential-circuits",
-                        "___md___": 764
+                        "___md___": 883
                     },
                     "Shift Register": {
                         "___urlPath___": "shift-reigster",
-                        "___md___": 765
+                        "___md___": 884
                     },
                     "Counters": {
                         "___urlPath___": "counters",
-                        "___md___": 766
+                        "___md___": 885
                     },
                     "Design of Combinational and Sequential Circuits": {
                         "___urlPath___": "design-of-combinatonal-and-sequential-circuits",
-                        "___md___": 767
+                        "___md___": 886
                     }
                 },
                 "Basic Computer Organization and Design": {
                     "___urlPath___": "basic-computer-organisatio-and-design",
                     "Von Neumann Architecture": {
                         "___urlPath___": "von-numann-architecture",
-                        "___md___": true
+                        "___md___": 824
                     },
                     "Insutruction Codes": {
                         "___urlPath___": "instruction-codes",
-                        "___md___": true,
+                        "___md___": 825,
                     },
-                    "Computer registers": true,
-                    "Computer instructions": true,
-                    "Timing and control": true,
-                    "Instruction cycle": true,
-                    "Memeory-Reference instructions": true,
-                    "Input-output and interrupt": true,
-                    "Design of basic computer": true,
-                    "Design of Accumulator Unit": true
+                    "Computer registers": {
+                        "___urlPath___": "computer-registers",
+                        "___md___": 826
+                    },
+                    "Computer instructions": {
+                        "___urlPath___": "computer-instructions",
+                        "___md___": 827
+                    },
+                    "Timing and control": {
+                        "___urlPath___": "timing-and-control",
+                        "___md___": 828
+                    },
+                    "Instruction cycle": {
+                        "___urlPath___": "instruction-cycle",
+                        "___md___": 829
+                    },
+                    "Memory-Reference instructions": {
+                        "___urlPath___": "memory-reference-instructions",
+                        "___md___": 830
+                    },
+                    "Input-output and interrupt": {
+                        "___urlPath___": "input-output-and-interrupt",
+                        "___md___": 831
+                    },
+                    "Design of basic computer": {
+                        "___urlPath___": "design-of-basic-computer",
+                        "___md___": 832
+                    },
+                    "Design of Accumulator Unit": {
+                        "___urlPath___": "design-of-accumulator-unit",
+                        "___md___": 833
+                    }
                 },
                 "Central Processing Unit": {
                     "___urlPath___": "central-processing-unit",
@@ -7697,56 +7990,179 @@ const mapper = {
                     }
                 },
                 "Programming the basic computer": {
-                    "Introduction": true,
-                    "Machine Language": true,
-                    "Assembly Language": true,
-                    "The 11 Assembler": true,
-                    "Program loops": true,
-                    "Programming Artithmetic and Logic Operation": true,
-                    "Subroutines": true,
-                    "I-O Programming": true,
-                    "Ten Advanced Optimisation of Cache Performance": true,
-                    "Memeory Technology and Optimation": true,
-                    "Protection": true,
-                    "Cross-cutting issues": true,
-                    "Memeory Hierarchies in the ARM Cortex-A8 and Intel Core i7": true
+                    "___urlPath___": "programming-the-basic-computer",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 834
+                    },
+                    "Machine Language": {
+                        "___urlPath___": "machine-language",
+                        "___md___": 835
+                    },
+                    "Assembly Language": {
+                        "___urlPath___": "assembly-language",
+                        "___md___": 836
+                    },
+                    "The 11 Assembler": {
+                        "___urlPath___": "the-11-assembler",
+                        "___md___": 837
+                    },
+                    "Program loops": {
+                        "___urlPath___": "program-loops",
+                        "___md___": 838
+                    },
+                    "Programming Arithmetic and Logic Operation": {
+                        "___urlPath___": "programming-arithmetic-and-logic-operation",
+                        "___md___": 839
+                    },
+                    "Subroutines": {
+                        "___urlPath___": "subroutines",
+                        "___md___": 840
+                    },
+                    "I-O Programming": {
+                        "___urlPath___": "io-programming",
+                        "___md___": 841
+                    },
+                    "Ten Advanced Optimisation of Cache Performance": {
+                        "___urlPath___": "ten-advanced-optimisation-of-cache-performance",
+                        "___md___": 842
+                    },
+                    "Memory Technology and Optimisation": {
+                        "___urlPath___": "memory-technology-and-optimisation",
+                        "___md___": 843
+                    },
+                    "Protection": {
+                        "___urlPath___": "protection",
+                        "___md___": 862
+                    },
+                    "Cross-cutting issues": {
+                        "___urlPath___": "cross-cutting-issues",
+                        "___md___": 863
+                    },
+                    "Memory Hierarchies in the ARM Cortex-A8 and Intel Core i7": {
+                        "___urlPath___": "memory-hierarchies-in-the-arm-cortex-a8-and-intel-core-i7",
+                        "___md___": 864
+                    }
                 },
                 "Instruction Set Architecture": {
-                    "Operating System": true,
-                    "Compiler": true,
-                    "Central Processing Unit": true,
-                    "Dynamic Binary": true,
-                    "Translation": true,
-                    "Single Instruction Multiple Data": true,
-                    "Virtual Machine": true,
-                    "Intermediate Representation": true
+                    "___urlPath___": "instruction-set-architecture",
+                    "Operating System": {
+                        "___urlPath___": "operating-system",
+                        "___md___": 854
+                    },
+                    "Compiler": {
+                        "___urlPath___": "compiler",
+                        "___md___": 855
+                    },
+                    "Central Processing Unit": {
+                        "___urlPath___": "cpu",
+                        "___md___": 856
+                    },
+                    "Dynamic Binary": {
+                        "___urlPath___": "dynamic-binary",
+                        "___md___": 857
+                    },
+                    "Translation": {
+                        "___urlPath___": "translation",
+                        "___md___": 858
+                    },
+                    "Single Instruction Multiple Data": {
+                        "___urlPath___": "single-instruction-multiple-data",
+                        "___md___": 859
+                    },
+                    "Virtual Machine": {
+                        "___urlPath___": "virtual-machine",
+                        "___md___": 860
+                    },
+                    "Intermediate Representation": {
+                        "___urlPath___": "intermediate-representation",
+                        "___md___": 861
+                    }
                 },
                 "Pipelining Technique in Computer Architecture": {
-                    "Basic Introduction": true,
-                    "Variaous stages of the pipeline": true,
-                    "Types of pipeline techniques": true,
-                    "Characteristics": true,
-                    "Advantages and disadvantages of pipelining": true,
-                    "Throughput and Speedup of pipelining": true
+                    "___urlPath___": "pipelining-technique-in-computer-architecture",
+                    "Basic Introduction": {
+                        "___urlPath___": "basic-introduction",
+                        "___md___": 848
+                    },
+                    "Variaous stages of the pipeline": {
+                        "___urlPath___": "various-stages-of-the-pipeline",
+                        "___md___": 849
+                    },
+                    "Types of pipeline techniques": {
+                        "___urlPath___": "types-of-pipeline-techiniques",
+                        "___md___": 850
+                    },
+                    "Characteristics": {
+                        "___urlPath___": "characteristics",
+                        "___md___": 851
+                    },
+                    "Advantages and disadvantages of pipelining": {
+                        "___urlPath___": "advantages-and-disadvantages-of-pipelining",
+                        "___md___": 852
+                    },
+                    "Throughput and Speedup of pipelining": {
+                        "___urlPath___": "throughput-and-speedup-of-pipelining",
+                        "___md___": 853
+                    }
                 },
                 "Data Representation": {
-                    "Binary, decimal, and hexadecimal numbers": true,
-                    "Computer instructions": true,
-                    "Character set and number set": true,
-                    "Charcater set": true,
-                    "Number set": true,
-                    "Addiction": true,
-                    "Ripple Carry Adder": true,
-                    "Carry Look-ahead": true,
-                    "Multiplication": true,
-                    "Shift and Add": true,
-                    "Division": true
+                    "___urlPath___": "data-representation",
+                    "Binary, decimal, and hexadecimal numbers": {
+                        "___urlPath___": "binary-decimal-and-hexadecimal-numbers",
+                        "___md___": 865
+                    },
+                    "Computer instructions": {
+                        "___urlPath___": "computer-instructions",
+                        "___md___": 866
+                    },
+                    "Character set and number set": {
+                        "___urlPath___": "character-set-and-number-set",
+                        "___md___": 867
+                    },
+                    "Addiction": {
+                        "___urlPath___": "addiction",
+                        "___md___": 868
+                    },
+                    "Ripple Carry Adder": {
+                        "___urlPath___": "ripple-carry-adder",
+                        "___md___": 869
+                    },
+                    "Carry Look-ahead": {
+                        "___urlPath___": "carry-look-ahead",
+                        "___md___": 870
+                    },
+                    "Multiplication": {
+                        "___urlPath___": "multiplication",
+                        "___md___": 871
+                    },
+                    "Shift and Add": {
+                        "___urlPath___": "shift-and-add",
+                        "___md___": 872
+                    },
+                    "Division": {
+                        "___urlPath___": "division",
+                        "___md___": 873
+                    }
                 },
                 "Data Flow Architures": {
-                    "Data flow architecutre": true,
-                    "Data flow computing in parallel processign": true,
-                    "Vector architecture": true,
-                    "Advanced architecture using data flow computing": true
+                    "___urlPath___": "data-flow-architecture",
+                    "Data flow architecutre": {
+                        "___urlPath___": "data-flow-architecture",
+                        "___md___": 844
+                    },
+                    "Data flow computing in parallel processign": {
+                        "___urlPath___": "data-flow-computing-in-parallel-processing",
+                        "___md___": 845
+                    },
+                    "Vector architecture": {
+                        "___urlPath___": "vector-acchitecture",
+                        "___md___": 846
+                    },
+                    "Advanced architecture using data flow computing": {
+                        "___urlPath___": "advanced-architecture-using-data-flow-computing",
+                        "___md___": 847
+                    }
                 }
             },
 
@@ -7917,174 +8333,53 @@ const mapper = {
             },
             "Computer Networks": {
                 "___urlPath___": "computer-networks",
-                "Introduction to Computer Networks": {
-                    "What is a Computer Network?": true,
-                    "Goals of Networking": true,
-                    "Types of Networks": {
-                        "LAN (Local Area Network)": true,
-                        "WAN (Wide Area Network)": true,
-                        "MAN (Metropolitan Area Network)": true,
-                        "PAN (Personal Area Network)": true
-                    },
-                    "Network Topologies": {
-                        "Bus": true,
-                        "Star": true,
-                        "Ring": true,
-                        "Mesh": true,
-                        "Hybrid": true
-                    },
-                    "Applications of Networking": true
+                "Chapter 1 - Definition, Goals, and Applications": {
+                    "___urlPath___": "definition-goals-and-applications",
+                    "___md___": 791
                 },
-                "Network Models": {
-                    "OSI Model": {
-                        "Introduction to OSI Layers": true,
-                        "Functions of Each Layer": true,
-                        "Protocols in OSI Model": true
-                    },
-                    "TCP/IP Model": {
-                        "Comparison with OSI Model": true,
-                        "Layers in TCP/IP Model": true,
-                        "Common Protocols in TCP/IP": true
-                    }
+                "Chapter 2 - Network Structure, Network Architecture & OSI Model": {
+                    "___urlPath___": "network-structure-network-architecture-and-osi-model",
+                    "___md___": 792
                 },
-                "Physical Layer": {
-                    "Introduction to Physical Layer": true,
-                    "Transmission Media": {
-                        "Guided Media (Twisted Pair, Coaxial, Fiber Optics)": true,
-                        "Unguided Media (Radio Waves, Microwaves, Infrared)": true
-                    },
-                    "Data Encoding Techniques": {
-                        "Digital-to-Digital Encoding": true,
-                        "Analog-to-Digital Conversion": true,
-                        "Digital-to-Analog Conversion": true
-                    },
-                    "Multiplexing and Demultiplexing": {
-                        "Time Division Multiplexing (TDM)": true,
-                        "Frequency Division Multiplexing (FDM)": true,
-                        "Wavelength Division Multiplexing (WDM)": true
-                    },
-                    "Switching Techniques": {
-                        "Circuit Switching": true,
-                        "Packet Switching": true,
-                        "Message Switching": true
-                    }
+                "Chapter 3 - Network topology design, backbone design and local access network design": {
+                    "___urlPath___": "network-topology-design-backbone-design-and-local-access-network-design",
+                    "___md___": 793
                 },
-                "Data Link Layer": {
-                    "Functions of Data Link Layer": true,
-                    "Error Detection and Correction": {
-                        "Parity Check": true,
-                        "Cyclic Redundancy Check (CRC)": true,
-                        "Hamming Code": true
-                    },
-                    "Flow Control": {
-                        "Stop-and-Wait Protocol": true,
-                        "Sliding Window Protocol": true
-                    },
-                    "Medium Access Control (MAC)": {
-                        "ALOHA (Pure and Slotted)": true,
-                        "CSMA/CD (Carrier Sense Multiple Access with Collision Detection)": true,
-                        "CSMA/CA (Collision Avoidance)": true
-                    },
-                    "Switching in Data Link Layer": true
+                "Chapter 4 - Network Transmission and Switching Fundamentals: Media, Methods, and ISDN Handling": {
+                    "___urlPath___": "network-transmission-and-siwtching-fundamentals",
+                    "___md___": 794
                 },
-                "Network Layer": {
-                    "Functions of Network Layer": true,
-                    "Routing Algorithms": {
-                        "Shortest Path Routing (Dijkstra's Algorithm)": true,
-                        "Flooding": true,
-                        "Distance Vector Routing (Bellman-Ford Algorithm)": true,
-                        "Link State Routing": true
-                    },
-                    "IP Addressing": {
-                        "IPv4 Addressing and Classes": true,
-                        "IPv6 Addressing": true,
-                        "Subnetting and Supernetting": true
-                    },
-                    "Routing Protocols": {
-                        "RIP (Routing Information Protocol)": true,
-                        "OSPF (Open Shortest Path First)": true,
-                        "BGP (Border Gateway Protocol)": true
-                    },
-                    "NAT (Network Address Translation)": true
+                "Chapter 5 - Channel Allocation, LAN Protocols, and IEEE FDDI Standards": {
+                    "___urlPath___": "channel-allocation-lan-protocols-and-ieee-fddi-standards",
+                    "___md___": 795
                 },
-                "Transport Layer": {
-                    "Functions of Transport Layer": true,
-                    "Connection-Oriented vs Connectionless Services": true,
-                    "TCP (Transmission Control Protocol)": {
-                        "Features of TCP": true,
-                        "TCP Header": true,
-                        "Three-Way Handshake": true,
-                        "Congestion Control in TCP": true
-                    },
-                    "UDP (User Datagram Protocol)": {
-                        "Features of UDP": true,
-                        "Use Cases of UDP": true
-                    }
+                "Chapter 6 - Data Link Layer Protocols: Elementary Protocols, Sliding Window, and Error Handling": {
+                    "___urlPath___": "data-link-layer-protocols",
+                    "___md___": 796
                 },
-                "Application Layer": {
-                    "___urlPath___": "application_layer",
-                    "DNS (Domain Name System)": {
-                        "DNS Resolution Process": true,
-                        "Types of DNS Records (A, AAAA, CNAME, MX)": true
-                    },
-                    "HTTP and HTTPS": {
-                        "How HTTP Works": true,
-                        "Differences Between HTTP and HTTPS": true,
-                        "HTTPS and SSL/TLS": {
-                            "___urlPath___": "https_ssl_tls",
-                            "___md___": 199
-                        }
-                    },
-                    "Email Protocols": {
-                        "SMTP (Simple Mail Transfer Protocol)": true,
-                        "IMAP (Internet Message Access Protocol)": true,
-                        "POP3 (Post Office Protocol)": true
-                    },
-                    "File Transfer Protocols": {
-                        "FTP (File Transfer Protocol)": true,
-                        "SFTP (Secure File Transfer Protocol)": true
-                    }
+                "Chapter 7 - Network Layer Concepts: Point-to-Point Networks, Routing, and Congestion Control": {
+                    "___urlPath___": "network-layer-concepts",
+                    "___md___": 797
                 },
-                "Network Security": {
-                    "Introduction to Network Security": true,
-                    "Common Security Threats": {
-                        "Phishing": true,
-                        "Man-in-the-Middle Attack": true,
-                        "DDoS (Distributed Denial of Service)": true
-                    },
-                    "Encryption Techniques": {
-                        "Symmetric Encryption": true,
-                        "Asymmetric Encryption": true,
-                        "Hashing Algorithms (MD5, SHA)": true
-                    },
-                    "Firewalls and VPNs": {
-                        "Types of Firewalls": true,
-                        "VPNs (Virtual Private Networks)": true,
-                        "IPSec (Internet Protocol Security)": {
-                            "___urlPath___": "ipsec",
-                            "___md___": 200
-                        }
-                    }
+                "Chapter 8 - TCP/IP Suite, IP Packet, IP Addressing, and IPv4 vs IPv6": {
+                    "___urlPath___": "tcp-ip-suite-ip-packet-ip-addressing-and-ipv4-ipv6",
+                    "___md___": 798
                 },
-                "Wireless Networks": {
-                    "Introduction to Wireless Networking": true,
-                    "Wi-Fi Standards (802.11 a/b/g/n/ac/ax)": true,
-                    "Bluetooth and Zigbee": true,
-                    "Cellular Networks (2G, 3G, 4G, 5G)": true,
-                    "Ad-Hoc Networks and Mesh Networks": true
+                "Chapter 9 - TCP, UDP and Routing protocols": {
+                    "___urlPath___": "tcp-udp-routing-protocols",
+                    "___md___": 799
                 },
-                "Emerging Trends in Networking": {
-                    "Software-Defined Networking (SDN)": true,
-                    "Network Function Virtualization (NFV)": true,
-                    "IoT Networking": true,
-                    "Edge Computing and Fog Computing": true,
-                    "5G and Beyond": true
+                "Chapter 10 - Transport and Session Layer Mechanisms: Design, Connection Management, TCP Control, and Remote Procedure Calls": {
+                    "___urlPath___": "transport-and-session-layer-mechanisms",
+                    "___md___": 800
                 },
-                "Case Studies and Practical Applications": {
-                    "Case Study: Designing a Secure Enterprise Network": true,
-                    "Case Study: Analyzing Internet Routing": true,
-                    "Practical Project: Building a Simple Chat Application with Sockets": true,
-                    "Practical Project: Setting Up a Private Cloud Network": true
+                "Chapter 11 - Presentation Layer in the OSI Model": {
+                    "___urlPath___": "presenetaion-layer-osi-model",
+                    "___md___": 801
+                },
+                "Chapter 12 - Application Layer Services": {
+                    "___urlPath___": "application-layer-services",
+                    "___md___": 802
                 }
             },
             "Information & Cyber Security": {
