@@ -715,11 +715,23 @@ const mapper = {
                                 "useRef": true,
                                 "useMemo": true,
                                 "useCallback": true,
-                                "useImperativeHandle": true,
-                                "useLayoutEffect": true,
+                                "useImperativeHandle": {
+                                    "___urlPath___": "useImperativeHandle",
+                                    "___md___": 901
+                                },
+                                "useLayoutEffect": {
+                                    "___urlPath___": "uselayouteffect",
+                                    "___md___": 898
+                                },
                                 "useId": true,
-                                "useSyncExternalStore": true,
-                                "Custom Hooks": true
+                                "useSyncExternalStore": {
+                                    "___urlPath___": "use-sync-external-store",
+                                    "___md___": 897
+                                },
+                                "Custom Hooks": {
+                                    "___urlPath___": "custom-hooks",
+                                    "___md___": 896
+                                }
                             },
                             "Context API": {
                                 "___urlPath___": "context-api",
@@ -735,11 +747,27 @@ const mapper = {
                                 "Performance Optimization in Context API": true
                             },
                             "Routing": {
-                                "React Router Basics": true,
-                                "Route Matching and Nesting": true,
-                                "Dynamic Routing": true,
-                                "Programmatic Navigation": true,
-                                "Protected Routes": true
+                                "___urlPath___": "routing",
+                                "React Router Basics": {
+                                    "___urlPath___": "react-router-basics",
+                                    "___md___": 902
+                                },
+                                "Route Matching and Nesting": {
+                                    "___urlPath___": "route-matching-and-nesting",
+                                    "___md___": 903
+                                },
+                                "Dynamic Routing": {
+                                    "___urlPath___": "dynamic-routing",
+                                    "___md___": 904
+                                },
+                                "Programmatic Navigation": {
+                                    "___urlPath___": "programmatic-navigation",
+                                    "___md___": 905
+                                },
+                                "Protected Routes": {
+                                    "___urlPath___": "protected-route",
+                                    "___md___": 906
+                                }
                             },
                             "State Management": {
                                 "___urlPath___": "state-management",
@@ -761,9 +789,65 @@ const mapper = {
                                         "___urlPath___": "middleware-and-redux-thunk",
                                         "___md___": 741
                                     },
-                                    "Middleware and Redux Saga": {
+                                    "Middleware and Redux Saga (basics)": {
                                         "___urlPath___": "middleware-and-redux-saga",
                                         "___md___": 742
+                                    },
+                                    "Redux Saga - in depth": {
+                                        "___urlPath___": "redux-saga",
+                                        "Introduction to Redux Saga": {
+                                            "___urlPath___": "introduction-to-redux-saga",
+                                            "___md___": 907
+                                        },
+                                        "Setting Up Redux Saga Middleware": {
+                                            "___urlPath___": "setting-up-redux-saga-middleware",
+                                            "___md___": 908
+                                        },
+                                        "Core Concepts: Effects, takeEvery, takeLatest": {
+                                            "___urlPath___": "core-concepts-effects-takeevery-takelatest",
+                                            "___md___": 909
+                                        },
+                                        "Blocking vs Non-blocking Sagas": {
+                                            "___urlPath___": "blocking-vs-non-blocking-sagas",
+                                            "___md___": 910
+                                        },
+                                        "call, put, fork, cancel, and race": {
+                                            "___urlPath___": "call-put-fork-cancel-race",
+                                            "___md___": 911
+                                        },
+                                        "Handling API Requests and Side Effects": {
+                                            "___urlPath___": "handling-api-requests-and-side-effects",
+                                            "___md___": 912
+                                        },
+                                        "Error Handling and Retrying Strategies": {
+                                            "___urlPath___": "error-handling-and-retrying-strategies",
+                                            "___md___": 913
+                                        },
+                                        "Saga Watchers and Workers Pattern": {
+                                            "___urlPath___": "saga-watchers-and-workers-pattern",
+                                            "___md___": 914
+                                        },
+                                        "Advanced Patterns: Debouncing, Polling, Sequencing": {
+                                            "___urlPath___": "advanced-patterns-debouncing-polling-sequencing",
+                                            "___md___": 915
+                                        },
+                                        "Redux Saga Testing": {
+                                            "___urlPath___": "redux-saga-testing",
+
+                                        },
+                                        "Comparison: Redux Thunk vs Saga (FAANG Perspective)": {
+                                            "___urlPath___": "redux-thunk-vs-saga-faang-perspective",
+                                            "___md___": 916
+                                        },
+                                        "Comparison: Saga vs RTK Query": {
+                                            "___urlPath___": "saga-vs-rtk-query",
+                                            "___md___": 917
+
+                                        },
+                                        "Best Practices and Performance Optimization": {
+                                            "___urlPath___": "redux-saga-best-practices-and-performance-optimization",
+
+                                        }
                                     },
                                     "Redux Toolkit": {
                                         "___urlPath___": "redux-toolkit",
@@ -788,12 +872,41 @@ const mapper = {
                                 "Sass/SCSS": true
                             },
                             "Forms": {
-                                "Controlled Components": true,
-                                "Uncontrolled Components": true,
+                                "___urlPath___": "forms",
+                                "Controlled Components": {
+                                    "___urlPath___": "controlled-components",
+                                    "___md___": 918
+                                },
+                                "Uncontrolled Components": {
+                                    "___urlPath___": "uncontrolled-components",
+                                    "___md___": 919
+                                },
+                                "Controlled vs Uncontrolled Components - Interview Deep Dive": {
+                                    "___urlPath___": "controlled-vs-uncontrolled-components",
+                                    "___md___": 920
+                                },
+                                "Architecture of Forms in Real Products": {
+                                    "___urlPath___": "architecture-of-forms-in-real-products",
+                                    "___md___": 921
+                                },
                                 "Form Validation Libraries": {
-                                    "Formik": true,
-                                    "React Hook Form": true,
-                                    "Yup Validation": true
+                                    "___urlPath___": "form-validation-libraries",
+                                    "Formik": {
+                                        "___urlPath___": "formik",
+                                        "___md___": 922
+                                    },
+                                    "React Hook Form": {
+                                        "___urlPath___": "react-hook-form",
+                                        "___md___": 923
+                                    },
+                                    "Yup Validation": {
+                                        "___urlPath___": "yup-validation",
+                                        "___md___": 924
+                                    },
+                                    "Yup vs Zod (Schema validation libraries": {
+                                        "___urlPath___": "yup-vs-zod",
+                                        "___md___": 925
+                                    }
                                 }
                             },
                             "Performance Optimization": {
@@ -6788,6 +6901,17 @@ const mapper = {
                                         "___urlPath___": "medium-hard-problems",
                                         "___md___": 629
                                     }
+                                },
+                                "Pitfalls": {
+                                    "___urlPath___": "pitfalls",
+                                    "By Value vs By Reference mistake (primitve vs non-premitives)": {
+                                        "___urlPath___": "by-value-vs-by-ref",
+                                        "___md___": 899
+                                    },
+                                    "Shallow copy during backtracking problems": {
+                                        "___urlPath___": "copy-in-backtracking-problems",
+                                        "___md___": 900
+                                    }
                                 }
                             },
                             "Graph Inputs": {
@@ -7520,6 +7644,44 @@ const mapper = {
             },
             "Discrete Mathematics": {
                 "___urlPath___": "discrete-mathematics",
+                "Basics": {
+                    "Chapter 1: Basics Concepts of Set Theory": {
+                        "___urlPath___": "basics-concepts-of-set-theory",
+                        "___md___": 889
+                    },
+                    "Chapter 2: Introduction and Applications of Relational Theory": {
+                        "___urlPath___": "introduction-and-application-of-relational-theory",
+                        "___md___": 890
+                    },
+                    "Chapter 3: Basic Concept and Application of Theory of Functions": {
+                        "___urlPath___": "basic-concepts-and-application-of-theory-of-functions",
+                        "___md___": 891
+                    },
+                    "Chapter 4: Applications of Recurrence Relational Principles": {
+                        "___urlPath___": "applications-of-reccurrence-relational-principles",
+                        "___md___": 892
+                    },
+                    "Chapter 5: Theory of Graph and Its Applications": {
+                        "___urlPath___": "theory-of-graph-and-its-applications",
+                        "___md___": 893
+                    },
+                    "Chapter 6: Application of Matrix Theory in Graphs": {
+                        "___urlPath___": "application-of-matrix-theory-in-graph",
+                        "___md___": 894
+                    },
+                    "Chapter 7: Concepts of Data Structure": {
+                        "___urlPath___": "concepts-of-data-structure",
+                        "___md___": 895
+                    },
+                    "Chapter 8: Introduction to Algebra": {
+                        "___urlPath___": "introduction-to-algebra",
+                        "___md___": 888
+                    },
+                    "Chapter 9: Application of Boolean Algebra in Circuit Design": {
+                        "___urlPath___": "application-of-boolean-algebra-in-circuit-design",
+                        "___md___": 887
+                    }
+                },
                 "Logic": {
                     "___urlPath___": "logic",
                     "Propositional Logic": {
@@ -7664,13 +7826,8 @@ const mapper = {
                     "Group Structure Applications": true,
                     "Graph Coloring in Real Life": true,
                     "Combinatorics in Algorithm Analysis": true
-                },
-                "Problems (GATE PYQ)": {
-
-                },
-                "Revision Short Notes (Topic Wise)": {
-
                 }
+
             }
             ,
             "Digital Logic": {

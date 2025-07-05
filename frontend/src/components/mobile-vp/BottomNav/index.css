@@ -80,7 +80,7 @@
 
 .neon-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #39ff14;
   text-shadow:
     0 0 5px #39ff14,
@@ -100,7 +100,10 @@
     0 0 2px #fff,
     0 0 4px #0ff,
     0 0 6px #0ff;
-  margin-top: -10px;
+  margin-top: -0px;
+  text-align: left;
+  margin-left: 10px;
+  border-top: solid 1px #fff;
 }
 
 

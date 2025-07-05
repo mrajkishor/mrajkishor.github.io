@@ -625,7 +625,7 @@ export default function Profile() {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div">
-                                            O.C.E.A.N - Concept Notes (for Developers and College Graduates)
+                                            StackSynapse.com - Concept Notes (for Developers and College Graduates)
                                         </Typography>
 
                                     </CardContent>

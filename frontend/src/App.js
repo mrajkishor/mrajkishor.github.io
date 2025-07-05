@@ -179,11 +179,12 @@ const App = () => {
           {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
 
           {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
-            <h1 class="neon-title flicker">O.C.E.A.N.</h1>
+            <h1 class="neon-title flicker">StackSynapse.com</h1>
             {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
             <p class="neon-slogan flicker-slow" >
 
-              {main_slogans[index]}
+              {/* {main_slogans[index]} */}
+              Concept Notes | Full Stack / Computer & Data Science
             </p>
 
 
@@ -197,7 +198,7 @@ const App = () => {
             >
               <div className="sidebar-logo">
                 {/* My<span className="logo-highlight">N😁tes</span> */}
-                My<span className="logo-highlight">N😁tes</span>
+                Stack<span className="logo-highlight">🧠Synapse</span>
               </div>
 
               <div className="sidebar-slogan">
