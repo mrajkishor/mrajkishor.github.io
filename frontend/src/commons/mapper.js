@@ -24,6 +24,13 @@ const mapper = {
                         "Web Browsers and Servers": {
                             "___urlPath___": "web-browsers-and-servers",
                             "___md___": 64
+                        },
+                        "Case Studies": {
+                            "___urlPath___": "case-studies",
+                            "Understanding GitHub Pages + Custom Domain Mapping (with HTTPS)": {
+                                "___urlPath___": "understanding-github-pages-custom-domain-mapping",
+                                "___md___": 926
+                            }
                         }
                     },
                     "HTML (HyperText Markup Language)": {
@@ -4967,7 +4974,30 @@ const mapper = {
                             },
                             "Classic Solutions Architecture 🟡": {
                                 "___urlPath___": "classic-solutions-architecture",
-                                "___md___": 62
+                                "Overview": {
+                                    "___urlPath___": "overview",
+                                    "___md___": 931
+                                },
+                                "Architecting a Stateless Web App from Scratch": {
+                                    "___urlPath___": "architecturing-a-stateless-web-app-from-scratch",
+                                    "___md___": 932
+                                },
+                                "Building a Stateful, Scalable Web App": {
+                                    "___urlPath___": "building-a-stateful-scalable-web-app",
+                                    "___md___": 937
+                                },
+                                "Building a Scalable Stateful Web App: MyWordPress.com": {
+                                    "___urlPath___": "building-scalable-stateful-web-app-my-wordpress-dot-com",
+                                    "___md___": 938
+                                },
+                                "Instantiating Scalable Web Apps": {
+                                    "___urlPath___": "instantiating-scalable-web-apps",
+                                    "___md___": 939
+                                },
+                                "Elastic Beanstalk – Deep Dive": {
+                                    "___urlPath___": "elastic-beanstalk-deep-dive",
+                                    "___md___": 940
+                                }
                             },
                             "Amazon S3 🟡": {
                                 "___urlPath___": "amazon-s3",
@@ -6761,6 +6791,44 @@ const mapper = {
                     "TypeScript": {
                         "___urlPath___": "typescript",
                         "___md___": 459
+                    },
+                    "User Input/output": {
+                        "___urlPath___": "user-input-output",
+                        "Java": {
+                            "___urlPath___": "java",
+                            "___md___": 927
+                        },
+                        "JavaScript / TypeScript": {
+                            "___urlPath___": "javascript-typescript",
+                            "___md___": 928
+                        },
+                        "Python": {
+                            "___urlPath___": "python",
+                            "___md___": 929
+                        },
+                        "C": {
+                            "___urlPath___": "c",
+                            "___md___": 930
+                        }
+                    },
+                    "Functions: Pass by Value vs Pass by Reference": {
+                        "___urlPath___": "functions-pass-by-value-vs-pass-by-reference",
+                        "JavaScript": {
+                            "___urlPath___": "javascript",
+                            "___md___": 933
+                        },
+                        "Java": {
+                            "___urlPath___": "Java",
+                            "___md___": 934
+                        },
+                        "Python": {
+                            "___urlPath___": "python",
+                            "___md___": 935
+                        },
+                        "C": {
+                            "___urlPath___": "c",
+                            "___md___": 936
+                        }
                     },
                     "DSA Patterns (Cheatsheet)": {
                         "___urlPath___": "dsa-patterns-cheatsheet",
