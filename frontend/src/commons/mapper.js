@@ -306,6 +306,10 @@ const mapper = {
                                     "___md___": 44
                                 }
                             }
+                        },
+                        "Modern UI/UX Design": {
+                            "___urlPath___": "ux-design-systems",
+                            "___md___": 944
                         }
                     }
                 },
@@ -6788,6 +6792,11 @@ const mapper = {
                         "___urlPath___": "javascript",
                         "___md___": 458
                     },
+                    "JavaScript Collections": {
+                        "___urlPath___": "javascript-collections",
+                        "___md___": 943
+
+                    },
                     "TypeScript": {
                         "___urlPath___": "typescript",
                         "___md___": 459
@@ -7213,6 +7222,18 @@ const mapper = {
                                 "___md___": 682
                             }
                         },
+                        "Arrays": {
+                            "easy": {
+                                "Check if the array is sorted": {
+                                    "___urlPath___": "check-if-the-array-is-sorted",
+                                    "___md___": 941
+                                },
+                                "Remove duplicates from Sorted array": {
+                                    "___urlPath___": "remove-duplicates-from-sorted-array",
+                                    "___md___": 942
+                                }
+                            }
+                        }
 
 
                     }

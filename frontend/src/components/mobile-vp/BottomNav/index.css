@@ -3,7 +3,7 @@
 .bottom-nav {
   border-radius: 50px 50px 0 0;
   position: fixed;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   right: 0;
   height: 64px;
@@ -11,12 +11,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: solid thick #007bff;
+  border-top: solid thick #000;
   z-index: 1000;
   font-size: 8px;
   
   /* Neon flicker animation */
-  animation: neon-flicker 2s infinite;
+  /* animation: neon-flicker 2s infinite; */
 }
 
   @keyframes neon-flicker {
@@ -110,11 +110,11 @@
 
 /* Flicker Animation */
 .flicker {
-  animation: flicker 2s infinite;
+  /* animation: flicker 2s infinite; */
 }
 
 .flicker-slow {
-  animation: flicker 3s infinite;
+  /* animation: flicker 3s infinite; */
 }
 
 @keyframes flicker {

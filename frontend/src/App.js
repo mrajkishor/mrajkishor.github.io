@@ -157,72 +157,72 @@ const App = () => {
     }
   }, [location.pathname]);
   return (
-    <div key={count} style={{
-
-      position: "fixed",
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-
-
-      display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333"
-    }}>
+    <>
+      <div key={count} style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
 
 
-
-      {/* <AnimatedTileBackground /> */}
-
-      {!isMobile && (
-        <>
-
-          {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
-
-          {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
-            <h1 class="neon-title flicker">StackSynapse.com</h1>
-            {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
-            <p class="neon-slogan flicker-slow" >
-
-              {/* {main_slogans[index]} */}
-              Concept Notes | Full Stack / Computer & Data Science
-            </p>
+        display: "flex", height: "100vh", overflow: "hidden", fontFamily: "Arial, sans-serif", color: "#333"
+      }}>
 
 
-          </div> :
+
+        {/* <AnimatedTileBackground /> */}
+
+        {!isMobile && (
+          <>
+
+            {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
+
+            {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
+              <h1 class="neon-title flicker">StackSynapse.com</h1>
+              {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
+              <p class="neon-slogan flicker-slow" >
+
+                {/* {main_slogans[index]} */}
+                Concept Notes | Full Stack / Computer & Data Science
+              </p>
 
 
-            <div
-              className="logo-wrapper"
-              onClick={handleLogoClick}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="sidebar-logo">
-                {/* My<span className="logo-highlight">N😁tes</span> */}
-                Stack<span className="logo-highlight">🧠Synapse</span>
-              </div>
+            </div> :
 
-              <div className="sidebar-slogan">
 
-                <div style={{
-                  opacity: fade ? 1 : 0,
-                  transition: "opacity 0.5s ease-in-out"
-                }}>
-                  {slogan}
+              <div
+                className="logo-wrapper"
+                onClick={handleLogoClick}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="sidebar-logo">
+                  {/* My<span className="logo-highlight">N😁tes</span> */}
+                  Stack<span className="logo-highlight">🧠Synapse</span>
                 </div>
 
+                <div className="sidebar-slogan">
+
+                  <div style={{
+                    opacity: fade ? 1 : 0,
+                    transition: "opacity 0.5s ease-in-out"
+                  }}>
+                    {slogan}
+                  </div>
+
+                </div>
+
+
+
+                {/* <div class="tagline">Organized Compendium for Efficient & Advanced Notetaking</div> */}
+
               </div>
 
 
-
-              {/* <div class="tagline">Organized Compendium for Efficient & Advanced Notetaking</div> */}
-
-            </div>
+            }
 
 
-          }
-
-
-          {/* <div
+            {/* <div
             className="logo-wrapper"
             onClick={handleLogoClick}
             style={{ cursor: "pointer" }}
@@ -241,97 +241,97 @@ const App = () => {
 
             </div>
           </div> */}
-        </>
-      )}
+          </>
+        )}
 
 
-      {/* Add logo and menu here */}
-      {/* Toggle Button */}
-      {!isMobile && (<div
-        className={!url.includes("contents") && "pleaseGlowMe"}
-        style={{
+        {/* Add logo and menu here */}
+        {/* Toggle Button */}
+        {!isMobile && (<div
+          className={!url.includes("contents") && "pleaseGlowMe"}
+          style={{
 
 
 
-          cursor: "pointer",
-          position: 'fixed',
-          top: '10px',
-          left: '10px',
-          fontWeight: 'bold',
-          // backgroundColor: showSideBar ? "#dc3545" : "#007bff", // Red for close, blue for open
-          // color: "#fff",
-          color: showSideBar ? "#fff" : "#fff",
-          textAlign: "center",
-          borderRadius: '5px',
-          // boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
-          // textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
-          padding: '5px',
-          // transition: 'box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease',
-          zIndex: 1000,
-        }}
-        onClick={() => setShowSideBar(!showSideBar)}
-        onMouseEnter={(e) => {
-          // e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.5)';
-          // e.currentTarget.style.transform = 'scale(1.05)';
-        }}
-        onMouseLeave={(e) => {
-          // e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
-          // e.currentTarget.style.transform = 'scale(1)';
-        }}
-      >
-        <div style={{
-          padding: "10px",
-          fontSize: "x-large",
+            cursor: "pointer",
+            position: 'fixed',
+            top: '10px',
+            left: '10px',
+            fontWeight: 'bold',
+            // backgroundColor: showSideBar ? "#dc3545" : "#007bff", // Red for close, blue for open
+            // color: "#fff",
+            color: showSideBar ? "#fff" : "#fff",
+            textAlign: "center",
+            borderRadius: '5px',
+            // boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
+            // textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
+            padding: '5px',
+            // transition: 'box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease',
+            zIndex: 1000,
+          }}
+          onClick={() => setShowSideBar(!showSideBar)}
+          onMouseEnter={(e) => {
+            // e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.5)';
+            // e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseLeave={(e) => {
+            // e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
+            // e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <div style={{
+            padding: "10px",
+            fontSize: "x-large",
 
-          // background: "white",
-          borderRadius: "10px"
-          /* margin-right: 16px; */
-          // textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7)"
-        }}>
-          {showSideBar ? "✖" : "☰"}
+            // background: "white",
+            borderRadius: "10px"
+            /* margin-right: 16px; */
+            // textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 123, 255, 0.7)"
+          }}>
+            {showSideBar ? "✖" : "☰"}
+          </div>
+        </div>)
+        }
+
+        {/* Sidebar */}
+        <div className={`overlayWrapper ${showSideBar ? "show" : "hide"}`}
+          onClick={(e) => {
+            if (e.target.classList.contains("overlayWrapper")) {
+              setShowSideBar(false); // Close the sidebar when clicking on the blurred background
+            }
+          }}
+
+        >
+          <Sidebar isOpen={showSideBar} setIsOpen={setShowSideBar} />
         </div>
-      </div>)
-      }
-
-      {/* Sidebar */}
-      <div className={`overlayWrapper ${showSideBar ? "show" : "hide"}`}
-        onClick={(e) => {
-          if (e.target.classList.contains("overlayWrapper")) {
-            setShowSideBar(false); // Close the sidebar when clicking on the blurred background
-          }
-        }}
-
-      >
-        <Sidebar isOpen={showSideBar} setIsOpen={setShowSideBar} />
-      </div>
 
 
 
 
-      {/* Main Content */}
-      <div
-        ref={mainRef}
-        className="main-content-wrapper"
-      >
+        {/* Main Content */}
+        <div
+          ref={mainRef}
+          className="main-content-wrapper"
+        >
 
-        <Routes>
-          <Route path="/profile" element={<MyProfile />} />
-          <Route path="/contents/*" element={<MarkdownPage wrapperRef={mainRef} key={location.pathname} />} />
-          <Route
-            path="/"
-            element={
-              <div style={{ margin: "0 auto" }}>
-                {/* <h1 style={{ color: "#007bff", textAlign: "center" }}>Full Stack Developers' Manual</h1> */}
-                {/* <p style={{ fontSize: "1.2em", lineHeight: "1.6" }}>
+          <Routes>
+            <Route path="/profile" element={<MyProfile />} />
+            <Route path="/contents/*" element={<MarkdownPage wrapperRef={mainRef} key={location.pathname} />} />
+            <Route
+              path="/"
+              element={
+                <div style={{ margin: "0 auto" }}>
+                  {/* <h1 style={{ color: "#007bff", textAlign: "center" }}>Full Stack Developers' Manual</h1> */}
+                  {/* <p style={{ fontSize: "1.2em", lineHeight: "1.6" }}>
                   Welcome to the Full Stack Developers' Manual! This guide is your one-stop resource for excelling in full-stack development. It covers everything you need, from front-end and back-end development to DevOps, databases, operating systems, computer networks, and software engineering.
                 </p> */}
 
-                {/* <h2 style={{ color: "#555", borderBottom: "2px solid #007bff", paddingBottom: "5px", "marginTop": "50px" }}>Full Stack Developer Course Syllabus 2024</h2> */}
+                  {/* <h2 style={{ color: "#555", borderBottom: "2px solid #007bff", paddingBottom: "5px", "marginTop": "50px" }}>Full Stack Developer Course Syllabus 2024</h2> */}
 
-                <Syllabus />
+                  <Syllabus />
 
-                {/* Core Concepts Section */}
-                {/* <div style={{ marginBottom: "20px" }}>
+                  {/* Core Concepts Section */}
+                  {/* <div style={{ marginBottom: "20px" }}>
                     <h3 style={{ color: "#007bff" }}>1. Programming in Java</h3>
                     <ul style={{ paddingLeft: "20px", fontSize: "1.1em", lineHeight: "1.8" }}>
                       <li>
@@ -359,7 +359,7 @@ const App = () => {
                   </div> */}
 
 
-                {/* <div className="footer">
+                  {/* <div className="footer">
                   <p style={{ fontSize: "1.1em", color: "#666" }}>
                     <p style={{
                       fontSize: "1.1em", color: "#555", marginTop: "20px", padding: "10px",
@@ -395,19 +395,22 @@ const App = () => {
 
 
                 </div> */}
-              </div>
-            }
-          />
-          <Route path="*" element={<NotFound />} /> {/* Catch-All Route */}
+                </div>
+              }
+            />
+            <Route path="*" element={<NotFound />} /> {/* Catch-All Route */}
 
-        </Routes>
-
-
-      </div>
-      {isMobile && (<BottomNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />)}
+          </Routes>
 
 
-    </div >
+        </div>
+        {isMobile && (<BottomNav showSideBar={showSideBar} setShowSideBar={setShowSideBar} />)}
+
+
+      </div >
+
+    </>
+
   );
 };
 

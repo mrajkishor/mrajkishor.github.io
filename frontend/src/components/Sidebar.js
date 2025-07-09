@@ -153,11 +153,25 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         fontSize: "16px",
                     }}
                 >
-                    About Maintainer 👨‍💻
+                    {/* About Maintainer 👨‍💻 */}
+
                 </span>
             </div>)}
 
-        </div>
+            <div style={{
+                position: "fixed",
+                bottom: "0px",
+                left: "0px",
+                right: "0px",
+                margin: "auto",
+                "textAlign": "center",
+                "color": "white",
+                "padding": "10px",
+                "fontSize": "10px"
+            }}>
+                © 2025 | All Rights Reserved
+            </div>
+        </div >
     );
 };
 
