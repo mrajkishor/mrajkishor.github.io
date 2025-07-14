@@ -7,7 +7,7 @@ const Footer = () => {
                 Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
             </p> */}
             <p>
-                All Rights Reserved | Copyright © 2025 | <a href="mailto:mrajkishor331@gmail.com">Contact</a>
+                All Rights Reserved | Copyright © 2025 | <a href="mailto:mrajkishor331@gmail.com"> Contact</a>
             </p>
             {/* <div className="footer-links">
 

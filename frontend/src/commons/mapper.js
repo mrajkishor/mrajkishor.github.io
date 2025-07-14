@@ -754,8 +754,14 @@ const mapper = {
                                     "___urlPath___": "consuming-context",
                                     "___md___": 751
                                 },
-                                "Context with useContext Hook": true,
-                                "Performance Optimization in Context API": true
+                                "Context with useContext Hook": {
+                                    "___urlPath___": "context-with-usecontext-hook",
+                                    "___md___": 955
+                                },
+                                "Performance Optimization in Context API": {
+                                    "___urlPath___": "performance-optimisation-in-context-api",
+                                    "___md___": 956
+                                }
                             },
                             "Routing": {
                                 "___urlPath___": "routing",
@@ -874,6 +880,7 @@ const mapper = {
                                 "Recoil": true
                             },
                             "Styling": {
+                                "Tailwind": true,
                                 "CSS-in-JS": {
                                     "Styled-Components": true,
                                     "Emotion": true
@@ -930,7 +937,10 @@ const mapper = {
                             },
                             "Advanced Topics": {
                                 "___urlPath___": "advanced-topics",
-                                "Portals": true,
+                                "Portals": {
+                                    "___urlPath___": "portals",
+                                    "___md___": 957
+                                },
                                 "Error Boundaries and Error Handling": true,
                                 "Render Props": true,
                                 "Higher-Order Components (HOC)": {
@@ -1539,6 +1549,10 @@ const mapper = {
                                     "___urlPath___": "client-side-data-fetching-useswr-fetch-axios",
                                     "___md___": 425
                                 },
+                                "Axios Vs Fetch": {
+                                    "___urlPath___": "axios-vs-fetch",
+                                    "___md___": 958
+                                },
                                 "Incremental Static Regeneration (ISR)": {
                                     "___urlPath___": "incremental-static-regeneration",
                                     "___md___": 426
@@ -1900,7 +1914,7 @@ const mapper = {
                                     },
                                     "JWT": {
                                         "___urlPath___": "jwt",
-                                        "___md___": 57
+                                        "___md___": 959
                                     },
                                     "OAuth2": {
                                         "___urlPath___": "oauth2",
@@ -4947,7 +4961,30 @@ const mapper = {
                             },
                             "Amazon EC2 - Basics 🟡": {
                                 "___urlPath___": "amazon-ec2-basics",
-                                "___md___": 62
+                                "Overview": {
+                                    "___urlPath___": "overview",
+                                    "___md___": 945
+                                },
+                                "Hands-On Guide: Launching an EC2 Instance Running Linux": {
+                                    "___urlPath___": "hands-on-guide-launching-an-ec2-instance-running-linux",
+                                    "___md___": 946
+                                },
+                                "EC2 Instance Types": {
+                                    "___urlPath___": "ec2-instance-types",
+                                    "___md___": 947
+                                },
+                                "EC2 Instance Features": {
+                                    "___urlPath___": "ec2-instance-features",
+                                    "___md___": 949
+                                },
+                                "Measuring EC2 Instance Performance": {
+                                    "___urlPath___": "measuring-ec2-instance-performance",
+                                    "___md___": 948
+                                },
+                                "AWS Security Groups": {
+                                    "___urlPath___": "aws-security-groups",
+                                    "___md___": 950
+                                }
                             },
                             "Amazon EC2 - Associate 🟡": {
                                 "___urlPath___": "amazon-ec2-associate",
@@ -6904,6 +6941,10 @@ const mapper = {
                                     "CRUD with PriorityQueue and Deque (in Java) - Useful": {
                                         "___urlPath___": "crud-with-priorityqueue-and-deque",
                                         "___md___": 627
+                                    },
+                                    "Extra: Monotonic Stack Vs Monotonic Queue": {
+                                        "___urlPath___": "extra-monotonic-stack-vs-monotonic-queue",
+                                        "___md___": 960
                                     }
                                 },
                                 "6. Generating subsets, permutations, combinations?": {
@@ -8412,27 +8453,29 @@ const mapper = {
                 }
             },
 
+
             "Operating System": {
                 "___urlPath___": "operating-system",
-                "Introduction to Operating Systems": {
-                    "What is an Operating System?": true,
-                    "Functions of an Operating System": true,
-                    "Types of Operating Systems (Batch, Time-Sharing, Distributed, etc.)": true,
-                    "Examples of Popular Operating Systems (Linux, Windows, macOS)": true
-                },
-                "System Structures": {
-                    "Operating System Services": true,
-                    "System Calls": {
-                        "Types of System Calls": true,
-                        "Examples in Linux and Windows": true
+                "System Calls and Structures": {
+                    "___urlPath___": "system-calls-and-structures",
+                    "What is a System Call?": {
+                        "___urlPath___": "what-is-a-system-call",
+                        "___md___": 951
                     },
-                    "System Programs": true,
-                    "Operating System Architectures": {
-                        "Monolithic Kernel": true,
-                        "Microkernel": true,
-                        "Hybrid Systems": true
+                    "Types of System Calls": {
+                        "___urlPath___": "types-of-system-calls",
+                        "___md___": 952
+                    },
+                    "Examples in Linux and Windows": {
+                        "___urlPath___": "examples-in-linux-and-windows",
+                        "___md___": 953
+                    },
+                    "User Mode vs Kernel Mode": {
+                        "___urlPath___": "user-mode-vs-kernel-mode",
+                        "___md___": 954
                     }
                 },
+
                 "Processes and Threads": {
                     "Processes": {
                         "What is a Process?": true,
@@ -8444,22 +8487,46 @@ const mapper = {
                         "What is a Thread?": true,
                         "User-Level vs Kernel-Level Threads": true,
                         "Multithreading Models": true
-                    },
-                    "Inter-Process Communication (IPC)": {
-                        "Shared Memory": true,
-                        "Message Passing": true,
-                        "Pipes and Sockets": true
                     }
                 },
-                "Process Scheduling": {
-                    "Introduction to Scheduling": true,
-                    "Types of Scheduling Algorithms": {
+
+                "Inter-Process Communication (IPC)": {
+                    "Shared Memory": true,
+                    "Message Passing": true,
+                    "Pipes and Sockets": true
+                },
+
+                "Concurrency and Synchronization": {
+                    "Critical Section Problem": true,
+                    "Peterson’s Algorithm": true,
+                    "Semaphores": {
+                        "Binary and Counting Semaphores": true,
+                        "Semaphore Operations (wait/signal)": true
+                    },
+                    "Mutex and Locks": true,
+                    "Monitors": true,
+                    "Classical Problems": {
+                        "Producer-Consumer": true,
+                        "Reader-Writer": true,
+                        "Dining Philosophers": true
+                    }
+                },
+
+                "Deadlocks": {
+                    "What is a Deadlock?": true,
+                    "Conditions for Deadlock": true,
+                    "Deadlock Prevention": true,
+                    "Deadlock Avoidance (Banker's Algorithm)": true,
+                    "Deadlock Detection and Recovery": true
+                },
+
+                "CPU Scheduling": {
+                    "Scheduling Algorithms": {
                         "First-Come-First-Serve (FCFS)": true,
-                        "Shortest Job Next (SJN)": true,
+                        "Shortest Job Next (SJN) / SJF": true,
                         "Priority Scheduling": true,
                         "Round Robin (RR)": true,
-                        "Multilevel Queue Scheduling": true,
-                        "Multilevel Feedback Queue Scheduling": true
+                        "Multilevel Queue Scheduling": true
                     },
                     "Scheduling Metrics": {
                         "CPU Utilization": true,
@@ -8467,58 +8534,11 @@ const mapper = {
                         "Turnaround Time": true,
                         "Waiting Time": true,
                         "Response Time": true
-                    }
+                    },
+                    "Preemptive vs Non-Preemptive": true
                 },
-                "Memory Management": {
-                    "Memory Hierarchy": {
-                        "Registers": true,
-                        "Cache": true,
-                        "Main Memory": true,
-                        "Virtual Memory": true
-                    },
-                    "Memory Allocation": {
-                        "Contiguous Allocation": true,
-                        "Paging": true,
-                        "Segmentation": true,
-                        "Paging vs Segmentation": true
-                    },
-                    "Virtual Memory": {
-                        "Demand Paging": true,
-                        "Page Replacement Algorithms": {
-                            "FIFO": true,
-                            "Optimal": true,
-                            "LRU": true,
-                            "Clock": true
-                        },
-                        "Thrashing": true
-                    }
-                },
-                "File Systems": {
-                    "File Concepts": {
-                        "File Attributes": true,
-                        "File Operations": true,
-                        "File Types": true
-                    },
-                    "File System Implementation": {
-                        "Directory Structures": true,
-                        "Allocation Methods": {
-                            "Contiguous Allocation": true,
-                            "Linked Allocation": true,
-                            "Indexed Allocation": true
-                        },
-                        "Free-Space Management": true
-                    },
-                    "File System Examples": {
-                        "FAT32": true,
-                        "NTFS": true,
-                        "Ext4": true
-                    }
-                },
-                "Input/Output Management": {
-                    "I/O Hardware": {
-                        "Controllers and Devices": true,
-                        "Device Drivers": true
-                    },
+
+                "I/O Scheduling": {
                     "I/O Techniques": {
                         "Polling": true,
                         "Interrupts": true,
@@ -8532,49 +8552,41 @@ const mapper = {
                         "LOOK and C-LOOK": true
                     }
                 },
-                "Deadlocks": {
-                    "What is a Deadlock?": true,
-                    "Conditions for Deadlock": true,
-                    "Deadlock Prevention": true,
-                    "Deadlock Avoidance (Banker's Algorithm)": true,
-                    "Deadlock Detection and Recovery": true
-                },
-                "Security and Protection": {
-                    "Goals of Protection": true,
-                    "Access Control Mechanisms": true,
-                    "Security Threats and Attacks": true,
-                    "User Authentication Methods": true,
-                    "Encryption Techniques": true
-                },
-                "Virtualization": {
-                    "Introduction to Virtualization": true,
-                    "Types of Virtualization (Full, Para, Hardware)": true,
-                    "Hypervisors (Type 1 and Type 2)": true,
-                    "Containers and OS-Level Virtualization (Docker)": true
-                },
-                "Distributed Systems": {
-                    "Introduction to Distributed Systems": true,
-                    "Advantages and Challenges of Distributed Systems": true,
-                    "Distributed File Systems": {
-                        "HDFS (Hadoop Distributed File System)": true,
-                        "NFS (Network File System)": true
+
+                "Memory Management": {
+                    "Contiguous Allocation": true,
+                    "Paging": {
+                        "Single-Level Paging": true,
+                        "Multi-Level Paging": true,
+                        "TLB and EMAT": true
                     },
-                    "Distributed Synchronization": {
-                        "Lamport Timestamps": true,
-                        "Election Algorithms (Bully, Ring)": true
-                    }
+                    "Segmentation": true,
+                    "Paging vs Segmentation": true
                 },
-                "Real-Time Operating Systems": {
-                    "Introduction to RTOS": true,
-                    "Hard vs Soft Real-Time Systems": true,
-                    "Task Scheduling in RTOS": true,
-                    "Examples of RTOS (VxWorks, FreeRTOS)": true
+
+                "Virtual Memory": {
+                    "Demand Paging": true,
+                    "Page Fault and Handling": true,
+                    "Page Replacement Algorithms": {
+                        "FIFO": true,
+                        "Optimal": true,
+                        "LRU": true,
+                        "Clock": true
+                    },
+                    "Thrashing and Working Set": true
                 },
-                "Case Studies and Hands-On Projects": {
-                    "Case Study: Analyzing Linux Kernel Architecture": true,
-                    "Case Study: Comparing Windows and macOS File Systems": true,
-                    "Practical Project: Building a Simple Shell Program": true,
-                    "Practical Project: Simulating a Process Scheduler": true
+                "File Systems": {
+                    "File Concepts": {
+                        "File Attributes and Operations": true,
+                        "Access Methods": true
+                    },
+                    "Directory Structures": true,
+                    "File Allocation Methods": {
+                        "Contiguous": true,
+                        "Linked": true,
+                        "Indexed": true
+                    },
+                    "Free Space Management": true
                 }
             },
             "Computer Networks": {
@@ -9264,31 +9276,105 @@ const mapper = {
             },
             "Database Management and Warehousing": {
                 "___urlPath___": "database-warehousing",
+
                 "Database Fundamentals": {
                     "___urlPath___": "database-fundamentals",
+
                     "ER-Model and Relational Model": {
-                        "___urlPath___": "er-model",
+                        "___urlPath___": "er-relational-model",
+
                         "ER-Model": {
                             "___urlPath___": "er-model",
                             "___md___": 153
+                        },
+
+                        "Relational Model": {
+                            "___urlPath___": "relational-model",
+                            "___md___": 961
                         }
                     },
-                    "Relational Algebra and Tuple Calculus": true,
-                    "SQL and Integrity Constraints": true
-                },
-                "Data Processing": {
-                    "File Organization and Indexing": true,
-                    "Data Transformation Techniques": {
-                        "Normalization and Discretization": true,
-                        "Sampling and Compression": true
+
+                    "Relational Algebra and Calculus": {
+                        "___urlPath___": "relational-algebra-calculus",
+
+                        "Relational Algebra": {
+                            "___urlPath___": "relational-algebra",
+                            "___md___": 962
+                        },
+
+                        "Tuple Relational Calculus": {
+                            "___urlPath___": "tuple-relational-calculus",
+                            "___md___": 963
+                        }
+                    },
+
+                    "SQL and Constraints": {
+                        "___urlPath___": "sql-constraints",
+
+                        "SQL (Structured Query Language)": {
+                            "___urlPath___": "sql",
+                            "___md___": 964
+                        },
+
+                        "Integrity Constraints": {
+                            "___urlPath___": "integrity-constraints",
+                            "___md___": 965
+                        }
+                    },
+
+                    "Normalization and Normal Forms": {
+                        "___urlPath___": "normalization",
+
+                        "1NF, 2NF, 3NF, BCNF": {
+                            "___urlPath___": "normal-forms",
+                            "___md___": 966
+                        }
                     }
                 },
-                "Data Warehousing": {
-                    "Schema for Multidimensional Data Models": true,
-                    "Concept Hierarchies": true,
-                    "Measures and Computations": true
+
+                "Database Storage and Indexing": {
+                    "___urlPath___": "storage-indexing",
+
+                    "File Organization": {
+                        "___urlPath___": "file-organization",
+                        "___md___": 967
+                    },
+
+                    "Indexing Techniques": {
+                        "___urlPath___": "indexing-techniques",
+                        "___md___": 968
+                    }
+                },
+
+                "Data Warehousing Concepts": {
+                    "___urlPath___": "data-warehousing",
+
+                    "Data Preprocessing Techniques": {
+                        "___urlPath___": "data-preprocessing",
+                        "___md___": 969
+                    },
+
+                    "Schema Modeling": {
+                        "___urlPath___": "schema-modeling",
+
+                        "Multidimensional Schemas": {
+                            "___urlPath___": "multidimensional-schemas",
+                            "___md___": 970
+                        },
+
+                        "Concept Hierarchies": {
+                            "___urlPath___": "concept-hierarchies",
+                            "___md___": 971
+                        },
+
+                        "Measures: Categorization and Computation": {
+                            "___urlPath___": "measures",
+                            "___md___": 972
+                        }
+                    }
                 }
-            },
+            }
+            ,
             "Machine Learning": {
                 "___urlPath___": "machine-learning",
                 "Supervised Learning": {
