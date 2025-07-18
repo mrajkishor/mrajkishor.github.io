@@ -880,7 +880,84 @@ const mapper = {
                                 "Recoil": true
                             },
                             "Styling": {
-                                "Tailwind": true,
+                                "Tailwind": {
+                                    "___urlPath___": "tailwind-css",
+                                    "Core Concepts and Setup": {
+                                        "___urlPath___": "core-setup",
+                                        "___md___": 1101
+                                    },
+                                    "Responsive Design and Breakpoints": {
+                                        "___urlPath___": "responsive-breakpoints",
+                                        "___md___": 1102
+                                    },
+                                    "Typography and Layout": {
+                                        "___urlPath___": "typography-layout",
+                                        "___md___": 1103
+                                    },
+                                    "Custom Theme and Config Extensions": {
+                                        "___urlPath___": "custom-theme-config",
+                                        "___md___": 1104
+                                    },
+                                    "Component Architecture with Tailwind": {
+                                        "___urlPath___": "component-architecture",
+                                        "___md___": 1105
+                                    },
+                                    "Dark Mode and Accessibility": {
+                                        "___urlPath___": "darkmode-accessibility",
+                                        "___md___": 1106
+                                    },
+                                    "Forms and Inputs Styling": {
+                                        "___urlPath___": "forms-inputs-tailwind",
+                                        "___md___": 1107
+                                    },
+                                    "Animations and Transitions": {
+                                        "___urlPath___": "animations-transitions",
+                                        "___md___": 1108
+                                    },
+                                    "Utility-First Design Patterns": {
+                                        "___urlPath___": "utility-patterns",
+                                        "___md___": 1109
+                                    },
+                                    "Reusable Design Tokens with Tailwind": {
+                                        "___urlPath___": "design-tokens-tailwind",
+                                        "___md___": 1110
+                                    },
+                                    "Tailwind with Component Libraries": {
+                                        "___urlPath___": "tailwind-ui-integrations",
+                                        "Shadcn/ui Integration": true,
+                                        "Headless UI Usage": true,
+                                        "Radix UI Styling": true
+                                    },
+                                    "Tailwind + React Best Practices": {
+                                        "___urlPath___": "tailwind-react-best",
+                                        "Separation of Concerns": true,
+                                        "Conditional Styling with `clsx` / `classnames`": true,
+                                        "Handling Dynamic States and Variants": true
+                                    },
+                                    "Performance Optimization": {
+                                        "___urlPath___": "tailwind-performance",
+                                        "Purging Unused Styles": true,
+                                        "Build Size Reduction Techniques": true,
+                                        "CDN vs Compiled Strategy": true
+                                    },
+                                    "Tailwind + TypeScript + Monorepos": {
+                                        "___urlPath___": "tailwind-typescript-monorepo",
+                                        "Typed Tailwind Configs": true,
+                                        "Scalable Folder Structures": true
+                                    },
+                                    "Testing and Theming Strategy": {
+                                        "___urlPath___": "tailwind-testing-theming",
+                                        "Visual Regression Testing (Storybook / Chromatic)": true,
+                                        "Theme Switching Strategy (Light/Dark/Custom)": true
+                                    },
+                                    "Comparison with Other Styling Approaches": {
+                                        "___urlPath___": "tailwind-comparisons",
+                                        "Tailwind vs CSS Modules": true,
+                                        "Tailwind vs Styled-Components / Emotion": true,
+                                        "When NOT to Use Tailwind": true
+                                    }
+                                }
+                                ,
                                 "CSS-in-JS": {
                                     "Styled-Components": true,
                                     "Emotion": true
@@ -934,26 +1011,382 @@ const mapper = {
                                 "Windowing with react-window": true,
                                 "Concurrent Rendering": true,
                                 "Automatic Batching": true
-                            },
+                            }
+                            ,
                             "Advanced Topics": {
                                 "___urlPath___": "advanced-topics",
+
+                                "Data Fetching": {
+                                    "___urlPath___": "data-fetching",
+                                    "Client-side Data Fetching": {
+                                        "___urlPath___": "client-side-fetching",
+                                        "Basic Fetch with useEffect": {
+                                            "___urlPath___": "useeffect-fetch",
+                                            "___md___": 982
+                                        },
+                                        "AbortController and Cleanup": {
+                                            "___urlPath___": "abortcontroller-cleanup",
+                                            "___md___": 1002
+                                        },
+                                        "Loading, Error, and Empty States": {
+                                            "___urlPath___": "loading-error-empty",
+                                            "___md___": 1003
+                                        },
+                                        "Pagination and Infinite Scroll": {
+                                            "___urlPath___": "pagination-infinite-scroll",
+                                            "___md___": 1004
+                                        },
+                                        "Debouncing and Throttling API Calls": {
+                                            "___urlPath___": "debounce-throttle-fetch",
+                                            "___md___": 1005
+                                        },
+
+                                    },
+                                    "React Query / SWR": {
+                                        "___urlPath___": "react-query-swr",
+                                        "Introduction to React Query": {
+                                            "___urlPath___": "intro-react-query",
+                                            "___md___": 1006
+                                        },
+                                        "Query Caching and Invalidation": {
+                                            "___urlPath___": "query-caching-invalidation",
+                                            "___md___": 1007
+                                        },
+                                        "Mutations and Side Effects": {
+                                            "___urlPath___": "mutations-side-effects",
+                                            "___md___": 1008
+                                        },
+                                        "Retry, Backoff and Error Handling": {
+                                            "___urlPath___": "retry-backoff-handling",
+                                            "___md___": 1009
+                                        },
+                                        "React Query Devtools and Performance Monitoring": {
+                                            "___urlPath___": "react-query-devtools",
+                                            "___md___": 1010
+                                        },
+                                        "SWR vs React Query: Comparison and FAANG Use Cases": {
+                                            "___urlPath___": "swr-vs-react-query",
+                                            "___md___": 1011
+                                        }
+                                    },
+                                    "Server-side Data Fetching (RSC + Next.js)": {
+                                        "___urlPath___": "server-side-fetching",
+                                        "Fetching in React Server Components (RSC)": {
+                                            "___urlPath___": "fetch-in-rsc",
+                                            "___md___": 1012
+                                        },
+                                        "Fetching from Databases in RSC (PostgreSQL / MongoDB)": {
+                                            "___urlPath___": "fetch-from-db-rsc",
+                                            "___md___": 1013
+                                        },
+                                        "Caching and Revalidation in RSC": {
+                                            "___urlPath___": "caching-revalidation-rsc",
+                                            "___md___": 1014
+                                        },
+                                        "Route Handlers and API Layers in Next.js": {
+                                            "___urlPath___": "nextjs-api-layer",
+                                            "___md___": 1015
+                                        },
+                                        "Security: Data Fetching with Session / JWT in RSC": {
+                                            "___urlPath___": "secure-fetching-rsc",
+                                            "___md___": 1016
+                                        }
+                                    },
+                                    "Streaming with Suspense and SSR": {
+                                        "___urlPath___": "streaming-suspense",
+                                        "How Suspense Enables Streaming": {
+                                            "___urlPath___": "how-suspense-streaming",
+                                            "___md___": 1017
+                                        },
+                                        "Server-Only Suspense vs Client-Side Fallbacks": {
+                                            "___urlPath___": "server-vs-client-suspense",
+                                            "___md___": 1018
+                                        },
+                                        "Progressive Hydration with Partial Rendering": {
+                                            "___urlPath___": "progressive-hydration",
+                                            "___md___": 1019
+                                        },
+                                        "Combining RSC with Suspense Boundaries": {
+                                            "___urlPath___": "rsc-with-suspense",
+                                            "___md___": 1020
+                                        },
+                                        "Best Practices for Streaming UX": {
+                                            "___urlPath___": "streaming-best-practices",
+                                            "___md___": 1021
+                                        }
+                                    },
+                                    "Advanced Patterns and Optimization": {
+                                        "___urlPath___": "advanced-fetching",
+                                        "Optimistic UI Updates": {
+                                            "___urlPath___": "optimistic-updates",
+                                            "___md___": 1022
+                                        },
+                                        "Stale-While-Revalidate and Background Fetching": {
+                                            "___urlPath___": "swr-strategies",
+                                            "___md___": 1023
+                                        },
+                                        "Deduplication and Batching Requests": {
+                                            "___urlPath___": "deduplication-batching",
+                                            "___md___": 1024
+                                        },
+                                        "Authentication-aware Fetching Patterns": {
+                                            "___urlPath___": "auth-aware-fetching",
+                                            "___md___": 1025
+                                        },
+                                        "Error Recovery and User Feedback Loops": {
+                                            "___urlPath___": "error-recovery-feedback",
+                                            "___md___": 1026
+                                        }
+                                    },
+                                    "HTTP Clients: Fetch vs Axios": {
+                                        "___urlPath___": "http-clients",
+                                        "Using Native Fetch API": {
+                                            "___urlPath___": "fetch-api",
+                                            "Basics of Fetch": {
+                                                "___urlPath___": "fetch-basics",
+                                                "Making a GET Request": true,
+                                                "Handling JSON Responses": true,
+                                                "Understanding the `Response` Object": true,
+                                                "Using Request Headers": true,
+                                                "Handling Query Parameters": true
+                                            },
+                                            "POST, PUT, DELETE with Fetch": {
+                                                "___urlPath___": "fetch-methods",
+                                                "Making a POST Request with JSON": true,
+                                                "PUT and PATCH Semantics": true,
+                                                "DELETE Requests and Idempotency": true,
+                                                "Setting Content-Type Headers Correctly": true
+                                            },
+                                            "Error Handling and Retry Logic": {
+                                                "___urlPath___": "fetch-error-handling",
+                                                "Checking `res.ok` and HTTP Status Codes": true,
+                                                "Graceful UI Fallbacks on Error": true,
+                                                "Retry with Exponential Backoff": true,
+                                                "Handling 401/403 and Redirects": true,
+                                                "Handling Timeouts with `AbortController`": true
+                                            },
+                                            "Advanced Fetch Use Cases": {
+                                                "___urlPath___": "advanced-fetch",
+                                                "Using `AbortController` for Cancellation": true,
+                                                "Parallel Fetches with `Promise.all()`": true,
+                                                "Sequential Fetches and Chaining": true,
+                                                "Fetch with Authentication (JWT / Cookies)": true,
+                                                "Handling Binary Responses (Blob, File, ArrayBuffer)": true,
+                                                "Tracking Progress of Large Downloads/Uploads": true
+                                            },
+                                            "Using Fetch in React": {
+                                                "___urlPath___": "fetch-in-react",
+                                                "Data Fetching with useEffect": true,
+                                                "Cleaning Up with AbortController": true,
+                                                "Managing Loading, Error, and Empty States": true,
+                                                "Custom Hooks for Fetch (useFetch)": true,
+                                                "Fetch in Class vs Functional Components": true
+                                            },
+                                            "Using Fetch in Next.js": {
+                                                "___urlPath___": "fetch-in-nextjs",
+                                                "Fetching in Server Components (RSC)": true,
+                                                "Using `fetch()` in Route Handlers and API Routes": true,
+                                                "Incremental Caching with `next: { revalidate }`": true,
+                                                "Streaming Responses with `fetch()` and Suspense": true,
+                                                "Secure Fetching with `headers()` and `cookies()`": true
+                                            },
+                                            "Performance and Best Practices": {
+                                                "___urlPath___": "fetch-best-practices",
+                                                "Avoiding Duplicate Requests": true,
+                                                "Debounce / Throttle API Calls in React": true,
+                                                "Caching Strategy (Cache-Control, SWR, Local Cache)": true,
+                                                "Batching API Calls with Promise.all": true,
+                                                "Reducing JS Bundle by Avoiding Axios": true
+                                            },
+                                            "Testing and Debugging Fetch Calls": {
+                                                "___urlPath___": "testing-fetch",
+                                                "Mocking Fetch with Jest / MSW": true,
+                                                "Unit Testing useFetch Hook": true,
+                                                "Handling Fetch Errors in E2E Tests (Cypress)": true,
+                                                "Debugging Network Failures in DevTools": true
+                                            },
+                                            "Comparison with Alternatives": {
+                                                "___urlPath___": "fetch-vs-axios-etc",
+                                                "Fetch vs Axios": true,
+                                                "Fetch vs React Query": true,
+                                                "Fetch vs useSWR": true,
+                                                "When to Wrap Fetch into a Service Layer": true
+                                            }
+                                        }
+                                        ,
+                                        "Axios": {
+                                            "___urlPath___": "axios",
+                                            "Axios Fundamentals": {
+                                                "___urlPath___": "axios-fundamentals",
+                                                "Installing and Importing Axios": true,
+                                                "Basic GET/POST Requests": true,
+                                                "Understanding Axios Response Structure": true,
+                                                "Setting Base URL and Default Headers": true,
+                                                "Axios Instance vs Direct Import": true
+                                            },
+                                            "Advanced Request Features": {
+                                                "___urlPath___": "axios-requests",
+                                                "Sending POST with JSON Body": true,
+                                                "Custom Headers and Query Parameters": true,
+                                                "PUT, PATCH and DELETE Requests": true,
+                                                "Request Timeout Handling": true,
+                                                "Cancelling Requests with CancelToken": true
+                                            },
+                                            "Response Handling and Interceptors": {
+                                                "___urlPath___": "axios-response-handling",
+                                                "Global Error Handling with Interceptors": true,
+                                                "Transforming Requests and Responses": true,
+                                                "Handling 401/403 with Token Refresh": true,
+                                                "Redirect on Auth Expiry (401 Interceptor Pattern)": true,
+                                                "Logging API Errors in Production": true
+                                            },
+                                            "Axios in React Components": {
+                                                "___urlPath___": "axios-in-react",
+                                                "Using Axios in `useEffect`": true,
+                                                "Custom useAxios Hook": true,
+                                                "Managing Loading, Error, and Success States": true,
+                                                "Memoizing Axios Calls with useCallback": true,
+                                                "Handling Cancellations in Component Cleanup": true
+                                            },
+                                            "Axios in Large-Scale Projects": {
+                                                "___urlPath___": "axios-architecture",
+                                                "Creating Axios Services for REST APIs": true,
+                                                "Domain-Specific Axios Wrappers (e.g. AuthService)": true,
+                                                "Injecting Axios into Context/DI": true,
+                                                "Isomorphic Axios Usage (SSR Support)": true,
+                                                "Multi-baseURL Handling (e.g. Microservices)": true
+                                            },
+                                            "Token Management and Security": {
+                                                "___urlPath___": "axios-auth",
+                                                "Storing and Sending Bearer Tokens": true,
+                                                "Refreshing Expired Tokens (with Queueing)": true,
+                                                "Token Injection in Request Interceptor": true,
+                                                "Securing Axios Calls Against CSRF/XSS": true
+                                            },
+                                            "File Uploads and Progress Tracking": {
+                                                "___urlPath___": "axios-file-upload",
+                                                "Uploading Files with FormData": true,
+                                                "Tracking Upload and Download Progress": true,
+                                                "Handling Large Uploads with Chunking": true,
+                                                "Validating Files Before Upload": true
+                                            },
+                                            "Retry Strategies and Resilience": {
+                                                "___urlPath___": "axios-retries",
+                                                "Automatic Retry with Axios-Retry Package": true,
+                                                "Manual Retry with Exponential Backoff": true,
+                                                "Retry on Network/Server Errors Only": true,
+                                                "Limiting Retry Attempts Gracefully": true
+                                            },
+                                            "Performance Optimization": {
+                                                "___urlPath___": "axios-performance",
+                                                "Preventing Duplicate Requests": true,
+                                                "Response Caching with LocalStorage / Memory": true,
+                                                "Debouncing Repeated Requests": true,
+                                                "Batching API Calls with Promise.all": true
+                                            },
+                                            "Testing Axios Logic": {
+                                                "___urlPath___": "axios-testing",
+                                                "Mocking Axios with Jest / MSW": true,
+                                                "Testing Interceptors Separately": true,
+                                                "Unit Testing Custom useAxios Hook": true,
+                                                "Simulating Timeouts and Cancellations": true
+                                            },
+                                            "Comparison and Migration Guides": {
+                                                "___urlPath___": "axios-comparisons",
+                                                "Axios vs Fetch – API Design Tradeoffs": true,
+                                                "Axios vs React Query – When to Choose": true,
+                                                "Migrating from Axios to React Query or SWR": true,
+                                                "Using Axios with Suspense or Streaming": true
+                                            }
+                                        }
+                                        ,
+                                        "Comparison and Decision Guide": {
+                                            "___urlPath___": "fetch-vs-axios-comparison",
+                                            "Fetch vs Axios (When to Choose)": true,
+                                            "Axios vs React Query": true,
+                                            "Migrating from Axios to React Query or SWR": true
+                                        }
+                                    },
+                                    "GraphQL Data Fetching": {
+                                        "___urlPath___": "graphql-fetching",
+                                        "Introduction to GraphQL": true,
+                                        "Queries, Mutations, and Subscriptions": true,
+                                        "Using Apollo Client in React": true,
+                                        "Fragments and Normalized Caching": true,
+                                        "Pagination and Relay-style Fetching": true,
+                                        "GraphQL Code Generator / Typesafety": true,
+                                        "Error Handling and Retry": true,
+                                        "Apollo vs urql vs Relay": true
+                                    },
+                                    "WebSockets and Real-time Fetching": {
+                                        "___urlPath___": "websockets-fetching",
+                                        "What are WebSockets?": true,
+                                        "Using Socket.IO in React": true,
+                                        "Event-based Data Streams": true,
+                                        "Managing Socket Lifecycle": true,
+                                        "Combining REST and WebSocket Fetching": true,
+                                        "Use Cases: Chat, Live Dashboards": true,
+                                        "WebSocket vs Server-Sent Events (SSE)": true
+                                    },
+                                    "gRPC and Binary Data Transport": {
+                                        "___urlPath___": "grpc-fetching",
+                                        "gRPC Basics and Protobuf": true,
+                                        "gRPC vs REST vs GraphQL": true,
+                                        "gRPC in React Frontend (grpc-web)": true,
+                                        "Typed Contracts and API Evolution": true,
+                                        "Handling Streaming with gRPC": true,
+                                        "Using gRPC in Full Stack (Node + React)": true
+                                    },
+                                    "Firebase and Serverless Fetching": {
+                                        "___urlPath___": "firebase-fetching",
+                                        "Realtime Database vs Firestore": true,
+                                        "Fetching and Listening in React": true,
+                                        "Offline-first and Caching": true,
+                                        "Firebase with Suspense or React Query": true,
+                                        "Security Rules for Data Access": true,
+                                        "Firebase vs REST APIs": true
+                                    }
+
+
+
+
+                                },
                                 "Portals": {
                                     "___urlPath___": "portals",
                                     "___md___": 957
                                 },
                                 "Error Boundaries and Error Handling": true,
-                                "Render Props": true,
+                                "Render Props": {
+                                    "___urlPath___": "render-props",
+                                    "___md___": 977
+                                },
                                 "Higher-Order Components (HOC)": {
                                     "___urlPath___": "hoc",
                                     "___md___": 409
                                 },
-                                "React Fiber Architecture": true,
+                                "React Fiber Architecture": {
+                                    "___urlPath___": "react-fiber-architecture",
+                                    "___md___": 978
+                                },
                                 "Reactive Programming": true,
-                                "React Server Components (RSC)": true,
-                                "Streaming SSR with Suspense": true,
+                                "React Server Components (RSC)": {
+                                    "___urlPath___": "react-server-components",
+                                    "___md___": 980
+                                },
+                                "Streaming SSR with Suspense": {
+                                    "___urlPath___": "streaming-ssr-with-suspense",
+                                    "___md___": 981
+                                },
                                 "Design Patterns in React": {
-                                    "Compound Components": true,
-                                    "Controlled-Uncontrolled Pattern": true,
+                                    "___urlPath___": "design-patterns-in-react",
+                                    "Compound Components": {
+                                        "___urlPath___": "compound-components",
+                                        "___md___": 983
+                                    },
+                                    "Controlled-Uncontrolled Pattern": {
+                                        "___urlPath___": "controlled-uncontrolled-pattern",
+                                        "___md___": 984
+                                    },
                                     "State Machines with XState": true
                                 },
                                 "Micro Frontends": {
@@ -964,7 +1397,10 @@ const mapper = {
                             },
                             "TypeScript with React": {
                                 "___urlPath___": "typescript-react",
-                                "Typing Props and State": true,
+                                "Typing Props and State": {
+                                    "___urlPath___": "typing-props-and-state",
+                                    "___md___": 976
+                                },
                                 "Typing Custom Hooks": true,
                                 "Generic Components": true,
                                 "Type Inference and Best Practices": true
@@ -978,7 +1414,10 @@ const mapper = {
                             },
                             "Security Best Practices": {
                                 "___urlPath___": "security",
-                                "Avoiding XSS in React": true,
+                                "Avoiding XSS in React": {
+                                    "___urlPath___": "avoiding-xss-in-react",
+                                    "___md___": 985
+                                },
                                 "Safe Use of dangerouslySetInnerHTML": true,
                                 "Input Sanitization and Escaping": true
                             },
@@ -1070,6 +1509,10 @@ const mapper = {
                             "Coding Challenges": {
                                 "___urlPath___": "coding-challenges",
                                 "___md___": 471
+                            },
+                            "Machine Coding challenges": {
+                                "___urlPath___": "machine-coding-challenges",
+                                "___md___": 979
                             },
                             "QnA": {
                                 "___urlPath___": "qna",
@@ -3045,18 +3488,197 @@ const mapper = {
                 },
                 "Java Development": {
                     "___urlPath___": "java-development",
-                    "0. Java Solution Architect": {
+                    "What a Java Solution Architect should know !!": {
                         "___urlPath___": "java-solution-architect-syllabus",
                         "___md___": 399
                     },
-                    "1. Introduction to Java": {
+                    "Introduction to Java": {
                         "History and Evolution of Java": true,
                         "Features of Java": true,
                         "Java Editions (JSE, JEE, JME)": true,
                         "Setting Up Java Development Environment (JDK, IDEs)": true,
                         "Writing and Running Your First Java Program": true
                     },
-                    "2. Core Java": {
+                    "Java Memory Model (JMM)": {
+                        "Overview of JMM": {
+                            "Purpose of the Java Memory Model": true,
+                            "Memory Consistency and Visibility Guarantees": true,
+                            "JMM vs CPU Caches vs Main Memory": true
+                        },
+                        "Thread Communication and Shared Memory": {
+                            "How Threads Share Variables": true,
+                            "Atomicity, Visibility, and Ordering Explained": true,
+                            "Happens-Before Relationship": true
+                        },
+                        "Volatile Keyword Semantics": {
+                            "What Volatile Guarantees": true,
+                            "When to Use Volatile": true,
+                            "Volatile vs Synchronized": true,
+                            "Limitations of Volatile": true
+                        },
+                        "Synchronized and Locks": {
+                            "Intrinsic Locks and MonitorEnter/Exit": true,
+                            "Memory Visibility with Synchronized Blocks": true,
+                            "Reentrant Locks and Explicit Lock APIs": true,
+                            "Synchronization vs Volatile Tradeoffs": true
+                        },
+                        "False Sharing and Cache Coherence": {
+                            "Understanding CPU Cache Lines": true,
+                            "What is False Sharing and How It Hurts Performance": true,
+                            "How to Avoid False Sharing in Java": true
+                        },
+                        "Out-of-Order Execution and Compiler Reordering": {
+                            "Reordering by JIT/CPU Explained": true,
+                            "How JMM Prevents Unsafe Reordering": true,
+                            "Memory Fences and Barriers (Theory)": true
+                        },
+                        "Atomic Operations and java.util.concurrent": {
+                            "CAS (Compare-And-Swap)": true,
+                            "AtomicInteger, AtomicReference and ABA Problem": true,
+                            "VarHandle and Unsafe APIs": true
+                        },
+                        "Final Fields and Safe Publication": {
+                            "What is Safe Publication": true,
+                            "Immutability and the Final Keyword in JMM": true,
+                            "Object Construction and Visibility": true
+                        },
+                        "JMM Anomalies and Common Bugs": {
+                            "Stale Data Reads and Visibility Failures": true,
+                            "Double-Checked Locking Pitfalls (pre-Java 5 vs post-Java 5)": true,
+                            "Read-Modify-Write Hazards": true
+                        },
+                        "Advanced Concurrency Patterns": {
+                            "ThreadLocal and Memory Isolation": true,
+                            "Immutable Objects and Defensive Copies": true,
+                            "Lock-Free and Wait-Free Algorithms (Intro)": true
+                        },
+                        "Testing Memory Visibility": {
+                            "Writing JMM Test Cases with JCStress": true,
+                            "Thread Interleaving Simulation": true,
+                            "Detecting Memory Bugs in CI Pipelines": true
+                        },
+                        "JMM and Modern Hardware": {
+                            "NUMA Architectures and Java": true,
+                            "JMM across x86 vs ARM Architectures": true,
+                            "Memory Fences at the Hardware Level": true
+                        },
+                        "JMM in Practice": {
+                            "How JVM Implements Happens-Before": true,
+                            "Performance Tradeoffs in Visibility vs Throughput": true,
+                            "JMM Rules in the Presence of JIT and GC": true
+                        }
+                    }
+                    ,
+                    "JVM Internals": {
+                        "___urlPath___": "jvm-internals",
+                        "JVM Architecture": {
+                            "___urlPath___": "jvm-architecture",
+                            "JVM vs JRE vs JDK": {
+                                "___urlPath___": "jvm-vs-jre-vs-jdk",
+                                "___md___": 986
+                            },
+                            "JVM Components Overview": true,
+                            "Execution Engine and Bytecode Execution": true,
+                            "JNI (Java Native Interface) Basics": true
+                        },
+                        "Class Loading": {
+                            "Class Loader Hierarchy": true,
+                            "Parent Delegation Model": true,
+                            "Class Loading Phases": {
+                                "Loading": true,
+                                "Linking (Verification, Preparation, Resolution)": true,
+                                "Initialization": true
+                            },
+                            "Custom Class Loaders": true,
+                            "Class Loader Leaks and Troubleshooting": true
+                        },
+                        "Runtime Data Areas": {
+                            "Heap Memory (Young, Survivor, Old Gen)": true,
+                            "Method Area and Metaspace": true,
+                            "Java Stack and Stack Frames": true,
+                            "Program Counter Register": true,
+                            "Native Method Stack": true,
+                            "Thread-local Memory and Thread Isolation": true
+                        },
+                        "Garbage Collection": {
+                            "GC Process (Mark, Sweep, Compact, Copy)": true,
+                            "Generational GC Concept": true,
+                            "GC Types": {
+                                "Serial GC": true,
+                                "Parallel GC": true,
+                                "CMS (Deprecated)": true,
+                                "G1 GC": true,
+                                "ZGC": true,
+                                "Shenandoah GC": true
+                            },
+                            "GC Tuning": {
+                                "Heap Sizing (-Xms, -Xmx)": true,
+                                "GC Flags and Logging": true,
+                                "PrintGCDetails and GC Viewer Tools": true
+                            },
+                            "GC Logs Analysis and Pause Tuning": true,
+                            "GC Benchmarks and Stress Testing (JMH)": true
+                        },
+                        "JIT Compilation": {
+                            "Interpreter vs JIT Compiler": true,
+                            "Tiered Compilation (C1 and C2)": true,
+                            "HotSpot Optimizations": {
+                                "Method Inlining": true,
+                                "Loop Unrolling": true,
+                                "Escape Analysis": true,
+                                "Dead Code Elimination": true
+                            },
+                            "Deoptimization and OSR (On-Stack Replacement)": true,
+                            "JIT Debugging and Tools": {
+                                "PrintCompilation": true,
+                                "Using `hsdis` to disassemble native code": true,
+                                "javap for bytecode inspection": true
+                            }
+                        },
+                        "Memory Tuning and Monitoring": {
+                            "Metaspace vs PermGen": true,
+                            "Stack Size and Thread Tuning": true,
+                            "Native Memory Tracking (NMT)": true,
+                            "Memory Leak Detection Tools": {
+                                "jmap": true,
+                                "jstat": true,
+                                "jcmd": true,
+                                "VisualVM": true,
+                                "Eclipse MAT": true
+                            },
+                            "Memory Allocation Flame Graphs": true
+
+                        },
+                        "Performance Monitoring and Diagnostics": {
+                            "Java Flight Recorder (JFR)": true,
+                            "Java Mission Control (JMC)": true,
+                            "Thread Dumps and Deadlock Analysis": true,
+                            "Heap Dump Analysis": true,
+                            "JVM Metrics with Prometheus/Grafana": true,
+                            "APM Tools (Datadog, New Relic, AppDynamics)": true
+                        },
+                        "Advanced Features and Future APIs": {
+                            "Foreign Function and Memory API (Project Panama)": true,
+                            "Structured Concurrency (Preview)": true
+                        },
+                        "JVM Options and Flags": {
+                            "Common JVM Flags": true,
+                            "Diagnostic Flags": true,
+                            "Performance Flags and Tuning Strategies": true
+                        },
+                        "Container-Aware JVM Tuning": {
+                            "JVM in Docker/Kubernetes": true,
+                            "UseContainerSupport and Cgroup Limits": true,
+                            "Tuning in Limited CPU/Memory Environments": true
+                        },
+                        "Polyglot JVM and GraalVM": {
+                            "GraalVM Overview": true,
+                            "Native Image Compilation": true,
+                            "Running Python/JS on JVM": true,
+                            "Use Cases and Limitations": true
+                        }
+                    },
+                    "Core Java": {
                         "Data Types and Variables": {
                             "Primitive Data Types": true,
                             "Reference Data Types": true,
@@ -3076,28 +3698,412 @@ const mapper = {
                             "Loops (For, While, Do-While)": true,
                             "Break and Continue": true
                         },
-                        "Object-Oriented Programming (OOP)": {
-                            "Classes and Objects": true,
-                            "Constructors and Initialization Blocks": true,
-                            "Encapsulation, Inheritance, Polymorphism, Abstraction": true,
-                            "Access Modifiers": true,
-                            "Static and Final Keywords": true
-                        },
-                        "Collections Framework": {
-                            "Introduction to Collections": true,
-                            "List, Set, and Map Interfaces": true,
-                            "ArrayList, LinkedList, HashMap, TreeSet": true,
-                            "Iterators and Streams": true,
-                            "Generics and Wildcards": true
-                        },
+                        "OOP - Object-Oriented Programming": {
+                            "Fundamentals of OOP": {
+                                "Principles of OOP (Abstraction, Encapsulation, Inheritance, Polymorphism)": true,
+                                "Object vs Class in Java": true,
+                                "State, Behavior, and Identity of an Object": true
+                            },
+                            "Encapsulation and Access Modifiers": {
+                                "private, protected, public, default": true,
+                                "Encapsulation in JavaBeans and DTOs": true,
+                                "Best Practices for Data Hiding and Access Control": true
+                            },
+                            "Inheritance in Java": {
+                                "Single vs Multilevel Inheritance": true,
+                                "Method Overriding and the @Override Annotation": true,
+                                "super Keyword and Constructor Chaining": true,
+                                "Limitation of Multiple Inheritance in Java": true
+                            },
+                            "Polymorphism": {
+                                "Compile-time (Method Overloading)": true,
+                                "Run-time (Method Overriding and Dynamic Dispatch)": true,
+                                "Polymorphic Parameters and Return Types": true,
+                                "Covariant Return Types": true
+                            },
+                            "Abstraction": {
+                                "Abstract Classes and Abstract Methods": true,
+                                "Interfaces and Interface Inheritance": true,
+                                "When to Use Abstract Classes vs Interfaces": true,
+                                "Default and Static Methods in Interfaces": true
+                            },
+                            "Composition vs Inheritance": {
+                                "Favor Composition Over Inheritance": true,
+                                "Designing Flexible Systems Using Composition": true,
+                                "Delegation Pattern in Java": true
+                            },
+                            "Constructors and Object Lifecycle": {
+                                "Constructors Overloading": true,
+                                "Copy Constructor in Java": true,
+                                "Initialization Blocks (Static and Instance)": true,
+                                "Object Creation and GC Lifecycle": true
+                            },
+                            "Object Class and Method Overriding": {
+                                "equals() and hashCode() Contracts": true,
+                                "toString(), clone(), finalize() Methods": true,
+                                "Custom Implementations of equals() and hashCode()": true
+                            },
+                            "Immutable Objects": {
+                                "How to Design Immutable Classes": true,
+                                "Defensive Copies and Final Fields": true,
+                                "Use-Cases in Concurrency and API Design": true
+                            },
+                            "Nested Classes and Inner Classes": {
+                                "Static Nested vs Non-static Inner Classes": true,
+                                "Local Classes and Anonymous Classes": true,
+                                "Use Cases and Memory Implications": true
+                            },
+                            "OOP and Memory Model": {
+                                "How Object Fields Are Stored in Memory": true,
+                                "Object References and Heap Allocation": true,
+                                "Shallow vs Deep Copy": true
+                            },
+                            "SOLID Principles in Java": {
+                                "Single Responsibility Principle": true,
+                                "Open/Closed Principle": true,
+                                "Liskov Substitution Principle": true,
+                                "Interface Segregation Principle": true,
+                                "Dependency Inversion Principle": true
+                            },
+                            "Design Patterns in OOP": {
+                                "Creational: Singleton, Builder, Factory, Prototype": true,
+                                "Structural: Adapter, Decorator, Composite": true,
+                                "Behavioral: Strategy, Observer, Command": true,
+                                "Dependency Injection and IoC in Java": true
+                            },
+                            "OOP Design in Practice": {
+                                "Low Coupling, High Cohesion": true,
+                                "Law of Demeter (Least Knowledge Principle)": true,
+                                "Designing Reusable and Extensible Classes": true,
+                                "Encapsulation in Microservice DTO/API Models": true
+                            },
+                            "Anti-Patterns and Mistakes": {
+                                "God Object, Circular Dependency": true,
+                                "Excessive Inheritance (Inheritance Hell)": true,
+                                "Violating Liskov and Interface Segregation": true
+                            },
+                            "Testing and OOP Design": {
+                                "Testability and Dependency Injection": true,
+                                "Mocking OOP Hierarchies": true,
+                                "Testing Interfaces and Abstractions": true
+                            }
+                        }
+                        ,
+                        "Collections": {
+                            "Introduction to Collections Framework": {
+                                "Need for Collections over Arrays": true,
+                                "Collections Framework Hierarchy": true,
+                                "Interfaces: Collection, List, Set, Map, Queue": true,
+                                "Difference Between Collection and Collections Class": true
+                            },
+                            "List Implementations": {
+                                "ArrayList – Internal Structure, Resizing Strategy": true,
+                                "LinkedList – Node Structure, Memory Tradeoffs": true,
+                                "Vector and Stack – Legacy Behavior and Synchronization": true,
+                                "Performance Comparison – Insertion, Deletion, Access": true
+                            },
+                            "Set Implementations": {
+                                "HashSet – Backed by HashMap, No Order Guarantee": true,
+                                "LinkedHashSet – Maintains Insertion Order": true,
+                                "TreeSet – Sorted Set using Red-Black Tree": true,
+                                "Set vs List vs Map – Use Case Differences": true
+                            },
+                            "Map Implementations": {
+                                "HashMap – Hashing Mechanism, Load Factor, Threshold": true,
+                                "LinkedHashMap – Access Order vs Insertion Order": true,
+                                "TreeMap – Sorted Keys via Red-Black Tree": true,
+                                "Hashtable – Legacy and Thread Safety": true,
+                                "EnumMap and IdentityHashMap – Niche Use Cases": true,
+                                "Map Internal Working – equals(), hashCode(), collisions": true
+                            },
+                            "Queue and Deque": {
+                                "PriorityQueue – Min/Max Heap Implementation": true,
+                                "ArrayDeque vs LinkedList as Deques": true,
+                                "BlockingQueue and Its Variants": true,
+                                "Deque vs Stack vs Queue Use-Cases": true
+                            },
+                            "Collections Utility Class": {
+                                "___urlPath___": "collections-utility-class",
+                                "Collections.sort(), reverse(), shuffle(), min(), max()": {
+                                    "___urlPath___": "collection-sort-reverse-shuffle-min-max",
+                                    "___md___": 974
+                                },
+                                "Collections.unmodifiableList() and Defensive Copying": true,
+                                "Singleton Collections and Empty Collections": true,
+                                "Using Comparator with Collections.sort()": true
+                            },
+                            "Comparator and Comparable": {
+                                "Comparable Interface – Natural Ordering": true,
+                                "Comparator Interface – Custom Ordering": true,
+                                "Chaining Comparators – thenComparing()": true,
+                                "Sorting Complex Objects with Streams and Comparators": true
+                            },
+                            "Iteration Techniques": {
+                                "Iterator and ListIterator – Differences and Use": {
+                                    "___urlPath___": "iterator-and-listiterator-difference-and-use",
+                                    "___md___": 975
+                                },
+                                "Enhanced for-loop vs Iterator vs Streams": true,
+                                "fail-fast vs fail-safe Iterators": true
+                            },
+                            "Generics with Collections": {
+                                "Using Wildcards – <?>, <? extends T>, <? super T>": true,
+                                "Type Safety and Heap Pollution": true,
+                                "Why Arrays and Generics Don’t Mix": true
+                            },
+                            "Concurrent Collections": {
+                                "ConcurrentHashMap – Segmented Buckets, Thread Safety": {
+                                    "___urlPath___": "concurrenthashmap",
+                                    "___md___": 973
+                                },
+                                "CopyOnWriteArrayList – Use Cases and Cost": true,
+                                "BlockingQueue, ConcurrentSkipListMap": true,
+                                "Synchronized Collections vs Concurrent Collections": true
+                            },
+                            "Performance and Big-O Analysis": {
+                                "Time Complexity of Key Operations": true,
+                                "Impact of Initial Capacity and Load Factor": true,
+                                "Best/Worst/Average Case for get(), put(), remove()": true,
+                                "Avoiding Resizing Bottlenecks and Rehashing": true
+                            },
+                            "Memory Considerations": {
+                                "Load Factor and Internal Array Sizing": true,
+                                "Memory Waste in Sparse Maps": true,
+                                "RetainAll, RemoveAll, Clear() – GC Implications": true
+                            },
+                            "Best Practices and Real-World Scenarios": {
+                                "Choosing the Right Collection for the Task": true,
+                                "Using Immutable Collections in Multi-threaded Apps": true,
+                                "Avoiding Memory Leaks with Static Maps": true,
+                                "Defensive Copying of Collections in APIs": true
+                            },
+                            "Collections and Streams": {
+                                "Using Streams with Lists, Sets, Maps": true,
+                                "Collectors.toMap(), groupingBy(), partitioningBy()": true,
+                                "Sorting, Filtering, Reducing with Collections": true
+                            },
+                            "Testing and Debugging Collections": {
+                                "Testing Collection Equality and Contents": true,
+                                "Debugging Concurrent Modification Errors": true,
+                                "Using Guava or Apache Commons for Utility Collections": true
+                            }
+                        }
+                        ,
                         "Exception Handling": {
-                            "Try-Catch Blocks": true,
-                            "Throw, Throws, and Finally": true,
-                            "Custom Exceptions": true,
-                            "Best Practices in Error Handling": true
+                            "Fundamentals of Exceptions": {
+                                "What is an Exception?": true,
+                                "Types of Errors – Syntax Error vs Runtime Error": true,
+                                "Throwable Hierarchy – Error, Exception, RuntimeException": true,
+                                "Checked vs Unchecked Exceptions": true
+                            },
+                            "Built-in Exception Classes": {
+                                "Common Checked Exceptions (IOException, SQLException)": true,
+                                "Common Unchecked Exceptions (NullPointerException, IllegalArgumentException)": true,
+                                "Error Subtypes (StackOverflowError, OutOfMemoryError)": true
+                            },
+                            "Handling Exceptions": {
+                                "try-catch-finally Syntax and Flow": true,
+                                "Multiple Catch Blocks and Exception Hierarchy": true,
+                                "Exception Propagation and Call Stack": true,
+                                "Re-throwing Exceptions (`throw`, `throws`)": true,
+                                "Nested try-catch and try-with-resources": true
+                            },
+                            "Custom Exceptions": {
+                                "Creating User-Defined Exception Classes": true,
+                                "Extending Exception vs RuntimeException": true,
+                                "Best Practices for Naming and Design": true
+                            },
+                            "Exception Flow and Best Practices": {
+                                "When to Catch vs When to Let It Propagate": true,
+                                "Catching Specific vs Generic Exceptions": true,
+                                "Never Swallow Exceptions Silently": true,
+                                "Avoiding `catch (Exception e) {}` Anti-pattern": true
+                            },
+                            "Checked vs Unchecked – Design Principles": {
+                                "Use-Cases for Checked Exceptions": true,
+                                "When to Prefer Unchecked Exceptions": true,
+                                "API Design Tradeoffs (Java IO vs Java NIO)": true,
+                                "Exception Transparency and Method Contracts": true
+                            },
+                            "Exception Handling in Functional Style": {
+                                "Handling Exceptions with Lambdas and Streams": true,
+                                "Using `Optional`, `try-catch` inside lambdas": true,
+                                "Functional Interfaces with Exception Wrappers": true
+                            },
+                            "Advanced Exception Concepts": {
+                                "Suppressed Exceptions and Multi-Catch": true,
+                                "try-with-resources and AutoCloseable": true,
+                                "Exception Chaining (`initCause`, Constructor Overloading)": true,
+                                "Finalization and Resource Cleanup": true
+                            },
+                            "Logging and Monitoring Exceptions": {
+                                "Logging Exceptions Correctly (Message + Stack Trace)": true,
+                                "SLF4J/Log4j Best Practices": true,
+                                "Correlation IDs and Root Cause Tracing": true
+                            },
+                            "Performance and Reliability Considerations": {
+                                "Cost of Exceptions – Don’t Use for Flow Control": true,
+                                "Avoid Catching Exceptions Inside Tight Loops": true,
+                                "Impact on JIT and Optimization": true
+                            },
+                            "Exception Handling in Multithreaded Environments": {
+                                "Handling Exceptions in Threads and Executors": true,
+                                "ThreadPoolExecutor and UncaughtExceptionHandler": true,
+                                "CompletableFuture and Exceptionally()": true,
+                                "Error Propagation in Fork/Join Tasks": true
+                            },
+                            "Real-World Use Cases and Patterns": {
+                                "Designing Exception Hierarchies in Large Systems": true,
+                                "Global Exception Handling in Spring Boot": true,
+                                "Fail-Fast vs Fail-Safe Exception Design": true,
+                                "Recoverable vs Unrecoverable Exceptions": true
+                            },
+                            "Testing Exception Handling": {
+                                "Unit Testing with `assertThrows()` in JUnit": true,
+                                "Testing Exception Messages and Causes": true,
+                                "Mocking Exceptions in Unit Tests (Mockito)": true
+                            }
+                        }
+
+                    },
+                    "Functional Programming in Java": {
+                        "Fundamentals of Functional Programming": {
+                            "Imperative vs Declarative Paradigm": true,
+                            "Pure Functions and Referential Transparency": true,
+                            "Immutability and Side Effects": true,
+                            "First-Class and Higher-Order Functions": true
+                        },
+                        "Lambdas and Method References": {
+                            "Lambda Syntax and Type Inference": true,
+                            "Functional Interfaces and SAM Types": true,
+                            "Capturing Variables (Effectively Final)": true,
+                            "Method References (Static, Instance, Constructor)": true
+                        },
+                        "Built-in Functional Interfaces": {
+                            "Predicate, Function, Consumer, Supplier": true,
+                            "BiPredicate, BiFunction, BiConsumer": true,
+                            "UnaryOperator and BinaryOperator": true,
+                            "Chaining and Composition (andThen, compose)": true
+                        },
+                        "Streams API – Functional Collections": {
+                            "Stream Creation and Intermediate Operations": true,
+                            "Filter, Map, FlatMap": true,
+                            "Collect, Reduce, GroupingBy, PartitioningBy": true,
+                            "Short-Circuiting (limit, findFirst, anyMatch)": true,
+                            "Lazy Evaluation and Pipelines": true,
+                            "Parallel Streams – Performance and Pitfalls": true
+                        },
+                        "Optional API – Monadic Behavior": {
+                            "Creating and Using Optionals": true,
+                            "map(), flatMap(), filter(), orElse* methods": true,
+                            "Avoiding NullPointerException Functionally": true,
+                            "Optional as a Monadic Wrapper": true
+                        },
+                        "Advanced Functional Concepts": {
+                            "Function Currying and Partial Application": true,
+                            "Closures and Scope": true,
+                            "Lazy Evaluation using Supplier": true,
+                            "Creating Custom Functional Interfaces": true,
+                            "Function Memoization Basics": true
+                        },
+                        "Functional Design Patterns in Java": {
+                            "Strategy Pattern using Lambdas": true,
+                            "Command Pattern as First-Class Functions": true,
+                            "Builder with Fluent APIs": true,
+                            "Pipeline Pattern with Streams": true
+                        },
+                        "Best Practices and Pitfalls": {
+                            "When NOT to use Functional Style": true,
+                            "Avoiding Overuse of Streams": true,
+                            "Readability vs Conciseness": true,
+                            "Debugging Functional Code": true
+                        },
+                        "Real-World Use Cases": {
+                            "Functional Error Handling with Optional": true,
+                            "Declarative Data Processing Pipelines": true,
+                            "Combining Streams and Collectors for Aggregation": true,
+                            "Functional State Machines or Event Systems": true
+                        },
+                        "Testing Functional Code": {
+                            "Property-Based Testing with JUnit": true,
+                            "Mocking Functional Interfaces": true,
+                            "Testing Pure vs Impure Functions": true
                         }
                     },
-                    "3. Advanced Java": {
+                    "Generics": {
+                        "___urlPath___": "generics",
+                        "Introduction to Generics": {
+                            "___urlPath___": "introduction-to-generics",
+                            "Why Generics? Type Safety and Code Reuse": {
+                                "___urlPath___": "why-generics",
+                                "___md___": 987
+                            },
+                            "Raw Types vs Parameterized Types": {
+                                "___urlPath___": "raw-types-vs-parameterized-types",
+                                "___md___": 988
+                            },
+                            "Generic Classes and Interfaces": {
+                                "___urlPath___": "generic-classes-and-interfaces",
+                                "___md___": 989
+                            },
+                            "Type Inference and Diamond Operator": true
+                        },
+                        "Generic Methods": {
+                            "Defining Generic Methods": true,
+                            "Type Inference in Methods": true,
+                            "Method Overloading with Generics": true,
+                            "Static Methods and Type Parameters": true
+                        },
+                        "Bounded Type Parameters": {
+                            "Upper Bounds – extends Keyword": true,
+                            "Lower Bounds – super Keyword": true,
+                            "Multiple Bounds (T extends Interface1 & Interface2)": true,
+                            "Use-Cases of Upper vs Lower Bounds": true
+                        },
+                        "Wildcards in Generics": {
+                            "Unbounded Wildcards – <?>": true,
+                            "Upper Bounded Wildcards – <? extends T>": true,
+                            "Lower Bounded Wildcards – <? super T>": true,
+                            "Wildcard Capture Problem": true,
+                            "PECS Principle (Producer Extends, Consumer Super)": true
+                        },
+                        "Generic Type Erasure": {
+                            "What is Type Erasure?": true,
+                            "How Generics Work at Runtime": true,
+                            "Impact on Overloading and Casting": true,
+                            "Why instanceof and new T() Are Not Allowed": true
+                        },
+                        "Generics and Collections": {
+                            "Using Generics with Collections Framework": true,
+                            "Covariant and Contravariant Collection Types": true,
+                            "Arrays vs Generic Collections – Key Differences": true
+                        },
+                        "Limitations and Pitfalls of Generics": {
+                            "Generic Arrays Creation Prohibited": true,
+                            "Type Inference Breakdowns in Complex APIs": true,
+                            "Bridge Methods and Synthetic Code (Compiler-Generated)": true,
+                            "Heap Pollution and SuppressWarnings": true
+                        },
+                        "Advanced Topics and FAANG Edge": {
+                            "Recursive Generics (T extends Comparable<T>)": true,
+                            "Self-Bounded Types and CRTP": true,
+                            "Generic Singleton Factory Pattern": true,
+                            "Functional Interfaces with Generics (e.g. Predicate<T>)": true,
+                            "Generics with Reflection and Annotations": true
+                        },
+                        "Real-World Use Cases and Design Patterns": {
+                            "Generic DAOs and Repositories": true,
+                            "Fluent Builders with Generics": true,
+                            "Strategy and Visitor Pattern Using Generics": true,
+                            "Creating Reusable Utility Libraries (e.g., Pair<T, U>)": true
+                        },
+                        "Testing and Debugging Generics": {
+                            "Common Compile-Time Errors and Fixes": true,
+                            "Using @SuppressWarnings Carefully": true,
+                            "Testing Covariant and Contravariant Behavior": true
+                        }
+                    },
+                    "Advanced Java": {
                         "___urlPath___": "advanced-java",
                         "Java I/O": {
                             "File Handling (Reading, Writing, and Manipulating Files)": true,
@@ -3337,6 +4343,43 @@ const mapper = {
                                         "___md___": 241
                                     }
                                 },
+                            },
+                            "Advanced": {
+                                "Thread Safety and Design Principles": {
+                                    "Thread Confinement": true,
+                                    "Immutability in Multithreaded Design": true,
+                                    "Using Atomic Variables (`AtomicInteger`, `AtomicReference`)": true,
+                                    "CAS (Compare-And-Swap) and ABA Problem": true
+                                },
+                                "High-Level Concurrency Utilities": {
+                                    "Concurrent Collections (`ConcurrentHashMap`, `CopyOnWriteArrayList`)": true,
+                                    "Blocking Queues (`LinkedBlockingQueue`, `ArrayBlockingQueue`)": true,
+                                    "Semaphore, CountDownLatch, CyclicBarrier": true,
+                                    "Phaser and Exchanger": true
+                                },
+                                "Deadlock, Starvation, Livelock": {
+                                    "Detecting and Avoiding Deadlocks": true,
+                                    "Difference Between Starvation and Livelock": true,
+                                    "Deadlock Prevention Strategies": true
+                                },
+                                "Concurrency Patterns and Best Practices": {
+                                    "Producer-Consumer Using BlockingQueue": true,
+                                    "Reader-Writer Problem": true,
+                                    "Thread Pools and Task Queuing Strategies": true,
+                                    "Throttling and Rate Limiting with Semaphore": true
+                                },
+                                "Virtual Threads and Structured Concurrency (Java 21+)": {
+                                    "Introduction to Virtual Threads": true,
+                                    "Differences Between Platform and Virtual Threads": true,
+                                    "StructuredTaskScope and Fork/Join Replacement": true,
+                                    "Thread-per-Request at Scale with Project Loom": true
+                                },
+                                "Concurrency Testing and Debugging": {
+                                    "Writing Tests for Race Conditions": true,
+                                    "Stress Testing with JCStress": true,
+                                    "Thread Dump Analysis": true,
+                                    "Tools: JFR, VisualVM, async-profiler": true
+                                }
                             }
                         },
                         "Networking in Java": {
@@ -3428,10 +4471,220 @@ const mapper = {
                                 "Nashorn JavaScript Engine": true,
                                 "Base64 Encoding and Decoding": true
                             }
+                        },
+
+                        "Java 11 Features": {
+                            "___urlPath___": "java-11-features",
+                            "String Enhancements": {
+                                "___urlPath___": "string-enhancements",
+                                "isBlank(), strip(), stripLeading(), stripTrailing()": true,
+                                "lines() and repeat() Methods": true
+                            },
+                            "Local-Variable Syntax for Lambda Parameters": {
+                                "___urlPath___": "lambda-parameter-var",
+                                "Using var in Lambda Parameters": true,
+                                "Benefits and Limitations": true
+                            },
+                            "HTTP Client API (Standardized)": {
+                                "___urlPath___": "http-client-api",
+                                "Introduction to java.net.http": true,
+                                "Synchronous and Asynchronous Requests": true,
+                                "Sending GET and POST Requests": true,
+                                "Handling Responses and Errors": true,
+                                "Working with BodyHandlers and BodyPublishers": true
+                            },
+                            "Collection.toArray(IntFunction) Enhancement": {
+                                "___urlPath___": "collection-toarray-enhancement",
+                                "Old vs New toArray Methods": true,
+                                "Usage Examples with Streams": true
+                            },
+                            "Files.readString() and writeString()": {
+                                "___urlPath___": "files-read-write-string",
+                                "Reading Files as Strings": true,
+                                "Writing Strings to Files": true
+                            },
+                            "Optional.isEmpty()": {
+                                "___urlPath___": "optional-isempty",
+                                "Replacing !isPresent() with isEmpty()": true,
+                                "Code Cleanliness and Readability": true
+                            },
+                            "Pattern Matching and Nest-Based Access (Preview Features)": {
+                                "___urlPath___": "preview-features",
+                                "Pattern Matching Overview": true,
+                                "Nest-Based Access Control Explanation": true,
+                                "Using --enable-preview Flag": true
+                            },
+                            "Launch Single-File Source-Code Programs": {
+                                "___urlPath___": "single-file-programs",
+                                "Writing and Running Without Compilation": true,
+                                "Examples and Limitations": true
+                            },
+                            "Flight Recorder and Mission Control": {
+                                "___urlPath___": "flight-recorder",
+                                "Monitoring Performance with JFR": true,
+                                "Integration with Mission Control": true
+                            },
+                            "Garbage Collector Improvements": {
+                                "___urlPath___": "gc-improvements",
+                                "Introduction to ZGC (Experimental)": true,
+                                "Low-Latency GC Goals": true,
+                                "Epsilon GC (No-Op GC)": true
+                            },
+                            "Removed and Deprecated Features": {
+                                "___urlPath___": "removed-deprecated-features",
+                                "Java EE and CORBA Modules Removed": true,
+                                "Deprecated APIs and Alternatives": true
+                            }
+                        },
+
+                        "Java 17 Features": {
+                            "___urlPath___": "java-17-features",
+
+                            "Sealed Classes": {
+                                "___urlPath___": "sealed-classes",
+                                "What Are Sealed Classes?": true,
+                                "Permits Keyword and Class Hierarchies": true,
+                                "Use Cases and Benefits": true
+                            },
+
+                            "Pattern Matching for instanceof": {
+                                "___urlPath___": "pattern-matching-instanceof",
+                                "Before vs After Example": true,
+                                "Simplifying Type Casting": true,
+                                "Best Practices": true
+                            },
+
+                            "Switch Expressions (Standardized)": {
+                                "___urlPath___": "switch-expressions",
+                                "Arrow Syntax in Switch": true,
+                                "Yield Keyword Usage": true,
+                                "Returning Values from Switch": true
+                            },
+
+                            "Text Blocks (Standardized)": {
+                                "___urlPath___": "text-blocks",
+                                "Writing Multi-Line Strings": true,
+                                "Syntax, Formatting, and Indentation Rules": true,
+                                "Use Cases and Limitations": true
+                            },
+
+                            "Records (Standardized)": {
+                                "___urlPath___": "records",
+                                "Creating Immutable Data Classes": true,
+                                "Auto-Generated Constructors and Methods": true,
+                                "Records vs Lombok": true
+                            },
+
+                            "New Interface Methods": {
+                                "___urlPath___": "new-interface-methods",
+                                "List.toList() from Stream": true,
+                                "Map.ofEntries(), Stream.mapMulti()": true
+                            },
+
+                            "Strong Encapsulation of JDK Internals": {
+                                "___urlPath___": "strong-encapsulation",
+                                "Access Restrictions to sun.* Packages": true,
+                                "--add-exports and Migration Steps": true
+                            },
+
+                            "Foreign Function & Memory API (Incubator)": {
+                                "___urlPath___": "foreign-function-api",
+                                "Calling Native Code from Java": true,
+                                "Replacing JNI with Safer Alternatives": true
+                            },
+
+                            "Enhanced Pseudo-Random Number Generators": {
+                                "___urlPath___": "random-generator-enhancements",
+                                "New Interfaces and Implementations": true,
+                                "Jumpable and Splittable Generators": true
+                            },
+
+                            "Deprecations and Removals in Java 17": {
+                                "___urlPath___": "deprecated-removed-features",
+                                "Applet API Deprecation": true,
+                                "Removal of Experimental AOT and JIT Compilers": true
+                            },
+
+                            "Other Enhancements": {
+                                "___urlPath___": "misc-enhancements",
+                                "JEP 356: Enhanced Datagram Transport": true,
+                                "JEP 382: New macOS Rendering Pipeline": true
+                            }
+                        },
+                        "Java 21 Features": {
+                            "___urlPath___": "java-21-features",
+
+                            "String Templates (Preview)": {
+                                "___urlPath___": "string-templates",
+                                "Simplified String Interpolation": true,
+                                "STR Template Processor": true,
+                                "Custom Processors and Use Cases": true
+                            },
+
+                            "Record Patterns (Standardized)": {
+                                "___urlPath___": "record-patterns",
+                                "Destructuring Record Objects": true,
+                                "Combining with instanceof and switch": true
+                            },
+
+                            "Pattern Matching for switch (Standardized)": {
+                                "___urlPath___": "pattern-matching-switch",
+                                "Case Labels with Type Checks": true,
+                                "Guarded Patterns": true,
+                                "Exhaustiveness Checks": true
+                            },
+
+                            "Virtual Threads (Standardized)": {
+                                "___urlPath___": "virtual-threads",
+                                "Lightweight Threads via Project Loom": true,
+                                "Thread Builders and Executors": true,
+                                "Scaling Concurrency in Java": true
+                            },
+
+                            "Sequenced Collections": {
+                                "___urlPath___": "sequenced-collections",
+                                "Introduction to SequencedCollection Interface": true,
+                                "SequencedSet, SequencedMap Overview": true,
+                                "Ordering: First, Last, Reversed Views": true
+                            },
+
+                            "Unnamed Patterns and Variables (Preview)": {
+                                "___urlPath___": "unnamed-patterns",
+                                "Using _ (underscore) in Patterns": true,
+                                "Cleaner and Intentional Ignoring of Data": true
+                            },
+
+                            "Scoped Values (Preview)": {
+                                "___urlPath___": "scoped-values",
+                                "Alternative to ThreadLocal": true,
+                                "Passing Immutable Data to Threads": true
+                            },
+
+                            "Foreign Function & Memory API (Third Preview)": {
+                                "___urlPath___": "foreign-function-memory-api",
+                                "Interfacing with Native Libraries": true,
+                                "MemorySegment and MemoryLayout APIs": true,
+                                "Replacing Unsafe and JNI": true
+                            },
+
+                            "Structured Concurrency (Preview)": {
+                                "___urlPath___": "structured-concurrency",
+                                "Managing Concurrent Tasks as Units": true,
+                                "ScopedTask, Shutdown-on-Failure Model": true
+                            },
+
+                            "Deprecations and Removals in Java 21": {
+                                "___urlPath___": "deprecated-removed-java21",
+                                "Final Removal of SecurityManager": true,
+                                "Removed Legacy Garbage Collectors": true,
+                                "Deprecated APIs and Migration Notes": true
+                            }
                         }
 
+
+
                     },
-                    "4. Web Development with Java": {
+                    "Web Development with Java": {
                         "Java Servlets": {
                             "Basics of Servlets": true,
                             "Servlet Lifecycle": true,
@@ -3457,7 +4710,7 @@ const mapper = {
                             "Building Microservices with Spring Cloud": true
                         }
                     },
-                    "5. Database Integration": {
+                    "Database Integration": {
                         "Connecting Java with Databases": {
                             "JDBC Basics": true,
                             "Writing SQL Queries in Java": true,
@@ -3470,7 +4723,7 @@ const mapper = {
                             "Performing CRUD Operations with Hibernate": true
                         }
                     },
-                    "6. Java Design Patterns": {
+                    "Java Design Patterns": {
                         "Creational Patterns": {
                             "Singleton": true,
                             "Factory": true,
@@ -3487,7 +4740,7 @@ const mapper = {
                             "Command": true
                         }
                     },
-                    "7. Testing and Debugging in Java": {
+                    "Testing and Debugging in Java": {
                         "Unit Testing": {
                             "Writing Tests with JUnit 5": true,
                             "Mocking with Mockito": true
@@ -3497,7 +4750,7 @@ const mapper = {
                             "Common Errors and Debugging Best Practices": true
                         }
                     },
-                    "8. Build Tools and Deployment": {
+                    "Build Tools and Deployment": {
                         "Build Automation": {
                             "Maven (Dependencies, Lifecycle, Plugins)": true,
                             "Gradle (Tasks, Dependencies)": {
@@ -3669,13 +4922,13 @@ const mapper = {
                             "Dockerizing Java Applications": true
                         }
                     },
-                    "9. Performance Optimization": {
+                    "Performance Optimization": {
                         "Profiling Tools (JVisualVM, YourKit)": true,
                         "Garbage Collection (GC) Tuning": true,
                         "Analyzing and Reducing Memory Leaks": true,
                         "Writing Efficient Java Code": true
                     },
-                    "10. Case Studies and Projects": {
+                    "Case Studies and Projects": {
                         "Building an E-Commerce Application": true,
                         "Creating a Blog Management System": true,
                         "Developing a REST API for a Library Management System": true,
@@ -4161,8 +5414,6 @@ const mapper = {
                     "Using ORMs for CRUD Operations": true,
                     "Handling Relationships in ORMs (One-to-One, One-to-Many, Many-to-Many)": true
                 },
-
-
                 "Microservices Architecture": {
                     "Introduction to Microservices": {
                         "What are Microservices?": true,
