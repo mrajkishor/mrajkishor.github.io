@@ -75,7 +75,8 @@ export default function Profile() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginTop: 6,
+                marginTop: isSmallScreen ? 0 : 6,
+
 
             }}
         >
@@ -231,6 +232,7 @@ export default function Profile() {
                     position: isSmallScreen ? 'relative' : 'sticky',
                     top: isSmallScreen ? 'auto' : '65px',
                     height: isSmallScreen ? 'auto' : 'fit-content',
+                    width: isSmallScreen ? '100%' : '30%',
                 }}
 
                 >
@@ -325,7 +327,11 @@ export default function Profile() {
                 </Grid>
 
                 {/* Right Grid for Developer Info */}
-                <Grid item xs={8}>
+                <Grid item xs={8}
+                    sx={{
+                        width: isSmallScreen ? '100%' : '68%',
+                    }}
+                >
 
 
                     {/* <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
@@ -366,7 +372,7 @@ export default function Profile() {
 
                     <Item sx={{ background: 'white', textAlign: 'left', padding: '20px 30px', backdropFilter: 'blur(50px)' }}>
 
-                        <div style={{ maxWidth: '800px' }}>
+                        <div >
                             <Typography variant="h6" gutterBottom>
                                 About Me
                             </Typography>
@@ -451,7 +457,7 @@ export default function Profile() {
                             Projects
                         </Typography>
 
-                        <List sx={{ width: "800px" }}>
+                        <List sx={{ width: "100%" }}>
                             {/* <ListItem sx={{ padding: 0 }}>
                              <Card sx={{ maxWidth: '800px', marginBottom: 4 }}>
                                     <CardMedia
@@ -517,7 +523,7 @@ export default function Profile() {
 
                             </ListItem> */}
 
-                            <ListItem sx={{ padding: 0 }}>
+                            <ListItem sx={{ width: '100%', padding: 0 }}>
 
 
                                 <Card sx={{ width: '100%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>

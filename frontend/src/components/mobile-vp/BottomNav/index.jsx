@@ -32,7 +32,7 @@ const BottomNav = ({ showSideBar, setShowSideBar }) => {
                 <span>Home</span>
             </a>
 
-            {/* <a href="#/profile"
+            <a href="#/profile"
                 className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
                 onClick={() => handleNavClick('profile')}>
                 <i className="material-icons">person</i>
@@ -43,7 +43,7 @@ const BottomNav = ({ showSideBar, setShowSideBar }) => {
                 className="nav-item" target="_blank" rel="noopener noreferrer">
                 <i className="material-icons">info</i>
                 <span>About</span>
-            </a> */}
+            </a>
         </nav>
     );
 };
