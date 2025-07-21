@@ -79,27 +79,30 @@
 }
 
 .neon-title {
+  /* add best font weight for logo*/
   font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
-  color: #39ff14;
-  text-shadow:
+  font-size: 22px;
+    color: #007bff ;
+  /* color: #39ff14; */
+  /* text-shadow:
     0 0 5px #39ff14,
     0 0 10px #39ff14,
     0 0 20px #39ff14,
     0 0 40px #0fa,
-    0 0 80px #0fa;
+    0 0 80px #0fa; */
   margin: 0;
   text-align: left;
+  margin-top: 8px;
 }
 
 .neon-slogan {
   font-family: 'Orbitron', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffffcc;
-  text-shadow:
+  /* text-shadow:
     0 0 2px #fff,
     0 0 4px #0ff,
-    0 0 6px #0ff;
+    0 0 6px #0ff; */
   margin-top: -0px;
   text-align: left;
   margin-left: 10px;

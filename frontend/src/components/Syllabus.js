@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import StackGrid from "react-stack-grid";
 import mapper from "../commons/mapper";
+import FadeInOnView from "./FadeInOnView";
 import AnimatedTileBackground from "./AnimatedTileBackground";
 import algo from "../assets/algo.jpg";
 import aws_serverless from "../assets/aws_serverless.jpg";
@@ -28,6 +29,25 @@ import dl from '../assets/dl.png';
 import dm from '../assets/dm.jpg';
 import info_cyber_sec from '../assets/it_and_cyber_sec.jpeg';
 import big_data_analytics from '../assets/big_d.png';
+import cloud_service_providers from '../assets/cloud_prov.jpg';
+
+// de icons
+
+import data_engineering_foundations from "../assets/data_eng/de_foundation.jpg";
+import programming_scripting from "../assets/data_eng/programming_scripting.jpg";
+import big_data_ecosystem from "../assets/data_eng/big_data_ecosystem.jpg";
+import data_processing_frameworks from "../assets/data_eng/data_processing_framework.webp";
+import data_storage_technologies from "../assets/data_eng/data_storage_techniques.png";
+import cloud_platforms_services from "../assets/data_eng/cloud_platforms_services.jpg";
+import streaming_messaging_systems from "../assets/data_eng/streaming_messaging_systems.webp";
+import orchestration_workflow_management from "../assets/data_eng/orchestration_workflow_management.jpeg";
+import data_governance_quality from "../assets/data_eng/data-governance-and-qulaity.png";
+import security_compliance from "../assets/data_eng/compliance-security.webp";
+import advanced_sql_analytics from "../assets/data_eng/sql.jpg";
+import machine_learning_integration from "../assets/data_eng/ml_integration.jpg";
+import monitoring_observability from "../assets/data_eng/Mon_observ.webp";
+import testing_ci_cd_data from "../assets/data_eng/ci_cd.jpg";
+import soft_skills_leadership from "../assets/data_eng/soft_skills.png";
 
 //import web_tech from "../assets/web_tech.avif";
 import web_tech from "../assets/web_tech.jpg";
@@ -1948,6 +1968,24 @@ const renderTiles = (topics, basePath) => {
         "Information & Cyber Security": info_cyber_sec,
         "Big Data Analytics": big_data_analytics,
         "Soft Skills and Best Practices": soft_skills,
+
+        "Data Engineering Foundations": data_engineering_foundations,
+        "Programming and Scripting": programming_scripting,
+        "Big Data Ecosystem": big_data_ecosystem,
+        "Data Processing Frameworks": data_processing_frameworks,
+        "Data Storage Technologies": data_storage_technologies,
+        "Cloud Platforms and Services": cloud_platforms_services,
+        "Streaming and Messaging Systems": streaming_messaging_systems,
+        "Orchestration and Workflow Management": orchestration_workflow_management,
+        "Data Governance and Quality": data_governance_quality,
+        "Security and Compliance": security_compliance,
+        "Advanced SQL and Analytics": advanced_sql_analytics,
+        "Machine Learning Integration": machine_learning_integration,
+        "Monitoring and Observability": monitoring_observability,
+        "Testing and CI/CD for Data": testing_ci_cd_data,
+        "Soft Skills and Leadership": soft_skills_leadership,
+
+
         "Probability and Statistics": probability,
         "Linear Algebra": linear_algebra,
         "Calculus and Optimization": calculus,
@@ -1955,6 +1993,8 @@ const renderTiles = (topics, basePath) => {
         "Database Management and Warehousing": warehouse,
         "Machine Learning": machine_learning,
         "Artificial Intelligence": artificial_intelligence,
+
+        "Cloud Service Providers": cloud_service_providers,
     };
 
     return Object.entries(topics)
@@ -2019,69 +2059,106 @@ const Syllabus = () => {
     }, []);
 
     return (
-        <div
-            style={{
-                margin: "auto",
-                maxWidth: "1200px",
-                background: "none",
+        <FadeInOnView>
+            <div
+                style={{
+                    margin: "auto",
+                    maxWidth: "1200px",
+                    background: "none",
 
-            }}
-        >
+                }}
+            >
 
-            <div className="courseTitle">
-                {showTitle && (
-                    <h1
-                        className="syllabus-header"
+                <div className="courseTitle">
+                    {showTitle && (
+                        <h1
+                            className="syllabus-header"
+                        >
+                            {/* TechNotes Pro */}
+                        </h1>
+                    )}
+
+
+                </div>
+
+
+
+
+                {/* Full-Stack Developer Section */}
+                <div className="tiles-wrapper rotate-right">
+
+                    <h2
+                        className="tiles-header"
                     >
-                        {/* TechNotes Pro */}
-                    </h1>
-                )}
+                        Full-Stack Dev 🖥️🌐⚙️
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
+                    </StackGrid>
+
+                </div>
+
+
+                {/* Data Engineering Section */}
+                <div className="tiles-wrapper rotate-right">
+
+                    <h2
+                        className="tiles-header"
+                    >
+                        Data Engineering 🗄️📊🔧
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Data Engineering Notes"], "#/contents/data-engineering-course")}
+                    </StackGrid>
+
+                </div>
+
+
+
+                {/* Data Science Section */}
+                <div className="tiles-wrapper rotate-left">
+
+                    <h2
+                        className="tiles-header"
+                    >
+                        Data Science and AI 🤖📊📈
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
+                            "#/contents/data-science-and-artificial-intelligence-course"
+                        ) // Five-line loading skeleton
+                        }
+                    </StackGrid>
+
+                </div>
+
+
+                {/* Computer Science and Applications Section */}
+                <div className="tiles-wrapper rotate-left">
+
+                    <h2
+                        className="tiles-header"
+                    >
+                        Computer Science and Applications 💻📚
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Computer Science and Applications Notes"],
+                            "#/contents/computer-science-and-applications-course"
+                        ) // Five-line loading skeleton
+                        }
+                    </StackGrid>
+
+                </div>
+
+
 
 
             </div>
-
-
-
-
-            {/* Full-Stack Developer Section */}
-            <div className="tiles-wrapper rotate-right">
-
-                <h2
-                    className="tiles-header"
-                >
-                    Full-Stack Dev 🖥️🌐⚙️
-                </h2>
-
-                <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                    {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
-                </StackGrid>
-
-            </div>
-
-
-
-            {/* Data Science Section */}
-            <div className="tiles-wrapper rotate-left">
-
-                <h2
-                    className="tiles-header"
-                >
-                    Data Science and AI 🤖📊📈
-                </h2>
-
-                <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                    {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
-                        "#/contents/data-science-and-artificial-intelligence"
-                    ) // Five-line loading skeleton
-                    }
-                </StackGrid>
-
-            </div>
-
-
-
-
-        </div>
+        </FadeInOnView>
     );
 };
 

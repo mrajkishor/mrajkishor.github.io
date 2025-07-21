@@ -156,6 +156,53 @@ const App = () => {
       mainRef.current.scrollTo(0, 0); // Scroll to the top of the profile container
     }
   }, [location.pathname]);
+
+
+  const mainPageLogo = () => {
+
+    return (<div class="logo-container" onClick={handleLogoClick}>
+      <h1 class="neon-title flicker">StackSynapse.com</h1>
+      {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
+      <p class="neon-slogan flicker-slow" >
+
+        {/* {main_slogans[index]} */}
+        Explore the Depths of Full Stack Development
+      </p>
+
+
+    </div>)
+
+  }
+
+  const contentPageLogo = () => {
+    return (<div
+      className="logo-wrapper"
+      onClick={handleLogoClick}
+      style={{ cursor: "pointer" }}
+    >
+      <div className="sidebar-logo">
+        {/* My<span className="logo-highlight">N😁tes</span> */}
+        Stack<span className="logo-highlight">🧠Synapse</span>
+      </div>
+
+      <div className="sidebar-slogan">
+
+        <div style={{
+          opacity: fade ? 1 : 0,
+          transition: "opacity 0.5s ease-in-out"
+        }}>
+          {slogan}
+        </div>
+
+      </div>
+
+
+
+      {/* <div class="tagline">Organized Compendium for Efficient & Advanced Notetaking</div> */}
+
+    </div>)
+  }
+
   return (
     <>
       <div key={count} style={{
@@ -178,45 +225,13 @@ const App = () => {
 
             {/* Neon style ref : https://css-tricks.com/how-to-create-neon-text-with-css/ */}
 
-            {!url.includes("contents") ? <div class="logo-container" onClick={handleLogoClick}>
-              <h1 class="neon-title flicker">StackSynapse.com</h1>
-              {/* <p class="neon-slogan flicker-slow">Illuminate your thoughts.</p> */}
-              <p class="neon-slogan flicker-slow" >
+            {!url.includes("contents") ?
 
-                {/* {main_slogans[index]} */}
-                Concept Notes | Full Stack / Computer & Data Science
-              </p>
+              contentPageLogo()
+              :
+              contentPageLogo()
 
 
-            </div> :
-
-
-              <div
-                className="logo-wrapper"
-                onClick={handleLogoClick}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="sidebar-logo">
-                  {/* My<span className="logo-highlight">N😁tes</span> */}
-                  Stack<span className="logo-highlight">🧠Synapse</span>
-                </div>
-
-                <div className="sidebar-slogan">
-
-                  <div style={{
-                    opacity: fade ? 1 : 0,
-                    transition: "opacity 0.5s ease-in-out"
-                  }}>
-                    {slogan}
-                  </div>
-
-                </div>
-
-
-
-                {/* <div class="tagline">Organized Compendium for Efficient & Advanced Notetaking</div> */}
-
-              </div>
 
 
             }

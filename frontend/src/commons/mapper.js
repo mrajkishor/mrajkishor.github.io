@@ -3791,14 +3791,37 @@ const mapper = {
                         ,
                         "Collections": {
                             "Introduction to Collections Framework": {
-                                "Need for Collections over Arrays": true,
-                                "Collections Framework Hierarchy": true,
-                                "Interfaces: Collection, List, Set, Map, Queue": true,
-                                "Difference Between Collection and Collections Class": true
+                                "Need for Collections over Arrays": {
+                                    "___urlPath___": "need-for-collections-over-arrays",
+                                    "___md___": 1004
+                                },
+                                "Collections Framework Hierarchy": {
+                                    "___urlPath___": "collections-framework-hierarchy",
+                                    "___md___": 1005
+                                },
+                                "Java Collections Framework Cheatsheet": {
+                                    "___urlPath___": "java-collections-framework-cheatsheet",
+                                    "___md___": 1006
+                                },
+                                "Interfaces: Collection, List, Set, Map, Queue": {
+                                    "___urlPath___": "interfaces-collection-list-set-map-queue",
+                                    "___md___": 1007
+                                },
+                                "Difference Between Collection and Collections Class": {
+                                    "___urlPath___": "difference-between-collection-and-collections-class",
+                                    "___md___": 1008
+                                }
                             },
                             "List Implementations": {
-                                "ArrayList – Internal Structure, Resizing Strategy": true,
-                                "LinkedList – Node Structure, Memory Tradeoffs": true,
+                                "___urlPath___": "list-implementations",
+                                "ArrayList – Internal Structure, Resizing Strategy": {
+                                    "___urlPath___": "arraylist-internal-structure-resizing-strategy",
+                                    "___md___": 1009
+                                },
+                                "LinkedList – Node Structure, Memory Tradeoffs": {
+                                    "___urlPath___": "linkedlist-node-structure-memory-tradeoffs",
+                                    "___md___": 1010
+                                },
                                 "Vector and Stack – Legacy Behavior and Synchronization": true,
                                 "Performance Comparison – Insertion, Deletion, Access": true
                             },
@@ -3817,7 +3840,11 @@ const mapper = {
                                 "Map Internal Working – equals(), hashCode(), collisions": true
                             },
                             "Queue and Deque": {
-                                "PriorityQueue – Min/Max Heap Implementation": true,
+                                "___urlPath___": "queue-and-deque",
+                                "PriorityQueue – Min/Max Heap Implementation": {
+                                    "___urlPath___": "priorityqueue-min-max-heap",
+                                    "___md___": 1003
+                                },
                                 "ArrayDeque vs LinkedList as Deques": true,
                                 "BlockingQueue and Its Variants": true,
                                 "Deque vs Stack vs Queue Use-Cases": true
@@ -4697,7 +4724,11 @@ const mapper = {
                             "JSTL and Expression Language": true
                         },
                         "RESTful Web Services": {
-                            "Building REST APIs with JAX-RS": true,
+                            "___urlPath___": "restful-web-services",
+                            "Building REST APIs with JAX-RS": {
+                                "___urlPath___": "building-rest-apis-with-jax-rs",
+                                "___md___": 990
+                            },
                             "JSON and XML Handling": true,
                             "Implementing CRUD Operations": true,
                             "API Versioning and Documentation": true
@@ -4919,12 +4950,26 @@ const mapper = {
                         "Deployment": {
                             "Packaging Applications as WAR/JAR": true,
                             "Deploying Applications on Apache Tomcat": true,
-                            "Dockerizing Java Applications": true
+                            "Dockerizing Java Applications": {
+                                "___urlPath___": "dockerizing-java-applications",
+                                "___md___": 991
+                            },
+                            "Deploying Dockerized Java App to Kubernetes with Helm": {
+                                "___urlPath___": "deploying-dockerized-java-app-to-kubernetes-with-helm",
+                                "___md___": 992
+                            }
                         }
                     },
                     "Performance Optimization": {
-                        "Profiling Tools (JVisualVM, YourKit)": true,
-                        "Garbage Collection (GC) Tuning": true,
+                        "___urlPath___": "performance-optimisation",
+                        "Profiling Tools (JVisualVM, YourKit)": {
+                            "___urlPath___": "profiling-tools",
+                            "___md___": 993
+                        },
+                        "Garbage Collection (GC) Tuning": {
+                            "___urlPath___": "garbage-collecton-tuning",
+                            "___md___": 994
+                        },
                         "Analyzing and Reducing Memory Leaks": true,
                         "Writing Efficient Java Code": true
                     },
@@ -5995,6 +6040,136 @@ const mapper = {
                     "Component Testing with React Testing Library": true,
                     "End-to-End Testing with Cypress": true
                 },
+                "Frontend Debugging & Profiling": {
+                    "___urlPath___": "frontend-debugging-profiling",
+                    "Chrome DevTools": {
+                        "___urlPath___": "chrome-devtools",
+                        "Getting Started": {
+                            "___urlPath___": "getting-started",
+                            "Opening DevTools": true,
+                            "Docking and Undocking Panels": true,
+                            "Shortcuts and UI Navigation": true,
+                            "Command Menu (⌘+Shift+P / Ctrl+Shift+P)": true
+                        },
+                        "Elements Panel": {
+                            "___urlPath___": "elements-panel",
+                            "Inspecting DOM Tree": true,
+                            "Live Editing HTML/CSS": true,
+                            "Box Model and Computed Styles": true,
+                            "Force Element State (:hover, :active, :focus)": true,
+                            "CSS Breakpoints": true,
+                            "DOM Breakpoints": true,
+                            "Color Picker, Fonts, Layout Tools": true
+                        },
+                        "Console Panel": {
+                            "___urlPath___": "console-panel",
+                            "Console Logging and Filtering": true,
+                            "Command Line API ($0, $$, $_)": true,
+                            "Console.table(), console.dir()": true,
+                            "Preserve Log on Navigation": true,
+                            "Execution Context": true
+                        },
+                        "Sources Panel": {
+                            "___urlPath___": "sources-panel",
+                            "File Navigation and Search (⌘+P)": true,
+                            "JavaScript Debugging (Breakpoints, Step Over, Step In)": true,
+                            "Scope, Watch, and Call Stack": true,
+                            "Async Call Stack and Promises": true,
+                            "Snippets (Reusable Code)": true,
+                            "Live Edit JS and Save Overrides": true,
+                            "Pretty Print Minified Code": true,
+                            "Blackboxing Scripts": true
+                        },
+                        "Network Panel": {
+                            "___urlPath___": "network-panel",
+                            "Request/Response Headers": true,
+                            "Status Codes and Timing Breakdown": true,
+                            "XHR/Fetch Monitoring": true,
+                            "Throttling (Slow 3G, Offline)": true,
+                            "Blocking Requests": true,
+                            "Initiator and Dependency Chains": true,
+                            "WebSocket and SSE Inspection": true
+                        },
+                        "Performance Panel": {
+                            "___urlPath___": "performance-panel",
+                            "Recording and Analyzing Frames": true,
+                            "Main Thread vs Render Thread": true,
+                            "FPS and CPU Time Breakdown": true,
+                            "Long Tasks and Bottlenecks": true,
+                            "Web Vitals (FID, LCP, CLS)": true,
+                            "Flame Charts and Call Trees": true
+                        },
+                        "Memory Panel": {
+                            "___urlPath___": "memory-panel",
+                            "Heap Snapshot": true,
+                            "Allocation Instrumentation": true,
+                            "Detecting Memory Leaks": true,
+                            "Garbage Collection Triggers": true,
+                            "Detached DOM Trees": true,
+                            "JS Object Retainers Graph": true
+                        },
+                        "Application Panel": {
+                            "___urlPath___": "application-panel",
+                            "Local Storage, Session Storage": true,
+                            "IndexedDB, Web SQL": true,
+                            "Cookies Viewer & Editor": true,
+                            "Manifest and Service Workers": true,
+                            "Cache Storage and Application Cache": true,
+                            "Background Sync and Push Messages": true
+                        },
+                        "Security Panel": {
+                            "___urlPath___": "security-panel",
+                            "HTTPS Certificate Chain Inspection": true,
+                            "Mixed Content Warnings": true,
+                            "Content Security Policy (CSP)": true
+                        },
+                        "Lighthouse Panel": {
+                            "___urlPath___": "lighthouse-panel",
+                            "Performance Audits": true,
+                            "Accessibility, SEO, Best Practices": true,
+                            "Progressive Web App (PWA) Checks": true,
+                            "Custom Configuration and Categories": true
+                        },
+                        "Mobile & Responsive Tools": {
+                            "___urlPath___": "responsive-tools",
+                            "Device Toolbar and Emulation": true,
+                            "Geolocation and Device Sensors": true,
+                            "Touch and Orientation Emulation": true,
+                            "Network Conditions and User-Agent Overrides": true
+                        },
+                        "Advanced Debugging": {
+                            "___urlPath___": "advanced-debugging",
+                            "Event Listeners and Event Breakpoints": true,
+                            "Async Stack Traces": true,
+                            "Custom Object Formatters": true,
+                            "Instrumentation Breakpoints (e.g. fetch)": true,
+                            "WebAssembly Debugging Support": true,
+                            "Framework-specific DevTools (React, Angular hooks)": true
+                        },
+                        "Customization & Experiments": {
+                            "___urlPath___": "customization",
+                            "Dark Mode and Theme Settings": true,
+                            "Experiments Tab and Beta Features": true,
+                            "Custom Shortcuts and Workspace Mapping": true,
+                            "Overrides and Persistent Workspace Sync": true
+                        },
+                        "Integration with CI/CD": {
+                            "___urlPath___": "ci-cd-integration",
+                            "Lighthouse CI and DevTools Protocol": true,
+                            "Performance Budget Testing": true,
+                            "Remote Debugging with Chrome Headless": true,
+                            "Chrome DevTools Protocol (CDP) Automation": true
+                        }
+                    },
+                    "React Profiler": true,
+                    "Network Monitoring Tools": true,
+                    "Memory Leak Detection": true,
+                    "VSCode Debugger": true,
+                    "Source Maps & Error Tracking": true,
+                    "Lighthouse Audits": true,
+                    "Web Vitals Monitoring": true,
+                    "Bundle Analyzer": true
+                },
                 "Performance Optimization Techniques": {
                     "Lazy Loading Components": true,
                     "Memoization": true,
@@ -6169,1301 +6344,545 @@ const mapper = {
                     }
                 }
             },
-            "Cloud Computing": {
-                "Fundamentals": {
-                    "___urlPath___": "cloud-computing-fundamentals",
-                    "Introduction to Cloud Computing": {
-                        "___urlPath___": "introduction-cloud-computing",
-                        "___md___": 101
-                    },
-                    "Characteristics of Cloud": {
-                        "___urlPath___": "characteristics-cloud",
-                        "___md___": 102
-                    },
-                    "Service Models (IaaS, PaaS, SaaS)": {
-                        "___urlPath___": "service-models",
-                        "___md___": 103
-                    },
-                    "Deployment Models": {
-                        "___urlPath___": "deployment-models",
-                        "___md___": 104
-                    },
-                    "Benefits and Challenges": {
-                        "___urlPath___": "benefits-challenges-cloud",
-                        "___md___": 105
-                    }
-                },
-                "Cloud Service Providers": {
-                    "___urlPath___": "cloud-service-providers",
-                    "AWS": {
-                        "AWS Certified Solutions Architect Associate (SAA-C03)": {
-                            "___urlPath___": "aws-certified-solutions-architect-associate",
-                            "About this certification": {
-                                "___urlPath___": "about-this-certification",
-                                "___md___": 378
-                            },
-                            "Getting Started with AWS 🟢": {
-                                "___urlPath___": "getting-started-with-aws",
-                                "___md___": 62
-                            },
-                            "AWS Identity & Access Management (AWS IAM) 🟢": {
-                                "___urlPath___": "aws-iam",
-                                "___md___": 62
-                            },
-                            "Amazon EC2 - Basics 🟡": {
-                                "___urlPath___": "amazon-ec2-basics",
-                                "Overview": {
-                                    "___urlPath___": "overview",
-                                    "___md___": 945
-                                },
-                                "Hands-On Guide: Launching an EC2 Instance Running Linux": {
-                                    "___urlPath___": "hands-on-guide-launching-an-ec2-instance-running-linux",
-                                    "___md___": 946
-                                },
-                                "EC2 Instance Types": {
-                                    "___urlPath___": "ec2-instance-types",
-                                    "___md___": 947
-                                },
-                                "EC2 Instance Features": {
-                                    "___urlPath___": "ec2-instance-features",
-                                    "___md___": 949
-                                },
-                                "Measuring EC2 Instance Performance": {
-                                    "___urlPath___": "measuring-ec2-instance-performance",
-                                    "___md___": 948
-                                },
-                                "AWS Security Groups": {
-                                    "___urlPath___": "aws-security-groups",
-                                    "___md___": 950
-                                }
-                            },
-                            "Amazon EC2 - Associate 🟡": {
-                                "___urlPath___": "amazon-ec2-associate",
-                                "___md___": 62
-                            },
-                            "Amazon EC2 - Instance Storage 🔴": {
-                                "___urlPath___": "amazon-ec2-instance-storage",
-                                "EBS Overview": {
-                                    "___urlPath___": "ebs-overview",
-                                    "___md___": 445
-                                },
-                                "EBS Hands-on": {
-                                    "___urlPath___": "ebs-hands-on",
-                                    "___md___": 446
-                                }
-                            },
-                            "High Availability & Scalability 🔴": {
-                                "___urlPath___": "high-availability-scalability",
-                                "___md___": 62
-                            },
-                            "RDS, Aurora & ElastiCache 🔴": {
-                                "___urlPath___": "rds-aurora-elasticache",
-                                "___md___": 62
-                            },
-                            "Amazon Route 53 🔴": {
-                                "___urlPath___": "amazon-route-53",
-                                "___md___": 62
-                            },
-                            "Classic Solutions Architecture 🟡": {
-                                "___urlPath___": "classic-solutions-architecture",
-                                "Overview": {
-                                    "___urlPath___": "overview",
-                                    "___md___": 931
-                                },
-                                "Architecting a Stateless Web App from Scratch": {
-                                    "___urlPath___": "architecturing-a-stateless-web-app-from-scratch",
-                                    "___md___": 932
-                                },
-                                "Building a Stateful, Scalable Web App": {
-                                    "___urlPath___": "building-a-stateful-scalable-web-app",
-                                    "___md___": 937
-                                },
-                                "Building a Scalable Stateful Web App: MyWordPress.com": {
-                                    "___urlPath___": "building-scalable-stateful-web-app-my-wordpress-dot-com",
-                                    "___md___": 938
-                                },
-                                "Instantiating Scalable Web Apps": {
-                                    "___urlPath___": "instantiating-scalable-web-apps",
-                                    "___md___": 939
-                                },
-                                "Elastic Beanstalk – Deep Dive": {
-                                    "___urlPath___": "elastic-beanstalk-deep-dive",
-                                    "___md___": 940
-                                }
-                            },
-                            "Amazon S3 🟡": {
-                                "___urlPath___": "amazon-s3",
-                                "___md___": 62
-                            },
-                            "Amazon S3 - Advanced 🔴": {
-                                "___urlPath___": "amazon-s3-advanced",
-                                "___md___": 62
-                            },
-                            "Amazon S3 - Security 🔴": {
-                                "___urlPath___": "amazon-s3-security",
-                                "___md___": 62
-                            },
-                            "CloudFront & Global Accelerator 🔴": {
-                                "___urlPath___": "cloudfront-global-accelerator",
-                                "___md___": 62
-                            },
-                            "AWS Storage Extras 🔴": {
-                                "___urlPath___": "aws-storage-extras",
-                                "AWS Snowball": {
-                                    "___urlPath___": "aws-snowball",
-                                    "___md___": 434
-                                }
-                            },
-                            "AWS Integration & Messaging 🔴": {
-                                "___urlPath___": "aws-integration-messaging",
-                                "Introduction": {
-                                    "___urlPath___": "introduction",
-                                    "___md___": 392
-                                },
-                                "SQS Overview": {
-                                    "___urlPath___": "sqs-overview",
-                                    "___md___": 393
-                                },
-                                "SQS - Standard Queue Hands On": {
-                                    "___urlPath___": "sqs-standard-queue-hands-on",
-                                    "___md___": 394
-                                },
-                                "Amazon SQS – Message Visibility Timeout": {
-                                    "___urlPath___": "sqs-message-visibility-timeout",
-                                    "___md___": 395
-                                },
-                                "Amazon SQS – Long Polling": {
-                                    "___urlPath___": "sqs-long-polling",
-                                    "___md___": 396
-                                },
-                                "Amazon SQS – FIFO Queue": {
-                                    "___urlPath___": "sqs-fifo-queue",
-                                    "___md___": 397
-                                },
-                                "Scaling Applications with SQS and Auto Scaling Groups": {
-                                    "___urlPath___": "scaling-applications-with-sqs-and-auto-scaling-group",
-                                    "___md___": 398
-                                },
-                                "Amazon SNS (Simple Notification Service) Overview": {
-                                    "___urlPath___": "amazon-sns-overview",
-                                    "___md___": 401
-                                },
-                                "Advanced SNS Features": {
-                                    "___urlPath___": "advanced-sns-features",
-                                    "___md___": 402
-                                },
-                                "SNS Hands On": {
-                                    "___urlPath___": "sns-hands-on",
-                                    "___md___": 403
-                                },
-                                "Amazon Kinesis Data Streams Overview": {
-                                    "___urlPath___": "amazon-kinesis-data-streams-overview",
-                                    "___md___": 404
-                                },
-                                "Amazon Kinesis Data Streams Hands On": {
-                                    "___urlPath___": "amazon-kinesis-data-streams-hands-on",
-                                    "___md___": 405
-                                },
-                                "Amazon Data Firehose": {
-                                    "___urlPath___": "amazon-data-firehose",
-                                    "___md___": 430
-                                },
-                                "Amazon Data Firehose - Hands On": {
-                                    "___urlPath___": "amazon-data-firehose-hands-on",
-                                    "___md___": 431
-                                },
-                                "SQS Vs SNS Vs Kinesis": {
-                                    "___urlPath___": "sqs-vs-sns-vs-kinesis",
-                                    "___md___": 432
-                                },
-                                "Amazon MQ": {
-                                    "___urlPath___": "amazon-mq",
-                                    "___md___": 433
-                                }
-                            },
-                            "Containers on AWS 🔴": {
-                                "___urlPath___": "containers-on-aws",
-                                "Introduction to Docker": {
-                                    "___urlPath___": "introduction-docker",
-                                    "___md___": 277
-                                },
-                                "AWS ECS": {
-                                    "___urlPath___": "aws-ecs",
-                                    "Introduction to AWS ECS": {
-                                        "___urlPath___": "introduction-aws-ecs",
-                                        "___md___": 337
-                                    },
-                                    "ECS Cluster & Task Definitions": {
-                                        "___urlPath___": "ecs-cluster-task-definitions",
-                                        "___md___": 102
-                                    },
-                                    "ECS Services & Load Balancing": {
-                                        "___urlPath___": "ecs-services-load-balancing",
-                                        "___md___": 103
-                                    },
-                                    "ECS Launch Types": {
-                                        "___urlPath___": "ecs-launch-types",
-                                        "EC2 Launch Type": {
-                                            "___urlPath___": "ecs-ec2-launch-type",
-                                            "___md___": 104
-                                        },
-                                        "Fargate Launch Type": {
-                                            "___urlPath___": "ecs-fargate-launch-type",
-                                            "___md___": 105
-                                        }
-                                    },
-                                    "Networking & Security in ECS": {
-                                        "___urlPath___": "networking-security-ecs",
-                                        "___md___": 106
-                                    },
-                                    "ECS Auto Scaling & Monitoring": {
-                                        "___urlPath___": "ecs-auto-scaling-monitoring",
-                                        "___md___": 107
-                                    },
-                                    "ECS with CI/CD": {
-                                        "___urlPath___": "ecs-ci-cd",
-                                        "___md___": 108
-                                    },
-                                    "ECS vs. EKS vs. Fargate": {
-                                        "___urlPath___": "ecs-vs-eks-vs-fargate",
-                                        "___md___": 109
-                                    },
-                                    "ECS Use Cases": {
-                                        "___urlPath___": "ecs-use-cases",
-                                        "___md___": 110
-                                    }
-                                }
-
-
-                            },
-                            "Serverless Overview 🟢": {
-                                "___urlPath___": "serverless-overview",
-                                "Introduction": {
-                                    "___urlPath___": "introduction",
-                                    "___md___": 447
-                                },
-                                "AWS Lambda Overview": {
-                                    "___urlPath___": "aws-lambda-overview",
-                                    "___md___": 448
-                                },
-                                "AWS Lambda Hands-On": {
-                                    "___urlPath___": "aws-lambda-hands-on",
-                                    "___md___": 454
-                                }
-                            },
-                            "Serverless Architectures 🔴": {
-                                "___urlPath___": "serverless-architectures",
-                                "___md___": 62
-                            },
-                            "Databases in AWS 🔴": {
-                                "___urlPath___": "databases-in-aws",
-                                "Choosing the Right Database": {
-                                    "___urlPath___": "choosing-right-database",
-                                    "___md___": 350
-                                },
-                                "Amazon RDS": {
-                                    "___urlPath___": "amazon-rds",
-                                    "___md___": 351
-                                },
-                                "Amazon Aurora": {
-                                    "___urlPath___": "amazon-aurora",
-                                    "___md___": 352
-                                },
-                                "Amazon ElastiCache": {
-                                    "___urlPath___": "amazon-elasticache",
-                                    "___md___": 353
-                                },
-                                "Amazon DynamoDB": {
-                                    "___urlPath___": "amazon-dynamodb",
-                                    "___md___": 354
-                                },
-                                "Amazon S3": {
-                                    "___urlPath___": "amazon-s3",
-                                    "___md___": 355
-                                },
-                                "DocumentDB": {
-                                    "___urlPath___": "documentdb",
-                                    "___md___": 356
-                                },
-                                "Amazon Neptune and Amazon Neptune Streams": {
-                                    "___urlPath___": "amazon-neptune-streams",
-                                    "___md___": 357
-                                },
-                                "Amazon Keyspaces": {
-                                    "___urlPath___": "amazon-keyspaces",
-                                    "___md___": 358
-                                }
-                            },
-                            "Data & Analytics 🟡": {
-                                "___urlPath___": "data-analytics",
-                                "___md___": 62
-                            },
-                            "Machine Learning 🟡": {
-                                "___urlPath___": "machine-learning",
-                                "___md___": 62
-                            },
-                            "AWS Monitoring, Audit & Performance 🔴": {
-                                "___urlPath___": "aws-monitoring-audit-performance",
-                                "___md___": 62
-                            },
-                            "Advanced Identity in AWS 🔴": {
-                                "___urlPath___": "advanced-identity-in-aws",
-                                "___md___": 62
-                            },
-                            "AWS Security & Encryption 🔴": {
-                                "___urlPath___": "aws-security-encryption",
-                                "Why Encryption Matters?": {
-                                    "___urlPath___": "why-encryption-matters",
-                                    "___md___": 380
-                                },
-                                "KMS Overview": {
-                                    "___urlPath___": "complete-guide-aws-kms",
-                                    "___md___": 381
-                                },
-                                "KMS hands on with CLI": {
-                                    "___urlPath___": "kms-hands-on-with-cli",
-                                    "___md___": 388
-                                },
-                                "KMS Multi-Region Keys": {
-                                    "___urlPath___": "kms-multi-region-keys",
-                                    "___md___": 382
-                                },
-                                "S3 Replication and Encryption": {
-                                    "___urlPath___": "s3-replication-and-encryption",
-                                    "___md___": 383
-                                },
-                                "Sharing Encrypted AMIs": {
-                                    "___urlPath___": "sharing-encrypted-amis",
-                                    "___md___": 384
-                                },
-                                "SSM parameter store": {
-                                    "___urlPath___": "ssm-parameter-store",
-                                    "___md___": 385
-                                },
-                                "SSM Parameter Store Hands-On with CLI": {
-                                    "___urlPath___": "ssm-parameter-store-hands-on-with-cli",
-                                    "___md___": 387
-                                },
-                                "SSM Parameter Store Hands-On with AWS Lambda": {
-                                    "___urlPath___": "ssm-parameter-store-hands-on-with-aws-lambda",
-                                    "___md___": 386
-                                },
-                                "AWS Secrets Manager Overview": {
-                                    "___urlPath___": "aws-secrets-manager-overview",
-                                    "___md___": 389
-                                },
-                                "AWS Secrets Manager - Hands On": {
-                                    "___urlPath___": "aws-secrets-manager-hands-on",
-                                    "___md___": 390
-                                },
-                                "SSM Parameter Store Vs. Secrets Manager": {
-                                    "___urlPath___": "aws-ssm-parameter-vs-aws-secrets-manager",
-                                    "___md___": 391
-                                }
-                            },
-                            "Amazon VPC 🔴": {
-                                "___urlPath___": "amazon-vpc",
-                                "VPC Components": {
-                                    "___urlPath___": "vpc-components",
-                                    "___md___": 373
-                                },
-                                "CIDR": {
-                                    "___urlPath___": "cidr",
-                                    "___md___": 374
-                                },
-                                "Public vs Private ip": {
-                                    "___urlPath___": "public-vs-private-ip",
-                                    "___md___": 375
-                                },
-                                "Network Protection on AWS": {
-                                    "___urlPath___": "networking-protection-aws",
-                                    "___md___": 379
-                                }
-                            },
-                            "Disaster Recovery & Migrations 🟡": {
-                                "___urlPath___": "disaster-recovery-migrations",
-                                "___md___": 62
-                            },
-                            "More Solutions Architecture 🟡": {
-                                "___urlPath___": "more-solutions-architecture",
-                                "___md___": 62
-                            },
-                            "Other Services 🟢": {
-                                "___urlPath___": "other-services",
-                                "___md___": 62
-                            },
-                            "White Papers & Architectures 🟡": {
-                                "___urlPath___": "white-papers-architectures",
-                                "___md___": 62
-                            },
-                            "Exam Preparation 🟢": {
-                                "___urlPath___": "exam-preparation",
-                                "___md___": 62
-                            },
-                            "Congratulations 🟢": {
-                                "___urlPath___": "congratulations",
-                                "___md___": 62
-                            }
-                        },
-                        "AWS Certified Developer - Associate | Discontinued": {
-                            "___urlPath___": "aws-certified-developer-associate",
-                            "Getting Started with AWS": 1,
-                            "AWS Identity & Access Management (AWS IAM)": 2,
-                            "Amazon EC2 – Basics": 3,
-                            "Amazon EC2 – Instance Storage": 4,
-                            "High Availability & Scalability": 5,
-                            "RDS, Aurora, & ElastiCache": 6,
-                            "Amazon Route 53": 7,
-                            "Amazon VPC – Basics": 8,
-                            "Amazon S3": 9,
-                            "AWS CLI, SDK, IAM Roles & Policies": 10,
-                            "Amazon S3 – Advanced": 11,
-                            "Amazon S3 – Security": 12,
-                            "Amazon CloudFront": 13,
-                            "Containers on AWS": 14,
-                            "AWS Elastic Beanstalk": 15,
-                            "AWS CloudFormation": 16,
-                            "AWS Integration & Messaging": 17,
-                            "AWS Monitoring, Troubleshooting & Audit": 18,
-                            "AWS Lambda": 19,
-                            "Amazon DynamoDB": {
-                                "___urlPath___": "amazon-dynamodb",
-                                "Introduction": 22,
-                                "DynamoDB as a Session State Cache": 34,
-                                "DynamoDB Write Sharding": 33,
-                                "DynamoDB – Write Types": 32,
-                                "DynamoDB – Large Objects Pattern": 30,
-                                "DynamoDB – Indexing S3 Objects Metadata": 31,
-                                "DynamoDB Operations": 29,
-                                "Security & Other features": 23,
-                                "Users Interact with DynamoDB Directly": 25,
-                                "Fine-Grained Access Control": 24,
-                            },
-                            "Amazon API Gateway": {
-                                "___urlPath___": "amazon-api-gateway",
-                                "Introduction": 39,
-                                "Example: Building a Serverless API": 38,
-                                "API Gateway – High-Level Integrations": 40,
-                                "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
-                                "API Gateway - Endpoint Types": 42,
-                                "API Gateway – Security": 43,
-                                "API Gateway – Deployment Stages": 44,
-                                "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
-
-                            },
-                            "AWS CICD": 22,
-                            "AWS Serverless Application Model (SAM)": 23,
-                            "AWS Cloud Development Kit (CDK)": 24,
-                            "Amazon Cognito": 25,
-                            "Other Serverless": 26,
-                            "Advanced Identity in AWS": 27,
-                            "AWS Security & Encryption": {
-
-                            },
-                            "Other Services": 29,
-                            "Exam Preparation": 30,
-                            "Congratulations": 31
-                        },
-                        "AWS Serverless | Discontinued": {
-                            "___urlPath___": "aws-serverless",
-                            "Introduction to Serverless Computing": {
-                                "___urlPath___": "introduction-to-serverless-computing",
-                                "What is Serverless?": {
-                                    "___urlPath___": "what-is-serverless",
-                                    "___md___": 46
-                                },
-                                "Benefits of Serverless Architecture": true,
-                                "Overview of AWS Serverless Services": true
-                            },
-                            "AWS Lambda": {
-                                "Introduction to AWS Lambda": true,
-                                "Creating and Deploying Lambda Functions": true,
-                                "Event-Driven Architecture with Lambda": true,
-                                "Monitoring and Debugging Lambda Functions": true,
-                                "Best Practices for AWS Lambda": true
-                            },
-                            "API Gateway": {
-                                "Introduction to Amazon API Gateway": true,
-                                "Creating and Managing REST APIs": true,
-                                "Integrating API Gateway with AWS Lambda": true,
-                                "Authentication and Authorization with API Gateway": true,
-                                "CORS and Rate Limiting": true
-                            },
-                            "AWS DynamoDB": {
-                                "Introduction to DynamoDB": true,
-                                "Creating and Managing Tables": true,
-                                "Data Modeling with DynamoDB": true,
-                                "DynamoDB Streams": true,
-                                "Best Practices for DynamoDB Performance": true
-                            },
-                            "Serverless Frameworks": {
-                                "Introduction to Serverless Framework": true,
-                                "Deploying Applications with Serverless Framework": true,
-                                "Comparison with SAM (Serverless Application Model)": true
-                            },
-                            "Event Sources": {
-                                "AWS S3 as Event Source": true,
-                                "DynamoDB Streams as Event Source": true,
-                                "Amazon SNS and SQS Integration": true,
-                                "AWS EventBridge": true
-                            },
-                            "Serverless Monitoring and Security": {
-                                "Monitoring with AWS CloudWatch": true,
-                                "Setting Up Alarms and Logs": true,
-                                "Security Best Practices for Serverless Applications": true,
-                                "IAM Role Management for Serverless": true
-                            },
-                            "CI/CD for Serverless Applications": {
-                                "Introduction to AWS CodePipeline": true,
-                                "Building CI/CD Pipelines for Serverless": true,
-                                "Testing Serverless Applications": true,
-                                "Deploying Serverless Applications with Automation": true
-                            },
-                            "Additional Serverless Services": {
-                                "AWS AppSync for GraphQL APIs": true,
-                                "AWS Step Functions for Orchestration": true,
-                                "AWS Cognito for User Management": true,
-                                "AWS SAM CLI for Deployment": true
-                            },
-                            "Case Studies and Hands-On": {
-                                "Building a Serverless Web Application": true,
-                                "Serverless Data Processing Pipeline": true,
-                                "Serverless Real-Time Applications with WebSockets": true,
-                                "Serverless Chat Application": true
-                            }
-                        },
-                    }
-                }
-            },
-            "Database Management": {
-                "___urlPath___": "database-management",
-                "Introduction to Databases": {
-                    "What is a Database?": true,
-                    "Types of Databases (Relational, NoSQL, Graph, etc.)": true,
-                    "Database Management Systems (DBMS)": true,
-                    "SQL vs NoSQL Databases": true
-                },
-                "Relational Databases (PostgreSQL, MySQL)": {
-                    "___urlPath___": "relational-databases",
-                    "Introduction to Relational Databases": {
-                        "___urlPath___": "introduction-to-relational-databases",
-                        "___md___": 176
-                    },
-                    "Relational Algebra and Database Theory": {
-                        "___urlPath___": "relational-algebra-and-database-theory",
-                        "Relational Algebra Operations": {
-                            "___urlPath___": "relational-algebra-operations",
-                            "___md___": 177
-                        },
-                        "Relational Calculus (Tuple and Domain Calculus)": {
-                            "___urlPath___": "relational-calculus",
-                            "___md___": 178
-                        }
-                    },
-                    "SQL Basics": {
-                        "___urlPath___": "sql-basics",
-                        "DDL (Data Definition Language)": {
-                            "___urlPath___": "ddl",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 244
-                            },
-                            "Creating and Managing Tables": {
-                                "___urlPath___": "creating-and-managing-tables",
-                                "___md___": 179
-                            }
-                        },
-                        "DML (Data Manipulation Language)": {
-                            "___urlPath___": "dml",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 245
-                            },
-                            "CRUD Operations (INSERT, SELECT, UPDATE, DELETE)": {
-                                "___urlPath___": "crud-operations",
-                                "___md___": 180
-                            },
-                            "SELECT": {
-                                "___urlPath___": "select",
-                                "___md___": 259
-                            },
-                            "SELECT - WHERE Clause": {
-                                "___urlPath___": "select-where-clause",
-                                "___md___": 260
-                            },
-                            "SQL Wildcards": {
-                                "___urlPath___": "sql-wildcards",
-                                "___md___": 261
-                            }
-                        },
-                        "DCL (Data Control Language)": {
-                            "___urlPath___": "dcl",
-                            "___md___": 246
-                        },
-                        "Other SQL commands": {
-                            "___urlPath___": "other-sql-commands",
-                            "___md___": 247
-                        },
-                        "Joins (Inner, Outer, Left, Right)": {
-                            "___urlPath___": "joins",
-                            "___md___": 181
-                        },
-                        "Joins vs Union": {
-                            "___urlPath___": "joins-vs-union",
-                            "___md___": 248
-                        },
-                        "Aggregate Functions": {
-                            "___urlPath___": "aggregate-functions",
-                            "SUM, AVG, COUNT": {
-                                "___urlPath___": "sum-avg-count",
-                                "___md___": 182
-                            },
-                            "MIN, MAX, DISTINCT, GROUP BY, HAVING, ORDER BY": {
-                                "___urlPath___": "min-max-distinct-group-by-having-order-by",
-                                "___md___": 262
-                            },
-                        },
-
-                        "Column alias": {
-                            "___urlPath___": "column-alias",
-                            "___md___": 257
-                        },
-                        "Subquery basics": {
-                            "___urlPath___": "subquery-basics",
-                            "Overview of Subqueries": {
-                                "___urlPath___": "overview-of-subqueries",
-                                "___md___": 256
-                            },
-                            "Subquery Operators": {
-                                "___urlPath___": "subquery-operators",
-                                "ANY": {
-                                    "___urlPath___": "any",
-                                    "___md___": 249
-                                },
-                                "SOME": {
-                                    "___urlPath___": "some",
-                                    "___md___": 250
-                                },
-                                "ALL": {
-                                    "___urlPath___": "all",
-                                    "___md___": 251
-                                },
-                                "EXISTS": {
-                                    "___urlPath___": "exists",
-                                    "___md___": 252
-                                },
-                                "NOT EXISTS": {
-                                    "___urlPath___": "not-exists",
-                                    "___md___": 253
-                                },
-                                "IN": {
-                                    "___urlPath___": "in",
-                                    "___md___": 254
-                                },
-                                "NOT IN": {
-                                    "___urlPath___": "not-in",
-                                    "___md___": 255
-                                }
-                            }
-                        },
-                        "Set Operations (UNION, INTERSECT, EXCEPT)": {
-                            "___urlPath___": "set-operations",
-                            "___md___": 258
-                        }
-
-                    },
-                    "Advanced SQL": {
-                        "___urlPath___": "advanced-sql",
-                        "Subqueries and Nested Queries": {
-                            "___urlPath___": "subqueries-and-nested-queries",
-                            "___md___": 183
-                        },
-                        "Views, Triggers, and Stored Procedures": {
-                            "___urlPath___": "views-triggers-stored-procedures",
-                            "___md___": 184
-                        },
-                        "Transactions and ACID Properties": {
-                            "___urlPath___": "transactions-and-acid-properties",
-                            "___md___": 185
-                        },
-                        "Error Handling in SQL Queries": {
-                            "___urlPath___": "error-handling-in-sql-queries",
-                            "___md___": 186
-                        }
-                    },
-                    "PostgreSQL Features": {
-                        "___urlPath___": "postgresql-features",
-                        "Data Types and Table Constraints": {
-                            "___urlPath___": "data-types-and-table-constraints",
-                            "___md___": 187
-                        },
-                        "Using PostgreSQL Extensions (PostGIS, etc.)": {
-                            "___urlPath___": "postgresql-extensions",
-                            "___md___": 188
-                        },
-                        "Indexing in PostgreSQL": {
-                            "___urlPath___": "indexing-in-postgresql",
-                            "___md___": 189
-                        },
-                        "Query Performance Tuning in PostgreSQL": {
-                            "___urlPath___": "query-performance-tuning",
-                            "___md___": 190
-                        }
-                    },
-                    "MySQL Features": {
-                        "Data Types and Constraints": true,
-                        "Replication and Clustering in MySQL": true,
-                        "Using MySQL Workbench": true,
-                        "Query Optimization in MySQL": true
-                    }
-                },
-                "NoSQL Databases (MongoDB, DynamoDB, Cassandra, Neo4j, Redis, Elasticsearch, HBase)": {
-                    "___urlPath___": "nosql-databases",
-                    "Introduction to NoSQL Databases": true,
-                    "Key-Value Stores (Redis, DynamoDB)": {
-                        "___urlPath___": "key-value-stores",
-                        "Redis": {
-                            "___urlPath___": "redis",
-                            "Introduction to Redis": {
-                                "___urlPath___": "introduction-to-redis",
-                                "What is Redis?": {
-                                    "___urlPath___": "what-is-redis",
-                                    "___md___": 632
-                                },
-                                "Why use Redis (Use Cases)": {
-                                    "___urlPath___": "why-use-redis",
-                                    "___md___": 633
-                                },
-                                "Installation & Setup": {
-                                    "___urlPath___": "installation-and-setup",
-                                    "___md___": 634
-                                },
-                                "Data Types Overview": {
-                                    "___urlPath___": "data-types-overview",
-                                    "___md___": 635
-                                }
-                            },
-                            "Core Redis Data Structures": {
-                                "Strings": {
-                                    "___urlPath___": "strings",
-                                    "Basic Commands": {
-                                        "___urlPath___": "basic-commands",
-                                        "___md___": 636
-                                    },
-                                    "Use Cases": {
-                                        "___urlPath___": "use-cases",
-                                        "___md___": 637
-                                    }
-                                },
-                                "Lists": {
-                                    "___urlPath___": "lists",
-                                    "Basic Commands (LPUSH, RPUSH, LPOP, etc.)": {
-                                        "___urlPath___": "basic-commands",
-                                        "___md___": 638
-                                    },
-                                    "Use Cases": {
-                                        "___urlPath___": "use-cases",
-                                        "___md___": 639
-                                    }
-                                },
-                                "Sets": {
-                                    "___urlPath___": "sets",
-                                    "Basic Commands (SADD, SREM, SMEMBERS, etc.)": {
-                                        "___urlPath___": "basic_commands",
-                                        "___md___": 640
-                                    },
-                                    "Set Operations (Union, Intersect)": {
-                                        "___urlPath___": "set-operations",
-                                        "___md___": 641
-                                    }
-                                },
-                                "Sorted Sets (ZSET)": {
-                                    "___urlPath___": "sorted-sets",
-                                    "Basic Commands (ZADD, ZRANGE, etc.)": {
-                                        "___urlPath___": "basic-commands",
-                                        "___md___": 642
-                                    },
-                                    "Leaderboard Use Case": {
-                                        "___urlPath___": "leaderboard-use-case",
-                                        "___md___": 643
-                                    }
-                                },
-                                "Hashes": {
-                                    "___urlPath___": "hashes",
-                                    "Basic Commands (HSET, HGET, etc.)": true,
-                                    "Use Cases (Object Mapping)": true
-                                },
-                                "Bitmaps and HyperLogLogs": {
-                                    "___urlPath___": "bitmaps-hyperloglog",
-                                    "Bitmaps Overview and Use Cases": true,
-                                    "HyperLogLog for Approx. Counting": true
-                                }
-                            },
-                            "Persistence & Durability": {
-                                "___urlPath___": "persistence-durability",
-                                "RDB Snapshots": true,
-                                "AOF (Append-Only File)": true,
-                                "Best Practices for Durability": true
-                            },
-                            "Transactions and Scripting": {
-                                "___urlPath___": "transactions-scripting",
-                                "MULTI/EXEC/DISCARD": true,
-                                "Watch and Optimistic Locking": true,
-                                "Lua Scripting": true
-                            },
-                            "Redis as a Cache": {
-                                "___urlPath___": "redis-cache",
-                                "Eviction Policies (LRU, LFU, etc.)": true,
-                                "Expiration and TTL": true,
-                                "Cache-Aside vs Write-Through": true
-                            },
-                            "Redis Pub/Sub & Streams": {
-                                "___urlPath___": "pubsub-streams",
-                                "Pub/Sub Messaging Model": true,
-                                "Redis Streams (XADD, XREAD, Consumer Groups)": true,
-                                "Use Cases: Real-Time Feed, Event Queues": true
-                            },
-                            "Advanced Topics": {
-                                "___urlPath___": "advanced",
-                                "Redis Cluster (Sharding and Partitioning)": true,
-                                "Replication & High Availability (Redis Sentinel)": true,
-                                "Backup & Restore": true,
-                                "Security (AUTH, ACLs, Encryption)": true,
-                                "Rate Limiting using Redis": true,
-                                "Distributed Locks (SETNX, Redlock Algorithm)": {
-                                    "___urlPath___": "distributed-locks",
-                                    "___md___": 644
-                                }
-                            },
-                            "Redis in Practice": {
-                                "___urlPath___": "redis-practice",
-                                "Integrating Redis with Node.js/Java/Python": true,
-                                "Monitoring and Debugging": true,
-                                "Performance Tuning": true
-                            },
-                            "Projects 💻": {
-                                "___urlPath___": "projects",
-                                "Leaderboard using Sorted Set": true,
-                                "Rate Limiter using Redis + Node.js": true,
-                                "Job Queue with Redis Lists": true,
-                                "Real-time Chat with Pub/Sub": true
-                            }
-                        },
-                        "DynamoDB Features": {
-                            "Creating Tables and Partition Keys": true,
-                            "DynamoDB Streams": true,
-                            "Global and Local Secondary Indexes": true,
-                            "Data Modeling in DynamoDB": true
-                        },
-                    },
-                    "Document Stores (MongoDB)": {
-                        "Understanding JSON Documents": true,
-                        "CRUD Operations in MongoDB": true,
-                        "Indexes in MongoDB": true,
-                        "Aggregation Framework": true
-                    },
-                    "Column-Family Stores (Apache Cassandra, HBase, Google Bigtable)": {
-                        "___urlPath___": "column-family-stores-cassandra",
-                        "Introduction to Cassandra": {
-                            "___urlPath___": "introduction-to-cassandra",
-                            "___md___": 310
-                        },
-                        "Cassandra Data Model": {
-                            "___urlPath___": "cassandra-data-model",
-                            "Tables, Partitions, and Clustering": {
-                                "___urlPath___": "tables-partitions-clustering",
-                                "___md___": 311
-                            },
-                            "Primary Key Design in Cassandra": {
-                                "___urlPath___": "primary-key-design",
-                                "___md___": 312
-                            },
-                            "Denormalization in Cassandra": {
-                                "___urlPath___": "denormalization-cassandra",
-                                "___md___": 313
-                            }
-                        },
-                        "Cassandra Query Language (CQL)": {
-                            "___urlPath___": "cql-basics",
-                            "DDL - Creating Keyspaces and Tables": {
-                                "___urlPath___": "cql-ddl-keyspaces-tables",
-                                "___md___": 314
-                            },
-                            "DML - CRUD Operations": {
-                                "___urlPath___": "cql-dml-crud",
-                                "___md___": 315
-                            },
-                            "CQL Filtering and Query Optimization": {
-                                "___urlPath___": "cql-query-optimization",
-                                "___md___": 316
-                            }
-                        },
-                        "Replication and Consistency in Cassandra": {
-                            "___urlPath___": "replication-consistency-cassandra",
-                            "Replication Factor and Strategy": {
-                                "___urlPath___": "replication-strategy",
-                                "___md___": 317
-                            },
-                            "Consistency Levels in Cassandra": {
-                                "___urlPath___": "consistency-levels",
-                                "___md___": 318
-                            },
-                            "Tunable Consistency Trade-offs": {
-                                "___urlPath___": "tunable-consistency",
-                                "___md___": 319
-                            }
-                        },
-                        "Performance and Scaling in Cassandra": {
-                            "___urlPath___": "performance-scaling-cassandra",
-                            "Partitioning and Load Balancing": {
-                                "___urlPath___": "partitioning-load-balancing",
-                                "___md___": 320
-                            },
-                            "Indexes in Cassandra": {
-                                "___urlPath___": "indexes-in-cassandra",
-                                "___md___": 321
-                            },
-                            "Read vs Write Performance Considerations": {
-                                "___urlPath___": "read-write-performance",
-                                "___md___": 322
-                            }
-                        },
-                        "Cassandra Security and Backup": {
-                            "___urlPath___": "cassandra-security-backup",
-                            "Authentication and Authorization": {
-                                "___urlPath___": "authentication-authorization",
-                                "___md___": 323
-                            },
-                            "Backup and Restore Strategies": {
-                                "___urlPath___": "backup-restore-strategies",
-                                "___md___": 324
-                            },
-                            "Disaster Recovery and PITR": {
-                                "___urlPath___": "disaster-recovery",
-                                "___md___": 325
-                            }
-                        },
-                        "HBase Overview": {
-                            "___urlPath___": "hbase-overview",
-                            "___md___": 369
-                        },
-                        "Google Bigtable Overview": {
-                            "___urlPath___": "bigtable-overview",
-                            "___md___": 370
-                        }
-                    },
-
-                    "Graph Databases (Neo4j, Amazon Neptune)": {
-                        "___urlPath___": "graph-databases",
-                        "Introduction to Graph Databases": {
-                            "___urlPath___": "introduction-graph-databases",
-                            "___md___": 371
-                        },
-                        "Neo4j Fundamentals": {
-                            "___urlPath___": "neo4j-fundamentals",
-                            "___md___": 372
-                        },
-                        "Cypher Query Language": {
-                            "___urlPath___": "cypher-query-language",
-                            "___md___": 373
-                        },
-                        "Amazon Neptune Overview": {
-                            "___urlPath___": "amazon-neptune",
-                            "___md___": 374
-                        },
-                        "Graph Use Cases (Social Networks, Fraud Detection)": {
-                            "___urlPath___": "graph-use-cases",
-                            "___md___": 375
-                        }
-                    },
-
-                    "Search Databases (Elasticsearch, OpenSearch)": {
-                        "___urlPath___": "search-databases",
-                        "Introduction to Search Databases": {
-                            "___urlPath___": "introduction-search-databases",
-                            "___md___": 376
-                        },
-                        "Elasticsearch Overview": {
-                            "___urlPath___": "elasticsearch-overview",
-                            "___md___": 377
-                        },
-                        "OpenSearch Overview": {
-                            "___urlPath___": "opensearch-overview",
+            "Cloud Service Providers": {
+                "___urlPath___": "cloud-service-providers",
+                "AWS": {
+                    "AWS Certified Solutions Architect Associate (SAA-C03)": {
+                        "___urlPath___": "aws-certified-solutions-architect-associate",
+                        "About this certification": {
+                            "___urlPath___": "about-this-certification",
                             "___md___": 378
                         },
-                        "Indexing in Search Databases": {
-                            "___urlPath___": "indexing-search-databases",
-                            "___md___": 379
+                        "Getting Started with AWS 🟢": {
+                            "___urlPath___": "getting-started-with-aws",
+                            "___md___": 62
                         },
-                        "Full-Text Search & Queries": {
-                            "___urlPath___": "full-text-search",
-                            "___md___": 380
-                        }
-                    },
-
-                    "Time-Series Databases (InfluxDB, Amazon Timestream)": {
-                        "___urlPath___": "time-series-databases",
-                        "Introduction to Time-Series Databases": {
-                            "___urlPath___": "introduction-time-series",
-                            "___md___": 381
+                        "AWS Identity & Access Management (AWS IAM) 🟢": {
+                            "___urlPath___": "aws-iam",
+                            "___md___": 62
                         },
-                        "InfluxDB Overview": {
-                            "___urlPath___": "influxdb-overview",
-                            "___md___": 382
+                        "Amazon EC2 - Basics 🟡": {
+                            "___urlPath___": "amazon-ec2-basics",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 945
+                            },
+                            "Hands-On Guide: Launching an EC2 Instance Running Linux": {
+                                "___urlPath___": "hands-on-guide-launching-an-ec2-instance-running-linux",
+                                "___md___": 946
+                            },
+                            "EC2 Instance Types": {
+                                "___urlPath___": "ec2-instance-types",
+                                "___md___": 947
+                            },
+                            "EC2 Instance Features": {
+                                "___urlPath___": "ec2-instance-features",
+                                "___md___": 949
+                            },
+                            "Measuring EC2 Instance Performance": {
+                                "___urlPath___": "measuring-ec2-instance-performance",
+                                "___md___": 948
+                            },
+                            "AWS Security Groups": {
+                                "___urlPath___": "aws-security-groups",
+                                "___md___": 950
+                            }
                         },
-                        "Amazon Timestream Overview": {
-                            "___urlPath___": "timestream-overview",
-                            "___md___": 383
+                        "Amazon EC2 - Associate 🟡": {
+                            "___urlPath___": "amazon-ec2-associate",
+                            "___md___": 62
                         },
-                        "Querying and Indexing in Time-Series Databases": {
-                            "___urlPath___": "querying-time-series",
-                            "___md___": 384
-                        }
-                    },
-
-                    "Multi-Model Databases (ArangoDB, Couchbase)": {
-                        "___urlPath___": "multi-model-databases",
-                        "Introduction to Multi-Model Databases": {
-                            "___urlPath___": "introduction-multi-model",
-                            "___md___": 385
+                        "Amazon EC2 - Instance Storage 🔴": {
+                            "___urlPath___": "amazon-ec2-instance-storage",
+                            "EBS Overview": {
+                                "___urlPath___": "ebs-overview",
+                                "___md___": 445
+                            },
+                            "EBS Hands-on": {
+                                "___urlPath___": "ebs-hands-on",
+                                "___md___": 446
+                            }
                         },
-                        "ArangoDB Overview": {
-                            "___urlPath___": "arangodb-overview",
-                            "___md___": 386
+                        "High Availability & Scalability 🔴": {
+                            "___urlPath___": "high-availability-scalability",
+                            "___md___": 62
                         },
-                        "Couchbase Overview": {
-                            "___urlPath___": "couchbase-overview",
-                            "___md___": 387
+                        "RDS, Aurora & ElastiCache 🔴": {
+                            "___urlPath___": "rds-aurora-elasticache",
+                            "___md___": 62
                         },
-                        "Use Cases of Multi-Model Databases": {
-                            "___urlPath___": "multi-model-use-cases",
-                            "___md___": 388
-                        }
-                    }
-                    ,
-                    "Comparing NoSQL to SQL": {
-                        "Use Cases for NoSQL": true,
-                        "Scaling in NoSQL Databases": true
-                    }
-                },
-                "Database Design and Normalization": {
-                    "___urlPath___": "database-design-and-normalization",
-                    "Introduction to Database Design": {
-                        "___urlPath___": "introduction-to-database-design",
-                        "___md___": 161
-                    },
-                    "Entity-Relationship (ER) Modeling": {
-                        "___urlPath___": "entity-relationship-modeling",
-                        "___md___": 160
-                    },
-                    "Normalization": {
-                        "___urlPath___": "normalization",
-                        "First Normal Form (1NF)": {
-                            "___urlPath___": "first-normal-form",
-                            "___md___": 154
+                        "Amazon Route 53 🔴": {
+                            "___urlPath___": "amazon-route-53",
+                            "___md___": 62
                         },
-                        "Second Normal Form (2NF)": {
-                            "___urlPath___": "second-normal-form",
-                            "___md___": 155
+                        "Classic Solutions Architecture 🟡": {
+                            "___urlPath___": "classic-solutions-architecture",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 931
+                            },
+                            "Architecting a Stateless Web App from Scratch": {
+                                "___urlPath___": "architecturing-a-stateless-web-app-from-scratch",
+                                "___md___": 932
+                            },
+                            "Building a Stateful, Scalable Web App": {
+                                "___urlPath___": "building-a-stateful-scalable-web-app",
+                                "___md___": 937
+                            },
+                            "Building a Scalable Stateful Web App: MyWordPress.com": {
+                                "___urlPath___": "building-scalable-stateful-web-app-my-wordpress-dot-com",
+                                "___md___": 938
+                            },
+                            "Instantiating Scalable Web Apps": {
+                                "___urlPath___": "instantiating-scalable-web-apps",
+                                "___md___": 939
+                            },
+                            "Elastic Beanstalk – Deep Dive": {
+                                "___urlPath___": "elastic-beanstalk-deep-dive",
+                                "___md___": 940
+                            }
                         },
-                        "Third Normal Form (3NF)": {
-                            "___urlPath___": "third-normal-form",
-                            "___md___": 156
+                        "Amazon S3 🟡": {
+                            "___urlPath___": "amazon-s3",
+                            "___md___": 62
                         },
-                        "Boyce-Codd Normal Form (BCNF)": {
-                            "___urlPath___": "boyce-codd-normal-form",
-                            "___md___": 157
-                        }
-                    },
-                    "Denormalization": {
-                        "___urlPath___": "denormalization",
-                        "___md___": 158
-                    },
-                    "Database Schema Design Best Practices": {
-                        "___urlPath___": "database-schema-design-best-practices",
-                        "___md___": 159
-                    }
-                },
-                "Indexing and Query Optimization": {
-                    "Introduction to Indexing": {
-                        "Clustered vs Non-Clustered Indexes": true,
-                        "Hash Indexes and B-Tree Indexes": true,
-                        "Index Maintenance and Costs": true
-                    },
-                    "Query Optimization": {
-                        "Using Explain Plans": true,
-                        "Query Caching": true,
-                        "Optimizing Joins and Subqueries": true,
-                        "Partitioning and Sharding": true
-                    },
-                    "Performance Tuning Tools": {
-                        "PostgreSQL Query Analyzer": true,
-                        "MySQL Query Profiler": true,
-                        "MongoDB Profiler": true
-                    }
-                },
-                "Transactions and Concurrency Control": {
-                    "___urlPath___": "transactions-and-concurrency-control",
-                    "Introduction": {
-                        "___urlPath___": "introduction",
-                        "___md___": 228
-                    },
-                    "Transactions": {
-                        "___urlPath___": "transactions",
-                        "Properties of Transactions (ACID)": {
-                            "___urlPath___": "properties-of-transactions",
-                            "___md___": 162
+                        "Amazon S3 - Advanced 🔴": {
+                            "___urlPath___": "amazon-s3-advanced",
+                            "___md___": 62
                         },
-                        "Transaction States": {
-                            "___urlPath___": "transaction-states",
-                            "___md___": 163
-                        }
-                    },
-                    "Concurrency Control": {
-                        "___urlPath___": "concurrency-control",
-                        "Concurrency problems": {
-                            "___urlPath___": "concurrency-problems",
+                        "Amazon S3 - Security 🔴": {
+                            "___urlPath___": "amazon-s3-security",
+                            "___md___": 62
+                        },
+                        "CloudFront & Global Accelerator 🔴": {
+                            "___urlPath___": "cloudfront-global-accelerator",
+                            "___md___": 62
+                        },
+                        "AWS Storage Extras 🔴": {
+                            "___urlPath___": "aws-storage-extras",
+                            "AWS Snowball": {
+                                "___urlPath___": "aws-snowball",
+                                "___md___": 434
+                            }
+                        },
+                        "AWS Integration & Messaging 🔴": {
+                            "___urlPath___": "aws-integration-messaging",
                             "Introduction": {
                                 "___urlPath___": "introduction",
-                                "___md___": 192
+                                "___md___": 392
                             },
-                            "Write-Read Conflict": {
-                                "___urlPath___": "write-read-conflict",
-                                "___md___": 193
+                            "SQS Overview": {
+                                "___urlPath___": "sqs-overview",
+                                "___md___": 393
                             },
-                            "Read-Write Conflict": {
-                                "___urlPath___": "read-write-conflict",
-                                "___md___": 194
+                            "SQS - Standard Queue Hands On": {
+                                "___urlPath___": "sqs-standard-queue-hands-on",
+                                "___md___": 394
                             },
-                            "Other Conflicts (Phantom Reads, etc.)": {
-                                "___urlPath___": "other-conflicts",
-                                "___md___": 231
+                            "Amazon SQS – Message Visibility Timeout": {
+                                "___urlPath___": "sqs-message-visibility-timeout",
+                                "___md___": 395
+                            },
+                            "Amazon SQS – Long Polling": {
+                                "___urlPath___": "sqs-long-polling",
+                                "___md___": 396
+                            },
+                            "Amazon SQS – FIFO Queue": {
+                                "___urlPath___": "sqs-fifo-queue",
+                                "___md___": 397
+                            },
+                            "Scaling Applications with SQS and Auto Scaling Groups": {
+                                "___urlPath___": "scaling-applications-with-sqs-and-auto-scaling-group",
+                                "___md___": 398
+                            },
+                            "Amazon SNS (Simple Notification Service) Overview": {
+                                "___urlPath___": "amazon-sns-overview",
+                                "___md___": 401
+                            },
+                            "Advanced SNS Features": {
+                                "___urlPath___": "advanced-sns-features",
+                                "___md___": 402
+                            },
+                            "SNS Hands On": {
+                                "___urlPath___": "sns-hands-on",
+                                "___md___": 403
+                            },
+                            "Amazon Kinesis Data Streams Overview": {
+                                "___urlPath___": "amazon-kinesis-data-streams-overview",
+                                "___md___": 404
+                            },
+                            "Amazon Kinesis Data Streams Hands On": {
+                                "___urlPath___": "amazon-kinesis-data-streams-hands-on",
+                                "___md___": 405
+                            },
+                            "Amazon Data Firehose": {
+                                "___urlPath___": "amazon-data-firehose",
+                                "___md___": 430
+                            },
+                            "Amazon Data Firehose - Hands On": {
+                                "___urlPath___": "amazon-data-firehose-hands-on",
+                                "___md___": 431
+                            },
+                            "SQS Vs SNS Vs Kinesis": {
+                                "___urlPath___": "sqs-vs-sns-vs-kinesis",
+                                "___md___": 432
+                            },
+                            "Amazon MQ": {
+                                "___urlPath___": "amazon-mq",
+                                "___md___": 433
                             }
                         },
-                        "Recoverability: Recoverable and Non-recoverable schedules": {
-                            "___urlPath___": "recoverable-and-non-recoverable-schedules",
-                            "___md___": 195
+                        "Containers on AWS 🔴": {
+                            "___urlPath___": "containers-on-aws",
+                            "Introduction to Docker": {
+                                "___urlPath___": "introduction-docker",
+                                "___md___": 277
+                            },
+                            "AWS ECS": {
+                                "___urlPath___": "aws-ecs",
+                                "Introduction to AWS ECS": {
+                                    "___urlPath___": "introduction-aws-ecs",
+                                    "___md___": 337
+                                },
+                                "ECS Cluster & Task Definitions": {
+                                    "___urlPath___": "ecs-cluster-task-definitions",
+                                    "___md___": 102
+                                },
+                                "ECS Services & Load Balancing": {
+                                    "___urlPath___": "ecs-services-load-balancing",
+                                    "___md___": 103
+                                },
+                                "ECS Launch Types": {
+                                    "___urlPath___": "ecs-launch-types",
+                                    "EC2 Launch Type": {
+                                        "___urlPath___": "ecs-ec2-launch-type",
+                                        "___md___": 104
+                                    },
+                                    "Fargate Launch Type": {
+                                        "___urlPath___": "ecs-fargate-launch-type",
+                                        "___md___": 105
+                                    }
+                                },
+                                "Networking & Security in ECS": {
+                                    "___urlPath___": "networking-security-ecs",
+                                    "___md___": 106
+                                },
+                                "ECS Auto Scaling & Monitoring": {
+                                    "___urlPath___": "ecs-auto-scaling-monitoring",
+                                    "___md___": 107
+                                },
+                                "ECS with CI/CD": {
+                                    "___urlPath___": "ecs-ci-cd",
+                                    "___md___": 108
+                                },
+                                "ECS vs. EKS vs. Fargate": {
+                                    "___urlPath___": "ecs-vs-eks-vs-fargate",
+                                    "___md___": 109
+                                },
+                                "ECS Use Cases": {
+                                    "___urlPath___": "ecs-use-cases",
+                                    "___md___": 110
+                                }
+                            }
+
+
                         },
-                        "Scheduling and Serializability": {
-                            "___urlPath___": "scheduling-and-serializability",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 191
+                        "Serverless Overview 🟢": {
+                            "___urlPath___": "serverless-overview",
+                            "Introduction": {
+                                "___urlPath___": "introduction",
+                                "___md___": 447
                             },
-                            "Serializability and Precedence Graphs": {
-                                "___urlPath___": "serializability-and-precedence-graphs",
-                                "___md___": 229
+                            "AWS Lambda Overview": {
+                                "___urlPath___": "aws-lambda-overview",
+                                "___md___": 448
                             },
-                            "View Serializability": {
-                                "___urlPath___": "view-serializability",
-                                "___md___": 230
+                            "AWS Lambda Hands-On": {
+                                "___urlPath___": "aws-lambda-hands-on",
+                                "___md___": 454
                             }
                         },
-                        "Lock-Based Protocols": {
-                            "___urlPath___": "lock-based-protocols",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 164
+                        "Serverless Architectures 🔴": {
+                            "___urlPath___": "serverless-architectures",
+                            "___md___": 62
+                        },
+                        "Databases in AWS 🔴": {
+                            "___urlPath___": "databases-in-aws",
+                            "Choosing the Right Database": {
+                                "___urlPath___": "choosing-right-database",
+                                "___md___": 350
                             },
-                            "Two-Phase Locking (2PL)": {
-                                "___urlPath___": "two-phase-locking",
-                                "___md___": 0
+                            "Amazon RDS": {
+                                "___urlPath___": "amazon-rds",
+                                "___md___": 351
+                            },
+                            "Amazon Aurora": {
+                                "___urlPath___": "amazon-aurora",
+                                "___md___": 352
+                            },
+                            "Amazon ElastiCache": {
+                                "___urlPath___": "amazon-elasticache",
+                                "___md___": 353
+                            },
+                            "Amazon DynamoDB": {
+                                "___urlPath___": "amazon-dynamodb",
+                                "___md___": 354
+                            },
+                            "Amazon S3": {
+                                "___urlPath___": "amazon-s3",
+                                "___md___": 355
+                            },
+                            "DocumentDB": {
+                                "___urlPath___": "documentdb",
+                                "___md___": 356
+                            },
+                            "Amazon Neptune and Amazon Neptune Streams": {
+                                "___urlPath___": "amazon-neptune-streams",
+                                "___md___": 357
+                            },
+                            "Amazon Keyspaces": {
+                                "___urlPath___": "amazon-keyspaces",
+                                "___md___": 358
                             }
                         },
-                        "Deadlock Handling": {
-                            "___urlPath___": "deadlock-handling",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 165
+                        "Data & Analytics 🟡": {
+                            "___urlPath___": "data-analytics",
+                            "___md___": 62
+                        },
+                        "Machine Learning 🟡": {
+                            "___urlPath___": "machine-learning",
+                            "___md___": 62
+                        },
+                        "AWS Monitoring, Audit & Performance 🔴": {
+                            "___urlPath___": "aws-monitoring-audit-performance",
+                            "___md___": 62
+                        },
+                        "Advanced Identity in AWS 🔴": {
+                            "___urlPath___": "advanced-identity-in-aws",
+                            "___md___": 62
+                        },
+                        "AWS Security & Encryption 🔴": {
+                            "___urlPath___": "aws-security-encryption",
+                            "Why Encryption Matters?": {
+                                "___urlPath___": "why-encryption-matters",
+                                "___md___": 380
                             },
-                            "Prevention and Avoidance": {
-                                "___urlPath___": "prevention-and-avoidance",
-                                "___md___": 165
+                            "KMS Overview": {
+                                "___urlPath___": "complete-guide-aws-kms",
+                                "___md___": 381
                             },
-                            "Detection and Recovery": {
-                                "___urlPath___": "detection-and-recovery",
-                                "___md___": 212
+                            "KMS hands on with CLI": {
+                                "___urlPath___": "kms-hands-on-with-cli",
+                                "___md___": 388
+                            },
+                            "KMS Multi-Region Keys": {
+                                "___urlPath___": "kms-multi-region-keys",
+                                "___md___": 382
+                            },
+                            "S3 Replication and Encryption": {
+                                "___urlPath___": "s3-replication-and-encryption",
+                                "___md___": 383
+                            },
+                            "Sharing Encrypted AMIs": {
+                                "___urlPath___": "sharing-encrypted-amis",
+                                "___md___": 384
+                            },
+                            "SSM parameter store": {
+                                "___urlPath___": "ssm-parameter-store",
+                                "___md___": 385
+                            },
+                            "SSM Parameter Store Hands-On with CLI": {
+                                "___urlPath___": "ssm-parameter-store-hands-on-with-cli",
+                                "___md___": 387
+                            },
+                            "SSM Parameter Store Hands-On with AWS Lambda": {
+                                "___urlPath___": "ssm-parameter-store-hands-on-with-aws-lambda",
+                                "___md___": 386
+                            },
+                            "AWS Secrets Manager Overview": {
+                                "___urlPath___": "aws-secrets-manager-overview",
+                                "___md___": 389
+                            },
+                            "AWS Secrets Manager - Hands On": {
+                                "___urlPath___": "aws-secrets-manager-hands-on",
+                                "___md___": 390
+                            },
+                            "SSM Parameter Store Vs. Secrets Manager": {
+                                "___urlPath___": "aws-ssm-parameter-vs-aws-secrets-manager",
+                                "___md___": 391
                             }
                         },
-                        "Timestamp-Based Protocols": {
-                            "___urlPath___": "timestamp-based-protocols",
-                            "Optimistic Concurrency Control": {
-                                "___urlPath___": "optimistic-concurrency-control",
-                                "___md___": 166
+                        "Amazon VPC 🔴": {
+                            "___urlPath___": "amazon-vpc",
+                            "VPC Components": {
+                                "___urlPath___": "vpc-components",
+                                "___md___": 373
+                            },
+                            "CIDR": {
+                                "___urlPath___": "cidr",
+                                "___md___": 374
+                            },
+                            "Public vs Private ip": {
+                                "___urlPath___": "public-vs-private-ip",
+                                "___md___": 375
+                            },
+                            "Network Protection on AWS": {
+                                "___urlPath___": "networking-protection-aws",
+                                "___md___": 379
                             }
                         },
-                        "Multiversion Concurrency Control (MVCC)": {
-                            "___urlPath___": "multiversion-concurrency-control",
-                            "___md___": 167
+                        "Disaster Recovery & Migrations 🟡": {
+                            "___urlPath___": "disaster-recovery-migrations",
+                            "___md___": 62
+                        },
+                        "More Solutions Architecture 🟡": {
+                            "___urlPath___": "more-solutions-architecture",
+                            "___md___": 62
+                        },
+                        "Other Services 🟢": {
+                            "___urlPath___": "other-services",
+                            "___md___": 62
+                        },
+                        "White Papers & Architectures 🟡": {
+                            "___urlPath___": "white-papers-architectures",
+                            "___md___": 62
+                        },
+                        "Exam Preparation 🟢": {
+                            "___urlPath___": "exam-preparation",
+                            "___md___": 62
+                        },
+                        "Congratulations 🟢": {
+                            "___urlPath___": "congratulations",
+                            "___md___": 62
                         }
-                    }
-                },
-                "File Organization": {
-                    "___urlPath___": "file-organization",
-                    "Storage Mechanisms in Databases": {
-                        "___urlPath___": "storage-mechanisms-in-databases",
-                        "___md___": 168
                     },
-                    "File Organization Techniques": {
-                        "___urlPath___": "file-organization-techniques",
-                        "Heap File Organization": {
-                            "___urlPath___": "heap-file-organization",
-                            "___md___": 169
+                    "AWS Certified Developer - Associate | Discontinued": {
+                        "___urlPath___": "aws-certified-developer-associate",
+                        "Getting Started with AWS": 1,
+                        "AWS Identity & Access Management (AWS IAM)": 2,
+                        "Amazon EC2 – Basics": 3,
+                        "Amazon EC2 – Instance Storage": 4,
+                        "High Availability & Scalability": 5,
+                        "RDS, Aurora, & ElastiCache": 6,
+                        "Amazon Route 53": 7,
+                        "Amazon VPC – Basics": 8,
+                        "Amazon S3": 9,
+                        "AWS CLI, SDK, IAM Roles & Policies": 10,
+                        "Amazon S3 – Advanced": 11,
+                        "Amazon S3 – Security": 12,
+                        "Amazon CloudFront": 13,
+                        "Containers on AWS": 14,
+                        "AWS Elastic Beanstalk": 15,
+                        "AWS CloudFormation": 16,
+                        "AWS Integration & Messaging": 17,
+                        "AWS Monitoring, Troubleshooting & Audit": 18,
+                        "AWS Lambda": 19,
+                        "Amazon DynamoDB": {
+                            "___urlPath___": "amazon-dynamodb",
+                            "Introduction": 22,
+                            "DynamoDB as a Session State Cache": 34,
+                            "DynamoDB Write Sharding": 33,
+                            "DynamoDB – Write Types": 32,
+                            "DynamoDB – Large Objects Pattern": 30,
+                            "DynamoDB – Indexing S3 Objects Metadata": 31,
+                            "DynamoDB Operations": 29,
+                            "Security & Other features": 23,
+                            "Users Interact with DynamoDB Directly": 25,
+                            "Fine-Grained Access Control": 24,
                         },
-                        "Sequential File Organization": {
-                            "___urlPath___": "sequential-file-organization",
-                            "___md___": 170
+                        "Amazon API Gateway": {
+                            "___urlPath___": "amazon-api-gateway",
+                            "Introduction": 39,
+                            "Example: Building a Serverless API": 38,
+                            "API Gateway – High-Level Integrations": 40,
+                            "API Gateway – AWS Service Integration with Kinesis Data Streams Example": 41,
+                            "API Gateway - Endpoint Types": 42,
+                            "API Gateway – Security": 43,
+                            "API Gateway – Deployment Stages": 44,
+                            "API Gateway Staging Example – Stages v1 and v2: Handling API Breaking Changes": 45,
+
                         },
-                        "Hashing Techniques": {
-                            "___urlPath___": "hashing-techniques",
-                            "___md___": 171
+                        "AWS CICD": 22,
+                        "AWS Serverless Application Model (SAM)": 23,
+                        "AWS Cloud Development Kit (CDK)": 24,
+                        "Amazon Cognito": 25,
+                        "Other Serverless": 26,
+                        "Advanced Identity in AWS": 27,
+                        "AWS Security & Encryption": {
+
+                        },
+                        "Other Services": 29,
+                        "Exam Preparation": 30,
+                        "Congratulations": 31
+                    },
+                    "AWS Serverless | Discontinued": {
+                        "___urlPath___": "aws-serverless",
+                        "Introduction to Serverless Computing": {
+                            "___urlPath___": "introduction-to-serverless-computing",
+                            "What is Serverless?": {
+                                "___urlPath___": "what-is-serverless",
+                                "___md___": 46
+                            },
+                            "Benefits of Serverless Architecture": true,
+                            "Overview of AWS Serverless Services": true
+                        },
+                        "AWS Lambda": {
+                            "Introduction to AWS Lambda": true,
+                            "Creating and Deploying Lambda Functions": true,
+                            "Event-Driven Architecture with Lambda": true,
+                            "Monitoring and Debugging Lambda Functions": true,
+                            "Best Practices for AWS Lambda": true
+                        },
+                        "API Gateway": {
+                            "Introduction to Amazon API Gateway": true,
+                            "Creating and Managing REST APIs": true,
+                            "Integrating API Gateway with AWS Lambda": true,
+                            "Authentication and Authorization with API Gateway": true,
+                            "CORS and Rate Limiting": true
+                        },
+                        "AWS DynamoDB": {
+                            "Introduction to DynamoDB": true,
+                            "Creating and Managing Tables": true,
+                            "Data Modeling with DynamoDB": true,
+                            "DynamoDB Streams": true,
+                            "Best Practices for DynamoDB Performance": true
+                        },
+                        "Serverless Frameworks": {
+                            "Introduction to Serverless Framework": true,
+                            "Deploying Applications with Serverless Framework": true,
+                            "Comparison with SAM (Serverless Application Model)": true
+                        },
+                        "Event Sources": {
+                            "AWS S3 as Event Source": true,
+                            "DynamoDB Streams as Event Source": true,
+                            "Amazon SNS and SQS Integration": true,
+                            "AWS EventBridge": true
+                        },
+                        "Serverless Monitoring and Security": {
+                            "Monitoring with AWS CloudWatch": true,
+                            "Setting Up Alarms and Logs": true,
+                            "Security Best Practices for Serverless Applications": true,
+                            "IAM Role Management for Serverless": true
+                        },
+                        "CI/CD for Serverless Applications": {
+                            "Introduction to AWS CodePipeline": true,
+                            "Building CI/CD Pipelines for Serverless": true,
+                            "Testing Serverless Applications": true,
+                            "Deploying Serverless Applications with Automation": true
+                        },
+                        "Additional Serverless Services": {
+                            "AWS AppSync for GraphQL APIs": true,
+                            "AWS Step Functions for Orchestration": true,
+                            "AWS Cognito for User Management": true,
+                            "AWS SAM CLI for Deployment": true
+                        },
+                        "Case Studies and Hands-On": {
+                            "Building a Serverless Web Application": true,
+                            "Serverless Data Processing Pipeline": true,
+                            "Serverless Real-Time Applications with WebSockets": true,
+                            "Serverless Chat Application": true
                         }
                     },
-                    "Indexing": {
-                        "___urlPath___": "indexing",
-                        "B-Trees": {
-                            "___urlPath___": "b-trees",
-                            "___md___": 172
-                        },
-                        "B+ Trees": {
-                            "___urlPath___": "b-plus-trees",
-                            "___md___": 173
-                        },
-                        "Secondary Indexes": {
-                            "___urlPath___": "secondary-indexes",
-                            "___md___": 174
-                        },
-                        "Dynamic Indexing": {
-                            "___urlPath___": "dynamic-indexing",
-                            "___md___": 175
-                        }
-                    }
-                },
-                "Backup and Recovery": {
-                    "Backup Strategies": true,
-                    "Point-in-Time Recovery (PITR)": true,
-                    "Disaster Recovery Planning": true,
-                    "Backup Tools (pg_dump, mysqldump, MongoDump)": true
-                },
-                "Distributed Databases and Scalability": {
-                    "___urlPath___": "distributed-databases-and-scalability",
-                    "Introduction to Distributed Databases": {
-                        "___urlPath___": "introduction-to-distributed-databases",
-                        "___md___": 263
-                    },
-                    "Replication (Master-Slave, Master-Master)": {
-                        "___urlPath___": "replication",
-                        "___md___": 264
-                    },
-                    "Sharding and Partitioning Strategies": true,
-                    "Eventual Consistency vs Strong Consistency": true,
-                    "CAP Theorem": true
-                },
-                "Hands-On Projects": {
-                    "Designing a Library Management System": true,
-                    "Building an E-Commerce Database Schema": true,
-                    "Implementing Real-Time Analytics with MongoDB": true,
-                    "Building a Scalable DynamoDB Application": true
                 }
             },
             "DevOps and Deployment": {
@@ -7617,147 +7036,797 @@ const mapper = {
                     "Using Terraform to Manage Cloud Infrastructure": true
                 }
             },
-            "Software Engineering": {
-                "___urlPath___": "software-engineering",
-                "Introduction to Software Engineering": {
-                    "What is Software Engineering?": true,
-                    "Software Development Life Cycle (SDLC)": {
-                        "Phases of SDLC": true,
-                        "Waterfall Model": true,
-                        "Iterative and Incremental Models": true,
-                        "Agile Methodology": true
+            "Soft Skills and Best Practices": {
+                "___urlPath___": "soft-skills",
+                "Agile Development and Scrum": {
+                    "Introduction to Agile Methodology": {
+                        "Principles of Agile (Agile Manifesto & 12 Principles)": true,
+                        "Benefits of Agile over Traditional Models (Waterfall, V-Model, etc.)": true,
+                        "Different Agile Frameworks": {
+                            "Scrum": true,
+                            "Kanban": true,
+                            "SAFe (Scaled Agile Framework)": true,
+                            "LeSS (Large-Scale Scrum)": true,
+                            "Spotify Model": true,
+                            "Nexus": true
+                        }
                     },
-                    "Importance of Software Engineering": true,
-                    "Software Engineering Ethics": true
-                },
-                "Requirements Engineering": {
-                    "Understanding Requirements": {
-                        "Functional and Non-Functional Requirements": true,
-                        "User Stories and Use Cases": true
-                    },
-                    "Requirements Gathering Techniques": {
-                        "Interviews and Surveys": true,
-                        "Workshops and Brainstorming": true,
-                        "Prototyping": true
-                    },
-                    "Requirements Documentation": {
-                        "SRS (Software Requirements Specification)": true,
-                        "Tools for Requirements Documentation (Jira, Confluence)": true
-                    },
-                    "Requirements Validation": true
-                },
-                "Software Design": {
-                    "Principles of Software Design": {
-                        "SOLID Principles": true,
-                        "Separation of Concerns": true,
-                        "Design Patterns (Creational, Structural, Behavioral)": true
-                    },
-                    "Architectural Design": {
-                        "Monolithic vs Microservices Architecture": true,
-                        "Layered Architecture": true,
-                        "Client-Server Architecture": true
-                    },
-                    "UI/UX Design Principles": {
-                        "Wireframing and Prototyping": true,
-                        "Human-Computer Interaction Basics": true,
-                        "Accessibility in Design": true
-                    },
-                    "Design Documentation": true
-                },
-                "Software Development Methodologies": {
-                    "Traditional Models": {
-                        "Waterfall Model": true,
-                        "V-Model": true
-                    },
-                    "Agile Models": {
-                        "Scrum": {
-                            "Roles in Scrum": true,
-                            "Artifacts in Scrum": true,
-                            "Events in Scrum": true
+                    "Scrum Framework (Deep Dive)": {
+                        "Roles in Scrum": {
+                            "Scrum Master": true,
+                            "Product Owner": true,
+                            "Development Team": true
                         },
-                        "Kanban": true,
-                        "Extreme Programming (XP)": true
+                        "Scrum Artifacts": {
+                            "Product Backlog": true,
+                            "Sprint Backlog": true,
+                            "Increment": true,
+                            "Definition of Done (DoD) and Acceptance Criteria": true
+                        },
+                        "Scrum Events": {
+                            "Sprint Planning": true,
+                            "Daily Standups (Daily Scrum)": true,
+                            "Sprint Review": true,
+                            "Sprint Retrospective": true,
+                            "Backlog Refinement (Grooming)": true
+                        }
                     },
-                    "Hybrid Models (Agile-Waterfall)": true
-                },
-                "Software Testing and Quality Assurance": {
-                    "Testing Fundamentals": {
-                        "What is Software Testing?": true,
-                        "Levels of Testing (Unit, Integration, System, Acceptance)": true,
-                        "Types of Testing (Black Box, White Box, Grey Box)": true
+                    "Advanced Agile Practices": {
+                        "Agile Estimation Techniques": {
+                            "Story Points vs Ideal Days": true,
+                            "Planning Poker": true,
+                            "T-Shirt Sizing": true,
+                            "Fibonacci Sequence in Estimation": true
+                        },
+                        "Velocity and Burn-down/Burn-up Charts": true,
+                        "Technical Debt and Refactoring in Agile": true,
+                        "Agile Testing Strategies (TDD, BDD, ATDD)": true,
+                        "CI/CD in Agile (Continuous Integration & Deployment)": true,
+                        "DevOps Integration with Agile": true,
+                        "Test Automation in Agile (Selenium, Cypress, Jest)": true
                     },
-                    "Test-Driven Development (TDD)": true,
-                    "Automated Testing": {
-                        "Tools (Selenium, JUnit, TestNG)": true,
-                        "Continuous Testing in CI/CD Pipelines": true
+                    "Scaling Agile for Large Enterprises": {
+                        "Introduction to Scaling Agile": true,
+                        "SAFe (Scaled Agile Framework)": {
+                            "SAFe Roles and Responsibilities": true,
+                            "PI Planning (Program Increment Planning)": true,
+                            "Agile Release Train (ART)": true,
+                            "Lean Portfolio Management": true
+                        },
+                        "LeSS (Large-Scale Scrum)": {
+                            "Differences Between LeSS and SAFe": true,
+                            "LeSS Framework Principles": true
+                        },
+                        "Spotify Model": {
+                            "Tribes, Squads, Guilds, and Chapters": true,
+                            "Autonomy and Alignment in Agile": true
+                        },
+                        "Nexus Framework for Scaling Scrum": true
                     },
-                    "Quality Assurance Practices": {
-                        "Defect Management": true,
-                        "Peer Reviews and Code Inspections": true,
-                        "Quality Metrics and KPIs": true
+                    "Best Practices in Agile": {
+                        "Effective Sprint Planning": true,
+                        "Tracking Progress with Burndown and Burn-up Charts": true,
+                        "Conducting Productive Retrospectives": true,
+                        "Avoiding Common Agile Pitfalls": true,
+                        "Handling Changing Requirements in Agile": true,
+                        "Balancing Business Priorities with Technical Excellence": true
+                    },
+                    "Platform Core Team (PCT) and Agile Core Team (ACT)": {
+                        "Platform Core Team (PCT)": {
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 367
+                            },
+                            "Responsibilities of PCT": true,
+                            "Platform Engineering and DevOps": true,
+                            "Developer Tooling and Infrastructure": true,
+                            "Scalability and Performance Optimization": true
+                        },
+                        "Agile Core Team (ACT)": {
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 368
+                            },
+                            "Responsibilities of ACT": true,
+                            "Feature Development and Sprint Execution": true,
+                            "Cross-Functional Collaboration": true,
+                            "Customer-Centric Development": true
+                        },
+                        "Comparison: PCT and ACT": {
+                            "___urlPath___": "comparision-pct-act",
+                            "___md___": 369
+                        }
+                    },
+                    "Agile Leadership and Coaching": {
+                        "Agile Coaching vs Scrum Master Role": true,
+                        "Servant Leadership in Agile": true,
+                        "Conflict Resolution in Agile Teams": true,
+                        "Building High-Performing Agile Teams": true,
+                        "Stakeholder Management in Agile": true,
+                        "Psychological Safety in Agile Teams": true
+                    },
+                    "Agile Metrics and KPIs": {
+                        "Key Agile Metrics": {
+                            "Velocity": true,
+                            "Lead Time and Cycle Time": true,
+                            "Cumulative Flow Diagram": true,
+                            "Escaped Defects": true
+                        },
+                        "Using Agile Metrics for Continuous Improvement": true,
+                        "Avoiding Vanity Metrics in Agile": true
+                    },
+                    "Case Studies and Real-World Implementations": {
+                        "Agile at Netflix": true,
+                        "Agile at Amazon": true,
+                        "Agile at Spotify": true,
+                        "Lessons Learned from Failed Agile Implementations": true
                     }
                 },
-                "Software Maintenance": {
-                    "Types of Maintenance": {
-                        "Corrective Maintenance": true,
-                        "Adaptive Maintenance": true,
-                        "Perfective Maintenance": true,
-                        "Preventive Maintenance": true
+                "Problem Solving and Debugging": {
+                    "Understanding Problem-Solving": {
+                        "Defining Problems Clearly": true,
+                        "Breaking Problems into Smaller Parts": true,
+                        "Analyzing Root Causes (5 Whys, Fishbone Diagram)": true
                     },
-                    "Version Control and Configuration Management": {
-                        "Version Control Tools (Git, SVN)": true,
-                        "Release Management": true,
-                        "Continuous Integration and Deployment": true
+                    "Debugging Skills": {
+                        "Debugging Tools and Techniques": true,
+                        "Systematic Debugging Steps": true,
+                        "Collaborative Debugging in Teams": true
                     },
-                    "Refactoring and Reengineering": true
-                },
-                "Software Project Management": {
-                    "Project Planning": {
-                        "Defining Scope and Objectives": true,
-                        "Work Breakdown Structure (WBS)": true,
-                        "Estimating Costs and Time": true
-                    },
-                    "Risk Management": {
-                        "Identifying Risks": true,
-                        "Mitigation Strategies": true,
-                        "Monitoring and Controlling Risks": true
-                    },
-                    "Team Management": {
-                        "Forming and Leading Teams": true,
-                        "Conflict Resolution": true,
-                        "Motivating Team Members": true
-                    },
-                    "Project Tracking Tools": {
-                        "Gantt Charts": true,
-                        "Kanban Boards": true,
-                        "Tools (Microsoft Project, Trello, Asana)": true
+                    "Case Studies and Practice": {
+                        "Solving Real-Life Software Issues": true,
+                        "Analyzing Past Debugging Challenges": true
                     }
                 },
-                "Software Metrics and Measurement": {
-                    "Introduction to Metrics": true,
-                    "Process Metrics": true,
-                    "Product Metrics": true,
-                    "Project Metrics": true,
-                    "Tools for Software Metrics (SonarQube, CodeClimate)": true
+                "Clean Code Practices": {
+                    "Principles of Clean Code": {
+                        "Writing Readable and Maintainable Code": true,
+                        "Naming Conventions for Variables and Methods": true,
+                        "Avoiding Code Smells": true
+                    },
+                    "Refactoring Code": {
+                        "Identifying Areas for Improvement": true,
+                        "Step-by-Step Refactoring": true,
+                        "Testing After Refactoring": true
+                    },
+                    "Documentation and Comments": {
+                        "Writing Meaningful Comments": true,
+                        "Creating Documentation for APIs and Libraries": true
+                    },
+                    "Code Review Practices": {
+                        "Conducting Effective Code Reviews": true,
+                        "Providing Constructive Feedback": true,
+                        "Handling Feedback Gracefully": true
+                    }
                 },
-                "Emerging Trends in Software Engineering": {
-                    "DevOps and Continuous Delivery": true,
-                    "AI and Machine Learning in Software Engineering": true,
-                    "Cloud-Native Applications": true,
-                    "Low-Code and No-Code Platforms": true
+                "Collaboration and Communication": {
+                    "Collaboration in Teams": {
+                        "Building Trust in Teams": true,
+                        "Fostering Inclusive Work Environments": true,
+                        "Handling Conflicts Constructively": true
+                    },
+                    "Communication Skills": {
+                        "Effective Verbal Communication": true,
+                        "Active Listening Techniques": true,
+                        "Writing Clear and Concise Emails": true,
+                        "Creating Impactful Presentations": true
+                    },
+                    "Stakeholder Management": {
+                        "Understanding Stakeholder Needs": true,
+                        "Providing Regular Updates to Stakeholders": true,
+                        "Handling Difficult Conversations": true
+                    },
+                    "Cross-Functional Collaboration": {
+                        "Working with Design Teams": true,
+                        "Collaborating with QA Engineers": true,
+                        "Interfacing with Product Managers": true
+                    }
                 },
-                "Case Studies and Practical Applications": {
-                    "Case Study 1: Building an E-Commerce Application": true,
-                    "Case Study 2: Developing a Scalable SaaS Product": true,
-                    "Case Study 3: Migrating a Legacy System to Microservices": true,
-                    "Case Study 4: Implementing Agile in a Large Organization": true
+                "Time Management and Productivity": {
+                    "___urlPath___": "time-management",
+                    "Time Management Techniques": {
+                        "___urlPath___": "time-management-techniques",
+                        "Eisenhower Matrix for Prioritization": {
+                            "___urlPath___": "eisenhower-matrix",
+                            "___md___": 93
+                        },
+                        "Pomodoro Technique for Focused Work": {
+                            "___urlPath___": "pomodoro-technique",
+                            "___md___": 94
+                        },
+                        "Time Blocking for Scheduling Tasks": {
+                            "___urlPath___": "time-blocking",
+                            "___md___": 95
+                        }
+                    },
+                    "Productivity Best Practices": {
+                        "___urlPath___": "productivity-best-practices",
+                        "Avoiding Multitasking": {
+                            "___urlPath___": "avoiding-multitasking",
+                            "___md___": 96
+                        },
+                        "Minimizing Distractions (Digital and Physical)": {
+                            "___urlPath___": "minimizing-distractions",
+                            "___md___": 97
+                        },
+                        "Creating a Productive Workspace": {
+                            "___urlPath___": "productive-workspace",
+                            "___md___": 98
+                        }
+                    },
+                    "Goal Setting and Tracking": {
+                        "___urlPath___": "goal-setting-tracking",
+                        "SMART Goals (Specific, Measurable, Achievable, Relevant, Time-Bound)": {
+                            "___urlPath___": "smart-goals",
+                            "___md___": 99
+                        },
+                        "Using Tools for Goal Tracking (Trello, Asana)": {
+                            "___urlPath___": "goal-tracking-tools",
+                            "___md___": 100
+                        },
+                        "Reviewing Progress Regularly": {
+                            "___urlPath___": "reviewing-progress",
+                            "___md___": 101
+                        }
+                    },
+                    "Stress Management": {
+                        "___urlPath___": "stress-management",
+                        "Recognizing Signs of Burnout": {
+                            "___urlPath___": "burnout-signs",
+                            "___md___": 102
+                        },
+                        "Practicing Mindfulness and Meditation": {
+                            "___urlPath___": "mindfulness-meditation",
+                            "___md___": 103
+                        },
+                        "Balancing Work and Personal Life": {
+                            "___urlPath___": "work-life-balance",
+                            "___md___": 104
+                        }
+                    }
                 },
-                "Software Engineering cheatsheet": {
-                    "___urlPath___": "software-engineering-cheatsheet",
-                    "___md___": 485
+                "Professional Growth and Interview Preparedness": {
+                    "___urlPath___": "interview-soft-skills",
+                    "Resume and Portfolio Building": {
+                        "Crafting a Tailored Resume": true,
+                        "Creating an Impressive Portfolio": true,
+                        "Common Mistakes to Avoid": true
+                    },
+                    "Strategic Approaches to Career Development": {
+                        "___urlPath___": "career-development",
+                        "Creating a Job Search Plan": {
+                            "Setting Career Goals": true,
+                            "Identifying Target Companies and Roles": true,
+                            "Job Search Timelines and Tracking Progress": true
+                        },
+                        "Job Portals and Platforms": {
+                            "Using LinkedIn Effectively": true,
+                            "Exploring Job Portals (Indeed, Glassdoor, Naukri)": true,
+                            "Understanding Application Tracking Systems (ATS)": true
+                        },
+                        "Networking for Job Opportunities": {
+                            "Building a Professional Network": true,
+                            "Informational Interviews": true,
+                            "Leveraging Alumni and Community Groups": true
+                        },
+                        "Crafting Effective Job Applications": {
+                            "Writing Tailored Cover Letters": true,
+                            "Optimizing Resumes for ATS": true,
+                            "Tips for Submitting Online Applications": true
+                        },
+                        "Preparing for Career Fairs and Walk-Ins": {
+                            "What to Carry to Career Fairs": true,
+                            "Making a Strong First Impression": true,
+                            "Following Up After Career Events": true
+                        }
+                    },
+                    "Communication and Storytelling": {
+                        "___urlPath___": "communication-storytelling",
+                        "Self-introduction Template": {
+                            "___urlPath___": "self-introduction-template",
+                            "___md___": 243
+                        },
+                        "Answering Behavioral Questions (STAR Method)": true,
+                        "Handling Tough Questions with Confidence": true,
+                        "Elevator Pitch for Introductions": true
+                    },
+                    "Interview Etiquette": {
+                        "Dressing Professionally": true,
+                        "Building Rapport with Interviewers": true,
+                        "Effective Virtual Interview Strategies": true
+                    },
+                    "Negotiation and Follow-Up": {
+                        "Salary Negotiation Techniques": true,
+                        "Sending a Thank-You Email": true,
+                        "Post-Interview Follow-Up": true
+                    },
+                    "Mock Interview Practice": {
+                        "Technical Mock Interviews": true,
+                        "Behavioral Mock Interviews": true,
+                        "Tips for Peer Interview Practice": true
+                    }
+                }
+
+            }
+        },
+        "Data Engineering Notes": {
+            "___urlPath___": "data-engineering-course",
+
+            "Data Engineering Foundations": {
+                "Data Warehousing Concepts": true,
+                "ETL vs ELT Pipelines": true,
+                "Batch vs Stream Processing": true,
+                "Schema Design (Star, Snowflake)": true,
+                "Data Modeling (OLAP vs OLTP)": true
+            },
+            "Programming and Scripting": {
+                "Advanced Python for Data Engineering": true,
+                "Scala for Spark": true,
+                "Bash and Shell Scripting": true,
+                "SQL Optimization Techniques": true
+            },
+            "Big Data Ecosystem": {
+                "Hadoop HDFS Internals": true,
+                "MapReduce Programming Model": true,
+                "Apache Hive and HQL Optimization": true,
+                "Apache Pig (Legacy Support)": true
+            },
+            "Data Processing Frameworks": {
+                "Apache Spark (Core, SQL, Streaming, MLlib)": true,
+                "Apache Flink for Real-Time Processing": true,
+                "Apache Beam and Google Dataflow": true,
+                "Kafka Streams and Samza": true
+            },
+            "Data Storage Technologies": {
+                "Distributed File Systems (HDFS, Amazon S3, GCS)": true,
+                "Columnar Stores (Parquet, ORC)": true,
+                "Key-Value Stores (Redis, RocksDB)": true,
+                "Document Stores (MongoDB, Couchbase)": true,
+                "Time Series Databases (InfluxDB, Prometheus)": true
+            },
+            "Cloud Platforms and Services": {
+                "AWS (S3, Glue, Redshift, Kinesis, EMR)": true,
+                "GCP (BigQuery, Dataflow, Pub/Sub, Dataproc)": true,
+                "Azure (Data Factory, Synapse Analytics, Event Hubs)": true,
+                "Terraform and IaC for Data Infrastructure": true
+            },
+            "Streaming and Messaging Systems": {
+                "Apache Kafka Internals and Tuning": true,
+                "RabbitMQ and Pulsar Basics": true,
+                "Data Replay, Exactly-Once Semantics": true,
+                "Partitioning and Offset Management": true
+            },
+            "Orchestration and Workflow Management": {
+                "Apache Airflow (DAG Design, XComs, Sensors)": true,
+                "Dagster and Prefect": true,
+                "Job Retry, Backoff, and SLA Monitoring": true,
+                "Task Parallelism and Dependency Handling": true
+            },
+            "Data Governance and Quality": {
+                "Data Lineage and Provenance (e.g., Amundsen, Marquez)": true,
+                "Data Quality Validation Frameworks (Deequ, Great Expectations)": true,
+                "Column-level Lineage and Anomaly Detection": true,
+                "Data Contracting and Schema Enforcement": true
+            },
+            "Security and Compliance": {
+                "GDPR, HIPAA Compliance Practices": true,
+                "Data Masking, Tokenization, Encryption": true,
+                "Row-Level and Column-Level Security": true,
+                "IAM, KMS, VPC Setup for Data Pipelines": true
+            },
+            "Advanced SQL and Analytics": {
+                "Window Functions and CTEs": true,
+                "Materialized Views and Incremental Models": true,
+                "Query Planning and Execution Tuning": true,
+                "Data Cube and ROLLUP Analysis": true
+            },
+            "Machine Learning Integration": {
+                "Feature Engineering Pipelines": true,
+                "Model Serving with Data Pipelines": true,
+                "Feature Store Design (Feast, Tecton)": true,
+                "Streaming ML Inference": true
+            },
+            "Monitoring and Observability": {
+                "Data Pipeline Logging and Tracing": true,
+                "Prometheus, Grafana for Metrics": true,
+                "Alerting on Data Anomalies": true,
+                "End-to-End Data SLA Dashboards": true
+            },
+            "Testing and CI/CD for Data": {
+                "Unit and Integration Testing in Data Pipelines": true,
+                "Data Diffing and Regression Checks": true,
+                "Blue-Green Deployments for ETL Jobs": true,
+                "GitOps and DataOps Practices": true
+            },
+            "Soft Skills and Leadership": {
+                "Stakeholder Communication and Reporting": true,
+                "Mentoring and Upskilling Junior Engineers": true,
+                "Design Docs and RFC Writing": true,
+                "Technical Decision-Making and Tradeoffs": true
+            }
+        },
+        "Data Science and Artificial Intelligence Notes": {
+            "___urlPath___": "data-science-and-artificial-intelligence-course",
+            "Probability and Statistics": {
+                "___urlPath___": "probability-statistics",
+                "Basic Probability Concepts": {
+                    "Counting (Permutation and Combination)": true,
+                    "Probability Axioms and Rules": true,
+                    "Sample Space and Events": true,
+                    "Independent and Mutually Exclusive Events": true,
+                    "Marginal, Conditional, and Joint Probability": true
+                },
+                "Theorems and Distributions": {
+                    "Bayes Theorem": true,
+                    "Random Variables": {
+                        "Discrete Random Variables": {
+                            "Probability Mass Function (PMF)": true,
+                            "Bernoulli and Binomial Distributions": true
+                        },
+                        "Continuous Random Variables": {
+                            "Probability Density Function (PDF)": true,
+                            "Uniform, Exponential, Poisson, Normal, and Standard Normal Distributions": true
+                        }
+                    },
+                    "Cumulative Distribution Function (CDF)": true,
+                    "Central Limit Theorem": true
+                },
+                "Descriptive Statistics": {
+                    "Mean, Median, and Mode": true,
+                    "Variance and Standard Deviation": true,
+                    "Correlation and Covariance": true
+                },
+                "Hypothesis Testing": {
+                    "Confidence Intervals": true,
+                    "z-Test, t-Test, and Chi-Squared Test": true
                 }
             },
+            "Linear Algebra": {
+                "___urlPath___": "linear-algebra",
+                "Vector Spaces": {
+                    "Vector Space and Subspaces": true,
+                    "Linear Dependence and Independence": true
+                },
+                "Matrix Operations": {
+                    "Projection, Orthogonal, and Idempotent Matrices": true,
+                    "Partition Matrices and Properties": true
+                },
+                "Key Concepts": {
+                    "Quadratic Forms": true,
+                    "Gaussian Elimination": true,
+                    "Eigenvalues and Eigenvectors": true,
+                    "Determinants and Rank": true,
+                    "Nullity and Projections": true
+                },
+                "Decompositions": {
+                    "LU Decomposition": true,
+                    "Singular Value Decomposition (SVD)": true
+                }
+            },
+            "Calculus and Optimization": {
+                "___urlPath___": "calculus-optimization",
+                "Basic Calculus": {
+                    "Functions of a Single Variable": true,
+                    "Limit, Continuity, and Differentiability": true,
+                    "Taylor Series Expansion": true
+                },
+                "Optimization": {
+                    "Maxima and Minima": true,
+                    "Single Variable Optimization": true
+                }
+            },
+            "Programming, Data Structures, and Algorithms": {
+                "___urlPath___": "programming-data-algorithms",
+                "Programming with Python": {
+                    "___urlPath___": "programming-python",
+                    "Introduction to Python": {
+                        "___urlPath___": "introduction-python",
+                    },
+                },
+                "Basic Data Structures": {
+                    "Stacks, Queues, and Linked Lists": true,
+                    "Trees and Hash Tables": true
+                },
+                "Algorithms": {
+                    "Search Algorithms": {
+                        "Linear Search": true,
+                        "Binary Search": true
+                    },
+                    "Sorting Algorithms": {
+                        "Selection Sort, Bubble Sort, and Insertion Sort": true,
+                        "Divide and Conquer: Mergesort and Quicksort": true
+                    }
+                },
+                "Graph Theory": {
+                    "Introduction to Graph Theory": true,
+                    "Basic Graph Algorithms": {
+                        "Traversals (BFS and DFS)": true,
+                        "Shortest Path Algorithms": true
+                    }
+                }
+            },
+            "Database Management and Warehousing": {
+                "___urlPath___": "database-warehousing",
 
+                "Database Fundamentals": {
+                    "___urlPath___": "database-fundamentals",
+
+                    "ER-Model and Relational Model": {
+                        "___urlPath___": "er-relational-model",
+
+                        "ER-Model": {
+                            "___urlPath___": "er-model",
+                            "___md___": 153
+                        },
+
+                        "Relational Model": {
+                            "___urlPath___": "relational-model",
+                            "___md___": 961
+                        }
+                    },
+
+                    "Relational Algebra and Calculus": {
+                        "___urlPath___": "relational-algebra-calculus",
+
+                        "Relational Algebra": {
+                            "___urlPath___": "relational-algebra",
+                            "___md___": 962
+                        },
+
+                        "Tuple Relational Calculus": {
+                            "___urlPath___": "tuple-relational-calculus",
+                            "___md___": 963
+                        }
+                    },
+
+                    "SQL and Constraints": {
+                        "___urlPath___": "sql-constraints",
+
+                        "SQL (Structured Query Language)": {
+                            "___urlPath___": "sql",
+                            "___md___": 964
+                        },
+
+                        "Integrity Constraints": {
+                            "___urlPath___": "integrity-constraints",
+                            "___md___": 965
+                        }
+                    },
+
+                    "Normalization and Normal Forms": {
+                        "___urlPath___": "normalization",
+
+                        "1NF, 2NF, 3NF, BCNF": {
+                            "___urlPath___": "normal-forms",
+                            "___md___": 966
+                        }
+                    }
+                },
+
+                "Database Storage and Indexing": {
+                    "___urlPath___": "storage-indexing",
+
+                    "File Organization": {
+                        "___urlPath___": "file-organization",
+                        "___md___": 967
+                    },
+
+                    "Indexing Techniques": {
+                        "___urlPath___": "indexing-techniques",
+                        "___md___": 968
+                    }
+                },
+
+                "Data Warehousing Concepts": {
+                    "___urlPath___": "data-warehousing",
+
+                    "Data Preprocessing Techniques": {
+                        "___urlPath___": "data-preprocessing",
+                        "___md___": 969
+                    },
+
+                    "Schema Modeling": {
+                        "___urlPath___": "schema-modeling",
+
+                        "Multidimensional Schemas": {
+                            "___urlPath___": "multidimensional-schemas",
+                            "___md___": 970
+                        },
+
+                        "Concept Hierarchies": {
+                            "___urlPath___": "concept-hierarchies",
+                            "___md___": 971
+                        },
+
+                        "Measures: Categorization and Computation": {
+                            "___urlPath___": "measures",
+                            "___md___": 972
+                        }
+                    }
+                }
+            }
+            ,
+            "Machine Learning": {
+                "___urlPath___": "machine-learning",
+                "Supervised Learning": {
+                    "___urlPath___": "supervised-learning",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 58
+                    },
+                    "Regression": {
+                        "___urlPath___": "regression",
+                        "Simple Linear Regression": {
+                            "___urlPath___": "simple-linear-regression",
+                            "___md___": 113
+                        },
+                        "Multiple Linear Regression": {
+                            "___urlPath___": "multiple-linear-regression",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 114
+                            },
+                            "Model Evaluation": {
+                                "___urlPath___": "model-evaluation",
+                                "___md___": 115
+                            }
+                        },
+                        "Cost Function": {
+                            "___urlPath___": "cost-function",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 57
+                            },
+                            "Mean Squared Error (MSE)": {
+                                "___urlPath___": "mean-squared-error",
+                                "___md___": 56
+                            },
+                            "Mean Absolute Error (MAE)": {
+                                "___urlPath___": "mean-absolute-error",
+                                "___md___": 118
+                            }
+                        },
+                        "Ridge Regression & Lasso Regression": {
+                            "___urlPath___": "ridge-lasso-regression",
+                            "___md___": 37
+                        },
+                    },
+                    "Classification": {
+                        "___urlPath___": "classification",
+                        "Logistic Regression": {
+                            "___urlPath___": "logistic-regression",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 35
+                            },
+                            "Mathematical Derivation": {
+                                "___urlPath___": "mathematical-derivation",
+                                "___md___": 116
+                            }
+                        },
+                        "K-Nearest Neighbor (KNN)": {
+                            "___urlPath___": "k-nearest-neighbor",
+                            "___md___": 55
+                        },
+                        "Naive Bayes Classifier": true,
+                        "Support Vector Machine (SVM)": true,
+                        "Decision Trees": true
+                    },
+                    "Cross-Validation Techniques": {
+                        "Leave-One-Out Cross-Validation (LOO)": true,
+                        "K-Folds Cross-Validation": true
+                    },
+                    "Neural Networks": {
+                        "Feed-Forward Neural Networks": true,
+                        "Multi-Layer Perceptrons (MLP)": true
+                    }
+                },
+                "Unsupervised Learning": {
+                    "___urlPath___": "unsupervised-learning",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 59
+                    },
+                    "Clustering": {
+                        "___urlPath___": "clustering",
+                        "K-Means": {
+                            "___urlPath___": "k-means",
+                            "___md___": 60
+                        },
+                        "K-Medoid": {
+                            "___urlPath___": "k-medoid",
+                            "___md___": 61
+                        },
+                        "Hierarchical Clustering (Single-Linkage, Multiple-Linkage)": true
+                    },
+                    "Dimensionality Reduction": {
+                        "Principal Component Analysis (PCA)": true
+                    }
+                }
+            },
+            "Artificial Intelligence": {
+                "___urlPath___": "artificial-intelligence",
+                "Search": {
+                    "___urlPath___": "search",
+                    "Overview": {
+                        "___urlPath___": "overview",
+                        "___md___": 542
+                    },
+                    "Informed Search": {
+                        "___urlPath___": "informed-search",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 541
+                        },
+                        "Greedy Best-First Search": {
+                            "___urlPath___": "greedy-best-first-search",
+                            "___md___": 543
+                        },
+                        "A* Search": {
+                            "___urlPath___": "a-start-search",
+                            "___md___": 544
+                        }
+                    },
+                    "Uninformed Search": {
+                        "___urlPath___": "uninformed-search",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 579
+                        },
+                        "Breadth-First Search (BFS)": {
+                            "___urlPath___": "bfs",
+                            "___md___": 33333
+
+                        },
+                        "Depth-First Search (DFS)": {
+
+                        },
+                        "Uniform Cost Search (UCS)": {
+
+                        },
+                        "Depth-Limited Search (DLS)": {
+
+                        },
+                        "Iterative Deepening Search (IDS)": {
+                            "___urlPath___": "iterative-deepening-search-ids",
+                            "___md___": 580
+                        }
+                    },
+                    "Adversarial Search": true,
+                    "Constraint Satisfaction Problems": {
+                        "___urlPath___": "constraint-satisfaction-problems",
+                        "___md___": 545
+                    }
+                },
+                "Logic": {
+                    "Propositional Logic": true,
+                    "Predicate Logic": true,
+                    "Resolution and Unification": {
+                        "___urlPath___": "resolution-unification",
+                        "___md___": 548
+                    },
+                    "Forward and Backward Chaining": {
+                        "___urlPath___": "forward-backward-chaining",
+                        "___md___": 549
+                    }
+                },
+                "Reasoning Under Uncertainty": {
+                    "Conditional Independence Representation": true,
+                    "Exact Inference through Variable Elimination": true,
+                    "Approximate Inference through Sampling": true,
+                    "Bayesian Networks": {
+                        "___urlPath___": "bayesian-networks",
+                        "___md___": 553
+                    },
+                    "Markov Decision Processes (MDPs)": {
+                        "___urlPath___": "markov-decision-processes",
+                        "___md___": 554
+                    }
+                }
+            }
+        },
+        "Computer Science and Applications Notes": {
+            "___urlPath___": "computer-science-and-applications-course",
             "Data Structures": {
                 "___urlPath___": "data-structures",
                 "Introduction to Data Structures": {
@@ -8531,8 +8600,7 @@ const mapper = {
                     }
                 }
 
-            }
-            ,
+            },
             "Algorithms": {
                 "___urlPath___": "algorithms",
                 "Introduction to Algorithms": {
@@ -9021,6 +9089,871 @@ const mapper = {
                     "Case Study: Designing a Scalable Food Delivery System": true,
                     "Case Study: Building a High-Performance Ad Platform": true,
                     "Practical Project: Designing a Scalable Online Learning Platform": true
+                }
+            },
+            "Database Management": {
+                "___urlPath___": "database-management",
+                "GATE Level Concepts": {
+                    "Syllabus": {
+                        "___urlPath___": "gate-syllabus",
+                        "___md___": 996
+                    },
+                    "Databases": {
+                        "___urlPath___": "databases",
+                        "ER Model": {
+                            "___urlPath___": "er-model",
+                            "ER Diagrams and Entity Types": {
+                                "___urlPath___": "er-diagrams",
+                                "___md___": 2001
+                            },
+                            "Attributes, Keys, and Constraints": {
+                                "___urlPath___": "er-attributes-keys",
+                                "___md___": 2002
+                            },
+                            "Weak Entities and Aggregation": {
+                                "___urlPath___": "weak-entities-aggregation",
+                                "___md___": 2003
+                            },
+                            "ER to Relational Mapping": {
+                                "___urlPath___": "er-to-relational",
+                                "___md___": 2004
+                            }
+                        },
+                        "Relational Model and Algebra": {
+                            "___urlPath___": "relational-model",
+                            "Relational Schema, Tuples, Domains": {
+                                "___urlPath___": "relational-schema",
+                                "___md___": 2010
+                            },
+                            "Keys and Integrity Constraints": {
+                                "___urlPath___": "keys-integrity",
+                                "___md___": 2011
+                            },
+                            "Relational Algebra": {
+                                "___urlPath___": "relational-algebra",
+                                "___md___": 2012
+                            },
+                            "Tuple and Domain Relational Calculus": {
+                                "___urlPath___": "relational-calculus",
+                                "___md___": 2013
+                            }
+                        },
+                        "SQL and Query Processing": {
+                            "___urlPath___": "sql",
+                            "SQL Syntax and Semantics": {
+                                "___urlPath___": "sql-syntax",
+                                "___md___": 2020
+                            },
+                            "Joins, Nested Queries, Set Ops": {
+                                "___urlPath___": "joins-nested-queries",
+                                "___md___": 2021
+                            },
+                            "Views, Triggers, Grouping": {
+                                "___urlPath___": "views-triggers",
+                                "___md___": 2022
+                            },
+                            "Basic Query Optimization": {
+                                "___urlPath___": "query-optimization",
+                                "___md___": 2023
+                            }
+                        },
+                        "Normalization and Design": {
+                            "___urlPath___": "normalization",
+                            "Functional Dependencies": {
+                                "___urlPath___": "functional-dependencies",
+                                "___md___": 2030
+                            },
+                            "1NF, 2NF, 3NF, BCNF, 4NF": {
+                                "___urlPath___": "normal-forms",
+                                "___md___": 2031
+                            },
+                            "Lossless Join and Dependency Preservation": {
+                                "___urlPath___": "lossless-join",
+                                "___md___": 2032
+                            }
+                        },
+                        "Indexing and File Organization": {
+                            "___urlPath___": "indexing",
+                            "File Structures (Heap, Sorted, Hashed)": {
+                                "___urlPath___": "file-structures",
+                                "___md___": 1002
+                            },
+                            "Primary and Secondary Indexes": {
+                                "___urlPath___": "index-types",
+                                "___md___": 2041
+                            },
+                            "Dense vs Sparse Indexing": {
+                                "___urlPath___": "dense-sparse-index",
+                                "___md___": 2042
+                            },
+                            "B and B+ Trees": {
+                                "___urlPath___": "b-bplus-trees",
+                                "___md___": 2043
+                            }
+                        },
+                        "Transactions and Concurrency Control": {
+                            "___urlPath___": "transactions",
+                            "ACID Properties": {
+                                "___urlPath___": "acid-properties",
+                                "___md___": 997
+                            },
+                            "Transaction States and Serializability": {
+                                "___urlPath___": "serializability",
+                                "___md___": 998
+                            },
+                            "Schedules and Conflict Serializability": {
+                                "___urlPath___": "schedules",
+                                "___md___": 999
+                            },
+                            "2PL, Locking, Timestamp Ordering": {
+                                "___urlPath___": "locking-protocols",
+                                "___md___": 1000
+                            },
+                            "Deadlock Detection and Prevention": {
+                                "___urlPath___": "deadlocks",
+                                "___md___": 1001
+                            }
+                        },
+                        "Recovery and Logging": {
+                            "___urlPath___": "recovery",
+                            "Log-Based Recovery": {
+                                "___urlPath___": "log-based-recovery",
+                                "___md___": 2060
+                            },
+                            "Checkpoints and Shadow Paging": {
+                                "___urlPath___": "checkpoints-shadow-paging",
+                                "___md___": 2061
+                            }
+                        }
+                    }
+                },
+                "Introduction to Databases": {
+                    "What is a Database?": true,
+                    "Types of Databases (Relational, NoSQL, Graph, etc.)": true,
+                    "Database Management Systems (DBMS)": true,
+                    "SQL vs NoSQL Databases": true
+                },
+                "Relational Databases (PostgreSQL, MySQL)": {
+                    "___urlPath___": "relational-databases",
+                    "Introduction to Relational Databases": {
+                        "___urlPath___": "introduction-to-relational-databases",
+                        "___md___": 176
+                    },
+                    "Relational Algebra and Database Theory": {
+                        "___urlPath___": "relational-algebra-and-database-theory",
+                        "Relational Algebra Operations": {
+                            "___urlPath___": "relational-algebra-operations",
+                            "___md___": 177
+                        },
+                        "Relational Calculus (Tuple and Domain Calculus)": {
+                            "___urlPath___": "relational-calculus",
+                            "___md___": 178
+                        }
+                    },
+                    "SQL Basics": {
+                        "___urlPath___": "sql-basics",
+                        "DDL (Data Definition Language)": {
+                            "___urlPath___": "ddl",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 244
+                            },
+                            "Creating and Managing Tables": {
+                                "___urlPath___": "creating-and-managing-tables",
+                                "___md___": 179
+                            }
+                        },
+                        "DML (Data Manipulation Language)": {
+                            "___urlPath___": "dml",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 245
+                            },
+                            "CRUD Operations (INSERT, SELECT, UPDATE, DELETE)": {
+                                "___urlPath___": "crud-operations",
+                                "___md___": 180
+                            },
+                            "SELECT": {
+                                "___urlPath___": "select",
+                                "___md___": 259
+                            },
+                            "SELECT - WHERE Clause": {
+                                "___urlPath___": "select-where-clause",
+                                "___md___": 260
+                            },
+                            "SQL Wildcards": {
+                                "___urlPath___": "sql-wildcards",
+                                "___md___": 261
+                            }
+                        },
+                        "DCL (Data Control Language)": {
+                            "___urlPath___": "dcl",
+                            "___md___": 246
+                        },
+                        "Other SQL commands": {
+                            "___urlPath___": "other-sql-commands",
+                            "___md___": 247
+                        },
+                        "Joins (Inner, Outer, Left, Right)": {
+                            "___urlPath___": "joins",
+                            "___md___": 181
+                        },
+                        "Joins vs Union": {
+                            "___urlPath___": "joins-vs-union",
+                            "___md___": 248
+                        },
+                        "Aggregate Functions": {
+                            "___urlPath___": "aggregate-functions",
+                            "SUM, AVG, COUNT": {
+                                "___urlPath___": "sum-avg-count",
+                                "___md___": 182
+                            },
+                            "MIN, MAX, DISTINCT, GROUP BY, HAVING, ORDER BY": {
+                                "___urlPath___": "min-max-distinct-group-by-having-order-by",
+                                "___md___": 262
+                            },
+                        },
+
+                        "Column alias": {
+                            "___urlPath___": "column-alias",
+                            "___md___": 257
+                        },
+                        "Subquery basics": {
+                            "___urlPath___": "subquery-basics",
+                            "Overview of Subqueries": {
+                                "___urlPath___": "overview-of-subqueries",
+                                "___md___": 256
+                            },
+                            "Subquery Operators": {
+                                "___urlPath___": "subquery-operators",
+                                "ANY": {
+                                    "___urlPath___": "any",
+                                    "___md___": 249
+                                },
+                                "SOME": {
+                                    "___urlPath___": "some",
+                                    "___md___": 250
+                                },
+                                "ALL": {
+                                    "___urlPath___": "all",
+                                    "___md___": 251
+                                },
+                                "EXISTS": {
+                                    "___urlPath___": "exists",
+                                    "___md___": 252
+                                },
+                                "NOT EXISTS": {
+                                    "___urlPath___": "not-exists",
+                                    "___md___": 253
+                                },
+                                "IN": {
+                                    "___urlPath___": "in",
+                                    "___md___": 254
+                                },
+                                "NOT IN": {
+                                    "___urlPath___": "not-in",
+                                    "___md___": 255
+                                }
+                            }
+                        },
+                        "Set Operations (UNION, INTERSECT, EXCEPT)": {
+                            "___urlPath___": "set-operations",
+                            "___md___": 258
+                        }
+
+                    },
+                    "Advanced SQL": {
+                        "___urlPath___": "advanced-sql",
+                        "Subqueries and Nested Queries": {
+                            "___urlPath___": "subqueries-and-nested-queries",
+                            "___md___": 183
+                        },
+                        "Views, Triggers, and Stored Procedures": {
+                            "___urlPath___": "views-triggers-stored-procedures",
+                            "___md___": 184
+                        },
+                        "Transactions and ACID Properties": {
+                            "___urlPath___": "transactions-and-acid-properties",
+                            "___md___": 185
+                        },
+                        "Error Handling in SQL Queries": {
+                            "___urlPath___": "error-handling-in-sql-queries",
+                            "___md___": 186
+                        }
+                    },
+                    "PostgreSQL Features": {
+                        "___urlPath___": "postgresql-features",
+                        "Data Types and Table Constraints": {
+                            "___urlPath___": "data-types-and-table-constraints",
+                            "___md___": 187
+                        },
+                        "Using PostgreSQL Extensions (PostGIS, etc.)": {
+                            "___urlPath___": "postgresql-extensions",
+                            "___md___": 188
+                        },
+                        "Indexing in PostgreSQL": {
+                            "___urlPath___": "indexing-in-postgresql",
+                            "___md___": 189
+                        },
+                        "Query Performance Tuning in PostgreSQL": {
+                            "___urlPath___": "query-performance-tuning",
+                            "___md___": 190
+                        }
+                    },
+                    "MySQL Features": {
+                        "Data Types and Constraints": true,
+                        "Replication and Clustering in MySQL": true,
+                        "Using MySQL Workbench": true,
+                        "Query Optimization in MySQL": true
+                    }
+                },
+                "NoSQL Databases (MongoDB, DynamoDB, Cassandra, Neo4j, Redis, Elasticsearch, HBase)": {
+                    "___urlPath___": "nosql-databases",
+                    "Introduction to NoSQL Databases": true,
+                    "Key-Value Stores (Redis, DynamoDB)": {
+                        "___urlPath___": "key-value-stores",
+                        "Redis": {
+                            "___urlPath___": "redis",
+                            "Introduction to Redis": {
+                                "___urlPath___": "introduction-to-redis",
+                                "What is Redis?": {
+                                    "___urlPath___": "what-is-redis",
+                                    "___md___": 632
+                                },
+                                "Why use Redis (Use Cases)": {
+                                    "___urlPath___": "why-use-redis",
+                                    "___md___": 633
+                                },
+                                "Installation & Setup": {
+                                    "___urlPath___": "installation-and-setup",
+                                    "___md___": 634
+                                },
+                                "Data Types Overview": {
+                                    "___urlPath___": "data-types-overview",
+                                    "___md___": 635
+                                }
+                            },
+                            "Core Redis Data Structures": {
+                                "Strings": {
+                                    "___urlPath___": "strings",
+                                    "Basic Commands": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 636
+                                    },
+                                    "Use Cases": {
+                                        "___urlPath___": "use-cases",
+                                        "___md___": 637
+                                    }
+                                },
+                                "Lists": {
+                                    "___urlPath___": "lists",
+                                    "Basic Commands (LPUSH, RPUSH, LPOP, etc.)": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 638
+                                    },
+                                    "Use Cases": {
+                                        "___urlPath___": "use-cases",
+                                        "___md___": 639
+                                    }
+                                },
+                                "Sets": {
+                                    "___urlPath___": "sets",
+                                    "Basic Commands (SADD, SREM, SMEMBERS, etc.)": {
+                                        "___urlPath___": "basic_commands",
+                                        "___md___": 640
+                                    },
+                                    "Set Operations (Union, Intersect)": {
+                                        "___urlPath___": "set-operations",
+                                        "___md___": 641
+                                    }
+                                },
+                                "Sorted Sets (ZSET)": {
+                                    "___urlPath___": "sorted-sets",
+                                    "Basic Commands (ZADD, ZRANGE, etc.)": {
+                                        "___urlPath___": "basic-commands",
+                                        "___md___": 642
+                                    },
+                                    "Leaderboard Use Case": {
+                                        "___urlPath___": "leaderboard-use-case",
+                                        "___md___": 643
+                                    }
+                                },
+                                "Hashes": {
+                                    "___urlPath___": "hashes",
+                                    "Basic Commands (HSET, HGET, etc.)": true,
+                                    "Use Cases (Object Mapping)": true
+                                },
+                                "Bitmaps and HyperLogLogs": {
+                                    "___urlPath___": "bitmaps-hyperloglog",
+                                    "Bitmaps Overview and Use Cases": true,
+                                    "HyperLogLog for Approx. Counting": true
+                                }
+                            },
+                            "Persistence & Durability": {
+                                "___urlPath___": "persistence-durability",
+                                "RDB Snapshots": true,
+                                "AOF (Append-Only File)": true,
+                                "Best Practices for Durability": true
+                            },
+                            "Transactions and Scripting": {
+                                "___urlPath___": "transactions-scripting",
+                                "MULTI/EXEC/DISCARD": true,
+                                "Watch and Optimistic Locking": true,
+                                "Lua Scripting": true
+                            },
+                            "Redis as a Cache": {
+                                "___urlPath___": "redis-cache",
+                                "Eviction Policies (LRU, LFU, etc.)": true,
+                                "Expiration and TTL": true,
+                                "Cache-Aside vs Write-Through": true
+                            },
+                            "Redis Pub/Sub & Streams": {
+                                "___urlPath___": "pubsub-streams",
+                                "Pub/Sub Messaging Model": true,
+                                "Redis Streams (XADD, XREAD, Consumer Groups)": true,
+                                "Use Cases: Real-Time Feed, Event Queues": true
+                            },
+                            "Advanced Topics": {
+                                "___urlPath___": "advanced",
+                                "Redis Cluster (Sharding and Partitioning)": true,
+                                "Replication & High Availability (Redis Sentinel)": true,
+                                "Backup & Restore": true,
+                                "Security (AUTH, ACLs, Encryption)": true,
+                                "Rate Limiting using Redis": true,
+                                "Distributed Locks (SETNX, Redlock Algorithm)": {
+                                    "___urlPath___": "distributed-locks",
+                                    "___md___": 644
+                                }
+                            },
+                            "Redis in Practice": {
+                                "___urlPath___": "redis-practice",
+                                "Integrating Redis with Node.js/Java/Python": true,
+                                "Monitoring and Debugging": true,
+                                "Performance Tuning": true
+                            },
+                            "Projects 💻": {
+                                "___urlPath___": "projects",
+                                "Leaderboard using Sorted Set": true,
+                                "Rate Limiter using Redis + Node.js": true,
+                                "Job Queue with Redis Lists": true,
+                                "Real-time Chat with Pub/Sub": true
+                            }
+                        },
+                        "DynamoDB Features": {
+                            "Creating Tables and Partition Keys": true,
+                            "DynamoDB Streams": true,
+                            "Global and Local Secondary Indexes": true,
+                            "Data Modeling in DynamoDB": true
+                        },
+                    },
+                    "Document Stores (MongoDB)": {
+                        "Understanding JSON Documents": true,
+                        "CRUD Operations in MongoDB": true,
+                        "Indexes in MongoDB": true,
+                        "Aggregation Framework": true
+                    },
+                    "Column-Family Stores (Apache Cassandra, HBase, Google Bigtable)": {
+                        "___urlPath___": "column-family-stores-cassandra",
+                        "Introduction to Cassandra": {
+                            "___urlPath___": "introduction-to-cassandra",
+                            "___md___": 310
+                        },
+                        "Cassandra Data Model": {
+                            "___urlPath___": "cassandra-data-model",
+                            "Tables, Partitions, and Clustering": {
+                                "___urlPath___": "tables-partitions-clustering",
+                                "___md___": 311
+                            },
+                            "Primary Key Design in Cassandra": {
+                                "___urlPath___": "primary-key-design",
+                                "___md___": 312
+                            },
+                            "Denormalization in Cassandra": {
+                                "___urlPath___": "denormalization-cassandra",
+                                "___md___": 313
+                            }
+                        },
+                        "Cassandra Query Language (CQL)": {
+                            "___urlPath___": "cql-basics",
+                            "DDL - Creating Keyspaces and Tables": {
+                                "___urlPath___": "cql-ddl-keyspaces-tables",
+                                "___md___": 314
+                            },
+                            "DML - CRUD Operations": {
+                                "___urlPath___": "cql-dml-crud",
+                                "___md___": 315
+                            },
+                            "CQL Filtering and Query Optimization": {
+                                "___urlPath___": "cql-query-optimization",
+                                "___md___": 316
+                            }
+                        },
+                        "Replication and Consistency in Cassandra": {
+                            "___urlPath___": "replication-consistency-cassandra",
+                            "Replication Factor and Strategy": {
+                                "___urlPath___": "replication-strategy",
+                                "___md___": 317
+                            },
+                            "Consistency Levels in Cassandra": {
+                                "___urlPath___": "consistency-levels",
+                                "___md___": 318
+                            },
+                            "Tunable Consistency Trade-offs": {
+                                "___urlPath___": "tunable-consistency",
+                                "___md___": 319
+                            }
+                        },
+                        "Performance and Scaling in Cassandra": {
+                            "___urlPath___": "performance-scaling-cassandra",
+                            "Partitioning and Load Balancing": {
+                                "___urlPath___": "partitioning-load-balancing",
+                                "___md___": 320
+                            },
+                            "Indexes in Cassandra": {
+                                "___urlPath___": "indexes-in-cassandra",
+                                "___md___": 321
+                            },
+                            "Read vs Write Performance Considerations": {
+                                "___urlPath___": "read-write-performance",
+                                "___md___": 322
+                            }
+                        },
+                        "Cassandra Security and Backup": {
+                            "___urlPath___": "cassandra-security-backup",
+                            "Authentication and Authorization": {
+                                "___urlPath___": "authentication-authorization",
+                                "___md___": 323
+                            },
+                            "Backup and Restore Strategies": {
+                                "___urlPath___": "backup-restore-strategies",
+                                "___md___": 324
+                            },
+                            "Disaster Recovery and PITR": {
+                                "___urlPath___": "disaster-recovery",
+                                "___md___": 325
+                            }
+                        },
+                        "HBase Overview": {
+                            "___urlPath___": "hbase-overview",
+                            "___md___": 369
+                        },
+                        "Google Bigtable Overview": {
+                            "___urlPath___": "bigtable-overview",
+                            "___md___": 370
+                        }
+                    },
+
+                    "Graph Databases (Neo4j, Amazon Neptune)": {
+                        "___urlPath___": "graph-databases",
+                        "Introduction to Graph Databases": {
+                            "___urlPath___": "introduction-graph-databases",
+                            "___md___": 371
+                        },
+                        "Neo4j Fundamentals": {
+                            "___urlPath___": "neo4j-fundamentals",
+                            "___md___": 372
+                        },
+                        "Cypher Query Language": {
+                            "___urlPath___": "cypher-query-language",
+                            "___md___": 373
+                        },
+                        "Amazon Neptune Overview": {
+                            "___urlPath___": "amazon-neptune",
+                            "___md___": 374
+                        },
+                        "Graph Use Cases (Social Networks, Fraud Detection)": {
+                            "___urlPath___": "graph-use-cases",
+                            "___md___": 375
+                        }
+                    },
+
+                    "Search Databases (Elasticsearch, OpenSearch)": {
+                        "___urlPath___": "search-databases",
+                        "Introduction to Search Databases": {
+                            "___urlPath___": "introduction-search-databases",
+                            "___md___": 376
+                        },
+                        "Elasticsearch Overview": {
+                            "___urlPath___": "elasticsearch-overview",
+                            "___md___": 377
+                        },
+                        "OpenSearch Overview": {
+                            "___urlPath___": "opensearch-overview",
+                            "___md___": 378
+                        },
+                        "Indexing in Search Databases": {
+                            "___urlPath___": "indexing-search-databases",
+                            "___md___": 379
+                        },
+                        "Full-Text Search & Queries": {
+                            "___urlPath___": "full-text-search",
+                            "___md___": 380
+                        }
+                    },
+
+                    "Time-Series Databases (InfluxDB, Amazon Timestream)": {
+                        "___urlPath___": "time-series-databases",
+                        "Introduction to Time-Series Databases": {
+                            "___urlPath___": "introduction-time-series",
+                            "___md___": 381
+                        },
+                        "InfluxDB Overview": {
+                            "___urlPath___": "influxdb-overview",
+                            "___md___": 382
+                        },
+                        "Amazon Timestream Overview": {
+                            "___urlPath___": "timestream-overview",
+                            "___md___": 383
+                        },
+                        "Querying and Indexing in Time-Series Databases": {
+                            "___urlPath___": "querying-time-series",
+                            "___md___": 384
+                        }
+                    },
+
+                    "Multi-Model Databases (ArangoDB, Couchbase)": {
+                        "___urlPath___": "multi-model-databases",
+                        "Introduction to Multi-Model Databases": {
+                            "___urlPath___": "introduction-multi-model",
+                            "___md___": 385
+                        },
+                        "ArangoDB Overview": {
+                            "___urlPath___": "arangodb-overview",
+                            "___md___": 386
+                        },
+                        "Couchbase Overview": {
+                            "___urlPath___": "couchbase-overview",
+                            "___md___": 387
+                        },
+                        "Use Cases of Multi-Model Databases": {
+                            "___urlPath___": "multi-model-use-cases",
+                            "___md___": 388
+                        }
+                    }
+                    ,
+                    "Comparing NoSQL to SQL": {
+                        "Use Cases for NoSQL": true,
+                        "Scaling in NoSQL Databases": true
+                    }
+                },
+                "Database Design and Normalization": {
+                    "___urlPath___": "database-design-and-normalization",
+                    "Introduction to Database Design": {
+                        "___urlPath___": "introduction-to-database-design",
+                        "___md___": 161
+                    },
+                    "Entity-Relationship (ER) Modeling": {
+                        "___urlPath___": "entity-relationship-modeling",
+                        "___md___": 160
+                    },
+                    "Normalization": {
+                        "___urlPath___": "normalization",
+                        "First Normal Form (1NF)": {
+                            "___urlPath___": "first-normal-form",
+                            "___md___": 154
+                        },
+                        "Second Normal Form (2NF)": {
+                            "___urlPath___": "second-normal-form",
+                            "___md___": 155
+                        },
+                        "Third Normal Form (3NF)": {
+                            "___urlPath___": "third-normal-form",
+                            "___md___": 156
+                        },
+                        "Boyce-Codd Normal Form (BCNF)": {
+                            "___urlPath___": "boyce-codd-normal-form",
+                            "___md___": 157
+                        }
+                    },
+                    "Denormalization": {
+                        "___urlPath___": "denormalization",
+                        "___md___": 158
+                    },
+                    "Database Schema Design Best Practices": {
+                        "___urlPath___": "database-schema-design-best-practices",
+                        "___md___": 159
+                    }
+                },
+                "Indexing and Query Optimization": {
+                    "Introduction to Indexing": {
+                        "Clustered vs Non-Clustered Indexes": true,
+                        "Hash Indexes and B-Tree Indexes": true,
+                        "Index Maintenance and Costs": true
+                    },
+                    "Query Optimization": {
+                        "Using Explain Plans": true,
+                        "Query Caching": true,
+                        "Optimizing Joins and Subqueries": true,
+                        "Partitioning and Sharding": true
+                    },
+                    "Performance Tuning Tools": {
+                        "PostgreSQL Query Analyzer": true,
+                        "MySQL Query Profiler": true,
+                        "MongoDB Profiler": true
+                    }
+                },
+                "Transactions and Concurrency Control": {
+                    "___urlPath___": "transactions-and-concurrency-control",
+                    "Introduction": {
+                        "___urlPath___": "introduction",
+                        "___md___": 228
+                    },
+                    "Transactions": {
+                        "___urlPath___": "transactions",
+                        "Properties of Transactions (ACID)": {
+                            "___urlPath___": "properties-of-transactions",
+                            "___md___": 162
+                        },
+                        "Transaction States": {
+                            "___urlPath___": "transaction-states",
+                            "___md___": 163
+                        }
+                    },
+                    "Concurrency Control": {
+                        "___urlPath___": "concurrency-control",
+                        "Concurrency problems": {
+                            "___urlPath___": "concurrency-problems",
+                            "Introduction": {
+                                "___urlPath___": "introduction",
+                                "___md___": 192
+                            },
+                            "Write-Read Conflict": {
+                                "___urlPath___": "write-read-conflict",
+                                "___md___": 193
+                            },
+                            "Read-Write Conflict": {
+                                "___urlPath___": "read-write-conflict",
+                                "___md___": 194
+                            },
+                            "Other Conflicts (Phantom Reads, etc.)": {
+                                "___urlPath___": "other-conflicts",
+                                "___md___": 231
+                            }
+                        },
+                        "Recoverability: Recoverable and Non-recoverable schedules": {
+                            "___urlPath___": "recoverable-and-non-recoverable-schedules",
+                            "___md___": 195
+                        },
+                        "Scheduling and Serializability": {
+                            "___urlPath___": "scheduling-and-serializability",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 191
+                            },
+                            "Serializability and Precedence Graphs": {
+                                "___urlPath___": "serializability-and-precedence-graphs",
+                                "___md___": 229
+                            },
+                            "View Serializability": {
+                                "___urlPath___": "view-serializability",
+                                "___md___": 230
+                            }
+                        },
+                        "Lock-Based Protocols": {
+                            "___urlPath___": "lock-based-protocols",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 164
+                            },
+                            "Two-Phase Locking (2PL)": {
+                                "___urlPath___": "two-phase-locking",
+                                "___md___": 0
+                            }
+                        },
+                        "Deadlock Handling": {
+                            "___urlPath___": "deadlock-handling",
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 165
+                            },
+                            "Prevention and Avoidance": {
+                                "___urlPath___": "prevention-and-avoidance",
+                                "___md___": 165
+                            },
+                            "Detection and Recovery": {
+                                "___urlPath___": "detection-and-recovery",
+                                "___md___": 212
+                            }
+                        },
+                        "Timestamp-Based Protocols": {
+                            "___urlPath___": "timestamp-based-protocols",
+                            "Optimistic Concurrency Control": {
+                                "___urlPath___": "optimistic-concurrency-control",
+                                "___md___": 166
+                            }
+                        },
+                        "Multiversion Concurrency Control (MVCC)": {
+                            "___urlPath___": "multiversion-concurrency-control",
+                            "___md___": 167
+                        }
+                    }
+                },
+                "File Organization": {
+                    "___urlPath___": "file-organization",
+                    "Storage Mechanisms in Databases": {
+                        "___urlPath___": "storage-mechanisms-in-databases",
+                        "___md___": 168
+                    },
+                    "File Organization Techniques": {
+                        "___urlPath___": "file-organization-techniques",
+                        "Heap File Organization": {
+                            "___urlPath___": "heap-file-organization",
+                            "___md___": 169
+                        },
+                        "Sequential File Organization": {
+                            "___urlPath___": "sequential-file-organization",
+                            "___md___": 170
+                        },
+                        "Hashing Techniques": {
+                            "___urlPath___": "hashing-techniques",
+                            "___md___": 171
+                        }
+                    },
+                    "Indexing": {
+                        "___urlPath___": "indexing",
+                        "B-Trees": {
+                            "___urlPath___": "b-trees",
+                            "___md___": 172
+                        },
+                        "B+ Trees": {
+                            "___urlPath___": "b-plus-trees",
+                            "___md___": 173
+                        },
+                        "Secondary Indexes": {
+                            "___urlPath___": "secondary-indexes",
+                            "___md___": 174
+                        },
+                        "Dynamic Indexing": {
+                            "___urlPath___": "dynamic-indexing",
+                            "___md___": 175
+                        }
+                    }
+                },
+                "Backup and Recovery": {
+                    "Backup Strategies": true,
+                    "Point-in-Time Recovery (PITR)": true,
+                    "Disaster Recovery Planning": true,
+                    "Backup Tools (pg_dump, mysqldump, MongoDump)": true
+                },
+                "Distributed Databases and Scalability": {
+                    "___urlPath___": "distributed-databases-and-scalability",
+                    "Introduction to Distributed Databases": {
+                        "___urlPath___": "introduction-to-distributed-databases",
+                        "___md___": 263
+                    },
+                    "Replication (Master-Slave, Master-Master)": {
+                        "___urlPath___": "replication",
+                        "___md___": 264
+                    },
+                    "Sharding and Partitioning Strategies": true,
+                    "Eventual Consistency vs Strong Consistency": true,
+                    "CAP Theorem": true
+                },
+                "Hands-On Projects": {
+                    "Designing a Library Management System": true,
+                    "Building an E-Commerce Database Schema": true,
+                    "Implementing Real-Time Analytics with MongoDB": true,
+                    "Building a Scalable DynamoDB Application": true
                 }
             },
             "Discrete Mathematics": {
@@ -9703,8 +10636,6 @@ const mapper = {
                     }
                 }
             },
-
-
             "Operating System": {
                 "___urlPath___": "operating-system",
                 "System Calls and Structures": {
@@ -9840,6 +10771,7 @@ const mapper = {
                     "Free Space Management": true
                 }
             },
+
             "Computer Networks": {
                 "___urlPath___": "computer-networks",
                 "Chapter 1 - Definition, Goals, and Applications": {
@@ -9889,6 +10821,171 @@ const mapper = {
                 "Chapter 12 - Application Layer Services": {
                     "___urlPath___": "application-layer-services",
                     "___md___": 802
+                }
+            },
+            "Cloud Computing": {
+                "Fundamentals": {
+                    "___urlPath___": "cloud-computing-fundamentals",
+                    "Introduction to Cloud Computing": {
+                        "___urlPath___": "introduction-cloud-computing",
+                        "___md___": 101
+                    },
+                    "Characteristics of Cloud": {
+                        "___urlPath___": "characteristics-cloud",
+                        "___md___": 102
+                    },
+                    "Service Models (IaaS, PaaS, SaaS)": {
+                        "___urlPath___": "service-models",
+                        "___md___": 103
+                    },
+                    "Deployment Models": {
+                        "___urlPath___": "deployment-models",
+                        "___md___": 104
+                    },
+                    "Benefits and Challenges": {
+                        "___urlPath___": "benefits-challenges-cloud",
+                        "___md___": 105
+                    }
+                }
+            },
+            "Software Engineering": {
+                "___urlPath___": "software-engineering",
+                "Introduction to Software Engineering": {
+                    "What is Software Engineering?": true,
+                    "Software Development Life Cycle (SDLC)": {
+                        "Phases of SDLC": true,
+                        "Waterfall Model": true,
+                        "Iterative and Incremental Models": true,
+                        "Agile Methodology": true
+                    },
+                    "Importance of Software Engineering": true,
+                    "Software Engineering Ethics": true
+                },
+                "Requirements Engineering": {
+                    "Understanding Requirements": {
+                        "Functional and Non-Functional Requirements": true,
+                        "User Stories and Use Cases": true
+                    },
+                    "Requirements Gathering Techniques": {
+                        "Interviews and Surveys": true,
+                        "Workshops and Brainstorming": true,
+                        "Prototyping": true
+                    },
+                    "Requirements Documentation": {
+                        "SRS (Software Requirements Specification)": true,
+                        "Tools for Requirements Documentation (Jira, Confluence)": true
+                    },
+                    "Requirements Validation": true
+                },
+                "Software Design": {
+                    "Principles of Software Design": {
+                        "SOLID Principles": true,
+                        "Separation of Concerns": true,
+                        "Design Patterns (Creational, Structural, Behavioral)": true
+                    },
+                    "Architectural Design": {
+                        "Monolithic vs Microservices Architecture": true,
+                        "Layered Architecture": true,
+                        "Client-Server Architecture": true
+                    },
+                    "UI/UX Design Principles": {
+                        "Wireframing and Prototyping": true,
+                        "Human-Computer Interaction Basics": true,
+                        "Accessibility in Design": true
+                    },
+                    "Design Documentation": true
+                },
+                "Software Development Methodologies": {
+                    "Traditional Models": {
+                        "Waterfall Model": true,
+                        "V-Model": true
+                    },
+                    "Agile Models": {
+                        "Scrum": {
+                            "Roles in Scrum": true,
+                            "Artifacts in Scrum": true,
+                            "Events in Scrum": true
+                        },
+                        "Kanban": true,
+                        "Extreme Programming (XP)": true
+                    },
+                    "Hybrid Models (Agile-Waterfall)": true
+                },
+                "Software Testing and Quality Assurance": {
+                    "Testing Fundamentals": {
+                        "What is Software Testing?": true,
+                        "Levels of Testing (Unit, Integration, System, Acceptance)": true,
+                        "Types of Testing (Black Box, White Box, Grey Box)": true
+                    },
+                    "Test-Driven Development (TDD)": true,
+                    "Automated Testing": {
+                        "Tools (Selenium, JUnit, TestNG)": true,
+                        "Continuous Testing in CI/CD Pipelines": true
+                    },
+                    "Quality Assurance Practices": {
+                        "Defect Management": true,
+                        "Peer Reviews and Code Inspections": true,
+                        "Quality Metrics and KPIs": true
+                    }
+                },
+                "Software Maintenance": {
+                    "Types of Maintenance": {
+                        "Corrective Maintenance": true,
+                        "Adaptive Maintenance": true,
+                        "Perfective Maintenance": true,
+                        "Preventive Maintenance": true
+                    },
+                    "Version Control and Configuration Management": {
+                        "Version Control Tools (Git, SVN)": true,
+                        "Release Management": true,
+                        "Continuous Integration and Deployment": true
+                    },
+                    "Refactoring and Reengineering": true
+                },
+                "Software Project Management": {
+                    "Project Planning": {
+                        "Defining Scope and Objectives": true,
+                        "Work Breakdown Structure (WBS)": true,
+                        "Estimating Costs and Time": true
+                    },
+                    "Risk Management": {
+                        "Identifying Risks": true,
+                        "Mitigation Strategies": true,
+                        "Monitoring and Controlling Risks": true
+                    },
+                    "Team Management": {
+                        "Forming and Leading Teams": true,
+                        "Conflict Resolution": true,
+                        "Motivating Team Members": true
+                    },
+                    "Project Tracking Tools": {
+                        "Gantt Charts": true,
+                        "Kanban Boards": true,
+                        "Tools (Microsoft Project, Trello, Asana)": true
+                    }
+                },
+                "Software Metrics and Measurement": {
+                    "Introduction to Metrics": true,
+                    "Process Metrics": true,
+                    "Product Metrics": true,
+                    "Project Metrics": true,
+                    "Tools for Software Metrics (SonarQube, CodeClimate)": true
+                },
+                "Emerging Trends in Software Engineering": {
+                    "DevOps and Continuous Delivery": true,
+                    "AI and Machine Learning in Software Engineering": true,
+                    "Cloud-Native Applications": true,
+                    "Low-Code and No-Code Platforms": true
+                },
+                "Case Studies and Practical Applications": {
+                    "Case Study 1: Building an E-Commerce Application": true,
+                    "Case Study 2: Developing a Scalable SaaS Product": true,
+                    "Case Study 3: Migrating a Legacy System to Microservices": true,
+                    "Case Study 4: Implementing Agile in a Large Organization": true
+                },
+                "Software Engineering cheatsheet": {
+                    "___urlPath___": "software-engineering-cheatsheet",
+                    "___md___": 485
                 }
             },
             "Information & Cyber Security": {
@@ -10110,698 +11207,6 @@ const mapper = {
                 "Future Trends and Challenges in Big Data": {
                     "___urlPath___": "future-trends-and-chanllenges-in-big-data",
                     "___md___": 736
-                }
-            },
-            "Soft Skills and Best Practices": {
-                "___urlPath___": "soft-skills",
-                "Agile Development and Scrum": {
-                    "Introduction to Agile Methodology": {
-                        "Principles of Agile (Agile Manifesto & 12 Principles)": true,
-                        "Benefits of Agile over Traditional Models (Waterfall, V-Model, etc.)": true,
-                        "Different Agile Frameworks": {
-                            "Scrum": true,
-                            "Kanban": true,
-                            "SAFe (Scaled Agile Framework)": true,
-                            "LeSS (Large-Scale Scrum)": true,
-                            "Spotify Model": true,
-                            "Nexus": true
-                        }
-                    },
-                    "Scrum Framework (Deep Dive)": {
-                        "Roles in Scrum": {
-                            "Scrum Master": true,
-                            "Product Owner": true,
-                            "Development Team": true
-                        },
-                        "Scrum Artifacts": {
-                            "Product Backlog": true,
-                            "Sprint Backlog": true,
-                            "Increment": true,
-                            "Definition of Done (DoD) and Acceptance Criteria": true
-                        },
-                        "Scrum Events": {
-                            "Sprint Planning": true,
-                            "Daily Standups (Daily Scrum)": true,
-                            "Sprint Review": true,
-                            "Sprint Retrospective": true,
-                            "Backlog Refinement (Grooming)": true
-                        }
-                    },
-                    "Advanced Agile Practices": {
-                        "Agile Estimation Techniques": {
-                            "Story Points vs Ideal Days": true,
-                            "Planning Poker": true,
-                            "T-Shirt Sizing": true,
-                            "Fibonacci Sequence in Estimation": true
-                        },
-                        "Velocity and Burn-down/Burn-up Charts": true,
-                        "Technical Debt and Refactoring in Agile": true,
-                        "Agile Testing Strategies (TDD, BDD, ATDD)": true,
-                        "CI/CD in Agile (Continuous Integration & Deployment)": true,
-                        "DevOps Integration with Agile": true,
-                        "Test Automation in Agile (Selenium, Cypress, Jest)": true
-                    },
-                    "Scaling Agile for Large Enterprises": {
-                        "Introduction to Scaling Agile": true,
-                        "SAFe (Scaled Agile Framework)": {
-                            "SAFe Roles and Responsibilities": true,
-                            "PI Planning (Program Increment Planning)": true,
-                            "Agile Release Train (ART)": true,
-                            "Lean Portfolio Management": true
-                        },
-                        "LeSS (Large-Scale Scrum)": {
-                            "Differences Between LeSS and SAFe": true,
-                            "LeSS Framework Principles": true
-                        },
-                        "Spotify Model": {
-                            "Tribes, Squads, Guilds, and Chapters": true,
-                            "Autonomy and Alignment in Agile": true
-                        },
-                        "Nexus Framework for Scaling Scrum": true
-                    },
-                    "Best Practices in Agile": {
-                        "Effective Sprint Planning": true,
-                        "Tracking Progress with Burndown and Burn-up Charts": true,
-                        "Conducting Productive Retrospectives": true,
-                        "Avoiding Common Agile Pitfalls": true,
-                        "Handling Changing Requirements in Agile": true,
-                        "Balancing Business Priorities with Technical Excellence": true
-                    },
-                    "Platform Core Team (PCT) and Agile Core Team (ACT)": {
-                        "Platform Core Team (PCT)": {
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 367
-                            },
-                            "Responsibilities of PCT": true,
-                            "Platform Engineering and DevOps": true,
-                            "Developer Tooling and Infrastructure": true,
-                            "Scalability and Performance Optimization": true
-                        },
-                        "Agile Core Team (ACT)": {
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 368
-                            },
-                            "Responsibilities of ACT": true,
-                            "Feature Development and Sprint Execution": true,
-                            "Cross-Functional Collaboration": true,
-                            "Customer-Centric Development": true
-                        },
-                        "Comparison: PCT and ACT": {
-                            "___urlPath___": "comparision-pct-act",
-                            "___md___": 369
-                        }
-                    },
-                    "Agile Leadership and Coaching": {
-                        "Agile Coaching vs Scrum Master Role": true,
-                        "Servant Leadership in Agile": true,
-                        "Conflict Resolution in Agile Teams": true,
-                        "Building High-Performing Agile Teams": true,
-                        "Stakeholder Management in Agile": true,
-                        "Psychological Safety in Agile Teams": true
-                    },
-                    "Agile Metrics and KPIs": {
-                        "Key Agile Metrics": {
-                            "Velocity": true,
-                            "Lead Time and Cycle Time": true,
-                            "Cumulative Flow Diagram": true,
-                            "Escaped Defects": true
-                        },
-                        "Using Agile Metrics for Continuous Improvement": true,
-                        "Avoiding Vanity Metrics in Agile": true
-                    },
-                    "Case Studies and Real-World Implementations": {
-                        "Agile at Netflix": true,
-                        "Agile at Amazon": true,
-                        "Agile at Spotify": true,
-                        "Lessons Learned from Failed Agile Implementations": true
-                    }
-                },
-                "Problem Solving and Debugging": {
-                    "Understanding Problem-Solving": {
-                        "Defining Problems Clearly": true,
-                        "Breaking Problems into Smaller Parts": true,
-                        "Analyzing Root Causes (5 Whys, Fishbone Diagram)": true
-                    },
-                    "Debugging Skills": {
-                        "Debugging Tools and Techniques": true,
-                        "Systematic Debugging Steps": true,
-                        "Collaborative Debugging in Teams": true
-                    },
-                    "Case Studies and Practice": {
-                        "Solving Real-Life Software Issues": true,
-                        "Analyzing Past Debugging Challenges": true
-                    }
-                },
-                "Clean Code Practices": {
-                    "Principles of Clean Code": {
-                        "Writing Readable and Maintainable Code": true,
-                        "Naming Conventions for Variables and Methods": true,
-                        "Avoiding Code Smells": true
-                    },
-                    "Refactoring Code": {
-                        "Identifying Areas for Improvement": true,
-                        "Step-by-Step Refactoring": true,
-                        "Testing After Refactoring": true
-                    },
-                    "Documentation and Comments": {
-                        "Writing Meaningful Comments": true,
-                        "Creating Documentation for APIs and Libraries": true
-                    },
-                    "Code Review Practices": {
-                        "Conducting Effective Code Reviews": true,
-                        "Providing Constructive Feedback": true,
-                        "Handling Feedback Gracefully": true
-                    }
-                },
-                "Collaboration and Communication": {
-                    "Collaboration in Teams": {
-                        "Building Trust in Teams": true,
-                        "Fostering Inclusive Work Environments": true,
-                        "Handling Conflicts Constructively": true
-                    },
-                    "Communication Skills": {
-                        "Effective Verbal Communication": true,
-                        "Active Listening Techniques": true,
-                        "Writing Clear and Concise Emails": true,
-                        "Creating Impactful Presentations": true
-                    },
-                    "Stakeholder Management": {
-                        "Understanding Stakeholder Needs": true,
-                        "Providing Regular Updates to Stakeholders": true,
-                        "Handling Difficult Conversations": true
-                    },
-                    "Cross-Functional Collaboration": {
-                        "Working with Design Teams": true,
-                        "Collaborating with QA Engineers": true,
-                        "Interfacing with Product Managers": true
-                    }
-                },
-                "Time Management and Productivity": {
-                    "___urlPath___": "time-management",
-                    "Time Management Techniques": {
-                        "___urlPath___": "time-management-techniques",
-                        "Eisenhower Matrix for Prioritization": {
-                            "___urlPath___": "eisenhower-matrix",
-                            "___md___": 93
-                        },
-                        "Pomodoro Technique for Focused Work": {
-                            "___urlPath___": "pomodoro-technique",
-                            "___md___": 94
-                        },
-                        "Time Blocking for Scheduling Tasks": {
-                            "___urlPath___": "time-blocking",
-                            "___md___": 95
-                        }
-                    },
-                    "Productivity Best Practices": {
-                        "___urlPath___": "productivity-best-practices",
-                        "Avoiding Multitasking": {
-                            "___urlPath___": "avoiding-multitasking",
-                            "___md___": 96
-                        },
-                        "Minimizing Distractions (Digital and Physical)": {
-                            "___urlPath___": "minimizing-distractions",
-                            "___md___": 97
-                        },
-                        "Creating a Productive Workspace": {
-                            "___urlPath___": "productive-workspace",
-                            "___md___": 98
-                        }
-                    },
-                    "Goal Setting and Tracking": {
-                        "___urlPath___": "goal-setting-tracking",
-                        "SMART Goals (Specific, Measurable, Achievable, Relevant, Time-Bound)": {
-                            "___urlPath___": "smart-goals",
-                            "___md___": 99
-                        },
-                        "Using Tools for Goal Tracking (Trello, Asana)": {
-                            "___urlPath___": "goal-tracking-tools",
-                            "___md___": 100
-                        },
-                        "Reviewing Progress Regularly": {
-                            "___urlPath___": "reviewing-progress",
-                            "___md___": 101
-                        }
-                    },
-                    "Stress Management": {
-                        "___urlPath___": "stress-management",
-                        "Recognizing Signs of Burnout": {
-                            "___urlPath___": "burnout-signs",
-                            "___md___": 102
-                        },
-                        "Practicing Mindfulness and Meditation": {
-                            "___urlPath___": "mindfulness-meditation",
-                            "___md___": 103
-                        },
-                        "Balancing Work and Personal Life": {
-                            "___urlPath___": "work-life-balance",
-                            "___md___": 104
-                        }
-                    }
-                },
-                "Professional Growth and Interview Preparedness": {
-                    "___urlPath___": "interview-soft-skills",
-                    "Resume and Portfolio Building": {
-                        "Crafting a Tailored Resume": true,
-                        "Creating an Impressive Portfolio": true,
-                        "Common Mistakes to Avoid": true
-                    },
-                    "Strategic Approaches to Career Development": {
-                        "___urlPath___": "career-development",
-                        "Creating a Job Search Plan": {
-                            "Setting Career Goals": true,
-                            "Identifying Target Companies and Roles": true,
-                            "Job Search Timelines and Tracking Progress": true
-                        },
-                        "Job Portals and Platforms": {
-                            "Using LinkedIn Effectively": true,
-                            "Exploring Job Portals (Indeed, Glassdoor, Naukri)": true,
-                            "Understanding Application Tracking Systems (ATS)": true
-                        },
-                        "Networking for Job Opportunities": {
-                            "Building a Professional Network": true,
-                            "Informational Interviews": true,
-                            "Leveraging Alumni and Community Groups": true
-                        },
-                        "Crafting Effective Job Applications": {
-                            "Writing Tailored Cover Letters": true,
-                            "Optimizing Resumes for ATS": true,
-                            "Tips for Submitting Online Applications": true
-                        },
-                        "Preparing for Career Fairs and Walk-Ins": {
-                            "What to Carry to Career Fairs": true,
-                            "Making a Strong First Impression": true,
-                            "Following Up After Career Events": true
-                        }
-                    },
-                    "Communication and Storytelling": {
-                        "___urlPath___": "communication-storytelling",
-                        "Self-introduction Template": {
-                            "___urlPath___": "self-introduction-template",
-                            "___md___": 243
-                        },
-                        "Answering Behavioral Questions (STAR Method)": true,
-                        "Handling Tough Questions with Confidence": true,
-                        "Elevator Pitch for Introductions": true
-                    },
-                    "Interview Etiquette": {
-                        "Dressing Professionally": true,
-                        "Building Rapport with Interviewers": true,
-                        "Effective Virtual Interview Strategies": true
-                    },
-                    "Negotiation and Follow-Up": {
-                        "Salary Negotiation Techniques": true,
-                        "Sending a Thank-You Email": true,
-                        "Post-Interview Follow-Up": true
-                    },
-                    "Mock Interview Practice": {
-                        "Technical Mock Interviews": true,
-                        "Behavioral Mock Interviews": true,
-                        "Tips for Peer Interview Practice": true
-                    }
-                }
-
-            }
-        },
-        "Data Science and Artificial Intelligence Notes": {
-            "___urlPath___": "data-science-and-artificial-intelligence",
-            "Probability and Statistics": {
-                "___urlPath___": "probability-statistics",
-                "Basic Probability Concepts": {
-                    "Counting (Permutation and Combination)": true,
-                    "Probability Axioms and Rules": true,
-                    "Sample Space and Events": true,
-                    "Independent and Mutually Exclusive Events": true,
-                    "Marginal, Conditional, and Joint Probability": true
-                },
-                "Theorems and Distributions": {
-                    "Bayes Theorem": true,
-                    "Random Variables": {
-                        "Discrete Random Variables": {
-                            "Probability Mass Function (PMF)": true,
-                            "Bernoulli and Binomial Distributions": true
-                        },
-                        "Continuous Random Variables": {
-                            "Probability Density Function (PDF)": true,
-                            "Uniform, Exponential, Poisson, Normal, and Standard Normal Distributions": true
-                        }
-                    },
-                    "Cumulative Distribution Function (CDF)": true,
-                    "Central Limit Theorem": true
-                },
-                "Descriptive Statistics": {
-                    "Mean, Median, and Mode": true,
-                    "Variance and Standard Deviation": true,
-                    "Correlation and Covariance": true
-                },
-                "Hypothesis Testing": {
-                    "Confidence Intervals": true,
-                    "z-Test, t-Test, and Chi-Squared Test": true
-                }
-            },
-            "Linear Algebra": {
-                "___urlPath___": "linear-algebra",
-                "Vector Spaces": {
-                    "Vector Space and Subspaces": true,
-                    "Linear Dependence and Independence": true
-                },
-                "Matrix Operations": {
-                    "Projection, Orthogonal, and Idempotent Matrices": true,
-                    "Partition Matrices and Properties": true
-                },
-                "Key Concepts": {
-                    "Quadratic Forms": true,
-                    "Gaussian Elimination": true,
-                    "Eigenvalues and Eigenvectors": true,
-                    "Determinants and Rank": true,
-                    "Nullity and Projections": true
-                },
-                "Decompositions": {
-                    "LU Decomposition": true,
-                    "Singular Value Decomposition (SVD)": true
-                }
-            },
-            "Calculus and Optimization": {
-                "___urlPath___": "calculus-optimization",
-                "Basic Calculus": {
-                    "Functions of a Single Variable": true,
-                    "Limit, Continuity, and Differentiability": true,
-                    "Taylor Series Expansion": true
-                },
-                "Optimization": {
-                    "Maxima and Minima": true,
-                    "Single Variable Optimization": true
-                }
-            },
-            "Programming, Data Structures, and Algorithms": {
-                "___urlPath___": "programming-data-algorithms",
-                "Programming with Python": {
-                    "___urlPath___": "programming-python",
-                    "Introduction to Python": {
-                        "___urlPath___": "introduction-python",
-                    },
-                },
-                "Basic Data Structures": {
-                    "Stacks, Queues, and Linked Lists": true,
-                    "Trees and Hash Tables": true
-                },
-                "Algorithms": {
-                    "Search Algorithms": {
-                        "Linear Search": true,
-                        "Binary Search": true
-                    },
-                    "Sorting Algorithms": {
-                        "Selection Sort, Bubble Sort, and Insertion Sort": true,
-                        "Divide and Conquer: Mergesort and Quicksort": true
-                    }
-                },
-                "Graph Theory": {
-                    "Introduction to Graph Theory": true,
-                    "Basic Graph Algorithms": {
-                        "Traversals (BFS and DFS)": true,
-                        "Shortest Path Algorithms": true
-                    }
-                }
-            },
-            "Database Management and Warehousing": {
-                "___urlPath___": "database-warehousing",
-
-                "Database Fundamentals": {
-                    "___urlPath___": "database-fundamentals",
-
-                    "ER-Model and Relational Model": {
-                        "___urlPath___": "er-relational-model",
-
-                        "ER-Model": {
-                            "___urlPath___": "er-model",
-                            "___md___": 153
-                        },
-
-                        "Relational Model": {
-                            "___urlPath___": "relational-model",
-                            "___md___": 961
-                        }
-                    },
-
-                    "Relational Algebra and Calculus": {
-                        "___urlPath___": "relational-algebra-calculus",
-
-                        "Relational Algebra": {
-                            "___urlPath___": "relational-algebra",
-                            "___md___": 962
-                        },
-
-                        "Tuple Relational Calculus": {
-                            "___urlPath___": "tuple-relational-calculus",
-                            "___md___": 963
-                        }
-                    },
-
-                    "SQL and Constraints": {
-                        "___urlPath___": "sql-constraints",
-
-                        "SQL (Structured Query Language)": {
-                            "___urlPath___": "sql",
-                            "___md___": 964
-                        },
-
-                        "Integrity Constraints": {
-                            "___urlPath___": "integrity-constraints",
-                            "___md___": 965
-                        }
-                    },
-
-                    "Normalization and Normal Forms": {
-                        "___urlPath___": "normalization",
-
-                        "1NF, 2NF, 3NF, BCNF": {
-                            "___urlPath___": "normal-forms",
-                            "___md___": 966
-                        }
-                    }
-                },
-
-                "Database Storage and Indexing": {
-                    "___urlPath___": "storage-indexing",
-
-                    "File Organization": {
-                        "___urlPath___": "file-organization",
-                        "___md___": 967
-                    },
-
-                    "Indexing Techniques": {
-                        "___urlPath___": "indexing-techniques",
-                        "___md___": 968
-                    }
-                },
-
-                "Data Warehousing Concepts": {
-                    "___urlPath___": "data-warehousing",
-
-                    "Data Preprocessing Techniques": {
-                        "___urlPath___": "data-preprocessing",
-                        "___md___": 969
-                    },
-
-                    "Schema Modeling": {
-                        "___urlPath___": "schema-modeling",
-
-                        "Multidimensional Schemas": {
-                            "___urlPath___": "multidimensional-schemas",
-                            "___md___": 970
-                        },
-
-                        "Concept Hierarchies": {
-                            "___urlPath___": "concept-hierarchies",
-                            "___md___": 971
-                        },
-
-                        "Measures: Categorization and Computation": {
-                            "___urlPath___": "measures",
-                            "___md___": 972
-                        }
-                    }
-                }
-            }
-            ,
-            "Machine Learning": {
-                "___urlPath___": "machine-learning",
-                "Supervised Learning": {
-                    "___urlPath___": "supervised-learning",
-                    "Introduction": {
-                        "___urlPath___": "introduction",
-                        "___md___": 58
-                    },
-                    "Regression": {
-                        "___urlPath___": "regression",
-                        "Simple Linear Regression": {
-                            "___urlPath___": "simple-linear-regression",
-                            "___md___": 113
-                        },
-                        "Multiple Linear Regression": {
-                            "___urlPath___": "multiple-linear-regression",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 114
-                            },
-                            "Model Evaluation": {
-                                "___urlPath___": "model-evaluation",
-                                "___md___": 115
-                            }
-                        },
-                        "Cost Function": {
-                            "___urlPath___": "cost-function",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 57
-                            },
-                            "Mean Squared Error (MSE)": {
-                                "___urlPath___": "mean-squared-error",
-                                "___md___": 56
-                            },
-                            "Mean Absolute Error (MAE)": {
-                                "___urlPath___": "mean-absolute-error",
-                                "___md___": 118
-                            }
-                        },
-                        "Ridge Regression & Lasso Regression": {
-                            "___urlPath___": "ridge-lasso-regression",
-                            "___md___": 37
-                        },
-                    },
-                    "Classification": {
-                        "___urlPath___": "classification",
-                        "Logistic Regression": {
-                            "___urlPath___": "logistic-regression",
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 35
-                            },
-                            "Mathematical Derivation": {
-                                "___urlPath___": "mathematical-derivation",
-                                "___md___": 116
-                            }
-                        },
-                        "K-Nearest Neighbor (KNN)": {
-                            "___urlPath___": "k-nearest-neighbor",
-                            "___md___": 55
-                        },
-                        "Naive Bayes Classifier": true,
-                        "Support Vector Machine (SVM)": true,
-                        "Decision Trees": true
-                    },
-                    "Cross-Validation Techniques": {
-                        "Leave-One-Out Cross-Validation (LOO)": true,
-                        "K-Folds Cross-Validation": true
-                    },
-                    "Neural Networks": {
-                        "Feed-Forward Neural Networks": true,
-                        "Multi-Layer Perceptrons (MLP)": true
-                    }
-                },
-                "Unsupervised Learning": {
-                    "___urlPath___": "unsupervised-learning",
-                    "Introduction": {
-                        "___urlPath___": "introduction",
-                        "___md___": 59
-                    },
-                    "Clustering": {
-                        "___urlPath___": "clustering",
-                        "K-Means": {
-                            "___urlPath___": "k-means",
-                            "___md___": 60
-                        },
-                        "K-Medoid": {
-                            "___urlPath___": "k-medoid",
-                            "___md___": 61
-                        },
-                        "Hierarchical Clustering (Single-Linkage, Multiple-Linkage)": true
-                    },
-                    "Dimensionality Reduction": {
-                        "Principal Component Analysis (PCA)": true
-                    }
-                }
-            },
-            "Artificial Intelligence": {
-                "___urlPath___": "artificial-intelligence",
-                "Search": {
-                    "___urlPath___": "search",
-                    "Overview": {
-                        "___urlPath___": "overview",
-                        "___md___": 542
-                    },
-                    "Informed Search": {
-                        "___urlPath___": "informed-search",
-                        "Overview": {
-                            "___urlPath___": "overview",
-                            "___md___": 541
-                        },
-                        "Greedy Best-First Search": {
-                            "___urlPath___": "greedy-best-first-search",
-                            "___md___": 543
-                        },
-                        "A* Search": {
-                            "___urlPath___": "a-start-search",
-                            "___md___": 544
-                        }
-                    },
-                    "Uninformed Search": {
-                        "___urlPath___": "uninformed-search",
-                        "Overview": {
-                            "___urlPath___": "overview",
-                            "___md___": 579
-                        },
-                        "Breadth-First Search (BFS)": {
-                            "___urlPath___": "bfs",
-                            "___md___": 33333
-
-                        },
-                        "Depth-First Search (DFS)": {
-
-                        },
-                        "Uniform Cost Search (UCS)": {
-
-                        },
-                        "Depth-Limited Search (DLS)": {
-
-                        },
-                        "Iterative Deepening Search (IDS)": {
-                            "___urlPath___": "iterative-deepening-search-ids",
-                            "___md___": 580
-                        }
-                    },
-                    "Adversarial Search": true,
-                    "Constraint Satisfaction Problems": {
-                        "___urlPath___": "constraint-satisfaction-problems",
-                        "___md___": 545
-                    }
-                },
-                "Logic": {
-                    "Propositional Logic": true,
-                    "Predicate Logic": true,
-                    "Resolution and Unification": {
-                        "___urlPath___": "resolution-unification",
-                        "___md___": 548
-                    },
-                    "Forward and Backward Chaining": {
-                        "___urlPath___": "forward-backward-chaining",
-                        "___md___": 549
-                    }
-                },
-                "Reasoning Under Uncertainty": {
-                    "Conditional Independence Representation": true,
-                    "Exact Inference through Variable Elimination": true,
-                    "Approximate Inference through Sampling": true,
-                    "Bayesian Networks": {
-                        "___urlPath___": "bayesian-networks",
-                        "___md___": 553
-                    },
-                    "Markov Decision Processes (MDPs)": {
-                        "___urlPath___": "markov-decision-processes",
-                        "___md___": 554
-                    }
                 }
             }
         }

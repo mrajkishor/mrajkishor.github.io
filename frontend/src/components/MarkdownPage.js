@@ -253,10 +253,10 @@ const MarkdownPage = ({ wrapperRef }) => {
             <div className={isMobile ? "wooden-background-mb" : "wooden-background"}>
                 <motion.div
                     className="markdownWrapper paper paper--alt"
-                // initial={{ opacity: 0, y: 20 }}
-                // animate={{ opacity: 1, y: 0 }}
-                // exit={{ opacity: 0, y: -20 }}
-                // transition={{ duration: 0.5 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5 }}
                 >
                     {/* Breadcrumb Navigation */}
 
@@ -307,7 +307,6 @@ const MarkdownPage = ({ wrapperRef }) => {
                             <ReactMarkdown
                                 remarkPlugins={[remarkGfm, remarkMath]}
                                 rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
-
                             >
                                 {markdown}
                             </ReactMarkdown>

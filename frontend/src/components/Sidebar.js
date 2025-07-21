@@ -165,11 +165,11 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 right: "0px",
                 margin: "auto",
                 "textAlign": "center",
-                "color": "white",
+                "color": "grey",
                 "padding": "10px",
                 "fontSize": "10px"
             }}>
-                © 2025 | All Rights Reserved
+                StackSynapse.com | © 2025 | All Rights Reserved
             </div>
         </div >
     );
