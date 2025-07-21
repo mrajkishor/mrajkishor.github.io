@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
     return (
         <footer className="footer">
-            {/* <p>
-                Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
-            </p> */}
             <p>
-                All Rights Reserved | Copyright © 2025 | <a href="mailto:mrajkishor331@gmail.com"> Contact</a>
+                Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
             </p>
-            {/* <div className="footer-links">
+            {/* <p>
+                All Rights Reserved | Copyright © 2025 | <a href="mailto:mrajkishor331@gmail.com"> Contact</a>
+            </p> */}
+            <div className="footer-links">
 
                 <a href="https://github.com/mrajkishor/mrajkishor.github.io" target="_blank" rel="noopener noreferrer">
                     GitHub Repository
@@ -21,7 +21,7 @@ const Footer = () => {
                     About Maintainer
                 </a>
 
-            </div> */}
+            </div>
         </footer>
     );
 };

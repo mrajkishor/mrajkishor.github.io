@@ -181,8 +181,8 @@ const App = () => {
       style={{ cursor: "pointer" }}
     >
       <div className="sidebar-logo">
-        {/* My<span className="logo-highlight">N😁tes</span> */}
-        Stack<span className="logo-highlight">🧠Synapse</span>
+        My<span className="logo-highlight">N😁tes</span>
+        {/* Stack<span className="logo-highlight">🧠Synapse</span> */}
       </div>
 
       <div className="sidebar-slogan">

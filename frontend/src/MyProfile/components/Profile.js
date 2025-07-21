@@ -19,7 +19,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import ProfilePic from '../assets/profile_pic3.jpg';
+import ProfilePic from '../assets/profile_pic1.jpg';
 import AirPointer from '../assets/air_pointer.webp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -30,7 +30,7 @@ import { motion } from 'framer-motion';
 
 
 import invoiceScreen from '../assets/invoice_screen.jpeg';
-import notesImg from '../assets/notes.jpg';
+import notesImg from '../assets/elearn.png';
 import dagImg from '../assets/dag.png';
 import sSyncImg from '../assets/ssync.png'
 import Footer from '../../components/Footer';
@@ -371,7 +371,19 @@ export default function Profile() {
                                 About Me
                             </Typography>
 
-                            I have 6+ years of experience with SDLC, Agile delivery, designing and developing client facing softwares from scratch, converting POCs to MVP, migrating legacy systems, profiling, monitoring, performance optimization, feature enhancement, defect fixes, scaling the existing softwares for high traffic scenarios etc.
+
+
+                            I'm a full-stack developer with 7+ years of experience building scalable, performant, and user-centric applications across both frontend and backend stacks. I specialize in React, Next.js, Angular, Node.js, and Java, with hands-on expertise in microservices, micro frontends (MFE), distributed systems, and cloud-native development (AWS).
+                            <br />
+                            <br />
+                            Over the years, I’ve contributed to enterprise-grade platforms as well as startup-style MVPs, often taking ownership from UI design to API integration, CI/CD pipelines, and performance optimization. I’m passionate about building systems that not only work; but scale, adapt, and evolve.
+                            <br />
+                            <br />
+
+                            Outside of my day job, I actively work on side projects aimed at solving real-world problems.. :)
+
+
+
 
 
 
@@ -435,7 +447,8 @@ export default function Profile() {
                         <Divider sx={{ marginBottom: 2 }} />
 
                         <Typography variant="h6" gutterBottom>
-                            My Digital Storefront
+                            {/* My Digital Storefront */}
+                            Projects
                         </Typography>
 
                         <List sx={{ width: "800px" }}>
@@ -507,7 +520,7 @@ export default function Profile() {
                             <ListItem sx={{ padding: 0 }}>
 
 
-                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                <Card sx={{ width: '100%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
                                     <CardMedia
                                         component="img"
                                         height="200"
@@ -541,7 +554,15 @@ export default function Profile() {
                                         </Button>
                                     </CardActions>
                                 </Card>
-                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+
+                            </ListItem>
+
+
+                            <ListItem sx={{ padding: 0 }}>
+
+
+
+                                <Card sx={{ width: '100%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
                                     <CardMedia
                                         component="img"
                                         height="200"
@@ -577,11 +598,10 @@ export default function Profile() {
                                 </Card>
                             </ListItem>
 
-
                             <ListItem sx={{ padding: 0 }}>
 
 
-                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+                                <Card sx={{ width: '100%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
                                     <CardMedia
                                         component="img"
                                         height="200"
@@ -616,7 +636,15 @@ export default function Profile() {
                                     </CardActions>
                                 </Card>
 
-                                <Card sx={{ width: '48%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
+
+                            </ListItem>
+
+
+                            <ListItem sx={{ padding: 0 }}>
+
+
+
+                                <Card sx={{ width: '100%', marginBottom: 4, padding: "1%", boxShadow: 'none' }}>
                                     <CardMedia
                                         component="img"
                                         height="200"
@@ -625,7 +653,7 @@ export default function Profile() {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div">
-                                            StackSynapse.com - Concept Notes (for Developers and College Graduates)
+                                            StackSynapse - e-Learning Platform
                                         </Typography>
 
                                     </CardContent>
@@ -640,14 +668,14 @@ export default function Profile() {
                                         >
                                             Visit Project
                                         </Button> */}
-                                        {/* <Button
+                                        <Button
                                             size="small"
                                             variant="outlined"
-                                            href="https://github.com/mrajkishor/Distributed-Task-Scheduler"
+                                            href="https://github.com/mrajkishor/stacksynapse"
                                             target="_blank"
                                         >
                                             View Code
-                                        </Button> */}
+                                        </Button>
                                     </CardActions>
                                 </Card>
                             </ListItem>
@@ -780,7 +808,7 @@ export default function Profile() {
                         </Typography>
 
                         <List>
-                            {/* <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px', opacity: '.5' }}>
+                            <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px', opacity: '.5' }}>
                                 <ListItemText
                                     primary={
                                         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
@@ -793,14 +821,12 @@ export default function Profile() {
                                                 Kalinga Institute of Industrial Technology, BBSR, IN | 2023 - 2025
                                             </Typography>
                                             <Typography variant="body2">
-                                                - Currently pursuing MCA with a focus on software engineering, Big data analytics, AI/ML and cloud computing.
-
-                                            </Typography>
+                                                Pursued MCA with a focus on computer science fundamentals and applied areas such as Software Engineering, Big Data Analytics, Cybersecurity, AI/ML, and Cloud Computing.                                            </Typography>
 
                                         </>
                                     }
                                 />
-                            </ListItem> */}
+                            </ListItem>
                             <Divider sx={{ marginBottom: 2 }} />
                             <ListItem sx={{ alignItems: 'flex-start', marginBottom: 2, maxWidth: '800px' }}>
                                 <ListItemText

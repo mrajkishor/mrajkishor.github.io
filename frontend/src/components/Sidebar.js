@@ -153,7 +153,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         fontSize: "16px",
                     }}
                 >
-                    {/* About Maintainer 👨‍💻 */}
+                    About Maintainer 👨‍💻
 
                 </span>
             </div>)}
@@ -169,7 +169,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 "padding": "10px",
                 "fontSize": "10px"
             }}>
-                StackSynapse.com | © 2025 | All Rights Reserved
+                {/* StackSynapse.com | © 2025 | All Rights Reserved */}
             </div>
         </div >
     );
