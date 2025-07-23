@@ -882,6 +882,167 @@ const mapper = {
                             "Styling": {
                                 "Tailwind": {
                                     "___urlPath___": "tailwind-css",
+                                    "A-Z on Tailwind": {
+                                        "___urlPath___": "tailwind-a-z",
+                                        "Core Concepts": {
+                                            "Utility-First Philosophy": {
+                                                "___urlPath___": "utility-first-philosophy",
+                                                "___md___": 1011
+                                            },
+                                            "Atomic CSS vs BEM/Traditional CSS": {
+                                                "___urlPath___": "atomic-css-vs-bem-traditional-css",
+                                                "___md___": 1012
+                                            },
+                                            "Config-Driven Design": {
+                                                "___urlPath___": "config-driven-design",
+                                                "___md___": 1013
+                                            },
+                                            "Tailwind vs CSS-in-JS (Styled Components, Emotion)": true
+                                        },
+                                        "Installation & Setup": {
+                                            "Using via CDN": true,
+                                            "Installing via NPM with PostCSS": true,
+                                            "Using Tailwind with Vite, Webpack, Next.js": true,
+                                            "Tailwind CLI": true
+                                        },
+                                        "Project Configuration": {
+                                            "tailwind.config.js Deep Dive": {
+                                                "theme Customization": true,
+                                                "Extending Theme (colors, spacing, fonts)": true,
+                                                "Screens (Responsive Breakpoints)": true,
+                                                "Variants (hover, focus, group-hover, etc.)": true,
+                                                "Purge/Content Paths for Tree-Shaking": true,
+                                                "Dark Mode Strategies (media, class-based)": true
+                                            },
+                                            "Custom Plugins": {
+                                                "Creating a Plugin": true,
+                                                "Adding Utilities via Plugins": true,
+                                                "Third-Party Plugins (Forms, Typography, Aspect-Ratio)": true
+                                            }
+                                        },
+                                        "Utility Classes": {
+                                            "Layout": {
+                                                "Container, Box Sizing, Display": true,
+                                                "Position, Top/Right/Bottom/Left": true,
+                                                "Z-Index, Overflow": true
+                                            },
+                                            "Flexbox and Grid": {
+                                                "Flex Direction, Wrap, Align, Justify": true,
+                                                "Grid Template Columns/Rows": true,
+                                                "Gap, Place Items, Auto Flow": true
+                                            },
+                                            "Spacing": {
+                                                "Margin and Padding": true,
+                                                "Space Between": true
+                                            },
+                                            "Sizing": {
+                                                "Width, Min/Max Width": true,
+                                                "Height, Min/Max Height": true
+                                            },
+                                            "Typography": {
+                                                "Font Size, Weight, Line Height": true,
+                                                "Text Alignment, Letter Spacing": true,
+                                                "Text Color, Decoration, Transform": true
+                                            },
+                                            "Backgrounds and Borders": {
+                                                "Background Color, Image, Position, Size": true,
+                                                "Border Width, Color, Radius, Style": true
+                                            },
+                                            "Effects": {
+                                                "Box Shadow": true,
+                                                "Opacity": true,
+                                                "Mix Blend Mode, Background Blend Mode": true
+                                            },
+                                            "Transitions and Animations": {
+                                                "Transition Duration, Timing, Property": true,
+                                                "Transform Scale, Rotate, Skew": true,
+                                                "Custom Keyframes and Animation Utilities": true
+                                            },
+                                            "Interactivity": {
+                                                "Cursor, Pointer Events": true,
+                                                "Resize, User Select": true,
+                                                "Ring Utilities, Focus Ring Styling": true
+                                            },
+                                            "Filters and Backdrop Filters": {
+                                                "Blur, Brightness, Contrast": true,
+                                                "Grayscale, Hue Rotate, Invert": true,
+                                                "Backdrop Blur, Saturate, Sepia": true
+                                            }
+                                        },
+                                        "Responsive Design": {
+                                            "Breakpoints and Media Queries": true,
+                                            "Mobile-First Design Philosophy": true,
+                                            "Using Responsive Utility Prefixes (sm:, md:, lg:)": true,
+                                            "Visibility and Display Utilities (hidden, block, etc.)": true
+                                        },
+                                        "State Variants": {
+                                            "Hover, Focus, Active, Group Hover": true,
+                                            "Peer-based Styling (peer-hover, peer-focus)": true,
+                                            "Disabled, Checked, Focus-Within, First/Last": true
+                                        },
+                                        "Dark Mode": {
+                                            "Strategy (Media vs Class)": true,
+                                            "Theming and Custom Dark Colors": true,
+                                            "Dark Mode Variants": true
+                                        },
+                                        "Forms and UI Components": {
+                                            "Styling Native Inputs and Controls": true,
+                                            "Tailwind Forms Plugin": true,
+                                            "Custom Form Layouts (Flex/Grid Based)": true,
+                                            "Accessibility Best Practices": true
+                                        },
+                                        "Component Patterns": {
+                                            "Component Composition with Utility Classes": true,
+                                            "Extracting Reusable Components (React, Vue, etc.)": true,
+                                            "Responsive Cards, Modals, Buttons, Alerts": true,
+                                            "Customizing State-based Styling (hover, focus, etc.)": true
+                                        },
+                                        "Theming and Design Systems": {
+                                            "Custom Theme Tokens": true,
+                                            "Design Tokens Mapping to Tailwind Theme": true,
+                                            "Using Tailwind with Figma Design Tokens": true,
+                                            "Implementing Brand Guidelines with Tailwind": true
+                                        },
+                                        "Advanced Topics": {
+                                            "JIT Mode Deep Dive (v3 and above)": true,
+                                            "Performance Optimization (Tree-shaking, PurgeCSS)": true,
+                                            "Tailwind with CSS Modules / SCSS": true,
+                                            "Tailwind with TypeScript and Styled-System": true
+                                        },
+                                        "Tailwind with Frameworks": {
+                                            "React (Next.js, CRA)": true,
+                                            "Vue.js (Vite + Tailwind)": true,
+                                            "Angular": true,
+                                            "SvelteKit": true,
+                                            "Astro + Tailwind": true
+                                        },
+                                        "Enterprise Usage": {
+                                            "Tailwind in Component Libraries": true,
+                                            "Tailwind in Design Systems (e.g., HeadlessUI)": true,
+                                            "CI/CD Integration and Theming in Monorepos": true,
+                                            "Migrating Legacy CSS to Tailwind": true
+                                        },
+                                        "Tooling and Ecosystem": {
+                                            "Play CDN and Playground Tools": true,
+                                            "Tailwind UI (Commercial Component Library)": true,
+                                            "Headless UI (Accessible UI Components)": true,
+                                            "Heroicons and Integration": true,
+                                            "Typography Plugin for Rich Content": true,
+                                            "Aspect Ratio Plugin": true
+                                        },
+                                        "Testing and Debugging": {
+                                            "Visual Regression Testing (Chromatic, Percy)": true,
+                                            "Linting for Tailwind with Stylelint Plugins": true,
+                                            "Debug Screens Plugin": true
+                                        },
+                                        "Best Practices and Anti-Patterns": {
+                                            "Avoiding Class Bloat": true,
+                                            "Using @apply vs Overusing Custom CSS": true,
+                                            "Combining Tailwind with Utility Class Libraries": true,
+                                            "Organizing Tailwind in Large-Scale Projects": true
+                                        }
+                                    },
+
                                     "Core Concepts and Setup": {
                                         "___urlPath___": "core-setup",
                                         "___md___": 1101
@@ -1421,12 +1582,119 @@ const mapper = {
                                 "Safe Use of dangerouslySetInnerHTML": true,
                                 "Input Sanitization and Escaping": true
                             },
-                            "React Native (Optional)": {
-                                "Basics": true,
-                                "Navigation": true,
-                                "Styling and Layout": true,
-                                "State and Context in Native": true
-                            },
+                            "React Native": {
+                                "Installation & Setup": {
+                                    "Environment Setup (macOS, Windows, Linux)": true,
+                                    "Using Expo CLI vs React Native CLI": true,
+                                    "Installing Dependencies with npm/yarn": true,
+                                    "Running on Android Emulator and iOS Simulator": true,
+                                    "Fast Refresh and Debugging Tools": true
+                                },
+                                "Project Configuration": {
+                                    "Metro Bundler Configuration": true,
+                                    "Custom Babel Configuration": true,
+                                    "ESLint, Prettier Integration": true,
+                                    "TypeScript Setup with React Native": true,
+                                    "Handling .env and Configuration Files": true
+                                },
+                                "Core Concepts": {
+                                    "JSX and Native Components": true,
+                                    "State and Props Management": true,
+                                    "Component Lifecycle with Hooks": true,
+                                    "StyleSheet API and Flexbox Layout": true,
+                                    "Platform-Specific Code (Platform, Platform.OS)": true,
+                                    "Handling Assets (Images, Fonts, SVGs)": true
+                                },
+                                "Navigation": {
+                                    "Stack, Tab, and Drawer Navigation": true,
+                                    "React Navigation v6 Deep Dive": true,
+                                    "Navigation Params and Route Hooks": true,
+                                    "Screen Transitions and Modals": true,
+                                    "Authentication Flows and Protected Routes": true
+                                },
+                                "State Management": {
+                                    "useState, useContext, useReducer": true,
+                                    "Global State with Redux Toolkit": true,
+                                    "Recoil, Zustand, and Jotai Integrations": true,
+                                    "Redux Middleware (Thunk, Saga)": true,
+                                    "Persisting State with redux-persist": true
+                                },
+                                "Networking & APIs": {
+                                    "Using Fetch and Axios": true,
+                                    "Calling RESTful APIs": true,
+                                    "React Query / TanStack Query for Data Caching": true,
+                                    "Handling Network Errors and Loading States": true,
+                                    "API Integration Patterns (Service Layer, Repositories)": true
+                                },
+                                "Forms & Validation": {
+                                    "Controlled vs Uncontrolled Inputs": true,
+                                    "Using Formik and Yup for Forms": true,
+                                    "React Hook Form in React Native": true,
+                                    "Custom Input Components": true,
+                                    "Validation and Error Handling": true
+                                },
+                                "Styling & Theming": {
+                                    "StyleSheet vs Inline Styling": true,
+                                    "Tailwind CSS with NativeWind": true,
+                                    "Styled Components Integration": true,
+                                    "Theme Switching (Dark Mode / Light Mode)": true,
+                                    "Design Systems and Token-Based Styling": true
+                                },
+                                "Performance Optimization": {
+                                    "React.memo, useMemo, useCallback": true,
+                                    "FlatList and SectionList Optimization": true,
+                                    "Avoiding Unnecessary Re-Renders": true,
+                                    "useFocusEffect and lazy loading screens": true,
+                                    "Profiling with Flipper and Hermes": true
+                                },
+                                "Animations & Gestures": {
+                                    "LayoutAnimation and Animated API": true,
+                                    "Reanimated 2 Basics and Advanced Use": true,
+                                    "GestureHandler with Pan, Swipe, Tap": true,
+                                    "Shared Element Transitions": true,
+                                    "Building Smooth UI Interactions": true
+                                },
+                                "Offline & Storage": {
+                                    "AsyncStorage / MMKV for Local Storage": true,
+                                    "Secure Storage (Keychain/Keystore)": true,
+                                    "Offline Data Sync Patterns": true,
+                                    "SQLite and Realm DB Integrations": true
+                                },
+                                "Testing & Debugging": {
+                                    "Unit Testing with Jest": true,
+                                    "Integration Testing with React Native Testing Library": true,
+                                    "E2E Testing with Detox": true,
+                                    "Snapshot Testing": true,
+                                    "Debugging with Flipper, Chrome, and React DevTools": true
+                                },
+                                "Native Modules & Bridging": {
+                                    "Linking Native Modules (iOS & Android)": true,
+                                    "Writing Native Modules in Java/Kotlin and Swift/Obj-C": true,
+                                    "Permissions Handling": true,
+                                    "Custom View Components in Native Code": true
+                                },
+                                "Build & Release": {
+                                    "Debug vs Release Builds": true,
+                                    "App Signing and Keystore Management": true,
+                                    "Publishing to Google Play Store": true,
+                                    "Publishing to Apple App Store": true,
+                                    "OTA Updates with Expo EAS / CodePush": true
+                                },
+                                "CI/CD & DevOps": {
+                                    "Fastlane Integration for iOS/Android Builds": true,
+                                    "GitHub Actions / GitLab CI for Mobile Projects": true,
+                                    "Detox in CI Pipelines": true,
+                                    "EAS Build Pipelines (Expo Managed & Bare)": true
+                                },
+                                "Enterprise Patterns": {
+                                    "Monorepo Structure with Lerna/Nx/Turborepo": true,
+                                    "Micro-Frontend/MFE with RN Navigation": true,
+                                    "Modular Architecture (Domain, Feature, Core layers)": true,
+                                    "Internationalization (i18n, react-i18next)": true,
+                                    "Accessibility and Localization": true
+                                }
+                            }
+                            ,
                             "Testing": {
                                 "Unit Testing with Jest": true,
                                 "Component Testing with React Testing Library": true,
@@ -7360,7 +7628,163 @@ const mapper = {
                 "Data Modeling (OLAP vs OLTP)": true
             },
             "Programming and Scripting": {
-                "Advanced Python for Data Engineering": true,
+                "___urlPath___": "programming-and-scripting",
+                "Advanced Python for Data Engineering": {
+                    "___urlPath___": "advanced-python-for-data-engineering",
+                    "Python (Expert Level) ": {
+                        "___urlPath___": "python-expert-level",
+                        "Core Python & Advanced Language Features": {
+                            "___urlPath___": "core-python-advanced-language-features",
+                            "Data Types, Variables, and Memory Allocation": {
+                                "___urlPath___": "data-types-variables-memory-allocation",
+                                "___md___": 1017
+                            },
+                            "Mutability and Identity (`is` vs `==`)": {
+                                "___urlPath___": "mutability-and-identity",
+                                "___md___": 1018
+                            },
+                            "List, Dict, Set, Tuple Internals and Performance": {
+                                "___urlPath___": "list-dict-set-tuple-internals-performance",
+                                "___md___": 1019
+                            },
+                            "Slicing, Unpacking, and Comprehensions (List/Set/Dict)": {
+                                "___urlPath___": "slicing-unpacking-comprehensions",
+                                "___md___": 1020
+                            },
+                            "First-Class Functions, Closures, Decorators": true,
+                            "Dynamic Typing and Duck Typing": true,
+                            "Metaclasses and Class Internals (`__new__`, `__init__`)": true,
+                            "Descriptors, Properties, and Data Model": true,
+                            "Advanced `__magic__` Methods and Operator Overloading": true
+                        },
+                        "Object-Oriented Python": {
+                            "Inheritance, MRO, and `super()`": true,
+                            "Mixins and Multiple Inheritance": true,
+                            "Encapsulation and Access Modifiers": true,
+                            "ABC (Abstract Base Classes) and Interfaces": true,
+                            "Dataclasses vs NamedTuples vs TypedDict": true
+                        },
+                        "Functional Programming in Python": {
+                            "Lambdas, `map`, `filter`, `reduce`": true,
+                            "Iterators, Generators, and Generator Expressions": true,
+                            "Coroutines and `yield` vs `yield from`": true,
+                            "Functools (`lru_cache`, `partial`, `wraps`)": true
+                        },
+                        "Concurrency, Parallelism, and Async IO": {
+                            "Threading: GIL, Race Conditions, ThreadPoolExecutor": true,
+                            "Multiprocessing: Shared Memory vs Process Pools": true,
+                            "Async IO: `async`/`await`, Event Loops, `aiohttp`, `asyncio`": true,
+                            "Queue, Locks, Futures, and Deadlock Avoidance": true
+                        },
+                        "File Handling & Serialization": {
+                            "Working with Files, Buffers, and Context Managers": true,
+                            "CSV, JSON, YAML Parsing and Writing": true,
+                            "Pickle, Marshal, Joblib for Serialization": true,
+                            "Custom Serializers and Formatters": true
+                        },
+                        "Testing & Quality Assurance": {
+                            "Unit Testing with `unittest`, `pytest`": true,
+                            "Fixtures, Mocking, and Patch": true,
+                            "Property-Based Testing with `hypothesis`": true,
+                            "Code Coverage & Linting (pylint, flake8, black)": true
+                        },
+                        "REST API Development": {
+                            "Flask App Creation and Blueprints": true,
+                            "FastAPI for Async and OpenAPI Docs": true,
+                            "Middleware, Authentication, JWTs": true,
+                            "API Versioning, Rate Limiting, CORS Handling": true
+                        },
+                        "ORMs & Database Integration": {
+                            "SQLAlchemy (Core and ORM)": true,
+                            "Alembic Migrations and Schema Versioning": true,
+                            "Connection Pooling and Performance Tuning": true,
+                            "Peewee / Django ORM (optional deep dive)": true
+                        },
+                        "Data Processing & ETL": {
+                            "Working with Pandas, NumPy, and Dask": true,
+                            "Data Cleaning, Transformations, Aggregations": true,
+                            "Parallel/Chunked ETL Pipelines": true,
+                            "Integration with PostgreSQL, S3, BigQuery": true
+                        },
+                        "DevOps, Packaging & Deployment": {
+                            "Virtual Environments (`venv`, `pipenv`, `poetry`)": true,
+                            "Dependency Management and `requirements.txt`": true,
+                            "Packaging with `setuptools`, `wheel`, `pyproject.toml`": true,
+                            "Dockerizing Python Apps": true,
+                            "Logging and Exception Tracking (`logging`, `Sentry`)": true
+                        },
+                        "Security & Best Practices": {
+                            "Input Validation and Sanitization": true,
+                            "Avoiding Injection, SSRF, RCE Vulnerabilities": true,
+                            "Secrets Management (dotenv, AWS Secrets Manager)": true,
+                            "Secure Token Handling (JWT, OAuth2)": true
+                        },
+                        "Python in System Design": {
+                            "Event-Driven Design with Celery / Redis / RabbitMQ": true,
+                            "Building Scalable Microservices": true,
+                            "Interprocess Communication (gRPC, HTTP, WebSockets)": true,
+                            "Streaming Architectures (Kafka, Spark Streaming)": true
+                        },
+                        "Python in Cloud (AWS/Azure/GCP)": {
+                            "Using Boto3 for AWS (S3, Lambda, EC2)": true,
+                            "Cloud Functions with Python (Lambda, Cloud Functions)": true,
+                            "Scheduled Jobs with Airflow / AWS Glue": true,
+                            "Integrating with Cloud Storage and APIs": true
+                        },
+                        "GenAI & ML Workflows (Optional Add-on)": {
+                            "LangChain and Vector Stores (FAISS, Pinecone)": true,
+                            "OpenAI, HuggingFace API Integrations": true,
+                            "Prompt Engineering and Few-Shot Examples": true,
+                            "Fine-Tuning Transformers with PyTorch/TF": true
+                        }
+                    },
+                    "For Data Engineering": {
+                        "Data Formats & Interchange": {
+                            "Avro, Parquet, and ORC File Formats": true,
+                            "Working with Protobuf and Thrift": true,
+                            "Efficient Compression (gzip, snappy, zstd)": true
+                        },
+                        "Big Data Integration (Python)": {
+                            "PySpark with Spark SQL, DataFrames, RDDs": true,
+                            "Pandas API on Spark": true,
+                            "Dask for Large DataFrames and Lazy Execution": true,
+                            "HDFS Access via PyArrow or hdfs3": true
+                        },
+                        "Stream Processing (Python)": {
+                            "Apache Kafka Integration (confluent-kafka-python)": true,
+                            "Kafka Consumer Groups, Partition Handling": true,
+                            "Stream Processing with Faust": true,
+                            "Working with Kinesis using boto3": true
+                        },
+                        "Orchestration Tools": {
+                            "Apache Airflow – DAGs, XCom, Sensors, Hooks": true,
+                            "Custom Operators & Plugins": true,
+                            "Prefect 2.0 with Async Workflows": true
+                        },
+                        "Data Validation & Quality Checks": {
+                            "Great Expectations for Data Validation": true,
+                            "Data Profiling with pandas-profiling": true,
+                            "Custom Validators and Schema Checks": true
+                        },
+                        "Advanced SQL Handling in Python": {
+                            "Parameterized Queries and SQL Injection Safety": true,
+                            "Window Functions and CTEs in SQLAlchemy": true,
+                            "Dynamic Query Building with ORM and Text Queries": true,
+                            "Query Profiling and Explain Plans": true
+                        },
+                        "Data Storage Architecture": {
+                            "S3-based Data Lake Architectures": true,
+                            "Delta Lake Integration with PySpark": true,
+                            "Versioning and Time Travel Concepts": true
+                        }
+                    },
+                    "Architectural Patterns with Python": {
+                        "Hexagonal Architecture / Clean Code Principles": true,
+                        "Layered Microservices with FastAPI + Message Queues": true,
+                        "Observability with Prometheus, OpenTelemetry, Grafana": true,
+                        "Data Contracts and Schema Registry Integration": true
+                    }
+                },
                 "Scala for Spark": true,
                 "Bash and Shell Scripting": true,
                 "SQL Optimization Techniques": true
@@ -7517,32 +7941,72 @@ const mapper = {
             },
             "Programming, Data Structures, and Algorithms": {
                 "___urlPath___": "programming-data-algorithms",
-                "Programming with Python": {
-                    "___urlPath___": "programming-python",
-                    "Introduction to Python": {
-                        "___urlPath___": "introduction-python",
+                "Programming in Python": {
+                    "___urlPath___": "programming-in-python",
+                    "Syntax, Variables, and Data Types": {
+                        "___urlPath___": "syntax-variables-data-types",
+                        "___md___": 1021
                     },
-                },
-                "Basic Data Structures": {
-                    "Stacks, Queues, and Linked Lists": true,
-                    "Trees and Hash Tables": true
-                },
-                "Algorithms": {
-                    "Search Algorithms": {
-                        "Linear Search": true,
-                        "Binary Search": true
+                    "Control Flow (if-else, loops)": {
+                        "___urlPath___": "control-flow",
+                        "___md___": 1022
                     },
-                    "Sorting Algorithms": {
-                        "Selection Sort, Bubble Sort, and Insertion Sort": true,
-                        "Divide and Conquer: Mergesort and Quicksort": true
+                    "Functions and Recursion": {
+                        "___urlPath___": "functions-recursion",
+                        "___md___": 1023
+                    },
+                    "List, Tuple, Set, and Dict Operations": {
+                        "___urlPath___": "list-tuple-set-dict-operations",
+                        "___md___": 1024
+                    },
+                    "Comprehensions (List, Set, Dict)": {
+                        "___urlPath___": "comprehensions",
+                        "___md___": 1025
+                    },
+                    "String Manipulation and Formatting": {
+                        "___urlPath___": "string-manipulation-formatting",
+                        "___md___": 1026
+                    },
+                    "File I/O and Exception Handling": {
+                        "___urlPath___": "file-io-exception-handling",
+                        "___md___": 1027
                     }
                 },
-                "Graph Theory": {
-                    "Introduction to Graph Theory": true,
-                    "Basic Graph Algorithms": {
-                        "Traversals (BFS and DFS)": true,
-                        "Shortest Path Algorithms": true
-                    }
+                "Data Structures": {
+                    "Stacks (Array and Linked List Based)": true,
+                    "Queues (Simple, Circular, Deque)": true,
+                    "Linked Lists (Singly, Doubly, Circular)": true,
+                    "Trees (Binary Trees, BSTs)": true,
+                    "Heap (Binary Min/Max Heap — Concepts only)": true,
+                    "Hash Tables and Hashing Techniques": true
+                },
+                "Algorithms - Searching": {
+                    "Linear Search": true,
+                    "Binary Search (Iterative and Recursive)": true,
+                    "Time Complexity Analysis": true
+                },
+                "Algorithms - Sorting": {
+                    "Selection Sort": true,
+                    "Bubble Sort": true,
+                    "Insertion Sort": true,
+                    "Divide and Conquer Techniques": true,
+                    "Mergesort (with Merge Logic)": true,
+                    "Quicksort (Lomuto and Hoare Partition)": true
+                },
+                "Graph Theory - Introduction": {
+                    "Graph Terminologies (Vertex, Edge, Degree)": true,
+                    "Types of Graphs (Directed, Undirected, Weighted, Unweighted)": true,
+                    "Graph Representation (Adjacency Matrix/List)": true
+                },
+                "Graph Algorithms - Basics": {
+                    "Graph Traversals (DFS, BFS)": true,
+                    "Shortest Path (Dijkstra’s Algorithm — Basic Understanding)": true,
+                    "Connectivity and Components": true
+                },
+                "Analysis of Algorithms": {
+                    "Time and Space Complexity": true,
+                    "Asymptotic Notations (Big-O, Omega, Theta)": true,
+                    "Best, Average, Worst Case Analysis": true
                 }
             },
             "Database Management and Warehousing": {
@@ -9400,12 +9864,138 @@ const mapper = {
                             "___md___": 190
                         }
                     },
-                    "MySQL Features": {
-                        "Data Types and Constraints": true,
-                        "Replication and Clustering in MySQL": true,
-                        "Using MySQL Workbench": true,
-                        "Query Optimization in MySQL": true
+                    "MySQL": {
+                        "___urlPath___": "mysql",
+                        "Installation & Setup": {
+                            "Installing MySQL on Windows, macOS, Linux": true,
+                            "Using MySQL with Docker and Docker Compose": true,
+                            "MySQL Workbench, DBeaver, and CLI Tools": true,
+                            "Securing Root User and Access Controls": true,
+                            "Connecting via Clients (Node.js, Python, Java)": true
+                        },
+                        "SQL Basics": {
+                            "Database and Table Creation": true,
+                            "Data Types (INT, VARCHAR, DATE, ENUM, etc.)": true,
+                            "INSERT, SELECT, UPDATE, DELETE": true,
+                            "Filtering with WHERE, LIKE, IN, BETWEEN": true,
+                            "ORDER BY, LIMIT, OFFSET": true
+                        },
+                        "Joins & Set Operations": {
+                            "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN": true,
+                            "CROSS JOIN and SELF JOIN": true,
+                            "UNION, UNION ALL, INTERSECT, EXCEPT": true,
+                            "Using Joins with Aggregates and Subqueries": true
+                        },
+                        "Functions & Expressions": {
+                            "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)": true,
+                            "String Functions (CONCAT, SUBSTRING, REPLACE)": true,
+                            "Date and Time Functions (NOW, DATEDIFF, DATE_ADD)": true,
+                            "Control Flow (IF, CASE, NULLIF)": true,
+                            "Mathematical and Conversion Functions": true
+                        },
+                        "Subqueries & Nested Queries": {
+                            "Scalar, Row, and Table Subqueries": true,
+                            "Correlated Subqueries": true,
+                            "Subqueries in SELECT, FROM, WHERE, and HAVING": true,
+                            "EXISTS and NOT EXISTS": true
+                        },
+                        "Schema Design & Normalization": {
+                            "___urlPath___": "schema-design-normalization",
+                            "ER Modeling and Conceptual Design": {
+                                "___urlPath___": "er-modeling-conceptual-design",
+                                "___md___": 1014
+                            },
+                            "Primary Keys and Foreign Keys": {
+                                "___urlPath___": "primary-foreign-keys",
+                                "___md___": 1015
+                            },
+                            "1NF, 2NF, 3NF, BCNF, and Denormalization": {
+                                "___urlPath___": "normal-forms",
+                                "___md___": 1016
+                            },
+                            "Indexes, Unique Constraints, and Auto Increment": true,
+                            "Choosing Appropriate Data Types": true
+                        },
+                        "Stored Procedures & Functions": {
+                            "Creating and Calling Stored Procedures": true,
+                            "Creating and Using User-Defined Functions (UDFs)": true,
+                            "IN, OUT, INOUT Parameters": true,
+                            "Error Handling in Procedures": true,
+                            "Procedural Constructs (DECLARE, IF, WHILE, LOOP)": true
+                        },
+                        "Views & Materialized Views": {
+                            "Creating, Updating, and Dropping Views": true,
+                            "Updatable vs Non-Updatable Views": true,
+                            "Performance Considerations for Views": true
+                        },
+                        "Triggers & Events": {
+                            "AFTER and BEFORE INSERT/UPDATE/DELETE Triggers": true,
+                            "Row vs Statement Triggers": true,
+                            "Scheduled Events and Cron Jobs in MySQL": true,
+                            "Auditing and Logging via Triggers": true
+                        },
+                        "Transactions & Concurrency": {
+                            "ACID Properties and Isolation Levels": true,
+                            "START TRANSACTION, COMMIT, ROLLBACK": true,
+                            "SAVEPOINT and ROLLBACK TO": true,
+                            "Locking Mechanisms (Row, Table, Advisory)": true,
+                            "Deadlocks and Race Conditions": true
+                        },
+                        "Indexes & Query Optimization": {
+                            "Single and Composite Indexes": true,
+                            "Covering Indexes and Index Hints": true,
+                            "EXPLAIN and EXPLAIN ANALYZE": true,
+                            "Slow Query Log and Performance Schema": true,
+                            "Query Refactoring and Anti-Patterns": true
+                        },
+                        "Security & Access Control": {
+                            "User Management (CREATE USER, GRANT, REVOKE)": true,
+                            "Roles and Privilege Inheritance": true,
+                            "Encryption (at Rest and in Transit)": true,
+                            "SQL Injection Prevention and Best Practices": true,
+                            "Audit Plugins and Compliance Tools": true
+                        },
+                        "Backup & Recovery": {
+                            "Logical Backups with `mysqldump` and `mysqlpump`": true,
+                            "Physical Backups with `mysqlhotcopy` and XtraBackup": true,
+                            "Restoring Partial and Full Backups": true,
+                            "Point-in-Time Recovery (PITR)": true,
+                            "Binary Logs for Recovery": true
+                        },
+                        "Replication & High Availability": {
+                            "Master-Slave and Master-Master Replication": true,
+                            "Asynchronous vs Semi-Synchronous Replication": true,
+                            "GTID-based Replication and Failover": true,
+                            "Replication Monitoring Tools (MySQL Shell, MHA)": true,
+                            "Handling Data Divergence and Resynchronization": true
+                        },
+                        "Partitioning & Sharding": {
+                            "Horizontal vs Vertical Partitioning": true,
+                            "Range, List, Hash, and Key Partitioning": true,
+                            "Partition Pruning and Query Routing": true,
+                            "Manual and Middleware-Based Sharding Strategies": true
+                        },
+                        "MySQL in Production": {
+                            "Performance Tuning and Query Caching": true,
+                            "Connection Pooling (ProxySQL, Pooling Libraries)": true,
+                            "Monitoring with Percona, Prometheus, Grafana": true,
+                            "Schema Migration Tools (Liquibase, Flyway)": true,
+                            "Read-Write Splitting in Applications": true
+                        },
+                        "MySQL with ORMs & APIs": {
+                            "Using MySQL with Sequelize (Node.js)": true,
+                            "MySQL with Hibernate (Java)": true,
+                            "MySQL with SQLAlchemy (Python)": true,
+                            "Optimizing Queries in ORM-Heavy Workloads": true
+                        },
+                        "Cloud & Managed MySQL": {
+                            "AWS RDS for MySQL": true,
+                            "Google Cloud SQL, Azure Database for MySQL": true,
+                            "Automated Backups and Monitoring": true,
+                            "Failover and Multi-AZ Configuration": true
+                        }
                     }
+
                 },
                 "NoSQL Databases (MongoDB, DynamoDB, Cassandra, Neo4j, Redis, Elasticsearch, HBase)": {
                     "___urlPath___": "nosql-databases",
