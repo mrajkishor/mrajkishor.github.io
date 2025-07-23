@@ -7973,12 +7973,31 @@ const mapper = {
                     }
                 },
                 "Data Structures": {
-                    "Stacks (Array and Linked List Based)": true,
-                    "Queues (Simple, Circular, Deque)": true,
-                    "Linked Lists (Singly, Doubly, Circular)": true,
-                    "Trees (Binary Trees, BSTs)": true,
-                    "Heap (Binary Min/Max Heap — Concepts only)": true,
-                    "Hash Tables and Hashing Techniques": true
+                    "___urlPath___": "data-structures",
+                    "Stacks (Array and Linked List Based)": {
+                        "___urlPath___": "stacks",
+                        "___md___": 1028
+                    },
+                    "Queues (Simple, Circular, Deque)": {
+                        "___urlPath___": "queues",
+                        "___md___": 1029
+                    },
+                    "Linked Lists (Singly, Doubly, Circular)": {
+                        "___urlPath___": "linked-lists",
+                        "___md___": 1030
+                    },
+                    "Trees (Binary Trees, BSTs)": {
+                        "___urlPath___": "trees",
+                        "___md___": 1031
+                    },
+                    "Heap (Binary Min/Max Heap — Concepts only)": {
+                        "___urlPath___": "heap",
+                        "___md___": 1032
+                    },
+                    "Hash Tables and Hashing Techniques": {
+                        "___urlPath___": "hash-tables",
+                        "___md___": 1033
+                    }
                 },
                 "Algorithms - Searching": {
                     "Linear Search": true,
