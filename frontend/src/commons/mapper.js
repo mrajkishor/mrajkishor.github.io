@@ -1125,7 +1125,83 @@ const mapper = {
                                 },
                                 "Traditional CSS": true,
                                 "CSS Modules": true,
-                                "Sass/SCSS": true
+                                "SASS/SCSS (Syntactically Awesome Stylesheets)": {
+                                    "Core Concepts": {
+                                        "What is SASS & Why Use It": true,
+                                        "Installation Methods (CLI, Node-sass, Dart-sass)": true,
+                                        "SASS vs SCSS Syntax": true,
+                                        "Compiling SASS to CSS": true
+                                    },
+                                    "Variables and Nesting": {
+                                        "Defining and Using Variables": true,
+                                        "Scope of Variables (Global vs Local)": true,
+                                        "Nesting Rules and Best Practices": true,
+                                        "Avoiding Over-Nesting Pitfalls": true
+                                    },
+                                    "Partials and Modules": {
+                                        "Creating Partials with `_filename.scss`": true,
+                                        "Using @use vs @import (Modern vs Legacy)": true,
+                                        "Namespace Management with @use": true,
+                                        "SASS Modules vs CSS Modules": true
+                                    },
+                                    "Mixins and Includes": {
+                                        "Creating and Using Mixins": true,
+                                        "Passing Arguments to Mixins": true,
+                                        "Default Parameter Values": true,
+                                        "Content Blocks with `@content`": true
+                                    },
+                                    "Functions and Operations": {
+                                        "Defining and Using Custom Functions": true,
+                                        "Built-in Functions (Color, String, Number)": true,
+                                        "Mathematical Operations in SASS": true,
+                                        "Color Manipulation (lighten, darken, mix)": true
+                                    },
+                                    "Control Directives": {
+                                        "@if, @else If, @else for Conditional Styling": true,
+                                        "@for, @each, @while for Loops": true,
+                                        "Dynamic Class Generation via Loops": true
+                                    },
+                                    "Inheritance and Extend": {
+                                        "Using @extend to Share Styles": true,
+                                        "Placeholders (%) vs Classes in Extend": true,
+                                        "Avoiding Extend Pitfalls (Selector Bloat)": true
+                                    },
+                                    "Responsive and Theming": {
+                                        "Media Queries with Mixins and Maps": true,
+                                        "Responsive Utilities Generator": true,
+                                        "Dark Mode and Theming with Variables": true,
+                                        "Breakpoints Best Practices (Mobile-First)": true
+                                    },
+                                    "Architecture & Patterns": {
+                                        "7-1 Folder Architecture": true,
+                                        "BEM with SASS": true,
+                                        "Utility-First with SASS": true,
+                                        "Token-Based Design Systems in SASS": true
+                                    },
+                                    "Integration and Tooling": {
+                                        "SASS with Webpack/Parcel/Vite": true,
+                                        "SASS in React/Next.js/Angular Apps": true,
+                                        "Global vs Scoped Styles in SPA": true,
+                                        "SASS Linting and Stylelint Configs": true
+                                    },
+                                    "Advanced SASS Design Systems": {
+                                        "Design Tokens & CSS Variables in SASS": true,
+                                        "Dynamic Theme Switching with SASS Maps": true,
+                                        "Component-Based Theming Patterns": true,
+                                        "Design System DSL with SASS Functions": true
+                                    },
+                                    "Performance and Maintainability": {
+                                        "Avoiding Specificity Wars": true,
+                                        "Reducing Compiled File Size": true,
+                                        "Refactoring Large SASS Codebases": true,
+                                        "Scalable Patterns for Design Consistency": true
+                                    },
+                                    "Analysis & Applications": {
+                                        "Time Saved vs Plain CSS (Developer ROI)": true,
+                                        "Real-World Use Cases in FAANG-Level Apps": true,
+                                        "Problem Links & Practice Sets": true
+                                    }
+                                }
                             },
                             "Forms": {
                                 "___urlPath___": "forms",
@@ -8000,32 +8076,166 @@ const mapper = {
                     }
                 },
                 "Algorithms - Searching": {
-                    "Linear Search": true,
-                    "Binary Search (Iterative and Recursive)": true,
-                    "Time Complexity Analysis": true
+                    "___urlPath___": "algorithms-searching",
+                    "Linear Search": {
+                        "___urlPath___": "linear-search",
+                        "___md___": 1034
+                    },
+                    "Binary Search (Iterative and Recursive)": {
+                        "___urlPath___": "binary-search",
+                        "___md___": 1035
+                    },
+                    "Time Complexity Analysis": {
+                        "___urlPath___": "time-complexity-analysis",
+                        "___md___": 1036
+                    }
                 },
                 "Algorithms - Sorting": {
-                    "Selection Sort": true,
-                    "Bubble Sort": true,
-                    "Insertion Sort": true,
-                    "Divide and Conquer Techniques": true,
-                    "Mergesort (with Merge Logic)": true,
-                    "Quicksort (Lomuto and Hoare Partition)": true
+                    "___urlPath___": "algorithms-sorting",
+                    "Selection Sort": {
+                        "___urlPath___": "selection-sort",
+                        "___md___": 1037
+                    },
+                    "Bubble Sort": {
+                        "___urlPath___": "bubble-sort",
+                        "___md___": 1038
+                    },
+                    "Insertion Sort": {
+                        "___urlPath___": "insertion-sort",
+                        "___md___": 1039
+                    },
+                    "Divide and Conquer Techniques": {
+                        "___urlPath___": "divide-conquer-techniques",
+                        "___md___": 1040
+                    },
+                    "Mergesort (with Merge Logic)": {
+                        "___urlPath___": "mergesort",
+                        "___md___": 1041
+                    },
+                    "Quicksort (Lomuto and Hoare Partition)": {
+                        "___urlPath___": "quicksort",
+                        "___md___": 1042
+                    }
                 },
                 "Graph Theory - Introduction": {
-                    "Graph Terminologies (Vertex, Edge, Degree)": true,
-                    "Types of Graphs (Directed, Undirected, Weighted, Unweighted)": true,
-                    "Graph Representation (Adjacency Matrix/List)": true
+                    "___urlPath___": "graph-theory-introduction",
+                    "Graph Terminologies (Vertex, Edge, Degree)": {
+                        "___urlPath___": "graph-terminologies",
+                        "___md___": 1043
+                    },
+                    "Types of Graphs (Directed, Undirected, Weighted, Unweighted)": {
+                        "___urlPath___": "types-of-graphs",
+                        "___md___": 1044
+                    },
+                    "Graph Representation (Adjacency Matrix/List)": {
+                        "___urlPath___": "graph-representation",
+                        "___md___": 1045
+                    }
                 },
                 "Graph Algorithms - Basics": {
-                    "Graph Traversals (DFS, BFS)": true,
-                    "Shortest Path (Dijkstra’s Algorithm — Basic Understanding)": true,
-                    "Connectivity and Components": true
+                    "___urlPath___": "graph-algorithms-basics",
+                    "Graph Traversals (DFS, BFS)": {
+                        "___urlPath___": "graph-traversals",
+                        "___md___": 1046
+                    },
+                    "Shortest Path": {
+                        "___urlPath___": "shortest-path",
+                        "Overview": {
+                            "___urlPath___": "overview",
+                            "___md___": 1047,
+                        },
+                        "Single Source Shortest Path": {
+                            "___urlPath___": "single-source-shortest-path",
+                            "Unweighted Graphs": {
+                                "___urlPath___": "unweighted-graphs",
+                                "DFS (Only for Trees/Acyclic Graphs)": {
+                                    "___urlPath___": "dfs-unweighted-graphs",
+                                    "___md___": 1048
+                                },
+                                "BFS (Breadth-First Search)": {
+                                    "___urlPath___": "bfs-unweighted-graphs",
+                                    "___md___": 1049
+                                },
+                                "Multi-Source BFS": {
+                                    "___urlPath___": "multi-source-bfs",
+                                    "___md___": 1050
+                                }
+                            },
+                            "Weighted Graphs (Non-Negative)": {
+                                "___urlPath___": "weighted-graphs-non-negative",
+                                "Dijkstra’s Algorithm": {
+                                    "___urlPath___": "dijkstras-algorithm",
+                                    "___md___": 1051
+                                }
+                            },
+                            "Weighted Graphs (Negative Edges Allowed)": {
+                                "___urlPath___": "weighted-graphs-negative-edges",
+                                "Bellman-Ford Algorithm": {
+                                    "___urlPath___": "bellman-ford-algorithm",
+                                    "___md___": 1052
+                                }
+                            },
+                            "Directed Acyclic Graphs (DAG)": {
+                                "___urlPath___": "directed-acyclic-graphs",
+                                "Topological Sort Based Shortest Path": {
+                                    "___urlPath___": "topological-sort-shortest-path",
+                                    "___md___": 1053
+                                }
+                            },
+                            "Heuristic-Based Algorithms": {
+                                "___urlPath___": "heuristic-based-algorithms",
+                                "A* (A-Star) Search Algorithm": {
+                                    "___urlPath___": "a-star-search-algorithm",
+                                    "___md___": 1054
+                                }
+                            }
+                        },
+                        "All-Pairs Shortest Path": {
+                            "___urlPath___": "all-pairs-shortest-path",
+                            "Floyd-Warshall Algorithm": {
+                                "___urlPath___": "floyd-warshall-algorithm",
+                                "___md___": 1055
+                            },
+                            "Johnson’s Algorithm": {
+                                "___urlPath___": "johnsons-algorithm",
+                                "___md___": 1056
+                            }
+                        },
+                        "Analysis & Applications": {
+                            "___urlPath___": "analysis-applications",
+                            "Time and Space Complexity Comparison": {
+                                "___urlPath___": "time-space-complexity-comparison",
+                                "___md___": 1057
+                            },
+                            "Real-World Use Cases": {
+                                "___urlPath___": "real-world-use-cases",
+                                "___md___": 1058
+                            },
+                            "Problem Links & Practice Sets": {
+                                "___urlPath___": "problem-links-practice-sets",
+                                "___md___": 1059
+                            }
+                        }
+                    },
+                    "Connectivity and Components": {
+                        "___urlPath___": "connectivity-components",
+                        "___md___": 1060,
+                    }
                 },
                 "Analysis of Algorithms": {
-                    "Time and Space Complexity": true,
-                    "Asymptotic Notations (Big-O, Omega, Theta)": true,
-                    "Best, Average, Worst Case Analysis": true
+                    "___urlPath___": "analysis-of-algorithms",
+                    "Time and Space Complexity": {
+                        "___urlPath___": "time-space-complexity",
+                        "___md___": 1061
+                    },
+                    "Asymptotic Notations (Big-O, Omega, Theta)": {
+                        "___urlPath___": "asymptotic-notations",
+                        "___md___": 1062
+                    },
+                    "Best, Average, Worst Case Analysis": {
+                        "___urlPath___": "best-average-worst-case-analysis",
+                        "___md___": 1063
+                    }
                 }
             },
             "Database Management and Warehousing": {
