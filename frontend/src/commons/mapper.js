@@ -35,278 +35,237 @@ const mapper = {
                     },
                     "HTML (HyperText Markup Language)": {
                         "___urlPath___": "html",
-                        "HTML Syntax and Structure": {
-                            "___urlPath___": "html-syntax-and-structure",
-                            "Basic HTML Document Structure": {
-                                "___urlPath___": "basic-html-document-structure",
-                                "Doctype Declaration": {
-                                    "___urlPath___": "doctype-declaration",
-                                    "___md___": 65
-                                },
-                                "HTML, Head, and Body": {
-                                    "___urlPath___": "html-head-and-body",
-                                    "___md___": 66
-                                }
+                        "HTML Foundations": {
+                            "___urlPath___": "html-foundations",
+                            "HTML Syntax, Tags, and Structure": {
+                                "___urlPath___": "html-syntax-tags-and-structure",
+                                "___md___": 1073
                             },
-                            "Elements and Attributes": {
-                                "Element Syntax": {
-                                    "___urlPath___": "element-syntax",
-                                    "___md___": 67
-                                },
-                                "Global Attributes": {
-                                    "___urlPath___": "global-attributes",
-                                    "___md___": 68
-                                }
+                            "DOCTYPE, HTML, HEAD, BODY Tags": {
+                                "___urlPath___": "doctype-html-head-body-tags",
+                                "___md___": 1074
                             },
-                            "Nesting Rules": {
-                                "Proper Nesting": {
-                                    "___urlPath___": "proper-nesting",
-                                    "___md___": 69
-                                },
-                                "Common Mistakes": {
-                                    "___urlPath___": "common-mistakes",
-                                    "___md___": 70
-                                }
+                            "Block vs Inline Elements": {
+                                "___urlPath___": "block-vs-inline-elements",
+                                "___md___": 1075
+                            },
+                            "HTML Entities and Escape Characters": {
+                                "___urlPath___": "html-entities-and-escape-characters",
+                                "___md___": 1076
                             }
                         },
-                        "HTML5 Tags and Elements": {
-                            "___urlPath___": "html5-tags-and-elements",
-                            "Headings and Text Content": {
-                                "___urlPath___": "headings-and-text-content",
-                                "Headings": {
-                                    "___urlPath___": "headings",
-                                    "___md___": 71
-                                },
-                                "Paragraphs": {
-                                    "___urlPath___": "paragraphs",
-                                    "___md___": 72
-                                },
-                                "Line Breaks and Thematic Breaks": {
-                                    "___urlPath___": "line-breaks-and-thematic-breaks",
-                                    "___md___": 73
-                                }
-                            },
-                            "Lists": {
-                                "___urlPath___": "lists",
-                                "Ordered Lists": {
-                                    "___urlPath___": "ordered-lists",
-                                    "___md___": 74
-                                },
-                                "Unordered Lists": {
-                                    "___urlPath___": "unordered-lists",
-                                    "___md___": 75
-                                },
-                                "Description Lists": {
-                                    "___urlPath___": "description-lists",
-                                    "___md___": 76
-                                }
-                            },
-                            "Page Formatting": {
-                                "___urlPath___": "page-formatting",
-                                "___md___": 91
-                            },
-                            "Text formatting": {
-                                "___urlPath___": "text-formatting",
-                                "___md___": 90
+                        "Text, Headings, and Formatting": {
+                            "Paragraphs, Headings (`<p>`, `<h1>`-`<h6>`)": true,
+                            "Text Formatting Tags (`<strong>`, `<em>`, `<mark>`, `<code>`)": true,
+                            "White-space Handling and Line Breaks (`<br>`, `<pre>`)": true,
+                            "Quotations and Citations (`<blockquote>`, `<cite>`, `<q>`)": true
+                        },
+                        "Links and Navigation": {
+                            "Anchor Tag and Attributes (`<a href target download rel>`)": true,
+                            "Absolute vs Relative URLs": true,
+                            "Navigation Elements (`<nav>`, `<menu>`, `<ul>`, `<ol>`, `<li>`)": true,
+                            "Best Practices: SEO, Accessibility, and Breadcrumbs": true
+                        },
+                        "Images and Media": {
+                            "Image Tag (`<img>`) and Attributes (`src`, `alt`, `loading`)": true,
+                            "Responsive Images (`srcset`, `sizes`, `picture`)": true,
+                            "Embedding Audio and Video (`<audio>`, `<video>`, `<source>`)": true,
+                            "Iframe Embeds (`<iframe>`, sandboxing, CORS restrictions)": true
+                        },
+                        "Forms and Input Elements": {
+                            "Form Tag and Method Attributes (`action`, `method`, `target`)": true,
+                            "Input Types (`text`, `email`, `file`, `checkbox`, `radio`, etc.)": true,
+                            "Form Controls (`<label>`, `<select>`, `<textarea>`, `<button>`)": true,
+                            "Form Validation: `required`, `pattern`, `min`, `max`, `novalidate`": true
+                        },
+                        "Tables and Tabular Data": {
+                            "Table Structure (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)": true,
+                            "Cells and Headers (`<tr>`, `<th>`, `<td>`, `colspan`, `rowspan`)": true,
+                            "Semantic Tables and Accessibility (`scope`, `caption`)": true,
+                            "Responsive Table Design Techniques": true
+                        },
+                        "Semantic and Structural HTML": {
+                            "Semantic Tags (`<header>`, `<footer>`, `<main>`, `<section>`, `<article>`)": true,
+                            "HTML5 Structural Design Principles": true,
+                            "ARIA Roles and Landmark Navigation": true,
+                            "Microdata and Schema.org Integration": true
+                        },
+                        "Meta Tags and SEO Optimization": {
+                            "Meta Charset, Viewport, and Description": true,
+                            "Open Graph and Twitter Card Tags": true,
+                            "Canonical Tags and Meta Robots": true,
+                            "Structured Data (JSON-LD, Microformats)": true
+                        },
+                        "Accessibility (a11y) in HTML": {
+                            "Accessible Rich Internet Applications (ARIA) Attributes": true,
+                            "Tabindex, Skip Links, and Focus Management": true,
+                            "Screen Reader Semantics and Landmark Navigation": true,
+                            "Form Accessibility (Labels, Descriptions, Errors)": true
+                        },
+                        "Advanced Topics and APIs": {
+                            "___urlPath___": "advanced-topics-and-apis",
+                            "Custom Data Attributes (`data-*`) and JS Usage": true,
+                            "HTML Templates (`<template>`, `<slot>`, Shadow DOM Intro)": true,
+                            "Progressive Enhancement and Graceful Degradation": true,
+                            "Browser Compatibility and Polyfilling Strategies": {
+                                "___urlPath___": "browser-compatibility-and-polyfilling-strategies",
+                                "___md___": 1077
                             }
-                        },
-                        "Forms and Input Types": {
-                            "___urlPath___": "forms-and-input-types",
-                            "Basic Form Structure": {
-                                "___urlPath___": "basic-form-structure",
-                                "___md___": 77
-                            },
-                            "Input Types": {
-                                "___urlPath___": "input-types",
-                                "___md___": 78
-                            },
-                            "Form Controls": {
-                                "___urlPath___": "form-controls",
-                                "___md___": 79
-                            }
-                        },
-                        "Media Elements": {
-                            "___urlPath___": "media-elements",
-                            "Images": {
-                                "___urlPath___": "images",
-                                "___md___": 80
-                            },
-                            "Audio": {
-                                "___urlPath___": "audio",
-                                "___md___": 81
-                            },
-                            "Video": {
-                                "___urlPath___": "video",
-                                "___md___": 82
-                            }
-                        },
-                        "Semantic HTML": {
-                            "___urlPath___": "semantic-html",
-                            "Introduction": {
-                                "___urlPath___": "introduction",
-                                "___md___": 87
-                            },
-                            "Sections and Articles": {
-                                "___urlPath___": "sections-and-articles",
-                                "___md___": 83
-                            },
-                            "Navigation": {
-                                "___urlPath___": "navigation",
-                                "___md___": 84
-                            },
-                            "Main Content": {
-                                "___urlPath___": "main-content",
-                                "___md___": 85
-                            },
-                            "Accessibility": {
-                                "___urlPath___": "accessibility",
-                                "___md___": 86
-                            }
-                        },
-                        "HTML Hyperlinks, Navigation, and Tables": {
-                            "___urlPath___": "html-hyperlinks-navigation-and-tables",
-                            "___md___": 92
-                        },
-                        "XHTML": {
-                            "___urlPath___": "xhtml",
-                            "___md___": 88
-                        },
-                        "Frames and iFrames": {
-                            "___urlPath___": "iframes",
-                            "___md___": 89
                         }
 
                     },
                     "CSS (Cascading Style Sheets)": {
                         "___urlPath___": "css",
-                        "CSS Basics and Selectors": {
-                            "___urlPath___": "css-basics-and-selectors",
-                            "Introduction to CSS": {
-                                "___urlPath___": "introduction-to-css",
-                                "___md___": 105
+                        "CSS Core Concepts": {
+                            "What is CSS? Styling vs Structure (Separation of Concerns)": true,
+                            "CSS Syntax: Selectors, Properties, Values, Declaration Blocks": true,
+                            "Cascading, Inheritance, and Specificity": true,
+                            "Types of CSS (Inline, Internal, External)": true,
+                            "CSSOM (CSS Object Model) and Relationship to DOM": true
+                        },
+                        "Selectors and Combinators": {
+                            "___urlPath___": "selectors-and-combinators",
+                            "Basic Selectors (`*`, `element`, `.class`, `#id`)": {
+                                "___urlPath___": "basic-selectors",
+                                "___md___": 1078
                             },
-                            "CSS Selectors": {
-                                "___urlPath___": "css-selectors",
-                                "Basic Selectors": {
-                                    "___urlPath___": "basic-selectors",
-                                    "___md___": 106
-                                },
-                                "Combinators": {
-                                    "___urlPath___": "combinators",
-                                    "___md___": 107
-                                },
-                                "Attribute Selectors": {
-                                    "___urlPath___": "attribute-selectors",
-                                    "Overview": {
-                                        "___urlPath___": "attribute-selectors-overview",
-                                        "___md___": 108
-                                    },
-                                    "Substring Matching Selectors": {
-                                        "___urlPath___": "substring-matching-selectors",
-                                        "___md___": 109
-                                    }
-                                },
-                                "Pseudo-classes and Pseudo-elements": {
-                                    "___urlPath___": "pseudo-classes-and-pseudo-elements",
-                                    "Pseudo-classes": {
-                                        "___urlPath___": "pseudo-classes",
-                                        "___md___": 110
-                                    },
-                                    "Pseudo-elements": {
-                                        "___urlPath___": "pseudo-elements",
-                                        "___md___": 111
-                                    }
-                                }
+                            "Attribute Selectors (`[type='text']`, `[data-*]`)": {
+                                "___urlPath___": "attribute-selectors",
+                                "___md___": 1079
+                            },
+                            "Group, Child, Sibling, and Descendant Selectors": {
+                                "___urlPath___": "group-child-sibling-and-descendant-selectors",
+                                "___md___": 1080
+                            },
+                            "Pseudo-classes (`:hover`, `:focus`, `:nth-child`, `:not`, etc.)": {
+                                "___urlPath___": "pseudo-classes",
+                                "___md___": 1081
+                            },
+                            "Pseudo-elements (`::before`, `::after`, `::first-line`, etc.)": {
+                                "___urlPath___": "pseudo-elements",
+                                "___md___": 1082
                             }
                         },
-                        "Box Model": {
-                            "___urlPath___": "box-model",
-                            "___md___": 112
-                        },
-                        "Flexbox and Grid": {
-                            "___urlPath___": "flexbox-and-grid",
-                            "Flexbox": {
-                                "___urlPath___": "flexbox",
-                                "Introduction to Flexbox": {
-                                    "___urlPath___": "introduction-to-flexbox",
-                                    "___md___": 30
-                                },
-                                "Flex Container Properties": {
-                                    "___urlPath___": "flex-container-properties",
-                                    "___md___": 31
-                                },
-                                "Flex Item Properties": {
-                                    "___urlPath___": "flex-item-properties",
-                                    "___md___": 32
-                                }
+                        "Box Model and Layout": {
+                            "___urlPath___": "box-model-and-layout",
+                            "Box Model (`content`, `padding`, `border`, `margin`)": {
+                                "___urlPath___": "box-model",
+                                "___md___": 1083
                             },
-                            "Grid": {
-                                "___urlPath___": "grid",
-                                "Introduction to Grid": {
-                                    "___urlPath___": "introduction-to-grid",
-                                    "___md___": 33
-                                },
-                                "Grid Container Properties": {
-                                    "___urlPath___": "grid-container-properties",
-                                    "___md___": 34
-                                },
-                                "Grid Item Properties": {
-                                    "___urlPath___": "grid-item-properties",
-                                    "___md___": 35
-                                }
+                            "Width, Height, `box-sizing` and Overflow": {
+                                "___urlPath___": "width-height-box-sizing-and-overflow",
+                                "___md___": 1084
+                            },
+                            "Display Property: `block`, `inline`, `inline-block`, `none`": {
+                                "___urlPath___": "display-property",
+                                "___md___": 1085
+                            },
+                            "Positioning: `static`, `relative`, `absolute`, `fixed`, `sticky`": {
+                                "___urlPath___": "positioning",
+                                "___md___": 1087
+                            },
+                            "Z-Index and Stacking Context": {
+                                "___urlPath___": "z-index-and-stacking-context",
+                                "___md___": 1086
                             }
                         },
-                        "Responsive Design and Media Queries": {
-                            "___urlPath___": "responsive-design-and-media-queries",
-                            "Introduction to Responsive Design": {
-                                "___urlPath___": "introduction-to-responsive-design",
-                                "___md___": 36
-                            },
-                            "Media Queries": {
-                                "___urlPath___": "media-queries",
-                                "Syntax and Breakpoints": {
-                                    "___urlPath___": "syntax-and-breakpoints",
-                                    "___md___": 37
-                                },
-                                "Responsive Layout Techniques": {
-                                    "___urlPath___": "responsive-layout-techniques",
-                                    "___md___": 38
-                                }
-                            }
+                        "Flexbox Layout": {
+                            "Flex Container and Item Basics": true,
+                            "Properties: `flex-direction`, `justify-content`, `align-items`, `align-self`": true,
+                            "Wrapping and Flow: `flex-wrap`, `flex-flow`": true,
+                            "Order and Alignment Strategies for UI Layouts": true,
+                            "Real-World Flexbox Layout Use Cases": true
                         },
-                        "CSS Frameworks (Bootstrap, Tailwind)": {
-                            "___urlPath___": "css-frameworks",
-                            "Bootstrap": {
-                                "___urlPath___": "bootstrap",
-                                "Introduction to Bootstrap": {
-                                    "___urlPath___": "introduction-to-bootstrap",
-                                    "___md___": 39
-                                },
-                                "Grid System": {
-                                    "___urlPath___": "grid-system",
-                                    "___md___": 40
-                                },
-                                "Components and Utilities": {
-                                    "___urlPath___": "components-and-utilities",
-                                    "___md___": 41
-                                }
-                            },
-                            "Tailwind": {
-                                "___urlPath___": "tailwind",
-                                "Introduction to Tailwind CSS": {
-                                    "___urlPath___": "introduction-to-tailwind-css",
-                                    "___md___": 42
-                                },
-                                "Utility Classes": {
-                                    "___urlPath___": "utility-classes",
-                                    "___md___": 43
-                                },
-                                "Customizing Tailwind": {
-                                    "___urlPath___": "customizing-tailwind",
-                                    "___md___": 44
-                                }
-                            }
+                        "Grid Layout": {
+                            "Grid Container and Grid Items": true,
+                            "Defining Rows and Columns (`grid-template-rows`, `grid-template-columns`)": true,
+                            "Grid Gaps, Auto Placement, and `grid-auto-flow`": true,
+                            "Grid Areas and `grid-template-areas`": true,
+                            "Responsive Grid with `fr`, `minmax`, and `auto-fit/auto-fill`": true
                         },
+                        "Typography and Text Styling": {
+                            "Font Properties (`font-family`, `font-size`, `font-weight`, `line-height`)": true,
+                            "Text Properties (`color`, `letter-spacing`, `word-spacing`, `text-align`, `text-transform`)": true,
+                            "Web Fonts (`@font-face`, Google Fonts)": true,
+                            "Text Overflow, Wrapping, and Truncation (`white-space`, `overflow-wrap`, `text-overflow`)": true
+                        },
+                        "Colors, Backgrounds, and Gradients": {
+                            "Color Formats: Hex, RGB, RGBA, HSL, HSLA": true,
+                            "Background Properties: `background-color`, `background-image`, `background-size`, `background-position`": true,
+                            "Linear and Radial Gradients": true,
+                            "Multiple Background Layers": true,
+                            "Opacity vs `rgba()` vs `background-blend-mode`": true
+                        },
+                        "Borders, Shadows, and Effects": {
+                            "Border Styling (`border`, `border-radius`)": true,
+                            "Box Shadows and Text Shadows": true,
+                            "Outline vs Border vs Box-Shadow": true,
+                            "Filter Effects (`blur`, `brightness`, `grayscale`, `drop-shadow`)": true
+                        },
+                        "Transitions, Transforms, and Animations": {
+                            "CSS Transitions (`transition`, `transition-delay`, `transition-timing-function`)": true,
+                            "CSS Transforms (`scale`, `rotate`, `translate`, `skew`)": true,
+                            "CSS Animations (`@keyframes`, `animation-name`, `animation-duration`, etc.)": true,
+                            "Easing Functions and Animation Curves": true,
+                            "Performance Optimization for Animations": true
+                        },
+                        "Media Queries and Responsive Design": {
+                            "Syntax of Media Queries (`@media`, `min-width`, `max-width`)": true,
+                            "Responsive Units: `em`, `rem`, `vw`, `vh`, `%`": true,
+                            "Mobile-First vs Desktop-First Strategy": true,
+                            "Breakpoints and Design Patterns": true,
+                            "Orientation, Resolution, and Device Capabilities": true
+                        },
+                        "CSS Architecture and Methodologies": {
+                            "___urlPath___": "css-architecture-and-methodologies",
+                            "BEM (Block Element Modifier) Naming Convention": {
+                                "___urlPath___": "bem-naming-convention",
+                                "___md___": 1088
+                            },
+                            "OOCSS (Object-Oriented CSS)": {
+                                "___urlPath___": "oocss-object-oriented-css",
+                                "___md___": 1089
+                            },
+                            "SMACSS (Scalable and Modular Architecture for CSS)": {
+                                "___urlPath___": "smacss-scalable-and-modular-architecture-for-css",
+                                "___md___": 1090
+                            },
+                            "Atomic CSS and Utility-First Frameworks (e.g., Tailwind CSS)": {
+                                "___urlPath___": "atomic-css-and-utility-first-frameworks",
+                                "___md___": 1091
+                            },
+                            "Avoiding CSS Bloat and Ensuring Maintainability": true
+                        },
+                        "Forms and Input Elements": {
+                            "Form Tag and Method Attributes (`action`, `method`, `target`)": true,
+                            "Input Types (`text`, `email`, `file`, `checkbox`, `radio`, etc.)": true,
+                            "Form Controls (`<label>`, `<select>`, `<textarea>`, `<button>`)": true,
+                            "Form Validation: `required`, `pattern`, `min`, `max`, `novalidate`": true,
+                            "Styling Focus, Placeholder, and Invalid States": true
+                        },
+                        "Tables and Tabular Data": {
+                            "Table Structure (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)": true,
+                            "Cells and Headers (`<tr>`, `<th>`, `<td>`, `colspan`, `rowspan`)": true,
+                            "Semantic Tables and Accessibility (`scope`, `caption`)": true,
+                            "Responsive Table Design Techniques": true,
+                            "CSS-only Zebra Striping and Hover Effects": true
+                        },
+                        "Advanced Topics and Browser Behavior": {
+                            "Vendor Prefixes and Autoprefixer Usage": true,
+                            "Critical CSS and First Paint Optimization": true,
+                            "CSS Containment and Isolation (`contain`, `isolation`)": true,
+                            "Feature Queries (`@supports`)": true,
+                            "Custom Properties (CSS Variables)": true
+                        },
+                        "CSS Tooling and Preprocessors": {
+                            "SASS / SCSS Syntax and Nesting": true,
+                            "Mixins, Variables, Partials, Functions": true,
+                            "Importing and Combining Stylesheets": true,
+                            "PostCSS and CSS Modules": true,
+                            "Linting with Stylelint and Integration with CI/CD": true
+                        },
+
+
                         "Modern UI/UX Design": {
                             "___urlPath___": "ux-design-systems",
                             "___md___": 944
@@ -1866,395 +1825,6 @@ const mapper = {
                                 }
                             }
                         },
-                        "Vue.js": {
-                            "___urlPath___": "vue",
-                            "Introduction": {
-                                "___urlPath___": "introduction",
-                                "Overview of Vue.js": true,
-                                "History and Evolution": true,
-                                "Key Features of Vue.js": true,
-                                "Vue.js vs Other Frameworks": true
-                            },
-                            "Setup and Installation": {
-                                "___urlPath___": "setup-and-installation",
-                                "Installing Vue CLI": true,
-                                "Creating a New Vue Project": true,
-                                "Project Structure and Configuration": true,
-                                "Running the Vue Application": true
-                            },
-                            "Vue Basics": {
-                                "___urlPath___": "vue-basics",
-                                "Understanding Vue Instance": true,
-                                "Template Syntax and Data Binding": true,
-                                "Directives (v-bind, v-if, v-for, v-model)": true,
-                                "Event Handling and Methods": true,
-                                "Computed Properties and Watchers": true
-                            },
-                            "Vue Components": {
-                                "___urlPath___": "vue-components",
-                                "Creating and Using Components": true,
-                                "Props and Custom Events": true,
-                                "Slots and Scoped Slots": true,
-                                "Lifecycle Hooks": true,
-                                "Dynamic and Async Components": true
-                            },
-                            "Vue Directives and Filters": {
-                                "___urlPath___": "vue-directives-and-filters",
-                                "Built-in Directives": true,
-                                "Custom Directives": true,
-                                "Filters for Data Transformation": true,
-                                "Mixins for Reusability": true
-                            },
-                            "Vue Router (Routing)": {
-                                "___urlPath___": "vue-router",
-                                "Setting Up Vue Router": true,
-                                "Nested Routes and Route Parameters": true,
-                                "Navigation Guards": true,
-                                "Lazy Loading Routes": true
-                            },
-                            "State Management with Vuex & Pinia": {
-                                "___urlPath___": "state-management",
-                                "Introduction to State Management": true,
-                                "Vuex Store, Mutations, and Actions": true,
-                                "Vuex Modules and Best Practices": true,
-                                "Pinia: Modern State Management for Vue": true
-                            },
-                            "Handling Forms in Vue": {
-                                "___urlPath___": "handling-forms",
-                                "Two-Way Binding with v-model": true,
-                                "Form Validation with Vuelidate": true,
-                                "Handling File Uploads": true,
-                                "Custom Form Components": true
-                            },
-                            "Composition API": {
-                                "___urlPath___": "composition-api",
-                                "Introduction to Composition API": true,
-                                "Using Ref and Reactive": true,
-                                "Setup Function and Lifecycle Hooks": true,
-                                "Vue 2 vs Vue 3: Options API vs Composition API": true
-                            },
-                            "Vue and APIs (HTTP Requests)": {
-                                "___urlPath___": "vue-http",
-                                "Using Fetch API and Axios": true,
-                                "Handling API Responses and Errors": true,
-                                "Consuming REST APIs with Vue": true,
-                                "Using GraphQL with Vue": true
-                            },
-                            "Vue UI Libraries": {
-                                "___urlPath___": "vue-ui-libraries",
-                                "Introduction to Vuetify": true,
-                                "Using BootstrapVue": true,
-                                "Tailwind CSS with Vue": true,
-                                "Creating Custom UI Components": true
-                            },
-                            "Testing and Debugging": {
-                                "___urlPath___": "testing-and-debugging",
-                                "Unit Testing with Jest and Vue Test Utils": true,
-                                "End-to-End Testing with Cypress": true,
-                                "Debugging Vue Applications": true
-                            },
-                            "Performance Optimization": {
-                                "___urlPath___": "performance-optimization",
-                                "Lazy Loading and Code Splitting": true,
-                                "Vue Server-Side Rendering (SSR)": true,
-                                "Improving Performance with Computed and Watchers": true,
-                                "Optimizing Vue Apps for Production": true
-                            },
-                            "Vue 3 Features and Migration": {
-                                "___urlPath___": "vue3-features",
-                                "Vue 2 vs Vue 3: Key Differences": true,
-                                "Teleport, Suspense, and Fragments": true,
-                                "Migrating from Vue 2 to Vue 3": true
-                            },
-                            "Progressive Web Apps (PWA) in Vue": {
-                                "___urlPath___": "pwa-in-vue",
-                                "Introduction to PWAs": true,
-                                "Service Workers and Offline Support": true,
-                                "Push Notifications and Background Sync": true,
-                                "Deploying a PWA with Vue": true
-                            },
-                            "Server-Side Rendering (SSR) with Nuxt.js": {
-                                "___urlPath___": "server-side-rendering-nuxt",
-                                "Introduction to Nuxt.js": true,
-                                "Setting Up a Nuxt.js Project": true,
-                                "Nuxt.js Routing and Layouts": true,
-                                "Static Site Generation (SSG) with Nuxt": true
-                            },
-                            "Micro Frontends in Vue": {
-                                "___urlPath___": "micro-frontends-in-vue",
-                                "Introduction to Micro Frontends": true,
-                                "Using Module Federation in Vue": true,
-                                "Integrating Multiple Vue Applications": true,
-                                "Best Practices and Challenges": true
-                            },
-                            "Deployment and CI/CD": {
-                                "___urlPath___": "deployment-and-ci-cd",
-                                "Building and Deploying Vue Apps": true,
-                                "Setting Up CI/CD Pipelines": true,
-                                "Hosting on Netlify, Vercel, Firebase, or AWS": true
-                            },
-                            "Advanced Topics": {
-                                "___urlPath___": "advanced-topics",
-                                "Vue with WebSockets": true,
-                                "Using WebAssembly with Vue": true,
-                                "Internationalization (i18n) in Vue": true,
-                                "Integrating Vue with Electron": true
-                            }
-
-                        },
-                        "Angular": {
-                            "___urlPath___": "angular",
-                            "Introduction": {
-                                "___urlPath___": "introduction",
-                                "Overview of Angular": true,
-                                "History and Evolution": true,
-                                "Key Features of Angular": true,
-                                "Angular vs Other Frameworks": true
-                            },
-                            "Setup and Installation": {
-                                "___urlPath___": "setup-and-installation",
-                                "Installing Angular CLI": true,
-                                "Creating a New Angular Project": true,
-                                "Project Structure and Configuration": true,
-                                "Running the Angular Application": true
-                            },
-                            "TypeScript for Angular": {
-                                "___urlPath___": "typescript-for-angular",
-                                "Introduction to TypeScript": true,
-                                "Basic Syntax and Data Types": true,
-                                "Interfaces and Classes": true,
-                                "Modules and Namespaces": true,
-                                "TypeScript Features Used in Angular": true
-                            },
-                            "Components and Templates": {
-                                "___urlPath___": "components-and-templates",
-                                "Understanding Components": true,
-                                "Component Decorators and Metadata": true,
-                                "Creating and Using Components": true,
-                                "Component Lifecycle Hooks": true,
-                                "Template Syntax and Data Binding": true,
-                                "Interpolation and Property Binding": true,
-                                "Event Binding and Two-Way Binding": true
-                            },
-                            "Directives and Pipes": {
-                                "___urlPath___": "directives-and-pipes",
-                                "Built-in Directives (ngIf, ngFor, ngSwitch)": true,
-                                "Attribute Directives": true,
-                                "Creating Custom Directives": true,
-                                "Pipes and Data Formatting": true,
-                                "Creating Custom Pipes": true
-                            },
-                            "Modules and Routing": {
-                                "___urlPath___": "modules-and-routing",
-                                "Understanding Angular Modules (NgModules)": true,
-                                "Lazy Loading and Feature Modules": true,
-                                "Angular Routing Basics": true,
-                                "Route Guards (CanActivate, CanDeactivate)": true,
-                                "Child Routes and Nested Routing": true,
-                                "Router Events and Navigation Strategies": true
-                            },
-                            "Services and Dependency Injection": {
-                                "___urlPath___": "services-and-dependency-injection",
-                                "Creating and Using Services": true,
-                                "Dependency Injection in Angular": true,
-                                "Hierarchical Injector and Provider Scopes": true,
-                                "Using HTTPClient for API Calls": true,
-                                "Interceptors and Error Handling": true
-                            },
-                            "Forms in Angular": {
-                                "___urlPath___": "forms-in-angular",
-                                "Template-Driven Forms": true,
-                                "Reactive Forms": true,
-                                "Form Validation and Custom Validators": true,
-                                "Dynamic Forms and FormArray": true
-                            },
-                            "State Management": {
-                                "___urlPath___": "state-management",
-                                "Introduction to State Management": true,
-                                "Using Services for State Management": true,
-                                "Understanding NgRx and Redux Pattern": true,
-                                "NgRx Store, Actions, and Effects": true
-                            },
-                            "Angular Material and UI Components": {
-                                "___urlPath___": "angular-material-and-ui-components",
-                                "Introduction to Angular Material": true,
-                                "Using Material Components": true,
-                                "Theming and Customization": true,
-                                "Working with Third-Party UI Libraries": true
-                            },
-                            "Testing and Debugging": {
-                                "___urlPath___": "testing-and-debugging",
-                                "Unit Testing with Jasmine and Karma": true,
-                                "Component Testing and TestBed": true,
-                                "Service and HTTP Testing": true,
-                                "End-to-End Testing with Protractor and Cypress": true,
-                                "Debugging Angular Applications": true
-                            },
-                            "Performance Optimization": {
-                                "___urlPath___": "performance-optimization",
-                                "Lazy Loading and Optimization Techniques": true,
-                                "Just-in-Time (JIT) and Ahead-of-Time (AOT)": true,
-                                "Ahead-of-Time (AOT) Compilation": true,
-                                "Reducing Bundle Size and Tree Shaking": true,
-                                "Performance Monitoring and Profiling": true
-                            },
-                            "Progressive Web Apps (PWA) in Angular": {
-                                "___urlPath___": "pwa-in-angular",
-                                "Introduction to PWAs": true,
-                                "Service Workers and Caching Strategies": true,
-                                "Implementing Push Notifications": true,
-                                "Offline Capabilities and Background Sync": true
-                            },
-                            "Server-Side Rendering (SSR) with Angular Universal": {
-                                "___urlPath___": "server-side-rendering-angular-universal",
-                                "Introduction to Angular Universal": true,
-                                "Setting Up an SSR Angular App": true,
-                                "Pre-Rendering and Dynamic Rendering": true,
-                                "Deploying Angular Universal Applications": true
-                            },
-                            "Micro Frontends in Angular": {
-                                "___urlPath___": "micro-frontends-in-angular",
-                                "Introduction to Micro Frontends": true,
-                                "Implementing Module Federation in Angular": true,
-                                "Integrating Multiple Angular Apps": true,
-                                "Challenges and Best Practices": true
-                            },
-                            "Deployment and CI/CD": {
-                                "___urlPath___": "deployment-and-ci-cd",
-                                "Building and Deploying Angular Apps": true,
-                                "Configuring CI/CD Pipelines": true,
-                                "Hosting on Firebase, AWS, or Netlify": true,
-                                "Best Practices for Production Deployment": true
-                            },
-                            "Advanced Topics": {
-                                "___urlPath___": "advanced-topics",
-                                "Using WebSockets in Angular": true,
-                                "GraphQL with Angular": true,
-                                "Multi-Language Support (i18n & Localization)": true,
-                                "Working with WebAssembly and Angular": true
-                            }
-                        },
-                        "Svelte": {
-                            "___urlPath___": "svelte",
-                            "Introduction": {
-                                "___urlPath___": "introduction",
-                                "Overview of Svelte": true,
-                                "History and Evolution": true,
-                                "Key Features of Svelte": true,
-                                "Svelte vs Other Frameworks": true
-                            },
-                            "Setup and Installation": {
-                                "___urlPath___": "setup-and-installation",
-                                "Installing Svelte": true,
-                                "Creating a New Svelte Project": true,
-                                "Project Structure and Configuration": true,
-                                "Running the Svelte Application": true
-                            },
-                            "Svelte Basics": {
-                                "___urlPath___": "svelte-basics",
-                                "Understanding Svelte Components": true,
-                                "Reactive Declarations and Reactivity": true,
-                                "Svelte Directives (if, each, await)": true,
-                                "Event Handling and Binding": true,
-                                "Lifecycle Functions in Svelte": true
-                            },
-                            "Component Development": {
-                                "___urlPath___": "component-development",
-                                "Creating and Using Components": true,
-                                "Props and Data Passing Between Components": true,
-                                "Slots and Content Projection": true,
-                                "Context API and Stores for Component Communication": true
-                            },
-                            "Styling in Svelte": {
-                                "___urlPath___": "styling-in-svelte",
-                                "Scoped Styles in Svelte": true,
-                                "Global Styles and CSS Preprocessors": true,
-                                "Animations and Transitions": true,
-                                "Custom CSS and Tailwind with Svelte": true
-                            },
-                            "State Management in Svelte": {
-                                "___urlPath___": "state-management",
-                                "Using Writable, Readable, and Derived Stores": true,
-                                "Context API for Global State": true,
-                                "Using Local Component State": true
-                            },
-                            "Routing with Svelte": {
-                                "___urlPath___": "routing",
-                                "Setting Up Routing with SvelteKit": true,
-                                "Dynamic Routing and Parameters": true,
-                                "Navigation and Guards": true,
-                                "Lazy Loading and Code Splitting": true
-                            },
-                            "Forms and Validation": {
-                                "___urlPath___": "forms-and-validation",
-                                "Two-Way Binding with Forms": true,
-                                "Form Validation using Custom Validators": true,
-                                "Handling File Uploads": true,
-                                "Creating Reusable Form Components": true
-                            },
-                            "Fetching Data and APIs": {
-                                "___urlPath___": "fetching-data-and-apis",
-                                "Using Fetch API and Axios": true,
-                                "Handling API Responses and Errors": true,
-                                "Consuming REST APIs with Svelte": true,
-                                "Using GraphQL with Svelte": true
-                            },
-                            "Performance Optimization": {
-                                "___urlPath___": "performance-optimization",
-                                "Optimizing Svelte Applications": true,
-                                "Lazy Loading Components": true,
-                                "Minimizing Repaints and Rerenders": true,
-                                "Efficient Store Usage for Performance": true
-                            },
-                            "SvelteKit: Full-Stack Development": {
-                                "___urlPath___": "sveltekit-fullstack",
-                                "Introduction to SvelteKit": true,
-                                "File-Based Routing in SvelteKit": true,
-                                "Server-Side Rendering (SSR) in SvelteKit": true,
-                                "Static Site Generation (SSG) with SvelteKit": true
-                            },
-                            "Testing and Debugging": {
-                                "___urlPath___": "testing-and-debugging",
-                                "Unit Testing with Vitest": true,
-                                "Integration Testing with Cypress": true,
-                                "Debugging Svelte Applications": true,
-                                "Performance Profiling Tools": true
-                            },
-                            "Progressive Web Apps (PWA) in Svelte": {
-                                "___urlPath___": "pwa-in-svelte",
-                                "Introduction to PWAs": true,
-                                "Service Workers and Offline Support": true,
-                                "Push Notifications and Background Sync": true,
-                                "Deploying a PWA with Svelte": true
-                            },
-                            "Micro Frontends in Svelte": {
-                                "___urlPath___": "micro-frontends-in-svelte",
-                                "Introduction to Micro Frontends": true,
-                                "Using Module Federation with Svelte": true,
-                                "Integrating Multiple Svelte Applications": true,
-                                "Best Practices and Challenges": true
-                            },
-                            "Animations and UI Interactivity": {
-                                "___urlPath___": "animations-and-ui-interactivity",
-                                "Built-in Animations in Svelte": true,
-                                "Custom Animation Functions": true,
-                                "Spring and Tweened Stores": true,
-                                "Creating Interactive UI Components": true
-                            },
-                            "Deployment and CI/CD": {
-                                "___urlPath___": "deployment-and-ci-cd",
-                                "Building and Deploying Svelte Apps": true,
-                                "Setting Up CI/CD Pipelines": true,
-                                "Hosting on Vercel, Netlify, Firebase, or AWS": true
-                            },
-                            "Advanced Topics": {
-                                "___urlPath___": "advanced-topics",
-                                "Using WebSockets in Svelte": true,
-                                "Integrating WebAssembly with Svelte": true,
-                                "Internationalization (i18n) in Svelte": true,
-                                "Svelte with Electron for Desktop Apps": true
-                            }
-                        },
                         "Next.js": {
                             "___urlPath___": "nextjs",
                             "Introduction": {
@@ -2561,6 +2131,393 @@ const mapper = {
                                     "___urlPath___": "best-practices-for-next-js-security",
                                     "___md___": 536
                                 }
+                            }
+                        },
+                        "Vue.js": {
+                            "Core Concepts": {
+                                "Reactivity System (ref, reactive, watch, computed)": true,
+                                "Template Syntax and Directives (v-bind, v-if, v-for, v-model)": true,
+                                "Lifecycle Hooks (onMounted, onUnmounted, etc.)": true,
+                                "Vue Component Basics (Props, Events, Slots)": true,
+                                "Single File Components (SFCs)": true
+                            },
+                            "Vue 3 & Composition API": {
+                                "Setup Function and Reactive Scope": true,
+                                "ref vs reactive vs readonly vs shallowReactive": true,
+                                "watch, watchEffect, and cleanup logic": true,
+                                "Custom Composition Functions (Reusable Logic)": true,
+                                "Script Setup Syntax": true
+                            },
+                            "Advanced Vue Concepts": {
+                                "Provide / Inject for Dependency Injection": true,
+                                "Teleport for Modals and Portals": true,
+                                "Dynamic Components and Async Components": true,
+                                "Mixins vs Composables": true,
+                                "Slots (Default, Named, Scoped Slots)": true
+                            },
+                            "Routing with Vue Router": {
+                                "Setting up Vue Router": true,
+                                "Dynamic Route Matching and Params": true,
+                                "Nested Routes and Named Views": true,
+                                "Navigation Guards (Global, Per-Route, In-Component)": true,
+                                "Lazy Loading Routes and Code Splitting": true
+                            },
+                            "State Management with Pinia (Vuex alternative)": {
+                                "Pinia Store Creation and Usage": true,
+                                "State, Getters, Actions with Pinia": true,
+                                "Pinia Plugins and Persistence": true,
+                                "Pinia vs Vuex Comparison": true,
+                                "Modular Stores and Store Injection": true
+                            },
+                            "Vue with TypeScript": {
+                                "Typing Props, Emits, and Refs": true,
+                                "DefineComponent and defineProps/defineEmits": true,
+                                "Generic Components in Vue": true,
+                                "Extending Interfaces and Utility Types in SFCs": true,
+                                "Type-Safe Pinia and Router Integration": true
+                            },
+                            "Form Handling and Validation": {
+                                "Two-Way Binding with v-model": true,
+                                "Custom Input Components with v-model": true,
+                                "Validation Libraries: VeeValidate, Yup, or Zod": true,
+                                "Error Display, Field States, Form Submission": true,
+                                "Async Validation and Dependent Fields": true
+                            },
+                            "Testing in Vue": {
+                                "Unit Testing with Vitest / Jest": true,
+                                "Vue Test Utils for Components": true,
+                                "Testing Events, Props, and Emits": true,
+                                "Mocking APIs and Router in Tests": true,
+                                "E2E Testing with Cypress or Playwright": true
+                            },
+                            "Vue + REST / GraphQL Integration": {
+                                "Fetching Data with Fetch API / Axios": true,
+                                "Error Handling and Loading States": true,
+                                "Using Composition Functions for API Calls": true,
+                                "GraphQL Clients like urql / Apollo in Vue": true,
+                                "Auth Tokens and Secure Headers Integration": true
+                            },
+                            "Vue Performance Optimization": {
+                                "Reactive Performance Pitfalls (Proxy vs Ref)": true,
+                                "Lazy Load Components and Routes": true,
+                                "v-once, v-memo, and v-show vs v-if": true,
+                                "KeepAlive and Dynamic Component Caching": true,
+                                "Performance DevTools and Debugging Tips": true
+                            },
+                            "Vue Ecosystem and Tooling": {
+                                "Vite Configuration and Optimizations": true,
+                                "Vue CLI vs Vite vs Nuxt": true,
+                                "Scoped CSS, CSS Modules, PostCSS, Tailwind": true,
+                                "Custom Directives and Plugins": true,
+                                "Internationalization with vue-i18n": true
+                            },
+                            "Nuxt.js (Optional but Useful)": {
+                                "Nuxt Pages and File-Based Routing": true,
+                                "Server-Side Rendering (SSR) with Nuxt": true,
+                                "Nuxt Middleware and Plugins": true,
+                                "State Management and AsyncData in Nuxt": true,
+                                "Deploying Nuxt Apps (Vercel, Netlify, etc.)": true
+                            },
+                            "Frontend System Design": {
+                                "Vue in Microfrontend Architecture": true,
+                                "SSR, CSR, and ISR trade-offs with Vue/Nuxt": true,
+                                "Performance Budgets, Lazy Loading Strategies": true,
+                                "State Hydration and Pre-Fetching Patterns": true,
+                                "Designing Scalable Component Architecture (Atomic Design)": true,
+                                "Edge Rendering and CDN Strategy (Vercel, Cloudflare)": true
+                            },
+                            "Browser Fundamentals and Web APIs": {
+                                "Event Loop, Call Stack, Microtasks": true,
+                                "DOM APIs, MutationObserver, IntersectionObserver": true,
+                                "Storage APIs (localStorage, sessionStorage, IndexedDB)": true,
+                                "Performance APIs and Web Workers": true,
+                                "Security: XSS, CSP, CORS, SameSite Cookies": true
+                            },
+                            "Advanced TypeScript Patterns": {
+                                "Utility Types (Partial, Pick, ReturnType, etc.)": true,
+                                "Discriminated Unions and Conditional Types": true,
+                                "Advanced Generics with Vue Components": true,
+                                "TS Config Best Practices for Vue Projects": true
+                            },
+                            "Testing Strategy & CI/CD": {
+                                "Test Pyramid for Vue Projects": true,
+                                "Coverage Reporting and Thresholds (vitest/jest)": true,
+                                "Cypress GitHub Actions CI Integration": true,
+                                "Testing SSR/Nuxt Components": true
+                            },
+                            "Monorepos & Modular Vue Apps": {
+                                "Nx or TurboRepo with Vue Projects": true,
+                                "Shared Libraries and Design Systems": true,
+                                "Vue Microfrontends (Module Federation, Single-SPA)": true
+                            }
+
+
+
+
+
+                        },
+                        "Angular": {
+                            "___urlPath___": "angular",
+                            "Introduction": {
+                                "___urlPath___": "introduction",
+                                "Overview of Angular": true,
+                                "History and Evolution": true,
+                                "Key Features of Angular": true,
+                                "Angular vs Other Frameworks": true
+                            },
+                            "Setup and Installation": {
+                                "___urlPath___": "setup-and-installation",
+                                "Installing Angular CLI": true,
+                                "Creating a New Angular Project": true,
+                                "Project Structure and Configuration": true,
+                                "Running the Angular Application": true
+                            },
+                            "TypeScript for Angular": {
+                                "___urlPath___": "typescript-for-angular",
+                                "Introduction to TypeScript": true,
+                                "Basic Syntax and Data Types": true,
+                                "Interfaces and Classes": true,
+                                "Modules and Namespaces": true,
+                                "TypeScript Features Used in Angular": true
+                            },
+                            "Components and Templates": {
+                                "___urlPath___": "components-and-templates",
+                                "Understanding Components": true,
+                                "Component Decorators and Metadata": true,
+                                "Creating and Using Components": true,
+                                "Component Lifecycle Hooks": true,
+                                "Template Syntax and Data Binding": true,
+                                "Interpolation and Property Binding": true,
+                                "Event Binding and Two-Way Binding": true
+                            },
+                            "Directives and Pipes": {
+                                "___urlPath___": "directives-and-pipes",
+                                "Built-in Directives (ngIf, ngFor, ngSwitch)": true,
+                                "Attribute Directives": true,
+                                "Creating Custom Directives": true,
+                                "Pipes and Data Formatting": true,
+                                "Creating Custom Pipes": true
+                            },
+                            "Modules and Routing": {
+                                "___urlPath___": "modules-and-routing",
+                                "Understanding Angular Modules (NgModules)": true,
+                                "Lazy Loading and Feature Modules": true,
+                                "Angular Routing Basics": true,
+                                "Route Guards (CanActivate, CanDeactivate)": true,
+                                "Child Routes and Nested Routing": true,
+                                "Router Events and Navigation Strategies": true
+                            },
+                            "Services and Dependency Injection": {
+                                "___urlPath___": "services-and-dependency-injection",
+                                "Creating and Using Services": true,
+                                "Dependency Injection in Angular": true,
+                                "Hierarchical Injector and Provider Scopes": true,
+                                "Using HTTPClient for API Calls": true,
+                                "Interceptors and Error Handling": true
+                            },
+                            "Forms in Angular": {
+                                "___urlPath___": "forms-in-angular",
+                                "Template-Driven Forms": true,
+                                "Reactive Forms": true,
+                                "Form Validation and Custom Validators": true,
+                                "Dynamic Forms and FormArray": true
+                            },
+                            "State Management": {
+                                "___urlPath___": "state-management",
+                                "Introduction to State Management": true,
+                                "Using Services for State Management": true,
+                                "Understanding NgRx and Redux Pattern": true,
+                                "NgRx Store, Actions, and Effects": true
+                            },
+                            "Angular Material and UI Components": {
+                                "___urlPath___": "angular-material-and-ui-components",
+                                "Introduction to Angular Material": true,
+                                "Using Material Components": true,
+                                "Theming and Customization": true,
+                                "Working with Third-Party UI Libraries": true
+                            },
+                            "Testing and Debugging": {
+                                "___urlPath___": "testing-and-debugging",
+                                "Unit Testing with Jasmine and Karma": true,
+                                "Component Testing and TestBed": true,
+                                "Service and HTTP Testing": true,
+                                "End-to-End Testing with Protractor and Cypress": true,
+                                "Debugging Angular Applications": true
+                            },
+                            "Performance Optimization": {
+                                "___urlPath___": "performance-optimization",
+                                "Lazy Loading and Optimization Techniques": true,
+                                "Just-in-Time (JIT) and Ahead-of-Time (AOT)": true,
+                                "Ahead-of-Time (AOT) Compilation": true,
+                                "Reducing Bundle Size and Tree Shaking": true,
+                                "Performance Monitoring and Profiling": true
+                            },
+                            "Progressive Web Apps (PWA) in Angular": {
+                                "___urlPath___": "pwa-in-angular",
+                                "Introduction to PWAs": true,
+                                "Service Workers and Caching Strategies": true,
+                                "Implementing Push Notifications": true,
+                                "Offline Capabilities and Background Sync": true
+                            },
+                            "Server-Side Rendering (SSR) with Angular Universal": {
+                                "___urlPath___": "server-side-rendering-angular-universal",
+                                "Introduction to Angular Universal": true,
+                                "Setting Up an SSR Angular App": true,
+                                "Pre-Rendering and Dynamic Rendering": true,
+                                "Deploying Angular Universal Applications": true
+                            },
+                            "Micro Frontends in Angular": {
+                                "___urlPath___": "micro-frontends-in-angular",
+                                "Introduction to Micro Frontends": true,
+                                "Implementing Module Federation in Angular": true,
+                                "Integrating Multiple Angular Apps": true,
+                                "Challenges and Best Practices": true
+                            },
+                            "Deployment and CI/CD": {
+                                "___urlPath___": "deployment-and-ci-cd",
+                                "Building and Deploying Angular Apps": true,
+                                "Configuring CI/CD Pipelines": true,
+                                "Hosting on Firebase, AWS, or Netlify": true,
+                                "Best Practices for Production Deployment": true
+                            },
+                            "Advanced Topics": {
+                                "___urlPath___": "advanced-topics",
+                                "Using WebSockets in Angular": true,
+                                "GraphQL with Angular": true,
+                                "Multi-Language Support (i18n & Localization)": true,
+                                "Working with WebAssembly and Angular": true
+                            }
+                        },
+                        "Svelte": {
+                            "___urlPath___": "svelte",
+                            "Introduction": {
+                                "___urlPath___": "introduction",
+                                "Overview of Svelte": true,
+                                "History and Evolution": true,
+                                "Key Features of Svelte": true,
+                                "Svelte vs Other Frameworks": true
+                            },
+                            "Setup and Installation": {
+                                "___urlPath___": "setup-and-installation",
+                                "Installing Svelte": true,
+                                "Creating a New Svelte Project": true,
+                                "Project Structure and Configuration": true,
+                                "Running the Svelte Application": true
+                            },
+                            "Svelte Basics": {
+                                "___urlPath___": "svelte-basics",
+                                "Understanding Svelte Components": true,
+                                "Reactive Declarations and Reactivity": true,
+                                "Svelte Directives (if, each, await)": true,
+                                "Event Handling and Binding": true,
+                                "Lifecycle Functions in Svelte": true
+                            },
+                            "Component Development": {
+                                "___urlPath___": "component-development",
+                                "Creating and Using Components": true,
+                                "Props and Data Passing Between Components": true,
+                                "Slots and Content Projection": true,
+                                "Context API and Stores for Component Communication": true
+                            },
+                            "Styling in Svelte": {
+                                "___urlPath___": "styling-in-svelte",
+                                "Scoped Styles in Svelte": true,
+                                "Global Styles and CSS Preprocessors": true,
+                                "Animations and Transitions": true,
+                                "Custom CSS and Tailwind with Svelte": true
+                            },
+                            "State Management in Svelte": {
+                                "___urlPath___": "state-management",
+                                "Using Writable, Readable, and Derived Stores": true,
+                                "Context API for Global State": true,
+                                "Using Local Component State": true
+                            },
+                            "Routing with Svelte": {
+                                "___urlPath___": "routing",
+                                "Setting Up Routing with SvelteKit": true,
+                                "Dynamic Routing and Parameters": true,
+                                "Navigation and Guards": true,
+                                "Lazy Loading and Code Splitting": true
+                            },
+                            "Forms and Validation": {
+                                "___urlPath___": "forms-and-validation",
+                                "Two-Way Binding with Forms": true,
+                                "Form Validation using Custom Validators": true,
+                                "Handling File Uploads": true,
+                                "Creating Reusable Form Components": true
+                            },
+                            "Fetching Data and APIs": {
+                                "___urlPath___": "fetching-data-and-apis",
+                                "Using Fetch API and Axios": true,
+                                "Handling API Responses and Errors": true,
+                                "Consuming REST APIs with Svelte": true,
+                                "Using GraphQL with Svelte": true
+                            },
+                            "Performance Optimization": {
+                                "___urlPath___": "performance-optimization",
+                                "Optimizing Svelte Applications": true,
+                                "Lazy Loading Components": true,
+                                "Minimizing Repaints and Rerenders": true,
+                                "Efficient Store Usage for Performance": true
+                            },
+                            "SvelteKit: Full-Stack Development": {
+                                "___urlPath___": "sveltekit-fullstack",
+                                "Introduction to SvelteKit": true,
+                                "File-Based Routing in SvelteKit": true,
+                                "Server-Side Rendering (SSR) in SvelteKit": true,
+                                "Static Site Generation (SSG) with SvelteKit": true
+                            },
+                            "Testing and Debugging": {
+                                "___urlPath___": "testing-and-debugging",
+                                "Unit Testing with Vitest": true,
+                                "Integration Testing with Cypress": true,
+                                "Debugging Svelte Applications": true,
+                                "Performance Profiling Tools": true
+                            },
+                            "Progressive Web Apps (PWA) in Svelte": {
+                                "___urlPath___": "pwa-in-svelte",
+                                "Introduction to PWAs": true,
+                                "Service Workers and Offline Support": true,
+                                "Push Notifications and Background Sync": true,
+                                "Deploying a PWA with Svelte": true
+                            },
+                            "Micro Frontends in Svelte": {
+                                "___urlPath___": "micro-frontends-in-svelte",
+                                "Introduction to Micro Frontends": true,
+                                "Using Module Federation with Svelte": true,
+                                "Integrating Multiple Svelte Applications": true,
+                                "Best Practices and Challenges": true
+                            },
+                            "Animations and UI Interactivity": {
+                                "___urlPath___": "animations-and-ui-interactivity",
+                                "Built-in Animations in Svelte": true,
+                                "Custom Animation Functions": true,
+                                "Spring and Tweened Stores": true,
+                                "Creating Interactive UI Components": true
+                            },
+                            "Deployment and CI/CD": {
+                                "___urlPath___": "deployment-and-ci-cd",
+                                "Building and Deploying Svelte Apps": true,
+                                "Setting Up CI/CD Pipelines": true,
+                                "Hosting on Vercel, Netlify, Firebase, or AWS": true
+                            },
+                            "Advanced Topics": {
+                                "___urlPath___": "advanced-topics",
+                                "Using WebSockets in Svelte": true,
+                                "Integrating WebAssembly with Svelte": true,
+                                "Internationalization (i18n) in Svelte": true,
+                                "Svelte with Electron for Desktop Apps": true
+                            }
+                        },
+                        "Comparisons": {
+                            "___urlPath___": "comparisons",
+                            "React Vs Vue": {
+                                "___urlPath___": "react-vs-vue",
+                                "___md___": 1067
+                            },
+                            "React vs Vue vs Svelte vs Angular": {
+                                "___urlPath___": "react-vs-vue-vs-svelte-vs-angular",
+                                "___md___": 1068
                             }
                         }
                     },
@@ -7383,10 +7340,23 @@ const mapper = {
             "Soft Skills and Best Practices": {
                 "___urlPath___": "soft-skills",
                 "Agile Development and Scrum": {
+                    "___urlPath___": "agile-development-scrum",
                     "Introduction to Agile Methodology": {
-                        "Principles of Agile (Agile Manifesto & 12 Principles)": true,
-                        "Benefits of Agile over Traditional Models (Waterfall, V-Model, etc.)": true,
+                        "___urlPath___": "introduction-to-agile-methodology",
+                        "Principles of Agile (Agile Manifesto & 12 Principles)": {
+                            "___urlPath___": "agile-manifesto-12-principles",
+                            "___md___": 1101
+                        },
+                        "Benefits of Agile over Traditional Models (Waterfall, V-Model, etc.)": {
+                            "___urlPath___": "benefits-of-agile-over-traditional-models",
+                            "___md___": 1102
+                        },
                         "Different Agile Frameworks": {
+                            "___urlPath___": "different-agile-frameworks",
+                            "Overview of Agile Frameworks": {
+                                "___urlPath___": "overview-of-agile-frameworks",
+                                "___md___": 1103
+                            },
                             "Scrum": true,
                             "Kanban": true,
                             "SAFe (Scaled Agile Framework)": true,
@@ -7455,32 +7425,6 @@ const mapper = {
                         "Handling Changing Requirements in Agile": true,
                         "Balancing Business Priorities with Technical Excellence": true
                     },
-                    "Platform Core Team (PCT) and Agile Core Team (ACT)": {
-                        "Platform Core Team (PCT)": {
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 367
-                            },
-                            "Responsibilities of PCT": true,
-                            "Platform Engineering and DevOps": true,
-                            "Developer Tooling and Infrastructure": true,
-                            "Scalability and Performance Optimization": true
-                        },
-                        "Agile Core Team (ACT)": {
-                            "Overview": {
-                                "___urlPath___": "overview",
-                                "___md___": 368
-                            },
-                            "Responsibilities of ACT": true,
-                            "Feature Development and Sprint Execution": true,
-                            "Cross-Functional Collaboration": true,
-                            "Customer-Centric Development": true
-                        },
-                        "Comparison: PCT and ACT": {
-                            "___urlPath___": "comparision-pct-act",
-                            "___md___": 369
-                        }
-                    },
                     "Agile Leadership and Coaching": {
                         "Agile Coaching vs Scrum Master Role": true,
                         "Servant Leadership in Agile": true,
@@ -7500,9 +7444,20 @@ const mapper = {
                         "Avoiding Vanity Metrics in Agile": true
                     },
                     "Case Studies and Real-World Implementations": {
-                        "Agile at Netflix": true,
-                        "Agile at Amazon": true,
+                        "___urlPath___": "case-studies-agile",
+                        "Agile at Netflix": {
+                            "___urlPath___": "agile-at-netflix",
+                            "___md___": 1104
+                        },
+                        "Agile at Amazon": {
+                            "___urlPath___": "agile-at-amazon",
+                            "___md___": 1105
+                        },
                         "Agile at Spotify": true,
+                        "Agile at Cognizant": {
+                            "___urlPath___": "agile-at-cognizant",
+                            "___md___": 1106
+                        },
                         "Lessons Learned from Failed Agile Implementations": true
                     }
                 },
@@ -7734,10 +7689,23 @@ const mapper = {
                             "Advanced `__magic__` Methods and Operator Overloading": true
                         },
                         "Object-Oriented Python": {
-                            "Inheritance, MRO, and `super()`": true,
-                            "Mixins and Multiple Inheritance": true,
-                            "Encapsulation and Access Modifiers": true,
-                            "ABC (Abstract Base Classes) and Interfaces": true,
+                            "___urlPath___": "object-oriented-python",
+                            "Inheritance, MRO, and `super()`": {
+                                "___urlPath___": "inheritance-mro-super",
+                                "___md___": 1069
+                            },
+                            "Mixins and Multiple Inheritance": {
+                                "___urlPath___": "mixins-multiple-inheritance",
+                                "___md___": 1070
+                            },
+                            "Encapsulation and Access Modifiers": {
+                                "___urlPath___": "encapsulation-access-modifiers",
+                                "___md___": 1071
+                            },
+                            "ABC (Abstract Base Classes) and Interfaces": {
+                                "___urlPath___": "abc-interfaces",
+                                "___md___": 1072
+                            },
                             "Dataclasses vs NamedTuples vs TypedDict": true
                         },
                         "Functional Programming in Python": {
@@ -9797,26 +9765,26 @@ const mapper = {
                             "___urlPath___": "er-model",
                             "ER Diagrams and Entity Types": {
                                 "___urlPath___": "er-diagrams",
-                                "___md___": 2001
+                                "___md___": 1092
                             },
                             "Attributes, Keys, and Constraints": {
                                 "___urlPath___": "er-attributes-keys",
-                                "___md___": 2002
+                                "___md___": 1097
                             },
                             "Weak Entities and Aggregation": {
                                 "___urlPath___": "weak-entities-aggregation",
-                                "___md___": 2003
+                                "___md___": 1098
                             },
                             "ER to Relational Mapping": {
                                 "___urlPath___": "er-to-relational",
-                                "___md___": 2004
+                                "___md___": 1099
                             }
                         },
                         "Relational Model and Algebra": {
                             "___urlPath___": "relational-model",
                             "Relational Schema, Tuples, Domains": {
                                 "___urlPath___": "relational-schema",
-                                "___md___": 2010
+                                "___md___": true
                             },
                             "Keys and Integrity Constraints": {
                                 "___urlPath___": "keys-integrity",
@@ -9835,7 +9803,7 @@ const mapper = {
                             "___urlPath___": "sql",
                             "SQL Syntax and Semantics": {
                                 "___urlPath___": "sql-syntax",
-                                "___md___": 2020
+                                "___md___": 1100
                             },
                             "Joins, Nested Queries, Set Ops": {
                                 "___urlPath___": "joins-nested-queries",
@@ -9873,15 +9841,23 @@ const mapper = {
                             },
                             "Primary and Secondary Indexes": {
                                 "___urlPath___": "index-types",
-                                "___md___": 2041
+                                "___md___": 1093
                             },
                             "Dense vs Sparse Indexing": {
                                 "___urlPath___": "dense-sparse-index",
-                                "___md___": 2042
+                                "___md___": 1094
                             },
                             "B and B+ Trees": {
                                 "___urlPath___": "b-bplus-trees",
-                                "___md___": 2043
+                                "Overview": {
+                                    "___urlPath___": "overview",
+                                    "___md___": 1095
+                                },
+                                "B Tree": {
+                                    "___urlPath___": "b-tree",
+                                    "___md___": 1096
+                                },
+                                "B+ Tree": true
                             }
                         },
                         "Transactions and Concurrency Control": {
@@ -10074,23 +10050,144 @@ const mapper = {
                             "___md___": 186
                         }
                     },
-                    "PostgreSQL Features": {
-                        "___urlPath___": "postgresql-features",
-                        "Data Types and Table Constraints": {
-                            "___urlPath___": "data-types-and-table-constraints",
-                            "___md___": 187
+                    "PostgreSQL": {
+                        "___urlPath___": "postgresql",
+                        "Core Concepts": {
+                            "___urlPath___": "core-concepts",
+                            "PostgreSQL Architecture Overview": {
+                                "___urlPath___": "architecture-overview",
+                                "___md___": 1064
+                            },
+                            "MVCC (Multi-Version Concurrency Control)": true,
+                            "ACID Properties": {
+                                "___urlPath___": "acid-properties",
+                                "___md___": 1065
+                            },
+                            "Data Types and Domains": true
                         },
-                        "Using PostgreSQL Extensions (PostGIS, etc.)": {
-                            "___urlPath___": "postgresql-extensions",
-                            "___md___": 188
+                        "SQL Fundamentals": {
+                            "DDL: CREATE, ALTER, DROP": true,
+                            "DML: INSERT, UPDATE, DELETE": true,
+                            "DQL: SELECT, WHERE, ORDER BY": true,
+                            "Constraints: PRIMARY KEY, UNIQUE, CHECK, NOT NULL": true
                         },
-                        "Indexing in PostgreSQL": {
-                            "___urlPath___": "indexing-in-postgresql",
-                            "___md___": 189
+                        "Advanced Querying": {
+                            "JOINs (INNER, LEFT, RIGHT, FULL)": true,
+                            "Subqueries and CTEs": true,
+                            "Window Functions": true,
+                            "Aggregation with GROUP BY and HAVING": true,
+                            "Set Operations (UNION, INTERSECT, EXCEPT)": true
                         },
-                        "Query Performance Tuning in PostgreSQL": {
-                            "___urlPath___": "query-performance-tuning",
-                            "___md___": 190
+                        "Indexes and Performance": {
+                            "___urlPath___": "indexes-and-performance",
+                            "Types of Indexes (BTREE, HASH, GIN, GiST, SP-GiST)": {
+                                "___urlPath___": "types-of-indexes",
+                                "___md___": 1066
+                            },
+                            "Creating and Dropping Indexes": true,
+                            "Covering Indexes and Partial Indexes": true,
+                            "Query Execution Plans (EXPLAIN, EXPLAIN ANALYZE)": true,
+                            "VACUUM and ANALYZE": true
+                        },
+                        "Transactions and Locking": {
+                            "BEGIN, COMMIT, ROLLBACK": true,
+                            "Isolation Levels (READ COMMITTED, REPEATABLE READ, SERIALIZABLE)": true,
+                            "Deadlocks and Lock Monitoring": true,
+                            "Advisory Locks": true
+                        },
+                        "Functions and Stored Procedures": {
+                            "PL/pgSQL Basics": true,
+                            "Creating Functions with RETURNS": true,
+                            "Triggers and Event-Driven Programming": true,
+                            "DO blocks and Anonymous Code Execution": true
+                        },
+                        "Views and Materialized Views": {
+                            "Creating and Using Views": true,
+                            "Materialized Views and REFRESH": true,
+                            "Performance Impacts": true,
+                            "Updatable Views": true
+                        },
+                        "JSON and NoSQL Features": {
+                            "JSON, JSONB Data Types": true,
+                            "Operators and Functions for JSON": true,
+                            "Indexing JSON Fields": true,
+                            "PostgreSQL as a Document Store": true
+                        },
+                        "Extensions and Tooling": {
+                            "Popular Extensions (pg_stat_statements, PostGIS, uuid-ossp)": true,
+                            "Using `pgAdmin`, `psql`, and GUI Tools": true,
+                            "pgBouncer and Connection Pooling": true,
+                            "Auto-Explain, Auto-Vacuum": true
+                        },
+                        "User Management and Security": {
+                            "Role Creation and Privileges": true,
+                            "GRANT, REVOKE, and SECURITY DEFINER": true,
+                            "Row-Level Security (RLS)": true,
+                            "pg_hba.conf and Authentication Mechanisms": true
+                        },
+                        "Backup, Restore, and High Availability": {
+                            "Logical and Physical Backups": true,
+                            "pg_dump, pg_restore, and psql scripts": true,
+                            "Streaming Replication": true,
+                            "Point-In-Time Recovery (PITR)": true
+                        },
+                        "Data Modeling and Schema Design": {
+                            "Normalization and Denormalization": true,
+                            "Primary Key vs UUID vs Composite Keys": true,
+                            "ER Diagrams and PostgreSQL Constraints": true,
+                            "Designing for Scale": true
+                        },
+                        "Partitioning and Sharding": {
+                            "Declarative Partitioning": true,
+                            "List, Range, and Hash Partitioning": true,
+                            "Foreign Data Wrappers (FDW) for Federated Access": true,
+                            "Citus Extension for Sharding": true
+                        },
+                        "ORM and Application Integration": {
+                            "Using PostgreSQL with Sequelize, Prisma, TypeORM": true,
+                            "Query Builders vs Raw SQL": true,
+                            "PostgreSQL with Node.js, Python (psycopg2, SQLAlchemy)": true,
+                            "Connection Pooling and Transactions in Code": true
+                        },
+                        "Analysis & Applications": {
+                            "Query Optimization Techniques": true,
+                            "Real-World Use Cases (Banking, Analytics, WebApps)": true,
+                            "Problem Links & Practice Sets": true
+                        },
+                        "Query Planning and Optimization": {
+                            "PostgreSQL Cost-Based Optimizer": true,
+                            "Statistics Collection and Usage": true,
+                            "Join Order and Rewriting Heuristics": true,
+                            "Index Scan vs Sequential Scan Trade-offs": true,
+                            "Parallel Query Execution": true
+                        },
+                        "Write-Ahead Logging and Internals": {
+                            "What is WAL and How it Works": true,
+                            "WAL Archiving and Log Shipping": true,
+                            "WAL Impact on Crash Recovery and PITR": true
+                        },
+                        "Monitoring and Observability": {
+                            "pg_stat_activity and pg_stat_statements": true,
+                            "Tracking Long-Running Queries": true,
+                            "Monitoring Locks and Wait Events": true,
+                            "Prometheus + PostgreSQL Exporter Integration": true
+                        },
+                        "Advanced Security": {
+                            "SSL/TLS Encryption for Client Connections": true,
+                            "Audit Logging with pgaudit Extension": true,
+                            "Backup Encryption and Secure Vaults": true
+                        },
+                        "PostgreSQL in Production Systems": {
+                            "Deploying on AWS RDS, GCP Cloud SQL": true,
+                            "Running PostgreSQL in Docker and Kubernetes": true,
+                            "Load Testing with pgbench": true,
+                            "Disaster Recovery Planning": true
+                        },
+                        "PostgreSQL in System Design": {
+                            "Read vs Write Scaling Strategies": true,
+                            "Choosing SQL vs NoSQL (PostgreSQL vs MongoDB)": true,
+                            "Event Sourcing and CQRS with PostgreSQL": true,
+                            "Design Patterns (e.g. Outbox, Saga, Foreign Key Tradeoffs)": true
                         }
                     },
                     "MySQL": {
