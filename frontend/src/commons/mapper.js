@@ -4218,11 +4218,25 @@ const mapper = {
                         }
                         ,
                         "Exception Handling": {
+                            "___urlPath___": "exception-handling",
                             "Fundamentals of Exceptions": {
-                                "What is an Exception?": true,
-                                "Types of Errors – Syntax Error vs Runtime Error": true,
-                                "Throwable Hierarchy – Error, Exception, RuntimeException": true,
-                                "Checked vs Unchecked Exceptions": true
+                                "___urlPath___": "fundamentals-of-exceptions",
+                                "What is an Exception?": {
+                                    "___urlPath___": "what-is-an-exception",
+                                    "___md___": 1107
+                                },
+                                "Types of Errors – Syntax Error vs Runtime Error": {
+                                    "___urlPath___": "types-of-errors-syntax-error-vs-runtime-error",
+                                    "___md___": 1108
+                                },
+                                "Throwable Hierarchy – Error, Exception, RuntimeException": {
+                                    "___urlPath___": "throwable-hierarchy-error-exception-runtimeexception",
+                                    "___md___": 1109
+                                },
+                                "Checked vs Unchecked Exceptions": {
+                                    "___urlPath___": "checked-vs-unchecked-exceptions",
+                                    "___md___": 1110
+                                }
                             },
                             "Built-in Exception Classes": {
                                 "Common Checked Exceptions (IOException, SQLException)": true,
@@ -4237,6 +4251,7 @@ const mapper = {
                                 "Nested try-catch and try-with-resources": true
                             },
                             "Custom Exceptions": {
+                                "___urlPath___": "custom-exceptions",
                                 "Creating User-Defined Exception Classes": true,
                                 "Extending Exception vs RuntimeException": true,
                                 "Best Practices for Naming and Design": true
@@ -5284,14 +5299,121 @@ const mapper = {
 
                 },
                 "Spring, Node.js, and Express.js": {
-                    "Spring Framework": {
-                        "Introduction to Spring": true,
-                        "Spring Core (Dependency Injection)": true,
-                        "Spring Boot for Rapid Development": true,
-                        "Spring MVC (Model-View-Controller)": true,
-                        "Building RESTful APIs with Spring Boot": true,
-                        "Spring Security for Authentication and Authorization": true
-                    },
+                    "Spring Ecosystem": {
+                        "___urlPath___": "spring-ecosystem",
+                        "Spring Core": {
+                            "___urlPath___": "spring-core",
+                            "Overview of Spring Ecosystem": true,
+                            "Inversion of Control (IoC) and Dependency Injection (DI)": true,
+                            "Bean Lifecycle and Scopes": true,
+                            "Annotation-based and Java-based Configuration": true,
+                            "Property Source Resolution and Environment Abstraction": true,
+                            "FactoryBeans and Custom BeanPostProcessors": true
+                        },
+                        "Spring Boot": {
+                            "Auto-configuration and Spring Boot Starters": true,
+                            "Spring Boot Actuator for Monitoring and Metrics": true,
+                            "Spring Profiles for Environment Management": true,
+                            "Customizing Auto-configuration with `@Conditional` Annotations": true,
+                            "External Configuration (YAML, Properties, ENV Vars, Config Server)": true,
+                            "Spring Boot CLI and DevTools": true
+                        },
+                        "Spring MVC and REST": {
+                            "DispatcherServlet and Request Lifecycle": true,
+                            "Controller Annotations (`@RestController`, `@RequestMapping`, etc.)": true,
+                            "Request & Response Body Mapping with Jackson / Gson": true,
+                            "Validation with Hibernate Validator and `@Valid`": true,
+                            "Exception Handling with `@ControllerAdvice` and `@ExceptionHandler`": true,
+                            "Custom Interceptors, Filters, and HandlerMethodArgumentResolvers": true
+                        },
+                        "Spring Data and Persistence": {
+                            "Spring Data JPA and Repositories": true,
+                            "Entity Relationships and Lazy/Eager Loading": true,
+                            "Pagination, Sorting, and Custom Queries": true,
+                            "Transactions with `@Transactional` and Propagation Strategies": true,
+                            "Connection Pooling with HikariCP": true,
+                            "Using Flyway or Liquibase for Schema Migration": true
+                        },
+                        "Spring Security": {
+                            "Security Filters and FilterChainProxy": true,
+                            "Authentication and Authorization with Roles and Permissions": true,
+                            "JWT and OAuth2 Resource Server Integration": true,
+                            "Custom AuthenticationProvider and UserDetailsService": true,
+                            "CSRF, CORS, and Session Management": true,
+                            "Method-Level Security with `@PreAuthorize` and SpEL": true
+                        },
+                        "Spring WebFlux (Reactive Programming)": {
+                            "___urlPath___": "spring-webflux",
+                            "Reactive Streams, Mono, and Flux": {
+                                "___urlPath___": "reactive-streams-mono-flux",
+                                "___md___": 1111
+                            },
+                            "Functional Endpoints vs Annotated Controllers": {
+                                "___urlPath___": "functional-endpoints-vs-annotated-controllers",
+                                "___md___": 1112
+                            },
+                            "Reactive Repositories and MongoDB Integration": {
+                                "___urlPath___": "reactive-repositories-mongodb",
+                                "___md___": 1113
+
+                            },
+                            "Backpressure Handling and Scheduler Strategies": {
+                                "___urlPath___": "backpressure-scheduler-strategies",
+                                "___md___": 1114
+                            },
+                            "Testing Reactive Applications with StepVerifier": true
+                        },
+                        "Spring AOP (Aspect-Oriented Programming)": {
+                            "Cross-Cutting Concerns and AOP Use Cases": true,
+                            "Defining Aspects, Pointcuts, and Advices": true,
+                            "Annotation and XML-Based AOP Configuration": true,
+                            "Transaction Management with AOP": true
+                        },
+                        "Spring Cloud and Distributed Systems": {
+                            "Spring Cloud Config for Centralized Configuration": true,
+                            "Service Discovery with Eureka or Consul": true,
+                            "Client-side Load Balancing with Spring Cloud LoadBalancer": true,
+                            "Declarative REST Clients with OpenFeign": true,
+                            "Circuit Breaker Patterns with Resilience4j": true,
+                            "Distributed Tracing with Sleuth and Zipkin": true
+                        },
+                        "Spring and Messaging": {
+                            "Spring for Apache Kafka": true,
+                            "Producer/Consumer Configuration and Tuning": true,
+                            "Kafka Template and MessageListenerContainer": true,
+                            "Transactional Kafka Messaging": true,
+                            "Dead Letter Topics and Retry Strategies": true
+                        },
+                        "Spring and GraphQL": {
+                            "Spring for GraphQL Overview": true,
+                            "Schema-first vs Code-first Approach": true,
+                            "DataFetchers, Resolvers, and Controllers": true,
+                            "Security in GraphQL APIs": true,
+                            "N+1 Problem and Batch Mapping with Dataloader": true
+                        },
+                        "Spring Testing and QA": {
+                            "Unit Testing with JUnit 5 and Mockito": true,
+                            "Spring Boot Test and `@WebMvcTest`, `@DataJpaTest`": true,
+                            "Integration Testing with Testcontainers": true,
+                            "MockMvc and RestAssured for API Testing": true,
+                            "Contract Testing with Spring Cloud Contract": true
+                        },
+                        "Spring DevOps, Observability, and Production Readiness": {
+                            "Spring Boot Actuator with Prometheus and Grafana": true,
+                            "Health Checks, Metrics, and Custom Endpoints": true,
+                            "Structured Logging with Logback/Log4j2 + MDC": true,
+                            "Deploying Spring Boot to Kubernetes and Docker": true,
+                            "Zero-Downtime Deployments with Rolling Updates": true
+                        },
+                        "Architecture and Design Patterns in Spring": {
+                            "Clean Architecture and Hexagonal Design": true,
+                            "Domain-Driven Design (DDD) with Aggregates and Repositories": true,
+                            "Event-Driven Architecture using Domain Events": true,
+                            "CQRS and Event Sourcing in Spring": true,
+                            "Multi-tenancy Support with Spring Boot": true
+                        }
+                    }
+                    ,
                     "Node.js": {
                         "Introduction to Node.js": true,
                         "Node.js Architecture": true,
@@ -7262,31 +7384,64 @@ const mapper = {
                 "Orchestration (Kubernetes)": {
                     "___urlPath___": "kubernetes",
                     "Introduction to Kubernetes": {
-                        "___urlPath___": "introduction-to-kubernetes",
-                        "___md___": 276
+                        "Overvew": {
+                            "___urlPath___": "kubernetes-overview",
+                            "___md___": 276
+                        },
+                        "What is Kubernetes and Why Use It": true,
+                        "Container Orchestration Fundamentals": true,
+                        "Kubernetes Use Cases in FAANG-scale Systems": true
                     },
                     "Kubernetes Architecture": {
-                        "Master and Worker Nodes": true,
-                        "Pods and Deployments": true,
-                        "Services and Networking": true
+                        "Control Plane Components (API Server, Scheduler, Controller Manager, etcd)": true,
+                        "Node Components (kubelet, kube-proxy, container runtime)": true,
+                        "Cluster Topology and Design Patterns (HA, Multi-AZ)": true,
+                        "Networking in Kubernetes (CNI, DNS, Services, Ingress Controllers)": true
                     },
-                    "Kubernetes Basics": {
-                        "Setting Up a Local Cluster (Minikube)": true,
-                        "Deploying Applications to Kubernetes": true,
-                        "Scaling Applications": true
+                    "Kubernetes Essentials": {
+                        "Creating a Cluster (Minikube, Kind, kubeadm, GKE/EKS/AKS)": true,
+                        "Pods, Deployments, StatefulSets, DaemonSets, and Jobs": true,
+                        "Services (ClusterIP, NodePort, LoadBalancer) and Ingress Controllers": true,
+                        "Namespaces, Labels, and Annotations": true,
+                        "Taints, Tolerations, and Node Selectors": true
                     },
-                    "Advanced Kubernetes": {
-                        "Helm Charts": true,
-                        "Kubernetes Secrets and ConfigMaps": true,
-                        "Auto-scaling with Horizontal Pod Autoscaler": true,
-                        "Monitoring Kubernetes with Prometheus and Grafana": true
+                    "Kubernetes in Practice": {
+                        "Helm Charts (Custom Helm, Helmfile, Secrets Management)": true,
+                        "Secrets and ConfigMaps Best Practices": true,
+                        "Horizontal and Vertical Pod Autoscaling (HPA/VPA)": true,
+                        "Resource Requests and Limits (CPU/Memory Management)": true,
+                        "Affinity, Anti-Affinity and Topology Spreading": true,
+                        "PodDisruptionBudgets and Availability Guarantees": true
+                    },
+                    "Security and RBAC": {
+                        "Kubernetes RBAC (Roles, ClusterRoles, Bindings)": true,
+                        "Network Policies and Pod Security Policies (PSPs/PSS)": true,
+                        "Admission Controllers (OPA/Gatekeeper, Kyverno)": true,
+                        "SecComp, AppArmor, and Runtime Security": true,
+                        "Secrets Encryption and External Secret Stores (Vault/SealedSecrets)": true
                     },
                     "Kubernetes in Production": {
-                        "Rolling Updates and Rollbacks": true,
-                        "Cluster Monitoring and Logging": true,
-                        "Security Best Practices for Kubernetes": true
+                        "Rolling Updates, Blue-Green Deployments, and Canary Releases": true,
+                        "Cluster Monitoring with Prometheus, Grafana, and Alertmanager": true,
+                        "Centralized Logging with Fluent Bit / Fluentd / ELK / Loki": true,
+                        "Audit Logging and Event Tracing": true,
+                        "Node and Pod Lifecycle Management": true,
+                        "Backup and Disaster Recovery Strategies (Velero, etcd snapshots)": true
+                    },
+                    "Scaling and Multi-Tenancy": {
+                        "Cluster Autoscaler and Node Pool Management": true,
+                        "Multi-Tenant Cluster Patterns (Namespaces, Quotas, RBAC)": true,
+                        "Cost Optimization (Spot Nodes, Rightsizing, Resource Quotas)": true,
+                        "Kubernetes Federation and Multi-Cluster Management": true
+                    },
+                    "GitOps and CI/CD Integration": {
+                        "GitOps with ArgoCD and Flux": true,
+                        "Declarative Deployments and Versioned Manifests": true,
+                        "Integrating CI/CD with Helm/Kustomize": true,
+                        "Progressive Delivery (Flagger, Argo Rollouts)": true
                     }
-                },
+                }
+                ,
                 "Cloud Platforms (AWS, Azure, GCP)": {
                     "Introduction to Cloud Platforms": true,
                     "AWS for DevOps": {
