@@ -5364,7 +5364,11 @@ const mapper = {
                             "Testing Reactive Applications with StepVerifier": true
                         },
                         "Spring AOP (Aspect-Oriented Programming)": {
-                            "Cross-Cutting Concerns and AOP Use Cases": true,
+                            "___urlPath___": "spring-aop",
+                            "Cross-Cutting Concerns and AOP Use Cases": {
+                                "___urlPath___": "cross-cutting-concerns-aop-use-cases",
+                                "___md___": 1115
+                            },
                             "Defining Aspects, Pointcuts, and Advices": true,
                             "Annotation and XML-Based AOP Configuration": true,
                             "Transaction Management with AOP": true
