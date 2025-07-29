@@ -5369,9 +5369,18 @@ const mapper = {
                                 "___urlPath___": "cross-cutting-concerns-aop-use-cases",
                                 "___md___": 1115
                             },
-                            "Defining Aspects, Pointcuts, and Advices": true,
-                            "Annotation and XML-Based AOP Configuration": true,
-                            "Transaction Management with AOP": true
+                            "Defining Aspects, Pointcuts, and Advices": {
+                                "___urlPath___": "defining-aspects-pointcuts-advices",
+                                "___md___": 1116
+                            },
+                            "Annotation and XML-Based AOP Configuration": {
+                                "___urlPath___": "annotation-xml-aop-configuration",
+                                "___md___": 1117
+                            },
+                            "Transaction Management with AOP": {
+                                "___urlPath___": "transaction-management-aop",
+                                "___md___": 1118
+                            }
                         },
                         "Spring Cloud and Distributed Systems": {
                             "Spring Cloud Config for Centralized Configuration": true,
