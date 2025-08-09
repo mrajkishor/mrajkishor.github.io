@@ -62,7 +62,9 @@ const preprocessMarkdown = (content) => {
 
         // Step 4: Format image Markdown syntax (![alt text](image-path))
         .replace(/!\[([^\]]*?)\]\(([^)]+)\)/g, (_, altText, imagePath) => {
-            const updatedPath = `markdowns/${imagePath}`;
+            const basePath = process.env.PUBLIC_URL || ''
+            const updatedPath = `${basePath}/markdowns/${imagePath}`;
+            // const updatedPath = `notes/markdowns/${imagePath}`;
             return `<div style="text-align: center;"><img src="${updatedPath}" alt="${altText}" style="max-width: 100%; border: solid thin #eaeaea; borderRadius: 10px; padding: 5px; " /></div>`;
         })
         // Step 5: Convert escaped LaTeX brackets \[math\] into $$math$$ (block equations)
@@ -216,7 +218,10 @@ const MarkdownPage = ({ wrapperRef }) => {
         if (fileNumber) {
             const fetchMarkdown = async () => {
                 try {
-                    const response = await fetch(`/markdowns/${fileNumber}.md`);
+                    // const response = await fetch(`/notes/markdowns/${fileNumber}.md`);
+                    const basePath = process.env.PUBLIC_URL || '';
+                    const response = await fetch(`${basePath}/markdowns/${fileNumber}.md`);
+
                     const contentType = response.headers.get("Content-Type");
                     if (!response.ok || !contentType || !contentType.includes("text/markdown")) {
                         throw new Error("Markdown file not found or invalid response");

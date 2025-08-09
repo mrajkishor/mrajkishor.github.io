@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start:app": "cd app && npm run dev",
     "build:app": "cd app && npm run build",
     "copy:dist": "cpx \"app/dist/**/*\" ./",
     "prepare:commit": "npm run build:app && npm run copy:dist && git add .",
