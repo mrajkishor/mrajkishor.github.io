@@ -3664,9 +3664,17 @@ const mapper = {
                                 "Input Sanitization and Escaping": true
                             },
                             "React Native": {
+                                "___urlPath___": "react-native",
                                 "Installation & Setup": {
-                                    "Environment Setup (macOS, Windows, Linux)": true,
-                                    "Using Expo CLI vs React Native CLI": true,
+                                    "___urlPath___": "installation-and-setup",
+                                    "Environment Setup (macOS, Windows, Linux)": {
+                                        "___urlPath___": "environment-setup",
+                                        "___md___": 1156
+                                    },
+                                    "Using Expo CLI vs React Native CLI": {
+                                        "___urlPath___": "using-expo-cli-vs-react-native-cli",
+                                        "___md___": 1157
+                                    },
                                     "Installing Dependencies with npm/yarn": true,
                                     "Running on Android Emulator and iOS Simulator": true,
                                     "Fast Refresh and Debugging Tools": true
@@ -3684,28 +3692,34 @@ const mapper = {
                                     "Component Lifecycle with Hooks": true,
                                     "StyleSheet API and Flexbox Layout": true,
                                     "Platform-Specific Code (Platform, Platform.OS)": true,
-                                    "Handling Assets (Images, Fonts, SVGs)": true
+                                    "Handling Assets (Images, Fonts, SVGs)": true,
+                                    "Threads Model (JS/UI/Render Threads)": true
                                 },
                                 "Navigation": {
                                     "Stack, Tab, and Drawer Navigation": true,
                                     "React Navigation v6 Deep Dive": true,
                                     "Navigation Params and Route Hooks": true,
                                     "Screen Transitions and Modals": true,
-                                    "Authentication Flows and Protected Routes": true
+                                    "Authentication Flows and Protected Routes": true,
+                                    "Deep Linking and Universal Links": true,
+                                    "Navigation State Restoration": true
                                 },
                                 "State Management": {
                                     "useState, useContext, useReducer": true,
                                     "Global State with Redux Toolkit": true,
                                     "Recoil, Zustand, and Jotai Integrations": true,
                                     "Redux Middleware (Thunk, Saga)": true,
-                                    "Persisting State with redux-persist": true
+                                    "Persisting State with redux-persist": true,
+                                    "Feature Flags & Remote Config (LaunchDarkly, Firebase)": true
                                 },
                                 "Networking & APIs": {
                                     "Using Fetch and Axios": true,
                                     "Calling RESTful APIs": true,
                                     "React Query / TanStack Query for Data Caching": true,
                                     "Handling Network Errors and Loading States": true,
-                                    "API Integration Patterns (Service Layer, Repositories)": true
+                                    "API Integration Patterns (Service Layer, Repositories)": true,
+                                    "GraphQL Queries, Mutations, and Subscriptions": true,
+                                    "API Versioning, Idempotency, and Rate Limiting": true
                                 },
                                 "Forms & Validation": {
                                     "Controlled vs Uncontrolled Inputs": true,
@@ -3726,53 +3740,83 @@ const mapper = {
                                     "FlatList and SectionList Optimization": true,
                                     "Avoiding Unnecessary Re-Renders": true,
                                     "useFocusEffect and lazy loading screens": true,
-                                    "Profiling with Flipper and Hermes": true
+                                    "Profiling with Flipper and Hermes": true,
+                                    "Cold Start and TTI Optimization": true,
+                                    "Hermes Bytecode Precompilation": true,
+                                    "Memory Leak Detection (Instruments, Profiler)": true,
+                                    "Large Image/Video Optimization and Caching": true
                                 },
                                 "Animations & Gestures": {
                                     "LayoutAnimation and Animated API": true,
                                     "Reanimated 2 Basics and Advanced Use": true,
                                     "GestureHandler with Pan, Swipe, Tap": true,
                                     "Shared Element Transitions": true,
-                                    "Building Smooth UI Interactions": true
+                                    "Building Smooth UI Interactions": true,
+                                    "Worklets and Off-JS Thread Animations": true
                                 },
                                 "Offline & Storage": {
                                     "AsyncStorage / MMKV for Local Storage": true,
                                     "Secure Storage (Keychain/Keystore)": true,
                                     "Offline Data Sync Patterns": true,
-                                    "SQLite and Realm DB Integrations": true
+                                    "SQLite and Realm DB Integrations": true,
+                                    "Conflict Resolution Strategies": true
                                 },
                                 "Testing & Debugging": {
                                     "Unit Testing with Jest": true,
                                     "Integration Testing with React Native Testing Library": true,
                                     "E2E Testing with Detox": true,
                                     "Snapshot Testing": true,
-                                    "Debugging with Flipper, Chrome, and React DevTools": true
+                                    "Debugging with Flipper, Chrome, and React DevTools": true,
+                                    "Crash Reporting and Monitoring (Sentry, Crashlytics)": true,
+                                    "ANR/Crash Rate Analysis": true
                                 },
                                 "Native Modules & Bridging": {
                                     "Linking Native Modules (iOS & Android)": true,
                                     "Writing Native Modules in Java/Kotlin and Swift/Obj-C": true,
                                     "Permissions Handling": true,
-                                    "Custom View Components in Native Code": true
+                                    "Custom View Components in Native Code": true,
+                                    "JSI and TurboModules": true,
+                                    "Fabric Renderer and Codegen": true
                                 },
                                 "Build & Release": {
                                     "Debug vs Release Builds": true,
                                     "App Signing and Keystore Management": true,
                                     "Publishing to Google Play Store": true,
                                     "Publishing to Apple App Store": true,
-                                    "OTA Updates with Expo EAS / CodePush": true
+                                    "OTA Updates with Expo EAS / CodePush": true,
+                                    "Multi-Environment Release Flows": true,
+                                    "Phased Rollouts and Rollback Strategies": true
                                 },
                                 "CI/CD & DevOps": {
                                     "Fastlane Integration for iOS/Android Builds": true,
                                     "GitHub Actions / GitLab CI for Mobile Projects": true,
                                     "Detox in CI Pipelines": true,
-                                    "EAS Build Pipelines (Expo Managed & Bare)": true
+                                    "EAS Build Pipelines (Expo Managed & Bare)": true,
+                                    "Secrets Management in CI/CD": true
                                 },
                                 "Enterprise Patterns": {
                                     "Monorepo Structure with Lerna/Nx/Turborepo": true,
                                     "Micro-Frontend/MFE with RN Navigation": true,
                                     "Modular Architecture (Domain, Feature, Core layers)": true,
                                     "Internationalization (i18n, react-i18next)": true,
-                                    "Accessibility and Localization": true
+                                    "Accessibility and Localization": true,
+                                    "Accessibility for Screen Readers, Contrast, Focus Management": true
+                                },
+                                "Platform Capabilities": {
+                                    "Push Notifications (FCM/APNs)": true,
+                                    "Notification Channels and Actionable Notifications": true,
+                                    "Background Tasks and Headless JS": true,
+                                    "Background Location and Fetch": true,
+                                    "In-App Purchases and Subscriptions": true,
+                                    "Auth Flows with OAuth/OIDC, PKCE, Biometrics": true
+                                },
+                                "Security & Compliance": {
+                                    "SSL Pinning": true,
+                                    "Jailbreak/Root Detection": true,
+                                    "ProGuard/R8 Obfuscation": true,
+                                    "Play Integrity API / SafetyNet": true,
+                                    "Apple Privacy Manifests and ATT Prompts": true,
+                                    "GDPR/CCPA Compliance in Mobile Apps": true
                                 }
                             }
                             ,
