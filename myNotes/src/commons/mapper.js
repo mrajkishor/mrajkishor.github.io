@@ -884,9 +884,307 @@ const mapper = {
                                 "___urlPath___": "functional-vs-oop-js",
                                 "___md___": 9006
                             },
+                            "JavaScript Deep Dive": {
+                                "___urlPath___": "javascript-deep-dive",
+                                "Introduction to JavaScript": {
+                                    "___urlPath___": "introduction-to-javascript",
+                                    "What is JavaScript?": true,
+                                    "History and Evolution": true,
+                                    "Language Translators: Compiler, Interpreter, Assembler": true,
+                                    "JavaScript Engines": {
+                                        "V8 Engine": true,
+                                        "SpiderMonkey": true,
+                                        "ChakraCore": true,
+                                        "JavaScriptCore": true
+                                    },
+                                    "ECMAScript & TC39 Proposals": true,
+                                    "Setting up the Environment": {
+                                        "Browser Console": true,
+                                        "Code Editors": true,
+                                        "Online IDEs": true
+                                    }
+                                },
+
+                                "Core Concepts": {
+                                    "___urlPath___": "core-concepts",
+                                    "Execution Context & Lexical Environment": true,
+                                    "Call Stack & Memory Heap": true,
+                                    "Hoisting Mechanics": true,
+                                    "Scope Chain & Variable Environment": true,
+                                    "this Binding Rules": {
+                                        "Default Binding": true,
+                                        "Implicit Binding": true,
+                                        "Explicit Binding (call, apply, bind)": true,
+                                        "Arrow Functions": true
+                                    },
+                                    "Primitive vs Reference Types": true,
+                                    "Deep vs Shallow Copy": true,
+                                    "Equality in JS": {
+                                        "== vs ===": true,
+                                        "Object.is": true
+                                    }
+                                },
+
+                                "Functions": {
+                                    "Function Declaration vs Expression": true,
+                                    "Arrow Functions & Lexical this": true,
+                                    "Default Parameters": true,
+                                    "Rest & Spread Operators": true,
+                                    "Closures in Depth": true,
+                                    "IIFE (Immediately Invoked Function Expressions)": true,
+                                    "Higher-Order Functions": {
+                                        "map, filter, reduce": true,
+                                        "forEach": true
+                                    },
+                                    "Currying & Partial Application": true,
+                                    "Function Composition": true
+                                },
+
+                                "Objects and Prototypes": {
+                                    "Creating & Accessing Objects": true,
+                                    "Property Descriptors & defineProperty": true,
+                                    "Prototype Chain & Inheritance": true,
+                                    "Object.create vs Class Syntax": true,
+                                    "Mixins": true,
+                                    "Object Utilities": {
+                                        "assign, keys, values, entries": true,
+                                        "freeze, seal, preventExtensions": true
+                                    },
+                                    "getPrototypeOf vs setPrototypeOf": true
+                                },
+
+                                "Asynchronous JavaScript": {
+                                    "Event Loop Deep Dive": {
+                                        "Microtasks vs Macrotasks": true,
+                                        "Task Queue & Job Queue": true
+                                    },
+                                    "Callbacks & Callback Hell": true,
+                                    "Promises": {
+                                        "Promise States & Resolution": true,
+                                        "Chaining & Error Handling": true,
+                                        "Promise.all / allSettled / race / any": true
+                                    },
+                                    "async/await": true,
+                                    "Advanced Async": {
+                                        "Web Workers": true,
+                                        "MessageChannel": true,
+                                        "BroadcastChannel": true
+                                    }
+                                },
+
+                                "DOM & Browser APIs": {
+                                    "DOM Manipulation": {
+                                        "Selecting & Updating Elements": true,
+                                        "innerHTML vs textContent": true,
+                                        "setAttribute / getAttribute": true,
+                                        "add/remove classes": true
+                                    },
+                                    "Event Handling & Delegation": true,
+                                    "Bubbling & Capturing": true,
+                                    "IntersectionObserver API": true,
+                                    "MutationObserver API": true,
+                                    "Canvas API": true
+                                },
+
+                                "Error Handling & Debugging": {
+                                    "Error Types": {
+                                        "SyntaxError": true,
+                                        "ReferenceError": true,
+                                        "TypeError": true,
+                                        "RangeError": true
+                                    },
+                                    "try/catch/finally": true,
+                                    "Custom Errors": true,
+                                    "Error Boundaries in JS Apps": true,
+                                    "Debugging with DevTools": {
+                                        "Breakpoints & Watchers": true,
+                                        "Performance Tab": true,
+                                        "Memory Tab": true
+                                    }
+                                },
+
+                                "Advanced JavaScript": {
+                                    "Modules": {
+                                        "Export/Import": true,
+                                        "Dynamic Imports": true
+                                    },
+                                    "Design Patterns": {
+                                        "Module Pattern": true,
+                                        "Revealing Module Pattern": true,
+                                        "Observer Pattern": true,
+                                        "Factory Pattern": true,
+                                        "Singleton Pattern": true
+                                    },
+                                    "Iterators & Generators": true,
+                                    "Symbol & Well-Known Symbols": true,
+                                    "Reflect API": true,
+                                    "Proxy API": true,
+                                    "WeakMap & WeakSet": true
+                                },
+
+                                "Performance Optimization": {
+                                    "Debounce & Throttle": true,
+                                    "Lazy Loading": true,
+                                    "Code Splitting": true,
+                                    "Tree Shaking": true,
+                                    "Reflow vs Repaint": true,
+                                    "Memory Leaks & Prevention": true,
+                                    "Big-O Analysis for Common JS Ops": true
+                                },
+
+                                "JavaScript Internals": {
+                                    "Hidden Classes & Inline Caching": true,
+                                    "JIT Compilation (Ignition, TurboFan)": true,
+                                    "Garbage Collection Algorithms": true,
+                                    "Optimizing for V8": true
+                                },
+
+                                "Polyfills & Custom Implementations": {
+                                    "Custom Array.map": true,
+                                    "Custom bind / call / apply": true,
+                                    "Custom Promise.all": true,
+                                    "Custom Debounce / Throttle": true
+                                },
+
+                                "Testing": {
+                                    "Unit Testing (Jest, Mocha)": true,
+                                    "Integration Testing": true,
+                                    "E2E Testing (Cypress, Puppeteer)": true
+                                },
+
+                                "JavaScript for Interviews": {
+                                    "DSA in JavaScript": {
+                                        "Arrays & Strings": true,
+                                        "Recursion": true,
+                                        "Sliding Window": true,
+                                        "Two Pointers": true,
+                                        "HashMaps, Sets": true,
+                                        "Graphs (BFS/DFS)": true
+                                    },
+                                    "System Design in JS Context": {
+                                        "Frontend Architecture": true,
+                                        "Event-driven Systems": true
+                                    },
+                                    "Tricky JS Questions": {
+                                        "Event Loop gotchas": true,
+                                        "this binding edge cases": true,
+                                        "Closure traps": true
+                                    }
+                                },
+                                "CIQnA": {
+                                    "___urlPath___": "ciqna",
+                                    "Overview": {
+                                        "___urlPath___": "overview",
+                                        "___md___": 1153
+                                    },
+                                    "Question Bank - Part 1": {
+                                        "___urlPath___": "q-bank-part-1",
+                                        "___md___": 1154
+                                    }
+                                }
+                            },
                             "TypeScript Deep Dive": {
                                 "___urlPath___": "typescript-advanced",
-                                "___md___": 9007
+
+                                "Core TypeScript Foundations": {
+                                    "___urlPath___": "core-foundations",
+                                    "Type Annotations & Inference": true,
+                                    "Primitive vs Reference Types": true,
+                                    "Union, Intersection, and Literal Types": true,
+                                    "Type Aliases vs Interfaces": true,
+                                    "Enums & Const Enums": true,
+                                    "Type Assertions & Non-Null Assertions": true,
+                                    "Type Narrowing & Control Flow Analysis": true
+                                },
+
+                                "Advanced Type System": {
+                                    "___urlPath___": "advanced-types",
+                                    "Generics (Constraints, Defaults, Inference)": true,
+                                    "Mapped Types (Partial, Readonly, Record, etc.)": true,
+                                    "Conditional Types & Infer Keyword": true,
+                                    "Discriminated Unions": true,
+                                    "Utility Types (Pick, Omit, Exclude, Extract)": true,
+                                    "Template Literal Types": true,
+                                    "Recursive & Deep Types": true
+                                },
+
+                                "OOP & Design in TypeScript": {
+                                    "___urlPath___": "oop-design",
+                                    "Classes & Access Modifiers": true,
+                                    "Abstract Classes vs Interfaces": true,
+                                    "Inheritance & Polymorphism": true,
+                                    "Static vs Instance Members": true,
+                                    "Mixins in TypeScript": true
+                                },
+
+                                "TypeScript with JavaScript Ecosystem": {
+                                    "___urlPath___": "ts-js-ecosystem",
+                                    "Interoperability with JS Libraries": true,
+                                    "DefinitelyTyped & @types Packages": true,
+                                    "Module Resolution & Path Mapping": true,
+                                    "CommonJS vs ES Modules in TS": true
+                                },
+
+                                "TypeScript in React & Frontend": {
+                                    "___urlPath___": "ts-in-react",
+                                    "Typing React Props & State": true,
+                                    "Function & Class Components Typing": true,
+                                    "Typing Hooks (useState, useReducer, useRef)": true,
+                                    "Typing Context API": true,
+                                    "Typing Events & Forms": true,
+                                    "Higher-Order Components & Render Props": true
+                                },
+
+                                "Error Handling & Safety": {
+                                    "___urlPath___": "error-handling",
+                                    "Strict Mode & StrictNullChecks": true,
+                                    "Unknown vs Any vs Never": true,
+                                    "Exhaustiveness Checking with Never": true,
+                                    "Error Boundaries Typing": true
+                                },
+
+                                "Compiler & Build Config": {
+                                    "___urlPath___": "compiler-build",
+                                    "tsconfig.json Deep Dive": true,
+                                    "Compiler Options (lib, target, module)": true,
+                                    "Incremental & Project References": true,
+                                    "Source Maps & Debugging": true
+                                },
+
+                                "Testing & Type Safety": {
+                                    "___urlPath___": "testing-types",
+                                    "Type-Safe Unit Tests with Jest": true,
+                                    "Testing Library Typings": true,
+                                    "Mocking with TypeScript": true,
+                                    "Type-Driven TDD": true
+                                },
+
+                                "Interview-Focused Additions": {
+                                    "___urlPath___": "interview-focused",
+                                    "Type-Level Programming": {
+                                        "___urlPath___": "type-level-programming",
+                                        "Implement Utility Types from Scratch": true,
+                                        "Type Guards & User-Defined Guards": true,
+                                        "Function Overloads": true,
+                                        "Variadic Tuple Types": true
+                                    },
+                                    "System Design in TypeScript": {
+                                        "___urlPath___": "system-design-ts",
+                                        "Designing Type-Safe APIs": true,
+                                        "Type-Safe State Management": true,
+                                        "Domain Modeling with Types": true
+                                    },
+                                    "DSA with TypeScript": {
+                                        "___urlPath___": "dsa-typescript",
+                                        "Arrays & Strings": true,
+                                        "Recursion & Backtracking": true,
+                                        "Trees & Graphs (BFS, DFS)": true,
+                                        "Sliding Window & Two Pointers": true,
+                                        "HashMaps, Sets, Stacks, Queues": true,
+                                        "Dynamic Programming (Memo, Tabulation)": true,
+                                        "LeetCode-style Problem Solving in TS": true
+                                    }
+                                }
                             }
                         },
                         "Core Frontend Frameworks (React + Ecosystem)": {
@@ -8833,7 +9131,10 @@ const mapper = {
                                 "___urlPath___": "normal-forms",
                                 "___md___": 1016
                             },
-                            "Indexes, Unique Constraints, and Auto Increment": true,
+                            "Indexes, Unique Constraints, and Auto Increment": {
+                                "___urlPath___": "indexes-unique-contraints-and-auto-increment",
+                                "___md___": 1155
+                            },
                             "Choosing Appropriate Data Types": true
                         },
                         "Stored Procedures & Functions": {
@@ -8913,6 +9214,65 @@ const mapper = {
                             "Google Cloud SQL, Azure Database for MySQL": true,
                             "Automated Backups and Monitoring": true,
                             "Failover and Multi-AZ Configuration": true
+                        },
+                        "Advanced": {
+                            "Advanced Query Optimization": {
+                                "Execution Plan Internals": true,
+                                "Cardinality Estimation Pitfalls": true,
+                                "Adaptive Query Optimization": true,
+                                "Join Buffer, Sort Buffer, and Temp Table Memory Tuning": true
+                            },
+                            "Advanced Indexing Techniques": {
+                                "Partial and Functional Indexes": true,
+                                "Prefix Indexes for Large Strings": true,
+                                "Invisible Indexes for Safe Testing": true,
+                                "Full-Text Search vs External Search Engines": true,
+                                "SPATIAL Indexes for GIS Data": true
+                            },
+                            "Advanced Replication & Scaling": {
+                                "Multi-Source Replication": true,
+                                "Replication Lag Detection and Management": true,
+                                "Group Replication and InnoDB Cluster": true,
+                                "Read Scaling Patterns with ProxySQL and Vitess": true,
+                                "Read-After-Write Consistency Handling": true
+                            },
+                            "Sharding at Scale": {
+                                "Shard Key Design and Hotspot Avoidance": true,
+                                "Online Resharding with Zero Downtime": true,
+                                "Global Secondary Indexes across Shards": true
+                            },
+                            "High-Concurrency Handling": {
+                                "Gap Locks and Next-Key Locks in InnoDB": true,
+                                "Phantom Reads in Repeatable Read Isolation": true,
+                                "Lock Monitoring via performance_schema": true,
+                                "Deadlock Detection and Resolution Internals": true
+                            },
+                            "High Availability & Disaster Recovery": {
+                                "Automated Failover with Orchestrator or MHA": true,
+                                "Cross-Region Replication Strategies": true,
+                                "Disaster Simulation and Failover Drills": true
+                            },
+                            "Large Data Volume Management": {
+                                "Partition Management for Billions of Rows": true,
+                                "Archiving and Cold Storage Strategies": true,
+                                "Table and Column Compression Trade-Offs": true
+                            },
+                            "MySQL in Distributed Systems": {
+                                "Schema Versioning in Continuous Deployment": true,
+                                "Eventual Consistency Handling": true,
+                                "Outbox Pattern for Reliable Event Publishing": true
+                            },
+                            "Advanced Troubleshooting": {
+                                "Query Performance Regression Analysis": true,
+                                "InnoDB Buffer Pool Tuning": true,
+                                "Memory Leak Detection in MySQL": true,
+                                "Slow Query Analysis with pt-query-digest": true
+                            },
+                            "Enterprise-Scale Design & Integration": {
+                                "Multi-Tenant Schema Design for SaaS": true,
+                                "OLTP and OLAP Hybrid (HTAP) Design": true,
+                                "Change Data Capture with Kafka and Debezium": true
+                            }
                         }
                     }
 
