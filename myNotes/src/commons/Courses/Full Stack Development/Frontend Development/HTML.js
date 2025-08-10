@@ -42,7 +42,10 @@ export const HTML = {
             "Form Tag and Method Attributes (`action`, `method`, `target`)": true,
             "Input Types (`text`, `email`, `file`, `checkbox`, `radio`, etc.)": true,
             "Form Controls (`<label>`, `<select>`, `<textarea>`, `<button>`)": true,
-            "Form Validation: `required`, `pattern`, `min`, `max`, `novalidate`": true
+            "Form Validation: `required`, `pattern`, `min`, `max`, `novalidate`": true,
+            "HTML5 Constraint Validation API": true,
+            "Autocomplete Optimization (`autocomplete` attribute values)": true,
+            "File Upload Enhancements (`multiple`, `accept`, drag-and-drop basics)": true
         },
         "Tables and Tabular Data": {
             "Table Structure (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)": true,
@@ -66,7 +69,10 @@ export const HTML = {
             "Accessible Rich Internet Applications (ARIA) Attributes": true,
             "Tabindex, Skip Links, and Focus Management": true,
             "Screen Reader Semantics and Landmark Navigation": true,
-            "Form Accessibility (Labels, Descriptions, Errors)": true
+            "Form Accessibility (Labels, Descriptions, Errors)": true,
+            "Advanced ARIA Usage (`aria-live`, `aria-busy`, `aria-atomic`)": true,
+            "Focus Trapping in Modals and Dialogs": true,
+            "Native vs Custom Element Accessibility Trade-offs": true
         },
         "Advanced Topics and APIs": {
             "___urlPath___": "advanced-topics-and-apis",
@@ -76,8 +82,48 @@ export const HTML = {
             "Browser Compatibility and Polyfilling Strategies": {
                 "___urlPath___": "browser-compatibility-and-polyfilling-strategies",
                 "___md___": 1077
-            }
+            },
+            "Cutting-Edge HTML Elements (`<dialog>`, native lazy-loading)": true,
+            "HTML Modules (`<script type='module'>`)": true,
+            "Declarative Shadow DOM": true
+        },
+        "Performance and Rendering Optimization": {
+            "Critical Rendering Path and HTML's Role": true,
+            "Async vs Defer Scripts and DOM Parsing Impact": true,
+            "Resource Hints (`<link rel='preload' prefetch preconnect'>`)": true,
+            "Optimizing DOM Size and Minimizing Reflows/Repaints": true,
+            "HTML’s Role in Core Web Vitals (LCP, CLS, FID)": true
+        },
+        "Security in HTML": {
+            "XSS Prevention via HTML Escaping and Sanitization": true,
+            "Safe Linking (`rel='noopener noreferrer'`)": true,
+            "Iframe Security via `sandbox` Attributes": true,
+            "Content Security Policy (CSP) Basics in HTML": true
+        },
+        "HTML in React / SPA Context": {
+            "Mapping HTML to Virtual DOM and Hydration": true,
+            "Difference Between `id` and `key` in Rendering": true,
+            "Using HTML Semantics for React Accessibility": true,
+            "DangerouslySetInnerHTML and Security Considerations": true
+        },
+        "Internationalization (i18n)": {
+            "`lang` Attribute Best Practices": true,
+            "`dir` Attribute for RTL Languages": true,
+            "Character Encoding (`<meta charset='UTF-8'>`)": true
+        },
+        "Browser Internals and Rendering Lifecycle": {
+            "___urlPath___": "browser-internals-and-rendering-lifecycle",
+            "How Browsers Parse HTML into DOM": {
+                "___urlPath___": "how-browsers-parse-html-into-dom",
+                "___md___": 1158
+            },
+            "Building the CSSOM and Combining with DOM into Render Tree": true,
+            "Layout (Reflow) and Paint Stages": true,
+            "Compositing Layers and GPU Acceleration": true,
+            "Reflow vs Repaint Performance Costs": true,
+            "Impact of HTML Structure on Rendering Pipeline": true,
+            "DOMContentLoaded vs Load Event": true,
+            "How HTML Affects First Contentful Paint (FCP) and Largest Contentful Paint (LCP)": true
         }
     }
 }
-

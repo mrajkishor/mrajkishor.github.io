@@ -18,6 +18,8 @@ import { GoToTopButton } from "./GoToTopButton";
 import Footer from "./Footer";
 import rehypeSlug from "rehype-slug";
 import { isMobile } from 'react-device-detect';
+import remarkBreaks from 'remark-breaks';
+
 
 
 // Preprocess Markdown to wrap ==highlight== in <mark>
@@ -310,7 +312,7 @@ const MarkdownPage = ({ wrapperRef }) => {
                     >
                         {markdown ? (
                             <ReactMarkdown
-                                remarkPlugins={[remarkGfm, remarkMath]}
+                                remarkPlugins={[remarkGfm, remarkMath, remarkBreaks]}
                                 rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
                             >
                                 {markdown}
