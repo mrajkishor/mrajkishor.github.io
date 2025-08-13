@@ -36,7 +36,10 @@ export const HTML = {
             "Image Tag (`<img>`) and Attributes (`src`, `alt`, `loading`)": true,
             "Responsive Images (`srcset`, `sizes`, `picture`)": true,
             "Embedding Audio and Video (`<audio>`, `<video>`, `<source>`)": true,
-            "Iframe Embeds (`<iframe>`, sandboxing, CORS restrictions)": true
+            "Iframe Embeds (`<iframe>`, sandboxing, CORS restrictions)": {
+                "___urlPath___": "iframe-embeds-sandboxing-cors-restrictions",
+                "___md___": 1161
+            }
         },
         "Forms and Input Elements": {
             "Form Tag and Method Attributes (`action`, `method`, `target`)": true,
@@ -109,7 +112,10 @@ export const HTML = {
         "Internationalization (i18n)": {
             "`lang` Attribute Best Practices": true,
             "`dir` Attribute for RTL Languages": true,
-            "Character Encoding (`<meta charset='UTF-8'>`)": true
+            "Character Encoding (`<meta charset='UTF-8'>`)": {
+                "___urlPath___": "character-encoding-meta-charset-utf-8",
+                "___md___": 1160
+            }
         },
         "Browser Internals and Rendering Lifecycle": {
             "___urlPath___": "browser-internals-and-rendering-lifecycle",
@@ -117,7 +123,10 @@ export const HTML = {
                 "___urlPath___": "how-browsers-parse-html-into-dom",
                 "___md___": 1158
             },
-            "Building the CSSOM and Combining with DOM into Render Tree": true,
+            "Building the CSSOM and Combining with DOM into Render Tree": {
+                "___urlPath___": "building-cssom-and-combining-with-dom-into-render-tree",
+                "___md___": 1159
+            },
             "Layout (Reflow) and Paint Stages": true,
             "Compositing Layers and GPU Acceleration": true,
             "Reflow vs Repaint Performance Costs": true,

@@ -260,18 +260,18 @@ const MarkdownPage = ({ wrapperRef }) => {
             <div className={isMobile ? "wooden-background-mb" : "wooden-background"}>
                 <motion.div
                     className="markdownWrapper paper paper--alt"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.5 }}
+                // initial={{ opacity: 0, y: 20 }}
+                // animate={{ opacity: 1, y: 0 }}
+                // exit={{ opacity: 0, y: -20 }}
+                // transition={{ duration: 0.5 }}
                 >
                     {/* Breadcrumb Navigation */}
 
                     <motion.nav
                         className="breadcrumb"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.3 }}
+                        // initial={{ opacity: 0 }}
+                        // animate={{ opacity: 1 }}
+                        // transition={{ duration: 0.3 }}
                         style={{
                             margin: "20px 0",
                             backgroundColor: "#f9f9f9",
@@ -305,9 +305,9 @@ const MarkdownPage = ({ wrapperRef }) => {
                     </motion.nav>
 
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5 }}
+                        // initial={{ opacity: 0 }}
+                        // animate={{ opacity: 1 }}
+                        // transition={{ duration: 0.5 }}
                         className="hand-written-notes-style-wrapper"
                     >
                         {markdown ? (

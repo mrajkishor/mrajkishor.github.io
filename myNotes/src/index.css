@@ -168,6 +168,9 @@ button {
 
 /* styles.css */
 
+
+/* Code block style start */
+
 code {
   background-color: #f5f5f5;
   color: #d6336c;
@@ -183,12 +186,56 @@ pre code {
 }
 
 pre {
-  padding: 10px;
-  background-color: #2e3440;
+  /* padding: 10px;
+  background-color: #000000;
+  color: #d8dee9;
+  border-radius: 5px;
+  overflow: auto; */
+  position: relative;
+  padding: 30px 10px 10px;
+  /* extra top space for bar */
+  background-color: #000000;
   color: #d8dee9;
   border-radius: 5px;
   overflow: auto;
+  font-family: monospace;
 }
+
+/* Console bar */
+pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background: #2b2b2b;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Mac-style dots */
+pre::after {
+  content: '●  ●  ●';
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #ff5f56;
+  /* first dot red */
+}
+
+pre::after {
+  background: linear-gradient(to right, #ff5f56 0 33%, #ffbd2e 33% 66%, #27c93f 66% 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+/* Code bloc style end */
+
+
 
 h1,
 h2,
