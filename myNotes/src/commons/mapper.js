@@ -958,7 +958,19 @@ const mapper = {
                                     "Equality in JS": {
                                         "== vs ===": true,
                                         "Object.is": true
+                                    },
+                                    "CIQnA": {
+                                        "___urlPath___": "ciqna",
+                                        "___md___": 1176
+                                    },
+                                    "Appendix": {
+                                        "The Closure Loop Problem (In Depth)": {
+                                            "___urlPath___": "the-closure-loop-problem-in-depth",
+                                            "___md___": 1177
+                                        }
                                     }
+
+
                                 },
 
                                 "Functions": {
@@ -973,7 +985,11 @@ const mapper = {
                                         "forEach": true
                                     },
                                     "Currying & Partial Application": true,
-                                    "Function Composition": true
+                                    "Function Composition": true,
+                                    "CIQnA": {
+                                        "___urlPath___": "ciqna",
+                                        "___md___": 1175
+                                    }
                                 },
 
                                 "Objects and Prototypes": {
@@ -986,7 +1002,11 @@ const mapper = {
                                         "assign, keys, values, entries": true,
                                         "freeze, seal, preventExtensions": true
                                     },
-                                    "getPrototypeOf vs setPrototypeOf": true
+                                    "getPrototypeOf vs setPrototypeOf": true,
+                                    "CIQnA": {
+                                        "___urlPath___": "ciqna",
+                                        "___md___": 1178
+                                    }
                                 },
 
                                 "Asynchronous JavaScript": {
@@ -10295,138 +10315,199 @@ const mapper = {
             },
             "Operating System": {
                 "___urlPath___": "operating-system",
-                "System Calls and Structures": {
-                    "___urlPath___": "system-calls-and-structures",
-                    "What is a System Call?": {
-                        "___urlPath___": "what-is-a-system-call",
-                        "___md___": 951
+                "Syllabus": {
+                    "___urlPath___": "syllabus",
+                    "___md___": 1180
+                },
+                "Book - Galvin 9th Edition Notes": {
+                    "___urlPath___": "galvin-9th-edition-notes",
+                    "Chapter 1": {
+                        "___urlPath___": "chapter-1",
+                        "___md___": 1181
                     },
-                    "Types of System Calls": {
-                        "___urlPath___": "types-of-system-calls",
-                        "___md___": 952
+                    "Chapter 2.1-2.5": {
+                        "___urlPath___": "chapter-2-1-2-5",
+                        "___md___": 1182
                     },
-                    "Examples in Linux and Windows": {
-                        "___urlPath___": "examples-in-linux-and-windows",
-                        "___md___": 953
+                    "Chapter 3.1-3.4": {
+                        "___urlPath___": "chapter-3-1-3-4",
+                        "___md___": 1183
                     },
-                    "User Mode vs Kernel Mode": {
-                        "___urlPath___": "user-mode-vs-kernel-mode",
-                        "___md___": 954
+                    "Chapter 4.1-4.3": {
+                        "___urlPath___": "chapter-4-1-4-3",
+                        "___md___": 1184
+                    },
+                    "Chapter 5.1-5.8": {
+                        "___urlPath___": "chapter-5-1-5-8",
+                        "___md___": 1185
+                    },
+                    "Chapter 6.1-6.3": {
+                        "___urlPath___": "chapter-6-1-6-3",
+                        "___md___": 1186
+                    },
+                    "Chapter 7": {
+                        "___urlPath___": "chapter-7",
+                        "___md___": 1187
+                    },
+                    "Chapter 8.1-8.6": {
+                        "___urlPath___": "chapter-8-1-8-6",
+                        "___md___": 1188
+                    },
+                    "Chapter 9.1-9.7": {
+                        "___urlPath___": "chapter-9-1-9-7",
+                        "___md___": 1189
+                    },
+                    "Chapter 10.1-10.4": {
+                        "___urlPath___": "chapter-10-1-10-4",
+                        "___md___": 1190
+                    },
+                    "Chapter 12.1-12.5": {
+                        "___urlPath___": "chapter-12-1-12-5",
+                        "___md___": 1191
                     }
-                },
-
-                "Processes and Threads": {
-                    "Processes": {
-                        "What is a Process?": true,
-                        "Process States and State Transitions": true,
-                        "Process Control Block (PCB)": true,
-                        "Context Switching": true
-                    },
-                    "Threads": {
-                        "What is a Thread?": true,
-                        "User-Level vs Kernel-Level Threads": true,
-                        "Multithreading Models": true
-                    }
-                },
-
-                "Inter-Process Communication (IPC)": {
-                    "Shared Memory": true,
-                    "Message Passing": true,
-                    "Pipes and Sockets": true
-                },
-
-                "Concurrency and Synchronization": {
-                    "Critical Section Problem": true,
-                    "Peterson’s Algorithm": true,
-                    "Semaphores": {
-                        "Binary and Counting Semaphores": true,
-                        "Semaphore Operations (wait/signal)": true
-                    },
-                    "Mutex and Locks": true,
-                    "Monitors": true,
-                    "Classical Problems": {
-                        "Producer-Consumer": true,
-                        "Reader-Writer": true,
-                        "Dining Philosophers": true
-                    }
-                },
-
-                "Deadlocks": {
-                    "What is a Deadlock?": true,
-                    "Conditions for Deadlock": true,
-                    "Deadlock Prevention": true,
-                    "Deadlock Avoidance (Banker's Algorithm)": true,
-                    "Deadlock Detection and Recovery": true
-                },
-
-                "CPU Scheduling": {
-                    "Scheduling Algorithms": {
-                        "First-Come-First-Serve (FCFS)": true,
-                        "Shortest Job Next (SJN) / SJF": true,
-                        "Priority Scheduling": true,
-                        "Round Robin (RR)": true,
-                        "Multilevel Queue Scheduling": true
-                    },
-                    "Scheduling Metrics": {
-                        "CPU Utilization": true,
-                        "Throughput": true,
-                        "Turnaround Time": true,
-                        "Waiting Time": true,
-                        "Response Time": true
-                    },
-                    "Preemptive vs Non-Preemptive": true
-                },
-
-                "I/O Scheduling": {
-                    "I/O Techniques": {
-                        "Polling": true,
-                        "Interrupts": true,
-                        "Direct Memory Access (DMA)": true
-                    },
-                    "Disk Scheduling Algorithms": {
-                        "First-Come-First-Serve (FCFS)": true,
-                        "Shortest Seek Time First (SSTF)": true,
-                        "SCAN": true,
-                        "C-SCAN": true,
-                        "LOOK and C-LOOK": true
-                    }
-                },
-
-                "Memory Management": {
-                    "Contiguous Allocation": true,
-                    "Paging": {
-                        "Single-Level Paging": true,
-                        "Multi-Level Paging": true,
-                        "TLB and EMAT": true
-                    },
-                    "Segmentation": true,
-                    "Paging vs Segmentation": true
-                },
-
-                "Virtual Memory": {
-                    "Demand Paging": true,
-                    "Page Fault and Handling": true,
-                    "Page Replacement Algorithms": {
-                        "FIFO": true,
-                        "Optimal": true,
-                        "LRU": true,
-                        "Clock": true
-                    },
-                    "Thrashing and Working Set": true
-                },
-                "File Systems": {
-                    "File Concepts": {
-                        "File Attributes and Operations": true,
-                        "Access Methods": true
-                    },
-                    "Directory Structures": true,
-                    "File Allocation Methods": {
-                        "Contiguous": true,
-                        "Linked": true,
-                        "Indexed": true
-                    },
-                    "Free Space Management": true
                 }
+
+                ,
+                "Standard Notes": {
+
+                    "System Calls and Structures": {
+                        "___urlPath___": "system-calls-and-structures",
+                        "What is a System Call?": {
+                            "___urlPath___": "what-is-a-system-call",
+                            "___md___": 951
+                        },
+                        "Types of System Calls": {
+                            "___urlPath___": "types-of-system-calls",
+                            "___md___": 952
+                        },
+                        "Examples in Linux and Windows": {
+                            "___urlPath___": "examples-in-linux-and-windows",
+                            "___md___": 953
+                        },
+                        "User Mode vs Kernel Mode": {
+                            "___urlPath___": "user-mode-vs-kernel-mode",
+                            "___md___": 954
+                        }
+                    },
+
+                    "Processes and Threads": {
+                        "Processes": {
+                            "What is a Process?": true,
+                            "Process States and State Transitions": true,
+                            "Process Control Block (PCB)": true,
+                            "Context Switching": true
+                        },
+                        "Threads": {
+                            "What is a Thread?": true,
+                            "User-Level vs Kernel-Level Threads": true,
+                            "Multithreading Models": true
+                        }
+                    },
+
+                    "Inter-Process Communication (IPC)": {
+                        "Shared Memory": true,
+                        "Message Passing": true,
+                        "Pipes and Sockets": true
+                    },
+
+                    "Concurrency and Synchronization": {
+                        "Critical Section Problem": true,
+                        "Peterson’s Algorithm": true,
+                        "Semaphores": {
+                            "Binary and Counting Semaphores": true,
+                            "Semaphore Operations (wait/signal)": true
+                        },
+                        "Mutex and Locks": true,
+                        "Monitors": true,
+                        "Classical Problems": {
+                            "Producer-Consumer": true,
+                            "Reader-Writer": true,
+                            "Dining Philosophers": true
+                        }
+                    },
+
+                    "Deadlocks": {
+                        "What is a Deadlock?": true,
+                        "Conditions for Deadlock": true,
+                        "Deadlock Prevention": true,
+                        "Deadlock Avoidance (Banker's Algorithm)": true,
+                        "Deadlock Detection and Recovery": true
+                    },
+
+                    "CPU Scheduling": {
+                        "Scheduling Algorithms": {
+                            "First-Come-First-Serve (FCFS)": true,
+                            "Shortest Job Next (SJN) / SJF": true,
+                            "Priority Scheduling": true,
+                            "Round Robin (RR)": true,
+                            "Multilevel Queue Scheduling": true
+                        },
+                        "Scheduling Metrics": {
+                            "CPU Utilization": true,
+                            "Throughput": true,
+                            "Turnaround Time": true,
+                            "Waiting Time": true,
+                            "Response Time": true
+                        },
+                        "Preemptive vs Non-Preemptive": true
+                    },
+
+                    "I/O Scheduling": {
+                        "I/O Techniques": {
+                            "Polling": true,
+                            "Interrupts": true,
+                            "Direct Memory Access (DMA)": true
+                        },
+                        "Disk Scheduling Algorithms": {
+                            "First-Come-First-Serve (FCFS)": true,
+                            "Shortest Seek Time First (SSTF)": true,
+                            "SCAN": true,
+                            "C-SCAN": true,
+                            "LOOK and C-LOOK": true
+                        }
+                    },
+
+                    "Memory Management": {
+                        "___urlPath___": "memory-management",
+                        "Contiguous Allocation": {
+                            "___urlPath___": "contiguous-allocation",
+                            "___md___": 1179
+                        },
+                        "Paging": {
+                            "Single-Level Paging": true,
+                            "Multi-Level Paging": true,
+                            "TLB and EMAT": true
+                        },
+                        "Segmentation": true,
+                        "Paging vs Segmentation": true
+                    },
+
+                    "Virtual Memory": {
+                        "Demand Paging": true,
+                        "Page Fault and Handling": true,
+                        "Page Replacement Algorithms": {
+                            "FIFO": true,
+                            "Optimal": true,
+                            "LRU": true,
+                            "Clock": true
+                        },
+                        "Thrashing and Working Set": true
+                    },
+                    "File Systems": {
+                        "File Concepts": {
+                            "File Attributes and Operations": true,
+                            "Access Methods": true
+                        },
+                        "Directory Structures": true,
+                        "File Allocation Methods": {
+                            "Contiguous": true,
+                            "Linked": true,
+                            "Indexed": true
+                        },
+                        "Free Space Management": true
+                    }
+                }
+
             },
 
             "Computer Networks": {
