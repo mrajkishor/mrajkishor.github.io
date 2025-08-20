@@ -314,6 +314,31 @@ const MarkdownPage = ({ wrapperRef }) => {
                             <ReactMarkdown
                                 remarkPlugins={[remarkGfm, remarkMath, remarkBreaks]}
                                 rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
+                                components={{
+                                    code({ node, inline, className, children, ...props }) {
+                                        const match = /language-(\w+)/.exec(className || "");
+                                        const lang = match?.[1]?.toLowerCase() || "text";
+
+                                        if (inline) {
+                                            // Inline code stays simple
+                                            return (
+                                                <code className="inline-code" {...props}>
+                                                    {children}
+                                                </code>
+                                            );
+                                        }
+
+                                        // Fenced code block: show language label
+                                        return (
+                                            <div className="codeblock">
+                                                <div className="codeblock-lang">{lang}</div>
+                                                <pre className={className}>
+                                                    <code {...props}>{children}</code>
+                                                </pre>
+                                            </div>
+                                        );
+                                    },
+                                }}
                             >
                                 {markdown}
                             </ReactMarkdown>

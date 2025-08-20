@@ -7739,6 +7739,10 @@ const mapper = {
                                         "___urlPath___": "overview",
                                         "___md___": 581
                                     },
+                                    "With DFS": {
+                                        "___urlPath___": "with-dfs",
+                                        "___md___": 1192
+                                    },
                                     "Union-Find (Disjoint Set Union - DSU)": {
                                         "___urlPath___": "union-find",
                                         "___md___": 1149
@@ -8458,6 +8462,52 @@ const mapper = {
                         "___urlPath___": "gate-syllabus",
                         "___md___": 996
                     },
+                    "Book: Connolly-Begg Notes": {
+                        "Chapter 3": {
+                            "___urlPath___": "chapter-3",
+                            "___md___": 1195
+                        },
+                        "Chapter 4": {
+                            "___urlPath___": "chapter-3",
+                            "___md___": 1196
+                        },
+                        "Chapter 5": {
+                            "___urlPath___": "chapter-5",
+                            "___md___": 1197
+                        },
+                        "Chapter 6": {
+                            "___urlPath___": "chapter-6",
+                            "___md___": 1198
+                        },
+                        "Chapter 7": {
+                            "___urlPath___": "chapter-7",
+                            "___md___": 1199
+                        },
+                        "Chapter 12": {
+                            "___urlPath___": "chapter-12",
+                            "___md___": 1201
+                        },
+                        "Chapter 13": {
+                            "___urlPath___": "chapter-13",
+                            "___md___": 1200
+                        },
+                        "Chapter 14": {
+                            "___urlPath___": "chapter-14",
+                            "___md___": 1202
+                        },
+                        "Chapter 22.1-22.3": {
+                            "___urlPath___": "chapter-22-1-22-3",
+                            "___md___": 1203
+                        },
+                        "Chapter 22.5": {
+                            "___urlPath___": "chapter-22-5",
+                            "___md___": 1204
+                        },
+                        "Chapter 23.1-23.4": {
+                            "___urlPath___": "chapter-23-1-23-4",
+                            "___md___": 1205
+                        },
+                    },
                     "Databases": {
                         "___urlPath___": "databases",
                         "ER Model": {
@@ -8891,6 +8941,10 @@ const mapper = {
                     },
                     "MySQL": {
                         "___urlPath___": "mysql",
+                        "Contents": {
+                            "___urlPath___": "contents",
+                            "___md___": 1194
+                        },
                         "Installation & Setup": {
                             "Installing MySQL on Windows, macOS, Linux": true,
                             "Using MySQL with Docker and Docker Compose": true,
@@ -8970,7 +9024,10 @@ const mapper = {
                             "Deadlocks and Race Conditions": true
                         },
                         "Indexes & Query Optimization": {
-                            "Single and Composite Indexes": true,
+                            "Single and Composite Indexes": {
+                                "___urlPath___": "single-and-composite-indexes",
+                                "___md___": 1193
+                            },
                             "Covering Indexes and Index Hints": true,
                             "EXPLAIN and EXPLAIN ANALYZE": true,
                             "Slow Query Log and Performance Schema": true,

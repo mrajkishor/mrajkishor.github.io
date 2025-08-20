@@ -176,33 +176,24 @@ code {
   color: #d6336c;
   padding: 2px 4px;
   border-radius: 4px;
-  font-size: 90%;
+  font-size: 70%;
 }
 
-pre code {
-  /* handles graphs inside code */
+.codeblock pre code {
   background: none;
   color: white;
 }
 
-pre {
-  /* padding: 10px;
-  background-color: #000000;
-  color: #d8dee9;
-  border-radius: 5px;
-  overflow: auto; */
+.codeblock pre {
   position: relative;
   padding: 25px 5px 5px;
-  /* extra top space for bar */
   background-color: #000000;
   color: #d8dee9;
-  border-radius: 5px;
   overflow: auto;
   font-family: monospace;
 }
 
-/* Console bar */
-pre::before {
+.codeblock pre::before {
   content: '';
   position: absolute;
   top: 0;
@@ -214,19 +205,17 @@ pre::before {
   border-top-right-radius: 5px;
 }
 
-/* Mac-style dots */
-pre::after {
-  content: '●  ●  ●';
+.codeblock pre::after {
+  content: '● ● ●';
   position: absolute;
-  top: 1px;
+  top: 0px;
   left: 10px;
   font-size: 10px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: #ff5f56;
-  /* first dot red */
 }
 
-pre::after {
+.codeblock pre::after {
   background: linear-gradient(to right, #ff5f56 0 33%, #ffbd2e 33% 66%, #27c93f 66% 100%);
   -webkit-background-clip: text;
   color: transparent;

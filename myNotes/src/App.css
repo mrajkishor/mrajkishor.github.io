@@ -464,3 +464,47 @@ color: white;  */
   /* Simulating inner shadow with pseudo element */
   position: relative;
 }
+
+
+
+
+
+/* Inline code */
+.inline-code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.06);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Block wrapper */
+.codeblock {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Language badge (looks like a blockquote tag) */
+.codeblock-lang {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #2d2d2d;
+  /* pairs well with atom-one-dark */
+  color: #fff;
+  text-transform: lowercase;
+  /* shows `sql`, `js`, etc. as typed */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Let highlight.js keep doing its thing */
+.codeblock pre {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  overflow: auto;
+  background: #282c34;
+  /* atom-one-dark default background */
+}
