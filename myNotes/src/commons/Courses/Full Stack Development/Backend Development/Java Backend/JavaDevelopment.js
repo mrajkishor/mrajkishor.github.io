@@ -192,11 +192,25 @@ export const JavaDevelopment = {
             }
         },
         "Core Java": {
+            "___urlPath___": "core-java",
             "Data Types and Variables": {
-                "Primitive Data Types": true,
-                "Reference Data Types": true,
-                "Pass by Value and Pass by Reference": true,
-                "Type Casting and Type Conversion": true
+                "___urlPath___": "data-types-and-variables",
+                "Primitive Data Types": {
+                    "___urlPath___": "primitive-data-types",
+                    "___md___": 1207
+                },
+                "Reference Data Types": {
+                    "___urlPath___": "reference-data-types",
+                    "___md___": 1208
+                },
+                "Pass by Value and Pass by Reference": {
+                    "___urlPath___": "pass-by-value-and-pass-by-reference",
+                    "___md___": true
+                },
+                "Type Casting and Type Conversion": {
+                    "___urlPath___": "type-casting-and-type-conversion",
+                    "___md___": true
+                }
             },
             "Operators and Expressions": {
                 "___urlPath___": "operators_expressions",
@@ -1514,6 +1528,5 @@ export const JavaDevelopment = {
             "Real-Time Chat Application with WebSockets": true,
             "Inventory Management System with Spring Boot and Hibernate": true
         }
-
     }
 }

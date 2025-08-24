@@ -5,6 +5,10 @@ export const QBank = {
             "___urlPath___": "contents",
             "___md___": 1137
         },
+        "My Ratings": {
+            "___urlPath___": "my-ratings",
+            "___md___": 1220
+        },
         "Topics": {
             "___urlPath___": "topics",
             "___md___": 1121

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -120,7 +120,8 @@ const formatBreadcrumbName = (segment) => {
         .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
-const MarkdownPage = ({ wrapperRef }) => {
+const MarkdownPage = () => {
+    let wrapperRef = useRef(null);
     const [showGoToTop, setShowGoToTop] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
@@ -185,7 +186,7 @@ const MarkdownPage = ({ wrapperRef }) => {
 
 
     useEffect(() => {
-        if (!wrapperRef?.current) return; // 👉 This gets the scrollable container where your markdown content is rendered.
+        if (!wrapperRef?.current) return; // This gets the scrollable container where your markdown content is rendered.
 
         const handleScroll = debounce(() => {
             setShowGoToTop(wrapperRef.current.scrollTop > 300);
@@ -259,6 +260,7 @@ const MarkdownPage = ({ wrapperRef }) => {
         <>
             <div className={isMobile ? "wooden-background-mb" : "wooden-background"}>
                 <motion.div
+                    ref={wrapperRef}
                     className="markdownWrapper paper paper--alt"
                 // initial={{ opacity: 0, y: 20 }}
                 // animate={{ opacity: 1, y: 0 }}

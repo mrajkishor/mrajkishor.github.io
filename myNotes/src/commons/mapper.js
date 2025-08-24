@@ -40,6 +40,10 @@ const mapper = {
                         "FactoryBeans and Custom BeanPostProcessors": {
                             "___urlPath___": "factory-beans-custom-beanpostprocessors",
                             "___md___": 1145
+                        },
+                        "CIQnA": {
+                            "___urlPath___": "ci-qna",
+                            "___md___": 1209
                         }
                     },
                     "Spring Boot": {
@@ -49,7 +53,6 @@ const mapper = {
                         "Customizing Auto-configuration with `@Conditional` Annotations": true,
                         "External Configuration (YAML, Properties, ENV Vars, Config Server)": true,
                         "Spring Boot CLI and DevTools": true,
-
                     },
                     "Spring MVC and REST": {
                         "DispatcherServlet and Request Lifecycle": true,
@@ -58,21 +61,37 @@ const mapper = {
                         "Validation with Hibernate Validator and `@Valid`": true,
                         "Exception Handling with `@ControllerAdvice` and `@ExceptionHandler`": true,
                         "Custom Interceptors, Filters, and HandlerMethodArgumentResolvers": true,
-                        "Spring MVC - Customizations": {
-                            "Custom Interceptors, Filters, and HandlerMethodArgumentResolvers": true
-                        },
                     },
                     "Spring Data and Persistence": {
-                        "Spring Data JPA and Repositories": true,
-                        "Entity Relationships and Lazy/Eager Loading": true,
-                        "Pagination, Sorting, and Custom Queries": true,
-                        "Transactions with `@Transactional` and Propagation Strategies": true,
-                        "Connection Pooling with HikariCP": true,
-                        "Using Flyway or Liquibase for Schema Migration": true,
-                        "Spring Data - Deeper": {
-                            "Using Flyway or Liquibase for Schema Migration": true,
-                            "Transaction Propagation Strategies with `@Transactional`": true
+                        "___urlPath___": "spring-data-persistence",
+                        "Spring Data JPA and Repositories": {
+                            "___urlPath___": "spring-data-jpa-repositories",
+                            "___md___": 1210
                         },
+                        "Entity Relationships and Lazy/Eager Loading": {
+                            "___urlPath___": "entity-relationships-lazy-eager-loading",
+                            "___md___": 1211
+                        },
+                        "Pagination, Sorting, and Custom Queries": {
+                            "___urlPath___": "pagination-sorting-custom-queries",
+                            "___md___": 1212
+                        },
+                        "Transactions with `@Transactional` and Propagation Strategies": {
+                            "___urlPath___": "transactions-transactional-propagation-strategies",
+                            "___md___": 1213
+                        },
+                        "Connection Pooling with HikariCP": {
+                            "___urlPath___": "connection-pooling-hikaricp",
+                            "___md___": 1214
+                        },
+                        "Using Flyway or Liquibase for Schema Migration": {
+                            "___urlPath___": "flyway-liquibase-schema-migration",
+                            "___md___": 1215
+                        },
+                        "CIQnA": {
+                            "___urlPath___": "ciqna",
+                            "___md___": 1216
+                        }
                     },
                     "Spring Security": {
                         "Security Filters and FilterChainProxy": true,
@@ -848,8 +867,6 @@ const mapper = {
                         "EventBridge or SQS-Lambda Trigger Integration": true
                     }
                 }
-
-
             },
             "Frontend Development": {
                 "___urlPath___": "frontend-development",
@@ -2309,8 +2326,8 @@ const mapper = {
                         "LeetCode-style Problem Solving in JS": true
                     },
 
-                    "Behavioral Questions (FAANG Bar Raiser)": {
-                        "___urlPath___": "faang-behavioral",
+                    "Behavioral Questions (Enterprise Bar Raiser)": {
+                        "___urlPath___": "Enterprise-behavioral",
                         "STAR Framework": true,
                         "Handling Failure and Conflict": true,
                         "Leading Teams and Projects": true,
@@ -8565,6 +8582,10 @@ const mapper = {
                             "Basic Query Optimization": {
                                 "___urlPath___": "query-optimization",
                                 "___md___": 2023
+                            },
+                            "QnA": {
+                                "___urlPath___": "qna",
+                                "___md___": 1206
                             }
                         },
                         "Normalization and Design": {
@@ -8946,37 +8967,43 @@ const mapper = {
                             "___md___": 1194
                         },
                         "Installation & Setup": {
-                            "Installing MySQL on Windows, macOS, Linux": true,
-                            "Using MySQL with Docker and Docker Compose": true,
-                            "MySQL Workbench, DBeaver, and CLI Tools": true,
-                            "Securing Root User and Access Controls": true,
-                            "Connecting via Clients (Node.js, Python, Java)": true
+                            "___urlPath___": "installation-setup",
+                            "Installing MySQL on Windows, macOS, Linux": { "___urlPath___": "installing-mysql-os", "___md___": true },
+                            "Using MySQL with Docker and Docker Compose": { "___urlPath___": "mysql-docker", "___md___": true },
+                            "MySQL Workbench, DBeaver, and CLI Tools": { "___urlPath___": "mysql-tools", "___md___": true },
+                            "Securing Root User and Access Controls": { "___urlPath___": "securing-root-access", "___md___": true },
+                            "Connecting via Clients (Node.js, Python, Java)": { "___urlPath___": "mysql-clients", "___md___": true }
+
                         },
                         "SQL Basics": {
-                            "Database and Table Creation": true,
-                            "Data Types (INT, VARCHAR, DATE, ENUM, etc.)": true,
-                            "INSERT, SELECT, UPDATE, DELETE": true,
-                            "Filtering with WHERE, LIKE, IN, BETWEEN": true,
-                            "ORDER BY, LIMIT, OFFSET": true
+                            "___urlPath___": "sql-basics",
+                            "Database and Table Creation": { "___urlPath___": "database-table-creation", "___md___": true },
+                            "Data Types (INT, VARCHAR, DATE, ENUM, etc.)": { "___urlPath___": "data-types", "___md___": true },
+                            "INSERT, SELECT, UPDATE, DELETE": { "___urlPath___": "insert-select-update-delete", "___md___": true },
+                            "Filtering with WHERE, LIKE, IN, BETWEEN": { "___urlPath___": "filtering", "___md___": true },
+                            "ORDER BY, LIMIT, OFFSET": { "___urlPath___": "order-limit-offset", "___md___": true }
                         },
                         "Joins & Set Operations": {
-                            "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN": true,
-                            "CROSS JOIN and SELF JOIN": true,
-                            "UNION, UNION ALL, INTERSECT, EXCEPT": true,
-                            "Using Joins with Aggregates and Subqueries": true
+                            "___urlPath___": "joins-set-operations",
+                            "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN": { "___urlPath___": "joins", "___md___": true },
+                            "CROSS JOIN and SELF JOIN": { "___urlPath___": "cross-self-join", "___md___": true },
+                            "UNION, UNION ALL, INTERSECT, EXCEPT": { "___urlPath___": "union-intersect-except", "___md___": true },
+                            "Using Joins with Aggregates and Subqueries": { "___urlPath___": "joins-aggregates-subqueries", "___md___": true }
                         },
                         "Functions & Expressions": {
-                            "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)": true,
-                            "String Functions (CONCAT, SUBSTRING, REPLACE)": true,
-                            "Date and Time Functions (NOW, DATEDIFF, DATE_ADD)": true,
-                            "Control Flow (IF, CASE, NULLIF)": true,
-                            "Mathematical and Conversion Functions": true
+                            "___urlPath___": "functions-expressions",
+                            "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)": { "___urlPath___": "aggregate-functions", "___md___": true },
+                            "String Functions (CONCAT, SUBSTRING, REPLACE)": { "___urlPath___": "string-functions", "___md___": true },
+                            "Date and Time Functions (NOW, DATEDIFF, DATE_ADD)": { "___urlPath___": "date-time-functions", "___md___": true },
+                            "Control Flow (IF, CASE, NULLIF)": { "___urlPath___": "control-flow", "___md___": true },
+                            "Mathematical and Conversion Functions": { "___urlPath___": "math-conversion-functions", "___md___": true }
                         },
                         "Subqueries & Nested Queries": {
-                            "Scalar, Row, and Table Subqueries": true,
-                            "Correlated Subqueries": true,
-                            "Subqueries in SELECT, FROM, WHERE, and HAVING": true,
-                            "EXISTS and NOT EXISTS": true
+                            "___urlPath___": "subqueries-nested",
+                            "Scalar, Row, and Table Subqueries": { "___urlPath___": "scalar-row-table-subqueries", "___md___": true },
+                            "Correlated Subqueries": { "___urlPath___": "correlated-subqueries", "___md___": true },
+                            "Subqueries in SELECT, FROM, WHERE, and HAVING": { "___urlPath___": "subqueries-in-clauses", "___md___": true },
+                            "EXISTS and NOT EXISTS": { "___urlPath___": "exists-not-exists", "___md___": true }
                         },
                         "Schema Design & Normalization": {
                             "___urlPath___": "schema-design-normalization",
@@ -8996,146 +9023,172 @@ const mapper = {
                                 "___urlPath___": "indexes-unique-contraints-and-auto-increment",
                                 "___md___": 1155
                             },
-                            "Choosing Appropriate Data Types": true
+                            "Choosing Appropriate Data Types": { "___urlPath___": "choosing-data-types", "___md___": true }
+
                         },
                         "Stored Procedures & Functions": {
-                            "Creating and Calling Stored Procedures": true,
-                            "Creating and Using User-Defined Functions (UDFs)": true,
-                            "IN, OUT, INOUT Parameters": true,
-                            "Error Handling in Procedures": true,
-                            "Procedural Constructs (DECLARE, IF, WHILE, LOOP)": true
+                            "___urlPath___": "stored-procedures-functions",
+                            "Creating and Calling Stored Procedures": { "___urlPath___": "creating-calling-stored-procedures", "___md___": 1217 },
+                            "Creating and Using User-Defined Functions (UDFs)": { "___urlPath___": "udfs", "___md___": 1218 },
+                            "IN, OUT, INOUT Parameters": { "___urlPath___": "in-out-inout-parameters", "___md___": 1219 },
+                            "Error Handling in Procedures": { "___urlPath___": "error-handling-procedures", "___md___": true },
+                            "Procedural Constructs (DECLARE, IF, WHILE, LOOP)": { "___urlPath___": "procedural-constructs", "___md___": true }
                         },
                         "Views & Materialized Views": {
-                            "Creating, Updating, and Dropping Views": true,
-                            "Updatable vs Non-Updatable Views": true,
-                            "Performance Considerations for Views": true
+                            "___urlPath___": "views-materialized",
+                            "Creating, Updating, and Dropping Views": { "___urlPath___": "creating-updating-views", "___md___": true },
+                            "Updatable vs Non-Updatable Views": { "___urlPath___": "updatable-vs-nonupdatable", "___md___": true },
+                            "Performance Considerations for Views": { "___urlPath___": "views-performance", "___md___": true }
+
                         },
                         "Triggers & Events": {
-                            "AFTER and BEFORE INSERT/UPDATE/DELETE Triggers": true,
-                            "Row vs Statement Triggers": true,
-                            "Scheduled Events and Cron Jobs in MySQL": true,
-                            "Auditing and Logging via Triggers": true
+                            "___urlPath___": "triggers-events",
+                            "AFTER and BEFORE INSERT/UPDATE/DELETE Triggers": { "___urlPath___": "after-before-triggers", "___md___": true },
+                            "Row vs Statement Triggers": { "___urlPath___": "row-vs-statement-triggers", "___md___": true },
+                            "Scheduled Events and Cron Jobs in MySQL": { "___urlPath___": "scheduled-events-cron", "___md___": true },
+                            "Auditing and Logging via Triggers": { "___urlPath___": "auditing-logging-triggers", "___md___": true }
+
                         },
                         "Transactions & Concurrency": {
-                            "ACID Properties and Isolation Levels": true,
-                            "START TRANSACTION, COMMIT, ROLLBACK": true,
-                            "SAVEPOINT and ROLLBACK TO": true,
-                            "Locking Mechanisms (Row, Table, Advisory)": true,
-                            "Deadlocks and Race Conditions": true
+                            "___urlPath___": "transactions-concurrency",
+                            "ACID Properties and Isolation Levels": { "___urlPath___": "acid-isolation-levels", "___md___": true },
+                            "START TRANSACTION, COMMIT, ROLLBACK": { "___urlPath___": "start-commit-rollback", "___md___": true },
+                            "SAVEPOINT and ROLLBACK TO": { "___urlPath___": "savepoint-rollback-to", "___md___": true },
+                            "Locking Mechanisms (Row, Table, Advisory)": { "___urlPath___": "locking-mechanisms", "___md___": true },
+                            "Deadlocks and Race Conditions": { "___urlPath___": "deadlocks-race-conditions", "___md___": true }
                         },
                         "Indexes & Query Optimization": {
                             "Single and Composite Indexes": {
                                 "___urlPath___": "single-and-composite-indexes",
                                 "___md___": 1193
                             },
-                            "Covering Indexes and Index Hints": true,
-                            "EXPLAIN and EXPLAIN ANALYZE": true,
-                            "Slow Query Log and Performance Schema": true,
-                            "Query Refactoring and Anti-Patterns": true
+                            "Covering Indexes and Index Hints": { "___urlPath___": "covering-indexes", "___md___": true },
+                            "EXPLAIN and EXPLAIN ANALYZE": { "___urlPath___": "explain-analyze", "___md___": true },
+                            "Slow Query Log and Performance Schema": { "___urlPath___": "slow-query-performance-schema", "___md___": true },
+                            "Query Refactoring and Anti-Patterns": { "___urlPath___": "query-refactoring", "___md___": true }
+
                         },
                         "Security & Access Control": {
-                            "User Management (CREATE USER, GRANT, REVOKE)": true,
-                            "Roles and Privilege Inheritance": true,
-                            "Encryption (at Rest and in Transit)": true,
-                            "SQL Injection Prevention and Best Practices": true,
-                            "Audit Plugins and Compliance Tools": true
+                            "___urlPath___": "security-access-control",
+                            "User Management (CREATE USER, GRANT, REVOKE)": { "___urlPath___": "user-management", "___md___": true },
+                            "Roles and Privilege Inheritance": { "___urlPath___": "roles-privileges", "___md___": true },
+                            "Encryption (at Rest and in Transit)": { "___urlPath___": "encryption", "___md___": true },
+                            "SQL Injection Prevention and Best Practices": { "___urlPath___": "sql-injection-prevention", "___md___": true },
+                            "Audit Plugins and Compliance Tools": { "___urlPath___": "audit-plugins", "___md___": true }
                         },
                         "Backup & Recovery": {
-                            "Logical Backups with `mysqldump` and `mysqlpump`": true,
-                            "Physical Backups with `mysqlhotcopy` and XtraBackup": true,
-                            "Restoring Partial and Full Backups": true,
-                            "Point-in-Time Recovery (PITR)": true,
-                            "Binary Logs for Recovery": true
+                            "___urlPath___": "backup-recovery",
+                            "Logical Backups with `mysqldump` and `mysqlpump`": { "___urlPath___": "logical-backups", "___md___": true },
+                            "Physical Backups with `mysqlhotcopy` and XtraBackup": { "___urlPath___": "physical-backups", "___md___": true },
+                            "Restoring Partial and Full Backups": { "___urlPath___": "restore-backups", "___md___": true },
+                            "Point-in-Time Recovery (PITR)": { "___urlPath___": "point-in-time-recovery", "___md___": true },
+                            "Binary Logs for Recovery": { "___urlPath___": "binary-logs-recovery", "___md___": true }
                         },
                         "Replication & High Availability": {
-                            "Master-Slave and Master-Master Replication": true,
-                            "Asynchronous vs Semi-Synchronous Replication": true,
-                            "GTID-based Replication and Failover": true,
-                            "Replication Monitoring Tools (MySQL Shell, MHA)": true,
-                            "Handling Data Divergence and Resynchronization": true
+                            "___urlPath___": "replication-high-availability",
+                            "Master-Slave and Master-Master Replication": { "___urlPath___": "master-slave-replication", "___md___": true },
+                            "Asynchronous vs Semi-Synchronous Replication": { "___urlPath___": "async-vs-semisync-replication", "___md___": true },
+                            "GTID-based Replication and Failover": { "___urlPath___": "gtid-replication", "___md___": true },
+                            "Replication Monitoring Tools (MySQL Shell, MHA)": { "___urlPath___": "replication-monitoring-tools", "___md___": true },
+                            "Handling Data Divergence and Resynchronization": { "___urlPath___": "replication-divergence", "___md___": true }
                         },
                         "Partitioning & Sharding": {
-                            "Horizontal vs Vertical Partitioning": true,
-                            "Range, List, Hash, and Key Partitioning": true,
-                            "Partition Pruning and Query Routing": true,
-                            "Manual and Middleware-Based Sharding Strategies": true
+                            "___urlPath___": "partitioning-sharding",
+                            "Horizontal vs Vertical Partitioning": { "___urlPath___": "horizontal-vs-vertical-partitioning", "___md___": true },
+                            "Range, List, Hash, and Key Partitioning": { "___urlPath___": "partitioning-methods", "___md___": true },
+                            "Partition Pruning and Query Routing": { "___urlPath___": "partition-pruning-routing", "___md___": true },
+                            "Manual and Middleware-Based Sharding Strategies": { "___urlPath___": "sharding-strategies", "___md___": true }
                         },
                         "MySQL in Production": {
-                            "Performance Tuning and Query Caching": true,
-                            "Connection Pooling (ProxySQL, Pooling Libraries)": true,
-                            "Monitoring with Percona, Prometheus, Grafana": true,
-                            "Schema Migration Tools (Liquibase, Flyway)": true,
-                            "Read-Write Splitting in Applications": true
+                            "___urlPath___": "mysql-in-production",
+                            "Performance Tuning and Query Caching": { "___urlPath___": "performance-tuning", "___md___": true },
+                            "Connection Pooling (ProxySQL, Pooling Libraries)": { "___urlPath___": "connection-pooling", "___md___": true },
+                            "Monitoring with Percona, Prometheus, Grafana": { "___urlPath___": "monitoring-tools", "___md___": true },
+                            "Schema Migration Tools (Liquibase, Flyway)": { "___urlPath___": "schema-migration-tools", "___md___": true },
+                            "Read-Write Splitting in Applications": { "___urlPath___": "read-write-splitting", "___md___": true }
                         },
                         "MySQL with ORMs & APIs": {
-                            "Using MySQL with Sequelize (Node.js)": true,
-                            "MySQL with Hibernate (Java)": true,
-                            "MySQL with SQLAlchemy (Python)": true,
-                            "Optimizing Queries in ORM-Heavy Workloads": true
+                            "___urlPath___": "mysql-orms-apis",
+                            "Using MySQL with Sequelize (Node.js)": { "___urlPath___": "sequelize-mysql", "___md___": true },
+                            "MySQL with Hibernate (Java)": { "___urlPath___": "hibernate-mysql", "___md___": true },
+                            "MySQL with SQLAlchemy (Python)": { "___urlPath___": "sqlalchemy-mysql", "___md___": true },
+                            "Optimizing Queries in ORM-Heavy Workloads": { "___urlPath___": "orm-query-optimization", "___md___": true }
                         },
                         "Cloud & Managed MySQL": {
-                            "AWS RDS for MySQL": true,
-                            "Google Cloud SQL, Azure Database for MySQL": true,
-                            "Automated Backups and Monitoring": true,
-                            "Failover and Multi-AZ Configuration": true
+                            "___urlPath___": "cloud-managed-mysql",
+                            "AWS RDS for MySQL": { "___urlPath___": "aws-rds-mysql", "___md___": true },
+                            "Google Cloud SQL, Azure Database for MySQL": { "___urlPath___": "gcp-azure-mysql", "___md___": true },
+                            "Automated Backups and Monitoring": { "___urlPath___": "automated-backups-monitoring", "___md___": true },
+                            "Failover and Multi-AZ Configuration": { "___urlPath___": "failover-multi-az", "___md___": true }
                         },
                         "Advanced": {
+                            "___urlPath___": "advanced",
                             "Advanced Query Optimization": {
-                                "Execution Plan Internals": true,
-                                "Cardinality Estimation Pitfalls": true,
-                                "Adaptive Query Optimization": true,
-                                "Join Buffer, Sort Buffer, and Temp Table Memory Tuning": true
+                                "___urlPath___": "advanced-query-optimization",
+                                "Execution Plan Internals": { "___urlPath___": "execution-plan-internals", "___md___": true },
+                                "Cardinality Estimation Pitfalls": { "___urlPath___": "cardinality-estimation", "___md___": true },
+                                "Adaptive Query Optimization": { "___urlPath___": "adaptive-query-optimization", "___md___": true },
+                                "Join Buffer, Sort Buffer, and Temp Table Memory Tuning": { "___urlPath___": "buffer-memory-tuning", "___md___": true }
                             },
                             "Advanced Indexing Techniques": {
-                                "Partial and Functional Indexes": true,
-                                "Prefix Indexes for Large Strings": true,
-                                "Invisible Indexes for Safe Testing": true,
-                                "Full-Text Search vs External Search Engines": true,
-                                "SPATIAL Indexes for GIS Data": true
+                                "___urlPath___": "advanced-indexing-techniques",
+                                "Partial and Functional Indexes": { "___urlPath___": "partial-functional-indexes", "___md___": true },
+                                "Prefix Indexes for Large Strings": { "___urlPath___": "prefix-indexes", "___md___": true },
+                                "Invisible Indexes for Safe Testing": { "___urlPath___": "invisible-indexes", "___md___": true },
+                                "Full-Text Search vs External Search Engines": { "___urlPath___": "fulltext-vs-external-search", "___md___": true },
+                                "SPATIAL Indexes for GIS Data": { "___urlPath___": "spatial-indexes", "___md___": true }
                             },
                             "Advanced Replication & Scaling": {
-                                "Multi-Source Replication": true,
-                                "Replication Lag Detection and Management": true,
-                                "Group Replication and InnoDB Cluster": true,
-                                "Read Scaling Patterns with ProxySQL and Vitess": true,
-                                "Read-After-Write Consistency Handling": true
+                                "___urlPath___": "advanced-replication-scaling",
+                                "Multi-Source Replication": { "___urlPath___": "multi-source-replication", "___md___": true },
+                                "Replication Lag Detection and Management": { "___urlPath___": "replication-lag", "___md___": true },
+                                "Group Replication and InnoDB Cluster": { "___urlPath___": "group-replication", "___md___": true },
+                                "Read Scaling Patterns with ProxySQL and Vitess": { "___urlPath___": "read-scaling", "___md___": true },
+                                "Read-After-Write Consistency Handling": { "___urlPath___": "read-after-write", "___md___": true }
                             },
                             "Sharding at Scale": {
-                                "Shard Key Design and Hotspot Avoidance": true,
-                                "Online Resharding with Zero Downtime": true,
-                                "Global Secondary Indexes across Shards": true
+                                "___urlPath___": "sharding-at-scale",
+                                "Shard Key Design and Hotspot Avoidance": { "___urlPath___": "shard-key-design", "___md___": true },
+                                "Online Resharding with Zero Downtime": { "___urlPath___": "online-resharding", "___md___": true },
+                                "Global Secondary Indexes across Shards": { "___urlPath___": "global-secondary-indexes", "___md___": true }
                             },
                             "High-Concurrency Handling": {
-                                "Gap Locks and Next-Key Locks in InnoDB": true,
-                                "Phantom Reads in Repeatable Read Isolation": true,
-                                "Lock Monitoring via performance_schema": true,
-                                "Deadlock Detection and Resolution Internals": true
+                                "___urlPath___": "high-concurrency-handling",
+                                "Gap Locks and Next-Key Locks in InnoDB": { "___urlPath___": "gap-locks-nextkey", "___md___": true },
+                                "Phantom Reads in Repeatable Read Isolation": { "___urlPath___": "phantom-reads", "___md___": true },
+                                "Lock Monitoring via performance_schema": { "___urlPath___": "lock-monitoring", "___md___": true },
+                                "Deadlock Detection and Resolution Internals": { "___urlPath___": "deadlock-detection", "___md___": true }
                             },
                             "High Availability & Disaster Recovery": {
-                                "Automated Failover with Orchestrator or MHA": true,
-                                "Cross-Region Replication Strategies": true,
-                                "Disaster Simulation and Failover Drills": true
+                                "___urlPath___": "high-availability-dr",
+                                "Automated Failover with Orchestrator or MHA": { "___urlPath___": "automated-failover", "___md___": true },
+                                "Cross-Region Replication Strategies": { "___urlPath___": "cross-region-replication", "___md___": true },
+                                "Disaster Simulation and Failover Drills": { "___urlPath___": "disaster-simulation", "___md___": true }
                             },
                             "Large Data Volume Management": {
-                                "Partition Management for Billions of Rows": true,
-                                "Archiving and Cold Storage Strategies": true,
-                                "Table and Column Compression Trade-Offs": true
+                                "___urlPath___": "large-data-volume-management",
+                                "Partition Management for Billions of Rows": { "___urlPath___": "partition-management", "___md___": true },
+                                "Archiving and Cold Storage Strategies": { "___urlPath___": "archiving-cold-storage", "___md___": true },
+                                "Table and Column Compression Trade-Offs": { "___urlPath___": "compression-tradeoffs", "___md___": true }
                             },
                             "MySQL in Distributed Systems": {
-                                "Schema Versioning in Continuous Deployment": true,
-                                "Eventual Consistency Handling": true,
-                                "Outbox Pattern for Reliable Event Publishing": true
+                                "___urlPath___": "mysql-distributed-systems",
+                                "Schema Versioning in Continuous Deployment": { "___urlPath___": "schema-versioning", "___md___": true },
+                                "Eventual Consistency Handling": { "___urlPath___": "eventual-consistency", "___md___": true },
+                                "Outbox Pattern for Reliable Event Publishing": { "___urlPath___": "outbox-pattern", "___md___": true }
                             },
                             "Advanced Troubleshooting": {
-                                "Query Performance Regression Analysis": true,
-                                "InnoDB Buffer Pool Tuning": true,
-                                "Memory Leak Detection in MySQL": true,
-                                "Slow Query Analysis with pt-query-digest": true
+                                "___urlPath___": "advanced-troubleshooting",
+                                "Query Performance Regression Analysis": { "___urlPath___": "query-regression-analysis", "___md___": true },
+                                "InnoDB Buffer Pool Tuning": { "___urlPath___": "innodb-buffer-pool-tuning", "___md___": true },
+                                "Memory Leak Detection in MySQL": { "___urlPath___": "memory-leak-detection", "___md___": true },
+                                "Slow Query Analysis with pt-query-digest": { "___urlPath___": "pt-query-digest", "___md___": true }
                             },
                             "Enterprise-Scale Design & Integration": {
-                                "Multi-Tenant Schema Design for SaaS": true,
-                                "OLTP and OLAP Hybrid (HTAP) Design": true,
-                                "Change Data Capture with Kafka and Debezium": true
+                                "___urlPath___": "enterprise-scale-design-integration",
+                                "Multi-Tenant Schema Design for SaaS": { "___urlPath___": "multi-tenant-schema", "___md___": true },
+                                "OLTP and OLAP Hybrid (HTAP) Design": { "___urlPath___": "oltp-olap-htap", "___md___": true },
+                                "Change Data Capture with Kafka and Debezium": { "___urlPath___": "cdc-kafka-debezium", "___md___": true }
                             }
                         }
                     }

@@ -80,8 +80,7 @@ const Contact = () => {
               Get In <span className="text-gradient">Touch</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Let’s connect and build something impactful. Whether it's frontend system design, product UI modernization, or a performance challenge — I’d love to contribute.
-
+              Let’s connect and build impactful solutions. From scalable backend systems to modern frontend architecture and cloud-native deployments — I bring full stack expertise to deliver real-world business impact.
             </p>
           </div>
 

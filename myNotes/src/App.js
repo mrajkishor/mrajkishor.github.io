@@ -357,8 +357,7 @@ const App = () => {
 
           <Routes>
             <Route path="/profile" element={<MyProfile />} />
-
-            <Route path="/contents/*" element={<MarkdownPage wrapperRef={mainRef} key={location.pathname} />} />
+            <Route path="/contents/*" element={<MarkdownPage key={location.pathname} />} />
             <Route
               path="/"
               element={

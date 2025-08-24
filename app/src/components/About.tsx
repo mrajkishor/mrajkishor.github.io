@@ -4,19 +4,19 @@ const About = () => {
   const highlights = [
     {
       number: "7",
-      label: "Years Experience"
+      label: "Years of Experience"
     },
     {
       number: "10+",
-      label: "Projects Completed"
+      label: "Full Stack Projects Delivered"
     },
     {
       number: "15+",
-      label: "Technologies Mastered"
+      label: "Technologies Worked With"
     },
     {
       number: "100%",
-      label: "Client Satisfaction"
+      label: "Commitment to Collaboration"
     }
   ];
 
@@ -29,7 +29,7 @@ const About = () => {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Senior frontend engineer with a passion for building scalable, performant, and user-centric applications.
+              Full Stack Java Developer passionate about building reliable, scalable, and user-focused applications across web and cloud platforms.
             </p>
           </div>
 
@@ -37,16 +37,16 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm a frontend engineer with 7 years of experience building modern, high-performance web applications across telecom, enterprise SaaS, and retail industries. My journey started with a curiosity for how websites work — and evolved into a career focused on engineering scalable, accessible, and maintainable UI systems.
-
+                With 7 years of experience, I’ve worked on projects ranging from enterprise SaaS platforms to telecom and retail solutions.
+                My journey began with curiosity for how software systems work, which grew into a career focused on full stack engineering and delivering business impact.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Over the years, I’ve specialized in React, TypeScript, and design system architecture. I’ve led projects involving microfrontend platforms, optimized rendering pipelines, and implemented complex state management patterns using Redux, Zustand, and React Query.
-
+                On the frontend, I specialize in React and modern UI architectures. On the backend, I work with Java Spring Boot and microservices, integrating
+                with SQL/NoSQL databases and deploying to AWS. My experience also covers system design, performance optimization, and cloud-native deployments.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Outside of work, I enjoy mentoring junior developers, contributing to open-source tools, and staying active in the frontend community. I believe great software is not just built — it's designed with empathy and intention.
-
+                Beyond coding, I enjoy mentoring, knowledge sharing, and collaborating with cross-functional teams. I believe impactful software is created
+                when engineering excellence meets empathy and teamwork.
               </p>
             </div>
 
@@ -64,7 +64,10 @@ const About = () => {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-card border-border/50 hover:shadow-primary/20 transition-smooth">
+              <Card
+                key={index}
+                className="shadow-card border-border/50 hover:shadow-primary/20 transition-smooth"
+              >
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl font-bold text-gradient mb-2">
                     {highlight.number}

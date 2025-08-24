@@ -17,24 +17,24 @@ const Hero = () => {
     }
   };
 
-
-
   return (
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 sm:pt-16 md:pt-0"
-    >      {/* Background gradient */}
+    >
+      {/* Background gradient */}
       <div className="absolute inset-0 gradient-hero opacity-50" />
 
       {/* Floating elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }} />
+      <div
+        className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float"
+        style={{ animationDelay: '1s' }}
+      />
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold mb-6 leading-tight mt-8 md:mt-0 break-words">
-
-
             Hi, I'm{' '}
             <span className="text-gradient">
               Rajkishor
@@ -42,12 +42,16 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-medium">
-            {/* Senior Frontend Engineer • React & TypeScript Specialist */}
-            Frontend Developer • React
+            {/* Full Stack Java Developer • React | Spring Boot | AWS */}
+            Full Stack Java Developer • React | Spring (Java) | AWS
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            I specialize in building scalable, high-performance web applications using React, TypeScript, and modern frontend tooling. With 7 years of experience, I focus on clean architecture, microfrontends, and developer-first UI systems that deliver real-world business impact.
+            With 7 years of experience, I specialize in building scalable,
+            high-performance web applications using React for UI, Java Spring
+            Boot for backend, and AWS for cloud deployment. My expertise spans
+            across microservices, SQL/NoSQL databases, system design, and
+            developer-first architecture that delivers real-world business impact.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -71,7 +75,6 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center justify-center space-x-6">
-
             <a
               href="/notes"
               className="p-3 text-muted-foreground hover:text-primary transition-smooth hover:scale-110"
@@ -79,7 +82,6 @@ const Hero = () => {
             >
               <FiBook className="w-6 h-6" />
             </a>
-
 
             <a
               href="https://github.com/mrajkishor"
@@ -98,7 +100,7 @@ const Hero = () => {
               <FiLinkedin className="w-6 h-6" />
             </a>
             <a
-              href="assets/doc/resume/FronteendDeveloperRajkishor.docx"
+              href="assets/doc/resume/FullStackJavaDeveloperRajkishor.docx"
               download
               className="p-3 text-muted-foreground hover:text-accent transition-smooth hover:scale-110"
             >

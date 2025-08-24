@@ -1,44 +1,101 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { 
-  FiCode, 
-  FiDatabase, 
-  FiCloud, 
+import {
+  FiCode,
+  FiDatabase,
+  FiCloud,
   FiSmartphone,
   FiGitBranch,
-  FiTool
+  FiTool,
+  FiUsers,
+  FiCpu
 } from 'react-icons/fi';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "UI (Web & Mobile)",
       icon: <FiCode className="w-6 h-6" />,
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion", "Redux"]
+      skills: [
+        { name: "React", rating: 5 }
+      ]
     },
     {
       title: "Backend",
       icon: <FiDatabase className="w-6 h-6" />,
-      skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL", "REST APIs"]
+      skills: [
+        { name: "Java (Spring Ecosystem)", rating: 4 },
+        { name: "Spring Boot", rating: 4 },
+        { name: "REST APIs", rating: 4 }
+      ]
     },
     {
-      title: "Cloud & DevOps",
-      icon: <FiCloud className="w-6 h-6" />,
-      skills: ["AWS", "Vercel", "Docker", "GitHub Actions", "Nginx", "Linux"]
+      title: "Database",
+      icon: <FiDatabase className="w-6 h-6" />,
+      skills: [
+        { name: "SQL", rating: 4 },
+        { name: "NoSQL", rating: 4 }
+      ]
     },
     {
-      title: "Mobile & Desktop",
-      icon: <FiSmartphone className="w-6 h-6" />,
-      skills: ["React Native", "Electron", "PWA", "Responsive Design", "Mobile-First", "Cross-Platform"]
-    },
-    {
-      title: "Version Control",
+      title: "System Design",
       icon: <FiGitBranch className="w-6 h-6" />,
-      skills: ["Git", "GitHub", "GitLab", "Branch Management", "Code Review", "CI/CD"]
+      skills: [
+        { name: "Microservices (Kafka, Redis, etc.)", rating: 5 },
+        { name: "MFE (Webpack, Vite)", rating: 5 }
+      ]
     },
     {
-      title: "Tools & Testing",
+      title: "DevOps & CI/CD",
       icon: <FiTool className="w-6 h-6" />,
-      skills: ["Jest", "Cypress", "Webpack", "Vite", "ESLint", "Prettier"]
+      skills: [
+        { name: "GitLab CI/CD", rating: 2 },
+        { name: "Azure DevOps", rating: 2 },
+        { name: "Docker", rating: 2 },
+        { name: "Kubernetes", rating: 2 }
+      ]
+    },
+    {
+      title: "CS Fundamentals",
+      icon: <FiCpu className="w-6 h-6" />,
+      skills: [
+        { name: "Data Structures & Algorithms", rating: 5 },
+        { name: "Operating Systems (Linux level)", rating: 5 },
+        { name: "Computer Networks", rating: 5 }
+      ]
+    },
+    {
+      title: "Cloud",
+      icon: <FiCloud className="w-6 h-6" />,
+      skills: [
+        { name: "AWS", rating: 4 }
+      ]
+    },
+    {
+      title: "Data / AI & ML",
+      icon: <FiTool className="w-6 h-6" />,
+      skills: [
+        { name: "Python", rating: 3 },
+        { name: "Spark", rating: 3 },
+        { name: "Flink", rating: 3 },
+        { name: "Kafka", rating: 3 },
+        { name: "NLP", rating: 3 },
+        { name: "Chatbots", rating: 3 },
+        { name: "LLM Models (BERT/Llama etc.)", rating: 3 },
+        { name: "Data science and AI/ML (Basics)", rating: 3 }
+      ]
+    },
+    {
+      title: "Behavioral",
+      icon: <FiUsers className="w-6 h-6" />,
+      // handled differently: badges instead of dots
+      skills: [
+        { name: "Driving cross-functional delivery" },
+        { name: "Team Leadership" },
+        { name: "Stakeholder Management" },
+        { name: "Mentoring" },
+        { name: "Conflict Resolution" }
+      ],
+      isBehavioral: true
     }
   ];
 
@@ -51,14 +108,14 @@ const Skills = () => {
               Technical <span className="text-gradient">Skills</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A comprehensive toolkit of modern technologies and frameworks that I use to build robust applications
+              A Java Full Stack toolkit covering frontend, backend, databases, cloud, system design, CS fundamentals, and modern AI/ML integrations
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
-              <Card 
-                key={category.title} 
+              <Card
+                key={category.title}
                 className="group shadow-card hover:shadow-primary/20 transition-smooth border-border/50 hover:border-primary/20"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -71,26 +128,38 @@ const Skills = () => {
                       {category.title}
                     </h3>
                   </div>
-                  
+
                   <div className="space-y-2">
-                    {category.skills.map((skill) => (
-                      <div 
-                        key={skill}
-                        className="flex items-center justify-between p-2 rounded-md bg-background/50 hover:bg-primary/10 transition-smooth"
-                      >
-                        <span className="text-sm font-medium">{skill}</span>
-                        <div className="flex space-x-1">
-                          {[1, 2, 3, 4, 5].map((dot) => (
-                            <div 
-                              key={dot}
-                              className={`w-2 h-2 rounded-full ${
-                                dot <= 4 ? 'bg-primary' : 'bg-muted'
-                              }`}
-                            />
-                          ))}
-                        </div>
+                    {category.isBehavioral ? (
+                      <div className="flex flex-wrap gap-2">
+                        {category.skills.map((skill) => (
+                          <span
+                            key={skill.name}
+                            className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary font-medium"
+                          >
+                            {skill.name}
+                          </span>
+                        ))}
                       </div>
-                    ))}
+                    ) : (
+                      category.skills.map((skill) => (
+                        <div
+                          key={skill.name}
+                          className="flex items-center justify-between p-2 rounded-md bg-background/50 hover:bg-primary/10 transition-smooth"
+                        >
+                          <span className="text-sm font-medium">{skill.name}</span>
+                          <div className="flex space-x-1">
+                            {[1, 2, 3, 4, 5].map((dot) => (
+                              <div
+                                key={dot}
+                                className={`w-2 h-2 rounded-full ${dot <= (skill.rating ?? 0) ? 'bg-primary' : 'bg-muted'
+                                  }`}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ))
+                    )}
                   </div>
                 </CardContent>
               </Card>
