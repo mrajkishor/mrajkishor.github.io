@@ -24,8 +24,7 @@ const Skills = () => {
       icon: <FiDatabase className="w-6 h-6" />,
       skills: [
         { name: "Java (Spring Ecosystem)", rating: 4 },
-        { name: "Spring Boot", rating: 4 },
-        { name: "REST APIs", rating: 4 }
+        { name: "Node.Js (Express.js)", rating: 4 }
       ]
     },
     {
@@ -40,8 +39,16 @@ const Skills = () => {
       title: "System Design",
       icon: <FiGitBranch className="w-6 h-6" />,
       skills: [
+        { name: "Scalability & Load Balancing", rating: 5 },
         { name: "Microservices (Kafka, Redis, etc.)", rating: 5 },
-        { name: "MFE (Webpack, Vite)", rating: 5 }
+        { name: "API Design (REST, GraphQL, gRPC)", rating: 5 },
+        { name: "Database Design (SQL & NoSQL)", rating: 5 },
+        { name: "Caching (Redis, CDN, In-Memory)", rating: 5 },
+        { name: "Message Queues & Event-Driven Systems", rating: 5 },
+        { name: "MFE (Webpack, Vite)", rating: 4 },
+        { name: "Monitoring & Observability (Prometheus, Grafana)", rating: 4 },
+        { name: "Cloud & Deployment (AWS, Docker, Kubernetes)", rating: 5 },
+        { name: "Security & Authentication (OAuth, JWT)", rating: 4 }
       ]
     },
     {

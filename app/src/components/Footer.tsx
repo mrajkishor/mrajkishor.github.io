@@ -75,7 +75,7 @@ const Footer = () => {
                   <FiLinkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:john.doe@example.com"
+                  href="mailto:mrajkishor331@gmail.com"
                   className="p-2 text-muted-foreground hover:text-primary transition-smooth hover:scale-110"
                 >
                   <FiMail className="w-5 h-5" />

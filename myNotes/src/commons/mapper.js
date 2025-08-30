@@ -2370,6 +2370,10 @@ const mapper = {
                         "Performance Budgets": true,
                         "Lighthouse CI in GitHub Actions": true
                     }
+                },
+                "CIQnA": {
+                    "___urlPath___": "ciqna",
+                    "___md___": 1224
                 }
 
             },
@@ -9031,8 +9035,12 @@ const mapper = {
                             "Creating and Calling Stored Procedures": { "___urlPath___": "creating-calling-stored-procedures", "___md___": 1217 },
                             "Creating and Using User-Defined Functions (UDFs)": { "___urlPath___": "udfs", "___md___": 1218 },
                             "IN, OUT, INOUT Parameters": { "___urlPath___": "in-out-inout-parameters", "___md___": 1219 },
-                            "Error Handling in Procedures": { "___urlPath___": "error-handling-procedures", "___md___": true },
-                            "Procedural Constructs (DECLARE, IF, WHILE, LOOP)": { "___urlPath___": "procedural-constructs", "___md___": true }
+                            "Error Handling in Procedures": { "___urlPath___": "error-handling-procedures", "___md___": 1221 },
+                            "Procedural Constructs (DECLARE, IF, WHILE, LOOP)": { "___urlPath___": "procedural-constructs", "___md___": 1222 },
+                            "CIQnA": {
+                                "___urlPath___": "ciqna",
+                                "___md___": 1223
+                            }
                         },
                         "Views & Materialized Views": {
                             "___urlPath___": "views-materialized",
