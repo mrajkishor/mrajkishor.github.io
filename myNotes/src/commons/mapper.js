@@ -7950,10 +7950,17 @@ const mapper = {
                             }
                         },
                         "PART-4: LeetCode 20 (Boost problem-solving skills)": {
-                            "___urlPath___": "leetcode-20"
+                            "___urlPath___": "leetcode-20",
+                            "___md___": true
+                        },
+                        "Quick Revision Cheatsheet": {
+                            "___urlPath___": "quick-revision-cheatsheet",
+                            "___md___": true
+                        },
+                        "Javascript important functions (for DSA)": {
+                            "___urlPath___": "js-imp-fun-for-dsa",
+                            "___md___": 1225
                         }
-
-
                     },
                     "AtoZ DSA Problems and Solutions": {
                         "___urlPath___": "a-to-z-dsa-problems-and-solutions",
