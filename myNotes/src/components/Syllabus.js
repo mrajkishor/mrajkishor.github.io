@@ -1997,7 +1997,7 @@ const renderTiles = (topics, basePath) => {
         "Machine Learning": machine_learning,
         "Artificial Intelligence": artificial_intelligence,
 
-        "Cloud Service Providers": cloud_service_providers,
+        "Cloud Service Providers (AWS)": cloud_service_providers,
     };
 
     return Object.entries(topics)
@@ -2109,7 +2109,7 @@ const Syllabus = () => {
                     </h2>
 
                     <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                        {renderTiles(syllabus["Full-Stack Developer Notes"], "#/contents/full-stack-developer-course")}
+                        {renderTiles(syllabus["Full-Stack Developer"], "#/contents/full-stack-developer-course")}
                     </StackGrid>
 
                 </div>
@@ -2121,28 +2121,62 @@ const Syllabus = () => {
                     <h2
                         className="tiles-header"
                     >
-                        Data Engineering 🗄️📊🔧
+                        Niche 1 - Data Engineering 🗄️📊🔧
                     </h2>
 
                     <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                        {renderTiles(syllabus["Data Engineering Notes"], "#/contents/data-engineering-course")}
+                        {renderTiles(syllabus["Niche 1 - Data Engineering"], "#/contents/data-engineering-course")}
                     </StackGrid>
 
                 </div>
 
+                {/* Cloud Architecture Section */}
+                <div className="tiles-wrapper rotate-left">
 
+                    <h2 className="tiles-header">
+                        Niche 2 - Cloud Architecture ☁️🏗️⚡
+                    </h2>
 
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Niche 2 - Cloud Architecture"], "#/contents/cloud-architecture-course")}
+                    </StackGrid>
+
+                </div>
+                {/* SRE and MLOps Section */}
+                <div className="tiles-wrapper rotate-right">
+
+                    <h2 className="tiles-header">
+                        Niche 3 - SRE and MLOps 🔍🛠️🤖
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Niche 3 - SRE and MLOps"], "#/contents/sre-mlops-course")}
+                    </StackGrid>
+
+                </div>
+                {/* CyberSecurity Section */}
+                <div className="tiles-wrapper rotate-left">
+
+                    <h2 className="tiles-header">
+                        Niche 4 - CyberSecurity 🔐🕵️‍♂️🛡️
+                    </h2>
+
+                    <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
+                        {renderTiles(syllabus["Niche 4 - CyberSecurity"], "#/contents/cybersecurity-course")}
+                    </StackGrid>
+
+                </div>
                 {/* Data Science Section */}
                 <div className="tiles-wrapper rotate-left">
 
                     <h2
                         className="tiles-header"
                     >
-                        Data Science and AI 🤖📊📈
+                        Niche 5 - Data Science and AI/ML 🤖📊📈
                     </h2>
 
                     <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                        {renderTiles(syllabus["Data Science and Artificial Intelligence Notes"],
+                        {renderTiles(syllabus["Niche 5 - Data Science and Artificial Intelligence (AI/ML)"],
                             "#/contents/data-science-and-artificial-intelligence-course"
                         ) // Five-line loading skeleton
                         }
@@ -2161,7 +2195,7 @@ const Syllabus = () => {
                     </h2>
 
                     <StackGrid className="stack-grid-wrapper" columnWidth={columnWidth} gutterWidth={20} gutterHeight={20}>
-                        {renderTiles(syllabus["Computer Science and Applications Notes"],
+                        {renderTiles(syllabus["Computer Science, and Its Applications"],
                             "#/contents/computer-science-and-applications-course"
                         ) // Five-line loading skeleton
                         }
@@ -2169,7 +2203,26 @@ const Syllabus = () => {
 
                 </div>
 
+                {/* General Aptitude Section */}
+                <div className="tiles-wrapper rotate-left">
 
+                    <h2 className="tiles-header">
+                        General Aptitude 🧮🧠📝
+                    </h2>
+
+                    <StackGrid
+                        className="stack-grid-wrapper"
+                        columnWidth={columnWidth}
+                        gutterWidth={20}
+                        gutterHeight={20}
+                    >
+                        {renderTiles(
+                            syllabus["General Aptitude"],
+                            "#/contents/general-aptitude-course"
+                        )}
+                    </StackGrid>
+
+                </div>
 
             </div>
             <div className="syllabus-footer">

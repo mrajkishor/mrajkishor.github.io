@@ -8,7 +8,7 @@ import { NextJS } from './Courses/Full Stack Development/Frontend Development/Ja
 const mapper = {
     "Contents": {
         "___urlPath___": "contents",
-        "Full-Stack Developer Notes": {
+        "Full-Stack Developer": {
             "___urlPath___": "full-stack-developer-course",
             "Backend Development": {
                 "___urlPath___": "backend-development",
@@ -5385,7 +5385,7 @@ const mapper = {
                     }
                 }
             },
-            "Cloud Service Providers": {
+            "Cloud Service Providers (AWS)": {
                 "___urlPath___": "cloud-service-providers",
                 "AWS": {
                     "AWS Certified Solutions Architect Associate (SAA-C03)": {
@@ -6365,7 +6365,9 @@ const mapper = {
             },
             ...QBank
         },
-        "Data Engineering Notes": {
+
+
+        "Niche 1 - Data Engineering": {
             "___urlPath___": "data-engineering-course",
             "Data Engineering Foundations": {
                 "Data Warehousing Concepts": true,
@@ -6629,7 +6631,372 @@ const mapper = {
                 "Technical Decision-Making and Tradeoffs": true
             }
         },
-        "Data Science and Artificial Intelligence Notes": {
+
+        "Niche 2 - Cloud Architecture": {
+            "___urlPath___": "cloud-architecture-course",
+            "Foundations of Cloud Computing": {
+                "___urlPath___": "foundations-of-cloud-computing",
+                "Cloud Service Models (IaaS, PaaS, SaaS, FaaS)": true,
+                "Shared Responsibility Model": true,
+                "Virtualization vs Containerization": true,
+                "Cloud Regions, Zones, and Edge Locations": true,
+                "CAP Theorem and Cloud Trade-offs": true,
+                "Multi-Tenancy and Resource Pooling": true
+            },
+            "Cloud Providers Overview": {
+                "AWS Core Services": {
+                    "EC2, VPC, IAM, S3, RDS": true,
+                    "ECS, EKS, Lambda": true,
+                    "CloudFront, Route53, API Gateway": true
+                },
+                "GCP Core Services": {
+                    "Compute Engine, IAM, Cloud Storage": true,
+                    "BigQuery, Pub/Sub, Dataflow": true,
+                    "Cloud Functions, Cloud Run, Anthos": true
+                },
+                "Azure Core Services": {
+                    "VMs, VNet, Storage Accounts": true,
+                    "Azure Functions, AKS, Logic Apps": true,
+                    "Cosmos DB, Service Bus, Event Hub": true
+                },
+                "Vendor Neutral Concepts": {
+                    "Terraform, Pulumi for IaC": true,
+                    "Kubernetes (K8s) as a Common Orchestrator": true,
+                    "Crossplane and Multi-cloud APIs": true
+                }
+            },
+            "Architectural Patterns": {
+                "___urlPath___": "architectural-patterns",
+                "Monolith vs Microservices vs Serverless": true,
+                "Event-Driven and Pub/Sub Architectures": true,
+                "CQRS and Event Sourcing": true,
+                "Service Mesh and Sidecar Patterns": true,
+                "Saga Pattern and Transaction Orchestration": true,
+                "Hexagonal & Clean Architecture in Cloud": true,
+                "Twelve-Factor App Principles": true
+            },
+            "Networking & Security": {
+                "___urlPath___": "networking-and-security",
+                "VPC, Subnets, NAT, Gateways": true,
+                "Load Balancing (L4 vs L7)": true,
+                "CDN & Edge Networking": true,
+                "Zero Trust Architectures": true,
+                "Identity and Access Management (IAM)": true,
+                "Encryption (KMS, HSM, TLS, mTLS)": true,
+                "Firewalls, WAF, DDoS Protection": true
+            },
+            "Scalability & High Availability": {
+                "___urlPath___": "scalability-high-availability",
+                "Horizontal vs Vertical Scaling": true,
+                "Auto Scaling Groups & Policies": true,
+                "Load Balancing across Regions": true,
+                "Multi-Region Active-Active Designs": true,
+                "Disaster Recovery (RTO, RPO)": true,
+                "Chaos Engineering & GameDays": true
+            },
+            "Storage & Databases": {
+                "___urlPath___": "storage-and-databases",
+                "Block vs Object vs File Storage": true,
+                "Caching with Redis / Memcached": true,
+                "SQL (RDS, CloudSQL, Aurora)": true,
+                "NoSQL (DynamoDB, Cosmos DB, Firestore)": true,
+                "Time-Series & Graph Databases in Cloud": true,
+                "Sharding, Replication, Multi-Region Writes": true
+            },
+            "Containers & Orchestration": {
+                "___urlPath___": "containers-orchestration",
+                "Docker Internals and Optimizations": true,
+                "Kubernetes Deep Dive (Pods, Services, Ingress)": true,
+                "Helm, Operators, and CRDs": true,
+                "Service Meshes (Istio, Linkerd, Consul)": true,
+                "Scaling Stateful Workloads": true,
+                "Kubernetes Security & Pod Hardening": true
+            },
+            "Serverless & FaaS": {
+                "___urlPath___": "serverless-faas",
+                "AWS Lambda, GCP Cloud Functions, Azure Functions": true,
+                "Cold Start Mitigation": true,
+                "Event Triggers (S3, Pub/Sub, Event Grid)": true,
+                "Orchestration with Step Functions / Durable Functions": true,
+                "Serverless CI/CD Pipelines": true,
+                "Cost Optimization in Serverless": true
+            },
+            "DevOps, IaC & Automation": {
+                "___urlPath___": "devops-iac-automation",
+                "Terraform Modules and Workspaces": true,
+                "Pulumi with TypeScript/Python": true,
+                "CloudFormation and CDK (AWS CDK, cdk8s)": true,
+                "CI/CD Pipelines (Jenkins, GitHub Actions, GitLab CI)": true,
+                "Secrets Management (Vault, SSM, Secret Manager)": true,
+                "Policy as Code (OPA, Sentinel)": true
+            },
+            "Observability & Reliability": {
+                "___urlPath___": "observability-reliability",
+                "Metrics, Logging, Tracing (Prometheus, Grafana, ELK, OpenTelemetry)": true,
+                "Distributed Tracing with Jaeger/Zipkin": true,
+                "SLI, SLO, SLA Definitions": true,
+                "Error Budgets & SRE Practices": true,
+                "Blue/Green, Canary, and Shadow Deployments": true,
+                "Incident Response & On-call Management": true
+            },
+            "Advanced Topics": {
+                "___urlPath___": "advanced-cloud-architecture",
+                "Multi-Cloud vs Hybrid Cloud Trade-offs": true,
+                "Edge Computing (Cloudflare Workers, AWS Greengrass, Azure Edge)": true,
+                "Cloud-Native AI/ML Infrastructure": true,
+                "Data Lakes and Lakehouse Architectures": true,
+                "Real-Time Streaming Architectures (Kafka, Kinesis, Pub/Sub)": true,
+                "Cloud Economics and FinOps": true
+            },
+            "Security, Compliance & Governance": {
+                "___urlPath___": "security-compliance-governance",
+                "SOC2, ISO27001, HIPAA, GDPR in Cloud": true,
+                "Cloud Auditing and Compliance Tools": true,
+                "IAM Federation and Single Sign-On": true,
+                "Multi-Account / Multi-Project Governance": true,
+                "Secrets Rotation & Key Management": true,
+                "Cloud Security Posture Management (CSPM)": true
+            },
+            "System Design in Cloud": {
+                "___urlPath___": "system-design-in-cloud",
+                "Designing Scalable APIs with API Gateway": true,
+                "Distributed Caching & CDN Strategies": true,
+                "Designing for Global Latency Minimization": true,
+                "Patterns for Data Consistency": true,
+                "Resiliency Patterns (Circuit Breaker, Bulkhead)": true,
+                "Case Studies (Netflix, Uber, Airbnb Cloud Designs)": true
+            },
+            "Soft Skills & Leadership": {
+                "___urlPath___": "soft-skills-leadership",
+                "Cloud Design Reviews and RFC Writing": true,
+                "Stakeholder Communication for Cloud Trade-offs": true,
+                "Leading Cloud Migration Projects": true,
+                "Mentoring Junior Cloud Engineers": true,
+                "Business-Driven Cloud Decisions": true
+            }
+        }
+        ,
+        "Niche 3 - SRE and MLOps": {
+            "___urlPath___": "sre-mlops-course",
+            "SRE Foundations": {
+                "___urlPath___": "sre-foundations",
+                "Principles of SRE": true,
+                "Error Budgets and Service Level Objectives (SLO, SLI, SLA)": true,
+                "Toil Reduction and Automation": true,
+                "Incident Management and On-Call Practices": true,
+                "Blameless Postmortems": true
+            },
+            "Infrastructure & Reliability Engineering": {
+                "___urlPath___": "infrastructure-reliability",
+                "High Availability Architectures": true,
+                "Capacity Planning and Demand Forecasting": true,
+                "Disaster Recovery (RTO/RPO)": true,
+                "Resiliency Patterns (Circuit Breaker, Bulkhead, Retry)": true,
+                "Chaos Engineering and Failure Injection": true
+            },
+            "Monitoring & Observability": {
+                "___urlPath___": "monitoring-observability",
+                "Metrics, Logs, Traces (Golden Signals)": true,
+                "Prometheus, Grafana, Alertmanager": true,
+                "Distributed Tracing with OpenTelemetry": true,
+                "Log Aggregation (ELK, Loki)": true,
+                "SLI Dashboards & Alert Fatigue Reduction": true
+            },
+            "Automation & DevOps Practices": {
+                "___urlPath___": "automation-devops",
+                "CI/CD Pipelines (GitHub Actions, GitLab, Jenkins, ArgoCD)": true,
+                "Infrastructure as Code (Terraform, Pulumi)": true,
+                "Kubernetes Operators and CRDs": true,
+                "Policy as Code (OPA, Kyverno)": true,
+                "GitOps Workflows (ArgoCD, Flux)": true
+            },
+            "Security & Compliance for SRE": {
+                "___urlPath___": "sre-security-compliance",
+                "Zero Trust Networking": true,
+                "IAM, RBAC, and Secrets Management": true,
+                "TLS, mTLS, and Certificate Rotation": true,
+                "Vulnerability Scanning and Patch Automation": true,
+                "Compliance Standards (SOC2, ISO, HIPAA)": true
+            },
+            "MLOps Foundations": {
+                "___urlPath___": "mlops-foundations",
+                "What is MLOps vs DevOps": true,
+                "ML Lifecycle Stages (Dev → Deploy → Monitor)": true,
+                "Data Versioning and Experiment Tracking": true,
+                "CI/CD/CT (Continuous Training)": true,
+                "Model Governance and Explainability": true
+            },
+            "Data Engineering for ML": {
+                "___urlPath___": "data-engineering-for-ml",
+                "Feature Engineering Pipelines": true,
+                "Feature Stores (Feast, Tecton, Vertex AI)": true,
+                "Data Quality and Drift Detection": true,
+                "Batch vs Streaming Data Pipelines": true,
+                "ETL/ELT with Airflow, Spark, Kubeflow": true
+            },
+            "ML Model Deployment": {
+                "___urlPath___": "ml-model-deployment",
+                "Batch Inference vs Real-Time Inference": true,
+                "Model Serving Frameworks (TensorFlow Serving, TorchServe, Triton)": true,
+                "Kubernetes for Model Orchestration (KFServing, KServe, BentoML)": true,
+                "Model Packaging (ONNX, Docker, TorchScript)": true,
+                "Serverless ML Deployments (AWS Lambda, Cloud Run)": true
+            },
+            "Monitoring & Observability for ML": {
+                "___urlPath___": "ml-monitoring",
+                "Model Drift and Data Drift Detection": true,
+                "Concept Drift vs Covariate Shift": true,
+                "Fairness, Bias, and Explainability": true,
+                "Model Metrics vs System Metrics": true,
+                "End-to-End Monitoring Dashboards": true
+            },
+            "Advanced MLOps Topics": {
+                "___urlPath___": "advanced-mlops",
+                "AutoML & Hyperparameter Tuning (Optuna, Ray Tune)": true,
+                "Experiment Tracking (MLflow, Weights & Biases)": true,
+                "A/B Testing and Shadow Deployments for Models": true,
+                "Federated Learning and Privacy Preserving ML": true,
+                "GenAI and LLMOps (LangChain, VectorDB, Retrieval-Augmented Generation)": true
+            },
+            "Observability & Reliability in ML Systems": {
+                "___urlPath___": "observability-ml-systems",
+                "Logging Features & Predictions": true,
+                "Alerting on Drift and Data Quality Failures": true,
+                "Canary Rollouts for ML Models": true,
+                "SLI/SLOs for ML Services": true,
+                "Human-in-the-Loop Monitoring": true
+            },
+            "Cross-Domain Practices": {
+                "___urlPath___": "sre-mlops-cross-domain",
+                "Platform Engineering for SRE & MLOps": true,
+                "Cloud-Native Tooling (AWS SageMaker, GCP Vertex AI, Azure ML)": true,
+                "Cost Optimization & FinOps for ML Workloads": true,
+                "Ethics in AI and Responsible ML": true,
+                "Case Studies (Netflix SRE, Uber MLOps, Google SRE, OpenAI Ops)": true
+            },
+            "Soft Skills & Leadership": {
+                "___urlPath___": "sre-mlops-soft-skills",
+                "Running Incident Reviews & War Rooms": true,
+                "Communicating Reliability Trade-offs to Stakeholders": true,
+                "Leading ML Deployment Projects": true,
+                "Cross-functional Collaboration (Data, ML, SRE teams)": true,
+                "Writing Design Docs for Reliability & MLOps": true
+            }
+        }
+        ,
+        "Niche 4 - CyberSecurity": {
+            "___urlPath___": "cybersecurity-course",
+            "Foundations of Cybersecurity": {
+                "___urlPath___": "foundations-of-cybersecurity",
+                "CIA Triad (Confidentiality, Integrity, Availability)": true,
+                "Security Principles (Least Privilege, Defense in Depth)": true,
+                "Threat Modeling (STRIDE, DREAD)": true,
+                "Authentication vs Authorization": true,
+                "Encryption Basics (Symmetric, Asymmetric, Hashing)": true,
+                "Common Attack Vectors (Phishing, Social Engineering, MITM)": true
+            },
+            "Network Security": {
+                "___urlPath___": "network-security",
+                "TCP/IP, OSI Security Layers": true,
+                "Firewalls, IDS, IPS": true,
+                "VPNs and Tunneling Protocols": true,
+                "Zero Trust Network Access": true,
+                "DDoS Attacks and Mitigation": true,
+                "Secure Network Architecture (DMZ, Segmentation)": true
+            },
+            "Application & Web Security": {
+                "___urlPath___": "application-web-security",
+                "OWASP Top 10": true,
+                "SQL Injection, XSS, CSRF": true,
+                "Secure Authentication (MFA, OAuth2, SAML)": true,
+                "API Security (Rate Limiting, JWT, mTLS)": true,
+                "Secure Code Reviews & Static Analysis": true,
+                "Runtime Protections (RASP, WAF)": true
+            },
+            "Cloud & DevSecOps": {
+                "___urlPath___": "cloud-devsecops",
+                "Shared Responsibility Model in Cloud": true,
+                "IAM Best Practices": true,
+                "Secrets Management (Vault, KMS, AWS Secrets Manager)": true,
+                "Infrastructure as Code Security (Terraform, CloudFormation)": true,
+                "Container Security (Docker, Kubernetes Hardening)": true,
+                "CI/CD Pipeline Security (Supply Chain, SBOM, SLSA)": true
+            },
+            "Cryptography & PKI": {
+                "___urlPath___": "cryptography-pki",
+                "AES, RSA, ECC Algorithms": true,
+                "Hashing (SHA, bcrypt, Argon2)": true,
+                "Digital Signatures & Certificates": true,
+                "Public Key Infrastructure (PKI)": true,
+                "TLS/SSL Deep Dive": true,
+                "Quantum-Safe Cryptography": true
+            },
+            "Endpoint & System Security": {
+                "___urlPath___": "endpoint-system-security",
+                "Endpoint Detection & Response (EDR/XDR)": true,
+                "Anti-virus, Anti-malware Tools": true,
+                "Patch Management & Hardening": true,
+                "BYOD and Mobile Device Management": true,
+                "Windows/Linux/Mac Security Fundamentals": true,
+                "Sandboxing and Isolation Techniques": true
+            },
+            "Identity & Access Management": {
+                "___urlPath___": "identity-access-management",
+                "RBAC vs ABAC vs PBAC": true,
+                "Federated Identity (SSO, SAML, OIDC)": true,
+                "Privileged Access Management (PAM)": true,
+                "Passwordless Authentication": true,
+                "Biometric Security": true,
+                "Session Management & Token Security": true
+            },
+            "Offensive Security": {
+                "___urlPath___": "offensive-security",
+                "Penetration Testing Methodologies": true,
+                "Vulnerability Assessment Tools (Nmap, Nessus, Burp)": true,
+                "Exploit Development Basics": true,
+                "Red Teaming vs Blue Teaming": true,
+                "CTFs & Ethical Hacking Practices": true,
+                "Adversarial Tactics & Kill Chain Analysis": true
+            },
+            "Defensive Security & Incident Response": {
+                "___urlPath___": "defensive-security-incident-response",
+                "SIEM Tools (Splunk, ELK, QRadar)": true,
+                "SOC Operations & Playbooks": true,
+                "Incident Detection, Response & Recovery": true,
+                "Threat Hunting Methodologies": true,
+                "Digital Forensics & Evidence Collection": true,
+                "Post-Incident Reviews & Lessons Learned": true
+            },
+            "Compliance & Governance": {
+                "___urlPath___": "compliance-governance",
+                "Security Frameworks (NIST, CIS, ISO 27001)": true,
+                "GDPR, HIPAA, PCI-DSS": true,
+                "Data Classification & Privacy Policies": true,
+                "Risk Management (Qualitative, Quantitative)": true,
+                "Third-Party Risk & Vendor Security": true,
+                "Audit Readiness & Reporting": true
+            },
+            "Emerging Threats & Advanced Topics": {
+                "___urlPath___": "emerging-threats-advanced",
+                "Ransomware Defense Strategies": true,
+                "Zero-Day Exploits": true,
+                "AI/ML in Cybersecurity (Detection, Threat Intelligence)": true,
+                "Blockchain & Smart Contract Security": true,
+                "IoT/OT Security Challenges": true,
+                "Post-Quantum Security Strategies": true
+            },
+            "Soft Skills & Leadership": {
+                "___urlPath___": "soft-skills-leadership-cybersecurity",
+                "Writing Security Design Reviews & RFCs": true,
+                "Stakeholder Communication in Breach Scenarios": true,
+                "Security Awareness Training & Culture Building": true,
+                "Leading Red/Blue/Purple Team Exercises": true,
+                "Business Risk vs Technical Risk Decisions": true,
+                "Career Paths: CISO, Security Architect, Security Engineer": true
+            }
+        }
+        ,
+        "Niche 5 - Data Science and Artificial Intelligence (AI/ML)": {
             "___urlPath___": "data-science-and-artificial-intelligence-course",
             "Probability and Statistics": {
                 "___urlPath___": "probability-statistics",
@@ -7200,9 +7567,180 @@ const mapper = {
                         "___md___": 554
                     }
                 }
+            },
+
+            "Industry Level": {
+                "Niche 5 - Data Science and Artificial Intelligence (AI/ML)": {
+                    "___urlPath___": "data-science-and-artificial-intelligence-course",
+
+                    "Mathematical Foundations": {
+                        "___urlPath___": "mathematical-foundations",
+                        "Probability & Statistics (Advanced)": {
+                            "Measure-Theoretic Probability (FAANG depth)": true,
+                            "Bayesian Inference & MCMC": true,
+                            "Information Theory (Entropy, KL Divergence, Cross-Entropy)": true,
+                            "Concentration Inequalities (Chernoff, Hoeffding)": true
+                        },
+                        "Linear Algebra": {
+                            "Matrix Factorizations (SVD, Eigen, PCA)": true,
+                            "Low-Rank Approximations": true,
+                            "Spectral Graph Theory in ML": true
+                        },
+                        "Calculus & Optimization": {
+                            "Convex Optimization": true,
+                            "Lagrangian Duality & KKT Conditions": true,
+                            "Stochastic Optimization (SGD, Adam, AdaGrad, RMSProp)": true,
+                            "Advanced Optimization (Mirror Descent, Second-Order Methods)": true
+                        }
+                    },
+
+                    "Core Machine Learning": {
+                        "___urlPath___": "core-machine-learning",
+                        "Supervised Learning (Advanced)": {
+                            "Generalized Linear Models": true,
+                            "Regularization (L1, L2, ElasticNet)": true,
+                            "Kernel Methods & SVMs": true,
+                            "Tree-Based Methods (Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost)": true
+                        },
+                        "Unsupervised Learning": {
+                            "Clustering (KMeans, DBSCAN, Spectral)": true,
+                            "Density Estimation (EM, Gaussian Mixture Models)": true,
+                            "Matrix Factorization & Latent Factor Models": true
+                        },
+                        "Reinforcement Learning": {
+                            "Value-Based Methods (Q-Learning, DQN)": true,
+                            "Policy Gradient & Actor-Critic Methods": true,
+                            "Model-Based RL & Planning": true,
+                            "Multi-Agent RL": true
+                        },
+                        "Evaluation & Generalization": {
+                            "Bias-Variance Tradeoff": true,
+                            "Cross-Validation & Bootstrap": true,
+                            "Overfitting, Regularization & Model Complexity": true
+                        }
+                    },
+
+                    "Deep Learning": {
+                        "___urlPath___": "deep-learning",
+                        "Neural Network Foundations": {
+                            "Backpropagation & Automatic Differentiation": true,
+                            "Initialization Strategies (Xavier, He)": true,
+                            "Regularization (Dropout, BatchNorm, LayerNorm)": true
+                        },
+                        "CNNs & Computer Vision": {
+                            "Convolutional Architectures (LeNet, AlexNet, VGG, ResNet)": true,
+                            "Modern Vision Models (EfficientNet, ConvNeXt, Vision Transformers)": true,
+                            "Object Detection & Segmentation (YOLO, Faster R-CNN, Mask R-CNN)": true
+                        },
+                        "Sequence Models & NLP": {
+                            "RNNs, LSTMs, GRUs": true,
+                            "Attention Mechanisms": true,
+                            "Transformers (BERT, GPT, T5)": true,
+                            "Large Language Models (LLMs) Training & Fine-Tuning": true,
+                            "Embeddings (Word2Vec, GloVe, FastText, Sentence Transformers)": true
+                        },
+                        "Generative AI": {
+                            "Variational Autoencoders (VAEs)": true,
+                            "Generative Adversarial Networks (GANs)": true,
+                            "Diffusion Models (DDPM, Stable Diffusion)": true,
+                            "Prompt Engineering & Retrieval-Augmented Generation (RAG)": true
+                        }
+                    },
+
+                    "Data Engineering for AI/ML": {
+                        "___urlPath___": "data-engineering-for-ai-ml",
+                        "Big Data Ecosystem": {
+                            "Spark (MLlib, PySpark)": true,
+                            "Streaming Systems (Kafka, Flink)": true,
+                            "Delta Lake, Lakehouse, Feature Stores": true
+                        },
+                        "Data Preprocessing": {
+                            "Feature Scaling & Encoding": true,
+                            "Handling Missing Data": true,
+                            "Dimensionality Reduction": true,
+                            "Data Augmentation (Vision/NLP)": true
+                        },
+                        "Feature Engineering": {
+                            "Feature Stores (Feast, Tecton)": true,
+                            "Automated Feature Extraction": true,
+                            "Feature Selection & Regularization": true
+                        }
+                    },
+
+                    "MLOps & AI in Production": {
+                        "___urlPath___": "mlops-ai-production",
+                        "Experiment Management": {
+                            "MLflow, Weights & Biases": true,
+                            "Hyperparameter Tuning (Optuna, Ray Tune)": true
+                        },
+                        "Model Deployment": {
+                            "Model Packaging (ONNX, TorchScript)": true,
+                            "Serving Frameworks (TensorFlow Serving, TorchServe, Triton)": true,
+                            "Real-Time Inference vs Batch Inference": true,
+                            "Serverless Deployments (AWS Lambda, GCP Cloud Run)": true
+                        },
+                        "Model Monitoring & Maintenance": {
+                            "Data & Concept Drift Detection": true,
+                            "Bias/Fairness Auditing": true,
+                            "Model Retraining Pipelines": true
+                        },
+                        "CI/CD for ML": {
+                            "Continuous Integration for Models": true,
+                            "Continuous Deployment (ArgoCD, Kubeflow Pipelines)": true,
+                            "Continuous Training": true
+                        }
+                    },
+
+                    "AI Systems & Scalability": {
+                        "___urlPath___": "ai-systems-scalability",
+                        "Distributed Training": {
+                            "Data Parallelism vs Model Parallelism": true,
+                            "Parameter Servers & AllReduce": true,
+                            "Horovod, DeepSpeed, PyTorch DDP": true
+                        },
+                        "Hardware Acceleration": {
+                            "GPU, TPU Optimizations": true,
+                            "Mixed Precision Training": true
+                        },
+                        "System Design for AI": {
+                            "Designing Recommendation Systems": true,
+                            "Search & Ranking Systems": true,
+                            "Real-Time Personalization Systems": true
+                        }
+                    },
+
+                    "Advanced Topics": {
+                        "___urlPath___": "advanced-ai-ml",
+                        "Causal Inference": true,
+                        "Graph Neural Networks (GNNs)": true,
+                        "Federated Learning": true,
+                        "Differential Privacy in AI": true,
+                        "Neurosymbolic AI": true,
+                        "AI for Code (Copilot, Code LLMs)": true
+                    },
+
+                    "AI Ethics, Governance & Business": {
+                        "___urlPath___": "ai-ethics-governance",
+                        "Responsible AI Principles": true,
+                        "Fairness, Accountability, Transparency": true,
+                        "AI Regulations (GDPR, EU AI Act)": true,
+                        "AI Economics & FinOps": true,
+                        "Leading AI Teams & Project Scoping": true
+                    },
+
+                    "Soft Skills & Leadership": {
+                        "___urlPath___": "soft-skills-leadership-ai",
+                        "Communicating AI to Stakeholders": true,
+                        "Writing Design Docs for AI Systems": true,
+                        "Tech Strategy & Tradeoff Decisions": true,
+                        "Mentoring Data Scientists & ML Engineers": true,
+                        "Cross-Functional Collaboration (Product, Data, Infra)": true
+                    }
+                }
+
             }
         },
-        "Computer Science and Applications Notes": {
+        "Computer Science, and Its Applications": {
             "___urlPath___": "computer-science-and-applications-course",
             "Data Structures": {
                 "___urlPath___": "data-structures",
@@ -7990,7 +8528,10 @@ const mapper = {
 
 
                     }
-                }
+
+
+                },
+
 
             },
             "Algorithms": {
@@ -8305,6 +8846,13 @@ const mapper = {
                         "How VS Code Search Works": {
                             "___urlPath___": "vs-code-search",
                             "___md___": 361
+                        }
+                    },
+                    "System": {
+                        "Bit Manipulation": {
+                        },
+                        "LRU Caches ..etc. related to Sys design can be asked in FAANg DSA as part of Java collections": {
+
                         }
                     }
                 },
@@ -8971,7 +9519,7 @@ const mapper = {
                             "Design Patterns (e.g. Outbox, Saga, Foreign Key Tradeoffs)": true
                         }
                     },
-                    "MySQL": {
+                    "MySQL 8.0 (suitable for 1Z0-908 & 1Z0-909 certification prep and hands-on with the Real-World / Enterprise Coverage)": {
                         "___urlPath___": "mysql",
                         "Contents": {
                             "___urlPath___": "contents",
@@ -8992,8 +9540,33 @@ const mapper = {
                             "Data Types (INT, VARCHAR, DATE, ENUM, etc.)": { "___urlPath___": "data-types", "___md___": true },
                             "INSERT, SELECT, UPDATE, DELETE": { "___urlPath___": "insert-select-update-delete", "___md___": true },
                             "Filtering with WHERE, LIKE, IN, BETWEEN": { "___urlPath___": "filtering", "___md___": true },
-                            "ORDER BY, LIMIT, OFFSET": { "___urlPath___": "order-limit-offset", "___md___": true }
+                            "ORDER BY, LIMIT, OFFSET": { "___urlPath___": "order-limit-offset", "___md___": true },
+                            "SQL Modes and Server Behavior": { "___urlPath___": "sql-modes", "___md___": true }
+
                         },
+                        "Views & Materialized Views": {
+                            "___urlPath___": "views-materialized",
+                            "Creating, Updating, and Dropping Views": { "___urlPath___": "creating-updating-views", "___md___": true },
+                            "Updatable vs Non-Updatable Views": { "___urlPath___": "updatable-vs-nonupdatable", "___md___": true },
+                            "Performance Considerations for Views": { "___urlPath___": "views-performance", "___md___": true },
+                            "Advanced Reporting (ROLLUP, CUBE, GROUPING SETS)": { "___urlPath___": "advanced-reporting", "___md___": true }
+                        },
+                        "Triggers & Events": {
+                            "___urlPath___": "triggers-events",
+                            "AFTER and BEFORE INSERT/UPDATE/DELETE Triggers": { "___urlPath___": "after-before-triggers", "___md___": true },
+                            "Row vs Statement Triggers": { "___urlPath___": "row-vs-statement-triggers", "___md___": true },
+                            "Scheduled Events and Cron Jobs in MySQL": { "___urlPath___": "scheduled-events-cron", "___md___": true },
+                            "Auditing and Logging via Triggers": { "___urlPath___": "auditing-logging-triggers", "___md___": true }
+                        },
+
+                        "JSON & Document Store": {
+                            "___urlPath___": "json-document-store",
+                            "Creating and Storing JSON Documents": { "___urlPath___": "json-create-store", "___md___": true },
+                            "Querying and Processing JSON Data": { "___urlPath___": "json-query-processing", "___md___": true },
+                            "Working with NoSQL and XDevAPI": { "___urlPath___": "json-xdevapi", "___md___": true },
+                            "Using MySQL Shell for Document Store": { "___urlPath___": "json-mysql-shell", "___md___": true }
+                        },
+
                         "Joins & Set Operations": {
                             "___urlPath___": "joins-set-operations",
                             "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN": { "___urlPath___": "joins", "___md___": true },
@@ -9081,6 +9654,7 @@ const mapper = {
                             "EXPLAIN and EXPLAIN ANALYZE": { "___urlPath___": "explain-analyze", "___md___": true },
                             "Slow Query Log and Performance Schema": { "___urlPath___": "slow-query-performance-schema", "___md___": true },
                             "Query Refactoring and Anti-Patterns": { "___urlPath___": "query-refactoring", "___md___": true }
+                            , "Handling Special Values (NULL, NaN, Infinities)": { "___urlPath___": "special-values", "___md___": true }
 
                         },
                         "Security & Access Control": {
@@ -9204,6 +9778,49 @@ const mapper = {
                                 "Multi-Tenant Schema Design for SaaS": { "___urlPath___": "multi-tenant-schema", "___md___": true },
                                 "OLTP and OLAP Hybrid (HTAP) Design": { "___urlPath___": "oltp-olap-htap", "___md___": true },
                                 "Change Data Capture with Kafka and Debezium": { "___urlPath___": "cdc-kafka-debezium", "___md___": true }
+                            }
+                        },
+                        "Administrator Add-Ons": {
+                            "___urlPath___": "administrator-addons",
+
+                            "Architecture": {
+                                "___urlPath___": "admin-architecture",
+                                "MySQL Storage Internals": { "___urlPath___": "mysql-storage-internals", "___md___": true },
+                                "InnoDB Data and Log Storage": { "___urlPath___": "innodb-data-logs", "___md___": true },
+                                "Buffers and Caches (InnoDB, Query Cache, Log Buffer)": { "___urlPath___": "buffers-caches", "___md___": true },
+                                "MySQL Data Dictionary": { "___urlPath___": "mysql-data-dictionary", "___md___": true }
+                            },
+
+                            "Server Installation & Configuration": {
+                                "___urlPath___": "admin-install-config",
+                                "Upgrade MySQL Safely": { "___urlPath___": "upgrade-mysql", "___md___": true },
+                                "Option Files and Server Variables": { "___urlPath___": "option-files-variables", "___md___": true },
+                                "Running Multiple MySQL Servers on Same Host": { "___urlPath___": "multiple-servers", "___md___": true }
+                            },
+
+                            "Security (Enterprise)": {
+                                "___urlPath___": "admin-security",
+                                "Authentication Plug-ins (caching_sha2_password, PAM, LDAP)": { "___urlPath___": "auth-plugins", "___md___": true },
+                                "Secure Host Environment (OS Hardening, Firewalls)": { "___urlPath___": "secure-host-env", "___md___": true },
+                                "MySQL Enterprise Firewall": { "___urlPath___": "enterprise-firewall", "___md___": true }
+                            },
+
+                            "Monitoring & Maintenance (Enterprise)": {
+                                "___urlPath___": "admin-monitoring",
+                                "MySQL Log Files (Error, General, Slow, Binary)": { "___urlPath___": "mysql-log-files", "___md___": true },
+                                "MySQL Enterprise Monitor": { "___urlPath___": "enterprise-monitor", "___md___": true },
+                                "Capacity Planning and Database Growth": { "___urlPath___": "capacity-planning", "___md___": true }
+                            },
+
+                            "Query Optimization (Enterprise)": {
+                                "___urlPath___": "admin-query-optimization",
+                                "Monitoring Index Statistics": { "___urlPath___": "index-statistics", "___md___": true },
+                                "Analyzing Queries with Enterprise Monitor": { "___urlPath___": "enterprise-monitor-queries", "___md___": true }
+                            },
+
+                            "Backups & Recovery (Enterprise)": {
+                                "___urlPath___": "admin-backup-recovery",
+                                "MySQL Enterprise Backup (MEB)": { "___urlPath___": "enterprise-backup", "___md___": true }
                             }
                         }
                     }
@@ -9758,192 +10375,287 @@ const mapper = {
                     "Building a Scalable DynamoDB Application": true
                 }
             },
-            "Discrete Mathematics": {
+            "Engineering Mathematics": {
                 "___urlPath___": "discrete-mathematics",
-                "Basics": {
-                    "Chapter 1: Basics Concepts of Set Theory": {
-                        "___urlPath___": "basics-concepts-of-set-theory",
-                        "___md___": 889
+                "Probability & Statistics": {
+                    "___urlPath___": "probability-and-statistics",
+                    "Counting (Permutation and Combination)": {
+                        "___urlPath___": "counting-permutation-combination",
+                        "___md___": true
                     },
-                    "Chapter 2: Introduction and Applications of Relational Theory": {
-                        "___urlPath___": "introduction-and-application-of-relational-theory",
-                        "___md___": 890
+                    "Probability Axioms": {
+                        "___urlPath___": "probability-axioms",
+                        "___md___": true
                     },
-                    "Chapter 3: Basic Concept and Application of Theory of Functions": {
-                        "___urlPath___": "basic-concepts-and-application-of-theory-of-functions",
-                        "___md___": 891
+                    "Sample Space and Events": {
+                        "___urlPath___": "sample-space-events",
+                        "___md___": true
                     },
-                    "Chapter 4: Applications of Recurrence Relational Principles": {
-                        "___urlPath___": "applications-of-reccurrence-relational-principles",
-                        "___md___": 892
+                    "Independent and Mutually Exclusive Events": {
+                        "___urlPath___": "independent-mutually-exclusive-events",
+                        "___md___": true
                     },
-                    "Chapter 5: Theory of Graph and Its Applications": {
-                        "___urlPath___": "theory-of-graph-and-its-applications",
-                        "___md___": 893
+                    "Marginal, Conditional and Joint Probability": {
+                        "___urlPath___": "marginal-conditional-joint-probability",
+                        "___md___": true
                     },
-                    "Chapter 6: Application of Matrix Theory in Graphs": {
-                        "___urlPath___": "application-of-matrix-theory-in-graph",
-                        "___md___": 894
+                    "Bayes Theorem": {
+                        "___urlPath___": "bayes-theorem",
+                        "___md___": true
                     },
-                    "Chapter 7: Concepts of Data Structure": {
-                        "___urlPath___": "concepts-of-data-structure",
-                        "___md___": 895
+                    "Conditional Expectation and Variance": {
+                        "___urlPath___": "conditional-expectation-variance",
+                        "___md___": true
                     },
-                    "Chapter 8: Introduction to Algebra": {
-                        "___urlPath___": "introduction-to-algebra",
-                        "___md___": 888
+                    "Mean, Median, Mode and Standard Deviation": {
+                        "___urlPath___": "mean-median-mode-standard-deviation",
+                        "___md___": true
                     },
-                    "Chapter 9: Application of Boolean Algebra in Circuit Design": {
-                        "___urlPath___": "application-of-boolean-algebra-in-circuit-design",
-                        "___md___": 887
+                    "Correlation and Covariance": {
+                        "___urlPath___": "correlation-covariance",
+                        "___md___": true
+                    },
+                    "Random Variables": {
+                        "___urlPath___": "random-variables",
+                        "___md___": true
+                    },
+                    "Discrete Random Variables and PMF": {
+                        "___urlPath___": "discrete-random-variables-pmf",
+                        "___md___": true
+                    },
+                    "Discrete Distributions (Uniform, Bernoulli, Binomial)": {
+                        "___urlPath___": "discrete-distributions-uniform-bernoulli-binomial",
+                        "___md___": true
+                    },
+                    "Continuous Random Variables and PDF": {
+                        "___urlPath___": "continuous-random-variables-pdf",
+                        "___md___": true
+                    },
+                    "Continuous Distributions (Uniform, Exponential, Poisson, Normal, Standard Normal, t, Chi-squared)": {
+                        "___urlPath___": "continuous-distributions-uniform-exponential-poisson-normal-stdnormal-t-chi-squared",
+                        "___md___": true
+                    },
+                    "Cumulative Distribution Function": {
+                        "___urlPath___": "cumulative-distribution-function",
+                        "___md___": true
+                    },
+                    "Conditional PDF": {
+                        "___urlPath___": "conditional-pdf",
+                        "___md___": true
+                    },
+                    "Central Limit Theorem": {
+                        "___urlPath___": "central-limit-theorem",
+                        "___md___": true
+                    },
+                    "Confidence Interval": {
+                        "___urlPath___": "confidence-interval",
+                        "___md___": true
+                    },
+                    "Hypothesis Testing (z-test, t-test, chi-squared test)": {
+                        "___urlPath___": "hypothesis-testing-z-t-chi-squared",
+                        "___md___": true
                     }
                 },
-                "Logic": {
-                    "___urlPath___": "logic",
-                    "Propositional Logic": {
-                        "___urlPath___": "propositional-logic",
-                        "Propositions and Logical Connectives": {
-                            "___urlPath___": "propositional-and-logical-connectives",
-                            "___md___": 437
+                "Linear Algebra": {
+                    "___urlPath___": "linear-algebra",
+                    "___md___": true
+                },
+                "Calculus and Optimisation Techniques": {
+                    "___urlPath___": "calculus-and-optimisation-techniques",
+                    "___md___": true
+                },
+                "Discrete Mathematics": {
+                    "Basics": {
+                        "Chapter 1: Basics Concepts of Set Theory": {
+                            "___urlPath___": "basics-concepts-of-set-theory",
+                            "___md___": 889
                         },
-                        "Truth Tables": {
-                            "___urlPath___": "truth-tables",
-                            "___md___": 438
+                        "Chapter 2: Introduction and Applications of Relational Theory": {
+                            "___urlPath___": "introduction-and-application-of-relational-theory",
+                            "___md___": 890
                         },
-                        "Tautologies and Contradictions": {
-                            "___urlPath___": "tautologies-and-contradictions",
-                            "___md___": 439
+                        "Chapter 3: Basic Concept and Application of Theory of Functions": {
+                            "___urlPath___": "basic-concepts-and-application-of-theory-of-functions",
+                            "___md___": 891
                         },
-                        "Logical Equivalence and Implication": {
-                            "___urlPath___": "logical-equivalence-and-implication",
-                            "___md___": 440
+                        "Chapter 4: Applications of Recurrence Relational Principles": {
+                            "___urlPath___": "applications-of-reccurrence-relational-principles",
+                            "___md___": 892
                         },
-                        "Normal Forms (CNF, DNF)": {
-                            "___urlPath___": "normal-forms-cnf-dnf",
-                            "___md___": 441
+                        "Chapter 5: Theory of Graph and Its Applications": {
+                            "___urlPath___": "theory-of-graph-and-its-applications",
+                            "___md___": 893
                         },
-                        "Inference Rules and Proof Techniques": {
-                            "___urlPath___": "inference-rules-and-proof-techniques",
-                            "___md___": 442
+                        "Chapter 6: Application of Matrix Theory in Graphs": {
+                            "___urlPath___": "application-of-matrix-theory-in-graph",
+                            "___md___": 894
+                        },
+                        "Chapter 7: Concepts of Data Structure": {
+                            "___urlPath___": "concepts-of-data-structure",
+                            "___md___": 895
+                        },
+                        "Chapter 8: Introduction to Algebra": {
+                            "___urlPath___": "introduction-to-algebra",
+                            "___md___": 888
+                        },
+                        "Chapter 9: Application of Boolean Algebra in Circuit Design": {
+                            "___urlPath___": "application-of-boolean-algebra-in-circuit-design",
+                            "___md___": 887
                         }
                     },
-                    "First Order Logic (Predicate Logic)": {
-                        "___urlPath___": "first-order-logic",
-                        "Predicates and Quantifiers": {
-                            "___urlPath___": "predicate-and-quantifiers",
-                            "___md___": 449
+                    "Logic": {
+                        "___urlPath___": "logic",
+                        "Propositional Logic": {
+                            "___urlPath___": "propositional-logic",
+                            "Propositions and Logical Connectives": {
+                                "___urlPath___": "propositional-and-logical-connectives",
+                                "___md___": 437
+                            },
+                            "Truth Tables": {
+                                "___urlPath___": "truth-tables",
+                                "___md___": 438
+                            },
+                            "Tautologies and Contradictions": {
+                                "___urlPath___": "tautologies-and-contradictions",
+                                "___md___": 439
+                            },
+                            "Logical Equivalence and Implication": {
+                                "___urlPath___": "logical-equivalence-and-implication",
+                                "___md___": 440
+                            },
+                            "Normal Forms (CNF, DNF)": {
+                                "___urlPath___": "normal-forms-cnf-dnf",
+                                "___md___": 441
+                            },
+                            "Inference Rules and Proof Techniques": {
+                                "___urlPath___": "inference-rules-and-proof-techniques",
+                                "___md___": 442
+                            }
                         },
-                        "Free and Bound Variables": {
-                            "___urlPath___": "free-and-bound-variables",
-                            "___md___": 450
-                        },
-                        "Nested Quantifiers": {
-                            "___urlPath___": "nested-quantifiers",
-                            "___md___": 452
-                        },
-                        "Logical Inference in FOL": {
-                            "___urlPath___": "logical-inference-in-fol",
-                            "___md___": 453
+                        "First Order Logic (Predicate Logic)": {
+                            "___urlPath___": "first-order-logic",
+                            "Predicates and Quantifiers": {
+                                "___urlPath___": "predicate-and-quantifiers",
+                                "___md___": 449
+                            },
+                            "Free and Bound Variables": {
+                                "___urlPath___": "free-and-bound-variables",
+                                "___md___": 450
+                            },
+                            "Nested Quantifiers": {
+                                "___urlPath___": "nested-quantifiers",
+                                "___md___": 452
+                            },
+                            "Logical Inference in FOL": {
+                                "___urlPath___": "logical-inference-in-fol",
+                                "___md___": 453
+                            }
                         }
-                    }
-                },
-                "Set Theory": {
-                    "Basic Concepts": {
-                        "Set Notation and Operations": true,
-                        "Venn Diagrams": true,
-                        "Subsets and Power Sets": true
                     },
-                    "Set Identities and Laws": {
-                        "Union, Intersection, Difference": true,
-                        "Complement, De Morgan’s Laws": true,
-                        "Cartesian Product": true
-                    }
-                },
-                "Relations and Functions": {
-                    "Relations": {
-                        "Definition and Representation": true,
-                        "Properties of Relations (Reflexive, Symmetric, etc.)": true,
-                        "Equivalence Relations": true,
-                        "Partial Orders and Posets": true,
-                        "Hasse Diagrams": true
-                    },
-                    "Functions": {
-                        "Types of Functions": {
-                            "Injective, Surjective, Bijective": true
+                    "Set Theory": {
+                        "Basic Concepts": {
+                            "Set Notation and Operations": true,
+                            "Venn Diagrams": true,
+                            "Subsets and Power Sets": true
                         },
-                        "Composition and Inverse of Functions": true,
-                        "Image and Preimage": true
+                        "Set Identities and Laws": {
+                            "Union, Intersection, Difference": true,
+                            "Complement, De Morgan’s Laws": true,
+                            "Cartesian Product": true
+                        }
+                    },
+                    "Relations and Functions": {
+                        "Relations": {
+                            "Definition and Representation": true,
+                            "Properties of Relations (Reflexive, Symmetric, etc.)": true,
+                            "Equivalence Relations": true,
+                            "Partial Orders and Posets": true,
+                            "Hasse Diagrams": true
+                        },
+                        "Functions": {
+                            "Types of Functions": {
+                                "Injective, Surjective, Bijective": true
+                            },
+                            "Composition and Inverse of Functions": true,
+                            "Image and Preimage": true
+                        }
+                    },
+                    "Algebraic Structures": {
+                        "Binary Operations": true,
+                        "Monoids": {
+                            "Definition and Properties": true,
+                            "Examples of Monoids": true
+                        },
+                        "Groups": {
+                            "Definition and Axioms": true,
+                            "Abelian Groups": true,
+                            "Cyclic Groups and Subgroups": true,
+                            "Group Homomorphisms and Isomorphisms": true
+                        }
+                    },
+                    "Graph Theory": {
+                        "Basic Concepts": {
+                            "Graphs, Vertices, and Edges": true,
+                            "Types of Graphs (Simple, Multigraph, Pseudograph, etc.)": true,
+                            "Degree of Vertices": true
+                        },
+                        "Graph Properties": {
+                            "Path, Walk, Cycle, Circuit": true,
+                            "Connected and Disconnected Graphs": true,
+                            "Components and Connectivity": true
+                        },
+                        "Special Graphs": {
+                            "Complete Graph, Bipartite Graph": true,
+                            "Trees and Forests": true
+                        },
+                        "Graph Algorithms": {
+                            "DFS and BFS": true,
+                            "Minimum Spanning Tree (Kruskal, Prim)": true,
+                            "Shortest Path (Dijkstra, Floyd-Warshall)": true
+                        },
+                        "Advanced Concepts": {
+                            "Graph Coloring": true,
+                            "Chromatic Number": true,
+                            "Matching and Covering": true,
+                            "Euler and Hamiltonian Graphs": true
+                        }
+                    },
+                    "Combinatorics": {
+                        "Counting Principles": {
+                            "Addition and Multiplication Rules": true,
+                            "Inclusion-Exclusion Principle": true
+                        },
+                        "Permutations and Combinations": {
+                            "Without and With Repetition": true,
+                            "Circular Permutations": true
+                        },
+                        "Pigeonhole Principle": true,
+                        "Recurrence Relations": {
+                            "Formulating Recurrence Relations": true,
+                            "Solving Linear Recurrences": true,
+                            "Homogeneous and Non-Homogeneous Cases": true
+                        },
+                        "Generating Functions": {
+                            "Ordinary Generating Functions (OGFs)": true,
+                            "Solving Recurrence Relations with OGFs": true,
+                            "Applications in Counting": true
+                        }
+                    },
+                    "Case Studies and Practice": {
+                        "Logic Puzzle Solving": true,
+                        "Modeling Relations with Graphs": true,
+                        "Group Structure Applications": true,
+                        "Graph Coloring in Real Life": true,
+                        "Combinatorics in Algorithm Analysis": true
                     }
                 },
-                "Algebraic Structures": {
-                    "Binary Operations": true,
-                    "Monoids": {
-                        "Definition and Properties": true,
-                        "Examples of Monoids": true
-                    },
-                    "Groups": {
-                        "Definition and Axioms": true,
-                        "Abelian Groups": true,
-                        "Cyclic Groups and Subgroups": true,
-                        "Group Homomorphisms and Isomorphisms": true
+                "Rosen (Discrete mathematics and its applications 7th)": {
+                    "___urlPath___": "rosen-7th-edition",
+                    "Chapter 1": {
+                        "___urlPath___": "chapter-1",
+                        "___md___": 1226
                     }
-                },
-                "Graph Theory": {
-                    "Basic Concepts": {
-                        "Graphs, Vertices, and Edges": true,
-                        "Types of Graphs (Simple, Multigraph, Pseudograph, etc.)": true,
-                        "Degree of Vertices": true
-                    },
-                    "Graph Properties": {
-                        "Path, Walk, Cycle, Circuit": true,
-                        "Connected and Disconnected Graphs": true,
-                        "Components and Connectivity": true
-                    },
-                    "Special Graphs": {
-                        "Complete Graph, Bipartite Graph": true,
-                        "Trees and Forests": true
-                    },
-                    "Graph Algorithms": {
-                        "DFS and BFS": true,
-                        "Minimum Spanning Tree (Kruskal, Prim)": true,
-                        "Shortest Path (Dijkstra, Floyd-Warshall)": true
-                    },
-                    "Advanced Concepts": {
-                        "Graph Coloring": true,
-                        "Chromatic Number": true,
-                        "Matching and Covering": true,
-                        "Euler and Hamiltonian Graphs": true
-                    }
-                },
-                "Combinatorics": {
-                    "Counting Principles": {
-                        "Addition and Multiplication Rules": true,
-                        "Inclusion-Exclusion Principle": true
-                    },
-                    "Permutations and Combinations": {
-                        "Without and With Repetition": true,
-                        "Circular Permutations": true
-                    },
-                    "Pigeonhole Principle": true,
-                    "Recurrence Relations": {
-                        "Formulating Recurrence Relations": true,
-                        "Solving Linear Recurrences": true,
-                        "Homogeneous and Non-Homogeneous Cases": true
-                    },
-                    "Generating Functions": {
-                        "Ordinary Generating Functions (OGFs)": true,
-                        "Solving Recurrence Relations with OGFs": true,
-                        "Applications in Counting": true
-                    }
-                },
-                "Case Studies and Practice": {
-                    "Logic Puzzle Solving": true,
-                    "Modeling Relations with Graphs": true,
-                    "Group Structure Applications": true,
-                    "Graph Coloring in Real Life": true,
-                    "Combinatorics in Algorithm Analysis": true
                 }
-
             }
             ,
             "Digital Logic": {
@@ -10634,7 +11346,6 @@ const mapper = {
                 }
 
             },
-
             "Computer Networks": {
                 "___urlPath___": "computer-networks",
                 "Chapter 1 - Definition, Goals, and Applications": {
@@ -11072,6 +11783,38 @@ const mapper = {
                     "___md___": 736
                 }
             }
+        },
+        "General Aptitude": {
+            "Quantitative Aptitude": {
+                "GCD/HCF & LCMs": {
+                    "GCD / HCF": {
+                        "___urlPath___": "gcd-hcf",
+                        "___md___": 1230
+                    },
+                    "LCM": {
+                        "___urlPath___": "lcm",
+                        "___md___": 1229
+                    },
+                    "usecases": {
+                        "___urlPath___": "usecases",
+                        "___md___": 1231
+                    }
+                },
+                "Divisors or factors": {
+                    "___urlPath___": "divisors-or-factors",
+                    "___md___": 1227
+                },
+                "Prime Numbers": {
+                    "___urlPath___": "prime-numbers",
+                    "___md___": 1228
+                },
+            },
+            "Verbal Reasoning": {},
+            "Spatial Reasoning": {},
+            "Analytical Reasoning": {},
+
+
+
         }
     }
 };
