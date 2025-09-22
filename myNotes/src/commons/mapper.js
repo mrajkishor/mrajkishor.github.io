@@ -5454,7 +5454,18 @@ const mapper = {
                         },
                         "Amazon Route 53 🔴": {
                             "___urlPath___": "amazon-route-53",
-                            "___md___": 62
+                            "DNS Overview": {
+                                "___urlPath___": "dns",
+                                "___md___": 1238
+                            },
+                            "DNS Records": {
+                                "___urlPath___": "records",
+                                "___md___": 1239
+                            },
+                            "TTL and cache flow": {
+                                "___urlPath___": "ttl-and-cache-flow",
+                                "___md___": 1240
+                            }
                         },
                         "Classic Solutions Architecture 🟡": {
                             "___urlPath___": "classic-solutions-architecture",
@@ -8525,7 +8536,32 @@ const mapper = {
                                 }
                             }
                         }
-
+                    },
+                    "450 AtoZ": {
+                        "Recusion": {
+                            "___urlPath___": "recursion",
+                            "___md___": 1232
+                        },
+                        "Printing n times using recurison - examples": {
+                            "___urlPath___": "recursion-problems",
+                            "___md___": 1233
+                        },
+                        "Sum of first N numbers": {
+                            "___urlPath___": "sum-of-first-n-numbers",
+                            "___md___": 1234
+                        },
+                        "Tail recursion": {
+                            "___urlPath___": "tail-recursion",
+                            "___md___": 1235
+                        },
+                        "Tail Call Optimization (TCO)": {
+                            "___urlPath___": "tco",
+                            "___md___": 1236
+                        },
+                        "Factorial of N numbers": {
+                            "___urlPath___": "factorial-of-n-numbers",
+                            "___md___": 1237
+                        }
 
                     }
 
@@ -11785,8 +11821,14 @@ const mapper = {
             }
         },
         "General Aptitude": {
+            "___urlPath___": "general-aptitude-course",
             "Quantitative Aptitude": {
+                "___urlPath___": "quant",
+                "Number Systems": {
+                    "___urlPath___": "numbers"
+                },
                 "GCD/HCF & LCMs": {
+                    "___urlPath___": "gcd-lcm",
                     "GCD / HCF": {
                         "___urlPath___": "gcd-hcf",
                         "___md___": 1230
@@ -11812,9 +11854,6 @@ const mapper = {
             "Verbal Reasoning": {},
             "Spatial Reasoning": {},
             "Analytical Reasoning": {},
-
-
-
         }
     }
 };
