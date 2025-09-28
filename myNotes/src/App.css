@@ -508,3 +508,43 @@ color: white;  */
   background: #282c34;
   /* atom-one-dark default background */
 }
+
+
+/* Headers style starts */
+h1 {
+  color: #007BFF;
+
+}
+
+h2 {
+  color: #228B22;
+}
+
+h3 {
+  color: #B22222;
+}
+
+h4 {
+  color: #444444;
+}
+
+h5 {
+  color: #8B0000;
+}
+
+h6 {
+  color: #000000;
+}
+
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comic Sans MS", "Patrick Hand", cursive;
+font-weight: 500;
+}
+
+*/

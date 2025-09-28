@@ -20,6 +20,7 @@ import rehypeSlug from "rehype-slug";
 import { isMobile } from 'react-device-detect';
 import remarkBreaks from 'remark-breaks';
 
+import { FaClipboard, FaCheck } from "react-icons/fa";
 
 
 // Preprocess Markdown to wrap ==highlight== in <mark>
@@ -119,6 +120,60 @@ const formatBreadcrumbName = (segment) => {
         .replace(/%20/g, " ")
         .replace(/\b\w/g, (char) => char.toUpperCase());
 };
+
+const CodeBlock = ({ className, children, lang }) => {
+    const [copied, setCopied] = useState(false);
+
+    // flatten children into plain text
+    function flattenChildren(children) { // recursively check the code to avoid [Object object] type
+        return React.Children.toArray(children)
+            .map((child) => {
+                if (typeof child === "string") return child;
+                if (typeof child === "number") return String(child);
+                if (child?.props?.children) return flattenChildren(child.props.children);
+                return "";
+            })
+            .join("");
+    }
+    const codeText = flattenChildren(children);
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(codeText);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
+    return (
+        <div className="codeblock" style={{ position: "relative" }}>
+            <div className="codeblock-lang">{lang}</div>
+            <button
+                onClick={handleCopy}
+                style={{
+                    position: "absolute",
+                    top: "5px",
+                    right: "5px",
+                    fontSize: "0.8rem",
+                    background: copied ? "#28a745" : "#007bff",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: "3px",
+                    padding: "2px 6px",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "4px",
+                }}
+            >
+                {copied ? <FaCheck /> : <FaClipboard />}
+                {copied ? "Copied!" : "Copy"}
+            </button>
+            <pre className={className}>
+                <code>{children}</code>
+            </pre>
+        </div>
+    );
+};
+
 
 const MarkdownPage = () => {
     let wrapperRef = useRef(null);
@@ -317,12 +372,11 @@ const MarkdownPage = () => {
                                 remarkPlugins={[remarkGfm, remarkMath, remarkBreaks]}
                                 rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex, rehypeSlug]}
                                 components={{
-                                    code({ node, inline, className, children, ...props }) {
+                                    code({ inline, className, children, ...props }) {
                                         const match = /language-(\w+)/.exec(className || "");
                                         const lang = match?.[1]?.toLowerCase() || "text";
 
                                         if (inline) {
-                                            // Inline code stays simple
                                             return (
                                                 <code className="inline-code" {...props}>
                                                     {children}
@@ -330,17 +384,11 @@ const MarkdownPage = () => {
                                             );
                                         }
 
-                                        // Fenced code block: show language label
-                                        return (
-                                            <div className="codeblock">
-                                                <div className="codeblock-lang">{lang}</div>
-                                                <pre className={className}>
-                                                    <code {...props}>{children}</code>
-                                                </pre>
-                                            </div>
-                                        );
+                                        return <CodeBlock className={className} lang={lang}>{children}</CodeBlock>;
                                     },
                                 }}
+
+
                             >
                                 {markdown}
                             </ReactMarkdown>

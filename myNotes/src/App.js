@@ -42,13 +42,13 @@ const App = () => {
   const [sloganIndex, setSloganIndex] = useState(Math.floor(Math.random() * slogans.length));
   const url = window.location.href;
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % main_slogans.length);
-    }, 10000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setIndex((prevIndex) => (prevIndex + 1) % main_slogans.length);
+  //   }, 10000);
 
-    return () => clearInterval(intervalId); // Cleanup on unmount
-  }, []);
+  //   return () => clearInterval(intervalId); // Cleanup on unmount
+  // }, []);
 
   useEffect(() => {
     // This window.parent.postMessage call here 
@@ -147,23 +147,23 @@ const App = () => {
   //   detectDevTools();
   // }, []);
 
-  useEffect(() => {
+  // useEffect(() => {
 
 
 
 
-    const setIntv = setInterval(() => {
-      setFade(false); // Start fade-out
-      setTimeout(() => {
-        setSlogan(slogans[sloganIndex]); // Set the current slogan
-        // Move to the next slogan in a cycle
-        setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
-        setFade(true); // Start fade-in
-      }, 1000); // Wait for fade-out to complete before changing text
-    }, 10000); // 1000 ms (1 second)
+  //   const setIntv = setInterval(() => {
+  //     setFade(false); // Start fade-out
+  //     setTimeout(() => {
+  //       setSlogan(slogans[sloganIndex]); // Set the current slogan
+  //       // Move to the next slogan in a cycle
+  //       setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+  //       setFade(true); // Start fade-in
+  //     }, 1000); // Wait for fade-out to complete before changing text
+  //   }, 10000); // 1000 ms (1 second)
 
-    return () => clearInterval(setIntv); // Cleanup on unmount
-  }, [sloganIndex]);
+  //   return () => clearInterval(setIntv); // Cleanup on unmount
+  // }, [sloganIndex]);
 
   useEffect(() => {
     initGA('G-02C5NDDDR0'); // Replace with your GA4 measurement ID

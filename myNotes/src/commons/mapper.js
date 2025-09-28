@@ -5465,6 +5465,14 @@ const mapper = {
                             "TTL and cache flow": {
                                 "___urlPath___": "ttl-and-cache-flow",
                                 "___md___": 1240
+                            },
+                            "Amazon Route 53 – Hosted Zones, Public vs Private Zones, and TTL (Time to Live)": {
+                                "___urlPath___": "hosted-zoned-and-ttl",
+                                "___md___": 1242
+                            },
+                            "CNAME vs Alias, Alias Records, and Alias Record Targets in AWS Route 53": {
+                                "___urlPath___": "cname-vs-alias-and-alias-record-targets",
+                                "___md___": 1243
                             }
                         },
                         "Classic Solutions Architecture 🟡": {
@@ -7012,22 +7020,27 @@ const mapper = {
             "Probability and Statistics": {
                 "___urlPath___": "probability-statistics",
                 "Basic Probability Concepts": {
-                    "Counting (Permutation and Combination)": true,
+                    "___urlPath___": "basic-probabaility-concepts",
+                    "Counting (Permutation and Combination)": { "___urlPath___": "counting", "___md___": 1241 },
+                    "Inclusion-Exclusion Principle": true,
                     "Probability Axioms and Rules": true,
                     "Sample Space and Events": true,
                     "Independent and Mutually Exclusive Events": true,
-                    "Marginal, Conditional, and Joint Probability": true
+                    "Marginal, Conditional, and Joint Probability": true,
+                    "Law of Total Probability": true
                 },
                 "Theorems and Distributions": {
                     "Bayes Theorem": true,
                     "Random Variables": {
                         "Discrete Random Variables": {
                             "Probability Mass Function (PMF)": true,
-                            "Bernoulli and Binomial Distributions": true
+                            "Bernoulli, Binomial, and Geometric Distributions": true,
+                            "Negative Binomial Distribution": true
                         },
                         "Continuous Random Variables": {
                             "Probability Density Function (PDF)": true,
-                            "Uniform, Exponential, Poisson, Normal, and Standard Normal Distributions": true
+                            "Uniform, Exponential, Poisson, Normal, Standard Normal": true,
+                            "t-Distribution, Chi-Squared, and F-Distribution": true
                         }
                     },
                     "Cumulative Distribution Function (CDF)": true,
@@ -7036,13 +7049,16 @@ const mapper = {
                 "Descriptive Statistics": {
                     "Mean, Median, and Mode": true,
                     "Variance and Standard Deviation": true,
-                    "Correlation and Covariance": true
+                    "Correlation and Covariance": true,
+                    "Skewness and Kurtosis": true
                 },
                 "Hypothesis Testing": {
                     "Confidence Intervals": true,
-                    "z-Test, t-Test, and Chi-Squared Test": true
+                    "z-Test, t-Test, Chi-Squared Test, and F-Test": true,
+                    "ANOVA (Analysis of Variance)": true
                 }
-            },
+            }
+            ,
             "Linear Algebra": {
                 "___urlPath___": "linear-algebra",
                 "Vector Spaces": {
@@ -7587,7 +7603,7 @@ const mapper = {
                     "Mathematical Foundations": {
                         "___urlPath___": "mathematical-foundations",
                         "Probability & Statistics (Advanced)": {
-                            "Measure-Theoretic Probability (FAANG depth)": true,
+                            "Measure-Theoretic Probability (In depth)": true,
                             "Bayesian Inference & MCMC": true,
                             "Information Theory (Entropy, KL Divergence, Cross-Entropy)": true,
                             "Concentration Inequalities (Chernoff, Hoeffding)": true
@@ -8075,11 +8091,6 @@ const mapper = {
                         "___urlPath___": "javascript",
                         "___md___": 458
                     },
-                    "JavaScript Collections": {
-                        "___urlPath___": "javascript-collections",
-                        "___md___": 943
-
-                    },
                     "TypeScript": {
                         "___urlPath___": "typescript",
                         "___md___": 459
@@ -8120,6 +8131,477 @@ const mapper = {
                         "C": {
                             "___urlPath___": "c",
                             "___md___": 936
+                        }
+                    },
+                    "Java Coding Essentials for Leetcode": {
+                        "Java Basics": {
+                            "___urlPath___": "java-basics",
+                            "Input & Output (Scanner, BufferedReader, PrintWriter)": {
+                                "___urlPath___": "input-output",
+                                "___md___": 4101
+                            },
+                            "Primitive Types & Wrapper Classes": {
+                                "___urlPath___": "primitive-wrapper",
+                                "___md___": 4102
+                            },
+                            "Strings & StringBuilder": {
+                                "___urlPath___": "strings-stringbuilder",
+                                "___md___": 4103
+                            },
+                            "Arrays (1D & 2D)": {
+                                "___urlPath___": "arrays",
+                                "___md___": 4104
+                            }
+                        },
+                        "Core Utilities": {
+                            "___urlPath___": "core-utilities",
+                            "Math Class (min, max, pow, sqrt, abs, random)": {
+                                "___urlPath___": "math-class",
+                                "___md___": 4201
+                            },
+                            "Arrays Utility (sort, binarySearch, fill)": {
+                                "___urlPath___": "arrays-utility",
+                                "___md___": 4202
+                            },
+                            "Collections Utility (sort, reverse, shuffle)": {
+                                "___urlPath___": "collections-utility",
+                                "___md___": 4203
+                            }
+                        },
+                        "Collections Framework": {
+                            "___urlPath___": "collections-framework",
+                            "ArrayList vs LinkedList": {
+                                "___urlPath___": "arraylist-vs-linkedlist",
+                                "___md___": 4301
+                            },
+                            "Stack & Queue (Stack, ArrayDeque, LinkedList)": {
+                                "___urlPath___": "stack-queue",
+                                "___md___": 4302
+                            },
+                            "HashMap & HashSet": {
+                                "___urlPath___": "hashmap-hashset",
+                                "___md___": 4303
+                            },
+                            "TreeMap & TreeSet": {
+                                "___urlPath___": "treemap-treeset",
+                                "___md___": 4304
+                            },
+                            "PriorityQueue (Min/Max Heap)": {
+                                "___urlPath___": "priorityqueue",
+                                "___md___": 4305
+                            }
+                        },
+                        "Custom Implementations": {
+                            "___urlPath___": "custom-implementations",
+                            "Custom Linked List (Node class)": {
+                                "___urlPath___": "custom-linkedlist",
+                                "___md___": 4401
+                            },
+                            "Custom Stack/Queue using Array/LinkedList": {
+                                "___urlPath___": "custom-stack-queue",
+                                "___md___": 4402
+                            },
+                            "Custom HashMap basics": {
+                                "___urlPath___": "custom-hashmap",
+                                "___md___": 4403
+                            }
+                        },
+                        "Comparisons & Sorting": {
+                            "___urlPath___": "comparisons-sorting",
+                            "Comparable vs Comparator": {
+                                "___urlPath___": "comparable-vs-comparator",
+                                "___md___": 4501
+                            },
+                            "Overriding equals() & hashCode()": {
+                                "___urlPath___": "equals-hashcode",
+                                "___md___": 4502
+                            },
+                            "Sorting with Collections.sort()": {
+                                "___urlPath___": "collections-sort",
+                                "___md___": 4503
+                            }
+                        },
+                        "OOP Essentials (for DSA)": {
+                            "___urlPath___": "oop-essentials",
+                            "Classes & Objects": {
+                                "___urlPath___": "classes-objects",
+                                "___md___": 4601
+                            },
+                            "Static vs Instance methods": {
+                                "___urlPath___": "static-vs-instance",
+                                "___md___": 4602
+                            },
+                            "Encapsulation (getters/setters basics)": {
+                                "___urlPath___": "encapsulation",
+                                "___md___": 4603
+                            }
+                        },
+                        "Advanced Java Features (Lightweight)": {
+                            "___urlPath___": "advanced-java",
+                            "Generics (List<Integer>, Map<String,Integer>)": {
+                                "___urlPath___": "generics",
+                                "___md___": 4701
+                            },
+                            "Iterators & Enhanced for-loop": {
+                                "___urlPath___": "iterators-forloop",
+                                "___md___": 4702
+                            },
+                            "Lambdas & Streams (for quick coding)": {
+                                "___urlPath___": "lambdas-streams",
+                                "___md___": 4703
+                            }
+                        },
+                        "Memory & Performance": {
+                            "___urlPath___": "memory-performance",
+                            "String immutability vs StringBuilder": {
+                                "___urlPath___": "string-immutability",
+                                "___md___": 4801
+                            },
+                            "Time Complexity of Collections": {
+                                "___urlPath___": "time-complexity-collections",
+                                "___md___": 4802
+                            }
+                        }
+                    },
+                    "NodeJS Coding Essentials for Leetcode": {
+                        "Basics": {
+                            "___urlPath___": "node-basics",
+                            "Input & Output (fs.readFileSync, console.log)": {
+                                "___urlPath___": "input-output",
+                                "___md___": 1247
+                            },
+                            "Primitive Types & Objects": {
+                                "___urlPath___": "primitives-objects",
+                                "___md___": 1248
+                            },
+                            "Strings (split, join, slice, substring)": {
+                                "___urlPath___": "strings",
+                                "___md___": 1249
+                            },
+                            "Arrays (map, filter, reduce, sort, splice)": {
+                                "___urlPath___": "arrays",
+                                "___md___": 1250
+                            }
+                        },
+                        "Core Utilities": {
+                            "___urlPath___": "core-utilities",
+                            "Math (min, max, pow, floor, ceil, random)": {
+                                "___urlPath___": "math",
+                                "___md___": 5201
+                            },
+                            "JSON (parse, stringify)": {
+                                "___urlPath___": "json",
+                                "___md___": 5202
+                            },
+                            "Date basics (if needed)": {
+                                "___urlPath___": "date",
+                                "___md___": 5203
+                            }
+                        },
+                        "Data Structures via JS Objects": {
+                            "___urlPath___": "ds-js-objects",
+                            "JavaScript Collections": {
+                                "___urlPath___": "javascript-collections",
+                                "___md___": 943
+                            },
+                            "Object as HashMap": {
+                                "___urlPath___": "object-hashmap",
+                                "___md___": 1253
+                            },
+                            "Set & Map": {
+                                "___urlPath___": "set-map",
+                                "___md___": 1254
+                            },
+                            "WeakMap & WeakSet (rarely used in DSA)": {
+                                "___urlPath___": "weakmap-weakset",
+                                "___md___": 5303
+                            }
+                        },
+                        "Custom Implementations": {
+                            "___urlPath___": "custom-implementations",
+                            "Class for LinkedList Node": {
+                                "___urlPath___": "linkedlist-node",
+                                "___md___": 1255
+                            },
+                            "Class for TreeNode": {
+                                "___urlPath___": "tree-node",
+                                "___md___": 5402
+                            },
+                            "Graph adjacency list using Map": {
+                                "___urlPath___": "graph-adjacency",
+                                "___md___": 5403
+                            }
+                        },
+                        "Comparisons & Sorting": {
+                            "___urlPath___": "comparisons-sorting",
+                            "Array.sort() with Comparator": {
+                                "___urlPath___": "array-sort-comparator",
+                                "___md___": 1252
+                            },
+                            "Custom compare functions": {
+                                "___urlPath___": "custom-compare",
+                                "___md___": 5502
+                            }
+                        },
+                        "Advanced (Helpful in DSA)": {
+                            "___urlPath___": "advanced",
+                            "Spread & Rest operators": {
+                                "___urlPath___": "spread-rest",
+                                "___md___": 5601
+                            },
+                            "Destructuring Arrays & Objects": {
+                                "___urlPath___": "destructuring",
+                                "___md___": 5602
+                            },
+                            "Default Parameters & Arrow Functions": {
+                                "___urlPath___": "arrow-functions",
+                                "___md___": 5603
+                            }
+                        },
+                        "Performance Considerations": {
+                            "___urlPath___": "performance",
+                            "Time complexity of Array & Map methods": {
+                                "___urlPath___": "time-complexity",
+                                "___md___": 5701
+                            },
+                            "Avoiding memory leaks in loops": {
+                                "___urlPath___": "memory-loops",
+                                "___md___": 1251
+                            }
+                        }
+                    },
+                    "Typescript Coding Essentials for Leetcode": {
+                        "Basics": {
+                            "___urlPath___": "ts-basics",
+                            "Type Annotations (number, string, boolean)": {
+                                "___urlPath___": "type-annotations",
+                                "___md___": 6101
+                            },
+                            "Arrays & Tuples": {
+                                "___urlPath___": "arrays-tuples",
+                                "___md___": 6102
+                            },
+                            "Union & Literal Types": {
+                                "___urlPath___": "union-literal-types",
+                                "___md___": 6103
+                            },
+                            "Enums (rare, but useful)": {
+                                "___urlPath___": "enums",
+                                "___md___": 6104
+                            }
+                        },
+                        "Functions": {
+                            "___urlPath___": "functions",
+                            "Typed Parameters & Returns": {
+                                "___urlPath___": "typed-functions",
+                                "___md___": 6201
+                            },
+                            "Optional & Default Params": {
+                                "___urlPath___": "optional-default-params",
+                                "___md___": 6202
+                            },
+                            "Arrow Functions": {
+                                "___urlPath___": "arrow-functions",
+                                "___md___": 6203
+                            }
+                        },
+                        "OOP Essentials": {
+                            "___urlPath___": "oop-essentials",
+                            "Interfaces (for objects/DSA nodes)": {
+                                "___urlPath___": "interfaces",
+                                "___md___": 6301
+                            },
+                            "Classes (LinkedList, TreeNode)": {
+                                "___urlPath___": "classes",
+                                "___md___": 6302
+                            },
+                            "Access Modifiers (public, private, protected)": {
+                                "___urlPath___": "access-modifiers",
+                                "___md___": 6303
+                            }
+                        },
+                        "Generics": {
+                            "___urlPath___": "generics",
+                            "Generic Functions": {
+                                "___urlPath___": "generic-functions",
+                                "___md___": 6401
+                            },
+                            "Generic Classes & Interfaces": {
+                                "___urlPath___": "generic-classes",
+                                "___md___": 6402
+                            },
+                            "Constraints (extends)": {
+                                "___urlPath___": "generic-constraints",
+                                "___md___": 6403
+                            }
+                        },
+                        "Collections": {
+                            "___urlPath___": "collections",
+                            "Map & Set": {
+                                "___urlPath___": "map-set",
+                                "___md___": 6501
+                            },
+                            "Record & Partial Types": {
+                                "___urlPath___": "record-partial",
+                                "___md___": 6502
+                            }
+                        },
+                        "Utility & Advanced": {
+                            "___urlPath___": "advanced",
+                            "Readonly & Pick": {
+                                "___urlPath___": "readonly-pick",
+                                "___md___": 6601
+                            },
+                            "Type Assertions & Casting": {
+                                "___urlPath___": "type-assertions",
+                                "___md___": 6602
+                            },
+                            "Never & Unknown types": {
+                                "___urlPath___": "never-unknown",
+                                "___md___": 6603
+                            }
+                        }
+                    },
+                    "Python Coding Essentials for Leetcode": {
+                        "Python Basics": {
+                            "___urlPath___": "python-basics",
+                            "Input & Output (input(), sys.stdin)": {
+                                "___urlPath___": "input-output",
+                                "___md___": 7101
+                            },
+                            "Variables & Data Types": {
+                                "___urlPath___": "variables-datatypes",
+                                "___md___": 7102
+                            },
+                            "Strings (slicing, split, join, format, f-strings)": {
+                                "___urlPath___": "strings",
+                                "___md___": 7103
+                            },
+                            "Lists (append, pop, slicing, comprehension)": {
+                                "___urlPath___": "lists",
+                                "___md___": 7104
+                            },
+                            "Tuples & Ranges": {
+                                "___urlPath___": "tuples-ranges",
+                                "___md___": 7105
+                            }
+                        },
+                        "Core Utilities": {
+                            "___urlPath___": "core-utilities",
+                            "Math (min, max, pow, abs, divmod, round)": {
+                                "___urlPath___": "math",
+                                "___md___": 7201
+                            },
+                            "Built-in Functions (len, sum, sorted, enumerate, zip)": {
+                                "___urlPath___": "builtins",
+                                "___md___": 7202
+                            },
+                            "itertools (permutations, combinations, product)": {
+                                "___urlPath___": "itertools",
+                                "___md___": 7203
+                            },
+                            "collections (Counter, defaultdict, deque, OrderedDict)": {
+                                "___urlPath___": "collections",
+                                "___md___": 7204
+                            },
+                            "heapq (Min-Heap / Max-Heap tricks)": {
+                                "___urlPath___": "heapq",
+                                "___md___": 7205
+                            }
+                        },
+                        "Data Structures with Python": {
+                            "___urlPath___": "ds-python",
+                            "Dict (hash map)": {
+                                "___urlPath___": "dict",
+                                "___md___": 7301
+                            },
+                            "Set & FrozenSet": {
+                                "___urlPath___": "set-frozenset",
+                                "___md___": 7302
+                            },
+                            "Stack & Queue (list, deque)": {
+                                "___urlPath___": "stack-queue",
+                                "___md___": 7303
+                            },
+                            "PriorityQueue (heapq)": {
+                                "___urlPath___": "priorityqueue",
+                                "___md___": 7304
+                            }
+                        },
+                        "Custom Implementations": {
+                            "___urlPath___": "custom-implementations",
+                            "Custom Linked List (class Node)": {
+                                "___urlPath___": "linkedlist-node",
+                                "___md___": 7401
+                            },
+                            "Custom TreeNode": {
+                                "___urlPath___": "tree-node",
+                                "___md___": 7402
+                            },
+                            "Graph adjacency list (dict of lists/sets)": {
+                                "___urlPath___": "graph-adjacency",
+                                "___md___": 7403
+                            }
+                        },
+                        "Comparisons & Sorting": {
+                            "___urlPath___": "comparisons-sorting",
+                            "sorted() with key function": {
+                                "___urlPath___": "sorted-key",
+                                "___md___": 7501
+                            },
+                            "Custom lambda comparators": {
+                                "___urlPath___": "lambda-comparator",
+                                "___md___": 7502
+                            },
+                            "bisect (binary search helpers)": {
+                                "___urlPath___": "bisect",
+                                "___md___": 7503
+                            }
+                        },
+                        "OOP Essentials (for DSA)": {
+                            "___urlPath___": "oop-essentials",
+                            "Classes & Objects": {
+                                "___urlPath___": "classes-objects",
+                                "___md___": 7601
+                            },
+                            "Dunder methods (__str__, __eq__, __lt__)": {
+                                "___urlPath___": "dunder-methods",
+                                "___md___": 7602
+                            },
+                            "Static & Class Methods": {
+                                "___urlPath___": "static-class-methods",
+                                "___md___": 7603
+                            }
+                        },
+                        "Advanced Python Features": {
+                            "___urlPath___": "advanced-python",
+                            "List & Dict Comprehensions": {
+                                "___urlPath___": "comprehensions",
+                                "___md___": 7701
+                            },
+                            "Generators & yield": {
+                                "___urlPath___": "generators",
+                                "___md___": 7702
+                            },
+                            "Decorators (lightweight usage)": {
+                                "___urlPath___": "decorators",
+                                "___md___": 7703
+                            }
+                        },
+                        "Performance & Tricks": {
+                            "___urlPath___": "performance",
+                            "Big-O of Python DS (list vs deque vs dict vs set)": {
+                                "___urlPath___": "big-o-ds",
+                                "___md___": 7801
+                            },
+                            "Avoiding TLE (fast I/O with sys.stdin, sys.stdout)": {
+                                "___urlPath___": "fast-io",
+                                "___md___": 7802
+                            },
+                            "Memory efficiency (generators, itertools)": {
+                                "___urlPath___": "memory-efficiency",
+                                "___md___": 7803
+                            }
                         }
                     },
                     "DSA Patterns (Cheatsheet)": {
@@ -8540,31 +9022,45 @@ const mapper = {
                     "450 AtoZ": {
                         "Recusion": {
                             "___urlPath___": "recursion",
-                            "___md___": 1232
+                            "Overview": {
+                                "___urlPath___": "overview",
+                                "___md___": 1232
+                            },
+                            "Printing n times using recurison - examples": {
+                                "___urlPath___": "recursion-problems",
+                                "___md___": 1233
+                            },
+                            "Sum of first N numbers": {
+                                "___urlPath___": "sum-of-first-n-numbers",
+                                "___md___": 1234
+                            },
+                            "Tail recursion": {
+                                "___urlPath___": "tail-recursion",
+                                "___md___": 1235
+                            },
+                            "Tail Call Optimization (TCO)": {
+                                "___urlPath___": "tco",
+                                "___md___": 1236
+                            },
+                            "Factorial of N numbers": {
+                                "___urlPath___": "factorial-of-n-numbers",
+                                "___md___": 1237
+                            },
+                            "Reverse an Array": {
+                                "___urlPath___": "reverse-array",
+                                "___md___": 1238
+                            },
+                            "Check if a string is palindrome or not": {
+                                "___urlPath___": "check-palindrome",
+                                "___md___": 1245
+                            },
+                            "Fibonacci Numbers": {
+                                "___urlPath___": "fibonacci-numbers",
+                                "___md___": 1246
+                            }
                         },
-                        "Printing n times using recurison - examples": {
-                            "___urlPath___": "recursion-problems",
-                            "___md___": 1233
-                        },
-                        "Sum of first N numbers": {
-                            "___urlPath___": "sum-of-first-n-numbers",
-                            "___md___": 1234
-                        },
-                        "Tail recursion": {
-                            "___urlPath___": "tail-recursion",
-                            "___md___": 1235
-                        },
-                        "Tail Call Optimization (TCO)": {
-                            "___urlPath___": "tco",
-                            "___md___": 1236
-                        },
-                        "Factorial of N numbers": {
-                            "___urlPath___": "factorial-of-n-numbers",
-                            "___md___": 1237
-                        }
 
                     }
-
 
                 },
 
@@ -8887,7 +9383,7 @@ const mapper = {
                     "System": {
                         "Bit Manipulation": {
                         },
-                        "LRU Caches ..etc. related to Sys design can be asked in FAANg DSA as part of Java collections": {
+                        "LRU Caches ..etc. related to Sys design can be asked in DSA Interviews as part of Java collections": {
 
                         }
                     }
@@ -11185,6 +11681,225 @@ const mapper = {
                         "___md___": 847
                     }
                 }
+            },
+            "Compiler Design": {
+                "___urlPath___": "compiler-design",
+                "Syllabus": {
+                    "___urlPath___": "syllabus",
+                    "___md___": 1256
+                },
+                "Book notes (Aho & Ullman 2nd Ed)": {
+                    "___urlPath___": "book-notes",
+                    "Chapter 1 (Intro) → Introduction (1.1–1.8, pages 1–38)": {
+                        "___urlPath___": "ch-1",
+                        "___md___": 1257
+                    },
+                    "Chapter 2 → A Simple Syntax-Directed Translator (pages 39–105)": {
+                        "___urlPath___": "ch-2",
+                        "___md___": 1258
+                    },
+                    "Chapter 3.1–3.4 → Lexical Analysis sections": {
+                        "___urlPath___": "ch-3_1-to-ch-_3.4",
+                        "3.1 Role of the Lexical Analyzer": {
+                            "___urlPath___": "ch-3_1",
+                            "___md___": 1259
+                        },
+                        "3.2 Input Buffering": {
+                            "___urlPath___": "ch-3_2",
+                            "___md___": 1260
+                        },
+                        "3.3 Specification of Tokens": {
+                            "___urlPath___": "ch-3_3",
+                            "___md___": 1261
+                        },
+                        "3.4 Recognition of Tokens": {
+                            "___urlPath___": "ch-3_4",
+                            "___md___": 1262
+                        }
+                    }
+
+
+                },
+                "A-Z Topic-wise notes": {
+                    "Chapter 1 - Lexical Analysis": {
+                        "___urlPath___": "lexical-analysis",
+                        "Regular Expressions and Tokens": {
+                            "___urlPath___": "regular-expressions-and-tokens",
+                            "___md___": 901
+                        },
+                        "Finite Automata for Lexical Analysis": {
+                            "___urlPath___": "finite-automata-for-lexical-analysis",
+                            "___md___": 902
+                        },
+                        "DFA Minimization and NFA to DFA": {
+                            "___urlPath___": "dfa-minimization-and-nfa-to-dfa",
+                            "___md___": 903
+                        },
+                        "Lexical Errors and Recovery": {
+                            "___urlPath___": "lexical-errors-and-recovery",
+                            "___md___": 904
+                        },
+                        "Symbol Table Management": {
+                            "___urlPath___": "symbol-table-management",
+                            "___md___": 905
+                        }
+                    },
+
+                    "Chapter 2 - Parsing": {
+                        "___urlPath___": "parsing",
+                        "Top-Down Parsing": {
+                            "___urlPath___": "top-down-parsing",
+                            "___md___": 906
+                        },
+                        "LL(1) Grammar, FIRST and FOLLOW": {
+                            "___urlPath___": "ll1-grammar-first-follow",
+                            "___md___": 907
+                        },
+                        "Left Recursion and Left Factoring": {
+                            "___urlPath___": "left-recursion-and-left-factoring",
+                            "___md___": 908
+                        },
+                        "Bottom-Up Parsing": {
+                            "___urlPath___": "bottom-up-parsing",
+                            "___md___": 909
+                        },
+                        "LR(0), SLR(1), LALR(1) Parsers": {
+                            "___urlPath___": "lr0-slr1-lalr1-parsers",
+                            "___md___": 910
+                        },
+                        "Shift-Reduce Parsing and Conflicts": {
+                            "___urlPath___": "shift-reduce-parsing-and-conflicts",
+                            "___md___": 911
+                        },
+                        "Error Recovery in Parsing": {
+                            "___urlPath___": "error-recovery-in-parsing",
+                            "___md___": 912
+                        }
+                    },
+
+                    "Chapter 3 - Syntax-Directed Translation": {
+                        "___urlPath___": "syntax-directed-translation",
+                        "Syntax Directed Definitions": {
+                            "___urlPath___": "syntax-directed-definitions",
+                            "___md___": 913
+                        },
+                        "S-Attributed and L-Attributed Definitions": {
+                            "___urlPath___": "s-attributed-and-l-attributed-definitions",
+                            "___md___": 914
+                        },
+                        "Dependency Graphs and Evaluation Orders": {
+                            "___urlPath___": "dependency-graphs-and-evaluation-orders",
+                            "___md___": 915
+                        },
+                        "Type Checking and Inference": {
+                            "___urlPath___": "type-checking-and-inference",
+                            "___md___": 916
+                        },
+                        "Intermediate Code Translation using SDT": {
+                            "___urlPath___": "intermediate-code-translation-using-sdt",
+                            "___md___": 917
+                        }
+                    },
+
+                    "Chapter 4 - Runtime Environments": {
+                        "___urlPath___": "runtime-environments",
+                        "Storage Organization": {
+                            "___urlPath___": "storage-organization",
+                            "___md___": 918
+                        },
+                        "Activation Records and Call Stack": {
+                            "___urlPath___": "activation-records-and-call-stack",
+                            "___md___": 919
+                        },
+                        "Parameter Passing Mechanisms": {
+                            "___urlPath___": "parameter-passing-mechanisms",
+                            "___md___": 920
+                        },
+                        "Static vs Dynamic Allocation": {
+                            "___urlPath___": "static-vs-dynamic-allocation",
+                            "___md___": 921
+                        },
+                        "Garbage Collection": {
+                            "___urlPath___": "garbage-collection",
+                            "___md___": 922
+                        }
+                    },
+
+                    "Chapter 5 - Intermediate Code Generation": {
+                        "___urlPath___": "intermediate-code-generation",
+                        "Three Address Code (TAC)": {
+                            "___urlPath___": "three-address-code-tac",
+                            "___md___": 923
+                        },
+                        "Quadruples, Triples and Indirect Triples": {
+                            "___urlPath___": "quadruples-triples-and-indirect-triples",
+                            "___md___": 924
+                        },
+                        "Boolean Expressions and Control Flow": {
+                            "___urlPath___": "boolean-expressions-and-control-flow",
+                            "___md___": 925
+                        },
+                        "Backpatching Techniques": {
+                            "___urlPath___": "backpatching-techniques",
+                            "___md___": 926
+                        },
+                        "Switch-Case and Array Translation": {
+                            "___urlPath___": "switch-case-and-array-translation",
+                            "___md___": 927
+                        }
+                    },
+
+                    "Chapter 6 - Local Optimization": {
+                        "___urlPath___": "local-optimization",
+                        "Peephole Optimization": {
+                            "___urlPath___": "peephole-optimization",
+                            "___md___": 928
+                        },
+                        "Dead Code Elimination": {
+                            "___urlPath___": "dead-code-elimination",
+                            "___md___": 929
+                        },
+                        "Loop Optimizations": {
+                            "___urlPath___": "loop-optimizations",
+                            "___md___": 930
+                        },
+                        "Strength Reduction and Induction Variables": {
+                            "___urlPath___": "strength-reduction-and-induction-variables",
+                            "___md___": 931
+                        }
+                    },
+
+                    "Chapter 7 - Data Flow Analysis": {
+                        "___urlPath___": "data-flow-analysis",
+                        "Control Flow Graph (CFG)": {
+                            "___urlPath___": "control-flow-graph-cfg",
+                            "___md___": 932
+                        },
+                        "Reaching Definitions": {
+                            "___urlPath___": "reaching-definitions",
+                            "___md___": 933
+                        },
+                        "Constant Propagation": {
+                            "___urlPath___": "constant-propagation",
+                            "___md___": 934
+                        },
+                        "Liveness Analysis and Register Allocation": {
+                            "___urlPath___": "liveness-analysis-and-register-allocation",
+                            "___md___": 935
+                        },
+                        "Common Subexpression Elimination": {
+                            "___urlPath___": "common-subexpression-elimination",
+                            "___md___": 936
+                        },
+                        "Dominator Trees and Natural Loops": {
+                            "___urlPath___": "dominator-trees-and-natural-loops",
+                            "___md___": 937
+                        }
+                    }
+
+
+                }
+
             },
             "Operating System": {
                 "___urlPath___": "operating-system",
