@@ -5473,6 +5473,30 @@ const mapper = {
                             "CNAME vs Alias, Alias Records, and Alias Record Targets in AWS Route 53": {
                                 "___urlPath___": "cname-vs-alias-and-alias-record-targets",
                                 "___md___": 1243
+                            },
+                            "Routing Policies - I": {
+                                "___urlPath___": "routing-policies-1",
+                                "___md___": 1263
+                            },
+                            "Health Checks": {
+                                "___urlPath___": "health-checks",
+                                "___md___": 1264
+                            },
+                            "Failover (Active–Passive), Geolocation, and Geoproximity (Traffic Flow)": {
+                                "___urlPath___": "failover-geolocation-geoproximity",
+                                "___md___": 1265
+                            },
+                            "Routing Policies - II": {
+                                "___urlPath___": "routing-policies-2",
+                                "___md___": 1266
+                            },
+                            "Domain Registrar and DNS Service": {
+                                "___urlPath___": "domain-registrar-dns-service",
+                                "___md___": 1267
+                            },
+                            "Route 53 – Hybrid DNS & Resolver Endpoints": {
+                                "___urlPath___": "route-53-hybrid-dns-and-resolver-endpoints",
+                                "___md___": 1268
                             }
                         },
                         "Classic Solutions Architecture 🟡": {
@@ -11717,8 +11741,6 @@ const mapper = {
                             "___md___": 1262
                         }
                     }
-
-
                 },
                 "A-Z Topic-wise notes": {
                     "Chapter 1 - Lexical Analysis": {
