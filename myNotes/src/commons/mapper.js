@@ -5450,7 +5450,45 @@ const mapper = {
                         },
                         "RDS, Aurora & ElastiCache 🔴": {
                             "___urlPath___": "rds-aurora-elasticache",
-                            "___md___": 62
+                            "Amazon RDS (Relational Database Service), its advantages, and Auto Scaling": {
+                                "___urlPath___": "rds-advantages-autoscaling",
+                                "___md___": 1269
+                            },
+                            "Amazon RDS Read Replica": {
+                                "___urlPath___": "amazon-rds-read-replica",
+                                "___md___": 1270
+                            },
+                            "RDS Multi-AZ for Disaster Recovery, Single-AZ to Multi-AZ conversion, and RDS Custom": {
+                                "___urlPath___": "rds-dr-az-conversion-rd-custom",
+                                "___md___": 1271
+                            },
+                            "Aurora, high availibility, read scaling, cluster design": {
+                                "___urlPath___": "aurora-high-availibility-read-scaling-cluster-design",
+                                "___md___": 1272
+                            },
+                            "Advanced Aurora": {
+                                "___urlPath___": "advanced-aurora",
+                                "___md___": 1273
+                            },
+                            "Aurora Machine Learning, Babelfish, RDS/Aurora Backups, and Restore Options": {
+                                "___urlPath___": "aurora-machine-learning-babelfish-backups-resore-options",
+                                "___md___": 1274
+                            },
+                            "Aurora Database Cloning, RDS & Aurora Security, and RDS Proxy": {
+                                "___urlPath___": "aurora-database-cloning-rds-aurora-security-and-rds-proxy",
+                                "___md___": 1275
+                            },
+                            "Amazon ElastiCache Overview": {
+                                "___urlPath___": "amazon-elastic-cache-overview",
+                                "___md___": 1276
+                            },
+
+                            "Redis vs Memcached, Cache Security, Caching Patterns, and Redis Use Case": {
+                                "___urlPath___": "redis-vs-memcached-cache-security-caching-patterns-and-redis-use-cases",
+                                "___md___": 1277
+                            },
+
+
                         },
                         "Amazon Route 53 🔴": {
                             "___urlPath___": "amazon-route-53",
