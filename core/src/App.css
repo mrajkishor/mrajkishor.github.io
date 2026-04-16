@@ -1,0 +1,8 @@
+/* App-level resets — Vite defaults removed */
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+}
