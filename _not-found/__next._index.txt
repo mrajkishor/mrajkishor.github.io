@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[9532,["460","static/chunks/460-5531fd2486cd207d.js","177","static/chunks/app/layout-04e4653cf9598623.js"],"default"]
+3:I[8370,["460","static/chunks/460-5531fd2486cd207d.js","177","static/chunks/app/layout-04e4653cf9598623.js"],"default"]
+4:I[2777,[],""]
+5:I[9453,[],""]
+:HL["/_next/static/css/3f91f67f0cfd591a.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3f91f67f0cfd591a.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"style":{"background":"var(--bg-base)","color":"var(--text-100)"},"suppressHydrationWarning":true,"children":[["$","$L2",null,{}],["$","$L3",null,{"children":[["$","main",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]}],["$","footer",null,{"style":{"background":"var(--bg-surface)","borderTop":"1px solid var(--border)","padding":"2rem","textAlign":"center"},"children":["$","p",null,{"style":{"fontFamily":"Courier New, monospace","fontSize":"11px","letterSpacing":"0.08em","color":"var(--text-400)"},"children":["RAJKISHOR MAHARANA · HYDERABAD, INDIA ·"," ",["$","a",null,{"href":"https://github.com/mrajkishor/mrajkishor.github.io","target":"_blank","rel":"noopener noreferrer","className":"footer-source-link","children":"VIEW SOURCE ↗"}]]}]}]]}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6h6o-fJYT1ufuRipcZ_3i"}
