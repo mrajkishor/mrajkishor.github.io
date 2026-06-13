@@ -42,7 +42,7 @@ export default function Contact() {
       {/* ── CONTACT CARDS ── */}
       <section style={{ background: 'var(--bg-base)', padding: '5rem 0' }}>
         <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '0 1.5rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5px', background: 'var(--border)', marginBottom: '1.5px' }} className="grid-cols-1 md:grid-cols-3">
+          <div className="contact-cards-grid">
             {contacts.map((c, i) => (
               <ScrollReveal key={c.label} type="reveal-scale" delay={`delay-${(i + 1) * 100}`}>
                 <a
@@ -83,7 +83,7 @@ export default function Contact() {
                 Engineering roles · Architecture consultations · Products worth building
               </h2>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5px', background: 'var(--border)', marginBottom: '1.5rem' }} className="grid-cols-1 sm:grid-cols-2">
+              <div className="contact-interests-grid">
                 {interests.map((item) => (
                   <div
                     key={item}

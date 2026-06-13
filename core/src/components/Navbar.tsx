@@ -30,7 +30,7 @@ export default function Navbar() {
         top: 0,
         left: 0,
         right: 0,
-        zIndex: 100,
+        zIndex: 1000,
         background: scrolled ? 'rgba(13,13,13,0.97)' : 'rgba(13,13,13,0.80)',
         backdropFilter: 'blur(12px)',
         borderBottom: `1px solid ${scrolled ? 'var(--border-m)' : 'var(--border)'}`,
@@ -85,7 +85,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex" style={{ alignItems: 'center', gap: '2.5rem' }}>
+        <div className="desktop-nav" style={{ alignItems: 'center', gap: '2.5rem' }}>
           {links.map((l) => (
             <Link
               key={l.href}
@@ -97,39 +97,33 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
-        <Link
-          href="/contact"
-          className="btn-primary hidden md:inline-flex"
-          style={{ padding: '8px 20px', fontSize: '12px' }}
-        >
-          Let's Connect
-        </Link>
+        {/* CTA — hidden on contact page */}
+        {!pathname.startsWith('/contact') && (
+          <Link
+            href="/contact"
+            className="nav-cta-btn btn-primary"
+            style={{ padding: '8px 20px', fontSize: '12px' }}
+          >
+            Let's Connect
+          </Link>
+        )}
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden"
+          className="mobile-menu-btn"
           onClick={() => setMobileOpen(!mobileOpen)}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px', display: 'flex', flexDirection: 'column', gap: '5px' }}
           aria-label="Menu"
+          style={{ flexShrink: 0 }}
         >
-          {[0, 1, 2].map((i) => (
-            <span
-              key={i}
-              style={{
-                display: 'block',
-                height: '1.5px',
-                width: '22px',
-                background: 'var(--text-300)',
-                transition: 'all 0.25s',
-                transform: mobileOpen
-                  ? i === 0 ? 'rotate(45deg) translate(4.5px, 4.5px)'
-                  : i === 1 ? 'scaleX(0)'
-                  : 'rotate(-45deg) translate(4.5px, -4.5px)'
-                  : 'none',
-              }}
-            />
-          ))}
+          {mobileOpen ? (
+            <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '22px', height: '22px', fontSize: '20px', color: '#fff', lineHeight: 1 }}>✕</span>
+          ) : (
+            <span style={{ display: 'flex', flexDirection: 'column', gap: '5px', width: '22px', padding: '2px 0' }}>
+              <span style={{ display: 'block', width: '100%', height: '2px', background: '#fff', borderRadius: '1px' }} />
+              <span style={{ display: 'block', width: '100%', height: '2px', background: '#fff', borderRadius: '1px' }} />
+              <span style={{ display: 'block', width: '100%', height: '2px', background: '#fff', borderRadius: '1px' }} />
+            </span>
+          )}
         </button>
       </div>
 
@@ -154,9 +148,6 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <a href="mailto:mrajkishor331@gmail.com" className="btn-primary" style={{ marginTop: '0.5rem', justifyContent: 'center' }}>
-            Let's Connect
-          </a>
         </div>
       </div>
     </nav>
