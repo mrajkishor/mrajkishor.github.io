@@ -28,7 +28,7 @@ const serif = Fraunces({
 
 export const metadata: Metadata = {
   title: "Rajkishor Maharana — The Backend Whisperer",
-  description: "A magazine-format portfolio for an engineer who has spent 7.5+ years making Fortune 500 systems behave — Java/Spring Boot, Node.js, React, Kafka, AWS, and a healthy suspicion of monoliths.",
+  description: "A magazine-format portfolio for an engineer who has spent 8+ years making Fortune 500 systems behave — Java/Spring Boot, Node.js, React, Kafka, AWS, and a healthy suspicion of monoliths.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 color: 'var(--paper-2)',
               }}
             >
-              VOL. 1, NO. 7.5 · WRITTEN, CODED &amp; MOSTLY DEBUGGED BY RAJKISHOR MAHARANA · HYDERABAD, INDIA ·{" "}
+              VOL. 1, NO. 8 · WRITTEN, CODED &amp; MOSTLY DEBUGGED BY RAJKISHOR MAHARANA · HYDERABAD, INDIA ·{" "}
               <a
                 href="https://github.com/mrajkishor/mrajkishor.github.io"
                 target="_blank"

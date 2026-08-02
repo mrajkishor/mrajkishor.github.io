@@ -7,7 +7,7 @@ import QuoteTicker from '@/components/QuoteTicker';
 import OneLinerTicker from '@/components/OneLinerTicker';
 
 const stats = [
-  { value: '7.5+', label: 'Years in the trenches',        color: 'var(--yellow)' },
+  { value: '8+',   label: 'Years in the trenches',        color: 'var(--yellow)' },
   { value: '9+',   label: 'F500 projects survived',       color: 'var(--red)'    },
   { value: '180K+',label: 'Humans affected (mostly well)',color: 'var(--blue)'   },
   { value: '20+',  label: 'Technologies, allegedly mastered', color: 'var(--ink)' },
@@ -105,8 +105,8 @@ export default function Home() {
                   serverless systems to five million people who will never know my name.
                 </p>
                 <p style={{ fontSize: '16px', lineHeight: 1.75, color: 'var(--ink-70)', marginBottom: '2rem' }}>
-                  I&apos;m currently a Software Engineer III at Deloitte, where I&apos;m mostly behaving. Before that,
-                  Cognizant and Capgemini, where I learned that &quot;it works on my machine&quot; is not, in fact, a
+                  I&apos;m currently a Software Engineer III at Deloitte — learning the architecture, absorbing the domain knowledge, and solving problems one system at a time. Before that,
+                  Cognizant and Capgemini, where &quot;it works on my machine&quot; turned out not to be a
                   deployment strategy. React, Spring Boot, Kafka, AWS — I speak all of it fluently, occasionally
                   in my sleep.
                 </p>
@@ -211,7 +211,12 @@ export default function Home() {
       <section style={{ background: 'var(--paper)', padding: '5rem 0' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem' }}>
           <ScrollReveal>
-            <p className="kicker" style={{ marginBottom: '1.5rem' }}>The Notebook</p>
+            <p className="kicker" style={{ marginBottom: '0.75rem' }}>The Notebook</p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p className="serif headline-italic" style={{ fontSize: '15px', color: 'var(--ink-70)', marginBottom: '1.5rem' }}>
+              Sarcasm off, just for this one — don&apos;t get used to it
+            </p>
           </ScrollReveal>
           <ScrollReveal delay="delay-100">
             <QuoteTicker />

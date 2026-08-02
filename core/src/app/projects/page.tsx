@@ -76,7 +76,6 @@ export default function Projects() {
                   style={{
                     background: 'var(--paper)',
                     display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
                     gap: '0',
                     borderLeft: `6px solid ${p.color}`,
                   }}

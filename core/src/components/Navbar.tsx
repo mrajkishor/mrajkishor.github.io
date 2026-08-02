@@ -38,7 +38,7 @@ export default function Navbar() {
         }}
       >
         <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.14em', color: 'var(--ink-70)' }}>
-          VOL. 1 · Nº 7.5 · EST. 2018
+          VOL. 1 · Nº 8 · EST. 2018
         </span>
         <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.14em', color: 'var(--ink-70)' }}>
           HYDERABAD, INDIA — NOT FOR RESALE

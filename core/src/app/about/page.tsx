@@ -60,7 +60,7 @@ export default function About() {
                 By Rajkishor Maharana. Fact-checked by absolutely no one.
               </p>
               <p className="dropcap anim-fade-up" style={{ animationDelay: '0.3s', fontSize: '15px', lineHeight: 1.75, color: 'var(--ink-70)', marginBottom: '1rem' }}>
-                I write software that ships — most of it on purpose. 7.5+ years of enterprise delivery across
+                I write software that ships — most of it on purpose. 8+ years of enterprise delivery across
                 Healthcare, Telecom, BFSI, EdTech, and Aviation have taught me to think in systems, Google the
                 error message before assuming it&apos;s a compiler bug, and build things that outlast the sprint
                 they were born in. Mostly.

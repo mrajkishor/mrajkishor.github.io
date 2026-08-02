@@ -113,7 +113,7 @@ export default function Work() {
             Stuff I worked on.<br />It mostly worked.
           </h1>
           <p className="anim-fade-up" style={{ animationDelay: '0.3s', fontSize: '15px', color: 'var(--ink-70)', maxWidth: '560px', lineHeight: 1.7 }}>
-            Four projects that turned out fine in the end. Client names redacted for NDA reasons, not for drama.
+            Four projects that turned out fine in the end. Client names redacted for NDA reasons — legal has no sense of humor about it.
           </p>
         </div>
       </section>
