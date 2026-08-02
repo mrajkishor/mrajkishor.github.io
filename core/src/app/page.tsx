@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 import SelfRoast from '@/components/SelfRoast';
+import QuoteTicker from '@/components/QuoteTicker';
+import OneLinerTicker from '@/components/OneLinerTicker';
 
 const stats = [
   { value: '7.5+', label: 'Years in the trenches',        color: 'var(--yellow)' },
@@ -151,9 +153,7 @@ export default function Home() {
       <section style={{ background: 'var(--paper-2)', borderTop: '3px solid var(--ink)', borderBottom: '3px solid var(--ink)', padding: '3.5rem 0' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 1.5rem' }}>
           <ScrollReveal>
-            <p className="pull-quote">
-              &ldquo;I don&apos;t fix bugs so much as negotiate a ceasefire between fifteen microservices.&rdquo;
-            </p>
+            <OneLinerTicker />
           </ScrollReveal>
         </div>
       </section>
@@ -203,6 +203,18 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay="delay-100">
             <SelfRoast />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── THE NOTEBOOK ── */}
+      <section style={{ background: 'var(--paper)', padding: '5rem 0' }}>
+        <div style={{ maxWidth: '780px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <ScrollReveal>
+            <p className="kicker" style={{ marginBottom: '1.5rem' }}>The Notebook</p>
+          </ScrollReveal>
+          <ScrollReveal delay="delay-100">
+            <QuoteTicker />
           </ScrollReveal>
         </div>
       </section>
