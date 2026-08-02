@@ -3,13 +3,12 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
-/* Corporate wipe colors cycling through brand palettes */
+/* Brutalist wipe colors — ink + primaries */
 const WIPE_COLORS = [
-  '#0070AD', /* Capgemini blue  */
-  '#86BC25', /* Deloitte green  */
-  '#00B2A9', /* Cognizant teal  */
-  '#FF6900', /* Capgemini orange */
-  '#003366', /* Cognizant navy  */
+  '#121210', /* ink   */
+  '#FFE100', /* yellow */
+  '#FF3B2F', /* red    */
+  '#2B4DFF', /* blue   */
 ];
 
 let colorIdx = 0;
@@ -91,7 +90,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
             right: 0,
             height: '3px',
             zIndex: 10000,
-            background: wipeColor === '#86BC25' ? '#0070AD' : '#86BC25',
+            background: wipeColor === '#FFE100' ? '#121210' : '#FFE100',
             animation: wipe === 'in'
               ? 'wipe-in 0.36s cubic-bezier(.77,0,.18,1) forwards'
               : 'wipe-out 0.32s cubic-bezier(.77,0,.18,1) forwards',

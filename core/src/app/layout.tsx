@@ -1,44 +1,78 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, Space_Mono, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PageTransition from "@/components/PageTransition";
 
+const grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-grotesk",
+  display: "swap",
+});
+
+const mono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const serif = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Rajkishor Maharana — Full Stack Engineer",
-  description: "7.5+ years building enterprise systems — Java/Spring Boot, Node.js, React, Kafka, AWS. Fortune 500 delivery across Healthcare, Telecom, BFSI & Aviation.",
+  title: "Rajkishor Maharana — The Backend Whisperer",
+  description: "A magazine-format portfolio for an engineer who has spent 7.5+ years making Fortune 500 systems behave — Java/Spring Boot, Node.js, React, Kafka, AWS, and a healthy suspicion of monoliths.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body style={{ background: 'var(--bg-base)', color: 'var(--text-100)' }} suppressHydrationWarning>
+    <html lang="en" className={`${grotesk.variable} ${mono.variable} ${serif.variable}`}>
+      <body style={{ background: 'var(--paper)', color: 'var(--ink)' }} suppressHydrationWarning>
         <Navbar />
         <PageTransition>
           <main>{children}</main>
           <footer
             style={{
-              background: 'var(--bg-surface)',
-              borderTop: '1px solid var(--border)',
-              padding: '2rem',
+              background: 'var(--ink)',
+              borderTop: '4px solid var(--ink)',
+              padding: '2rem 1.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
               textAlign: 'center',
             }}
           >
+            <img
+              src="/images/byline.jpg"
+              alt="Rajkishor Maharana"
+              className="photo-brut"
+              style={{ width: '28px', height: '28px', objectFit: 'cover', border: '2px solid var(--paper-2)', flexShrink: 0 }}
+            />
             <p
+              className="mono"
               style={{
-                fontFamily: 'Courier New, monospace',
                 fontSize: '11px',
                 letterSpacing: '0.08em',
-                color: 'var(--text-400)',
+                color: 'var(--paper-2)',
               }}
             >
-              RAJKISHOR MAHARANA · HYDERABAD, INDIA ·{" "}
+              VOL. 1, NO. 7.5 · WRITTEN, CODED &amp; MOSTLY DEBUGGED BY RAJKISHOR MAHARANA · HYDERABAD, INDIA ·{" "}
               <a
                 href="https://github.com/mrajkishor/mrajkishor.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-source-link"
               >
-                VIEW SOURCE ↗
+                READ THE SOURCE ↗
               </a>
             </p>
           </footer>
